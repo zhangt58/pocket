@@ -3,7 +3,9 @@
 
 import os, re, datetime
 
-hn_dir = "hn"
+repo_wdir = "../../"
+hn_dir = os.path.join(repo_wdir, "hn")
+out_index_path = os.path.join(repo_wdir, "index.html")
 files = sorted(
     [f for f in os.listdir(hn_dir) if f.endswith(".html")],
     reverse=True
@@ -104,7 +106,7 @@ html = f'''<!DOCTYPE html>
 </body>
 </html>'''
 
-with open("index.html", "w") as f:
+with open(out_index_path, "w") as f:
     f.write(html)
 
 print(f"Generated index.html with {len(files)} entries")

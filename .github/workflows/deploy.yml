@@ -21,7 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Generate index page from HN reports
-        run: python3 scripts/generate_index.py
+        run: |
+          cd .github/workflows
+          python3 scripts/generate_index.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

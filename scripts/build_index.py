@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build the daily-digest index page.
+Build the pocket digest index page.
 Scans hn/ and events/ directories, generates index.html with:
   - Daily section: HN Top 10 posts (newest first)
   - Weekly section: Michigan Events maps (newest first)
@@ -9,12 +9,11 @@ Copies output to dist/index.html as well.
 
 import os
 import glob
-import html
 import shutil
 import re
 from datetime import datetime
 
-BASE_DIR = "/home/tong/workspace/daily-digest"
+BASE_DIR = "/home/tong/workspace/pocket"
 HN_DIR = os.path.join(BASE_DIR, "hn")
 EVENTS_DIR = os.path.join(BASE_DIR, "events")
 DIST_DIR = os.path.join(BASE_DIR, "dist")

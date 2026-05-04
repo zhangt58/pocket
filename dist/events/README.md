@@ -1,16 +1,17 @@
 # Michigan Events Monitor
 
-Interactive map and data for 6 Michigan event regions.
+Interactive map and data for 7 Michigan event regions.
 
 ## Files
 - `hn_events_map_2026-05-03.html` — Interactive Leaflet map (open in browser)
-- `events_final.json` — Raw event data (135 events)
+- `events_final.json` — Raw event data (150 events)
 
 ## Regions
 | Region | Events | Source |
 |--------|--------|--------|
 | Detroit Metro | 44 | littleguidedetroit.com |
 | Mt. Pleasant | 47 | meetmtp.com |
+| Grand Rapids | 15 | experiencegr.com |
 | Traverse City | 15 | traversecity.com |
 | South Haven | 10 | southhavenmi.com |
 | Battle Creek | 11 | battlecreekvisitors.org |
@@ -21,5 +22,7 @@ Weekend events are scraped every Friday at 10am and posted to Discord.
 Job ID: `6826679aaa01`
 
 ## Notes
+- **Grand Rapids** — Added May 2026 via experiencegr.com (WordPress, 15 dated events)
 - **Jackson** (experiencejackson.com) — Unscrapable: ITI Digital iframe calendar
+- **Midland, MI** — No working visitor bureau event calendar found
 - **Ann Arbor** (thingstodoinannarbor.com) — Unscrapable: blog-style vague dates

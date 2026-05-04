@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #888;
+            font-size: 1rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+
+        .rank {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--accent);
+            min-width: 40px;
+        }
+
+        .title-section {
+            flex: 1;
+        }
+
+        .title-section h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .title-section a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .title-section a:hover {
+            color: var(--accent);
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .meta .score {
+            color: #f7c948;
+            font-weight: 600;
+        }
+
+        .meta .comments {
+            color: #5dade2;
+            font-weight: 600;
+        }
+
+        .meta .by {
+            color: #82e0aa;
+        }
+
+        .summary {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #aaa;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .source {
+            margin-top: 10px;
+            font-size: 0.85rem;
+        }
+
+        .source a {
+            color: #5dade2;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .source a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        /* Color accents for each card */
+        .card:nth-child(1) { --accent: #ff6b35; }
+        .card:nth-child(2) { --accent: #4ecdc4; }
+        .card:nth-child(3) { --accent: #45b7d1; }
+        .card:nth-child(4) { --accent: #96ceb4; }
+        .card:nth-child(5) { --accent: #ffeaa7; }
+        .card:nth-child(6) { --accent: #dda15e; }
+        .card:nth-child(7) { --accent: #98d8c8; }
+        .card:nth-child(8) { --accent: #f7dc6f; }
+        .card:nth-child(9) { --accent: #bb8fce; }
+        .card:nth-child(10) { --accent: #85c1e9; }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 18px;
+            }
+            .card-header {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .rank {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API • May 04, 2026 at 12:03 PM UTC</p>
+        </header>
+
+            <div class="card">
+        <div class="card-header">
+            <div class="rank">#1</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=48006402" target="_blank" rel="noopener">GameStop makes $55.5B takeover offer for eBay</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 178</span>
+                    <span class="comments">💬 110</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=n1b0m" target="_blank">n1b0m</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            The cash and stock offer values eBay at $125 a share, $20 more than the shares were valued at when New York trading ended on Friday, GameStop said in a statement on Sunday. GameStop's chief executive Ryan Cohen said he is prepared to take the bid directly to shareholders if eBay's board rejects the approach. GameStop rose to...
+        </div>
+        <div class="source">
+            <a href="https://www.bbc.co.uk/news/articles/cn0p8yled1do" target="_blank" rel="noopener">🔗 https://www.bbc.co.uk/news/articles/cn0p8yled1do</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#2</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=48007145" target="_blank" rel="noopener">ASML's Best Selling Product Isn't What You Think It Is</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 36</span>
+                    <span class="comments">💬 14</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=johncole" target="_blank">johncole</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            There is a machine in the Netherlands that is essentially the heartbeat of the modern world. It’s called an **Extreme Ultraviolet (EUV) lithography tool**, and it’s built by ASML. [![Image 1: ASML’s extreme ultraviolet lithography machines have more than 100,000 parts and sell for up to $400 million.
+        </div>
+        <div class="source">
+            <a href="https://www.siliconimist.com/p/asmls-best-selling-product" target="_blank" rel="noopener">🔗 https://www.siliconimist.com/p/asmls-best-selling-product</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#3</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=48006445" target="_blank" rel="noopener">Trademark violation: Fake Notepad++ for Mac</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 220</span>
+                    <span class="comments">💬 90</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=maxloh" target="_blank">maxloh</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            Several users have recently reported a website pretending to offer an official macOS version of Notepad++: **`notepad-plus-plus-mac.org`** Let me be blunt: **This site has absolutely nothing to do with Notepad++.** It’s **not authorized**, **not endorsed**, and **not affiliated** with the project in any way. [![Image 3: Screenshot of fake Notepad++ for Mac...
+        </div>
+        <div class="source">
+            <a href="https://notepad-plus-plus.org/news/npp-trademark-infringement/" target="_blank" rel="noopener">🔗 https://notepad-plus-plus.org/news/npp-trademark-infringement/</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#4</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=47977990" target="_blank" rel="noopener">Using “underdrawings” for accurate text and numbers</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 268</span>
+                    <span class="comments">💬 92</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=samcollins" target="_blank">samcollins</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            I discovered a technique for generating reliable text and numbers in AI generated images. For example, the following image is considered impossible with state of the art image models. But I made this with Gemini 3.0 Pro (plus one extra step I’m going to explain below).
+        </div>
+        <div class="source">
+            <a href="https://samcollins.blog/underdrawings/" target="_blank" rel="noopener">🔗 https://samcollins.blog/underdrawings/</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#5</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=47983333" target="_blank" rel="noopener">Texico: Learn the principles of programming without even touching a computer</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 73</span>
+                    <span class="comments">💬 3</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=o4c" target="_blank">o4c</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            Unique animated characters assist in the fun and lucid introduction of 5 core programming processes: analysis, combination, generalization, abstraction and simulation. By using this site you are consenting to their use and accept our policies. Learn more...[](https://www3.nhk.or.jp/nhkworld/en/shows/texico/#).
+        </div>
+        <div class="source">
+            <a href="https://www3.nhk.or.jp/nhkworld/en/shows/texico/" target="_blank" rel="noopener">🔗 https://www3.nhk.or.jp/nhkworld/en/shows/texico/</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#6</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=47988781" target="_blank" rel="noopener">World's biggest RC A380 [video]</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 25</span>
+                    <span class="comments">💬 3</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=NaOH" target="_blank">NaOH</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            A YouTube video showcasing the world's biggest RC A380 aircraft. Built by RC enthusiasts, this massive remote-controlled replica of Airbus's flagship plane demonstrates impressive scale and engineering. Note: the original video link may no longer be available.
+        </div>
+        <div class="source">
+            <a href="https://www.youtube.com/watch?v=wr9YLGbhxng" target="_blank" rel="noopener">🔗 https://www.youtube.com/watch?v=wr9YLGbhxng</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#7</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=48002136" target="_blank" rel="noopener">DeepClaude – Claude Code agent loop with DeepSeek V4 Pro</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 511</span>
+                    <span class="comments">💬 202</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=alattaran" target="_blank">alattaran</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            DeepClaude swaps the brain of Claude Code while keeping the body intact: it routes Claude Code's autonomous agent loop through DeepSeek V4 Pro ($0.87/M tokens) instead of Anthropic ($15/M). Everything works — file reading, editing, bash execution, subagent spawning, and multi-step coding loops — at a fraction of the cost.
+        </div>
+        <div class="source">
+            <a href="https://github.com/aattaran/deepclaude" target="_blank" rel="noopener">🔗 https://github.com/aattaran/deepclaude</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#8</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=47999636" target="_blank" rel="noopener">BYOMesh – New LoRa mesh radio offers 100x the bandwidth</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 397</span>
+                    <span class="comments">💬 130</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=nullagent" target="_blank">nullagent</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            nullagent from DataParty announced the BYOMesh — billed as the world's smallest and most capable LoRa companion dev kit. It combines the SX1276 (sub-1GHz ISM band) with the SX1281 (high-speed 2.4GHz LoRa) on a single tiny board, supporting MeshCore, Meshtastic, Reticulum, and MeshTNC protocols.
+        </div>
+        <div class="source">
+            <a href="https://partyon.xyz/@nullagent/116499715071759135" target="_blank" rel="noopener">🔗 https://partyon.xyz/@nullagent/116499715071759135</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#9</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=47968187" target="_blank" rel="noopener">Discovering hard disk physical geometry through microbenchmarking (2019)</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 105</span>
+                    <span class="comments">💬 5</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=TapamN" target="_blank">TapamN</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            While hard drives have been around since the 1950s, the current 3.5″ form factor (actually 4″ wide) appeared in the early 1980s. Since then, the capacity of a 3.5″ drive has increased by about 10 6 times (from 10 MB to about 10 TB), sequential throughput by about 10 3 times, and access times by about 10 1 times. Although the basic concept of spinning magnetic disks accessed by a movable stack of disk heads has not changed, hard drives have...
+        </div>
+        <div class="source">
+            <a href="https://blog.stuffedcow.net/2019/09/hard-disk-geometry-microbenchmarking/" target="_blank" rel="noopener">🔗 https://blog.stuffedcow.net/2019/09/hard-disk-geometry-microbenchmarking/</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="rank">#10</div>
+            <div class="title-section">
+                <h2><a href="https://news.ycombinator.com/item?id=47976081" target="_blank" rel="noopener">A treasure trove of fossils rewrites the story of early life</a></h2>
+                <div class="meta">
+                    <span class="score">⭐ 45</span>
+                    <span class="comments">💬 6</span>
+                    <span class="by">by <a href="https://news.ycombinator.com/user?id=worldvoyageur" target="_blank">worldvoyageur</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            Remarkably preserved relics from southern China — more than half representing species new to science — is transforming our understanding of organisms that survived the first mass extinction of the Phanerozoic Eon. The long protrusions look plant-like but are actually a colony of small worm-shaped animals housed in branching organic tubes. Han Zeng/Nanjing Institute of Geology and Palaeontology, Chinese Academy of Sciences R oughly 540 million...
+        </div>
+        <div class="source">
+            <a href="https://www.quantamagazine.org/a-treasure-trove-of-cambrian-fossils-rewrites-the-story-of-early-life-20260501/" target="_blank" rel="noopener">🔗 https://www.quantamagazine.org/a-treasure-trove-of-cambrian-fossils-rewrites-the...</a>
+        </div>
+    </div>
+
+        <footer>
+            <p>Fetched via Hacker News API • May 04, 2026 at 12:03 PM UTC</p>
+        </footer>
+    </div>
+</body>
+</html>

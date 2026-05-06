@@ -1,0 +1,441 @@
+\documentclass[12pt,addpoints]{exam}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\lhead{\textbf{Geometry Honors --- Midterm Exam}}
+\rhead{Name: \underline{\hspace{3cm}} \quad Date: \underline{\hspace{3cm}}}
+\cfoot{Page \thepage\ of \numpages}
+
+\setlength{\headheight}{15pt}
+\setlength{\parindent}{0pt}
+
+\pointsinrightmargin
+\runningheadrule
+
+\newcommand{\answerbox}[1]{\underline{\hspace{#1}}}
+\newcommand{\deg}{{}^\circ}
+
+\begin{document}
+
+% ============================================================
+% TITLE PAGE
+% ============================================================
+\begin{center}
+\vspace*{1.5in}
+{\Huge\bfseries Geometry Honors --- Midterm Examination\par}
+\vspace{0.3in}
+
+{\large\bfseries Topics:} Logical Reasoning $\cdot$ Proofs $\cdot$ Parallel Lines $\cdot$ Triangles $\cdot$ Quadrilaterals $\cdot$ Transformations $\cdot$ Similarity $\cdot$ Right Triangles \& Trigonometry $\cdot$ Circles $\cdot$ Area \& Volume
+
+\vspace{0.2in}
+{\large\bfseries Total Points:} 150 \qquad {\bfseries Time Allowed:} 180 minutes \qquad {\bfseries Show all work.}
+
+\vspace{0.5in}
+Name: \underline{\hspace{4cm}} \qquad Date: \underline{\hspace{3cm}} \qquad Period: \underline{\hspace{2cm}}
+\end{center}
+
+\vspace{0.4in}
+
+\begin{center}
+\framebox[\linewidth]{%
+\parbox{0.95\linewidth}{%
+\textbf{Instructions:} This exam has \textbf{5 sections} covering the Geometry Honors curriculum. Show all work for full credit. Justify answers using definitions, postulates, and theorems. A calculator is permitted for Sections IV--V. No electronic devices for Sections I--III.
+}}
+\end{center}
+
+\vspace{0.3in}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Section} & \textbf{Problems} & \textbf{Points} \\ \hline
+I. Multiple Choice & 1--15 & 30 \\ \hline
+II. Short Answer & 16--25 & 30 \\ \hline
+III. Proofs \& Constructions & 26--30 & 30 \\ \hline
+IV. Applications \& Word Problems & 31--38 & 30 \\ \hline
+V. Challenge Problems & 39--40 & 30 \\ \hline
+\textbf{Total} & \textbf{40} & \textbf{150} \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+% ============================================================
+% SECTION I: MULTIPLE CHOICE (15 questions, 2 pts each)
+% ============================================================
+\section*{Section I: Multiple Choice \hfill (30 points)}
+\noindent\textit{Circle the best answer. Each question is worth 2 points.}
+
+\begin{questions}
+
+\question Which of the following is the \textbf{converse} of the statement ``If two lines are parallel, then corresponding angles are congruent''?
+\begin{choices}
+  \choice If two lines are not parallel, then corresponding angles are not congruent.
+  \choice If corresponding angles are congruent, then two lines are parallel.
+  \choice If corresponding angles are not congruent, then two lines are not parallel.
+  \choice If two lines are parallel, then alternate interior angles are congruent.
+\end{choices}
+
+\question In $\triangle ABC$, $m\angle A = 52\deg$ and $m\angle B = 68\deg$. What is $m\angle C$?
+\begin{choices}
+  \choice $40\deg$
+  \choice $52\deg$
+  \choice $60\deg$
+  \choice $120\deg$
+\end{choices}
+
+\question Which set of side lengths does \textbf{not} form a triangle?
+\begin{choices}
+  \choice $3,\ 4,\ 5$
+  \choice $7,\ 10,\ 12$
+  \choice $1,\ 2,\ 3$
+  \choice $8,\ 8,\ 15$
+\end{choices}
+
+\question The contrapositive of ``If a quadrilateral is a square, then it is a rhombus'' is:
+\begin{choices}
+  \choice If a quadrilateral is a rhombus, then it is a square.
+  \choice If a quadrilateral is not a square, then it is not a rhombus.
+  \choice If a quadrilateral is not a rhombus, then it is not a square.
+  \choice If a quadrilateral is a rhombus, then it is not a square.
+\end{choices}
+
+\question Which transformation \textbf{does not} always preserve congruence?
+\begin{choices}
+  \choice Translation
+  \choice Reflection
+  \choice Rotation
+  \choice Dilation with scale factor $k \neq 1$
+\end{choices}
+
+\question In parallelogram $ABCD$, $m\angle A = (3x + 15)\deg$ and $m\angle B = (2x + 5)\deg$. Find $x$.
+\begin{choices}
+  \choice $16$
+  \choice $28$
+  \choice $35$
+  \choice $48$
+\end{choices}
+
+\question Two similar triangles have areas $36~\text{cm}^2$ and $100~\text{cm}^2$. If the shorter base of the smaller triangle is $6~\text{cm}$, what is the corresponding base of the larger triangle?
+\begin{choices}
+  \choice $10~\text{cm}$
+  \choice $15~\text{cm}$
+  \choice $18~\text{cm}$
+  \choice $25~\text{cm}$
+\end{choices}
+
+\question In right $\triangle ABC$ with $\angle C = 90\deg$, $AC = 9$, $BC = 12$. What is $\sin A$?
+\begin{choices}
+  \choice $\dfrac{3}{5}$
+  \choice $\dfrac{4}{5}$
+  \choice $\dfrac{3}{4}$
+  \choice $\dfrac{5}{4}$
+\end{choices}
+
+\question A central angle in a circle measures $120\deg$. What is the measure of the \textbf{intercepted arc}?
+\begin{choices}
+  \choice $30\deg$
+  \choice $60\deg$
+  \choice $120\deg$
+  \choice $240\deg$
+\end{choices}
+
+\question The circumference of a circle is $16\pi$. What is its area?
+\begin{choices}
+  \choice $8\pi$
+  \choice $16\pi$
+  \choice $32\pi$
+  \choice $64\pi$
+\end{choices}
+
+\question Which point of concurrency is the intersection of the three \textbf{perpendicular bisectors} of a triangle?
+\begin{choices}
+  \choice Incenter
+  \choice Centroid
+  \choice Circumcenter
+  \choice Orthocenter
+\end{choices}
+
+\question The volume of a sphere with radius $6~\text{cm}$ is:
+\begin{choices}
+  \choice $36\pi~\text{cm}^3$
+  \choice $72\pi~\text{cm}^3$
+  \choice $144\pi~\text{cm}^3$
+  \choice $288\pi~\text{cm}^3$
+\end{choices}
+
+\question Lines $l \parallel m$ and transversal $t$ intersects them. If $\angle 1 = (5x - 10)\deg$ and $\angle 2 = (3x + 20)\deg$ are alternate exterior angles, find $x$.
+\begin{choices}
+  \choice $10$
+  \choice $15$
+  \choice $17.5$
+  \choice $20$
+\end{choices}
+
+\question What is the equation of a circle centered at $(-3, 4)$ with radius $7$?
+\begin{choices}
+  \choice $(x + 3)^2 + (y - 4)^2 = 49$
+  \choice $(x - 3)^2 + (y + 4)^2 = 49$
+  \choice $(x + 3)^2 + (y - 4)^2 = 7$
+  \choice $(x - 3)^2 + (y + 4)^2 = 7$
+\end{choices}
+
+\question If $\triangle ABC \sim \triangle DEF$ and the ratio of corresponding sides is $3:5$, what is the ratio of their perimeters?
+\begin{choices}
+  \choice $3:5$
+  \choice $9:25$
+  \choice $5:3$
+  \choice $25:9$
+\end{choices}
+
+\end{questions}
+
+\newpage
+
+% ============================================================
+% SECTION II: SHORT ANSWER
+% ============================================================
+\section*{Section II: Short Answer \hfill (30 points)}
+\noindent\textit{Show your work. Each question is worth 3 points.}
+
+\begin{questions}
+
+\question Simplify: $\cos^2 \theta + \sin^2 \theta =$ \answerbox{3cm}
+
+\question In the diagram, $\overline{AB}$ is tangent to circle $O$ at point $B$, and radius $OB = 8~\text{cm}$. If $OA = 10~\text{cm}$, find the length of $\overline{AB}$.
+
+\vspace{1.5cm}
+
+\question A regular hexagon has side length $6$. Find its apothem (exact form).
+
+\vspace{1.5cm}
+
+\question The coordinates of $\triangle ABC$ are $A(1, 2)$, $B(4, 2)$, $C(1, 6)$. After reflecting over the $y$-axis, then translating $3$ units right, what are the coordinates of $A''$?
+
+\vspace{1.5cm}
+
+\question In $\triangle PQR$, $S$ and $T$ are midpoints of $\overline{PQ}$ and $\overline{PR}$ respectively. If $QR = 14$, find $ST$.
+
+\vspace{1.5cm}
+
+\question Find the measure of an inscribed angle that intercepts an arc of $230\deg$.
+
+\vspace{1.5cm}
+
+\question A right triangle has legs of length $5$ and $12$. An altitude is drawn to the hypotenuse. Find the length of this altitude (exact or decimal to 2 places).
+
+\vspace{1.5cm}
+
+\question The surface area of a right cylinder with radius $4~\text{cm}$ and height $10~\text{cm}$ is \answerbox{4cm} $\text{cm}^2$.
+
+\question Two secants are drawn from exterior point $P$ to a circle, intercepting arcs of $110\deg$ and $50\deg$. Find $m\angle P$.
+
+\vspace{1.5cm}
+
+\question A regular pyramid has a square base with side $8$ and slant height $7$. Find its lateral surface area.
+
+\vspace{1.5cm}
+
+\end{questions}
+
+\newpage
+
+% ============================================================
+% SECTION III: PROOFS \& CONSTRUCTIONS
+% ============================================================
+\section*{Section III: Proofs \& Constructions \hfill (30 points)}
+\noindent\textit{Each question is worth 6 points. Show all reasoning.}
+
+\begin{questions}
+
+\question \textbf{Two-column proof.} Given: $\overline{AB} \cong \overline{CD}$ and $\overline{BC} \cong \overline{DA}$.\\
+Prove: Quadrilateral $ABCD$ is a parallelogram.
+
+\vspace{3cm}
+
+\question \textbf{Paragraph proof.} Given: Point $D$ is the midpoint of $\overline{BC}$ in $\triangle ABC$. Line $AD$ is extended to $E$ such that $\overline{AD} \cong \overline{DE}$. Segments $BE$ and $CE$ are drawn.\\
+Prove: $BE + CE > BC$.
+
+\vspace{3cm}
+
+\question \textbf{Indirect proof.} Prove: In a right triangle, each acute angle measures less than $90\deg$.
+
+\vspace{3cm}
+
+\question \textbf{Construction.} Using only a compass and straightedge, describe the step-by-step construction of the perpendicular bisector of segment $\overline{AB}$. Then prove that your construction is correct.
+
+\vspace{3cm}
+
+\question \textbf{Coordinate geometry proof.} Given: Points $A(-2, 3)$, $B(4, 7)$, $C(8, 1)$, $D(2, -3)$.\\
+Prove that $ABCD$ is a parallelogram by showing both pairs of opposite sides are parallel. Then determine whether it is a rhombus, rectangle, or square, and justify your answer.
+
+\vspace{3cm}
+
+\end{questions}
+
+\newpage
+
+% ============================================================
+% SECTION IV: APPLICATIONS \& WORD PROBLEMS
+% ============================================================
+\section*{Section IV: Applications \& Word Problems \hfill (30 points)}
+\noindent\textit{Show all work. Point values are indicated in brackets.}
+
+\begin{questions}
+
+\question[4] A ladder $15~\text{ft}$ long leans against a building. If the foot of the ladder is $9~\text{ft}$ from the base of the building, how high up the wall does the ladder reach?
+
+\vspace{1.5cm}
+
+\question[5] A tree casts a shadow $24~\text{m}$ long. At the same time, a $2~\text{m}$ pole casts a shadow $3~\text{m}$ long. How tall is the tree?
+
+\vspace{1.5cm}
+
+\question[5] A circular fountain has diameter $12~\text{ft}$. A $3~\text{ft}$ wide walkway surrounds it. Find the area of the walkway in terms of $\pi$.
+
+\vspace{1.5cm}
+
+\question[5] A satellite dish is parabolic (modeled as a circular arc). If the dish is $8~\text{ft}$ across and $2~\text{ft}$ deep, find the radius of the circle that models the dish.
+
+\vspace{1.5cm}
+
+\question[5] The centroid of $\triangle ABC$ has coordinates $(4, 5)$. If $A = (1, 2)$ and $B = (7, 8)$, find the coordinates of $C$.
+
+\vspace{1.5cm}
+
+\question[5] A regular octagon is inscribed in a circle of radius $10$. Find the area of the octagon to the nearest whole number.
+
+\vspace{1.5cm}
+
+\question[5] The volume of a cone is $120\pi~\text{in}^3$ and the height is $12~\text{in}$. Find the slant height.
+
+\vspace{1.5cm}
+
+\question[4] In $\triangle ABC$, $\angle C = 90\deg$. The altitude from $C$ to $\overline{AB}$ divides $\overline{AB}$ into segments of length $3$ and $12$. Find the length of this altitude.
+
+\vspace{1.5cm}
+
+\end{questions}
+
+\newpage
+
+% ============================================================
+% SECTION V: CHALLENGE PROBLEMS
+% ============================================================
+\section*{Section V: Challenge Problems \hfill (30 points)}
+\noindent\textit{These problems require synthesis of multiple concepts. Show all reasoning. Each question is worth 15 points.}
+
+\bigskip
+
+\noindent\textbf{Problem 39.} \textbf{Geometry of a regular polygon and trigonometry.}
+
+A regular dodecagon (12-sided polygon) is inscribed in a circle of radius $R$.
+
+\begin{enumerate}[label=(\alph*),leftmargin=1.5cm]
+  \item Derive a formula for the side length of the dodecagon in terms of $R$.
+  \item Derive a formula for the area of the dodecagon in terms of $R$.
+  \item If $R = 10$, find the area to the nearest tenth.
+  \item Explain why the area of a regular $n$-gon inscribed in a circle of radius $R$ approaches $\pi R^2$ as $n \to \infty$.
+\end{enumerate}
+
+\vspace{3cm}
+
+\noindent\textbf{Problem 40.} \textbf{Comprehensive proof and application.}
+
+In $\triangle ABC$, $AB = AC$. Let $D$ be a point on $\overline{BC}$. The circumcircle of $\triangle ABD$ intersects $\overline{AC}$ at $E$ (distinct from $A$). The circumcircle of $\triangle ADC$ intersects $\overline{AB}$ at $F$ (distinct from $A$).
+
+\begin{enumerate}[label=(\alph*),leftmargin=1.5cm]
+  \item Prove that $BDEF$ is a cyclic quadrilateral.
+  \item Prove that $AE = AF$.
+  \item If $AB = AC = 10$ and $BC = 12$, find the radius of the circumcircle of $\triangle ABD$ when $D$ is the midpoint of $\overline{BC}$.
+  \item Show that $\overline{EF} \parallel \overline{BC}$.
+\end{enumerate}
+
+\vfill
+\begin{center}
+\textit{--- End of Examination ---}
+\end{center}
+
+\newpage
+
+% ============================================================
+% ANSWER KEY
+% ============================================================
+\section*{Answer Key (For Teacher Use)}
+
+\noindent\textbf{Section I: Multiple Choice (2 pts each)}
+\begin{multicols}{2}
+\bigskip
+1. \textbf{B} --- Converse switches hypothesis and conclusion.\\[4pt]
+2. \textbf{C} --- $180 - 52 - 68 = 60\deg$.\\[4pt]
+3. \textbf{C} --- $1 + 2 = 3$, triangle inequality fails ($a+b > c$ required).\\[4pt]
+4. \textbf{C} --- Contrapositive negates and reverses: ``If not a rhombus, then not a square.''\\[4pt]
+5. \textbf{D} --- Dilation with $k \neq 1$ changes size; not a rigid motion.\\[4pt]
+6. \textbf{B} --- Consecutive angles supplementary: $3x+15 + 2x+5 = 180 \Rightarrow 5x = 160 \Rightarrow x = 28$.\\[4pt]
+7. \textbf{A} --- Area ratio $36\!:\!100 = 9\!:\!25$; linear ratio $3\!:\!5$; base $= 6 \cdot \frac{5}{3} = 10$.\\[4pt]
+8. \textbf{B} --- $AB = \sqrt{9^2+12^2} = 15$; $\sin A = \frac{12}{15} = \frac{4}{5}$.\\[4pt]
+9. \textbf{C} --- Central angle measure equals intercepted arc measure.\\[4pt]
+10. \textbf{D} --- $2\pi r = 16\pi \Rightarrow r = 8$; $A = \pi(8)^2 = 64\pi$.\\[4pt]
+11. \textbf{C} --- Circumcenter is intersection of perpendicular bisectors.\\[4pt]
+12. \textbf{D} --- $V = \frac{4}{3}\pi(6)^3 = 288\pi$.\\[4pt]
+13. \textbf{B} --- $5x-10 = 3x+20 \Rightarrow 2x = 30 \Rightarrow x = 15$.\\[4pt]
+14. \textbf{A} --- $(x-h)^2 + (y-k)^2 = r^2 \Rightarrow (x+3)^2 + (y-4)^2 = 49$.\\[4pt]
+15. \textbf{A} --- Perimeter ratio equals linear (similarity) ratio $= 3:5$.
+\end{multicols}
+
+\vspace{0.5cm}
+\noindent\textbf{Section II: Short Answer (3 pts each)}
+\begin{enumerate}[label=\arabic*.]
+  \item $1$ (Pythagorean identity: $\cos^2\theta + \sin^2\theta = 1$)
+  \item $AB = \sqrt{OA^2 - OB^2} = \sqrt{100 - 64} = \boxed{6~\text{cm}}$ (tangent $\perp$ radius)
+  \item Apothem $= 6 \cdot \cot(30\deg) = \boxed{3\sqrt{3}}$
+  \item Reflect $A(1,2)$ over $y$-axis $\to A'(-1,2)$; translate $3$ right $\to \boxed{A''(2,2)}$
+  \item $ST = \frac{1}{2}QR = \boxed{7}$ (Midsegment Theorem)
+  \item $\frac{1}{2}(230\deg) = \boxed{115\deg}$ (Inscribed angle theorem)
+  \item $c = \sqrt{5^2+12^2} = 13$; altitude $= \frac{5 \cdot 12}{13} = \boxed{\frac{60}{13} \approx 4.62}$
+  \item $SA = 2\pi r(r+h) = 2\pi(4)(4+10) = \boxed{112\pi}~\text{cm}^2$
+  \item $m\angle P = \frac{1}{2}(110\deg - 50\deg) = \boxed{30\deg}$ (secant-secant angle)
+  \item Lateral area $= 4 \cdot \frac{1}{2}(8)(7) = \boxed{112}$
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{Section III: Proofs (6 pts each)}
+\begin{enumerate}[label=\arabic*.]
+  \item[26.] Draw diagonal $\overline{AC}$. Show $\triangle ABC \cong \triangle CDA$ by SSS. Then $\angle BCA \cong \angle DAC$, so $AD \parallel BC$ (alt. int. $\angle$s). Similarly $AB \parallel DC$. Two pairs of parallel sides $\Rightarrow$ parallelogram.
+  \item[27.] $\triangle ADB \cong \triangle EDC$ by SAS ($BD=DC$, $AD=DE$, vertical $\angle$s). So $AB=EC$. Similarly $AC=EB$. In $\triangle ABE$, $AB+AE > BE$. Substituting: $EC+AC > EB$. Since $AC > CD = \frac{1}{2}BC$, we get $BE+CE > BC$ by the triangle inequality.
+  \item[28.] Suppose an acute angle $\angle A \geq 90\deg$. Then $\angle A + \angle C \geq 180\deg$, so $\angle B \leq 0\deg$, impossible. Thus $\angle A < 90\deg$.
+  \item[29.] (1) Center compass at $A$, draw arc above and below $\overline{AB}$ with radius $> \frac{1}{2}AB$. (2) Same radius, center at $B$, draw arcs intersecting the first pair at points $P$ and $Q$. (3) Draw line $PQ$. Proof: $AP = BP = AQ = BQ$ (same radius), so $P$ and $Q$ are equidistant from $A$ and $B$, hence lie on the perpendicular bisector.
+  \item[30.] Slopes: $m_{AB} = \frac{7-3}{4-(-2)} = \frac{4}{6} = \frac{2}{3}$; $m_{CD} = \frac{-3-1}{2-8} = \frac{-4}{-6} = \frac{2}{3}$. So $AB \parallel CD$. Similarly $m_{BC} = m_{DA} = -\frac{2}{3}$. Parallelogram confirmed. $AB = \sqrt{36+16} = \sqrt{52}$, $BC = \sqrt{16+64} = \sqrt{80}$. Adjacent sides not congruent $\Rightarrow$ not rhombus/square. $m_{AB} \cdot m_{BC} = -\frac{4}{9} \neq -1 \Rightarrow$ not rectangle. Conclusion: \textbf{parallelogram only}.
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{Section IV: Applications}
+\begin{enumerate}[label=\arabic*.]
+  \item[31.] $\sqrt{15^2 - 9^2} = \sqrt{144} = \boxed{12~\text{ft}}$
+  \item[32.] $\frac{h}{24} = \frac{2}{3} \Rightarrow h = \boxed{16~\text{m}}$ (similar triangles)
+  \item[33.] $R = 9$, $r = 6$; Area $= \pi(81 - 36) = \boxed{45\pi~\text{ft}^2}$
+  \item[34.] $R^2 = 4^2 + (R-2)^2 \Rightarrow R^2 = 16 + R^2 - 4R + 4 \Rightarrow 4R = 20 \Rightarrow \boxed{R = 5~\text{ft}}$
+  \item[35.] Centroid $= \frac{A+B+C}{3} \Rightarrow C = 3(4,5) - (1,2) - (7,8) = (12-8,\, 15-10) = \boxed{(4,\, 5)}$
+  \item[36.] Area $= \frac{1}{2} \cdot 8 \cdot 10^2 \cdot \sin(45\deg) = 400 \cdot \frac{\sqrt{2}}{2} = \boxed{566}$
+  \item[37.] $\frac{1}{3}\pi r^2(12) = 120\pi \Rightarrow r^2 = 30$; slant $l = \sqrt{30+144} = \boxed{\sqrt{174} \approx 13.2~\text{in}}$
+  \item[38.] Altitude $= \sqrt{3 \cdot 12} = \boxed{6}$ (Geometric Mean Altitude Theorem)
+\end{enumerate}
+
+\vspace{0.3cm}
+\noindent\textbf{Section V: Challenge Problems}
+\begin{enumerate}
+  \item[39.] (a) Central angle $= 360/12 = 30\deg$. By Law of Cosines: $s = \sqrt{R^2 + R^2 - 2R^2\cos 30\deg} = R\sqrt{2 - \sqrt{3}}$.
+  \par(b) Area $= 12 \cdot \frac{1}{2} R^2 \sin 30\deg = 12 \cdot \frac{1}{2} R^2 \cdot \frac{1}{2} = \boxed{3R^2}$.
+  \par(c) With $R = 10$: Area $= \boxed{300}$.
+  \par(d) Area of inscribed $n$-gon $= \frac{1}{2} n R^2 \sin(2\pi/n)$. Let $x = 2\pi/n$. As $n \to \infty$, $x \to 0$. Area $= \pi R^2 \cdot \frac{\sin x}{x} \to \pi R^2$ since $\lim_{x\to 0} \frac{\sin x}{x} = 1$.
+  \item[40.] (a) $\angle ADB + \angle ADC = 180\deg$ (linear pair). $\angle AEB = \angle ADB$ (same arc in first circle). $\angle AFC = \angle ADC$ (same arc in second circle). So $\angle AEB + \angle AFC = 180\deg$. Since $\angle BEF = 180\deg - \angle AEB$ and $\angle BFD = 180\deg - \angle AFC$, we get $\angle BEF + \angle BDF = 180\deg$, so $BDEF$ is cyclic.
+  \par(b) Since $BDEF$ is cyclic, $\angle FEB = \angle FDB$. Since $\triangle ABC$ is isosceles, $\angle ABC = \angle ACB$. From the circumcircles, $\angle FDB = \angle FAB$ and $\angle EDC = \angle EAC$. By symmetry of the isosceles setup, $\triangle AFE \cong \triangle AEF'$, giving $AE = AF$.
+  \par(c) $D$ midpoint $\Rightarrow BD = 6$, $AD = \sqrt{10^2 - 6^2} = 8$. In $\triangle ABD$: $AB=10$, $BD=6$, $AD=8$. Circumradius: $R = \frac{abc}{4K} = \frac{10 \cdot 6 \cdot 8}{4 \cdot 24} = \boxed{5}$.
+  \par(d) Since $AE = AF$, $\triangle AEF$ is isosceles with $\angle AEF = \angle AFE = \frac{180 - \angle A}{2} = \angle B$. So $\angle AEF = \angle ABC$, giving $\overline{EF} \parallel \overline{BC}$ (corresponding angles).
+\end{enumerate}
+
+\end{document}

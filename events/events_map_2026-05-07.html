@@ -829,12 +829,16 @@
                 <span class="event-tag tag-site" style="background:rgba(16,185,129,0.15);color:#34d399;font-size:0.6rem">${event.site || ''}</span>
             </div>
         `;
+        card.dataset.eventDate = event.date;
         card.addEventListener('click', () => {
             map.flyTo([event.lat, event.lon], 14, { duration: 0.8 });
             marker.openPopup();
         });
         eventList.appendChild(card);
     });
+
+    // Initialize count badge and calendar date filter on page load
+    applyFilters();
 
     // Fit map to show all markers
     const group = L.featureGroup(markers.map(m => m.marker));
@@ -1030,8 +1034,7 @@
             }
             
             if (selectedDates && selectedDates.length > 0) {
-                const dateText = card.querySelector('.event-time')?.textContent || '';
-                const eventDate = parseDate(dateText);
+                const eventDate = parseDate(card.dataset.eventDate);
                 if (eventDate) {
                     const [start, end] = selectedDates;
                     if (eventDate < start || eventDate > end) show = false;

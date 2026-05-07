@@ -3,7 +3,8 @@
 
 import os, re, datetime, shutil
 
-repo_wdir = "../../../"
+# Compute repo root from this script's location (.github/workflows/scripts/)
+repo_wdir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 hn_dir = os.path.join(repo_wdir, "hn")
 events_dir = os.path.join(repo_wdir, "events")
 dist_dir = os.path.join(repo_wdir, "dist")

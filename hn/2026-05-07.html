@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-07</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license" target="_blank">Valve releases Steam Controller CAD files under Creative Commons license</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1464</span>
+                <span class="comments">💬 472</span>
+                <span class="by">👤 haunter</span>
+            </div>
+            <div class="summary"><p>The idea is to let enterprising modders create their own Steam Controller add-ons, like skins, charging stands, grip extenders or smartphone mounts. The Valve release includes files for the external shell ("surface topology") of the Controller and Puck, with a .STP, .STL and engineering diagram of each device, with the latter showing areas that must remain uncovered to let the device maintain its signal strength and otherwise function as...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license" target="_blank">https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-c...</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://nooneshappy.com/article/appearing-productive-in-the-workplace/" target="_blank">Appearing productive in the workplace</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1209</span>
+                <span class="comments">💬 473</span>
+                <span class="by">👤 diebillionaires</span>
+            </div>
+            <div class="summary"><p>Appearing Productive in The Workplace — No One's Happy Appearing Productive in The Workplace > Parkinson’s Law states that work expands to fill the time available. In the era of AI, workers now have a tool that expands to fill whatever a large language model can be persuaded to generate, which is to say, without limit. What I have watched happen in my profession in the last two years, I am still struggling to describe.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://nooneshappy.com/article/appearing-productive-in-the-workplace/" target="_blank">https://nooneshappy.com/article/appearing-productive-in-the-workplace/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://sqlite.org/locrsf.html" target="_blank">SQLite Is a Library of Congress Recommended Storage Format</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 273</span>
+                <span class="comments">💬 75</span>
+                <span class="by">👤 whatisabcdefgh</span>
+            </div>
+            <div class="summary"><p>LoC Recommended Storage Format 1. Overview SQLite is a Recommended Storage Format for datasets according to the US Library of Congress. What Is A Recommended Storage Format?.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://sqlite.org/locrsf.html" target="_blank">https://sqlite.org/locrsf.html</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://permacomputing.net/principles/" target="_blank">Permacomputing Principles</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 155</span>
+                <span class="comments">💬 73</span>
+                <span class="by">👤 andsoitis</span>
+            </div>
+            <div class="summary"><p>principles Introduction Contemporary permaculture is founded on three core ethics: Earth Care, People Care, and Fair Share. These ethics serve as a guiding compass for its design principles, co-creating a holistic framework for regenerative living. Similarly, permacomputing is built upon 10 principles that encourage and raise awareness about more sustainable digital practices.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://permacomputing.net/principles/" target="_blank">https://permacomputing.net/principles/</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://aniket.foo/posts/20260505-netboot/" target="_blank">Diskless Linux boot using ZFS, iSCSI and PXE</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 100</span>
+                <span class="comments">💬 53</span>
+                <span class="by">👤 stereo-highway</span>
+            </div>
+            <div class="summary"><p>Diskless Linux boot using ZFS, iSCSI & PXE - Syncopated Pandemonium Diskless Linux boot using ZFS, iSCSI & PXE May 5, 2026·Aniket Motivation # * I wanted to test out the new Unsloth models for `Qwen3.6` and `Gemma4` on my gaming PC. `llama.cpp` on Windows is tedious to compile, and I have littered my Windows installation with too many toolchains already. Python venvs, Mingw, Cuda,...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://aniket.foo/posts/20260505-netboot/" target="_blank">https://aniket.foo/posts/20260505-netboot/</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://unsung.aresluna.org/photoshops-challenges-with-focus-pt-2/" target="_blank">Photoshop's challenges with focus, pt. 2</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 45</span>
+                <span class="comments">💬 16</span>
+                <span class="by">👤 frizlab</span>
+            </div>
+            <div class="summary"><p>First of all, correction for part 1 – the “focus mode” wasn’t removed. It was renamed to “quiet mode” and relocated to a different part of the UI, and I failed to spot it there. It’s still slightly perplexing, shiftily capitalized, and I doubt fully effective, but the effort is there: I also want to warn you there will be no more positive things I say in this post.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://unsung.aresluna.org/photoshops-challenges-with-focus-pt-2/" target="_blank">https://unsung.aresluna.org/photoshops-challenges-with-focus-pt-2/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://www.ticalc.org/programming/columns/83plus-bas/cherny/" target="_blank">Boris Cherny: TI-83 Plus Basic Programming Tutorial (2004)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 17</span>
+                <span class="comments">💬 10</span>
+                <span class="by">👤 suoken</span>
+            </div>
+            <div class="summary"><p>I will try to include these programs with this guide, as well as a few programs for your enjoyment. You are free to tinker with them as you wish. You may put them on the internet or sell them as long as: * You change them somehow * You give Boris Cherny credit I'd also like to thank a few people, who really helped me out with this tutorial: ~Ilya S~ ~Tom T~ For Beginners, I suggest reading this tutorial from the very beginning and trying...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.ticalc.org/programming/columns/83plus-bas/cherny/" target="_blank">https://www.ticalc.org/programming/columns/83plus-bas/cherny/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/" target="_blank">Vibe coding and agentic engineering are getting closer than I'd like</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 619</span>
+                <span class="comments">💬 672</span>
+                <span class="by">👤 e12e</span>
+            </div>
+            <div class="summary"><p>6th May 2026 I recently talked with Joseph Ruscio about AI coding tools for Heavybit’s High Leverage podcast: Ep. #9, The AI Coding Paradigm Shift with Simon Willison. Here are some of my highlights, including my disturbing realization that vibe coding and agentic engineering have started to converge in my own work.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/" target="_blank">https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.chevrolet.com/performance-parts/crate-engines/ecrate" target="_blank">Chevrolet Performance eCrate package (400v/200hp)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 53</span>
+                <span class="comments">💬 25</span>
+                <span class="by">👤 mindcrime</span>
+            </div>
+            <div class="summary"><p>You are currently viewing Chevrolet.com (United States). Close this window to stay here or choose another country to see vehicles and services specific to your location. Our new eCrate system offers builders a comprehensive kit that includes all of the primary elements for converting most conventional combustion engine vehicles into fully electric propulsion.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.chevrolet.com/performance-parts/crate-engines/ecrate" target="_blank">https://www.chevrolet.com/performance-parts/crate-engines/ecrate</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/" target="_blank">RSS feeds send me more traffic than Google</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 126</span>
+                <span class="comments">💬 25</span>
+                <span class="by">👤 SpyCoder77</span>
+            </div>
+            <div class="summary"><p>RSS Feeds Send Me More Traffic Than Google – Terence Eden’s Blog ![Image 2: Terence Eden. I recently read [Susam's blog post where they said that "most of the traffic to my personal website still comes from web feeds" - I wondered if that was true for my site. I've been writing this blog for a while.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/" target="_blank">https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-07</p>
+        </footer>
+    </div>
+</body>
+</html>

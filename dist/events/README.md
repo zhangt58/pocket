@@ -3,8 +3,8 @@
 Interactive map and data for 7 Michigan event regions.
 
 ## Files
-- `hn_events_map_2026-05-03.html` — Interactive Leaflet map (open in browser)
-- `events_final.json` — Raw event data (150 events)
+- `events_map_YYYY-MM-DD.html` — Interactive Leaflet map (open in browser)
+- `events_final.json` — Raw event data
 
 ## Regions
 | Region | Events | Source |

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-09</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/" target="_blank">A recent experience with ChatGPT 5.5 Pro</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 332</span>
+                <span class="comments">💬 186</span>
+                <span class="by">👤 _alternator_</span>
+            </div>
+            <div class="summary"><p>I have just made a fairly large revision as a result of ChatGPT 5.5 Pro, to which I am fortunate to have been given access, producing a piece of PhD-level research in an hour or so, with no serious mathematical input from me. The background is that, as has been widely reported, LLMs are now capable of solving research-level problems, and have managed to solve several of the Erdős problems listed on [Thomas Bloom’s wonderful...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/" target="_blank">https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-...</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users" target="_blank">Google broke reCAPTCHA for de-googled Android users</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1075</span>
+                <span class="comments">💬 371</span>
+                <span class="by">👤 anonymousiam</span>
+            </div>
+            <div class="summary"><p>The requirement forces Android users to run Google’s proprietary app framework version 25.41.30 or higher just to prove they’re human. When reCAPTCHA flags what it considers suspicious activity, it abandons the old image puzzles and demands you scan a QR code. That scan requires Play Services running in the background, communicating with Google’s servers.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users" target="_blank">https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://twitter.com/trq212/status/2052809885763747935" target="_blank">Using Claude Code: The unreasonable effectiveness of HTML</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 163</span>
+                <span class="comments">💬 89</span>
+                <span class="by">👤 pretext</span>
+            </div>
+            <div class="summary"><p>Thariq (@trq212) shares how Claude Code is particularly effective at generating and iterating on HTML, a format that AI models understand well. The post generated significant discussion with over 8,000 likes, 1,800 reposts, and 15,900+ bookmarks, suggesting broad community interest in using AI coding agents for web development.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://twitter.com/trq212/status/2052809885763747935" target="_blank">https://twitter.com/trq212/status/2052809885763747935</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://moq.dev/blog/webrtc-is-the-problem/" target="_blank">OpenAI’s WebRTC problem</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 333</span>
+                <span class="comments">💬 83</span>
+                <span class="by">👤 atgctg</span>
+            </div>
+            <div class="summary"><p>A former WebRTC engineer from Twitch and Discord argues that WebRTC is fundamentally the wrong protocol for voice AI applications. WebRTC aggressively drops audio packets to keep latency low, degrading prompt accuracy — the opposite of what you want when paying for expensive LLM inference. The protocol's real-time conferencing design works against AI voice agents where accuracy matters more than speed.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://moq.dev/blog/webrtc-is-the-problem/" target="_blank">https://moq.dev/blog/webrtc-is-the-problem/</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://martinfowler.com/bliki/MythicalManMonth.html" target="_blank">Mythical Man Month</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 169</span>
+                <span class="comments">💬 115</span>
+                <span class="by">👤 ingve</span>
+            </div>
+            <div class="summary"><p>After it was done he penned his thoughts in the book The Mythical Man-Month which became one of the most influential books on software development after its publication in 1975. Reading it in 2026, we'll find some of it outdated, but it also retains many lessons that are still relevant today....</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://martinfowler.com/bliki/MythicalManMonth.html" target="_blank">https://martinfowler.com/bliki/MythicalManMonth.html</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.bbc.com/news/articles/cp3pww9g0p5o" target="_blank">David Attenborough's 100th Birthday</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 658</span>
+                <span class="comments">💬 129</span>
+                <span class="by">👤 defrost</span>
+            </div>
+            <div class="summary"><p>The royal couple also shared photographs of Sir David, including one of him with a young Prince Charles and Princess Anne in 1958, in which he is introducing them to Cocky the cockatoo, from his BBC Zoo Quest TV series. The King and Queen wished him a very happy birthday, adding: "Enjoy your special celebration this evening!" The veteran broadcaster and environmentalist has said he...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.bbc.com/news/articles/cp3pww9g0p5o" target="_blank">https://www.bbc.com/news/articles/cp3pww9g0p5o</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://www.quantamagazine.org/what-causes-lightning-the-answer-keeps-getting-more-interesting-20260506/" target="_blank">What causes lightning? The answer keeps getting more interesting</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 63</span>
+                <span class="comments">💬 9</span>
+                <span class="by">👤 Tomte</span>
+            </div>
+            <div class="summary"><p>Physicists are using instruments originally designed to study violent cosmic events — like solar flares and supernovas — to investigate thunderstorm inner workings. Led by researchers like Joseph Dwyer, the field is experiencing a renaissance: lightning emits X-rays and gamma rays, and high-energy particle processes appear to play a critical role in lightning initiation. After centuries of study, scientists are closing in on how the jagged channel of a lightning bolt gets started.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.quantamagazine.org/what-causes-lightning-the-answer-keeps-getting-more-interesting-20260506/" target="_blank">https://www.quantamagazine.org/what-causes-lightning-the-answer-keeps-getting...</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://flow.byu.edu/posts/julia-c++" target="_blank">Making Julia as Fast as C++</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 8</span>
+                <span class="comments">💬 2</span>
+                <span class="by">👤 d_tr</span>
+            </div>
+            <div class="summary"><p>Flight, Optimization, and Wind Laboratory Publications © 2026. Making Julia as Fast as C++ 18 Apr 2019, Eduardo Alvarez Introduction The rumor says that Julia can achieve the same computing performance as any other compiled language like C++ and FORTRAN. After coding in Julia for the past two years I have definitely fell in love with its pythonic syntax, multiple dispatch, and MATLAB-like handiness in linear algebra, while being able to use...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://flow.byu.edu/posts/julia-c++" target="_blank">https://flow.byu.edu/posts/julia-c++</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.wiisfi.com/" target="_blank">Wi is Fi: Understanding Wi-Fi 4/5/6/6E/7/8 (802.11 n/AC/ax/be/bn)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 255</span>
+                <span class="comments">💬 62</span>
+                <span class="by">👤 homebrewer</span>
+            </div>
+            <div class="summary"><p>Clicking anywhere on a header takes you back to the index at the top of this paper. **This paper details how Wi-Fi works in the United States.** While most of this paper also applies to other countries, there will be subtle Wi-Fi differences supported channels, Tx power allowed, etc for other countries, for which Wikipedia has the details. ![Image 2: TX-Link Archer...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.wiisfi.com/" target="_blank">https://www.wiisfi.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures" target="_blank">AI is breaking two vulnerability cultures</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 343</span>
+                <span class="comments">💬 136</span>
+                <span class="by">👤 speckx</span>
+            </div>
+            <div class="summary"><p>In doing this he followed standard procedure for Linux, especially within networking: share the security impact with a closed list of Linux security engineers, while fixing the bug quietly and efficiently in the open. His goal was that with only the raw fix public, the knowledge that a serious vulnerability existed could be "embargoed": the people in a position to address it know, but they've agreed not to say anything for a few days. Someone...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures" target="_blank">https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-09</p>
+        </footer>
+    </div>
+</body>
+</html>

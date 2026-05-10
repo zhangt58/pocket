@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-10</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://blog.dochia.dev/blog/idempotency/" target="_blank">Idempotency Is Easy Until the Second Request Is Different</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 58</span>
+                <span class="comments">💬 12</span>
+                <span class="by">👤 ludovicianul</span>
+            </div>
+            <div class="summary"><p>For the happy path, it is even fairly small. The client sends: POST /payments Idempotency-Key: abc-123 Content-Type: application/json "accountId": "acc_1", "amount": "10.00", "currency": "EUR", "merchantReference": "invoice-7781" The server checks whether it has seen `abc-123`. If not, it creates the payment.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.dochia.dev/blog/idempotency/" target="_blank">https://blog.dochia.dev/blog/idempotency/</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://twitter.com/jarredsumner/status/2053047748191232310" target="_blank">Bun's experimental Rust rewrite hits 99.8% test compatibility on Linux x64 glibc</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 582</span>
+                <span class="comments">💬 547</span>
+                <span class="by">👤 heldrida</span>
+            </div>
+            <div class="summary"><p>Bun's experimental Rust rewrite has achieved 99.8% test compatibility on Linux x64 glibc, a major milestone for the JavaScript runtime's ongoing effort to rewrite its core in Rust. The near-perfect compatibility demonstrates significant progress toward improved performance, memory safety, and reliability over the original TypeScript implementation.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://twitter.com/jarredsumner/status/2053047748191232310" target="_blank">https://twitter.com/jarredsumner/status/2053047748191232310</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://www.amusingplanet.com/2026/05/emerich-juettner-one-dollar.html" target="_blank">The One Dollar Counterfeiter</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 145</span>
+                <span class="comments">💬 41</span>
+                <span class="by">👤 cainxinth</span>
+            </div>
+            <div class="summary"><p>In fiction as well as in real life, counterfeiters have always been portrayed as master forgers and artists who reproduced banknotes with astonishing precision. They were often shown as vast criminal enterprises and gangsters who destabilized economies with fake currency. Then there was Emerich Juettner, a frail old immigrant living alone in a shabby New York apartment, quietly printing one-dollar bills on a cheap hand press.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.amusingplanet.com/2026/05/emerich-juettner-one-dollar.html" target="_blank">https://www.amusingplanet.com/2026/05/emerich-juettner-one-dollar.html</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/imtomt/ymawky" target="_blank">Show HN: Building a web server in assembly to give my life (a lack of) meaning</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 294</span>
+                <span class="comments">💬 137</span>
+                <span class="by">👤 imtomt</span>
+            </div>
+            <div class="summary"><p>ymawky (pronounced "yuh maw kee") is a web server written entirely in ARM64 assembly — syscall-only, no libc, fork-per-connection, written by hand. Developed for macOS on Apple Silicon, it serves static files and handles custom error pages. The author built it as a personal project to find meaning through low-level systems programming.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/imtomt/ymawky" target="_blank">https://github.com/imtomt/ymawky</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://lemire.me/blog/2025/12/04/we-see-something-that-works-and-then-we-understand-it/" target="_blank">We see something that works, and then we understand it</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 106</span>
+                <span class="comments">💬 32</span>
+                <span class="by">👤 surprisetalk</span>
+            </div>
+            <div class="summary"><p>Suppose that `x` is a variable of an unsigned type. In C/C++, it could be of type `size_t` for example. You have an expression like `6 * x` and you want to know whether `6 * x` overflows.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://lemire.me/blog/2025/12/04/we-see-something-that-works-and-then-we-understand-it/" target="_blank">https://lemire.me/blog/2025/12/04/we-see-something-that-works-and-then-we-und...</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.casio.com/jp/basic-calculators/premium/en-s100x-jc1-u/" target="_blank">Casio S100X Japanese Lacquer Edition (JP Page Only)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 149</span>
+                <span class="comments">💬 54</span>
+                <span class="by">👤 dr_kiszonka</span>
+            </div>
+            <div class="summary"><p>The Casio S100X Japanese Lacquer Edition is a premium version of Casio's flagship scientific calculator, featuring traditional Japanese lacquer (urushi) finish on the back panel. It combines high-precision computing with artisanal Japanese craftsmanship, available on a Japan-only page.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.casio.com/jp/basic-calculators/premium/en-s100x-jc1-u/" target="_blank">https://www.casio.com/jp/basic-calculators/premium/en-s100x-jc1-u/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/" target="_blank">Gemini API File Search is now multimodal</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 100</span>
+                <span class="comments">💬 14</span>
+                <span class="by">👤 gmays</span>
+            </div>
+            <div class="summary"><p>Google has expanded the Gemini API File Search feature to support multimodal retrieval — it can now search through images, audio, and video files in addition to text documents. This enables developers to build richer RAG applications that query content across multiple modalities.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/" target="_blank">https://blog.google/innovation-and-ai/technology/developers-tools/expanded-ge...</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/" target="_blank">Internet Archive Switzerland</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 616</span>
+                <span class="comments">💬 101</span>
+                <span class="by">👤 hggh</span>
+            </div>
+            <div class="summary"><p>Today, that mission continues to grow with an exciting new chapter: the launch of the **Internet Archive Switzerland**, a non-profit foundation based in St. The **Internet Archive Switzerland**, online at https://internetarchive.ch/, is a newly-formed Swiss non-profit foundation that will operate independently within its national context. Its efforts will initially focus on...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/" target="_blank">https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-...</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://chrismorgan.info/no-query-strings" target="_blank">I’ve banned query strings</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 424</span>
+                <span class="comments">💬 227</span>
+                <span class="by">👤 susam</span>
+            </div>
+            <div class="summary"><p>🗓️2026-05-08 • Tagged/web, /opinions"), /meta=only") I don’t like people adding tracking stuff to URLs. Still less do I like people adding tracking stuff to _my_ URLs. If I wanted to know I’d look at the `Referer` header; and if...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://chrismorgan.info/no-query-strings" target="_blank">https://chrismorgan.info/no-query-strings</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://www.waltonfamilyfoundation.org/about-us/newsroom/gen-z-resentment-toward-ai-grows-as-adoption-stagnates-and-workplace-fears-mount" target="_blank">Gen Z Resentment Toward AI Grows as Adoption Stagnates and Workplace Fears Mount</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 43</span>
+                <span class="comments">💬 23</span>
+                <span class="by">👤 mgh2</span>
+            </div>
+            <div class="summary"><p>Walton-GSV-Gallup survey finds young people are feeling angrier about AI, cautious about integrating AI in the classroom **WASHINGTON, D.C., April 9, 2026 —**Gen Z is growing increasingly angry about the role of artificial intelligence in their lives. A new **Gallup survey** released today by the Walton Family Foundation and GSV Ventures shows that a generation once seen as AI’s...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.waltonfamilyfoundation.org/about-us/newsroom/gen-z-resentment-toward-ai-grows-as-adoption-stagnates-and-workplace-fears-mount" target="_blank">https://www.waltonfamilyfoundation.org/about-us/newsroom/gen-z-resentment-tow...</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-10</p>
+        </footer>
+    </div>
+</body>
+</html>

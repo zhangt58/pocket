@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-11</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://grapheneos.social/@GrapheneOS/116550899908879585" target="_blank">Hardware Attestation as Monopoly Enabler</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1616</span>
+                <span class="comments">💬 527</span>
+                <span class="by">👤 ChuckMcM</span>
+            </div>
+            <div class="summary"><p>Apple and Google are gradually expanding their use of hardware-based attestation. They're convincing a growing number of services to adopt it. Google's Play Integrity API and Apple's App Attest API are very similar.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://grapheneos.social/@GrapheneOS/116550899908879585" target="_blank">https://grapheneos.social/@GrapheneOS/116550899908879585</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://unix.foo/posts/local-ai-needs-to-be-norm/" target="_blank">Local AI needs to be the norm</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1211</span>
+                <span class="comments">💬 509</span>
+                <span class="by">👤 cylo</span>
+            </div>
+            <div class="summary"><p>One of the current trends in modern software is for developers to slap an API call to OpenAI or Anthropic for features within their app. Reasonable people can quibble with whether those features are actually bringing value to users, but what I want to discuss is the fundamental concept of taking on a dependency to a cloud hosted AI model for applications. This laziness is creating a generation of software that is fragile, invades your...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://unix.foo/posts/local-ai-needs-to-be-norm/" target="_blank">https://unix.foo/posts/local-ai-needs-to-be-norm/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/" target="_blank">I'm going back to writing code by hand</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 408</span>
+                <span class="comments">💬 200</span>
+                <span class="by">👤 dropbox_miner</span>
+            </div>
+            <div class="summary"><p>The author follows up on their previous HN post about building software without AI, explaining that they're going back to writing code entirely by hand. What started as an investigation into "how far I can get by keeping myself completely out of the loop" has become a full dev-log documenting the experience of building real software manually in the age of AI-assisted coding.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/" target="_blank">https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://www.openculture.com/2024/10/the-greatest-shot-in-television.html" target="_blank">The greatest shot in television: James Burke had one chance to nail this scene (2024)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 190</span>
+                <span class="comments">💬 83</span>
+                <span class="by">👤 susam</span>
+            </div>
+            <div class="summary"><p>What you would­n’t know unless you saw it in con­text is that it also comes as the final, cul­mi­nat­ing moment of a 50-minute explana­to­ry jour­ney that begins with cred­it cards, then makes its way through the inven­tion of every­thing from a knight’s armor to canned food to air con­di­tion­ing to the Sat­urn V rock­et, which put man on the moon. For­mal­ly speak­ing, this was a typ­i­cal episode of...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.openculture.com/2024/10/the-greatest-shot-in-television.html" target="_blank">https://www.openculture.com/2024/10/the-greatest-shot-in-television.html</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://jola.dev/posts/running-local-models-on-m4" target="_blank">Running local models on an M4 with 24GB memory</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 334</span>
+                <span class="comments">💬 106</span>
+                <span class="by">👤 shintoist</span>
+            </div>
+            <div class="summary"><p>The author shares their experience experimenting with running local AI models on an M4 Mac with 24GB of memory. They describe finding a workable setup for basic tasks, research, and planning — not SOTA quality, but the excitement of having a self-contained local model that can handle everyday work more than compensates for the lower performance.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://jola.dev/posts/running-local-models-on-m4" target="_blank">https://jola.dev/posts/running-local-models-on-m4</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://tautme.github.io/phone-sensors/accel-tuner.html" target="_blank">Guitar tuner that uses phone accelerometer</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 26</span>
+                <span class="comments">💬 11</span>
+                <span class="by">👤 adm4</span>
+            </div>
+            <div class="summary"><p>A clever web-based guitar tuner that uses your phone's accelerometer instead of its microphone. By pressing the phone firmly against the guitar body and plucking a string, the app detects vibrations through the accelerometer, showing raw axis traces and combined magnitude. Pitch is automatically detected from the strongest axis and alias-corrected to the actual string frequency — a creative sensor hack.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://tautme.github.io/phone-sensors/accel-tuner.html" target="_blank">https://tautme.github.io/phone-sensors/accel-tuner.html</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/" target="_blank">Obsidian plugin was abused to deploy a remote access trojan</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 226</span>
+                <span class="comments">💬 114</span>
+                <span class="by">👤 cmbailey</span>
+            </div>
+            <div class="summary"><p>Executive Summary Security researchers have identified a highly targeted social engineering campaign (REF6598) that weaponizes the **Obsidian** note-taking application to deliver a previously undocumented Remote Access Trojan (RAT) named **PHANTOMPULSE**. The campaign targets individuals in the financial and cryptocurrency sectors on both Windows and macOS. Attackers use platforms like LinkedIn and Telegram to build...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/" target="_blank">https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-dep...</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://ratty-term.org/" target="_blank">Ratty – A terminal emulator with inline 3D graphics</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 7</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 orhunp_</span>
+            </div>
+            <div class="summary"><p>Ratty is a GPU-rendered terminal emulator that supports inline 3D graphics, allowing you to embed interactive 3D content directly in your terminal. Created by Orhun Parmaksız, it features a playful spinning rat cursor and demonstrates how modern GPUs can bring rich visual experiences to command-line workflows — blending terminal functionality with WebGL-powered graphics.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://ratty-term.org/" target="_blank">https://ratty-term.org/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs" target="_blank">An AI coding agent, used to write code, needs to reduce your maintenance costs</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 178</span>
+                <span class="comments">💬 43</span>
+                <span class="by">👤 cratermoon</span>
+            </div>
+            <div class="summary"><p>James Shore argues that AI coding agents must reduce maintenance costs proportionally to their speed gains. If your code output doubles, maintenance costs should halve; otherwise you're trading a temporary speed boost for permanent technical debt. He illustrates how maintenance — bug fixes, cleanup, dependency upgrades — inevitably consumes more and more of a team's time over years, and why AI-generated code that's harder to maintain ultimately makes teams less productive long-term.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs" target="_blank">https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-mainten...</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html" target="_blank">Incident Report: CVE-2024-YIKES</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 551</span>
+                <span class="comments">💬 140</span>
+                <span class="by">👤 miniBill</span>
+            </div>
+            <div class="summary"><p>Please see previous 14 incident reports for details on how seriously. Summary A compromised dependency in the JavaScript ecosystem led to credential theft, which enabled a supply chain attack on a Rust compression library, which was vendored into a Python build tool, which shipped malware to approximately 4 million developers before being inadvertently patched by an unrelated cryptocurrency mining worm. Timeline **Day 1, 03:14 UTC** — Marcus...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html" target="_blank">https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-11</p>
+        </footer>
+    </div>
+</body>
+</html>

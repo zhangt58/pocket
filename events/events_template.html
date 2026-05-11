@@ -697,7 +697,276 @@
     </div>
 
     <script>
-    const events = {{EVENTS_JSON}};.toLowerCase()], parseInt(match[2]));
+    const events = {{EVENTS_JSON}};
+    // Category color palette — cycles through nice colors for unknown categories
+    const colorPalette = [
+        '#22c55e', '#f97316', '#3b82f6', '#10b981', '#a855f7',
+        '#eab308', '#06b6d4', '#ec4899', '#84cc16', '#f43f5e'
+    ];
+
+    // Known category defaults (emoji + display label) — new categories get auto-generated
+    const categoryDefaults = {
+        outdoor:     { emoji: '🌳', label: 'Outdoor' },
+        festival:    { emoji: '🎪', label: 'Festival' },
+        library:     { emoji: '📚', label: 'Library' },
+        nature:      { emoji: '🦎', label: 'Nature' },
+        educational: { emoji: '🎓', label: 'Educational' },
+        free:        { emoji: '🎉', label: 'Free Entry' },
+        starwars:    { emoji: '⚔️', label: 'Star Wars' },
+        sport:       { emoji: '🏊', label: 'Sports' }
+    };
+
+    // Derive categories from actual events
+    const categories = [...new Set(events.map(e => e.category || 'Other'))].sort();
+    const categoryColors = {};
+    const categoryEmojis = {};
+    const categoryLabels = {};
+    categories.forEach((cat, i) => {
+        categoryColors[cat] = colorPalette[i % colorPalette.length];
+        const def = categoryDefaults[cat];
+        if (def) {
+            categoryEmojis[cat] = def.emoji;
+            categoryLabels[cat] = def.label;
+        } else {
+            categoryEmojis[cat] = '📌';
+            categoryLabels[cat] = cat.charAt(0).toUpperCase() + cat.slice(1);
+        }
+    });
+
+    // Count events per category
+    const catCounts = {};
+    events.forEach(e => {
+        const cat = e.category || 'Other';
+        catCounts[cat] = (catCounts[cat] || 0) + 1;
+    });
+
+    // Build category filter buttons dynamically with counts
+    const catFilterBar = document.getElementById('category-filters');
+    catFilterBar.innerHTML = '<button class="filter-btn active" data-filter="all"><span class="emoji">📋</span>All <span class="filter-count">(' + events.length + ')</span></button>' +
+        categories.map(cat =>
+            `<button class="filter-btn" data-filter="${cat}"><span class="emoji">${categoryEmojis[cat]}</span>${categoryLabels[cat]} <span class="filter-count">(${catCounts[cat] || 0})</span></button>`
+        ).join('');
+
+    // Reusable tile layer reference
+    const baseTile = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 19
+    });
+
+    // Initialize map centered on Metro Detroit
+    const map = L.map('map', {
+        zoomControl: true
+    }).setView([43.5, -84.5], 7);
+
+    baseTile.addTo(map);
+
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const darkTiles = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+    const lightTiles = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('map-theme', theme);
+        baseTile.setUrl(theme === 'light' ? lightTiles : darkTiles);
+    }
+
+    const savedTheme = localStorage.getItem('map-theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else {
+        setTheme('light');
+    }
+
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+        if (!localStorage.getItem('map-theme')) {
+            setTheme(e.matches ? 'light' : 'dark');
+        }
+    });
+
+    themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    // Create custom icon
+    function createIcon(category) {
+        const color = categoryColors[category] || '#60a5fa';
+        return L.divIcon({
+            className: 'custom-marker',
+            html: `<div style="
+                width: 14px; height: 14px;
+                background: ${color};
+                border: 2px solid #fff;
+                border-radius: 50%;
+                box-shadow: 0 1px 6px rgba(0,0,0,0.35);
+            "></div>`,
+            iconSize: [14, 14],
+            iconAnchor: [7, 7],
+            popupAnchor: [0, -10]
+        });
+    }
+
+    // Store markers
+    const markers = [];
+    const sidebar = document.getElementById('sidebar');
+    const eventList = document.getElementById('event-list');
+
+    // Add events to map
+    events.forEach((event, idx) => {
+        if (!event.lat || !event.lon) return;
+
+        const marker = L.marker([event.lat, event.lon], {
+            icon: createIcon(event.category)
+        }).addTo(map);
+
+        const popupContent = `
+            <div class="popup-title">${event.title}</div>
+            <div class="popup-detail">📍 ${event.location}</div>
+            <div class="popup-detail">⏰ ${event.time}</div>
+            <div class="popup-detail">📅 ${event.date}</div>
+            <a class="popup-link" href="${event.url}" target="_blank">Learn More →</a>
+        `;
+
+        marker.bindPopup(popupContent, { maxWidth: 280 });
+        markers.push({ marker, event, idx });
+
+        // Add to sidebar
+        const card = document.createElement('div');
+        card.className = 'event-card';
+        card.dataset.category = event.category;
+        card.dataset.site = event.site || '';
+        card.innerHTML = `
+            <div class="event-title">${categoryEmojis[event.category] || '📌'} ${event.title}</div>
+            <div class="event-location">📍 ${event.location}</div>
+            <div class="event-time">⏰ ${event.time} &bull; 📅 ${event.date}</div>
+            <div style="display:flex;gap:4px;margin-top:6px;flex-wrap:wrap">
+                <span class="event-tag tag-${event.category}">${event.category}</span>
+                <span class="event-tag tag-site" style="background:rgba(16,185,129,0.15);color:#34d399;font-size:0.6rem">${event.site || ''}</span>
+            </div>
+        `;
+        card.dataset.eventDate = event.date;
+        card.addEventListener('click', () => {
+            map.flyTo([event.lat, event.lon], 14, { duration: 0.8 });
+            marker.openPopup();
+        });
+        eventList.appendChild(card);
+    });
+
+    // Fit map to show all markers
+    const group = L.featureGroup(markers.map(m => m.marker));
+    map.fitBounds(group.getBounds().pad(0.08));
+
+    // Category filter functionality
+    let activeFilter = 'all';
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.dataset.filter;
+            activeFilter = filter;
+
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            let count = 0;
+            markers.forEach(({ marker, event }) => {
+                const show = filter === 'all' || event.category === filter;
+                if (show) {
+                    marker.addTo(map);
+                    count++;
+                } else {
+                    map.removeLayer(marker);
+                }
+            });
+
+            document.querySelectorAll('.event-card').forEach(card => {
+                const show = filter === 'all' || card.dataset.category === filter;
+                const showSite = activeSite === 'all' || card.dataset.site === activeSite;
+                card.style.display = (show && showSite) ? 'block' : 'none';
+            });
+
+            document.getElementById('count').textContent = `${count} event${count !== 1 ? 's' : ''}`;
+
+            if (count > 0) {
+                const visible = markers.filter(({ marker, event }) =>
+                    filter === 'all' || event.category === filter
+                );
+                if (visible.length > 1) {
+                    const bounds = L.featureGroup(visible.map(m => m.marker)).getBounds();
+                    map.fitBounds(bounds.pad(0.1));
+                }
+            }
+        });
+    });
+
+
+    // Site filter functionality
+    let activeSite = 'all';
+    const siteBtns = document.querySelectorAll('.site-btn');
+    siteBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const site = btn.dataset.site;
+            activeSite = site;
+
+            siteBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            let count = 0;
+            markers.forEach(({ marker, event }) => {
+                const show = site === 'all' || (event.site && event.site === site);
+                if (show) {
+                    marker.addTo(map);
+                    count++;
+                } else {
+                    map.removeLayer(marker);
+                }
+            });
+
+            document.querySelectorAll('.event-card').forEach(card => {
+                const showCat = activeFilter === 'all' || card.dataset.category === activeFilter;
+                const showSite = site === 'all' || card.dataset.site === site;
+                card.style.display = (showCat && showSite) ? 'block' : 'none';
+            });
+
+            document.getElementById('count').textContent = `${count} event${count !== 1 ? 's' : ''}`;
+
+            if (count > 0) {
+                const visible = markers.filter(({ marker, event }) => {
+                    const matchCat = activeFilter === 'all' || event.category === activeFilter;
+                    const matchSite = site === 'all' || event.site === site;
+                    return matchCat && matchSite;
+                });
+                if (visible.length > 1) {
+                    const bounds = L.featureGroup(visible.map(m => m.marker)).getBounds();
+                    map.fitBounds(bounds.pad(0.1));
+                }
+            }
+        });
+    });
+
+
+
+    // Search functionality
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', applyFilters);
+
+    // Date parser — handles "May 7, 2026", "May 7", "07 MAY", "MAY 7"
+    function parseDate(dateStr) {
+        const months = {
+            'january': 0, 'jan': 0, 'february': 1, 'feb': 1, 'march': 2, 'mar': 2,
+            'april': 3, 'apr': 3, 'may': 4, 'june': 5, 'jun': 5,
+            'july': 6, 'jul': 6, 'august': 7, 'aug': 7,
+            'september': 8, 'sep': 8, 'october': 9, 'oct': 9,
+            'november': 10, 'nov': 10, 'december': 11, 'dec': 11
+        };
+        const year = calendarYear; // from page subtitle, fallback set below
+        const weekdays = {
+            'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3,
+            'thursday': 4, 'friday': 5, 'saturday': 6
+        };
+        // "May 7, 2026"
+        let match = dateStr.match(/(\w+)\s+(\d+),?\s*(\d{4})/);
+        if (match) return new Date(parseInt(match[3]), months[match[1].toLowerCase()], parseInt(match[2]));
         // "May 7"
         match = dateStr.match(/(\w+)\s+(\d+)/);
         if (match && match[1].toLowerCase() in months) return new Date(year, months[match[1].toLowerCase()], parseInt(match[2]));

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-13</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://arxiv.org/abs/2605.08419" target="_blank">Deterministic Fully-Static Whole-Binary Translation Without Heuristics</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 199</span>
+                <span class="comments">💬 48</span>
+                <span class="by">👤 matt_d</span>
+            </div>
+            <div class="summary"><p>Unlike existing systems, which rely on heuristics or runtime fallbacks to handle code-versus-data decoding errors, Elevator considers all possible interpretations of every byte and produces a separate translation for each feasible one ahead of time. Any byte may be interpreted as data, an opcode, or an opcode argument; we generate separate control flow paths for all interpretations, pruning only those leading to abnormal termination. >...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://arxiv.org/abs/2605.08419" target="_blank">https://arxiv.org/abs/2605.08419</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/FULU-Foundation/OrcaSlicer-bambulab" target="_blank">Restore full BambuNetwork support for Bambu Lab printers</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 457</span>
+                <span class="comments">💬 193</span>
+                <span class="by">👤 Murfalo</span>
+            </div>
+            <div class="summary"><p>A fork of OrcaSlicer that restores full BambuNetwork support for Bambu Lab printers. Unlike the stock OrcaSlicer which limits connectivity to LAN only, this version works over the internet through BambuNetwork with full functionality for normal use and printing. Windows requires WSL 2 for installation, while Linux supports normal installation.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/FULU-Foundation/OrcaSlicer-bambulab" target="_blank">https://github.com/FULU-Foundation/OrcaSlicer-bambulab</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://googlebook.google/" target="_blank">Googlebook</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 799</span>
+                <span class="comments">💬 1309</span>
+                <span class="by">👤 tambourine_man</span>
+            </div>
+            <div class="summary"><p>Google has announced "Googlebook," a new laptop line designed around Gemini AI intelligence, launching Fall 2026. Key features include Magic Pointer for AI-assisted navigation, Create My Widget for custom AI widgets, and seamless Android phone integration with Cast My Apps and Quick Access via Files by Google. The laptop emphasizes a featherweight design with heavyweight power.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://googlebook.google/" target="_blank">https://googlebook.google/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/cactus-compute/needle" target="_blank">Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 481</span>
+                <span class="comments">💬 154</span>
+                <span class="by">👤 HenryNdubuaku</span>
+            </div>
+            <div class="summary"><p>We distilled Gemini 3.1 into a 26M parameter "Simple Attention Network" that you can even finetune locally on your Mac/PC. In production, Needle runs on Cactus at 6000 toks/sec prefill and 1200 decode speed. Weights are fully open on HuggingFace, as well as the dataset generation. Architecture: d=512, 8H/4KV, BPE=8192, focused on tool calling tasks.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/cactus-compute/needle" target="_blank">https://github.com/cactus-compute/needle</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://www.sciencedaily.com/releases/2026/05/260510030950.htm" target="_blank">New stainless steel can survive conditions for hydrogen production in seawater</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 62</span>
+                <span class="comments">💬 24</span>
+                <span class="by">👤 HardwareLust</span>
+            </div>
+            <div class="summary"><p>Science News from research organizations “Cannot be explained” – New ultra stainless steel stuns researchers Date:May 10, 2026 Source:The University of Hong Kong Summary:A team at the University of Hong Kong has developed a new “super steel” that can survive the harsh conditions needed to make green hydrogen from seawater. The material uses an unexpected double-protection mechanism that resists corrosion far better than conventional stainless...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.sciencedaily.com/releases/2026/05/260510030950.htm" target="_blank">https://www.sciencedaily.com/releases/2026/05/260510030950.htm</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://lpar.ATH0.com/posts/2026/05/the-vi-family/" target="_blank">The vi family</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 183</span>
+                <span class="comments">💬 109</span>
+                <span class="by">👤 hggh</span>
+            </div>
+            <div class="summary"><p>Polls of Linux users suggest that `vi` family editors are the most popular. The `vi` editor is a terminal-based text editor which dates back to 1977. If you’re wondering why so many people would choose to use a fifty year old text editor with a notoriously steep initial learning curve, it’s because once you learn it, you can be ruthlessly efficient with your editing.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://lpar.ATH0.com/posts/2026/05/the-vi-family/" target="_blank">https://lpar.ATH0.com/posts/2026/05/the-vi-family/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu/" target="_blank">SecurityBaseline.eu</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 165</span>
+                <span class="comments">💬 78</span>
+                <span class="by">👤 aequitas</span>
+            </div>
+            <div class="summary"><p>It is a spin-off from the Dutch “Basisbeveiliging”, which has monitored baseline security for over a decade and is part of governmental policy. Three months ago we sent tens of thousands of e-mails to European governments indicating the new site would launch, giving them time to review the...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu/" target="_blank">https://internetcleanup.foundation/2026/05/european-governments-3000-tracking...</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://acesounderglass.com/2025/11/15/the-boring-part-of-bell-labs/" target="_blank">The Boring Part of Bell Labs (2025)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 13</span>
+                <span class="comments">💬 1</span>
+                <span class="by">👤 surprisetalk</span>
+            </div>
+            <div class="summary"><p>The Boring Part of Bell Labs – Aceso Under Glass What if we understood more things? You see, my dad worked at Bell Labs, and he has not done a single cool thing in his life except create me and bring a telescope to my third grade class. Nothing he was involved with could ever be cool, especially after the standard set by his grandfather who is allegedly on a patent for the television.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://acesounderglass.com/2025/11/15/the-boring-part-of-bell-labs/" target="_blank">https://acesounderglass.com/2025/11/15/the-boring-part-of-bell-labs/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://typesetinthefuture.com/2016/02/18/futuristic/" target="_blank">How to make your text look futuristic (2016)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 367</span>
+                <span class="comments">💬 48</span>
+                <span class="by">👤 _vaporwave_</span>
+            </div>
+            <div class="summary"><p>But if Eurostile isn’t enough, there’s more you can do to clarify your movie’s timeframe.I’d like to introduce you to six easy rules that are pretty much guaranteed to position your text firmly in the FUTURE. We’ll start with some simple sans-serif text, such as this randomly chosen word in Eurostile Bold. So far, so 2016: **Rule 1:**First, let’s add an italic slant.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://typesetinthefuture.com/2016/02/18/futuristic/" target="_blank">https://typesetinthefuture.com/2016/02/18/futuristic/</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise" target="_blank">Why senior developers fail to communicate their expertise</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 599</span>
+                <span class="comments">💬 265</span>
+                <span class="by">👤 nilirl</span>
+            </div>
+            <div class="summary"><p>We won’t need developers anymore to slow down the progress of a business.” If you’re a senior developer and you think this is true, I’m somewhat suspicious of your expertise (I’ll explain why; I’m not needlessly antagonistic). But if you’re _not_ a senior developer and you think this is true, I think you’re probably right. Copywriting is, in its essence, about matching a message to an audience.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise" target="_blank">https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-seni...</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-13</p>
+        </footer>
+    </div>
+</body>
+</html>

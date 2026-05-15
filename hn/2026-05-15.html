@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-15</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://explorer.samismith.com/" target="_blank">Explore Wikipedia Like a Windows XP Desktop</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 96</span>
+                <span class="comments">💬 26</span>
+                <span class="by">👤 smusamashah</span>
+            </div>
+            <div class="summary"><p>Wikipedia File Explorer Wikipedia Media Geofile Explorer Readme.txt Media Viewer Readme.txt - Notepad ============================================================ explorer.samismith.com ============================================================ ------------- Explore all of Wikipedia categories as folders, articles should open up as documents. Everything on wikipedia should be accessible unless it's one of the 100 or so pages that don't have...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://explorer.samismith.com/" target="_blank">https://explorer.samismith.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/Andyyyy64/whichllm" target="_blank">Show HN: Find the best local LLM for your hardware, ranked by benchmarks</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 38</span>
+                <span class="comments">💬 6</span>
+                <span class="by">👤 andyyyy64</span>
+            </div>
+            <div class="summary"><p>A CLI tool that auto-detects your GPU/CPU/RAM and ranks the top models from HuggingFace that fit your system. It ranks by real, recency-aware benchmarks — not parameter count — so a 27B model that scores higher on real benchmarks beats a 32B model that just barely fits. Supports a single-command install and outputs ranked results with tokens/second and benchmark scores.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/Andyyyy64/whichllm" target="_blank">https://github.com/Andyyyy64/whichllm</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/" target="_blank">Removing the modem and GPS from my 2024 RAV4 hybrid</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 888</span>
+                <span class="comments">💬 462</span>
+                <span class="by">👤 arkadiyt</span>
+            </div>
+            <div class="summary"><p>Cars have inward- and outward-facing cameras. It’s all enabled by default with difficult or meaningless opt-outs, and your data is monetized through brokers like LexisNexis or Verisk. The Hacker News discussion about this article is what prompted this blog post Now that we’re sufficiently motivated, what can we do about it?.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/" target="_blank">https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/GlycemicGPT/GlycemicGPT" target="_blank">Show HN: GlycemicGPT – Open-source AI-powered diabetes management</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 33</span>
+                <span class="comments">💬 16</span>
+                <span class="by">👤 jlengelbrecht</span>
+            </div>
+            <div class="summary"><p>An open-source diabetes management platform with AI-powered analysis at its core. It connects to continuous glucose monitors and insulin pumps, providing AI-generated insights and suggestions. The project is under active development (alpha software) and explicitly warns it is not a replacement for professional medical care. Features include a web app, mobile apps, and a plugin system for extensibility.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/GlycemicGPT/GlycemicGPT" target="_blank">https://github.com/GlycemicGPT/GlycemicGPT</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://relax.ai/docs" target="_blank">UK sovereign LLM inference</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 59</span>
+                <span class="comments">💬 52</span>
+                <span class="by">👤 benjamintnorris</span>
+            </div>
+            <div class="summary"><p>Developers can get started quickly with RelaxAI’s SDKs or continue using OpenAI’s official Python and Node.js libraries. This documentation outlines the available endpoints, required request parameters, and expected response structures for effective API interaction.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://relax.ai/docs" target="_blank">https://relax.ai/docs</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.bbc.com/news/articles/c2l2j1lxdk5o" target="_blank">UK government replaces Palantir software with internally-built refugee system</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 250</span>
+                <span class="comments">💬 84</span>
+                <span class="by">👤 cdrnsf</span>
+            </div>
+            <div class="summary"><p>In the front garden a yellow and blue ukrainian flag has been erected. The Ministry of Housing, Communities and Local Government (MHCLG) said its new system was "more flexible" and could meet "high standards" of security. Palantir said it was proud to have supported the scheme and "stood up a solution in just nine days, which enabled the safe resettlement of more than 157,000 refugees".</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.bbc.com/news/articles/c2l2j1lxdk5o" target="_blank">https://www.bbc.com/news/articles/c2l2j1lxdk5o</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://hghalebi.github.io/category_theory_transformer_rs/" target="_blank">Building ML framework with Rust and Category Theory</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 39</span>
+                <span class="comments">💬 12</span>
+                <span class="by">👤 adamnemecek</span>
+            </div>
+            <div class="summary"><p>Keyboard shortcuts Press ← or → to navigate between chapters Press S or / to search in the book Press ? to show this help Press Esc to hide this help 1. Cover 1.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://hghalebi.github.io/category_theory_transformer_rs/" target="_blank">https://hghalebi.github.io/category_theory_transformer_rs/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://antirez.com/news/165" target="_blank">A few words on DS4</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 330</span>
+                <span class="comments">💬 132</span>
+                <span class="by">👤 caust1c</span>
+            </div>
+            <div class="summary"><p>The last week was funny and also tiring, I worked 14 hours per day on average. My normal average is 4/6 since early Redis times, but the first few months of Redis were like that. Is this a project that starts and ends with DeepSeek v4 Flash?.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://antirez.com/news/165" target="_blank">https://antirez.com/news/165</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.tristandc.com/government/news-2026-05-11-airdrop.php" target="_blank">Details of the Daring Airdrop at Tristan Da Cunha</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 155</span>
+                <span class="comments">💬 42</span>
+                <span class="by">👤 kspacewalk2</span>
+            </div>
+            <div class="summary"><p>• Other News... * Other News... Details of the Daring Airdrop at Tristan da Cunha, 9th May 2026 Report compiled by Peter Millington.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.tristandc.com/government/news-2026-05-11-airdrop.php" target="_blank">https://www.tristandc.com/government/news-2026-05-11-airdrop.php</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/" target="_blank">RTX 5090 and M4 MacBook Air: Can It Game?</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 603</span>
+                <span class="comments">💬 145</span>
+                <span class="by">👤 allenleee</span>
+            </div>
+            <div class="summary"><p>What if you could strap a full desktop GPU to your MacBook Air? Just a quick FTC required note: When you buy through my links, I may earn a commission. Never tell me the odds As much as I hate to admit it, step one in most of my projects now is to ask AI about it.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/" target="_blank">https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-15</p>
+        </footer>
+    </div>
+</body>
+</html>

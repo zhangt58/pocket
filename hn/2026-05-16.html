@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-16</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://arxiv.org/abs/2605.12357" target="_blank">Δ-Mem: Efficient Online Memory for Large Language Models</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 32</span>
+                <span class="comments">💬 6</span>
+                <span class="by">👤 44za12</span>
+            </div>
+            <div class="summary"><p>Simply expanding the context window is costly and often fails to ensure effective context utilization. We propose \delta-mem, a lightweight memory mechanism that augments a frozen full-attention backbone with a compact online state of associative memory. \delta-mem compresses past information into a fixed-size state matrix updated by delta-rule learning, and uses its readout to generate low-rank corrections to the backbone's attention...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://arxiv.org/abs/2605.12357" target="_blank">https://arxiv.org/abs/2605.12357</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://futhark-lang.org/examples.html" target="_blank">Futhark by Example</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 15</span>
+                <span class="comments">💬 2</span>
+                <span class="by">👤 tosh</span>
+            </div>
+            <div class="summary"><p>The following is a hands-on introduction to Futhark through a collection of commented programs, listed in roughly increasing order of complexity. You can load the programs into the interpreter to experiment with them. For a conventional introduction to the language, Parallel Programming in Futhark may be a better choice.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://futhark-lang.org/examples.html" target="_blank">https://futhark-lang.org/examples.html</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg – keeps getting better</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 960</span>
+                <span class="comments">💬 202</span>
+                <span class="by">👤 JSeiko</span>
+            </div>
+            <div class="summary"><p>Free eBooks | Project Gutenberg Project Gutenberg is a library of over 75,000 free eBooks Choose among free epub and Kindle eBooks, download them or read them online. You will find the world's great literature here, with focus on older works for which U.S. Thousands of volunteers digitized and diligently proofread the eBooks, for you to enjoy.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.gutenberg.org/" target="_blank">https://www.gutenberg.org/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://user8.bearblog.dev/the-world-is-too-complicated/" target="_blank">We've made the world too complicated</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 19</span>
+                <span class="comments">💬 14</span>
+                <span class="by">👤 James72689</span>
+            </div>
+            <div class="summary"><p>We've made the world too complicated | User8 User8 We've made the world too complicated _16 May, 2026_ !Image 1: https://upload.wikimedia.org/wikipedia/commons/d/d0/Wild_Jungle_%2842249210%29.jpeg We've made the world too complicated. I'm writing this with technology I will _never_ fully understand in a building with rooms I...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://user8.bearblog.dev/the-world-is-too-complicated/" target="_blank">https://user8.bearblog.dev/the-world-is-too-complicated/</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://kabir.au/blog/the-ctf-scene-is-dead" target="_blank">Frontier AI has broken the open CTF format</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 153</span>
+                <span class="comments">💬 134</span>
+                <span class="by">👤 frays</span>
+            </div>
+            <div class="summary"><p>Frontier AI has broken the open CTF format. The scoreboard does not measure human skill cleanly anymore, and the old game is not coming back. The author started playing CTFs in 2021 and went on to win top competitions, but found that as AI tools like GPT-4 ramped up, a significant percentage of medium difficulty CTF challenges started becoming solvable with a single prompt.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://kabir.au/blog/the-ctf-scene-is-dead" target="_blank">https://kabir.au/blog/the-ctf-scene-is-dead</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://twitter.com/mitchellh/status/2055380239711457578" target="_blank">I believe there are entire companies right now under AI psychosis</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1408</span>
+                <span class="comments">💬 701</span>
+                <span class="by">👤 reasonableklout</span>
+            </div>
+            <div class="summary"><p>A post titled "I believe there are entire companies right now under AI psychosis" on Hacker News. Submitted by reasonableklout. Links to content on twitter.com.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://twitter.com/mitchellh/status/2055380239711457578" target="_blank">https://twitter.com/mitchellh/status/2055380239711457578</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://ploopy.co/shop/bean-pointing-stick/" target="_blank">Ploopy Bean: a trackpoint for every computer</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 100</span>
+                <span class="comments">💬 46</span>
+                <span class="by">👤 jibcage</span>
+            </div>
+            <div class="summary"><p>The Ploopy Bean Pointing Stick is a 3D-printed, open-source pointing stick mouse. It adds high-precision pointing stick functionality to any setup, and has four Omron D2LS-21 buttons for snappy, responsive clicks. It runs QMK and supports VIA, which allows for quick and portable customization. It is fully assembled and ready to use immediately.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://ploopy.co/shop/bean-pointing-stick/" target="_blank">https://ploopy.co/shop/bean-pointing-stick/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://www.quantamagazine.org/how-the-bird-eye-was-pushed-to-an-evolutionary-extreme-20260513/" target="_blank">The bird eye was pushed to an evolutionary extreme</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 123</span>
+                <span class="comments">💬 41</span>
+                <span class="by">👤 sohkamyung</span>
+            </div>
+            <div class="summary"><p>The bird retina is one of the most energetically expensive tissues in the animal kingdom, yet it doesn’t use the energy advantage of oxygen. New research finally explains how this is possible. !Image 1: Close-up of a circular yellow bird eye surrounded by white and red feathers. The eye of a red-and-green macaw, with no blood vessels in sight.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.quantamagazine.org/how-the-bird-eye-was-pushed-to-an-evolutionary-extreme-20260513/" target="_blank">https://www.quantamagazine.org/how-the-bird-eye-was-pushed-to-an-evolutionary...</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://phoboslab.org/log/2026/05/n64-additive-blending" target="_blank">Additive Blending on the Nintendo 64</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 120</span>
+                <span class="comments">💬 11</span>
+                <span class="by">👤 ibobev</span>
+            </div>
+            <div class="summary"><p>PhobosLab **Dominic Szablewski, @phoboslab** — Monday, May 4th 2026 Additive Blending on the Nintendo 64 Did you ever wonder why explosions and other effects looked so much cooler on the original PlayStation than they did on the Nintendo 64? _“Silent Bomber“ for the PSX_ _“Star Fox 64“ for the N64_ The reason is additive blending! Or rather, in the N64 case, the lack thereof.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://phoboslab.org/log/2026/05/n64-additive-blending" target="_blank">https://phoboslab.org/log/2026/05/n64-additive-blending</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://arxiv.org/abs/2604.27012" target="_blank">EMiX: Emulating Beyond Single-FPGA Limits</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 13</span>
+                <span class="comments">💬 1</span>
+                <span class="by">👤 PaulHoule</span>
+            </div>
+            <div class="summary"><p>However, emulating large-scale multi-core systems increasingly exceed the hardware resource capacity of a single FPGA, limiting the feasibility of full-system emulation. To address this challenge, we introduce EMiX, a scalable multi-FPGA framework that enables distributed emulation of multi-core RISC-V architectures beyond single-FPGA resource limits. We prototype EMiX with a 64-core architecture across eight interconnected Alveo U55c FPGAs...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://arxiv.org/abs/2604.27012" target="_blank">https://arxiv.org/abs/2604.27012</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-16</p>
+        </footer>
+    </div>
+</body>
+</html>

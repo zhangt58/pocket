@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>Fetched via Hacker News API &bull; 2026-05-19</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314" target="_blank">I Found Ultra-Pure Quantum Crystals in an Abandoned Mine in the Atacama Desert</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 73</span>
+                <span class="comments">💬 15</span>
+                <span class="by">👤 vi_sextus_vi</span>
+            </div>
+            <div class="summary"><p>17 min read Jan 8, 2026 A Two Part Post on the Immense Promise and Ecological Tragedy of Natural Herbertsmithite Crystals Introduction Hello Everyone, My name is Dr. For those who haven’t been following my journey, I grew crystals of Zn-Barlowite and Herbertsmithite in my PhD at Stanford. These crystals are candidates to be a new novel state of matter called a “quantum spin liquid” (QSL).</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314" target="_blank">https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mi...</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://superspl.at/scene/84df8849" target="_blank">Gaussian Splat of a Strawberry</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 6</span>
+                <span class="comments">💬 1</span>
+                <span class="by">👤 danybittel</span>
+            </div>
+            <div class="summary"><p>Nikon Z8, full frame, f/7.1, exposure 1/160, ISO 100, Laowa 180mm macro lens, with LED light and bluescreen.Training was done in slang-splat: https://github.com/MichaelMoroz/slang-splatYou can download it under CC BY license, but attribution is appreciated rather than required.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://superspl.at/scene/84df8849" target="_blank">https://superspl.at/scene/84df8849</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://polypad.amplify.com/" target="_blank">Polypad</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 80</span>
+                <span class="comments">💬 6</span>
+                <span class="by">👤 ivank</span>
+            </div>
+            <div class="summary"><p>Polypad is a free, web-based mathematical playground featuring the world's best virtual manipulatives. It includes fraction bars, 3D polyhedra, balance scales, function machines, dice and spinners, data science tools, number cubes, and logic gates — all working on any device with no login required. Teachers can create shareable activities and view student work in real time.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://polypad.amplify.com/" target="_blank">https://polypad.amplify.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://www.tuhs.org/pipermail/tuhs/2026-May/033748.html" target="_blank">Peter Neumann has died</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 132</span>
+                <span class="comments">💬 8</span>
+                <span class="by">👤 pabs3</span>
+            </div>
+            <div class="summary"><p>His daughter Hellie was with him at the hospital at the time, and they had been listening to classical music together — as you may know, music was another of his great loves in life beyond computer security, with Peter an accomplished player of the piano, French horn, and various other instruments. Hellie has asked me to reach out to his friends and colleagues with this news — it’s still early in the morning in California and I will send on...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.tuhs.org/pipermail/tuhs/2026-May/033748.html" target="_blank">https://www.tuhs.org/pipermail/tuhs/2026-May/033748.html</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://simonwillison.net/2026/May/19/5-minute-llms/" target="_blank">The last six months in LLMs in five minutes</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 474</span>
+                <span class="comments">💬 342</span>
+                <span class="by">👤 yakkomajuri</span>
+            </div>
+            <div class="summary"><p>19th May 2026 I put together these annotated slides from my five minute lightning talk at PyCon US 2026, using the latest iteration of my annotated presentation tool. ![Image 1: The last six months in LLMs in five minutes Simon Willison - simonwillison.net PyCon US 2026 Lightning Talk...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://simonwillison.net/2026/May/19/5-minute-llms/" target="_blank">https://simonwillison.net/2026/May/19/5-minute-llms/</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://clickclickclick.click/" target="_blank">Click (2016)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 312</span>
+                <span class="comments">💬 76</span>
+                <span class="by">👤 andrewzeno</span>
+            </div>
+            <div class="summary"><p>Click is an interactive browser-based game with 128 achievements to unlock. It features a minimalist interface where clicking reveals hidden content and progress. Your save state is encoded in the URL, so you can share progress or resume from any browser.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://clickclickclick.click/" target="_blank">https://clickclickclick.click/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://www.kv4p.com/" target="_blank">Kv4p HT – A homebrew 1W radio (VHF or UHF) that plugs into an Android phone</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 97</span>
+                <span class="comments">💬 33</span>
+                <span class="by">👤 krupan</span>
+            </div>
+            <div class="summary"><p>kv4p HT Turn your Android phone into a modern ham radio transceiver Open source hardware & software for makers and tinkerers, 1 watt VHF or UHF **Note:** kv4p HT is an open source project you build yourself. It has absolutely no warranty, or guarantees on functionality or reliability! Requires at least a Technician class amateur radio license to use.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.kv4p.com/" target="_blank">https://www.kv4p.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://thehistoryoftheweb.com/the-lasting-influence-of-netscape-time/" target="_blank">The lasting influence of Netscape Time</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 36</span>
+                <span class="comments">💬 7</span>
+                <span class="by">👤 zdw</span>
+            </div>
+            <div class="summary"><p>Written by Jay on May 12, 2026. After Netscape, the speed of software sped up beyond what anyone could have imagined. Thanks to a documentary crew and a ghost writer, we have a full view of the whole thing.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://thehistoryoftheweb.com/the-lasting-influence-of-netscape-time/" target="_blank">https://thehistoryoftheweb.com/the-lasting-influence-of-netscape-time/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://pytorch.landscape2.io" target="_blank">PyTorch Landscape</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 46</span>
+                <span class="comments">💬 10</span>
+                <span class="by">👤 salamo</span>
+            </div>
+            <div class="summary"><p>The PyTorch Landscape is an interactive, open-source visualization of the entire PyTorch ecosystem, organized by category: Computer Vision, Language, Multimodal, Specialized, 3D, Medical &amp; Biology, AI for Science, and more. Hosted by the Linux Foundation, it serves as a comprehensive map for developers navigating PyTorch tools and libraries.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://pytorch.landscape2.io" target="_blank">https://pytorch.landscape2.io</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://cursor.com/blog/composer-2-5" target="_blank">Cursor Introduces Composer 2.5</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 158</span>
+                <span class="comments">💬 113</span>
+                <span class="by">👤 asar</span>
+            </div>
+            <div class="summary"><p>Composer 2.5 is now available in Cursor. It's a substantial improvement in intelligence and behavior over Composer 2. It is better at sustained work on long-running tasks, follows complex instructions more reliably, and is more pleasant to collaborate with.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://cursor.com/blog/composer-2-5" target="_blank">https://cursor.com/blog/composer-2-5</a></div>
+</div>
+
+        <footer>
+            <p>Fetched via Hacker News API &bull; 2026-05-19</p>
+        </footer>
+    </div>
+</body>
+</html>

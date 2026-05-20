@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-20</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html" target="_blank">Everything in C is undefined behavior</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 212</span>
+                <span class="comments">💬 268</span>
+                <span class="by">👤 lycopodiopsida</span>
+            </div>
+            <div class="summary"><p>If he had been a programmer, Cardinal Richelieu would have said “Give me six lines written by the hand of the most expert C programmer in the world, and I will find enough in them to trigger undefined behavior”. Nobody can write correct C, or C++. And I say that as someone who’s written C and C++ on an almost daily basis for about 30 years.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html" target="_blank">https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html" target="_blank">Learnings from 100K lines of Rust with AI (2025)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 22</span>
+                <span class="comments">💬 13</span>
+                <span class="by">👤 pramodbiligiri</span>
+            </div>
+            <div class="summary"><p>In the past few months, I’ve been stress-testing how far AI coding agents can take us when building real, production-grade distributed systems. The result: a Rust-based multi-Paxos consensus engine that not only implements all the features of Azure’s Replicated State Library (RSL) [1] — which underpins most major Azure services — but also modernizes it for today’s hardware. The entire project took me ~3 months,...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html" target="_blank">https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20...</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank">Gemini 3.5 Flash</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 811</span>
+                <span class="comments">💬 562</span>
+                <span class="by">👤 spectraldrift</span>
+            </div>
+            <div class="summary"><p>May 19, 2026 16 min read Gemini 3.5 is built to help you execute complex, agentic workflows. Generative AI is experimental [[duration]] minutes Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. This represents a major leap forward in building more capable, intelligent agents.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemin...</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://fivethirtyeightindex.com/" target="_blank">FiveThirtyEight articles on the Internet Archive</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 214</span>
+                <span class="comments">💬 53</span>
+                <span class="by">👤 ChocMontePy</span>
+            </div>
+            <div class="summary"><p>A searchable index of 21,350 articles from FiveThirtyEight, preserved by the Internet Archive after the site was shut down. Features include search by title and byline, browse by year (2008-2025), and browse by author — covering the full run from Nate Silver's original polling analysis through the site's closure.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://fivethirtyeightindex.com/" target="_blank">https://fivethirtyeightindex.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://virtualosmuseum.org/" target="_blank">I’ve built a virtual museum with nearly every operating system you can think of</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 801</span>
+                <span class="comments">💬 173</span>
+                <span class="by">👤 andreww591</span>
+            </div>
+            <div class="summary"><p>This is a virtual museum of operating systems (and standalone applications) running under emulation, implemented as a Linux VM for QEMU, VirtualBox, or UTM. A custom emulator-independent launcher is provided, and all OSes and emulators are pre-installed and pre-configured. The launcher includes a snapshot feature to quickly revert broken installations back to a working state.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://virtualosmuseum.org/" target="_blank">https://virtualosmuseum.org/</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-mass-hay-fever-in-japan" target="_blank">Japan is gripped by mass allergies. A 1950s project is to blame</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 128</span>
+                <span class="comments">💬 57</span>
+                <span class="by">👤 ranit</span>
+            </div>
+            <div class="summary"><p>Nithin Coca (Credit: Getty Images) **A decision made 70 years ago to reforest vast swathes of Japan with just two kinds of tree has come back to haunt the country.** In February, videos showing what looked like waves of smoke blowing off an evergreen forest went viral in Japan. It wasn't smoke – it was pollen, and the videos were a warning to tens of millions of residents of the archipelago nation: prepare your masks and allergy medicine....</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-mass-hay-fever-in-japan" target="_blank">https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-ma...</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/" target="_blank">Infomaniak transitions to a foundation model to protect user data privacy</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 85</span>
+                <span class="comments">💬 19</span>
+                <span class="by">👤 darktoto</span>
+            </div>
+            <div class="summary"><p>**_Since 1994, Infomaniak has followed the same path: privacy, environmental responsibility, and local roots. Thirty-two years on, these commitments are no longer just promises. On 20 May 2026, our founder Boris Siegenthaler transferred the majority of Infomaniak’s voting rights to a Swiss public-interest foundation: the Infomaniak Foundation.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/" target="_blank">https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank">Google changes its search box</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 565</span>
+                <span class="comments">💬 749</span>
+                <span class="by">👤 berkeleyjunk</span>
+            </div>
+            <div class="summary"><p>May 19, 2026 We’re bringing our advanced model capabilities to Search with new AI features, enabling you to use agents just by asking a question. We’re also introducing a new, intelligent AI-powered Search box, marking its biggest upgrade in over 25 years. To make this possible, we’ve continued to reimagine what Search can do with AI.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank">https://blog.google/products-and-platforms/products/search/search-io-2026/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/antoinezambelli/forge" target="_blank">Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 508</span>
+                <span class="comments">💬 177</span>
+                <span class="by">👤 zambelli</span>
+            </div>
+            <div class="summary"><p>A reliability layer for self-hosted LLM tool-calling. Forge lifts an 8B local model to the top of its class on multi-step agentic workflows through guardrails (rescue parsing, retry nudges, step enforcement) and context management (VRAM-aware budgets, tiered compaction). The current top self-hosted config (Ministral-3 8B Instruct Q8) scores 86.5% across a 26-scenario eval suite — and 76% on the hardest tier.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/antoinezambelli/forge" target="_blank">https://github.com/antoinezambelli/forge</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/wiltodelta/remove-ai-watermarks" target="_blank">Remove-AI-Watermarks – CLI and library for removing AI watermarks from images</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 293</span>
+                <span class="comments">💬 172</span>
+                <span class="by">👤 janalsncm</span>
+            </div>
+            <div class="summary"><p>A CLI and library for removing both visible and invisible AI watermarks from images. Strips SynthID, C2PA Content Credentials, EXIF/XMP "Made with AI" labels, and visible sparkle overlays from Gemini, DALL-E, Stable Diffusion, Adobe Firefly, Midjourney, and other AI models — all in one command.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/wiltodelta/remove-ai-watermarks" target="_blank">https://github.com/wiltodelta/remove-ai-watermarks</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-20</p>
+        </footer>
+    </div>
+</body>
+</html>

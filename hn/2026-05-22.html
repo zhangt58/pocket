@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-22</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://abuseofnotation.github.io/boolean-thinking/" target="_blank">The case against boolean logic</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 4</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 boris_m</span>
+            </div>
+            <div class="summary"><p>In my last post about generality, I tried to show how our ambition to discover ideas that are all-encompassing and eternal makes our worldview crumble, leaving us unable to think clearly even about simple issues with obvious solutions. Today, I want to discuss another instance of the same problem, in a simpler and more direct way. You can think of this essay as a prequel to “[When Universality...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://abuseofnotation.github.io/boolean-thinking/" target="_blank">https://abuseofnotation.github.io/boolean-thinking/</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://valhovey.github.io/gaia-mary/" target="_blank">Project Hail Mary – Stellar Navigation Chart</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 951</span>
+                <span class="comments">💬 201</span>
+                <span class="by">👤 speleo</span>
+            </div>
+            <div class="summary"><p>A post titled "Project Hail Mary – Stellar Navigation Chart" on Hacker News. Submitted by speleo. Links to content on valhovey.github.io.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://valhovey.github.io/gaia-mary/" target="_blank">https://valhovey.github.io/gaia-mary/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://slumber.lucaspickering.me" target="_blank">Slumber a TUI HTTP Client</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 90</span>
+                <span class="comments">💬 31</span>
+                <span class="by">👤 jicea</span>
+            </div>
+            <div class="summary"><p>Slumber is a terminal-based HTTP client designed for interacting with REST APIs and other HTTP services. It offers two usage modes: a Terminal User Interface (TUI) with a chapter-based interface for browsing and testing requests, and a Command Line Interface (CLI) for scripting and automation. Built for developers who want a comfortable, keyboard-driven workflow for API testing directly in the terminal.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://slumber.lucaspickering.me" target="_blank">https://slumber.lucaspickering.me</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://arxiv.org/abs/2605.19269" target="_blank">CODA: Rewriting Transformer Blocks as GEMM-Epilogue Programs</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 76</span>
+                <span class="comments">💬 7</span>
+                <span class="by">👤 matt_d</span>
+            </div>
+            <div class="summary"><p>> Abstract:Transformer training systems are built around dense linear algebra, yet a nontrivial fraction of end-to-end time is spent on surrounding memory-bound operators. Normalization, activations, residual updates, reductions, and related computations repeatedly move large intermediate tensors through global memory while performing little arithmetic, making data movement an increasingly important bottleneck in otherwise highly optimized...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://arxiv.org/abs/2605.19269" target="_blank">https://arxiv.org/abs/2605.19269</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://www.mathworks.com/company/aboutus/founders/clevemoler.html" target="_blank">Cleve Moler has died</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 122</span>
+                <span class="comments">💬 13</span>
+                <span class="by">👤 mychele</span>
+            </div>
+            <div class="summary"><p>MATLAB and Simulink Videos Learn about products, watch demonstrations, and explore what's new. Cleve was chief mathematician and cofounder of MathWorks and the author of the first version of MATLAB. In his early years, he was a professor of math and computer science for almost 20 years at the University of Michigan, Stanford University, and the University of New Mexico.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.mathworks.com/company/aboutus/founders/clevemoler.html" target="_blank">https://www.mathworks.com/company/aboutus/founders/clevemoler.html</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.bbc.com/culture/article/20260518-helen-sharman-the-story-behind-the-first-british-person-in-space" target="_blank">The surprising story behind the first British person in space</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 67</span>
+                <span class="comments">💬 19</span>
+                <span class="by">👤 xoxxala</span>
+            </div>
+            <div class="summary"><p>Helen Sharman was a 27-year-old food scientist when she stumbled upon a job ad to be part of an Anglo-Soviet commercial venture, Project Juno. Sharman told BBC News in 1991: "All along the selection process, I never really believed that it could be me."** One of the lesser-known moments to take place during the Cold War space race involved the Russian cosmonaut Yuri Gagarin. On his way to the launchpad in 1961, just before he became the first...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.bbc.com/culture/article/20260518-helen-sharman-the-story-behind-the-first-british-person-in-space" target="_blank">https://www.bbc.com/culture/article/20260518-helen-sharman-the-story-behind-t...</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone" target="_blank">The memory shortage is causing a repricing of consumer electronics</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 225</span>
+                <span class="comments">💬 263</span>
+                <span class="by">👤 d0ks</span>
+            </div>
+            <div class="summary"><p>One of the most remarkable things about the last few decades is how cheap computers have gotten. In 1985, if you were a reasonably affluent American, the best computer that you could afford was the IBM PC AT. The PC AT would cost you about $6,000—$19,400 in 2026 dollars—and thus represented about a quarter of the median American’s annual income; and it ran on an Intel 80286 processor,...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone" target="_blank">https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://crocidb.com/post/this-blog-ran-on-ubuntu-16-04-for-10-years-i-migrated-it-to-freebsd/" target="_blank">Blog ran on Ubuntu 16.04 for 10 years. I migrated it to FreeBSD</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 300</span>
+                <span class="comments">💬 155</span>
+                <span class="by">👤 speckx</span>
+            </div>
+            <div class="summary"><p>This blog has been running on a Digital Ocean VPS for over ten years. A machine hosted in New York City, running **Ubuntu 16.04 LTS**. An LTS that hasn’t been in support for at least 5 years.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://crocidb.com/post/this-blog-ran-on-ubuntu-16-04-for-10-years-i-migrated-it-to-freebsd/" target="_blank">https://crocidb.com/post/this-blog-ran-on-ubuntu-16-04-for-10-years-i-migrate...</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5" target="_blank">Steve Wozniak cheered after telling students they have AI – actual intelligence</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 46</span>
+                <span class="comments">💬 11</span>
+                <span class="by">👤 signa11</span>
+            </div>
+            <div class="summary"><p>Apple cofounder Steve Wozniak earned applause (not boos) at Grand Valley State University's graduation ceremony by telling students &quot;You have AI – actual intelligence,&quot; contrasting with other recent commencement speakers who were booed for AI-focused remarks. He reflected on AI as an attempt to duplicate neural routines and encouraged graduates to &quot;always try to think different&quot; rather than follow the same path as everyone else.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5" target="_blank">https://www.businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://rosmine.ai/2026/05/13/was-my-48k-gpu-worth-it/" target="_blank">Was my $48K GPU server worth it?</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 465</span>
+                <span class="comments">💬 340</span>
+                <span class="by">👤 apwheele</span>
+            </div>
+            <div class="summary"><p>In 2024 I quit my FAANG job to become an independent researcher. To do this I needed GPUs, so I built “grumbl”, a 6x 6000 Ada GPU server. This blog describes the build, some of the issues I faced, and answers the question “was it worth it to build the server myself, or should I have rented cloud GPUs?” (It’s called “grumbl” because apparently I cannot spell “GPUs”) GPUs as an investment This rig cost me $48K.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://rosmine.ai/2026/05/13/was-my-48k-gpu-worth-it/" target="_blank">https://rosmine.ai/2026/05/13/was-my-48k-gpu-worth-it/</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-22</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-23</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://notesbylex.com/shipping-a-laptop-to-a-refugee-camp-in-uganda" target="_blank">Shipping a laptop to a refugee camp in Uganda</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 483</span>
+                <span class="comments">💬 174</span>
+                <span class="by">👤 lexandstuff</span>
+            </div>
+            <div class="summary"><p>A friend's laptop motherboard burned out from accidentally connecting a USB cable to a 12V battery. The author documents the surprisingly complex journey of shipping a replacement MacBook to a refugee camp in Uganda — navigating Australia Post lithium battery rules, Ugandan customs clearance, URA tax registration for refugees, a package seizure and re-routing, and finally delivery via motorcycle. The total cost came to ~$425 AUD across multiple failed and successful attempts.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://notesbylex.com/shipping-a-laptop-to-a-refugee-camp-in-uganda" target="_blank">https://notesbylex.com/shipping-a-laptop-to-a-refugee-camp-in-uganda</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/amatsuda/rubish" target="_blank">Rubish: A Unix shell written in pure Ruby</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 48</span>
+                <span class="comments">💬 18</span>
+                <span class="by">👤 winebarrel</span>
+            </div>
+            <div class="summary"><p>Rubish is a Unix shell written in pure Ruby. Shell syntax is parsed and compiled to Ruby code, then executed by the Ruby VM. It supports all bash features and is fully Bash-compatible — you can run existing bash scripts without modification. Beyond compatibility, Rubish deeply integrates Ruby: you can seamlessly mix shell commands and Ruby code, using Ruby's blocks, iterators, and libraries directly in shell scripts.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/amatsuda/rubish" target="_blank">https://github.com/amatsuda/rubish</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://davidoks.blog/p/why-japanese-companies-do-so-many" target="_blank">Why Japanese companies do so many different things</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 696</span>
+                <span class="comments">💬 334</span>
+                <span class="by">👤 d0ks</span>
+            </div>
+            <div class="summary"><p>Photos from Lars Tunbjörk’s “Office” series Consider Toto. If you spend much time in American public bathrooms, or rather if you’re simply a particularly attentive patron of American public bathrooms, you’ll probably have noticed Toto’s toilets at some point or another: they’re distinguished by a quite memorable serif-font “TOTO” logo. Toto toilets aren’t quite dominant in...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://davidoks.blog/p/why-japanese-companies-do-so-many" target="_blank">https://davidoks.blog/p/why-japanese-companies-do-so-many</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://fedemagnani.github.io/math/2026/04/08/the-quadratic-sandwich.html" target="_blank">The quadratic sandwich</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 53</span>
+                <span class="comments">💬 4</span>
+                <span class="by">👤 cpp_frog</span>
+            </div>
+            <div class="summary"><p>If you have ever tried to minimize a function with gradient descent, you probably noticed that some functions are a joy to optimize and others are a nightmare. The difference often boils down to two properties: **strong convexity** and **L-smoothness**. These two concepts define a “sandwich” of quadratic bounds around your function that tells you _exactly_ how well-behaved it is.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://fedemagnani.github.io/math/2026/04/08/the-quadratic-sandwich.html" target="_blank">https://fedemagnani.github.io/math/2026/04/08/the-quadratic-sandwich.html</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://xcancel.com/josefprusa/status/2054602354851254330" target="_blank">BambuStudio has been violating PrusaSlicer AGPL license since their fork</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 73</span>
+                <span class="comments">💬 11</span>
+                <span class="by">👤 Tomte</span>
+            </div>
+            <div class="summary"><p>BambuStudio has been violating PrusaSlicer AGPL license since their fork, with the same networking binary black box in question today. Why are they willing to burn the goodwill over it? There's something most have sensed but never seen it all in one place, the five-law framework China built between 2017 and 2023 ⤵️ So maybe their hand is forced as their "network" is too valuable already?.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://xcancel.com/josefprusa/status/2054602354851254330" target="_blank">https://xcancel.com/josefprusa/status/2054602354851254330</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank">Project Glasswing: An Initial Update</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 443</span>
+                <span class="comments">💬 263</span>
+                <span class="by">👤 louiereederson</span>
+            </div>
+            <div class="summary"><p>Last month, we launched Project Glasswing, our collaborative effort to secure the world’s most critical software before increasingly capable AI models can be turned against it. Since then, we and our approximately 50 partners have used Claude Mythos Preview to find more than ten thousand high- or critical-severity vulnerabilities across the most systemically important software in the world. Progress on...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank">https://www.anthropic.com/research/glasswing-initial-update</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad" target="_blank">Microsoft starts canceling Claude Code licenses</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 278</span>
+                <span class="comments">💬 222</span>
+                <span class="by">👤 robertkarl</span>
+            </div>
+            <div class="summary"><p>Microsoft began opening access to Claude Code in December, inviting thousands of developers to experiment with Anthropic's AI coding tool. The tool proved very popular, perhaps too popular — Microsoft is now canceling most Claude Code licenses and pushing developers toward its own GitHub Copilot CLI. The Experiences + Devices team is winding down Claude Code by end of June, with the cutoff coinciding with Microsoft's fiscal year-end, making it an easy way to cut operating expenses for the new financial year.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad" target="_blank">https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://horses.extension.org/blood-pumping-mechanism-of-the-hoof/" target="_blank">Blood Pumping Mechanism of the Hoof (2020)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 95</span>
+                <span class="comments">💬 25</span>
+                <span class="by">👤 thunderbong</span>
+            </div>
+            <div class="summary"><p>Blood is pumped from the heart through arteries to the hoof and returns via a "pumping mechanism" necessary because there are no muscles in the lower leg or hoof. An extensive venous plexus network on both sides of each lateral cartilage acts as a pump — compression by the plantar cushion against the lateral cartilages forces blood up the leg. One-way valves prevent backflow, and the hydraulic cushion also dissipates concussion and protects the coffin bone. This mechanism is commonly referred to as the horse's "second heart."</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://horses.extension.org/blood-pumping-mechanism-of-the-hoof/" target="_blank">https://horses.extension.org/blood-pumping-mechanism-of-the-hoof/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://temertymedicine.utoronto.ca/news/how-decades-sleep-research-led-new-sleep-apnea-drug" target="_blank">Sleep research led to a new sleep apnea drug</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 167</span>
+                <span class="comments">💬 98</span>
+                <span class="by">👤 colinprince</span>
+            </div>
+            <div class="summary"><p>A University of Toronto professor's three decades of research on sleep physiology and breathing has paved the way for a new sleep apnea treatment showing positive results in a phase 3 clinical trial. Richard Horner studies the nerves, muscles and mechanisms that control breathing during sleep. His work identified two key pathways that contribute to sleep apnea. A new daily oral medication, AD109, targets both pathways — one component increases noradrenaline levels while another blocks muscarinic receptors — offering a potential breakthrough for improving sleep and overall health in sleep apnea patients.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://temertymedicine.utoronto.ca/news/how-decades-sleep-research-led-new-sleep-apnea-drug" target="_blank">https://temertymedicine.utoronto.ca/news/how-decades-sleep-research-led-new-s...</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://theconsensus.dev/p/2026/05/20/yeunjoo-choi-from-igalia-on-chromium.html" target="_blank">Yeunjoo Choi from Igalia on Chromium</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 18</span>
+                <span class="comments">💬 2</span>
+                <span class="by">👤 eatonphil</span>
+            </div>
+            <div class="summary"><p>I'm a member of the Chromium team and have recently been working on enterprise browsers. Many enterprise browser vendors adopt Chromium because of its compatibility with web standards, strong cross-platform support, active upstream maintenance, ecosystem, tooling, and so on. Browsers also have become the main control point of enterprise services, so there have been more opportunities for Igalia to collaborate with enterprise vendors.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://theconsensus.dev/p/2026/05/20/yeunjoo-choi-from-igalia-on-chromium.html" target="_blank">https://theconsensus.dev/p/2026/05/20/yeunjoo-choi-from-igalia-on-chromium.html</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-23</p>
+        </footer>
+    </div>
+</body>
+</html>

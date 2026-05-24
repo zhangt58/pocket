@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-24</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/" target="_blank">Microsoft open-sources "the earliest DOS source code discovered to date"</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 271</span>
+                <span class="comments">💬 81</span>
+                <span class="by">👤 DamnInteresting</span>
+            </div>
+            <div class="summary"><p>Microsoft has released the earliest DOS source code discovered to date — 86-DOS 1.00, the predecessor to MS-DOS, created by Tim Paterson for Seattle Computer Products. The release predates Microsoft's purchase and includes the 86-DOS kernel, PC-DOS 1.00 development snapshots, and utilities like CHKDSK. This continues Microsoft's history of open-sourcing DOS-era code, alongside previous releases in 2016 and 2018.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/" target="_blank">https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-d...</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US" target="_blank">Why is Vivado 2026.1 dropping Linux support for free tier?</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 177</span>
+                <span class="comments">💬 69</span>
+                <span class="by">👤 zdw</span>
+            </div>
+            <div class="summary"><p>AMD's Vivado 2026.1 release removes Linux support for the free Basic tier while keeping it for the four paid tiers — a move the community calls a "cash grab." Users are outraged: Linux support costs nothing to maintain, Vivado is widely considered unusable on Windows, and incremental compilation is also being removed. The community sees this as a deliberate strategy to force professionals into paying $1200+ for tools they already own hardware for.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US" target="_blank">https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-2...</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://fs.blog/knowledge-project-podcast/greg-brockman/" target="_blank">Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 24</span>
+                <span class="comments">💬 6</span>
+                <span class="by">👤 prakashqwerty</span>
+            </div>
+            <div class="summary"><p>The AI race, the future of AGI, and the inside story of OpenAI. Greg Brockman is the co-founder and President of OpenAI, the company behind ChatGPT and GPT-5. He was the first engineer at Stripe before leaving in 2015 to help start OpenAI.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://fs.blog/knowledge-project-podcast/greg-brockman/" target="_blank">https://fs.blog/knowledge-project-podcast/greg-brockman/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://www.dougmacdowell.com/50-hours-to-draw-some-lines.html" target="_blank">I spent 50 hours drawing a line graph</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 37</span>
+                <span class="comments">💬 5</span>
+                <span class="by">👤 dougdude3339</span>
+            </div>
+            <div class="summary"><p>An artist spent 50 hours hand-drawing a line graph, exploring the tension between precision and the human hand. The piece reflects on how we visualize data and the meditative process of translating numerical information into physical marks on paper — a deliberate counterpoint to instant, digital data visualization tools.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.dougmacdowell.com/50-hours-to-draw-some-lines.html" target="_blank">https://www.dougmacdowell.com/50-hours-to-draw-some-lines.html</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/ClickHouse/silk" target="_blank">Silk: Open-source cooperative fiber scheduler</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 37</span>
+                <span class="comments">💬 4</span>
+                <span class="by">👤 animetyan</span>
+            </div>
+            <div class="summary"><p>A cooperative fiber scheduler for Linux with per-CPU scheduler threads, io_uring integration, and topology-aware work-stealing. Fibers are lightweight stackful coroutines that suspend rather than block their OS thread, enabling high concurrency with low overhead. Built by ClickHouse, it includes synchronization primitives, async IO support, and detailed performance benchmarks.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/ClickHouse/silk" target="_blank">https://github.com/ClickHouse/silk</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://hellmood.111mb.de/wake_up_16b_writeup.html" target="_blank">Wake up! 16b</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 259</span>
+                <span class="comments">💬 16</span>
+                <span class="by">👤 MaximilianEmel</span>
+            </div>
+            <div class="summary"><p>Released at the Outline Demoparty in May 2026, Ommen, NL An exploration of algorithmic density in 16 bytes of x86 assembly. I learned programming as a kid on an old IBM PC with a monochrome green monitor over 30 years ago and always wanted to create a program for this system. I created well over 100 tiny intros in the last 15 years.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://hellmood.111mb.de/wake_up_16b_writeup.html" target="_blank">https://hellmood.111mb.de/wake_up_16b_writeup.html</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/" target="_blank">Scammers are abusing an internal Microsoft account to send spam links</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 157</span>
+                <span class="comments">💬 71</span>
+                <span class="by">👤 spike021</span>
+            </div>
+            <div class="summary"><p>Scammers have been exploiting a loophole to send spam emails from msonlineservicesteam@microsoftonline.com — an internal Microsoft address used for legitimate account alerts like 2FA codes. The Spamhaus Project confirmed the abuse dates back "several months." Microsoft says it's actively investigating and strengthening detection mechanisms, removing violating accounts.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/" target="_blank">https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-...</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th-century-mathematics-20260520/" target="_blank">Alexander Grothendieck Revolutionized 20th-Century Mathematics</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 70</span>
+                <span class="comments">💬 12</span>
+                <span class="by">👤 anujbans</span>
+            </div>
+            <div class="summary"><p>Quanta Magazine explores the mathematical contributions of Alexander Grothendieck, the visionary mathematician who revolutionized algebraic geometry, category theory, and number theory in the 20th century. While known outside math circles for his eccentric life and retreat from academia, this article focuses on what he actually built: a new language of mathematics that reshaped the field.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th-century-mathematics-20260520/" target="_blank">https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th...</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.masswerk.at/nowgobang/2026/c64-dead-test-font" target="_blank">The C64 Dead Test Font</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 50</span>
+                <span class="comments">💬 6</span>
+                <span class="by">👤 masswerk</span>
+            </div>
+            <div class="summary"><p>A deep dive into the font of the C64 "Dead Test" diagnostic cartridge, revealing an Easter egg, implementation details, and providing Commodore 8-bit character ROMs for download. Despite the C64's iconic status, the author found virtually no documentation of this font anywhere on the web — prompting this comprehensive technical analysis of a forgotten piece of computing history.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.masswerk.at/nowgobang/2026/c64-dead-test-font" target="_blank">https://www.masswerk.at/nowgobang/2026/c64-dead-test-font</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://veronicaexplains.net/my-first-writerdeck/" target="_blank">Time to talk about my writerdeck</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 377</span>
+                <span class="comments">💬 226</span>
+                <span class="by">👤 hggh</span>
+            </div>
+            <div class="summary"><p>A couple of weeks ago, I decided to convert my old laptop into a writerdeck, a dedicated writing device free from the distractions of the modern internet. Lots of folks build really elaborate offline devices for this, and I'd love to do that... Right now I have no shortage of projects and the point is to get writing, so I used what I had: a six-year-old laptop which still runs great, has...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://veronicaexplains.net/my-first-writerdeck/" target="_blank">https://veronicaexplains.net/my-first-writerdeck/</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-24</p>
+        </footer>
+    </div>
+</body>
+</html>

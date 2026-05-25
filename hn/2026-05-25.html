@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-25</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html" target="_blank">Magnifica Humanitas (Encyclical Letter)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 40</span>
+                <span class="comments">💬 8</span>
+                <span class="by">👤 theletterf</span>
+            </div>
+            <div class="summary"><p>Humanity, created by God in all its grandeur, is today facing a pivotal choice: either to construct a new Tower of Babel or to build the city in which God and humanity dwell together. Each generation inherits the task of shaping its own era, of guiding history to become a place where the dignity of every person is safeguarded, justice is promoted and fraternity is made possible. Yet every era also runs the risk of creating an inhumane and...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html" target="_blank">https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magn...</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1360393/" target="_blank">Didgeridoo playing as alternative treatment for obstructive sleep apnoea (2006)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 152</span>
+                <span class="comments">💬 56</span>
+                <span class="by">👤 kelseyfrog</span>
+            </div>
+            <div class="summary"><p>A 2006 randomized controlled trial published in BMJ found that playing the didgeridoo — an Aboriginal Australian wind instrument requiring circular breathing — significantly reduced daytime sleepiness and improved symptoms in patients with moderate obstructive sleep apnoea and snoring. The study suggests didgeridoo practice strengthens upper airway muscles, reducing airway collapsibility during sleep, offering a novel alternative or complementary treatment.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1360393/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC1360393/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://www.tinyvolt.com/geomatic" target="_blank">Show HN: Geomatic – a command-driven geometry studio enabled with autodiff</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 18</span>
+                <span class="comments">💬 6</span>
+                <span class="by">👤 nivter</span>
+            </div>
+            <div class="summary"><p>Geomatic is a command-driven geometry studio built with automatic differentiation. Instead of drawing shapes with a mouse, users type code-like commands (e.g., "\circle p0 2" for circles, "\line a b" for lines) to programmatically create geometric figures on a dark grid canvas. It supports point definitions, shape primitives, and a command history panel — essentially a code-first approach to geometry construction and exploration.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.tinyvolt.com/geomatic" target="_blank">https://www.tinyvolt.com/geomatic</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://audiomass.co/?multitrack=1" target="_blank">Show HN: Audiomass – a free, open-source multitrack audio editor for the web</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 379</span>
+                <span class="comments">💬 82</span>
+                <span class="by">👤 pantelisk</span>
+            </div>
+            <div class="summary"><p>Welcome to AudioMass AudioMass is a free, open source, web-based Audio and Waveform Editor. It runs entirely in the browser with no backend and no plugins required! Please keep in mind that most key shortcuts rely on the **Shift + key** combo.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://audiomass.co/?multitrack=1" target="_blank">https://audiomass.co/?multitrack=1</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://esengine.github.io/DeepSeek-Reasonix/" target="_blank">DeepSeek reasonix, DeepSeek native coding agent with high caching and low cost</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 574</span>
+                <span class="comments">💬 239</span>
+                <span class="by">👤 Alifatisk</span>
+            </div>
+            <div class="summary"><p>§00 · Reasonix v0.50.0 · open source A _DeepSeek_-native coding _agent_, for your terminal. Reasonix talks straight to **api.deepseek.com**. The loop is append-only, engineered around DeepSeek's byte-stable prefix cache — long sessions hold 90%+ cache hit and input-token cost collapses to ~1/5.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://esengine.github.io/DeepSeek-Reasonix/" target="_blank">https://esengine.github.io/DeepSeek-Reasonix/</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://corrode.dev/learn/migration-guides/go-to-rust/" target="_blank">Migrating from Go to Rust</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 298</span>
+                <span class="comments">💬 293</span>
+                <span class="by">👤 jabits</span>
+            </div>
+            <div class="summary"><p>Out of all the migrations I help teams with, Go to Rust is a bit of an outlier. It’s not a question of “is Rust faster?” or “does Rust have types?”, Go already gets you most of the way there. The discussion is mostly about **correctness guarantees**, **runtime tradeoffs**, and **developer ergonomics**.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://corrode.dev/learn/migration-guides/go-to-rust/" target="_blank">https://corrode.dev/learn/migration-guides/go-to-rust/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://dubroy.com/blog/bytecode-vms-in-surprising-places/" target="_blank">Bytecode VMs in surprising places (2024)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 28</span>
+                <span class="comments">💬 12</span>
+                <span class="by">👤 azhenley</span>
+            </div>
+            <div class="summary"><p>April 30, 2024 In response to a question on Twitter1, Richard Hipp wrote about why SQLite uses a bytecode VM for executing SQL statements. Most people probably associate bytecode VMs with general-purpose programming languages, like JavaScript or Python. But sometimes they appear in surprising places!.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://dubroy.com/blog/bytecode-vms-in-surprising-places/" target="_blank">https://dubroy.com/blog/bytecode-vms-in-surprising-places/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://seriot.ch/computation/jira.html" target="_blank">Jira Is Turing-Complete</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 184</span>
+                <span class="comments">💬 81</span>
+                <span class="by">👤 vinhnx</span>
+            </div>
+            <div class="summary"><p>Nicolas Seriot Computation> Jira is Turing-Complete _Building a Minsky Machine in Atlassian Automation_ _22nd May 2026_ Engineering folklore holds that Jira (Atlassian's project-tracking tool) is Turing-complete. Existing claims point vaguely at automation features...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://seriot.ch/computation/jira.html" target="_blank">https://seriot.ch/computation/jira.html</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://ohwr.org/projects/white-rabbit/" target="_blank">White Rabbit – sub-nanosecond synchronization for large distributed systems</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 112</span>
+                <span class="comments">💬 28</span>
+                <span class="by">👤 michaelsbradley</span>
+            </div>
+            <div class="summary"><p>White Rabbit provides **sub-nanosecond accuracy** and picoseconds precision of **synchronization** for large distributed systems. It also allows for deterministic and reliable data delivery. White Rabbit allows you to **precision time-tag measured data** and lets you trigger data taking in large installations while at the same time using the same **network to transmit data**.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://ohwr.org/projects/white-rabbit/" target="_blank">https://ohwr.org/projects/white-rabbit/</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://utcc.utoronto.ca/~cks/space/blog/python/EmailPackagesNotes" target="_blank">Notes about reading messages with the Python email packages</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 11</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 ankitg12</span>
+            </div>
+            <div class="summary"><p>A technical blog post examining the quirks and pitfalls of working with Python's built-in email packages (email.message, email.parser, email.policy). Covers practical considerations for parsing MIME emails, handling headers, dealing with legacy vs modern parsing modes, and navigating the complexities of real-world email formats that don't always conform to RFC specifications.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://utcc.utoronto.ca/~cks/space/blog/python/EmailPackagesNotes" target="_blank">https://utcc.utoronto.ca/~cks/space/blog/python/EmailPackagesNotes</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-25</p>
+        </footer>
+    </div>
+</body>
+</html>

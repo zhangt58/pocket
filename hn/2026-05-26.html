@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-26</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://www.githubstatus.com/?today" target="_blank">GitHub Actions down again today</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 146</span>
+                <span class="comments">💬 68</span>
+                <span class="by">👤 cebert</span>
+            </div>
+            <div class="summary"><p>GitHub Actions experienced an outage today, disrupting CI/CD workflows for developers relying on the service. The GitHub Status page tracks when incidents are created, updated, or resolved — users can subscribe to email notifications for real-time status updates.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.githubstatus.com/?today" target="_blank">https://www.githubstatus.com/?today</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://dynip.dev/" target="_blank">DynIP – Dynamic DNS with RFC 2136, IPv6, DNSSEC, and BYOD</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 173</span>
+                <span class="comments">💬 74</span>
+                <span class="by">👤 dynip</span>
+            </div>
+            <div class="summary"><p>For homelabs, edge routers, and infrastructure teams. Updates in seconds, not minutes Most DDNS providers cache for 30 minutes. DynIP propagates in under a minute end-to-end.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://dynip.dev/" target="_blank">https://dynip.dev/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/" target="_blank">Using AI to write better code more slowly</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 782</span>
+                <span class="comments">💬 303</span>
+                <span class="by">👤 signa11</span>
+            </div>
+            <div class="summary"><p>Tagged: AI. 18 Comments A lot of people seem convinced that the point of AI coding is to write low-quality code as fast as possible. Spew out barely-passable slop, open massive PRs, and merge them unvetted.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/" target="_blank">https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://www.apa.org/news/press/releases/2014/04/creativity-walk" target="_blank">Taking a walk may lead to more creativity than sitting, study finds (2014)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 370</span>
+                <span class="comments">💬 147</span>
+                <span class="by">👤 bilsbie</span>
+            </div>
+            <div class="summary"><p>WASHINGTON — When the task at hand requires some imagination, taking a walk may lead to more creative thinking than sitting, according to research published by the American Psychological Association. “Many people anecdotally claim they do their best thinking when walking,” said Marily Oppezzo, PhD, of Santa Clara University. “With this study, we finally may be taking a step or two toward discovering why.” While at Stanford University’s...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.apa.org/news/press/releases/2014/04/creativity-walk" target="_blank">https://www.apa.org/news/press/releases/2014/04/creativity-walk</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://vllm.ai/blog/2026-05-26-eagle-3-1" target="_blank">Eagle 3.1: Collaboration Between the EAGLE Team, vLLM Team, and TorchSpec Team</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 6</span>
+                <span class="comments">💬 1</span>
+                <span class="by">👤 berlianta</span>
+            </div>
+            <div class="summary"><p>The EAGLE series — including EAGLE 1, EAGLE 2, and EAGLE 3 — has become one of the most widely adopted and practically deployed families of speculative decoding algorithms across both research and production systems. Today, the EAGLE team, vLLM team, and TorchSpec team are excited to jointly introduce **EAGLE 3.1** — a...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://vllm.ai/blog/2026-05-26-eagle-3-1" target="_blank">https://vllm.ai/blog/2026-05-26-eagle-3-1</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://shmuplations.com/phantasystariv/" target="_blank">Phantasy Star IV – 1993 Developer Interviews</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 41</span>
+                <span class="comments">💬 15</span>
+                <span class="by">👤 speckx</span>
+            </div>
+            <div class="summary"><p>A comprehensive collection of developer interviews from 1993 about the making of Phantasy Star IV, one of the Mega Drive/Genesis's most ambitious RPGs. The interviews cover the game's design philosophy, technical challenges of the era, and the creative process behind its groundbreaking story and graphics for a 16-bit console.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://shmuplations.com/phantasystariv/" target="_blank">https://shmuplations.com/phantasystariv/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://ente.com/blog/how-shamirs-secret-sharing-works/" target="_blank">How Shamir's Secret Sharing Works</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 252</span>
+                <span class="comments">💬 44</span>
+                <span class="by">👤 subract</span>
+            </div>
+            <div class="summary"><p>Some secrets are too important to trust to one person, and too important to lose if that person disappears. A company wants three officers present before the master key is used. A family wants account recovery to need more than one envelope.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://ente.com/blog/how-shamirs-secret-sharing-works/" target="_blank">https://ente.com/blog/how-shamirs-secret-sharing-works/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://earthiongame.com/" target="_blank">Earthion: A New Mega Drive-Style Shoot-Em-Up</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 92</span>
+                <span class="comments">💬 39</span>
+                <span class="by">👤 MrBuddyCasino</span>
+            </div>
+            <div class="summary"><p>Earthion | Digital Release Date Trailer Earthion Announcement Trailer Return to the genesis of 16-bit gaming with Ancient’s brand new shoot ’em up, Earthion! With Earth’s resources depleted and its environment in ruin, most of humanity has fled to Mars. But when hostile invaders launch an attack on Earth, mankind has no choice but to fight back.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://earthiongame.com/" target="_blank">https://earthiongame.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/" target="_blank">A successful Japanese trial of a ramjet engine designed for Mach‑5 aircraft</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 187</span>
+                <span class="comments">💬 142</span>
+                <span class="by">👤 rmason</span>
+            </div>
+            <div class="summary"><p>!Image 1: Nameplate of the Japan Aerospace Exploration Agency Oasis2me/Getty Images At first blush, it sounds like science fiction: supersonic jets able to traverse the vastness of the Pacific Ocean in under two hours. But recent tests by Japan's Aerospace Exploration Agency (JAXA) in conjunction with several...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/" target="_blank">https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://www.matuzo.at/blog/2026/aria-label-generic-elements" target="_blank">Don't put aria-label on generic elements like divs</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 16</span>
+                <span class="comments">💬 8</span>
+                <span class="by">👤 cyanbane</span>
+            </div>
+            <div class="summary"><p>posted on 22.05.2026 This post is part of a series called #WebAccessibilityFails, where I collect common issues I find in accessibility audits so that you can avoid them in the future. The title already tells most of the story, but here's why you must avoid labeling generic elements like divs or spans using `aria-label` or `aria-labelledby`. Don't do this Looking at the ARIA spec, you'll find section ["5.2.8.6 Roles which cannot be named...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.matuzo.at/blog/2026/aria-label-generic-elements" target="_blank">https://www.matuzo.at/blog/2026/aria-label-generic-elements</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-26</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-05-30</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://ziglang.org/devlog/2026/#2026-05-26" target="_blank">Zig: Build System Reworked</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 83</span>
+                <span class="comments">💬 11</span>
+                <span class="by">👤 tosh</span>
+            </div>
+            <div class="summary"><p>This page contains a curated list of recent changes to main branch Zig. This page contains entries for the year 2026. Other years are available in the Devlog archive page.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://ziglang.org/devlog/2026/#2026-05-26" target="_blank">https://ziglang.org/devlog/2026/#2026-05-26</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://www.deadcarl.com/p/the-kaiser-and-a-mediocre-man-theory" target="_blank">The Kaiser and a "Mediocre Man" Theory of History</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 26</span>
+                <span class="comments">💬 8</span>
+                <span class="by">👤 baud147258</span>
+            </div>
+            <div class="summary"><p>Napoleon was the archetype for this model, a man who seemingly came from nothing to leave an indelible mark on world history. This model places extreme focus on individuals and thus on elite politics. The theory does not account for mass politics or leave room for the histories of those far from the levers of power.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.deadcarl.com/p/the-kaiser-and-a-mediocre-man-theory" target="_blank">https://www.deadcarl.com/p/the-kaiser-and-a-mediocre-man-theory</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://pandoc-templates.org/" target="_blank">Pandoc Templates</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 15</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 ankitg12</span>
+            </div>
+            <div class="summary"><p>A curated gallery of ready-to-use templates for Pandoc document conversion. Browse and filter by output format (PDF/LaTeX, HTML, DOCX, EPUB, PPTX, ODT, ICML) and use case (letters, resumes, IEEE papers, PhD theses, presentations, and more). Each template links to its source repository with star counts and last-update dates.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://pandoc-templates.org/" target="_blank">https://pandoc-templates.org/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/" target="_blank">SQLite is all you need for durable workflows</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 553</span>
+                <span class="comments">💬 280</span>
+                <span class="by">👤 tomasol</span>
+            </div>
+            <div class="summary"><p>DBOS recently argued that Postgres is all you need for durable execution: if you already trust your database, you do not need a separate orchestration tier. I agree with the direction, and I think the idea can be pushed further. For a large class of durable systems, SQLite is all you need.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/" target="_blank">https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/" target="_blank">Danish pension fund excludes SpaceX citing governance and valuation</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 162</span>
+                <span class="comments">💬 107</span>
+                <span class="by">👤 vrganj</span>
+            </div>
+            <div class="summary"><p>Denmark's largest pension fund, ATP, has removed SpaceX from its investment universe, citing concerns over the company's private valuation and governance structure. The decision reflects growing scrutiny of how institutional investors allocate capital to highly valued private firms, where opacity around ownership, management oversight, and exit timelines can create significant risk for pension beneficiaries.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spacex-citing-governance-valuation-2026-05-29/" target="_blank">https://www.reuters.com/legal/transactional/danish-pension-fund-excludes-spac...</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/" target="_blank">Snowboard Kids 2 is 100% Decompiled</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 212</span>
+                <span class="comments">💬 86</span>
+                <span class="by">👤 GaggiX</span>
+            </div>
+            <div class="summary"><p>I’m very pleased to announce that _Snowboard Kids 2_ is 100% decompiled! All of the game’s functions have now been implemented in C and compile to assembly that matches the original game. There’s still some occasional `__asm__` hackery,1 and plenty of code needs better names and documentation, but every function now has a matching C implementation.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/" target="_blank">https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://overreacted.io/algebraic-effects-for-the-rest-of-us/" target="_blank">Algebraic Effects for the Rest of Us</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 67</span>
+                <span class="comments">💬 46</span>
+                <span class="by">👤 satvikpendem</span>
+            </div>
+            <div class="summary"><p>Have you heard about _algebraic effects_? My first attempts to figure out what they are or why I should care about them were unsuccessful. I found a fewpdfs but they only confused me more.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://overreacted.io/algebraic-effects-for-the-rest-of-us/" target="_blank">https://overreacted.io/algebraic-effects-for-the-rest-of-us/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://asawicki.info/news_1802_floor_and_ceil_versus_denormals_on_cpu_and_gpu" target="_blank">Floor and Ceil versus Denormals on CPU and GPU</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 9</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 ibobev</span>
+            </div>
+            <div class="summary"><p>Recently, I dove deep into floating-point numbers and their behavior. Somehow, this topic haunts me in my programming practice since I created Floating-Point Formats Cheatsheet back in 2013 and also released a comprehensive article The Secrets of Floating-Point Numbers in 2024. This...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://asawicki.info/news_1802_floor_and_ceil_versus_denormals_on_cpu_and_gpu" target="_blank">https://asawicki.info/news_1802_floor_and_ceil_versus_denormals_on_cpu_and_gpu</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://koenvangilst.nl/lab/mistral-ai-now-summit" target="_blank">Notes from the Mistral AI Now Summit</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 384</span>
+                <span class="comments">💬 162</span>
+                <span class="by">👤 vnglst</span>
+            </div>
+            <div class="summary"><p>May 29, 2026 * ai * article I was in Paris the last few days to visit the AI Now Summit by Mistral AI, hoping to learn more about their models, plans for the future of European AI and more. My personal insights: **Mistral is no longer just a model company.** They're building the full AI stack: compute, models, platforms & consultancy. They own the compute (a 40MW data...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://koenvangilst.nl/lab/mistral-ai-now-summit" target="_blank">https://koenvangilst.nl/lab/mistral-ai-now-summit</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://spectrum.ieee.org/floppy-disk-data-preservation-archives" target="_blank">What It Takes to Preserve Floppy Disks</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 59</span>
+                <span class="comments">💬 14</span>
+                <span class="by">👤 pseudolus</span>
+            </div>
+            <div class="summary"><p>A Cambridge University project is working to rescue data from aging floppy disks before the magnetic media deteriorates beyond recovery. The initiative uses specialized hardware to read degraded floppies at the physical sector level, combining forensic data recovery techniques with archival best practices to preserve decades of academic research, software, and personal data stored on these obsolete formats.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://spectrum.ieee.org/floppy-disk-data-preservation-archives" target="_blank">https://spectrum.ieee.org/floppy-disk-data-preservation-archives</a></div>
+</div>
+
+        <footer>
+            <p>2026-05-30</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-01</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://point.free/blog/gemma-4-on-a-2016-xeon/" target="_blank">A 10 year old Xeon is all you need</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 159</span>
+                <span class="comments">💬 63</span>
+                <span class="by">👤 cafkafk</span>
+            </div>
+            <div class="summary"><p>Published on June 01, 2026 17 minutes read The previous post covered getting Gemma 4’s MTP drafters quantized and paired with a verifier. This one is about running the result on a machine that has no business running it. To its credit, it has a whopping 128 GB RAM, but it’s DDR3… That RAM is 5-6 times slower than the current best laptop ram.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://point.free/blog/gemma-4-on-a-2016-xeon/" target="_blank">https://point.free/blog/gemma-4-on-a-2016-xeon/</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://blainsmith.com/articles/httptrace-with-go/" target="_blank">Tracing HTTP Requests with Go's net/HTTP/httptrace</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 31</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 speckx</span>
+            </div>
+            <div class="summary"><p>May 26 2026 The interesting part is how it plugs in. There is no `Tracer` interface on `http.Client`, no middleware to register. You attach a `ClientTrace` to a `context.Context` and the transport pulls it back out via `httptrace.ContextClientTrace` at the points where it matters.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blainsmith.com/articles/httptrace-with-go/" target="_blank">https://blainsmith.com/articles/httptrace-with-go/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://tylercipriani.com/blog/2026/05/28/chuwi-minibook-x/" target="_blank">Chuwi Minibook X</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 296</span>
+                <span class="comments">💬 221</span>
+                <span class="by">👤 thcipriani</span>
+            </div>
+            <div class="summary"><p>Netbooks are dead, but the Chuwi Minibook X scratches the same itch. The Minibook X is a 10.5″ x86_64 sub-ultrabook with 16GB RAM, a 512GB NVMe drive, and only one majorly annyoing Linux quirk. I needed a knock-around laptop, so I bought myself a Minibook for my birthday last year.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://tylercipriani.com/blog/2026/05/28/chuwi-minibook-x/" target="_blank">https://tylercipriani.com/blog/2026/05/28/chuwi-minibook-x/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting" target="_blank">Cloudflare Turnstile requiring fingerprintable WebGL</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 684</span>
+                <span class="comments">💬 385</span>
+                <span class="by">👤 HypnoticOcelot</span>
+            </div>
+            <div class="summary"><p>Since about a week, Cloudflare Turnstile (their "Verify you're human" device verification) has been looping indefinitely in my webkit-gtk based browser. Preventing access to quite few websites (previously, but it even went worse lately). Turns out it's because Cloudflare wants to have a fingerprint of your device via WebGL,...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting" target="_blank">https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://kefir.protopopov.lv/posts/announce2.html" target="_blank">Cessation of public development of Kefir C compiler</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 31</span>
+                <span class="comments">💬 2</span>
+                <span class="by">👤 f311a</span>
+            </div>
+            <div class="summary"><p>To whom it may concern, Today I announce the cessation of public development of Kefir C compiler and transition the work into private mode for an indefinite period of time. First and foremost, I myself am saddened by this change, however consider it necessary for sustainability of the project. From now on and for an indefinite period of time, no new major developments of the Kefir compiler project will be distributed publicly.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://kefir.protopopov.lv/posts/announce2.html" target="_blank">https://kefir.protopopov.lv/posts/announce2.html</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://surrealdb.com/blog/surrealdb-3-x-by-the-numbers" target="_blank">Benchmarking SurrealDB 3.x vs. Postgres, Mongo, Neo4j and Redis (With Fsync)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 9</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 itsezc</span>
+            </div>
+            <div class="summary"><p>Different hardware, different durability settings, different client libraries, a workload that happens to suit one engine's indexing strategy - any of those will tilt the numbers. Ran every database on the same hardware- an AMD Ryzen Threadripper 9970X (32C/64T), 128 GiB DDR5, NVMe storage, Ubuntu 24.04. Used the same open-source harness-crud-bench- with each workload translated into each engine's native query language so no database is...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://surrealdb.com/blog/surrealdb-3-x-by-the-numbers" target="_blank">https://surrealdb.com/blog/surrealdb-3-x-by-the-numbers</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://www.fisheries.noaa.gov/feature-story/decades-effort-restore-steelhead-and-salmon-passage-californias-alameda-creek" target="_blank">Decades of Effort Restore Steelhead and Salmon Passage on Alameda Creek</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 129</span>
+                <span class="comments">💬 20</span>
+                <span class="by">👤 rawgabbit</span>
+            </div>
+            <div class="summary"><p>!Image 1: A steelhead leaps up a barrier on its way to spawning grounds. Credit: Adobe StockA steelhead leaps up a barrier on its way to spawning grounds. Credit: Adobe Stock Last year,California Trout andPacific Gas & Electric removed the final barrier to fish passage...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.fisheries.noaa.gov/feature-story/decades-effort-restore-steelhead-and-salmon-passage-californias-alameda-creek" target="_blank">https://www.fisheries.noaa.gov/feature-story/decades-effort-restore-steelhead...</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration" target="_blank">ChatGPT for Google Sheets exfiltrates workbooks</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 231</span>
+                <span class="comments">💬 78</span>
+                <span class="by">👤 hackerBanana</span>
+            </div>
+            <div class="summary"><p>This attack does not require human-in-the-loop approvals, even when in settings the user has explicitly required human approval before ChatGPT edits workbooks. UPDATE from OpenAI: > "We appreciate the security research here, and it’s unfortunate this one slipped through a crack in our disclosure pipeline. As we’re now aware of this report, we’ve taken immediate steps to protect users against potential attacks in this area by removing the...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration" target="_blank">https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://prismml.com/news/bonsai-image-4b" target="_blank">1-Bit Bonsai Image 4B Image Generation for Local Devices</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 397</span>
+                <span class="comments">💬 162</span>
+                <span class="by">👤 modinfo</span>
+            </div>
+            <div class="summary"><p>Images generated from Ternary Bonsai Image 4B Today we’re releasing **Bonsai Image 4B**, a family of compact image-generation models designed to run high-quality diffusion inference on local hardware: from laptops to phones. Bonsai Image 4B comes in two variants: * **1-bit Bonsai Image 4B** uses binary {−1, +1} transformer weights with an FP16 group-wise scaling factor, giving 1.125 effective bits per weight. It targets maximum compression...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://prismml.com/news/bonsai-image-4b" target="_blank">https://prismml.com/news/bonsai-image-4b</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://jbkempf.com/blog/2026/dav2d/" target="_blank">Dav2d</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 495</span>
+                <span class="comments">💬 173</span>
+                <span class="by">👤 captain_bender</span>
+            </div>
+            <div class="summary"><p>_A codec does not really exist until everyone can decode it._ Today, we announce dav2d, a fast decoder for the new AV2 codec, developed by members of the VideoLAN community. A few weeks ago, we opened the repository and started development in public. Since then, AV2 itself has reached its first official specification release, making this...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://jbkempf.com/blog/2026/dav2d/" target="_blank">https://jbkempf.com/blog/2026/dav2d/</a></div>
+</div>
+
+        <footer>
+            <p>2026-06-01</p>
+        </footer>
+    </div>
+</body>
+</html>

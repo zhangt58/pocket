@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-02</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://ianthehenry.com/posts/why-janet/" target="_blank">Why Janet? (2023)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 106</span>
+                <span class="comments">💬 38</span>
+                <span class="by">👤 yacin</span>
+            </div>
+            <div class="summary"><p>I never thought it could happen to me. But for the past couple years, my go-to programming language for fun side projects has been a little Lisp dialect called Janet. (print "hey janet") I like Janet so much that I wrote an entire book about it, and put it on The Internet for free, in the hopes of attracting more Janetors to the language.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://ianthehenry.com/posts/why-janet/" target="_blank">https://ianthehenry.com/posts/why-janet/</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://blog.adafruit.com/" target="_blank">Adafruit Receives Demand Letter from Fenwick Legal Counsel on Behalf of Flux.ai</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 36</span>
+                <span class="comments">💬 9</span>
+                <span class="by">👤 semanser</span>
+            </div>
+            <div class="summary"><p>June 1, 2026 AT 8:05 pm !Image 1: limor fried & phillip torrone Adafruit received at 10:38 p.m. ET on May 22, 2026 a letter from former FBI chief of staff, Jonathan F. Lenzner, and partner at Fenwick & West LLP, counsel for Flux, demanding, among other things, that Adafruit refrain from publishing an article addressing what the letter characterizes as false and potentially...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.adafruit.com/" target="_blank">https://blog.adafruit.com/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/" target="_blank">CSS-Native Parallax Effect</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 13</span>
+                <span class="comments">💬 4</span>
+                <span class="by">👤 dandep</span>
+            </div>
+            <div class="summary"><p>jun 02, 2026 Parallax effects have a long history, and while there are countless ways and libraries to achieve them, a new CSS-native way was recently made possible with CSS Scroll-driven animation timelines. The usual recipe was a scroll event listener in JavaScript, recalculating positions on every frame and nudging an element up and down....</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/" target="_blank">https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://www.0xsid.com/blog/meta-account-takeover-fiasco" target="_blank">The newest Instagram “exploit” is the goofiest I've seen</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 1861</span>
+                <span class="comments">💬 421</span>
+                <span class="by">👤 ssiddharth</span>
+            </div>
+            <div class="summary"><p>Yesterday, a slew of Instagram accounts, including some high profile ones like the Obama White House account, seemingly got hacked. I’ve spent almost a decade and a half identifying vulnerabilities and exploits at unicorn scale, but this is hands down the most unserious, "almost too stupid to be true" of them all. The Takeover Flow * **Step 01: Faking the Location & Initiating Support** All the attacker needs to kick this off is your account...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.0xsid.com/blog/meta-account-takeover-fiasco" target="_blank">https://www.0xsid.com/blog/meta-account-takeover-fiasco</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/krauseler/muxcard" target="_blank">Muxcard, a dyi credit card size computer</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 61</span>
+                <span class="comments">💬 8</span>
+                <span class="by">👤 sargstuff</span>
+            </div>
+            <div class="summary"><p>Muxcard is a fully working computer literally the size of a credit card, built around an ESP32-C3, e-paper display, and NFC. It can serve as a minimalist wallet for QR codes and NFC keys, a pentesting tool similar to Flipper Zero, a smart-home dashboard, an offline password/2FA/crypto wallet, or even a memorable business card.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/krauseler/muxcard" target="_blank">https://github.com/krauseler/muxcard</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai" target="_blank">Can the stockmarket swallow Anthropic, SpaceX and OpenAI?</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 400</span>
+                <span class="comments">💬 691</span>
+                <span class="by">👤 1vuio0pswjnm7</span>
+            </div>
+            <div class="summary"><p>Can the stockmarket swallow Anthropic, SpaceX and OpenAI? Watch out for indigestion !Image 18: Illustration of hands holding a SpaceX rocket with the nose open and pouring out champagne into a lot of champagne glasses Illustration: Fortunate Joaquin Jun 1st 2026|6 min read T hey promise to be the biggest stockmarket debuts...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai" target="_blank">https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarke...</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/" target="_blank">macOS needs its grid back</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 270</span>
+                <span class="comments">💬 157</span>
+                <span class="by">👤 ranebo</span>
+            </div>
+            <div class="summary"><p>Two decades ago I had a better Mac desktop experience than I have today. I only had a single low res (by todays standards) screen, yet I felt like Hugh Jackman in Swordfish - deftly navigating more than nine displays without thinking, muscle and spatial memory working seamlessly together. > TLDR; I built an app to return macOS spaces to its Pre-Lion Grid-enabled Glory.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/" target="_blank">https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://categoricaldata.net/" target="_blank">CQL: Categorical Databases</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 42</span>
+                <span class="comments">💬 11</span>
+                <span class="by">👤 noworriesnate</span>
+            </div>
+            <div class="summary"><p>Open-source CQL is production-ready for single-node in-memory data processing workloads, such as integrating data for data science. It is being commercialized by Conexus AI; for inquiries, contact Ryan Wisnesky. Value Proposition * **Reduce risk of failure through artificial intelligence**.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://categoricaldata.net/" target="_blank">https://categoricaldata.net/</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/" target="_blank">OpenAI frontier models and Codex are now available on AWS</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 282</span>
+                <span class="comments">💬 96</span>
+                <span class="by">👤 typpo</span>
+            </div>
+            <div class="summary"><p>OpenAI frontier models and Codex are now available on AWS | OpenAI Helping enterprises bring AI into production through their existing security, governance, and deployment workflows. Today, OpenAI frontier models and Codex are generally available on AWS, opening a new path for millions of AWS customers to build with OpenAI through the platform they already use to run their business. For enterprises, this removes one of the biggest barriers to...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/" target="_blank">https://openai.com/index/openai-frontier-models-and-codex-are-now-available-o...</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/cyberpapiii/chipotlai-max" target="_blank">Chipotlai Max</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 240</span>
+                <span class="comments">💬 38</span>
+                <span class="by">👤 nigelgutzmann</span>
+            </div>
+            <div class="summary"><p>Chipotlai Max is a humorous fork of the OpenCode AI coding agent that replaces the default LLM with "Pepper AI" — a mock LLM provider running on "stolen Chipotle compute." A community project jokingly expanding to add providers from Home Depot, Lowes, Target, and Starbucks.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/cyberpapiii/chipotlai-max" target="_blank">https://github.com/cyberpapiii/chipotlai-max</a></div>
+</div>
+
+        <footer>
+            <p>2026-06-02</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Research — June 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: #2a2a3a;
+    --text: #e2e2ec;
+    --text-dim: #8888a0;
+    --green: #22c55e;
+    --green-dim: #166534;
+    --green-bg: rgba(34,197,94,0.08);
+    --red: #ef4444;
+    --red-dim: #7f1d1d;
+    --red-bg: rgba(239,68,68,0.08);
+    --yellow: #eab308;
+    --yellow-bg: rgba(234,179,8,0.1);
+    --blue: #3b82f6;
+    --blue-bg: rgba(59,130,246,0.1);
+    --purple: #a855f7;
+    --purple-bg: rgba(168,85,247,0.1);
+    --orange: #f97316;
+    --orange-bg: rgba(249,115,22,0.1);
+    --cyan: #06b6d4;
+    --cyan-bg: rgba(6,182,212,0.1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  /* ── Header ── */
+  .header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+  }
+  .header .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    background: var(--cyan-bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+  }
+  .header h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #e2e2ec, #3b82f6, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+  }
+  .header .date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+
+  /* ── Market Snapshot ── */
+  .snapshot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+  }
+  .snap-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: border-color 0.2s;
+  }
+  .snap-card:hover { border-color: var(--blue); }
+  .snap-card .label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-bottom: 0.3rem;
+  }
+  .snap-card .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .snap-card .change {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.15rem;
+  }
+  .green { color: var(--green); }
+  .red { color: var(--red); }
+  .yellow { color: var(--yellow); }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 3rem;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .section-header .ytd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: auto;
+  }
+  .thesis {
+    background: var(--surface);
+    border-left: 3px solid var(--blue);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+  .thesis strong { color: var(--text); }
+
+  /* ── Table ── */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  thead th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-align: right;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface2);
+    white-space: nowrap;
+  }
+  thead th:first-child { text-align: left; }
+  tbody td {
+    padding: 0.7rem 1rem;
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(42,42,58,0.5);
+    white-space: nowrap;
+  }
+  tbody td:first-child {
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight: 600;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: rgba(59,130,246,0.04); }
+  .ticker {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+  }
+  .ticker::after {
+    content: "\2003\2003";
+  }
+  .company { color: var(--text-dim); font-weight: 400; font-size: 0.78rem; white-space: nowrap; }
+  .positive { color: var(--green); }
+  .negative { color: var(--red); }
+  .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .badge-hot { background: rgba(34,197,94,0.15); color: var(--green); }
+  .badge-warm { background: rgba(234,179,8,0.15); color: var(--yellow); }
+  .badge-cold { background: rgba(239,68,68,0.15); color: var(--red); }
+
+  /* ── Takeaways ── */
+  .takeaways {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+  }
+  .takeaways h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--purple);
+    margin-bottom: 0.75rem;
+  }
+  .takeaways ul {
+    list-style: none;
+    padding: 0;
+  }
+  .takeaways li {
+    padding: 0.4rem 0;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(42,42,58,0.3);
+  }
+  .takeaways li:last-child { border-bottom: none; }
+  .takeaways li strong { color: var(--text); }
+  .takeaways li code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background: var(--surface2);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    color: var(--cyan);
+  }
+
+  /* ── Summary Rank Table ── */
+  .summary-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+  }
+  .summary-section h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--green), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .summary-subtitle {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+  .rank-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .rank-1 { background: linear-gradient(135deg, #ffd700, #ff8c00); color: #000; }
+  .rank-2 { background: linear-gradient(135deg, #c0c0c0, #a0a0a0); color: #000; }
+  .rank-3 { background: linear-gradient(135deg, #cd7f32, #a0522d); color: #fff; }
+  .rank-other { background: var(--surface2); color: var(--text-dim); }
+
+  /* ── Strategy Box ── */
+  .strategy-box {
+    margin-top: 2rem;
+    background: linear-gradient(135deg, rgba(34,197,94,0.06), rgba(6,182,212,0.06));
+    border: 1px solid rgba(34,197,94,0.2);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  .strategy-box h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+  .strategy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .strategy-card {
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .strategy-card h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+  .strategy-card p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+  .buy-header { color: var(--green); }
+  .hold-header { color: var(--yellow); }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .footer .disclaimer {
+    color: var(--red-dim);
+    font-size: 0.65rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    .header h1 { font-size: 1.8rem; }
+    .strategy-grid { grid-template-columns: 1fr; }
+    .snapshot { grid-template-columns: repeat(3, 1fr); }
+    body { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ Header ═══ -->
+<div class="header">
+  <div class="tag">📊 Market Research</div>
+  <h1>Investment-Worthy Fields</h1>
+  <div class="date">June 1, 2026 &nbsp;·&nbsp; Generated at 15:42 ET &nbsp;·&nbsp; S&P 500: 7,586</div>
+</div>
+
+<!-- ═══ Market Snapshot ═══ -->
+<div class="snapshot">
+  <div class="snap-card">
+    <div class="label">S&P 500</div>
+    <div class="value">7,586</div>
+    <div class="change green">+11.1% YTD</div>
+  </div>
+  <div class="snap-card">
+    <div class="label">Nasdaq 100</div>
+    <div class="value">741</div>
+    <div class="change green">+21.0% YTD</div>
+  </div>
+  <div class="snap-card">
+    <div class="label">Russell 2000</div>
+    <div class="value">2,895</div>
+    <div class="change green">+16.2% YTD</div>
+  </div>
+  <div class="snap-card">
+    <div class="label">VIX</div>
+    <div class="value">15.90</div>
+    <div class="change yellow">Low fear</div>
+  </div>
+  <div class="snap-card">
+    <div class="label">Gold</div>
+    <div class="value">$4,505</div>
+    <div class="change red">-1.9% today</div>
+  </div>
+  <div class="snap-card">
+    <div class="label">Bitcoin</div>
+    <div class="value">$71K</div>
+    <div class="change red">-3.4% today</div>
+  </div>
+  <div class="snap-card">
+    <div class="label">Brent Crude</div>
+    <div class="value">$96.69</div>
+    <div class="change green">+6.1% today</div>
+  </div>
+</div>
+
+<!-- ═══ 1. Semiconductors ═══ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--green-bg);color:var(--green);">💎</div>
+    <h2>Semiconductors — The AI Engine</h2>
+    <span class="ytd green">SOXX +82.5% YTD</span>
+  </div>
+  <div class="thesis">
+    <strong>The Thesis:</strong> AI demand is still in early innings. Cloud capex is accelerating, not slowing. HBM memory is the bottleneck. CHIPS Act is driving domestic fab buildout — equipment makers benefit regardless of which chip designer wins.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>YTD</th>
+          <th>P/E</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>Target</th>
+          <th>Upside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">MU</span><span class="company">Micron</span></td>
+          <td>$1,034</td>
+          <td class="positive">+228%</td>
+          <td>48.8</td>
+          <td><span class="positive">9.8</span></td>
+          <td class="positive">196%</td>
+          <td>$703</td>
+          <td class="negative">-25%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">NVDA</span><span class="company">NVIDIA</span></td>
+          <td>$221</td>
+          <td class="positive">+17%</td>
+          <td>33.9</td>
+          <td><span class="positive">17.5</span></td>
+          <td class="positive">85%</td>
+          <td>$297</td>
+          <td class="positive">+34%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">MRVL</span><span class="company">Marvell</span></td>
+          <td>$216</td>
+          <td class="positive">+142%</td>
+          <td>74.1</td>
+          <td>35.5</td>
+          <td class="positive">28%</td>
+          <td>$220</td>
+          <td class="positive">+2%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">AMAT</span><span class="company">Applied Materials</span></td>
+          <td>$457</td>
+          <td class="positive">+70%</td>
+          <td>43.0</td>
+          <td><span class="positive">28.2</span></td>
+          <td class="positive">11%</td>
+          <td>$511</td>
+          <td class="positive">+12%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">LRCX</span><span class="company">Lam Research</span></td>
+          <td>$316</td>
+          <td class="positive">+71%</td>
+          <td>59.9</td>
+          <td>39.8</td>
+          <td class="positive">24%</td>
+          <td>$314</td>
+          <td>flat</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">KLAC</span><span class="company">KLA</span></td>
+          <td>$1,914</td>
+          <td class="positive">+51%</td>
+          <td>54.1</td>
+          <td>38.4</td>
+          <td class="positive">12%</td>
+          <td>$1,855</td>
+          <td class="negative">-3%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">AVGO</span><span class="company">Broadcom</span></td>
+          <td>$462</td>
+          <td class="positive">+33%</td>
+          <td>89.8</td>
+          <td><span class="positive">25.0</span></td>
+          <td class="positive">30%</td>
+          <td>$482</td>
+          <td class="positive">+4%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="takeaways">
+    <h4>💡 Key Takeaways</h4>
+    <ul>
+      <li><strong>NVIDIA at 17.5 Fwd PE</strong> with 85% revenue growth is the <strong>cheapest mega-cap AI stock</strong>. Analyst upside +34%. After 10-for-1 split, the price looks cheap but fundamentals justify holding.</li>
+      <li><strong>Micron at 9.8 Fwd PE</strong> despite +228% YTD — HBM demand is exploding, pricing power is real. Analyst targets haven't caught up to the rally (showing downside) — use as a signal to DCA, not sell.</li>
+      <li><strong>Applied Materials at 28.2 Fwd PE</strong> is the best equipment play — benefits from CHIPS Act domestic fab buildout + AI capacity expansion. +12% upside.</li>
+      <li><span class="badge badge-cold">Risk</span> Semi equipment (LRCX, KLAC) are fully valued at 38-40 Fwd PE with only 11-12% growth. Hold, don't add.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ 2. Nuclear Energy ═══ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--cyan-bg);color:var(--cyan);">⚛️</div>
+    <h2>Nuclear Energy — AI's Power Problem</h2>
+    <span class="ytd green">PBD +33.8% YTD</span>
+  </div>
+  <div class="thesis">
+    <strong>The Thesis:</strong> AI data centers need <strong>200+ GW of new baseload power by 2030</strong>. Nuclear is the only scalable carbon-free source available at scale. Google, Amazon, and Microsoft are signing PPAs with nuclear plants at record rates. SMRs (Small Modular Reactors) will unlock new sites. This is a 10-year megatrend.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>YTD</th>
+          <th>P/E</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>Target</th>
+          <th>Upside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">VST</span><span class="company">Vistra</span></td>
+          <td>$156</td>
+          <td class="negative">-5%</td>
+          <td>26.1</td>
+          <td><span class="positive">14.3</span></td>
+          <td class="positive">43%</td>
+          <td>$225</td>
+          <td class="positive"><strong>+44%</strong></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">CEG</span><span class="company">Constellation Energy</span></td>
+          <td>$270</td>
+          <td class="negative">-26%</td>
+          <td>23.4</td>
+          <td>19.8</td>
+          <td class="positive">64%</td>
+          <td>$368</td>
+          <td class="positive"><strong>+36%</strong></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">NEE</span><span class="company">NextEra Energy</span></td>
+          <td>$84</td>
+          <td class="positive">+5%</td>
+          <td>21.4</td>
+          <td>19.2</td>
+          <td class="positive">7%</td>
+          <td>$99</td>
+          <td class="positive">+17%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">DUK</span><span class="company">Duke Energy</span></td>
+          <td>$120</td>
+          <td class="positive">+4%</td>
+          <td>18.5</td>
+          <td>16.8</td>
+          <td class="positive">11%</td>
+          <td>$139</td>
+          <td class="positive">+15%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">OKLO</span><span class="company">Oklo (SMR)</span></td>
+          <td>$68</td>
+          <td class="negative">-12%</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>$89</td>
+          <td class="positive">+30%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">SMR</span><span class="company">NuScale Power</span></td>
+          <td>$13</td>
+          <td class="negative">-20%</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td class="negative">-96%</td>
+          <td>$15</td>
+          <td class="positive">+18%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="takeaways">
+    <h4>💡 Key Takeaways</h4>
+    <ul>
+      <li><strong>Vistra (VST) is the #1 pick:</strong> 14.3 Fwd PE, 43% revenue growth, +44% upside to analyst target. Owns nuclear plants in Texas + pivoting to serve AI data centers. Down only 5% YTD despite nuclear rally — massive opportunity.</li>
+      <li><strong>Constellation (CEG) at -26% YTD</strong> is a beaten diamond. Largest nuclear fleet in the US. 64% revenue growth. 19.8 Fwd PE. The dip created by regulatory concerns is a buying opportunity with +36% upside.</li>
+      <li><strong>OKLO (Bill Gates-backed SMR)</strong> is speculative — no revenue yet, but the SMR story is the 2030+ thesis. Allocate small % for asymmetric upside.</li>
+      <li><span class="badge badge-cold">Avoid SMR stock</span> until they show path to profitability. -96% revenue decline, burning cash.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ 3. AI Power & Cooling ═══ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--orange-bg);color:var(--orange);">🔌</div>
+    <h2>AI Power &amp; Cooling — The Bottleneck Play</h2>
+  </div>
+  <div class="thesis">
+    <strong>The Thesis:</strong> AI chips generate massive heat and power demand. GPU servers need liquid cooling and backup generators at scale. Companies solving these problems are the new critical infrastructure — and they're easier to understand than chip design.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>YTD</th>
+          <th>P/E</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>Target</th>
+          <th>Upside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">VRT</span><span class="company">Vertiv Holdings</span></td>
+          <td>$324</td>
+          <td class="positive">+84%</td>
+          <td>81.3</td>
+          <td>36.6</td>
+          <td class="positive">30%</td>
+          <td>$377</td>
+          <td class="positive">+16%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">CMI</span><span class="company">Cummins</span></td>
+          <td>$634</td>
+          <td class="positive">+22%</td>
+          <td>32.9</td>
+          <td><span class="positive">19.0</span></td>
+          <td class="positive">3%</td>
+          <td>$725</td>
+          <td class="positive">+14%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">EQT</span><span class="company">EQT Corp (Gas)</span></td>
+          <td>$55</td>
+          <td class="positive">+4%</td>
+          <td>10.5</td>
+          <td><span class="positive">11.9</span></td>
+          <td class="positive">50%</td>
+          <td>$70</td>
+          <td class="positive"><strong>+27%</strong></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">WAT</span><span class="company">Waters Corp</span></td>
+          <td>$373</td>
+          <td class="negative">-2%</td>
+          <td>47.5</td>
+          <td>22.7</td>
+          <td class="positive">91%</td>
+          <td>$401</td>
+          <td class="positive">+7%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="takeaways">
+    <h4>💡 Key Takeaways</h4>
+    <ul>
+      <li><strong>Vertiv</strong> makes power distribution and liquid cooling for data centers. +84% YTD but fully valued at 36.6 Fwd PE. Hold, don't chase.</li>
+      <li><strong>Cummins at 19.0 Fwd PE</strong> — makes generators for backup power. Cheap valuation, steady growth, +14% upside. Defensive AI play.</li>
+      <li><strong>EQT at 11.9 Fwd PE with 50% growth</strong> is the best value — natural gas is the bridge fuel for AI data center power. +27% upside to target.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ 4. Healthcare ═══ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--purple-bg);color:var(--purple);">🏥</div>
+    <h2>Healthcare — Contrarian Value</h2>
+    <span class="ytd red">XLV -4.6% YTD</span>
+  </div>
+  <div class="thesis">
+    <strong>The Thesis:</strong> Healthcare is the <strong>lagging S&P sector</strong> (-4.6% YTD) while semis are up 82%. GLP-1 obesity drugs (Mounjaro, Zepbound, Wegovy) are creating $100B+ markets. Gene therapies are entering prime. Aging demographics = secular tailwind. Mean reversion is inevitable.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>YTD</th>
+          <th>P/E</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>Target</th>
+          <th>Upside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">REGN</span><span class="company">Regeneron</span></td>
+          <td>$604</td>
+          <td class="negative">-22%</td>
+          <td>14.8</td>
+          <td><span class="positive">11.2</span></td>
+          <td class="positive">19%</td>
+          <td>$833</td>
+          <td class="positive"><strong>+38%</strong></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">VRTX</span><span class="company">Vertex Pharma</span></td>
+          <td>$435</td>
+          <td class="negative">-4%</td>
+          <td>25.8</td>
+          <td>20.3</td>
+          <td class="positive">8%</td>
+          <td>$549</td>
+          <td class="positive"><strong>+26%</strong></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">GILD</span><span class="company">Gilead</span></td>
+          <td>$131</td>
+          <td class="positive">+8%</td>
+          <td>17.8</td>
+          <td><span class="positive">13.7</span></td>
+          <td class="positive">4%</td>
+          <td>$158</td>
+          <td class="positive">+20%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">LLY</span><span class="company">Eli Lilly</span></td>
+          <td>$1,080</td>
+          <td>flat</td>
+          <td>38.3</td>
+          <td>24.3</td>
+          <td class="positive">56%</td>
+          <td>$1,215</td>
+          <td class="positive">+13%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">BIIB</span><span class="company">Biogen</span></td>
+          <td>$193</td>
+          <td class="positive">+8%</td>
+          <td>20.8</td>
+          <td><span class="positive">11.6</span></td>
+          <td class="positive">2%</td>
+          <td>$219</td>
+          <td class="positive">+14%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">MRNA</span><span class="company">Moderna</span></td>
+          <td>$46</td>
+          <td class="positive">+49%</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td class="positive">260%</td>
+          <td>$43</td>
+          <td class="negative">-6%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="takeaways">
+    <h4>💡 Key Takeaways</h4>
+    <ul>
+      <li><strong>Regeneron (REGN) at 11.2 Fwd PE and -22% YTD</strong> is the highest-conviction healthcare buy. 19% revenue growth, +38% upside. Libtayo (cancer drug) + Libmeldy (gene therapy) driving growth. PEG ratio of 1.07 — growth is fully justified.</li>
+      <li><strong>Vertex (VRTX) at 20.3 Fwd PE</strong> — cystic fibrosis franchise cash cow + CRISPR-based sickle cell therapy (Casgevy). +26% upside. Diversifying beyond CF.</li>
+      <li><strong>Eli Lilly</strong> — Mounjaro/Zepbound revenue growing 56%, but fully valued at 24.3 Fwd PE. Wait for pullback to add.</li>
+      <li><strong>Moderna</strong> — mRNA vaccine revenue surging 260%, but still no earnings (N/A trailing PE). Speculative bounce play.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ 5. Clean Energy ═══ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--green-bg);color:var(--green);">☀️</div>
+    <h2>Clean Energy / Grid</h2>
+    <span class="ytd green">ICLN +34.3% YTD</span>
+  </div>
+  <div class="thesis">
+    <strong>The Thesis:</strong> IRA investments ($369B in clean energy subsidies) + AI power demand = massive grid modernization spending. Transmission lines, battery storage, and solar are seeing record investment. Domestic manufacturing gets 10x the tax credit.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>YTD</th>
+          <th>P/E</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>Target</th>
+          <th>Upside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">FSLR</span><span class="company">First Solar</span></td>
+          <td>$299</td>
+          <td class="positive">+9%</td>
+          <td>19.3</td>
+          <td><span class="positive">12.7</span></td>
+          <td class="positive">24%</td>
+          <td>$244</td>
+          <td class="negative">-18%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">ENPH</span><span class="company">Enphase Energy</span></td>
+          <td>$64</td>
+          <td class="positive">+89%</td>
+          <td>63.0</td>
+          <td>26.3</td>
+          <td class="negative">-21%</td>
+          <td>$43</td>
+          <td class="negative">-32%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">SEDG</span><span class="company">SolarEdge</span></td>
+          <td>$73</td>
+          <td class="positive">+132%</td>
+          <td>N/A</td>
+          <td>46.4</td>
+          <td class="positive">42%</td>
+          <td>$42</td>
+          <td class="negative">-43%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">RUN</span><span class="company">Sunrun</span></td>
+          <td>$15</td>
+          <td class="negative">-21%</td>
+          <td>7.2</td>
+          <td>19.0</td>
+          <td class="positive">43%</td>
+          <td>$19</td>
+          <td class="positive">+25%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="takeaways">
+    <h4>💡 Key Takeaways</h4>
+    <ul>
+      <li><strong>First Solar (FSLR) at 12.7 Fwd PE</strong> is the best clean energy value — domestic US manufacturing, 24% growth, benefits from CHIPS Act + IRA. Analyst targets lag the price — consider DCA.</li>
+      <li><span class="badge badge-cold">Avoid chasing Enphase (+89%) and SolarEdge (+132%)</span> — analyst targets show massive downside. These have run ahead of fundamentals.</li>
+      <li><strong>Sunrun at 7.2 P/E</strong> with 43% revenue growth and +25% upside is a deep value contrarian play in residential solar.</li>
+      <li>For broad exposure, <strong>ICLN ETF at 24.6 P/E + 34% YTD</strong> is still reasonable for the sector bet.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ 6. AI Beyond Chips ═══ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:var(--blue-bg);color:var(--blue);">🖥️</div>
+    <h2>AI Infrastructure — Servers, Storage, Networking</h2>
+  </div>
+  <div class="thesis">
+    <strong>The Thesis:</strong> You don't need NVIDIA to benefit from AI. Servers, storage, and networking are all seeing record demand. Dell is assembling AI servers. Arista is building AI network fabric. NetApp is the AI storage story. These are the "boring" picks that actually deliver.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>YTD</th>
+          <th>P/E</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>Target</th>
+          <th>Upside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">DELL</span><span class="company">Dell Technologies</span></td>
+          <td>$452</td>
+          <td class="positive">+257%</td>
+          <td>52.2</td>
+          <td><span class="positive">22.8</span></td>
+          <td class="positive">88%</td>
+          <td>$442</td>
+          <td>flat</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">ANET</span><span class="company">Arista Networks</span></td>
+          <td>$168</td>
+          <td class="positive">+26%</td>
+          <td>58.0</td>
+          <td>37.8</td>
+          <td class="positive">35%</td>
+          <td>$188</td>
+          <td class="positive">+12%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">NTAP</span><span class="company">NetApp</span></td>
+          <td>$175</td>
+          <td class="positive">+65%</td>
+          <td>27.5</td>
+          <td><span class="positive">17.8</span></td>
+          <td class="positive">13%</td>
+          <td>$163</td>
+          <td class="negative">-7%</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">CMI</span><span class="company">Cummins</span></td>
+          <td>$634</td>
+          <td class="positive">+22%</td>
+          <td>32.9</td>
+          <td><span class="positive">19.0</span></td>
+          <td class="positive">3%</td>
+          <td>$725</td>
+          <td class="positive">+14%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="takeaways">
+    <h4>💡 Key Takeaways</h4>
+    <ul>
+      <li><strong>Dell at 22.8 Fwd PE</strong> despite +257% YTD — AI server demand is real, but valuation is catching up. Hold if you own, don't chase at these levels.</li>
+      <li><strong>Arista (ANET) at 37.8 Fwd PE</strong> — networking for AI data centers (ethernet alternative to NVIDIA InfiniBand). +12% upside. Solid hold for long-term AI infra exposure.</li>
+      <li><strong>NetApp at 17.8 Fwd PE</strong> — AI storage is the next bottleneck. Analyst targets haven't caught up (-7% upside) but fundamentals are strong. Accumulate on dips.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ Summary ═══ -->
+<div class="summary-section">
+  <h2>🏆 Top 8 Picks — Ranked by Conviction</h2>
+  <p class="summary-subtitle">Sorted by analyst upside — buying lagging names with strong growth</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Ticker</th>
+          <th>Sector</th>
+          <th>Price</th>
+          <th>Fwd PE</th>
+          <th>Rev Growth</th>
+          <th>YTD</th>
+          <th>Upside</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="rank-num rank-1">1</span></td>
+          <td><span class="ticker">VST</span><span class="company">Vistra</span></td>
+          <td><span class="badge badge-hot">Nuclear</span></td>
+          <td>$156</td>
+          <td class="positive">14.3</td>
+          <td class="positive">43%</td>
+          <td class="negative">-5%</td>
+          <td class="positive"><strong>+44%</strong></td>
+          <td>Nuclear + AI power, cheapest</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-2">2</span></td>
+          <td><span class="ticker">REGN</span><span class="company">Regeneron</span></td>
+          <td><span class="badge badge-hot">Healthcare</span></td>
+          <td>$604</td>
+          <td class="positive">11.2</td>
+          <td class="positive">19%</td>
+          <td class="negative">-22%</td>
+          <td class="positive"><strong>+38%</strong></td>
+          <td>Deep value, cancer + gene therapy</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-3">3</span></td>
+          <td><span class="ticker">CEG</span><span class="company">Constellation</span></td>
+          <td><span class="badge badge-hot">Nuclear</span></td>
+          <td>$270</td>
+          <td>19.8</td>
+          <td class="positive">64%</td>
+          <td class="negative">-26%</td>
+          <td class="positive"><strong>+36%</strong></td>
+          <td>Largest US nuclear fleet, beaten down</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-other">4</span></td>
+          <td><span class="ticker">NVDA</span><span class="company">NVIDIA</span></td>
+          <td><span class="badge badge-hot">Semiconductors</span></td>
+          <td>$221</td>
+          <td class="positive">17.5</td>
+          <td class="positive">85%</td>
+          <td class="positive">+17%</td>
+          <td class="positive"><strong>+34%</strong></td>
+          <td>Cheapest mega-cap AI stock</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-other">5</span></td>
+          <td><span class="ticker">VRTX</span><span class="company">Vertex Pharma</span></td>
+          <td><span class="badge badge-hot">Healthcare</span></td>
+          <td>$435</td>
+          <td>20.3</td>
+          <td class="positive">8%</td>
+          <td class="negative">-4%</td>
+          <td class="positive"><strong>+26%</strong></td>
+          <td>CF franchise + CRISPR therapy</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-other">6</span></td>
+          <td><span class="ticker">EQT</span><span class="company">EQT Corp</span></td>
+          <td><span class="badge badge-warm">Energy</span></td>
+          <td>$55</td>
+          <td class="positive">11.9</td>
+          <td class="positive">50%</td>
+          <td class="positive">+4%</td>
+          <td class="positive"><strong>+27%</strong></td>
+          <td>Cheap gas for AI data center power</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-other">7</span></td>
+          <td><span class="ticker">GILD</span><span class="company">Gilead</span></td>
+          <td><span class="badge badge-warm">Healthcare</span></td>
+          <td>$131</td>
+          <td class="positive">13.7</td>
+          <td class="positive">4%</td>
+          <td class="positive">+8%</td>
+          <td class="positive"><strong>+20%</strong></td>
+          <td>CV oncology, cheap valuation</td>
+        </tr>
+        <tr>
+          <td><span class="rank-num rank-other">8</span></td>
+          <td><span class="ticker">AMAT</span><span class="company">Applied Materials</span></td>
+          <td><span class="badge badge-hot">Semiconductors</span></td>
+          <td>$457</td>
+          <td><span class="positive">28.2</span></td>
+          <td class="positive">11%</td>
+          <td class="positive">+70%</td>
+          <td class="positive"><strong>+12%</strong></td>
+          <td>CHIPS Act fab equipment beneficiary</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Strategy Box -->
+  <div class="strategy-box">
+    <h3>🎯 Strategy: Buy Lagging, Hold Leading</h3>
+    <div class="strategy-grid">
+      <div class="strategy-card">
+        <h4 class="buy-header">🟢 Buy / Accumulate on Dip</h4>
+        <p>
+          <strong>Nuclear:</strong> VST (14.3 Fwd PE, -5% YTD) and CEG (19.8 Fwd PE, -26% YTD) are the highest-conviction buys. AI power demand is a multi-decade tailwind and these names are lagging.<br><br>
+          <strong>Healthcare:</strong> REGN (11.2 Fwd PE, -22% YTD) is healthcare's deepest value. VRTX and GILD follow. The sector will rotate.<br><br>
+          <strong>Energy Bridge:</strong> EQT (11.9 Fwd PE, +27% upside) — natural gas is the fuel bridging fossil and nuclear for AI data centers.
+        </p>
+      </div>
+      <div class="strategy-card">
+        <h4 class="hold-header">🟡 Hold / DCA — Don't Chase</h4>
+        <p>
+          <strong>Semiconductors:</strong> NVDA (17.5 Fwd PE) is still the core AI position. AMAT for CHIPS Act exposure. Avoid LRCX/KLAC at 38-40 Fwd PE.<br><br>
+          <strong>AI Infrastructure:</strong> Hold VRT, DELL, ANET but don't add at current levels. Wait for pullbacks.<br><br>
+          <strong>Clean Energy:</strong> FSLR at 12.7 Fwd PE is the only name with entry value. Avoid chasing ENPH (+89%) and SEDG (+132%).<br><br>
+          <strong>Speculative:</strong> OKLO (SMR) — small allocation for 10-year AI nuclear thesis.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>Data as of June 1, 2026 · 15:42 ET · Source: yfinance / Yahoo Finance</p>
+  <p class="disclaimer">⚠️ Not financial advice. All investments carry risk. Past performance does not guarantee future results. Do your own due diligence.</p>
+</div>
+
+</body>
+</html>

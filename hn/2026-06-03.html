@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 10px;
+        }
+        header p { color: #888; font-size: 1rem; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 5px; height: 100%;
+            background: linear-gradient(180deg, var(--accent), transparent);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .card-header { display: flex; align-items: flex-start; gap: 15px; }
+        .rank {
+            font-size: 1.8rem; font-weight: 900;
+            color: var(--accent); min-width: 40px;
+        }
+        .title-section { flex: 1; }
+        .title-section h2 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #fff; margin-bottom: 8px; line-height: 1.4;
+        }
+        .title-section a {
+            color: #fff; text-decoration: none; transition: color 0.2s;
+        }
+        .title-section a:hover { color: var(--accent); }
+        .meta {
+            display: flex; flex-wrap: wrap; gap: 15px;
+            font-size: 0.9rem; color: #888;
+        }
+        .meta span { display: flex; align-items: center; gap: 5px; }
+        .meta .score { color: #f7c948; font-weight: 600; }
+        .meta .comments { color: #5dade2; font-weight: 600; }
+        .meta .by { color: #82e0aa; }
+        .summary {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .source { margin-top: 10px; font-size: 0.85rem; }
+        .source a { color: #5dade2; text-decoration: none; word-break: break-all; }
+        .source a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #555; font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .card { padding: 18px; }
+            .card-header { flex-direction: column; gap: 8px; }
+            .rank { font-size: 1.5rem; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-03</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+    <div class="card-header">
+        <div class="rank">#1</div>
+        <div class="title-section">
+            <h2><a href="https://handwritten.danieljanus.pl/2026-06-01-edsger.html" target="_blank">Show HN: Edsger – A handwritten Clojure REPL for the reMarkable 2</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 64</span>
+                <span class="comments">💬 14</span>
+                <span class="by">👤 nathell</span>
+            </div>
+            <div class="summary"><p>Edsger is a fully on-device Clojure REPL for the reMarkable 2 e-ink tablet. The system works by polling the Xochitl note-taking app's filesystem for handwritten input, running OCR on the captured text, and sending it to a Go-based Clojure implementation (let-go) compiled for ARM. Results are rendered as images and injected back into the notebook via a custom XOVI plugin that hooks into Xochitl's QML rendering pipeline.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://handwritten.danieljanus.pl/2026-06-01-edsger.html" target="_blank">https://handwritten.danieljanus.pl/2026-06-01-edsger.html</a></div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+    <div class="card-header">
+        <div class="rank">#2</div>
+        <div class="title-section">
+            <h2><a href="https://blog.ammaraskar.com/github-token-stealing/" target="_blank">1-Click GitHub Token Stealing via a VSCode Bug</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 441</span>
+                <span class="comments">💬 65</span>
+                <span class="by">👤 ammar2</span>
+            </div>
+            <div class="summary"><p>Just by clicking a link, it’s possible for an attacker to steal a GitHub token that can read and **write** to your repos, including **private ones**. !Image 2: CPython file opened in github.dev, a VSCode web interface This browser instance of VSCode is pretty powerful, you can view all the files in the repo (even if it’s a private one), you can send out pull requests and even...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.ammaraskar.com/github-token-stealing/" target="_blank">https://blog.ammaraskar.com/github-token-stealing/</a></div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+    <div class="card-header">
+        <div class="rank">#3</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/s-macke/Test-Drive-3-Maps" target="_blank">Show HN: I reverse-engineered the world maps of Test Drive III (1990 DOS game)</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 114</span>
+                <span class="comments">💬 31</span>
+                <span class="by">👤 s-macke</span>
+            </div>
+            <div class="summary"><p>A five-year reverse engineering project to extract and reconstruct the 3D world maps from Test Drive III: The Passion, a 1990 DOS racing game by Accolade. The author grew up exploring the game's world rather than racing, and spent years on and off reverse-engineering the tile-based 3D format. The project now includes interactive map visualizations built with modern web tools.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/s-macke/Test-Drive-3-Maps" target="_blank">https://github.com/s-macke/Test-Drive-3-Maps</a></div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+    <div class="card-header">
+        <div class="rank">#4</div>
+        <div class="title-section">
+            <h2><a href="https://blog.nns.ee/2026/06/03/katana-badusb/" target="_blank">Hacking your PC using your speaker without ever touching it</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 5</span>
+                <span class="comments">💬 0</span>
+                <span class="by">👤 xx_ns</span>
+            </div>
+            <div class="summary"><p>What initially started as simply wanting to write a Linux tool for communicating with my speaker ended up with me discovering vulnerabilities which allow any attacker within a ~15M range of any Katana V2X to turn it into a covert spying tool and Rubber Ducky - all without ever having to pair with or physically touch the device. CTprotocol background As I explained in my...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://blog.nns.ee/2026/06/03/katana-badusb/" target="_blank">https://blog.nns.ee/2026/06/03/katana-badusb/</a></div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+    <div class="card-header">
+        <div class="rank">#5</div>
+        <div class="title-section">
+            <h2><a href="https://github.com/c0dejedi/nbd-vram" target="_blank">Use your Nvidia GPU's VRAM as swap space on Linux</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 331</span>
+                <span class="comments">💬 88</span>
+                <span class="by">👤 tanelpoder</span>
+            </div>
+            <div class="summary"><p>nbd-vram lets you use an NVIDIA GPU's unused VRAM as high-priority swap space on Linux, designed for hybrid-graphics laptops with soldered RAM. A small daemon allocates VRAM via the CUDA driver API and serves it as a block device using the NBD protocol. Tested setups achieve ~46 GB total addressable memory — tripled from stock — with overflow flowing from RAM to VRAM via PCIe, then zram, then SSD.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://github.com/c0dejedi/nbd-vram" target="_blank">https://github.com/c0dejedi/nbd-vram</a></div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+    <div class="card-header">
+        <div class="rank">#6</div>
+        <div class="title-section">
+            <h2><a href="https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/" target="_blank">AI outperforms law professors in Stanford Law study</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 265</span>
+                <span class="comments">💬 206</span>
+                <span class="by">👤 berlianta</span>
+            </div>
+            <div class="summary"><p>A groundbreaking study led by Stanford Law School Professor Julian Nyarko reveals that law professors overwhelmingly prefer AI-generated answers to student questions over responses written by their fellow instructors—a finding that could reshape how legal education is delivered. The study, titled “Law Professors Prefer AI Over Peer Answers,” was conducted with 16 law professors across U.S. law...</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/" target="_blank">https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-...</a></div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+    <div class="card-header">
+        <div class="rank">#7</div>
+        <div class="title-section">
+            <h2><a href="https://microsoft.ai/news/introducingmai-code-1-flash/" target="_blank">MAI-Code-1-Flash</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 477</span>
+                <span class="comments">💬 213</span>
+                <span class="by">👤 EvanZhouDev</span>
+            </div>
+            <div class="summary"><p>MAI-Code-1-Flash is a new Microsoft coding model optimized for speed and efficiency in everyday developer workflows, rolling out to GitHub Copilot users in VS Code. Features agentic coding trained directly with production Copilot harnesses, adaptive thinking, and strong instruction-following. Outperforms Claude Haiku 4.5 across SWE-Bench benchmarks with up to 60% fewer tokens — delivering higher pass rates at lower cost.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://microsoft.ai/news/introducingmai-code-1-flash/" target="_blank">https://microsoft.ai/news/introducingmai-code-1-flash/</a></div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+    <div class="card-header">
+        <div class="rank">#8</div>
+        <div class="title-section">
+            <h2><a href="https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/" target="_blank">The Unreasonable Redundancy of Nature's Protein Folds</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 100</span>
+                <span class="comments">💬 28</span>
+                <span class="by">👤 ray__</span>
+            </div>
+            <div class="summary"><p>Arda Goreci · May 20, 2026 Over the last few years, deep neural networks have made generative language modeling dramatically more powerful, giving us large language models. A similar leap happened for continuous modalities like images and videos. Recently, similar techniques have been applied to the generative modeling of biomolecules with great success.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/" target="_blank">https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-fo...</a></div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+    <div class="card-header">
+        <div class="rank">#9</div>
+        <div class="title-section">
+            <h2><a href="https://46elks.com/blog/2026/05/29/an-amazing-time-for-programmers" target="_blank">It is an amazing time for programmers</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 73</span>
+                <span class="comments">💬 39</span>
+                <span class="by">👤 jlundberg</span>
+            </div>
+            <div class="summary"><p>Published: 29 May, 2026 This is something I have been thinking a lot about but not yet written down in an article or blog post. It truly is a unique time to be alive as a person writing software. Many of the legends in the computer science space are still alive.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://46elks.com/blog/2026/05/29/an-amazing-time-for-programmers" target="_blank">https://46elks.com/blog/2026/05/29/an-amazing-time-for-programmers</a></div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+    <div class="card-header">
+        <div class="rank">#10</div>
+        <div class="title-section">
+            <h2><a href="https://www.lumafield.com/scan-of-the-month/byd" target="_blank">CT scans of BYD car parts</a></h2>
+            <div class="meta">
+                <span class="score">⭐ 394</span>
+                <span class="comments">💬 237</span>
+                <span class="by">👤 viasfo</span>
+            </div>
+            <div class="summary"><p>Lumafield CT-scanned four components from BYD's EV lineup — the world's largest electric vehicle manufacturer by volume: a lithium iron phosphate battery cell, a window switch panel, a Type 2 portable AC charger, and a key fob. The LFP battery cell reveals dual jellyroll electrode stacks with tight process control. A fascinating deep-dive into Chinese EV manufacturing quality from the inside out.</p></div>
+        </div>
+    </div>
+    <div class="source">🔗 <a href="https://www.lumafield.com/scan-of-the-month/byd" target="_blank">https://www.lumafield.com/scan-of-the-month/byd</a></div>
+</div>
+
+        <footer>
+            <p>2026-06-03</p>
+        </footer>
+    </div>
+</body>
+</html>

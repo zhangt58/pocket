@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-05</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://ladybird.org/posts/changing-how-we-develop-ladybird/" target="_blank">Changing How We Develop Ladybird</a></h2><div class="meta"><span class="score">⭐ 323</span><span class="comments">💬 197</span><span class="by">👤 EdwinHoksberg</span></div><div class="summary"><p>The Ladybird browser project is ending public pull requests and restricting code submissions to official maintainers only. This shift aims to strengthen security and accountability as the team prepares for its first alpha release, particularly because AI tools now make it difficult to verify the authenticity and intent behind external contributions. While direct code submissions are closing, Ladybird remains fully open source and continues to welcome community support through bug reports, testing, and technical feedback.</p></div></div></div><div class="source">🔗 <a href="https://ladybird.org/posts/changing-how-we-develop-ladybird/" target="_blank">https://ladybird.org/posts/changing-how-we-develop-ladybird/</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2606.03673" target="_blank">Tracing a powerful GNSS interference source over Europe</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 13</span><span class="by">👤 mimorigasaka</span></div><div class="summary"><p>Researchers have successfully traced a powerful space-based source of Global Navigation Satellite System interference affecting Europe, Greenland, and Canada. By analyzing data from terrestrial reference stations and developing new detection techniques, the study confirms the disruptions originate from a constellation of Russian early warning satellites in Molniya orbits. The findings underscore the growing security threat posed by space-based GNSS disruptors due to their extensive geographic reach and potential for widespread navigation system degradation.</p></div></div></div><div class="source">🔗 <a href="https://arxiv.org/abs/2606.03673" target="_blank">https://arxiv.org/abs/2606.03673</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives-it-gravity-20260603/" target="_blank">Entanglement Builds Space-Time. Now "Magic" Gives It Gravity</a></h2><div class="meta"><span class="score">⭐ 26</span><span class="comments">💬 17</span><span class="by">👤 rbanffy</span></div><div class="summary"><p>Recent advances in quantum physics suggest that a property known as magic is responsible for giving space-time its gravitational curvature. While earlier research established that quantum entanglement constructs the fundamental structure of space-time, scientists have now identified how matter interacts with this fabric to create gravity. This breakthrough in holographic theories brings physicists closer to unifying general relativity with quantum mechanics by explaining how extreme cosmic phenomena like black holes operate at the smallest scales.</p></div></div></div><div class="source">🔗 <a href="https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives-it-gravity-20260603/" target="_blank">https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives...</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://columnar.tech/blog/introducing-databow//" target="_blank">databow: a Rust CLI to query any database with an ADBC driver</a></h2><div class="meta"><span class="score">⭐ 30</span><span class="comments">💬 3</span><span class="by">👤 hckshr</span></div><div class="summary"><p>databow is a new open-source command-line tool built in Rust that provides a unified interface for querying over thirty different database systems using the ADBC standard. It eliminates the need to switch between multiple database-specific CLIs by offering a fast terminal experience with an interactive SQL shell, flexible result export options, and seamless integration into automation scripts. By leveraging vendor-neutral Arrow Database Connectivity, the tool streamlines data workflows across transactional, analytical, and lakehouse environments.</p></div></div></div><div class="source">🔗 <a href="https://columnar.tech/blog/introducing-databow//" target="_blank">https://columnar.tech/blog/introducing-databow//</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://fb.watch/HxPu0fSyeH/" target="_blank">Meta enables ADB on deprecated Portal devices [video]</a></h2><div class="meta"><span class="score">⭐ 231</span><span class="comments">💬 84</span><span class="by">👤 jenders</span></div><div class="summary"><p>Meta has enabled Android Debug Bridge access on its discontinued Portal smart displays by extending recent Quest developer tools to the hardware. This update allows users to sideload applications and repurpose the devices for custom projects, such as personalized home hubs. The change opens new possibilities for developers looking to experiment with Meta's older smart display lineup.</p></div></div></div><div class="source">🔗 <a href="https://fb.watch/HxPu0fSyeH/" target="_blank">https://fb.watch/HxPu0fSyeH/</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://passo.uno/fine-tuning-docs-llm/" target="_blank">Fine-tuning an LLM to write docs like it's 1995</a></h2><div class="meta"><span class="score">⭐ 77</span><span class="comments">💬 30</span><span class="by">👤 taubek</span></div><div class="summary"><p>The author details an experiment in fine-tuning a local large language model to replicate the distinct style of 1980s and 1990s technical documentation. By sourcing and cleaning nearly 200,000 text examples from archived Microsoft manuals, the project demonstrates how targeted fine-tuning can efficiently achieve style transfer without the high costs of training from scratch or relying on retrieval-augmented generation. This approach highlights a practical path toward specialized, locally run AI tools for niche writing tasks.</p></div></div></div><div class="source">🔗 <a href="https://passo.uno/fine-tuning-docs-llm/" target="_blank">https://passo.uno/fine-tuning-docs-llm/</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://herbsutter.com/2026/06/04/c-the-documentary-released-today/" target="_blank">C++: The Documentary</a></h2><div class="meta"><span class="score">⭐ 168</span><span class="comments">💬 106</span><span class="by">👤 ingve</span></div><div class="summary"><p>A new documentary chronicles the forty-year history and evolution of the C++ programming language, tracing its journey from its creation at Bell Labs to its widespread adoption across industries like gaming and finance. Featuring interviews with creator Bjarne Stroustrup and numerous other industry pioneers, the film explores the language's development, standardization efforts, and recent resurgence as one of the fastest-growing programming languages in the world.</p></div></div></div><div class="source">🔗 <a href="https://herbsutter.com/2026/06/04/c-the-documentary-released-today/" target="_blank">https://herbsutter.com/2026/06/04/c-the-documentary-released-today/</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/anthropics/defending-code-reference-harness" target="_blank">Anthropic's open-source framework for AI-powered vulnerability discovery</a></h2><div class="meta"><span class="score">⭐ 436</span><span class="comments">💬 122</span><span class="by">👤 binyu</span></div><div class="summary"><p>Anthropic has released an open-source reference implementation for autonomous vulnerability discovery and remediation, built from hands-on experience partnering with security teams since the Claude Mythos Preview launch. The repo provides Claude Code interactive skills for threat modeling, scanning, triage, and patching, plus a fully autonomous pipeline that chains reconnaissance through verified fix generation using Docker sandboxing and ASAN. It's designed as a customizable template — not a product — that teams can port to any language, detector, or vulnerability class.</p></div></div></div><div class="source">🔗 <a href="https://github.com/anthropics/defending-code-reference-harness" target="_blank">https://github.com/anthropics/defending-code-reference-harness</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/geo-tp/ESP32-Bit-Pirate" target="_blank">ESP32 Bit Pirate, a Hardware Hacking Tool with WebCLI That Speaks Every Protocol</a></h2><div class="meta"><span class="score">⭐ 37</span><span class="comments">💬 20</span><span class="by">👤 geotp</span></div><div class="summary"><p>ESP32 Bit Pirate is an open-source firmware inspired by the legendary Bus Pirate that transforms ESP32-S3 devices into multi-protocol hardware hacking tools. It supports sniffing, sending, and scripting across digital protocols (I2C, SPI, UART, CAN, JTAG), radio protocols (Bluetooth, Wi-Fi, Sub-GHz, RFID, FM), and more — all accessible via USB Serial or a WiFi web-based CLI. The firmware supports over 20 different hardware boards and offers a Web Flasher for one-click installation, making it a versatile tool for security researchers, makers, and hardware enthusiasts.</p></div></div></div><div class="source">🔗 <a href="https://github.com/geo-tp/ESP32-Bit-Pirate" target="_blank">https://github.com/geo-tp/ESP32-Bit-Pirate</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://isupmap.com/" target="_blank">The IsUpMap lets you check the status of over 100 major sites at once</a></h2><div class="meta"><span class="score">⭐ 67</span><span class="comments">💬 25</span><span class="by">👤 mikelgan</span></div><div class="summary"><p>IsUpMap is a centralized monitoring tool that tracks the real-time operational status of over 100 major websites and services across categories like cloud infrastructure, AI, productivity, and entertainment. By displaying whether each platform is fully operational or experiencing degraded performance, it provides users and developers with a quick, unified view of widespread service availability. This eliminates the need to check individual status pages when troubleshooting connectivity or performance issues.</p></div></div></div><div class="source">🔗 <a href="https://isupmap.com/" target="_blank">https://isupmap.com/</a></div></div>
+
+        <footer>
+            <p>2026-06-05</p>
+        </footer>
+    </div>
+</body>
+</html>

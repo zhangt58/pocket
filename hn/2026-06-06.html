@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-06</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos" target="_blank">GrapheneOS user reported to authorities for using GrapheneOS</a></h2><div class="meta"><span class="score">⭐ 247</span><span class="comments">💬 133</span><span class="by">👤 Cider9986</span></div><div class="summary"><p>A GrapheneOS user reported that the age verification service Yoti automatically flagged their device and reported them to authorities simply for running the privacy-focused operating system. The incident has sparked concern within the privacy community about the growing conflict between secure, open-source software and mandatory digital identification systems. Forum participants criticized the practice as dystopian and warned of increasing surveillance under restrictive privacy laws.</p></div></div></div><div class="source">🔗 <a href="https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos" target="_blank">https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authoritie...</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://codeberg.org/ziglang/zig/commit/621844bde551ee1a9b8142d7d146d1fa804247a2" target="_blank">Zig Zen Update</a></h2><div class="meta"><span class="score">⭐ 57</span><span class="comments">💬 18</span><span class="by">👤 tosh</span></div><div class="summary"><p>This update refines the Zig programming language's official Zen document, which outlines the core philosophical principles guiding its development. The changes reorganize and clarify several key tenets, such as separating resource management guidelines, emphasizing logic over style, and reinforcing the importance of memory as a resource. These adjustments aim to provide developers with a clearer and more precise understanding of Zig's design philosophy.</p></div></div></div><div class="source">🔗 <a href="https://codeberg.org/ziglang/zig/commit/621844bde551ee1a9b8142d7d146d1fa804247a2" target="_blank">https://codeberg.org/ziglang/zig/commit/621844bde551ee1a9b8142d7d146d1fa804247a2</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.0xkato.xyz/how-llms-actually-work/" target="_blank">How LLMs work</a></h2><div class="meta"><span class="score">⭐ 388</span><span class="comments">💬 117</span><span class="by">👤 0xkato</span></div><div class="summary"><p>This article provides a comprehensive, math-light walkthrough of how modern large language models function internally. It breaks down the transformer architecture into core components, explaining how text is converted into tokens, processed through embeddings and attention mechanisms, and ultimately used to predict the next word in a sequence. By clarifying these foundational steps, the guide helps readers better understand LLM model cards and research papers.</p></div></div></div><div class="source">🔗 <a href="https://www.0xkato.xyz/how-llms-actually-work/" target="_blank">https://www.0xkato.xyz/how-llms-actually-work/</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://salvagedcircuitry.com/sigma-45mm.html" target="_blank">The intracies of modern camera lens repair (2024)</a></h2><div class="meta"><span class="score">⭐ 177</span><span class="comments">💬 60</span><span class="by">👤 transistor-man</span></div><div class="summary"><p>This article explores the process of repairing a modern camera lens, using a heavily discounted Sigma 45mm f/2.8 as a practical case study. After purchasing the electronically faulty lens, the author details the initial inspection, cleaning procedures, and diagnostic testing that reveal completely unresponsive controls. The guide then outlines the essential precision tools required and walks through the careful disassembly steps needed to safely access and repair the internal components.</p></div></div></div><div class="source">🔗 <a href="https://salvagedcircuitry.com/sigma-45mm.html" target="_blank">https://salvagedcircuitry.com/sigma-45mm.html</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/" target="_blank">S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic</a></h2><div class="meta"><span class="score">⭐ 534</span><span class="comments">💬 180</span><span class="by">👤 maltalex</span></div><div class="summary"><p>The S&P 500 index has officially rejected applications for inclusion from major technology companies SpaceX, OpenAI, and Anthropic. This decision prevents these high-profile firms from joining the benchmark stock index, likely due to strict eligibility requirements regarding public trading status or financial transparency. The rejections underscore the ongoing divide between rapidly growing private tech giants and traditional market indices.</p></div></div></div><div class="source">🔗 <a href="https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/" target="_blank">https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-w...</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/" target="_blank">Pre-Modern Armies for Worldbuilders, Part I: Why They Fight</a></h2><div class="meta"><span class="score">⭐ 85</span><span class="comments">💬 24</span><span class="by">👤 gostsamo</span></div><div class="summary"><p>This article introduces a series exploring how pre-industrial military systems naturally emerge from and reflect their underlying civilian societies. By examining historical patterns in recruitment, funding, leadership, and battlefield organization, it provides worldbuilders with practical frameworks for designing realistic fictional armies. The author emphasizes that military structures must logically align with a society's administrative capacity and cultural context to avoid common worldbuilding inconsistencies.</p></div></div></div><div class="source">🔗 <a href="https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/" target="_blank">https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders...</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/" target="_blank">New method turns ocean water into drinking water, without waste</a></h2><div class="meta"><span class="score">⭐ 384</span><span class="comments">💬 164</span><span class="by">👤 speckx</span></div><div class="summary"><p>Researchers at the University of Rochester have developed a solar-powered desalination system that efficiently converts seawater into drinking water without producing brine waste or requiring chemical additives. The technology utilizes laser-etched black metal panels that absorb sunlight and guide water across their surface while safely depositing leftover salts and minerals in a separate area to prevent clogging. This innovative approach offers a sustainable and energy-efficient alternative to traditional desalination methods that typically harm marine ecosystems and consume excessive power.</p></div></div></div><div class="source">🔗 <a href="https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/" target="_blank">https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-wa...</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.bbc.com/news/live/c4g44ew3g1kt" target="_blank">Astronauts told to return to ISS after sheltering over air leak repairs</a></h2><div class="meta"><span class="score">⭐ 401</span><span class="comments">💬 251</span><span class="by">👤 janpot</span></div><div class="summary"><p>Astronauts have been cleared to return to the International Space Station and resume normal operations after temporarily sheltering on a docked spacecraft during emergency air leak repairs. The precaution was taken while Russian cosmonauts worked on the Zvezda service module, though repairs have since been paused to collect additional data. This recurring leak remains one of the station's most persistent engineering challenges, having resisted a permanent fix for years.</p></div></div></div><div class="source">🔗 <a href="https://www.bbc.com/news/live/c4g44ew3g1kt" target="_blank">https://www.bbc.com/news/live/c4g44ew3g1kt</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.autodidacts.io/social-cache-busting/" target="_blank">Social Cache Busting</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 11</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>People often rely on rehearsed, safe responses when answering common questions, much like a web server serving cached content. To bypass these automatic replies, ask novel and thought-provoking questions that require genuine reflection or synthesis rather than rote repetition. This approach transforms routine interactions into meaningful conversations by encouraging speakers to share original, unscripted thoughts.</p></div></div></div><div class="source">🔗 <a href="https://www.autodidacts.io/social-cache-busting/" target="_blank">https://www.autodidacts.io/social-cache-busting/</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/microsoft/pg_durable" target="_blank">pg_durable: Microsoft open sources in-database durable execution</a></h2><div class="meta"><span class="score">⭐ 406</span><span class="comments">💬 90</span><span class="by">👤 coffeemug</span></div><div class="summary"><p>This post discusses pg_durable, an open-source PostgreSQL extension released by Microsoft that enables developers to run stateful, long-running computations directly within the database. The tool ensures reliable execution and automatic crash recovery by leveraging the database's built-in durability guarantees.</p></div></div></div><div class="source">🔗 <a href="https://github.com/microsoft/pg_durable" target="_blank">https://github.com/microsoft/pg_durable</a></div></div>
+
+        <footer>
+            <p>2026-06-06</p>
+        </footer>
+    </div>
+</body>
+</html>

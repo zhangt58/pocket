@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-07</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.ioccc.org/2025/" target="_blank">The 29th International Obfuscated C Code Contest (IOCCC) 2025 Winners</a></h2><div class="meta"><span class="score">⭐ 184</span><span class="comments">💬 49</span><span class="by">👤 matt_d</span></div><div class="summary"><p>The 29th International Obfuscated C Code Contest has announced its 2025 winners, highlighting a continued surge in both submission volume and quality. Organizers streamlined judging procedures, presented the results through a dedicated YouTube broadcast, and introduced interactive coding challenges for the community to solve and submit via GitHub. The event also marked a significant update to the contest rules and guidelines, reflecting ongoing efforts to improve the competition structure.</p></div></div></div><div class="source">🔗 <a href="https://www.ioccc.org/2025/" target="_blank">https://www.ioccc.org/2025/</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://fergusfinn.com/blog/kv-entropy-coder/" target="_blank">Speculative KV coding: losslessly compressing KV cache by up to ~4×</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 9</span><span class="by">👤 kkm</span></div><div class="summary"><p>Speculative KV coding is a new lossless compression technique designed to reduce the memory footprint of large language model inference. By using a smaller predictor model to estimate the target model's key-value cache and applying arithmetic coding to the residuals, the method achieves up to four times compression without any degradation in output quality. This approach directly addresses the growing memory bottlenecks caused by increasingly long context windows while preserving the exact computational state of the original model.</p></div></div></div><div class="source">🔗 <a href="https://fergusfinn.com/blog/kv-entropy-coder/" target="_blank">https://fergusfinn.com/blog/kv-entropy-coder/</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.os2museum.com/wp/win16-memory-management/" target="_blank">Win16 Memory Management</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 8</span><span class="by">👤 supermatou</span></div><div class="summary"><p>This article explains the underlying memory management architecture of 16-bit Windows, which functioned primarily as an overlay manager to optimize limited system RAM. By utilizing the segment-oriented New Executable format, the operating system could independently load, relocate, and swap code and data segments in memory. Understanding these low-level mechanisms, including segment registers and exported procedures, was essential for developers creating functional applications beyond basic examples.</p></div></div></div><div class="source">🔗 <a href="https://www.os2museum.com/wp/win16-memory-management/" target="_blank">https://www.os2museum.com/wp/win16-memory-management/</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/ValveSoftware/GameNetworkingSockets/issues/398" target="_blank">Valve P2P networking broken for more than 2 months</a></h2><div class="meta"><span class="score">⭐ 181</span><span class="comments">💬 83</span><span class="by">👤 babuskov</span></div><div class="summary"><p>This post highlights a persistent technical issue affecting Valve's peer-to-peer networking infrastructure, which has reportedly been malfunctioning for over two months. The discussion likely explores how the outage impacts multiplayer gaming and Steam connectivity, along with community workarounds and calls for an official resolution.</p></div></div></div><div class="source">🔗 <a href="https://github.com/ValveSoftware/GameNetworkingSockets/issues/398" target="_blank">https://github.com/ValveSoftware/GameNetworkingSockets/issues/398</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://kristoff.it/blog/north-star/" target="_blank">My Software North Star</a></h2><div class="meta"><span class="score">⭐ 89</span><span class="comments">💬 40</span><span class="by">👤 kristoff_it</span></div><div class="summary"><p>The author outlines a clear hierarchy of priorities for software development, placing end-user utility at the top. Correctness and maintainability follow as essential foundations, while technical choices and developer experience are only valuable insofar as they support delivering reliable, efficient software. Ultimately, maximizing practical value for users serves as the guiding principle for all development decisions.</p></div></div></div><div class="source">🔗 <a href="https://kristoff.it/blog/north-star/" target="_blank">https://kristoff.it/blog/north-star/</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses" target="_blank">Field of clones: How horse replicas came to dominate polo</a></h2><div class="meta"><span class="score">⭐ 95</span><span class="comments">💬 44</span><span class="by">👤 gscott</span></div><div class="summary"><p>This article explores how cloning technology has revolutionized the sport of polo, resulting in the widespread use of genetically identical horses on the field. It examines the scientific processes behind equine replication, the economic factors driving their popularity, and the ethical considerations shaping modern equestrian competition.</p></div></div></div><div class="source">🔗 <a href="https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses" target="_blank">https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2601.14470" target="_blank">Tokenomics: Quantifying Where Tokens Are Used in Agentic Software Engineering</a></h2><div class="meta"><span class="score">⭐ 110</span><span class="comments">💬 39</span><span class="by">👤 Anon84</span></div><div class="summary"><p>This study analyzes token consumption patterns in AI multi-agent systems used for software engineering, revealing that iterative code review accounts for nearly 60 percent of total usage. Input tokens consistently represent over half of all consumption, highlighting significant inefficiencies in how AI agents collaborate and communicate. These findings demonstrate that the primary costs of automated software development stem from refinement and verification rather than initial code generation, offering a practical framework for predicting expenses and optimizing future AI-driven workflows.</p></div></div></div><div class="source">🔗 <a href="https://arxiv.org/abs/2601.14470" target="_blank">https://arxiv.org/abs/2601.14470</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://arstechnica.com/science/2026/06/scientists-ejected-from-diabetes-conference-for-distributing-journal-reprints/" target="_blank">Scientists ejected from diabetes conference for distributing journal reprints</a></h2><div class="meta"><span class="score">⭐ 27</span><span class="comments">💬 12</span><span class="by">👤 BerislavLopac</span></div><div class="summary"><p>Five prominent scientists were removed from the American Diabetes Association annual conference in New Orleans after distributing reprints of a journal editorial criticizing the Trump administration's policies toward scientific research. The incident, which involved police escorting the researchers out of the venue, has sparked debate over whether the removal was a necessary enforcement of conference rules or an act of censorship against scientific dissent.</p></div></div></div><div class="source">🔗 <a href="https://arstechnica.com/science/2026/06/scientists-ejected-from-diabetes-conference-for-distributing-journal-reprints/" target="_blank">https://arstechnica.com/science/2026/06/scientists-ejected-from-diabetes-conf...</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://ntsc.rs/" target="_blank">Ntsc-rs – open-source video emulation of analog TV and VHS artifacts</a></h2><div class="meta"><span class="score">⭐ 351</span><span class="comments">💬 93</span><span class="by">👤 gregsadetsky</span></div><div class="summary"><p>ntsc-rs is a free, open-source video effect that accurately simulates analog television and VHS artifacts by modeling actual NTSC transmission and tape encoding algorithms. Built in Rust with multithreading and SIMD acceleration, the tool processes footage in real-time at high resolutions. It seamlessly integrates into professional editing workflows as a plugin for major software like Adobe Premiere, After Effects, and DaVinci Resolve.</p></div></div></div><div class="source">🔗 <a href="https://ntsc.rs/" target="_blank">https://ntsc.rs/</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://pdimagearchive.org/" target="_blank">Public Domain Image Archive</a></h2><div class="meta"><span class="score">⭐ 135</span><span class="comments">💬 21</span><span class="by">👤 davidbarker</span></div><div class="summary"><p>The Public Domain Image Archive is a curated online collection featuring over eleven thousand out-of-copyright visual works that are freely available for browsing and reuse. The database is regularly updated with new images and organized into searchable categories such as artist, century, style, and theme. This resource provides open access to a diverse range of historical and artistic materials for unrestricted public use.</p></div></div></div><div class="source">🔗 <a href="https://pdimagearchive.org/" target="_blank">https://pdimagearchive.org/</a></div></div>
+
+        <footer>
+            <p>2026-06-07</p>
+        </footer>
+    </div>
+</body>
+</html>

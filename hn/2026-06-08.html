@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-08</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.cypherpunkbooks.com" target="_blank">The Cypherpunk Library</a></h2><div class="meta"><span class="score">⭐ 88</span><span class="comments">💬 9</span><span class="by">👤 yu3zhou4</span></div><div class="summary"><p>The Cypherpunk Library is a free, curated collection of public-domain texts dedicated to the philosophy of digital privacy, cryptography, and internet freedom. It features foundational manifestos and essays covering topics like electronic cash, hacker ethics, and decentralized governance. The archive provides unrestricted access to these historical works while directing readers to alternative repositories for copyrighted materials.</p></div></div></div><div class="source">🔗 <a href="https://www.cypherpunkbooks.com" target="_blank">https://www.cypherpunkbooks.com</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://igerman.cc/blog/dopamine-fracking/" target="_blank">Dopamine Fracking</a></h2><div class="meta"><span class="score">⭐ 349</span><span class="comments">💬 165</span><span class="by">👤 igmn</span></div><div class="summary"><p>Dopamine fracking describes the aggressive optimization of culture, hobbies, and media to extract maximum short-term pleasure at the expense of long-term sustainability and creativity. By pouring disproportionate resources and algorithmic optimization into once-nuanced activities, this trend flattens complexity and prioritizes addictive, formulaic experiences over meaningful engagement. Ultimately, it commodifies human connection and cultural expression, leaving behind a homogenized landscape driven solely by the pursuit of instant gratification.</p></div></div></div><div class="source">🔗 <a href="https://igerman.cc/blog/dopamine-fracking/" target="_blank">https://igerman.cc/blog/dopamine-fracking/</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://ms365news.com/blogs/f/your-onedrive-data-now-has-an-expiry-data" target="_blank">OneDrive data now has an expiry date</a></h2><div class="meta"><span class="score">⭐ 72</span><span class="comments">💬 55</span><span class="by">👤 taubek</span></div><div class="summary"><p>Microsoft is introducing a strict twelve-month lifecycle for unlicensed OneDrive accounts, permanently deleting any data that remains unmanaged after progressing through read-only and archived phases. Organizations can prevent data loss by reassigning licenses, enabling pay-as-you-go billing, migrating files, or adjusting retention policies before the deadline. This automated enforcement also impacts legal holds and data privacy compliance, making proactive cloud storage management essential.</p></div></div></div><div class="source">🔗 <a href="https://ms365news.com/blogs/f/your-onedrive-data-now-has-an-expiry-data" target="_blank">https://ms365news.com/blogs/f/your-onedrive-data-now-has-an-expiry-data</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.troyhunt.com/1000-data-breaches-later-the-disclosure-lag-is-worse-than-ever/" target="_blank">1k Data Breaches Later, the Disclosure Lag Is Worse</a></h2><div class="meta"><span class="score">⭐ 160</span><span class="comments">💬 61</span><span class="by">👤 882542F3884314B</span></div><div class="summary"><p>Despite strict privacy regulations, companies are taking increasingly long to notify users after their data is compromised, even when breaches are publicly leaked and widely reported. This growing disclosure lag leaves victims unaware of their exposure for weeks and underscores why independent breach tracking services remain essential. The trend highlights a critical failure in corporate transparency that continues to undermine consumer protection efforts.</p></div></div></div><div class="source">🔗 <a href="https://www.troyhunt.com/1000-data-breaches-later-the-disclosure-lag-is-worse-than-ever/" target="_blank">https://www.troyhunt.com/1000-data-breaches-later-the-disclosure-lag-is-worse...</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://human-in-the-loop.bearblog.dev/replies-to-comments-on-my-llms-are-eroding-my-career-post/" target="_blank">Replies to comments on my "LLMs are eroding my career" post</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 7</span><span class="by">👤 omblivion</span></div><div class="summary"><p>In response to feedback on a viral post about artificial intelligence impacting his software engineering career, the author explains how LLMs are rapidly automating specialized domain knowledge and reducing the need for human collaboration. To maintain code quality amid pressure to adopt AI quickly, he employs strategic workarounds like breaking down tasks and adding testing phases to avoid reckless development. Despite the professional anxiety, he is actively adapting by integrating AI into his own workflows to improve tooling and stay competitive in the evolving tech landscape.</p></div></div></div><div class="source">🔗 <a href="https://human-in-the-loop.bearblog.dev/replies-to-comments-on-my-llms-are-eroding-my-career-post/" target="_blank">https://human-in-the-loop.bearblog.dev/replies-to-comments-on-my-llms-are-ero...</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://bittersoutherner.com/feature/2022/a-family-project" target="_blank">A Family Project</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 1</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>This piece likely explores how a collaborative family endeavor brings relatives together, highlighting the shared experiences, challenges, and bonds formed while working toward a common goal. Through personal reflections, it examines the unique dynamics that emerge when family members combine their talents and resources for a meaningful undertaking.</p></div></div></div><div class="source">🔗 <a href="https://bittersoutherner.com/feature/2022/a-family-project" target="_blank">https://bittersoutherner.com/feature/2022/a-family-project</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://teenage.engineering/products/apc-2" target="_blank">APC–2 – A professional record cutter for producing original playback discs</a></h2><div class="meta"><span class="score">⭐ 214</span><span class="comments">💬 110</span><span class="by">👤 vthommeret</span></div><div class="summary"><p>The APC-2 is a professional record cutter developed by Teenage Engineering and SUPERSENSE for real-time production of high-quality vinyl playback discs. It features advanced capabilities including a direct drive motor, stereo feedback cutting head, DAW automation, and network remote control. Only a limited number of units have been manufactured and they are available exclusively through SUPERSENSE.</p></div></div></div><div class="source">🔗 <a href="https://teenage.engineering/products/apc-2" target="_blank">https://teenage.engineering/products/apc-2</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://gavinray97.github.io/blog/building-from-zero-after-addiction-prison-felony" target="_blank">Building from zero after addiction, prison, and a felony</a></h2><div class="meta"><span class="score">⭐ 656</span><span class="comments">💬 286</span><span class="by">👤 gavinray</span></div><div class="summary"><p>This personal account chronicles the author's journey from teenage drug addiction, juvenile incarceration, and a felony record to rebuilding a successful career in software and open-source development. After years of struggling with substance abuse, legal troubles, and family conflict, the author eventually found stability through technology and community support. The narrative serves as a message of hope for others facing similar hardships, demonstrating that recovery and professional success are possible even after severe setbacks.</p></div></div></div><div class="source">🔗 <a href="https://gavinray97.github.io/blog/building-from-zero-after-addiction-prison-felony" target="_blank">https://gavinray97.github.io/blog/building-from-zero-after-addiction-prison-f...</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://ranpara.net/posts/perceptron-explained-from-scratch/" target="_blank">The Smallest Brain You Can Build: A Perceptron in Python</a></h2><div class="meta"><span class="score">⭐ 206</span><span class="comments">💬 34</span><span class="by">👤 DevarshRanpara</span></div><div class="summary"><p>This article explains how to build a perceptron, the foundational unit of modern neural networks, from scratch using Python. It breaks down the model into simple components, demonstrating how it combines inputs, weights, and a bias to make binary decisions and improves accuracy by adjusting those values based on prediction errors. Through a hands-on implementation, readers can observe the training process across multiple epochs and see how the algorithm establishes a clear decision boundary.</p></div></div></div><div class="source">🔗 <a href="https://ranpara.net/posts/perceptron-explained-from-scratch/" target="_blank">https://ranpara.net/posts/perceptron-explained-from-scratch/</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/c14yz5jg476o" target="_blank">Richard Scolyer Has Died</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 17</span><span class="by">👤 nicwilson</span></div><div class="summary"><p>Pioneering Australian cancer specialist Richard Scolyer has died at age 59, three years after undergoing a groundbreaking experimental immunotherapy treatment for glioblastoma. Developed by his colleague Professor Georgina Long, the world-first therapy was based on their revolutionary melanoma research, which has dramatically improved survival rates and inspired new clinical trials for brain cancer. Widely celebrated as a national treasure and named Australian of the Year in 2024, Scolyer leaves behind a legacy of scientific innovation, optimism, and dedication to improving patient outcomes worldwide.</p></div></div></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/c14yz5jg476o" target="_blank">https://www.bbc.com/news/articles/c14yz5jg476o</a></div></div>
+
+        <footer>
+            <p>2026-06-08</p>
+        </footer>
+    </div>
+</body>
+</html>

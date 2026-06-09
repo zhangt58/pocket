@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-09</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank">Microsoft's open source tools were hacked to steal passwords of AI developers</a></h2><div class="meta"><span class="score">⭐ 190</span><span class="comments">💬 80</span><span class="by">👤 raffael_de</span></div><div class="summary"><p>This post likely details a cybersecurity breach where attackers compromised Microsoft's open source development tools to harvest credentials from AI researchers and engineers. The discussion probably covers the technical methods used in the attack, the scope of the compromised accounts, and recommendations for securing development workflows against similar supply chain threats.</p></div></div></div><div class="source">🔗 <a href="https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/" target="_blank">https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to...</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/luke8086/gentleos32" target="_blank">GentleOS – Classic operating system with a lovely retro GUI</a></h2><div class="meta"><span class="score">⭐ 51</span><span class="comments">💬 4</span><span class="by">👤 tekkertje</span></div><div class="summary"><p>This post showcases GentleOS, a lightweight operating system built around a nostalgic, retro-styled graphical interface that emulates classic computing aesthetics. The author likely provides screenshots, technical specifications, and installation guidance for enthusiasts interested in vintage-inspired desktop environments.</p></div></div></div><div class="source">🔗 <a href="https://github.com/luke8086/gentleos32" target="_blank">https://github.com/luke8086/gentleos32</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://omnia.sas.upenn.edu/story/biologist-scott-poethig-plants-never-age" target="_blank">Forever Young: how one molecule can lock plants in a youthful state.(2025)</a></h2><div class="meta"><span class="score">⭐ 34</span><span class="comments">💬 16</span><span class="by">👤 bryanrasmussen</span></div><div class="summary"><p>Research reveals that a single molecule called miR156 controls the transition from juvenile to adult stages in plants. High concentrations of this microRNA keep plants in a youthful state, while naturally declining levels trigger the development of mature traits. This universal genetic mechanism explains why certain species retain juvenile features throughout their lives and holds significant potential for advancing horticulture and plant conservation efforts.</p></div></div></div><div class="source">🔗 <a href="https://omnia.sas.upenn.edu/story/biologist-scott-poethig-plants-never-age" target="_blank">https://omnia.sas.upenn.edu/story/biologist-scott-poethig-plants-never-age</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://opencv.org/opencv-5/" target="_blank">OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision</a></h2><div class="meta"><span class="score">⭐ 232</span><span class="comments">💬 39</span><span class="by">👤 ternaus</span></div><div class="summary"><p>OpenCV 5 marks a significant advancement for the widely used computer vision library, introducing a completely redesigned deep learning engine with robust ONNX support and enhanced hardware acceleration. The update modernizes the core architecture to better support contemporary AI workflows, edge deployment, and heterogeneous computing environments while expanding 3D vision capabilities and improving Python integration. This major release aims to bridge the gap between traditional computer vision and modern deep learning models, providing developers with a faster, more efficient, and future-ready toolkit.</p></div></div></div><div class="source">🔗 <a href="https://opencv.org/opencv-5/" target="_blank">https://opencv.org/opencv-5/</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/" target="_blank">Apple reveals new AI architecture built around Google Gemini models</a></h2><div class="meta"><span class="score">⭐ 611</span><span class="comments">💬 463</span><span class="by">👤 unclefuzzy</span></div><div class="summary"><p>This post likely discusses Apple's announcement of a new artificial intelligence framework that integrates Google's Gemini models into its ecosystem. The discussion probably covers the technical architecture of this partnership, its strategic implications for Apple's AI roadmap, and how it reshapes competition in the generative AI market.</p></div></div></div><div class="source">🔗 <a href="https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/" target="_blank">https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://stratechery.com/2026/the-iphones-last-stand/" target="_blank">The iPhone's Last Stand</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 2</span><span class="by">👤 swolpers</span></div><div class="summary"><p>This post likely analyzes the critical challenges threatening Apple's flagship smartphone, including market saturation, intensifying Android competition, and regulatory scrutiny. It probably explores whether the iPhone can sustain its market dominance or if it signals a broader industry shift toward emerging technologies like spatial computing and AI-driven hardware.</p></div></div></div><div class="source">🔗 <a href="https://stratechery.com/2026/the-iphones-last-stand/" target="_blank">https://stratechery.com/2026/the-iphones-last-stand/</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://thi.ng" target="_blank">Thi.ng – open-source building blocks for computational design and art</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 8</span><span class="by">👤 nmstoker</span></div><div class="summary"><p>thi.ng is an open-source initiative offering a modular collection of approximately 350 code libraries designed for computational design and generative art. Instead of operating as a single framework, the project follows a bottom-up philosophy where small, reusable components can be combined across various programming languages to meet diverse creative needs. It serves as a continuously expanding toolkit and archive, with current development prioritizing TypeScript and web-based technologies.</p></div></div></div><div class="source">🔗 <a href="https://thi.ng" target="_blank">https://thi.ng</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://blog.aheymans.xyz/post/thinkpad_x61/" target="_blank">Porting the ThinkPad X61 to Coreboot</a></h2><div class="meta"><span class="score">⭐ 84</span><span class="comments">💬 29</span><span class="by">👤 walterbell</span></div><div class="summary"><p>This article details the successful port of the IBM Lenovo ThinkPad X61 to the open source coreboot firmware project. Lacking official hardware documentation, the author reverse engineered the proprietary BIOS to adapt the system for libre firmware. By leveraging advanced AI and large language models, they significantly accelerated the traditionally lengthy reverse engineering process, ultimately achieving a fully functional port.</p></div></div></div><div class="source">🔗 <a href="https://blog.aheymans.xyz/post/thinkpad_x61/" target="_blank">https://blog.aheymans.xyz/post/thinkpad_x61/</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://dfarq.homeip.net/eagle-computer-the-rise-and-fall-of-an-early-pc-clone/" target="_blank">Eagle Computer: The rise and fall of an early PC clone</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 1</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>Eagle Computer rapidly rose to prominence in the early 1980s by producing highly compatible and innovative IBM PC clones like the Eagle PC 2 and Turbo XL. Despite strong sales and a successful initial public offering, the company faced a sudden crisis when its visionary CEO died in a car accident on the day of the IPO. Ultimately, Eagle Computer filed for bankruptcy in 1986, a collapse driven by a combination of leadership loss and broader market challenges rather than a single tragic event.</p></div></div></div><div class="source">🔗 <a href="https://dfarq.homeip.net/eagle-computer-the-rise-and-fall-of-an-early-pc-clone/" target="_blank">https://dfarq.homeip.net/eagle-computer-the-rise-and-fall-of-an-early-pc-clone/</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.apple.com/apple-intelligence/" target="_blank">Siri AI</a></h2><div class="meta"><span class="score">⭐ 593</span><span class="comments">💬 547</span><span class="by">👤 0xedb</span></div><div class="summary"><p>Siri AI represents Apple's advanced voice assistant enhanced by the Apple Intelligence framework to deliver more natural conversations and deeper contextual awareness. It integrates seamlessly across Apple devices to streamline daily tasks and provide smarter assistance while maintaining strict on-device privacy standards.</p></div></div></div><div class="source">🔗 <a href="https://www.apple.com/apple-intelligence/" target="_blank">https://www.apple.com/apple-intelligence/</a></div></div>
+
+        <footer>
+            <p>2026-06-09</p>
+        </footer>
+    </div>
+</body>
+</html>

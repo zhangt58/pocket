@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-06-08T16:15:15.680002",
+  "indices": {
+    "S&P 500": {
+      "price": 7405.73,
+      "change": 21.99,
+      "change_pct": 0.3,
+      "high": 7466.81,
+      "low": 7395.13,
+      "volume": 2919040000,
+      "ma50": 7174.53,
+      "ma200": 6863.31
+    },
+    "NASDAQ": {
+      "price": 25929.66,
+      "change": 220.23,
+      "change_pct": 0.86,
+      "high": 26179.65,
+      "low": 25872.68,
+      "volume": 8931222000,
+      "ma50": 24863.44,
+      "ma200": 23346.01
+    },
+    "DOW": {
+      "price": 50786.01,
+      "change": -80.77,
+      "change_pct": -0.16,
+      "high": 51277.15,
+      "low": 50732.35,
+      "volume": 476931571,
+      "ma50": 49167.53,
+      "ma200": 47921.21
+    },
+    "Russell 2000": {
+      "price": 2855.4,
+      "change": 21.9,
+      "change_pct": 0.77,
+      "high": 2882.87,
+      "low": 2853.31,
+      "volume": 0,
+      "ma50": 2766.2,
+      "ma200": 2574.7
+    }
+  },
+  "etfs": {
+    "SPY (S&P 500)": {
+      "price": 739.22,
+      "change": 1.67,
+      "change_pct": 0.23,
+      "high": 745.34,
+      "low": 738.19,
+      "volume": 41824280,
+      "ma50": 715.39,
+      "ma200": 682.1
+    },
+    "QQQ (Nasdaq 100)": {
+      "price": 716.07,
+      "change": 11.01,
+      "change_pct": 1.56,
+      "high": 723.03,
+      "low": 713.1,
+      "volume": 44898470,
+      "ma50": 670.65,
+      "ma200": 621.61
+    },
+    "IWM (Russell 2000)": {
+      "price": 284.11,
+      "change": 2.46,
+      "change_pct": 0.87,
+      "high": 286.84,
+      "low": 283.58,
+      "volume": 26480865,
+      "ma50": 274.85,
+      "ma200": 255.04
+    },
+    "EFA (Intl Dev)": {
+      "price": 102.88,
+      "change": 0.62,
+      "change_pct": 0.61,
+      "high": 103.5,
+      "low": 102.71,
+      "volume": 13175384,
+      "ma50": 102.18,
+      "ma200": 97.25
+    },
+    "EEM (Emerging Mkt)": {
+      "price": 65.75,
+      "change": 1.16,
+      "change_pct": 1.8,
+      "high": 66.37,
+      "low": 65.59,
+      "volume": 25308199,
+      "ma50": 63.92,
+      "ma200": 57.41
+    },
+    "AGG (Bonds)": {
+      "price": 98.17,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "high": 98.43,
+      "low": 98.15,
+      "volume": 8008010,
+      "ma50": 98.49,
+      "ma200": 98.24
+    },
+    "TLT (Long Bonds)": {
+      "price": 84.62,
+      "change": -0.44,
+      "change_pct": -0.52,
+      "high": 85.32,
+      "low": 84.62,
+      "volume": 22414237,
+      "ma50": 85.29,
+      "ma200": 86.31
+    },
+    "GLD (Gold)": {
+      "price": 397.27,
+      "change": 1.03,
+      "change_pct": 0.26,
+      "high": 398.98,
+      "low": 396.04,
+      "volume": 7021488,
+      "ma50": 424.57,
+      "ma200": 405.12
+    },
+    "VNQ (REITs)": {
+      "price": 95.47,
+      "change": -1.32,
+      "change_pct": -1.36,
+      "high": 97.11,
+      "low": 95.34,
+      "volume": 2763788,
+      "ma50": 94.56,
+      "ma200": 90.73
+    },
+    "XLF (Financials)": {
+      "price": 51.97,
+      "change": -0.33,
+      "change_pct": -0.63,
+      "high": 52.47,
+      "low": 51.96,
+      "volume": 33807539,
+      "ma50": 51.32,
+      "ma200": 52.27
+    },
+    "XLK (Tech)": {
+      "price": 184.18,
+      "change": 3.88,
+      "change_pct": 2.15,
+      "high": 186.71,
+      "low": 183.17,
+      "volume": 14615419,
+      "ma50": 164.04,
+      "ma200": 146.92
+    },
+    "XLE (Energy)": {
+      "price": 58.33,
+      "change": 0.66,
+      "change_pct": 1.14,
+      "high": 58.96,
+      "low": 57.97,
+      "volume": 25667768,
+      "ma50": 58.09,
+      "ma200": 50.02
+    },
+    "XLV (Healthcare)": {
+      "price": 152.65,
+      "change": -0.36,
+      "change_pct": -0.24,
+      "high": 154.47,
+      "low": 152.41,
+      "volume": 10477740,
+      "ma50": 146.9,
+      "ma200": 147.96
+    },
+    "IEMG (Emerg Mk ETF)": {
+      "price": 79.97,
+      "change": 1.34,
+      "change_pct": 1.7,
+      "high": 80.71,
+      "low": 79.74,
+      "volume": 8831153,
+      "ma50": 78.21,
+      "ma200": 70.52
+    }
+  },
+  "vix": {
+    "current": 18.72,
+    "change": -2.79
+  },
+  "sentiment": "Bullish",
+  "risk": "Moderate",
+  "suggestions": [
+    {
+      "type": "core",
+      "title": "Market in Uptrend",
+      "desc": "Add to core positions (SPY, QQQ) on any pullbacks. Trend is your friend.",
+      "icon": "\ud83d\udcc8"
+    },
+    {
+      "type": "sector",
+      "title": "Leading Sector: Tech (XLK)",
+      "desc": "Tech (XLK) up 2.1% today \u2014 consider tactical overweight in sector ETF.",
+      "icon": "\ud83c\udfaf"
+    },
+    {
+      "type": "trend",
+      "title": "SPY (S&P 500): Bullish Trend",
+      "desc": "Price ($739.22) above MA50 ($715.39) and MA200 ($682.10) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "QQQ (Nasdaq 100): Bullish Trend",
+      "desc": "Price ($716.07) above MA50 ($670.65) and MA200 ($621.61) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "IWM (Russell 2000): Bullish Trend",
+      "desc": "Price ($284.11) above MA50 ($274.85) and MA200 ($255.04) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "EFA (Intl Dev): Bullish Trend",
+      "desc": "Price ($102.88) above MA50 ($102.18) and MA200 ($97.25) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "EEM (Emerging Mkt): Bullish Trend",
+      "desc": "Price ($65.75) above MA50 ($63.92) and MA200 ($57.41) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "VNQ (REITs): Bullish Trend",
+      "desc": "Price ($95.47) above MA50 ($94.56) and MA200 ($90.73) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "XLK (Tech): Bullish Trend",
+      "desc": "Price ($184.18) above MA50 ($164.04) and MA200 ($146.92) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "XLE (Energy): Bullish Trend",
+      "desc": "Price ($58.33) above MA50 ($58.09) and MA200 ($50.02) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "XLV (Healthcare): Bullish Trend",
+      "desc": "Price ($152.65) above MA50 ($146.90) and MA200 ($147.96) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "IEMG (Emerg Mk ETF): Bullish Trend",
+      "desc": "Price ($79.97) above MA50 ($78.21) and MA200 ($70.52) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-10</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf" target="_blank">Mercedes‑Benz starts large‑scale production of electric axial flux motor</a></h2><div class="meta"><span class="score">⭐ 120</span><span class="comments">💬 52</span><span class="by">👤 raffael_de</span></div><div class="summary"><p>Mercedes-Benz has begun large-scale production of a revolutionary electric axial flux motor at its Berlin-Marienfelde facility. The compact, high-performance drive system utilizes dozens of newly developed manufacturing processes and will make its production vehicle debut in the upcoming Mercedes-AMG GT 4-Door Coupe. This launch marks a significant technological milestone for the company and reinforces Germany's growing leadership in advanced electric vehicle manufacturing.</p></div></div></div><div class="source">🔗 <a href="https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf" target="_blank">https://media.mercedes-benz.com/en/article/bebac2af-acdc-465a-9538-adb0bf3d8ccf</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/apple/container/blob/main/docs/container-machine.md" target="_blank">macOS Container Machines</a></h2><div class="meta"><span class="score">⭐ 806</span><span class="comments">💬 289</span><span class="by">👤 timsneath</span></div><div class="summary"><p>This post likely discusses the development, implementation, or performance of containerized virtual machines designed specifically for macOS. It probably explores how these lightweight environments improve developer workflows, optimize resource usage on Apple Silicon, or introduce new tools for running isolated applications directly on Mac systems.</p></div></div></div><div class="source">🔗 <a href="https://github.com/apple/container/blob/main/docs/container-machine.md" target="_blank">https://github.com/apple/container/blob/main/docs/container-machine.md</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank">Claude Fable 5</a></h2><div class="meta"><span class="score">⭐ 2271</span><span class="comments">💬 1757</span><span class="by">👤 Philpax</span></div><div class="summary"><p>Claude Fable 5 has been launched as a highly advanced AI model that demonstrates state-of-the-art performance across complex tasks including software engineering, scientific research, and knowledge work. To ensure safe public deployment, the model includes conservative safeguards that may occasionally redirect sensitive queries to a less capable version, while a specialized variant with lifted restrictions is being provided to trusted cybersecurity defenders. The release highlights significant improvements in autonomous reasoning and long-context task execution, positioning it as a major step forward in practical AI capabilities.</p></div></div></div><div class="source">🔗 <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank">https://www.anthropic.com/news/claude-fable-5-mythos-5</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/react/react/pull/36173" target="_blank">Port React Compiler to Rust</a></h2><div class="meta"><span class="score">⭐ 48</span><span class="comments">💬 27</span><span class="by">👤 boudra</span></div><div class="summary"><p>This post likely discusses an effort to rewrite the experimental React compiler in Rust, aiming to improve build performance and leverage Rust's memory safety and speed. The author probably shares technical insights, implementation challenges, and early benchmarks from the porting process.</p></div></div></div><div class="source">🔗 <a href="https://github.com/react/react/pull/36173" target="_blank">https://github.com/react/react/pull/36173</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank">Upcoming breaking changes for npm v12</a></h2><div class="meta"><span class="score">⭐ 385</span><span class="comments">💬 153</span><span class="by">👤 plasma</span></div><div class="summary"><p>npm version 12 will introduce security-focused breaking changes to the install command by defaulting to block dependency scripts, Git dependencies, and remote URL packages unless explicitly approved. These updates aim to prevent unauthorized code execution during package installation. Developers can prepare for the transition by upgrading to npm 11.16.0 or newer, reviewing installation warnings, and using the approve-scripts command to generate a trusted allowlist in their package configuration.</p></div></div></div><div class="source">🔗 <a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank">https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=48473166" target="_blank">AWS Bedrock to require sharing data with Anthropic for Mythos and future models</a></h2><div class="meta"><span class="score">⭐ 83</span><span class="comments">💬 30</span><span class="by">👤 TomAnthony</span></div><div class="summary"><p>This post discusses a new AWS Bedrock policy that will mandate customers to share their usage data with Anthropic when utilizing the upcoming Mythos model and future AI releases. The change highlights growing tensions around data privacy and model training practices for enterprise AI deployments.</p></div></div></div><div class="source">🔗 <a href="https://news.ycombinator.com/item?id=48473166" target="_blank">HN Discussion</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://twitter.com/RichardSSutton/status/2061216087744946656" target="_blank">Rich Sutton on AI creativity and discovery</a></h2><div class="meta"><span class="score">⭐ 129</span><span class="comments">💬 65</span><span class="by">👤 yimby</span></div><div class="summary"><p>This post likely features insights from renowned AI researcher Rich Sutton on how artificial intelligence can develop creative capabilities and autonomously discover novel solutions. The discussion probably covers the role of reinforcement learning and generative models in enabling machines to explore uncharted problem spaces and drive scientific or artistic innovation.</p></div></div></div><div class="source">🔗 <a href="https://twitter.com/RichardSSutton/status/2061216087744946656" target="_blank">https://twitter.com/RichardSSutton/status/2061216087744946656</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://paperswithcode.co/" target="_blank">Reviving Papers with Code</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 6</span><span class="by">👤 nielz_r</span></div><div class="summary"><p>This collection highlights recent AI research focused on bridging the gap between benchmark performance and real-world utility. New initiatives like Agents Last Exam and VibeSearchBench introduce practical evaluation frameworks for long-horizon workflows and multi-turn search, while models like PaddleOCR-VL-1.6 demonstrate targeted optimization techniques to improve document parsing accuracy. Together, these papers reflect a growing industry shift toward developing AI systems that deliver measurable economic and practical value.</p></div></div></div><div class="source">🔗 <a href="https://paperswithcode.co/" target="_blank">https://paperswithcode.co/</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank">German ruling declares Google liable for false answers in AI Overviews</a></h2><div class="meta"><span class="score">⭐ 602</span><span class="comments">💬 344</span><span class="by">👤 ahlCVA</span></div><div class="summary"><p>A German court has ruled that Google is directly liable for false claims generated by its AI Overviews, establishing that these summaries constitute the company's own original content rather than traditional search results. Consequently, existing legal protections that shield search engines from liability do not apply to AI-generated answers. The court also rejected Google's argument that users can verify sources independently, emphasizing that the AI produces self-contained statements that carry full legal responsibility for the publisher.</p></div></div></div><div class="source">🔗 <a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank">https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-...</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/" target="_blank">RIP software hackathons. Long live the hardware hackathon</a></h2><div class="meta"><span class="score">⭐ 186</span><span class="comments">💬 85</span><span class="by">👤 ozcap</span></div><div class="summary"><p>As AI and no-code tools streamline software development, hackathons are shifting their focus from traditional programming to hardware integration and system design. The author argues that this evolution frees up mental bandwidth for creative experimentation, advocating for a new wave of hardware-focused events that blend vintage technology with modern AI. Rather than pursuing commercial viability, these future hackathons should celebrate unconventional, hands-on projects that push the boundaries of physical computing.</p></div></div></div><div class="source">🔗 <a href="https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/" target="_blank">https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-...</a></div></div>
+
+        <footer>
+            <p>2026-06-10</p>
+        </footer>
+    </div>
+</body>
+</html>

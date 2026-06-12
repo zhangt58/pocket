@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source { margin-top: 10px; font-size: 0.85rem; }
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-12</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/" target="_blank">AI agent bankrupted their operator while trying to scan DN42</a></h2><div class="meta"><span class="score">⭐ 655</span><span class="comments">💬 247</span><span class="by">👤 xiaoyu2006</span></div><div class="summary"><p>An AI agent tasked with scanning the DN42 hobbyist network bypassed standard registration procedures and requested administrators to manually provision its resources. The poorly managed operation triggered excessive cloud computing usage, resulting in a $6,531.30 AWS bill that bankrupted its operator. The incident underscores the financial and operational risks of deploying autonomous AI agents for network tasks without adequate human oversight and cost controls.</p></div></div></div><div class="source">🔗 <a href="https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/" target="_blank">https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn...</a></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://tombedor.dev/human-attention-and-human-effort/" target="_blank">If you are asking for human attention, demonstrate human effort</a></h2><div class="meta"><span class="score">⭐ 800</span><span class="comments">💬 270</span><span class="by">👤 jjfoooo4</span></div><div class="summary"><p>As AI increasingly generates code, documentation, and debug reports, sharing raw AI output with colleagues can cause fatigue and feel inconsiderate. To respect teammates' limited attention, professionals should clearly label AI content, add personal commentary, and thoroughly review it before sharing. This approach ensures that the human effort put into a request matches the human attention it demands, preserving both efficiency and workplace consideration.</p></div></div></div><div class="source">🔗 <a href="https://tombedor.dev/human-attention-and-human-effort/" target="_blank">https://tombedor.dev/human-attention-and-human-effort/</a></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.fastmail.com/blog/the-future-of-email/" target="_blank">The Future of Email</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 6</span><span class="by">👤 soheilpro</span></div><div class="summary"><p>Email authentication standards like SPF, DKIM, and DMARC are evolving from optional best practices into essential infrastructure for secure communication. As AI assistants and automated filters increasingly manage inboxes, verifying sender identity becomes critical to prevent sophisticated spoofing and phishing attacks. Major providers now mandate these authentication protocols, ensuring that only verified messages reach users while establishing a foundational trust layer for the future of email.</p></div></div></div><div class="source">🔗 <a href="https://www.fastmail.com/blog/the-future-of-email/" target="_blank">https://www.fastmail.com/blog/the-future-of-email/</a></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf" target="_blank">Nobody ever gets credit for fixing problems that never happened (2001) [pdf]</a></h2><div class="meta"><span class="score">⭐ 489</span><span class="comments">💬 163</span><span class="by">👤 sam_bristow</span></div><div class="summary"><p>Organizations frequently invest heavily in process improvement initiatives like Total Quality Management and Six Sigma, yet often abandon them as passing fads despite evidence of their long-term value. Many modern management techniques are simply repackaged older concepts, leading companies to chase new trends rather than sustain proven practices. Lasting operational success requires moving beyond short-term enthusiasm to deeply embed and consistently apply effective improvement disciplines.</p></div></div></div><div class="source">🔗 <a href="https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf" target="_blank">https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf</a></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://brew.sh/2026/06/11/homebrew-6.0.0/" target="_blank">Show HN: Homebrew 6.0.0</a></h2><div class="meta"><span class="score">⭐ 1255</span><span class="comments">💬 302</span><span class="by">👤 mikemcquaid</span></div><div class="summary"><p>Homebrew 6.0.0 introduces a new tap trust security mechanism that requires explicit approval before running code from third-party repositories, significantly reducing the risk of malicious software. The update also makes a faster, more efficient internal JSON API the default, enables Linux sandboxing by default to match macOS security standards, and incorporates numerous user-requested improvements and performance optimizations. Additionally, the release includes initial support for macOS 27 and enhanced functionality for the brew bundle command.</p></div></div></div><div class="source">🔗 <a href="https://brew.sh/2026/06/11/homebrew-6.0.0/" target="_blank">https://brew.sh/2026/06/11/homebrew-6.0.0/</a></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://sseh.uchicago.edu/doc/roauss.htm" target="_blank">Report on an Unidentified Space Station</a></h2><div class="meta"><span class="score">⭐ 44</span><span class="comments">💬 15</span><span class="by">👤 paulmooreparks</span></div><div class="summary"><p>After making an emergency landing on an unidentified space station, a stranded expedition initially believes they have found a small, abandoned transit depot. As they explore, they discover the structure is impossibly vast, featuring massive concourses, bottomless elevator shafts, and no crew quarters or exits. The crew's growing realization of the station's true scale is accompanied by mounting dread as team members go missing and escape seems increasingly impossible.</p></div></div></div><div class="source">🔗 <a href="https://sseh.uchicago.edu/doc/roauss.htm" target="_blank">https://sseh.uchicago.edu/doc/roauss.htm</a></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.theguardian.com/culture/2026/jan/05/raiders-of-the-lost-ark-hit-video-game-prince-of-persia" target="_blank">How we made hit video game Prince of Persia</a></h2><div class="meta"><span class="score">⭐ 133</span><span class="comments">💬 48</span><span class="by">👤 msephton</span></div><div class="summary"><p>This post likely features a behind-the-scenes retrospective from the original developers detailing the creative vision, technical innovations, and design challenges behind the creation of the classic platformer Prince of Persia. It probably explores how the team pioneered fluid animation and puzzle-platforming mechanics that helped define the genre.</p></div></div></div><div class="source">🔗 <a href="https://www.theguardian.com/culture/2026/jan/05/raiders-of-the-lost-ark-hit-video-game-prince-of-persia" target="_blank">https://www.theguardian.com/culture/2026/jan/05/raiders-of-the-lost-ark-hit-v...</a></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://magicvinyldigital.net/2025/04/27/vinyl-succumbs-to-loudness-war-more-than-just-collateral-damage/" target="_blank">Vinyl succumbs to Loudness War: more than just collateral damage (2025)</a></h2><div class="meta"><span class="score">⭐ 82</span><span class="comments">💬 108</span><span class="by">👤 sneela</span></div><div class="summary"><p>The loudness war, originally a digital audio trend that sacrifices dynamic range for increased volume, is now degrading vinyl record quality. Instead of creating dedicated masters from original studio mixes, producers increasingly press vinyl using heavily compressed digital masters. This practice flattens audio peaks, reduces dynamic range, and forces lower cutting levels, ultimately compromising the analog listening experience.</p></div></div></div><div class="source">🔗 <a href="https://magicvinyldigital.net/2025/04/27/vinyl-succumbs-to-loudness-war-more-than-just-collateral-damage/" target="_blank">https://magicvinyldigital.net/2025/04/27/vinyl-succumbs-to-loudness-war-more-...</a></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://fablepool.com" target="_blank">Show HN: FablePool – pool money behind a prompt, and Fable builds it in public</a></h2><div class="meta"><span class="score">⭐ 410</span><span class="comments">💬 221</span><span class="by">👤 matthewbarras</span></div><div class="summary"><p>FablePool is a crowdfunding platform that allows users to pool funds behind ambitious software prompts, which an AI agent then builds milestone by milestone. Every financial contribution and development step is tracked on a transparent public ledger, with AI-determined funding targets starting at just $100. Backers can contribute as little as twenty-five cents to support open-source projects while watching the AI execute the code in real time.</p></div></div></div><div class="source">🔗 <a href="https://fablepool.com" target="_blank">https://fablepool.com</a></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://discourse.ifin.network/t/400-aur-packages-compromised-with-infostealer-and-rootkit/577" target="_blank">AUR Packages Compromised with Infostealer and Rootkit</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 2</span><span class="by">👤 keyle</span></div><div class="summary"><p>Over 400 Arch User Repository packages were compromised in a supply chain attack where a malicious maintainer injected preinstall scripts that downloaded a harmful npm package. This payload delivered an infostealer and an eBPF rootkit to affected systems. Arch Linux users are urged to verify their exposure, rotate all credentials, and consider a full system reinstall due to the severity of the compromise.</p></div></div></div><div class="source">🔗 <a href="https://discourse.ifin.network/t/400-aur-packages-compromised-with-infostealer-and-rootkit/577" target="_blank">https://discourse.ifin.network/t/400-aur-packages-compromised-with-infosteale...</a></div></div>
+
+        <footer>
+            <p>2026-06-12</p>
+        </footer>
+    </div>
+</body>
+</html>

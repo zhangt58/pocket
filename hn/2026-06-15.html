@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HN Top 10 — June 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6b35, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+header p {
+  color: #999;
+  font-size: 1rem;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border-left: 4px solid #ff6b35;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.rank {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.15);
+  min-width: 40px;
+  text-align: center;
+}
+.card-body { flex: 1; }
+.card-body h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.card-body h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+.card-body h2 a:hover {
+  color: #4ecdc4;
+}
+.meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+.summary {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 0.75rem;
+}
+.links {
+  display: flex;
+  gap: 1rem;
+}
+.links a {
+  color: #4ecdc4;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #666;
+  font-size: 0.85rem;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>HN Top 10 — June 15, 2026</h1>
+    <p>Daily digest from Hacker News</p>
+  </header>
+        <div class="card" style="border-left-color: #ff6b35;">
+          <div class="rank">1</div>
+          <div class="card-body">
+            <h2><a href="https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/" target="_blank" rel="noopener">Your ePub Is fine</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 651</span>
+              <span class="comments">💬 216</span>
+              <span class="author">👤 sohkamyung</span>
+            </div>
+            <p class="summary">A publisher's DRM-free EPUB passes epubcheck validation flawlessly yet Kobo devices refuse to open it. The root cause is Kobo's use of Adobe's RMSDK engine, a legacy EPUB2 renderer from 2010 that rejects otherwise standard-compliant EPUB3 files. The article details the debugging journey of stripping down a valid book to find what triggers RMSDK's silent failure, highlighting the incompatibility between modern EPUB standards and Adobe's outdated rendering engine.</p>
+            <div class="links">
+              <a href="https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #4ecdc4;">
+          <div class="rank">2</div>
+          <div class="card-body">
+            <h2><a href="https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models" target="_blank" rel="noopener">Apple Foundation Models</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 183</span>
+              <span class="comments">💬 70</span>
+              <span class="author">👤 MehrdadKhnzd</span>
+            </div>
+            <p class="summary">Anthropic released Claude for Foundation Models, a Swift package that integrates Claude into Apple's Foundation Models framework. Apps drive Claude through the same LanguageModelSession API used for on-device models, with requests going directly to Anthropic's API. Supports iOS 27+, streaming, guided generation, and tool calling, letting developers seamlessly switch between cloud Claude and Apple's local models.</p>
+            <div class="links">
+              <a href="https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #45b7d1;">
+          <div class="rank">3</div>
+          <div class="card-body">
+            <h2><a href="https://stratechery.com/2026/anthropics-safety-superpower/" target="_blank" rel="noopener">Anthropic's Safety Superpower</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 17</span>
+              <span class="comments">💬 5</span>
+              <span class="author">👤 swolpers</span>
+            </div>
+            <p class="summary">Analysis of Anthropic's Fable model and the recent government intervention that forced Anthropic to disable Fable 5 access. The US government cited national security concerns after a jailbreak was discovered, though Anthropic argues the vulnerability was narrow and found by Amazon. The piece explores whether Anthropic's safety-first approach is a genuine competitive advantage or marketing.</p>
+            <div class="links">
+              <a href="https://stratechery.com/2026/anthropics-safety-superpower/" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #96ceb4;">
+          <div class="rank">4</div>
+          <div class="card-body">
+            <h2><a href="https://mrmarket.lol/what-the-fuck-happened-to-nerds/" target="_blank" rel="noopener">What the Fuck Happened to Nerds</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 225</span>
+              <span class="comments">💬 150</span>
+              <span class="author">👤 vrnvu</span>
+            </div>
+            <p class="summary">An essay on how the tech industry has shifted from being populated by humble, curious technologists to egocentric self-promoters. The author argues that tech spent decades building public trust by appearing benign and focused on craft, then leadership discovered that trust could be monetized into attention and celebrity. The call to action: rediscover core nerd values of curiosity, humility, and love of learning rather than chasing virality.</p>
+            <div class="links">
+              <a href="https://mrmarket.lol/what-the-fuck-happened-to-nerds/" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #ffeaa7;">
+          <div class="rank">5</div>
+          <div class="card-body">
+            <h2><a href="https://karthinks.com/software/even-more-batteries-included-with-emacs/" target="_blank" rel="noopener">Even more batteries included with Emacs</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 222</span>
+              <span class="comments">💬 49</span>
+              <span class="author">👤 signa11</span>
+            </div>
+            <p class="summary">The third installment of a series showcasing lesser-known built-in Emacs features that require no packages. Highlights include dictionary-tooltip-mode for hover definitions, wildcard support in find-file and dired, and other useful features that veteran users rarely discover. Each feature is designed to be learnable in under five minutes and works with stock Emacs 28.1+.</p>
+            <div class="links">
+              <a href="https://karthinks.com/software/even-more-batteries-included-with-emacs/" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #dda15e;">
+          <div class="rank">6</div>
+          <div class="card-body">
+            <h2><a href="https://openrouter.ai/openrouter/fusion" target="_blank" rel="noopener">Openrouter Fusion API</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 39</span>
+              <span class="comments">💬 11</span>
+              <span class="author">👤 tdchaitanya</span>
+            </div>
+            <p class="summary">OpenRouter's Fusion API aggregates multiple AI models across providers into a single unified endpoint. Current models include Kimi K2.7 Code, Claude Fable variants, Qwen3.7 Plus, Microsoft's MAI series for voice/transcription/images, and various free NVIDIA Nemotron models. The API lets developers access a wide model ecosystem without managing separate integrations.</p>
+            <div class="links">
+              <a href="https://openrouter.ai/openrouter/fusion" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #98d8c8;">
+          <div class="rank">7</div>
+          <div class="card-body">
+            <h2><a href="https://tokyopaladin.substack.com/p/foreign-business-owners-are-scrambling" target="_blank" rel="noopener">Foreign business owners are scrambling to raise capital to stay in Japan</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 33</span>
+              <span class="comments">💬 3</span>
+              <span class="author">👤 zdw</span>
+            </div>
+            <p class="summary">Japan dramatically increased the business manager visa capital requirement from 5 million yen to 30 million yen, effectively pricing out most small foreign-owned businesses. The change also mandates hiring a full-time Japanese employee and requires fluency equivalent to a native speaker. Only 4% of current visa holders meet the new capital threshold, causing applications to plummet 96%. The policy aimed at curbing fraudulent shell companies has instead devastated legitimate immigrant entrepreneurs, particularly Indian-style curry restaurant owners, with over 67,000 signatures on a public petition to reverse the changes.</p>
+            <div class="links">
+              <a href="https://tokyopaladin.substack.com/p/foreign-business-owners-are-scrambling" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #f7dc6f;">
+          <div class="rank">8</div>
+          <div class="card-body">
+            <h2><a href="https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/" target="_blank" rel="noopener">Curl will not accept vulnerability reports during July 2026</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 455</span>
+              <span class="comments">💬 178</span>
+              <span class="author">👤 secret-noun</span>
+            </div>
+            <p class="summary">The curl project announced a 'summer of bliss' where vulnerability reports will not be accepted during July 2026. The HackerOne submission form pauses July 1 through August 3, giving maintainers much-needed rest after months of intense security pressure. The curl 8.22.0 release is pushed back two weeks to September 2. GitHub issues and PRs remain open, and paid support contracts are unaffected.</p>
+            <div class="links">
+              <a href="https://daniel.haxx.se/blog/2026/06/15/curl-summer-of-bliss/" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #bb8fce;">
+          <div class="rank">9</div>
+          <div class="card-body">
+            <h2><a href="https://github.com/tamnd/kage" target="_blank" rel="noopener">Show HN: Kage – Shadow any website to a single binary for offline viewing</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 576</span>
+              <span class="comments">💬 113</span>
+              <span class="author">👤 tamnd</span>
+            </div>
+            <p class="summary">Kage is a Go tool that clones websites into offline-browsable folders with all JavaScript stripped out. It uses headless Chrome to render pages, captures the final DOM, removes all scripts, and downloads CSS, images, and fonts locally. Features include breadth-first crawling with robots.txt/sitemap support, ZIM archive packaging for Kiwix, self-contained executable binaries, and desktop app generation. Designed to solve the problem of fragile 'Save As' pages that break when JavaScript dependencies disappear.</p>
+            <div class="links">
+              <a href="https://github.com/tamnd/kage" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>        <div class="card" style="border-left-color: #85c1e9;">
+          <div class="rank">10</div>
+          <div class="card-body">
+            <h2><a href="https://www.fractalkitty.com/there-is-3-such-that/" target="_blank" rel="noopener">There Is(Ƒ) – Such That (∋)</a></h2>
+            <div class="meta">
+              <span class="score">⭐ 50</span>
+              <span class="comments">💬 18</span>
+              <span class="author">👤 evakhoury</span>
+            </div>
+            <p class="summary">A creative visual programming language that uses mathematical notation and bird metaphors to compose generative art. The canvas is a square with vectors representing time (hours as ravens, minutes as crows, seconds as magpies). These vectors form scalars through operations like dot products and magnitudes, then render glyphs (sun, moon, star) and habitats (grass, trees, nebulae) on the canvas. An interactive version is available for experimentation.</p>
+            <div class="links">
+              <a href="https://www.fractalkitty.com/there-is-3-such-that/" target="_blank" rel="noopener">🔗 Source</a>
+              
+            </div>
+          </div>
+        </div>
+  <footer>
+    <p>Generated by HN Digest · 2026-06-15</p>
+  </footer>
+</div>
+</body>
+</html>

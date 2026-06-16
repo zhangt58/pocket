@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>June 16, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419" target="_blank">The time the x86 emulator team found code so bad they fixed it during emulation</a></h2><div class="meta"><span class="score">⭐ 289</span><span class="comments">💬 88</span><span class="by">👤 paulmooreparks</span></div><div class="summary"><p>This article recounts an incident where an x86 emulator development team encountered legacy software containing such severe programming flaws that they chose to patch the bugs directly within the emulator itself. Rather than forcing developers to update the original application, the team implemented workarounds in the emulation layer to ensure the faulty code could run correctly on modern systems. This approach highlights the practical challenges of maintaining backward compatibility while preserving system stability.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48550693" target="_blank">HN Discussion (88)</a></div><div class="source">🔗 <a href="https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419" target="_blank">https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://roman.pt/posts/linkedin-backdoor/" target="_blank">A backdoor in a LinkedIn job offer</a></h2><div class="meta"><span class="score">⭐ 1237</span><span class="comments">💬 223</span><span class="by">👤 lwhsiao</span></div><div class="summary"><p>A malicious actor disguised a phishing campaign as a LinkedIn job offer, sending candidates a GitHub repository containing a hidden backdoor. The repository was engineered to automatically execute remote code whenever a developer ran npm install, exploiting the package manager's prepare script. To appear legitimate, the attackers impersonated real software engineers and professionals, highlighting the growing threat of supply chain attacks targeting developers through social engineering.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48546294" target="_blank">HN Discussion (223)</a></div><div class="source">🔗 <a href="https://roman.pt/posts/linkedin-backdoor/" target="_blank">https://roman.pt/posts/linkedin-backdoor/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://twitter.com/ID_AA_Carmack/status/2064095424420487226" target="_blank">John Carmack on Fabrice Bellard</a></h2><div class="meta"><span class="score">⭐ 323</span><span class="comments">💬 181</span><span class="by">👤 apitman</span></div><div class="summary"><p>This post likely features commentary from legendary game developer John Carmack discussing the technical achievements and programming contributions of Fabrice Bellard, creator of QEMU and FFmpeg. It probably explores Bellard's impact on systems programming, compiler design, and open-source software development.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48550779" target="_blank">HN Discussion (181)</a></div><div class="source">🔗 <a href="https://twitter.com/ID_AA_Carmack/status/2064095424420487226" target="_blank">https://twitter.com/ID_AA_Carmack/status/2064095424420487226</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://sighack.com/post/getting-creative-with-perlin-noise-fields" target="_blank">Getting Creative with Perlin Noise Fields</a></h2><div class="meta"><span class="score">⭐ 34</span><span class="comments">💬 3</span><span class="by">👤 0x000xca0xfe</span></div><div class="summary"><p>This article explores how Perlin noise flow fields can be used to generate diverse and organic visual art through simple particle simulations. By adjusting algorithm parameters and applying self-imposed constraints, the author created twenty-five distinct designs to demonstrate how basic generative processes can effectively foster creativity. The project highlights the intersection of computational algorithms and artistic expression, showing how minimal code can yield complex and visually engaging results.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48522316" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://sighack.com/post/getting-creative-with-perlin-noise-fields" target="_blank">https://sighack.com/post/getting-creative-with-perlin-noise-fields</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.iroh.computer/blog/v1" target="_blank">Iroh 1.0</a></h2><div class="meta"><span class="score">⭐ 1215</span><span class="comments">💬 368</span><span class="by">👤 chadfowler</span></div><div class="summary"><p>Iroh 1.0 is a stable release of a networking protocol that replaces traditional IP addresses with cryptographic keys to enable secure, direct device-to-device connections from anywhere. By prioritizing peer-to-peer data transfer, it significantly reduces cloud relay dependency and network latency while supporting custom transports and local-first configurations. The update also introduces stable cross-language APIs for Rust, Python, Node.js, Swift, and Kotlin, making it easier for developers to integrate the technology into diverse applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48542480" target="_blank">HN Discussion (368)</a></div><div class="source">🔗 <a href="https://www.iroh.computer/blog/v1" target="_blank">https://www.iroh.computer/blog/v1</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.richardosgood.com/posts/banned-book-library/" target="_blank">Banned Book Library in a Wi-Fi Smart Light Bulb</a></h2><div class="meta"><span class="score">⭐ 402</span><span class="comments">💬 214</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>This project details how to hack an affordable Wi-Fi smart light bulb into a discreet web server that hosts banned books. By flashing custom firmware onto ESP32-based bulbs, the device broadcasts an open Wi-Fi network that functions as a low-cost digital dead drop. Anyone nearby with a connected device can access the restricted literature as long as the bulb remains powered on.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48547985" target="_blank">HN Discussion (214)</a></div><div class="source">🔗 <a href="https://www.richardosgood.com/posts/banned-book-library/" target="_blank">https://www.richardosgood.com/posts/banned-book-library/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=48542100" target="_blank">Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?</a></h2><div class="meta"><span class="score">⭐ 1037</span><span class="comments">💬 455</span><span class="by">👤 cloudking</span></div><div class="summary"><p>This discussion thread asks the community if they have switched from cloud-based AI assistants like Claude and GPT to locally hosted models for their everyday programming tasks. It seeks insights on the feasibility, performance, and workflow adjustments required when using open-source alternatives for daily coding assistance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48542100" target="_blank">HN Discussion (455)</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://tinywind.io" target="_blank">TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)</a></h2><div class="meta"><span class="score">⭐ 861</span><span class="comments">💬 156</span><span class="by">👤 tinywind</span></div><div class="summary"><p>TinyWind is a pixel-art pirate sailing game that simulates realistic wind physics to deliver an authentic nautical experience. Players navigate open waters by managing their sails and steering through dynamic weather conditions. The game has already attracted a dedicated community that has collectively sailed over 380,000 kilometers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48543475" target="_blank">HN Discussion (156)</a></div><div class="source">🔗 <a href="https://tinywind.io" target="_blank">https://tinywind.io</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://devblogs.microsoft.com/oldnewthing/20260611-00/?p=112415" target="_blank">Understanding the rationale behind a rule when trying to circumvent it</a></h2><div class="meta"><span class="score">⭐ 35</span><span class="comments">💬 6</span><span class="by">👤 tosh</span></div><div class="summary"><p>Windows kernel-mode callbacks for process and thread events must execute quickly and avoid blocking to prevent system-wide hangs and deadlocks. Developers sometimes attempt to circumvent these restrictions by offloading tasks to worker threads and then waiting for them to finish, which ultimately violates the core principle of non-blocking execution. Understanding the underlying rationale behind these coding guidelines is essential to avoid subtle anti-patterns that compromise system stability.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48551876" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://devblogs.microsoft.com/oldnewthing/20260611-00/?p=112415" target="_blank">https://devblogs.microsoft.com/oldnewthing/20260611-00/?p=112415</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://trinket.strivemath.org/" target="_blank">Trinket.io shutting down, so we saved it and hosted it a trinket.strivemath.org</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 1</span><span class="by">👤 apulkit6</span></div><div class="summary"><p>Following the shutdown of Trinket.io, Strive Math has preserved the platform and launched a community-hosted version at trinket.strivemath.org. This open-source, browser-based coding environment allows users to write, run, and share code in languages like Python, HTML, and Java without requiring any downloads. It continues to serve both learners and educators by providing instant code execution and tools for creating interactive programming courses.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48552723" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://trinket.strivemath.org/" target="_blank">https://trinket.strivemath.org/</a></div></div></div>
+
+        <footer>
+            <p>June 16, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

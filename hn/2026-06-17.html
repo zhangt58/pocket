@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>June 17, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index" target="_blank">GLM-5.2 is the new leading open weights model on Artificial Analysis</a></h2><div class="meta"><span class="score">⭐ 107</span><span class="comments">💬 33</span><span class="by">👤 himata4113</span></div><div class="summary"><p>The GLM-5.2 AI model has become the top-performing open weights system on the Artificial Analysis Intelligence Index, significantly outpacing competitors like MiniMax-M3 and DeepSeek V4 Pro. It delivers major improvements in scientific reasoning and real-world agentic tasks, achieving performance levels comparable to leading proprietary systems. Despite higher token usage per task, the model maintains an optimal balance of intelligence and cost efficiency while remaining freely available under an MIT license.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48567759" target="_blank">HN Discussion (33)</a></div><div class="source">🔗 <a href="https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index" target="_blank">https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weight...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://cells2pixels.github.io/" target="_blank">Show HN: High-Res Neural Cellular Automata</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 0</span><span class="by">👤 esychology</span></div><div class="summary"><p>Researchers have developed a hybrid model that overcomes the low-resolution limitations of traditional Neural Cellular Automata by pairing a coarse-grid automaton with a lightweight implicit decoder. This system maps local cell states to high-resolution visual attributes, enabling real-time rendering of complex, self-organizing patterns across 2D and 3D domains. The approach preserves the regenerative and robust properties of neural cellular automata while drastically reducing memory and computational demands.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48567877" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://cells2pixels.github.io/" target="_blank">https://cells2pixels.github.io/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon" target="_blank">GrapheneOS has been ported to Android 17</a></h2><div class="meta"><span class="score">⭐ 806</span><span class="comments">💬 404</span><span class="by">👤 Cider9986</span></div><div class="summary"><p>GrapheneOS has successfully completed its port to Android 17 and is preparing to release official updates for all supported Pixel devices. The development team has finished testing the new version and will soon push the code to public repositories for community building and testing. Official public releases are expected to follow shortly after the initial code deployment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48561654" target="_blank">HN Discussion (404)</a></div><div class="source">🔗 <a href="https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon" target="_blank">https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/" target="_blank">Running local models is good now</a></h2><div class="meta"><span class="score">⭐ 1365</span><span class="comments">💬 518</span><span class="by">👤 jfb</span></div><div class="summary"><p>Locally run AI models have recently achieved remarkable improvements in speed and accuracy, making them highly viable for complex development tasks. Running on consumer hardware, these models can now handle agentic coding, code refactoring, and project bootstrapping with performance approaching that of leading cloud-based systems. This shift marks a significant departure from their earlier limitations, enabling developers to run powerful, private AI workflows directly on their own machines.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48555993" target="_blank">HN Discussion (518)</a></div><div class="source">🔗 <a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/" target="_blank">https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://bubbles.town/" target="_blank">Hacker News but for Independent Blogs</a></h2><div class="meta"><span class="score">⭐ 118</span><span class="comments">💬 38</span><span class="by">👤 headalgorithm</span></div><div class="summary"><p>This platform aggregates over five thousand independent personal blogs onto a single front page, functioning as a community-driven alternative to mainstream news feeds. Content is ranked by user votes and recency, allowing readers to directly shape the visibility of posts across various topics like technology and personal life. The service provides a centralized hub for discovering and engaging with individual creators outside of traditional social media algorithms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48567155" target="_blank">HN Discussion (38)</a></div><div class="source">🔗 <a href="https://bubbles.town/" target="_blank">https://bubbles.town/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/" target="_blank">Humiliating IIS servers for fun and jail time</a></h2><div class="meta"><span class="score">⭐ 277</span><span class="comments">💬 65</span><span class="by">👤 denysvitali</span></div><div class="summary"><p>This article provides a comprehensive guide to discovering and exploiting misconfigured IIS web servers during bug bounty hunting. It outlines practical techniques for locating targets using search engines and fingerprinting tools, followed by detailed methods for leveraging common vulnerabilities such as tilde enumeration, web.config exposure, path traversal, and NTFS authentication bypasses. The author emphasizes how these frequently overlooked misconfigurations can be systematically targeted to uncover critical security flaws.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48563394" target="_blank">HN Discussion (65)</a></div><div class="source">🔗 <a href="https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/" target="_blank">https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/" target="_blank">U.S. Science Is in Chaos</a></h2><div class="meta"><span class="score">⭐ 59</span><span class="comments">💬 25</span><span class="by">👤 presspot</span></div><div class="summary"><p>A decade-long NASA space telescope project was abruptly canceled after mass employee buyouts, proposed federal budget cuts to science, and a government shutdown severely disrupted its development. The sudden loss of key personnel and shifting administrative priorities left the research team unable to meet strict budget and timeline requirements. This cancellation exemplifies the broader instability and political interference currently undermining U.S. scientific research and space exploration efforts.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48568058" target="_blank">HN Discussion (25)</a></div><div class="source">🔗 <a href="https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/" target="_blank">https://www.scientificamerican.com/article/americas-compact-between-science-a...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-plant-life-climate-global-mapping-study" target="_blank">Subterranean fungi networks more than 100 quadrillion km in length</a></h2><div class="meta"><span class="score">⭐ 81</span><span class="comments">💬 18</span><span class="by">👤 tosh</span></div><div class="summary"><p>This post likely discusses a scientific study estimating the global length of underground mycelial networks to exceed 100 quadrillion kilometers. It highlights the immense scale of subterranean fungal ecosystems and their potential ecological significance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48496233" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-plant-life-climate-global-mapping-study" target="_blank">https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://claude.com/blog/the-founders-playbook" target="_blank">The founder's playbook: Building an AI-native startup</a></h2><div class="meta"><span class="score">⭐ 101</span><span class="comments">💬 91</span><span class="by">👤 e2e4</span></div><div class="summary"><p>This guide outlines a strategic framework for entrepreneurs looking to build startups fundamentally designed around artificial intelligence. It covers essential steps for leveraging AI as a core product, navigating technical and business challenges, and scaling an AI-driven company effectively. Founders can use these insights to make informed decisions about product development, team building, and market positioning in the rapidly evolving AI landscape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48566832" target="_blank">HN Discussion (91)</a></div><div class="source">🔗 <a href="https://claude.com/blog/the-founders-playbook" target="_blank">https://claude.com/blog/the-founders-playbook</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/" target="_blank">TIL: You can make HTTP requests without curl using Bash /dev/TCP</a></h2><div class="meta"><span class="score">⭐ 428</span><span class="comments">💬 201</span><span class="by">👤 mrshu</span></div><div class="summary"><p>Bash includes a built-in /dev/tcp feature that allows you to open raw TCP sockets and manually send HTTP requests without relying on external tools like curl or wget. This technique is particularly useful for quickly testing network connectivity inside minimal Docker containers or restricted environments where standard utilities are unavailable. However, because it lacks TLS support, automatic redirects, and proper response parsing, it should only be used as a lightweight debugging workaround rather than a replacement for dedicated HTTP clients.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48558018" target="_blank">HN Discussion (201)</a></div><div class="source">🔗 <a href="https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/" target="_blank">https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/</a></div></div></div>
+
+        <footer>
+            <p>June 17, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

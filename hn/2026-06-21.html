@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-21</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/" target="_blank">Google Hits 50% IPv6</a></h2><div class="meta"><span class="score">⭐ 127</span><span class="comments">💬 117</span><span class="by">👤 barqawiz</span></div><div class="summary"><p>This post likely covers Google reaching a major milestone where half of its global web traffic now originates from IPv6 addresses, highlighting the accelerating transition away from the older IPv4 protocol. The discussion probably examines regional adoption patterns, infrastructure challenges, and the broader implications for internet routing and developer practices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48616800" target="_blank">HN Discussion (117)</a></div><div class="source">🔗 <a href="https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/" target="_blank">https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/namgyaaal/avoxelgame" target="_blank">A 3D voxel game engine written in APL</a></h2><div class="meta"><span class="score">⭐ 55</span><span class="comments">💬 6</span><span class="by">👤 sph</span></div><div class="summary"><p>This post showcases an unconventional software project that implements a 3D voxel game engine using APL, a highly specialized array-oriented programming language rarely used for graphics or game development. It likely explores the technical implementation, performance considerations, and unique coding patterns required to render real-time 3D environments in such an esoteric language.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48616713" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://github.com/namgyaaal/avoxelgame" target="_blank">https://github.com/namgyaaal/avoxelgame</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://fosterelli.co/developers-dont-understand-cors" target="_blank">Developers don't understand CORS (2019)</a></h2><div class="meta"><span class="score">⭐ 218</span><span class="comments">💬 123</span><span class="by">👤 toilet</span></div><div class="summary"><p>This post likely examines the widespread misconceptions developers have about Cross-Origin Resource Sharing, explaining why its security model is frequently misunderstood and how browsers actually enforce it. It probably breaks down common implementation errors, clarifies the underlying mechanics of cross-origin requests, and provides practical guidance for correctly configuring and debugging CORS in web applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48614844" target="_blank">HN Discussion (123)</a></div><div class="source">🔗 <a href="https://fosterelli.co/developers-dont-understand-cors" target="_blank">https://fosterelli.co/developers-dont-understand-cors</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://zeux.io/2026/06/17/zigzag-decoding-avx512/" target="_blank">Zigzag Decoding with AVX-512</a></h2><div class="meta"><span class="score">⭐ 77</span><span class="comments">💬 11</span><span class="by">👤 luu</span></div><div class="summary"><p>This post likely explores how to accelerate zigzag decoding, a common technique for efficiently handling signed integers in data serialization, by leveraging AVX-512 SIMD instructions. It probably covers low-level implementation strategies, performance benchmarks, and practical optimizations for modern high-throughput data processing workloads.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48573902" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://zeux.io/2026/06/17/zigzag-decoding-avx512/" target="_blank">https://zeux.io/2026/06/17/zigzag-decoding-avx512/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://github.com/mysk-research/loupe" target="_blank">Loupe – A iOS app that raises awareness about what native apps can see</a></h2><div class="meta"><span class="score">⭐ 311</span><span class="comments">💬 118</span><span class="by">👤 Cider9986</span></div><div class="summary"><p>Loupe is an iOS application designed to help users visualize and understand the data, files, and system resources that native apps can access on their devices. By making these permissions transparent, the app aims to improve digital privacy awareness and empower users to better manage their information.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48608645" target="_blank">HN Discussion (118)</a></div><div class="source">🔗 <a href="https://github.com/mysk-research/loupe" target="_blank">https://github.com/mysk-research/loupe</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland" target="_blank">Renting a sewing machine from the library</a></h2><div class="meta"><span class="score">⭐ 242</span><span class="comments">💬 132</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>This post likely discusses the growing trend of public libraries lending or renting out sewing machines to patrons, exploring how this service makes crafting more accessible and affordable. It may cover the practical aspects of borrowing equipment, community benefits, or personal experiences with library-based maker programs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48613755" target="_blank">HN Discussion (132)</a></div><div class="source">🔗 <a href="https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland" target="_blank">https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://taoofmac.com/space/blog/2026/06/18/1845" target="_blank">Running MicroVMs in Proxmox VE, the Easy Way</a></h2><div class="meta"><span class="score">⭐ 70</span><span class="comments">💬 5</span><span class="by">👤 zdw</span></div><div class="summary"><p>This post likely provides a simplified guide or automated script for deploying lightweight MicroVMs within the Proxmox Virtual Environment. It aims to streamline the traditionally complex setup process, allowing system administrators to leverage MicroVM performance benefits with minimal manual configuration.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48599555" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://taoofmac.com/space/blog/2026/06/18/1845" target="_blank">https://taoofmac.com/space/blog/2026/06/18/1845</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://sibexi.co/posts/epoll-vs-io_uring/" target="_blank">Epoll vs. io_uring in Linux</a></h2><div class="meta"><span class="score">⭐ 173</span><span class="comments">💬 42</span><span class="by">👤 Sibexico</span></div><div class="summary"><p>This post likely explores the technical differences, performance characteristics, and practical use cases of Linux's epoll and io_uring I/O multiplexing mechanisms. It probably compares how each handles asynchronous event notification and discusses when developers should choose one over the other for high-performance applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48613872" target="_blank">HN Discussion (42)</a></div><div class="source">🔗 <a href="https://sibexi.co/posts/epoll-vs-io_uring/" target="_blank">https://sibexi.co/posts/epoll-vs-io_uring/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9" target="_blank">Slow breathing modulates brain function and risk behavior</a></h2><div class="meta"><span class="score">⭐ 219</span><span class="comments">💬 54</span><span class="by">👤 croes</span></div><div class="summary"><p>This post likely discusses research demonstrating how controlled slow breathing techniques can directly influence neural activity and cognitive processing. The findings suggest that this simple physiological intervention may help regulate decision-making and reduce an individual's propensity for engaging in risky behaviors.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48613555" target="_blank">HN Discussion (54)</a></div><div class="source">🔗 <a href="https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9" target="_blank">https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html" target="_blank">Windows UI evolution: Clicking an unassociated file</a></h2><div class="meta"><span class="score">⭐ 30</span><span class="comments">💬 7</span><span class="by">👤 jandeboevrie</span></div><div class="summary"><p>This post likely explores how Microsoft Windows has changed its dialog prompts and user interface over the years when a user attempts to open a file without a default application assigned. It probably compares historical versions to modern iterations, highlighting shifts in design philosophy and usability for handling unassociated file types.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48616173" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html" target="_blank">https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html</a></div></div></div>
+
+        <footer>
+            <p>2026-06-21</p>
+        </footer>
+    </div>
+</body>
+</html>

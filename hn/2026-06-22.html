@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-22</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://docs.deno.com/runtime/desktop/" target="_blank">Deno Desktop</a></h2><div class="meta"><span class="score">⭐ 433</span><span class="comments">💬 180</span><span class="by">👤 GeneralMaximus</span></div><div class="summary"><p>This post likely introduces Deno Desktop, a framework that enables developers to build cross-platform native desktop applications using JavaScript and TypeScript with Deno's secure runtime. It probably covers the project's architecture, key features, and how it integrates web technologies with native desktop capabilities.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48626137" target="_blank">HN Discussion (180)</a></div><div class="source">🔗 <a href="https://docs.deno.com/runtime/desktop/" target="_blank">https://docs.deno.com/runtime/desktop/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://lmao.center/blog/wiggle-accidents/" target="_blank">Help I accidentally a wigglegram</a></h2><div class="meta"><span class="score">⭐ 275</span><span class="comments">💬 57</span><span class="by">👤 gregsadetsky</span></div><div class="summary"><p>This post likely features a user seeking advice after unintentionally creating or publishing a wigglegram, a viral meme format that animates static images with a shaking effect. The discussion probably covers how to remove the effect, prevent accidental uploads, or troubleshoot the app or platform that generated it.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48605561" target="_blank">HN Discussion (57)</a></div><div class="source">🔗 <a href="https://lmao.center/blog/wiggle-accidents/" target="_blank">https://lmao.center/blog/wiggle-accidents/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/" target="_blank">Did my old job only exist because of fraud?</a></h2><div class="meta"><span class="score">⭐ 591</span><span class="comments">💬 256</span><span class="by">👤 advisedwang</span></div><div class="summary"><p>This post likely shares a personal account of working at a company where the author's role or the business itself was built on deceptive or illegal practices. The author is probably reflecting on the ethical implications of their employment and questioning whether the position would have existed without the underlying fraud.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48622867" target="_blank">HN Discussion (256)</a></div><div class="source">🔗 <a href="https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/" target="_blank">https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://apertvs.ai/" target="_blank">Apertus – Open Foundation Model for Sovereign AI</a></h2><div class="meta"><span class="score">⭐ 398</span><span class="comments">💬 135</span><span class="by">👤 T-A</span></div><div class="summary"><p>This post likely introduces Apertus, an open-source foundation model designed to enable organizations and nations to develop and deploy AI systems that maintain full control over their data and infrastructure. It highlights how the model supports sovereign AI initiatives by prioritizing data privacy, regulatory compliance, and technological independence from major commercial providers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48622778" target="_blank">HN Discussion (135)</a></div><div class="source">🔗 <a href="https://apertvs.ai/" target="_blank">https://apertvs.ai/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html" target="_blank">Munich 1991: The Roots of the Current AI Boom</a></h2><div class="meta"><span class="score">⭐ 81</span><span class="comments">💬 27</span><span class="by">👤 tosh</span></div><div class="summary"><p>This post likely examines how a 1991 AI conference or research workshop in Munich established foundational theories and academic collaborations that directly paved the way for today's artificial intelligence revolution. It probably highlights the key researchers, early machine learning breakthroughs, and paradigm shifts from that era that continue to shape modern deep learning and generative AI.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48599998" target="_blank">HN Discussion (27)</a></div><div class="source">🔗 <a href="https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html" target="_blank">https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/openai/codex/issues/28224" target="_blank">Codex logging bug may write TBs to local SSDs</a></h2><div class="meta"><span class="score">⭐ 109</span><span class="comments">💬 63</span><span class="by">👤 vantareed</span></div><div class="summary"><p>This post likely discusses a critical logging defect in the Codex development tool that could inadvertently generate terabytes of data on users local solid state drives. The thread probably covers the technical mechanics of the storage leak, potential hardware damage from excessive write cycles, and community recommendations for mitigating the issue.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48626930" target="_blank">HN Discussion (63)</a></div><div class="source">🔗 <a href="https://github.com/openai/codex/issues/28224" target="_blank">https://github.com/openai/codex/issues/28224</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.fca.org.uk/news/press-releases/investors-get-real-time-view-uk-bond-market-activity-first-time" target="_blank">Investors get real-time view of UK bond market activity for the first time</a></h2><div class="meta"><span class="score">⭐ 27</span><span class="comments">💬 2</span><span class="by">👤 monkeydust</span></div><div class="summary"><p>This post likely covers the launch of a new data platform or regulatory initiative that provides investors with live, transparent access to UK gilt trading volumes and prices. The development marks a significant shift toward greater market transparency and could improve liquidity and pricing efficiency for government bonds.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48626918" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.fca.org.uk/news/press-releases/investors-get-real-time-view-uk-bond-market-activity-first-time" target="_blank">https://www.fca.org.uk/news/press-releases/investors-get-real-time-view-uk-bo...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://techstackups.com/comparisons/glm-5.2-vs-opus/" target="_blank">GLM 5.2 vs. Opus</a></h2><div class="meta"><span class="score">⭐ 153</span><span class="comments">💬 123</span><span class="by">👤 ritzaco</span></div><div class="summary"><p>This post likely features a comparative analysis or benchmark results pitting the GLM 5.2 large language model against Anthropic's Claude Opus. The discussion probably evaluates their relative strengths and weaknesses across key AI capabilities such as complex reasoning, coding proficiency, and natural language generation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48626866" target="_blank">HN Discussion (123)</a></div><div class="source">🔗 <a href="https://techstackups.com/comparisons/glm-5.2-vs-opus/" target="_blank">https://techstackups.com/comparisons/glm-5.2-vs-opus/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://fil-c.org/inlineasm" target="_blank">Memory Safe Inline Assembly</a></h2><div class="meta"><span class="score">⭐ 116</span><span class="comments">💬 26</span><span class="by">👤 pizlonator</span></div><div class="summary"><p>This post likely explores methods or tools for integrating inline assembly into modern programming languages without compromising memory safety guarantees. It probably discusses compiler techniques, language design innovations, or research aimed at preserving low-level hardware control while preventing common vulnerabilities like buffer overflows and use-after-free errors.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48606096" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://fil-c.org/inlineasm" target="_blank">https://fil-c.org/inlineasm</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://alexkritchevsky.com/2026/05/25/everything-is-logarithms.html" target="_blank">Everything is logarithms</a></h2><div class="meta"><span class="score">⭐ 237</span><span class="comments">💬 48</span><span class="by">👤 E-Reverance</span></div><div class="summary"><p>This post likely explores how logarithmic scales and multiplicative relationships underpin diverse fields like computer science, economics, and natural phenomena, arguing that complex systems are best understood through order-of-magnitude reasoning. It examines real-world examples where exponential growth and power laws reveal hidden patterns across technical and scientific disciplines.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48622626" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://alexkritchevsky.com/2026/05/25/everything-is-logarithms.html" target="_blank">https://alexkritchevsky.com/2026/05/25/everything-is-logarithms.html</a></div></div></div>
+
+        <footer>
+            <p>2026-06-22</p>
+        </footer>
+    </div>
+</body>
+</html>

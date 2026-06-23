@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 10 Hacker News Posts</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>🔥 Top 10 Hacker News Posts</h1>
+<p>June 23, 2026</p>
+</header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.stephendiehl.com/posts/bad_place_2026/" target="_blank">Crypto in 2026: Oh, This Is the Bad Place</a></h2><div class="meta"><span class="score">⭐ 65</span><span class="comments">💬 40</span><span class="by">👤 ibobev</span></div><div class="summary"><p>An analysis of the cryptocurrency landscape in 2026, arguing that the industry has entered a prolonged downturn. The author examines declining sentiment, regulatory pressures, and structural challenges that suggest crypto is far from the recovery many investors expected.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48642699" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://www.stephendiehl.com/posts/bad_place_2026/" target="_blank">https://www.stephendiehl.com/posts/bad_place_2026/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://store.steampowered.com/news/group/45479024/view/685257114654870245" target="_blank">Steam Machine launches today</a></h2><div class="meta"><span class="score">⭐ 1616</span><span class="comments">💬 1401</span><span class="by">👤 theschwa</span></div><div class="summary"><p>Valve has officially launched the Steam Machine, a line of living-room gaming PCs running SteamOS, bringing the Steam desktop gaming experience to the TV. The Newell Nucleus is the flagship model, offering plug-and-play PC gaming with full controller support and Steam Big Picture integration.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48632884" target="_blank">HN Discussion (1401)</a></div><div class="source">🔗 <a href="https://store.steampowered.com/news/group/45479024/view/685257114654870245" target="_blank">https://store.steampowered.com/news/group/45479024/view/685257114654870245</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://kreya.app/blog/new-http-query-method-explained/" target="_blank">The new HTTP QUERY method explained</a></h2><div class="meta"><span class="score">⭐ 139</span><span class="comments">💬 81</span><span class="by">👤 CommonGuy</span></div><div class="summary"><p>An explanation of the newly proposed HTTP QUERY method, a new HTTP verb designed for parameterized queries over REST APIs. Unlike GET, QUERY is specifically intended for complex data retrieval scenarios with structured query parameters, providing clearer semantics for API consumers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48640974" target="_blank">HN Discussion (81)</a></div><div class="source">🔗 <a href="https://kreya.app/blog/new-http-query-method-explained/" target="_blank">https://kreya.app/blog/new-http-query-method-explained/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://plotnine.org/" target="_blank">Plotnine</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 13</span><span class="by">👤 tosh</span></div><div class="summary"><p>Plotnine is a Python data visualization library based on the Grammar of Graphics, implementing a Pythonic API inspired by R's ggplot2. It provides a layered approach to building statistical graphics, allowing users to compose complex plots from simple building blocks like geoms, stats, and facets.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48596488" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://plotnine.org/" target="_blank">https://plotnine.org/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2" target="_blank">Polymarket has flooded social media with deceptive videos by paid creators</a></h2><div class="meta"><span class="score">⭐ 334</span><span class="comments">💬 249</span><span class="by">👤 Vaslo</span></div><div class="summary"><p>Investigation reveals that Polymarket, the prediction market platform, has paid social media creators to produce misleading video content that drives users to place bets on the platform. The videos often present speculation as fact and obscure the true nature of prediction market wagers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48614715" target="_blank">HN Discussion (249)</a></div><div class="source">🔗 <a href="https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?st=HhTZY2" target="_blank">https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-ma...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://unsloth.ai/docs/models/glm-5.2" target="_blank">GLM-5.2 – How to Run Locally</a></h2><div class="meta"><span class="score">⭐ 415</span><span class="comments">💬 183</span><span class="by">👤 TechTechTech</span></div><div class="summary"><p>Documentation and guides for running the GLM-5.2 model locally on consumer hardware. The guide covers installation, optimization techniques, and performance tuning to run this large language model efficiently without cloud infrastructure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48636377" target="_blank">HN Discussion (183)</a></div><div class="source">🔗 <a href="https://unsloth.ai/docs/models/glm-5.2" target="_blank">https://unsloth.ai/docs/models/glm-5.2</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2606.16140" target="_blank">VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO</a></h2><div class="meta"><span class="score">⭐ 212</span><span class="comments">💬 85</span><span class="by">👤 timhigins</span></div><div class="summary"><p>A research paper presenting VibeThinker, a compact 3-billion parameter language model that outperforms much larger models on reasoning benchmarks. The model achieves this through a novel combination of supervised fine-tuning and GRPO (Group Relative Policy Optimization) training techniques.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48639240" target="_blank">HN Discussion (85)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2606.16140" target="_blank">https://arxiv.org/abs/2606.16140</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://owl.billpg.com/8086-segmented-memory-was-a-good-idea-almost/" target="_blank">8086 Segmented Memory was a good idea</a></h2><div class="meta"><span class="score">⭐ 31</span><span class="comments">💬 29</span><span class="by">👤 billpg</span></div><div class="summary"><p>A re-examination of the Intel 8086 segmented memory architecture, arguing that the design had merit despite its reputation. The article analyzes how segment:offset addressing provided a pragmatic solution to memory management constraints of the era, while acknowledging where the model ultimately fell short.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48619125" target="_blank">HN Discussion (29)</a></div><div class="source">🔗 <a href="https://owl.billpg.com/8086-segmented-memory-was-a-good-idea-almost/" target="_blank">https://owl.billpg.com/8086-segmented-memory-was-a-good-idea-almost/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://ex-vi.sourceforge.net/" target="_blank">The Traditional Vi</a></h2><div class="meta"><span class="score">⭐ 11</span><span class="comments">💬 1</span><span class="by">👤 exvi</span></div><div class="summary"><p>Ex Vim is a modern implementation of the traditional vi text editor, aiming to preserve the original vi behavior while providing a maintainable codebase. It focuses on faithfully replicating the classic vi editing experience that Unix users have relied on for decades.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48642232" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://ex-vi.sourceforge.net/" target="_blank">https://ex-vi.sourceforge.net/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://jchri.st/blog/in-praise-of-memcached/" target="_blank">In praise of memcached</a></h2><div class="meta"><span class="score">⭐ 174</span><span class="comments">💬 64</span><span class="by">👤 j03b</span></div><div class="summary"><p>An essay celebrating memcached as one of the most underrated caching technologies. The author argues that memcached's simplicity, reliability, and low operational overhead make it an excellent first-line caching solution that continues to outperform more complex alternatives in many scenarios.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48638886" target="_blank">HN Discussion (64)</a></div><div class="source">🔗 <a href="https://jchri.st/blog/in-praise-of-memcached/" target="_blank">https://jchri.st/blog/in-praise-of-memcached/</a></div></div></div>
+
+<footer>
+<p>June 23, 2026</p>
+</footer>
+</div>
+</body>
+</html>

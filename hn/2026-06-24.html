@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>June 24, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+<div class="card-header">
+<div class="rank">#1</div>
+<div class="title-section">
+<h2><a href="https://bunny.net/blog/were-making-bunny-dns-free/" target="_blank">We're making Bunny DNS free: because a faster internet won't build itself</a></h2>
+<div class="meta">
+<span class="score">⭐ 175</span>
+<span class="comments">💬 50</span>
+<span class="by">👤 dabinat</span>
+</div>
+<div class="summary"><p>Bunny DNS is making its entire service free to remove cost barriers and accelerate global internet performance. The company aims to foster a faster, more accessible web by providing reliable DNS infrastructure at no charge.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48657030" target="_blank">HN Discussion (50)</a></div>
+<div class="source">🔗 <a href="https://bunny.net/blog/were-making-bunny-dns-free/" target="_blank">https://bunny.net/blog/were-making-bunny-dns-free/</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+<div class="card-header">
+<div class="rank">#2</div>
+<div class="title-section">
+<h2><a href="https://words.filippo.io/vuln-reports/" target="_blank">Vulnerability reports are not special anymore</a></h2>
+<div class="meta">
+<span class="score">⭐ 293</span>
+<span class="comments">💬 159</span>
+<span class="by">👤 goranmoomin</span>
+</div>
+<div class="summary"><p>The post argues that the rising volume and automation of security disclosures have diminished the unique impact of traditional vulnerability reports. It explores how researchers and organizations are adapting to a landscape where bug findings are now routine rather than exceptional.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48653216" target="_blank">HN Discussion (159)</a></div>
+<div class="source">🔗 <a href="https://words.filippo.io/vuln-reports/" target="_blank">https://words.filippo.io/vuln-reports/</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+<div class="card-header">
+<div class="rank">#3</div>
+<div class="title-section">
+<h2><a href="https://gitlab.com/baiyibai/pico-usb-wifi" target="_blank">Raspberry Pi Pico W as USB Wi-Fi Adapter</a></h2>
+<div class="meta">
+<span class="score">⭐ 150</span>
+<span class="comments">💬 54</span>
+<span class="by">👤 byb</span>
+</div>
+<div class="summary"><p>This post likely details a tutorial or project for configuring the Raspberry Pi Pico W microcontroller to function as a USB network gadget that shares its built-in Wi-Fi connection with a host computer. It would cover the necessary firmware, driver setup, and network configuration required to repurpose the low-cost board as a functional Wi-Fi dongle.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48654676" target="_blank">HN Discussion (54)</a></div>
+<div class="source">🔗 <a href="https://gitlab.com/baiyibai/pico-usb-wifi" target="_blank">https://gitlab.com/baiyibai/pico-usb-wifi</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+<div class="card-header">
+<div class="rank">#4</div>
+<div class="title-section">
+<h2><a href="https://www.jerrysmap.com/the-map" target="_blank">Jerry's Map</a></h2>
+<div class="meta">
+<span class="score">⭐ 482</span>
+<span class="comments">💬 54</span>
+<span class="by">👤 turtleyacht</span>
+</div>
+<div class="summary"><p>This post likely showcases a personal mapping project or interactive geospatial tool created by Jerry, possibly highlighting custom data visualization or web development techniques. Community discussion typically focuses on the technical implementation, design choices, and potential applications of the project.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48649435" target="_blank">HN Discussion (54)</a></div>
+<div class="source">🔗 <a href="https://www.jerrysmap.com/the-map" target="_blank">https://www.jerrysmap.com/the-map</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+<div class="card-header">
+<div class="rank">#5</div>
+<div class="title-section">
+<h2><a href="https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451" target="_blank">In memory of the man who put red and green squiggles under words</a></h2>
+<div class="meta">
+<span class="score">⭐ 412</span>
+<span class="comments">💬 67</span>
+<span class="by">👤 saikatsg</span>
+</div>
+<div class="summary"><p>This tribute honors the pioneering software developer who created the foundational algorithms behind digital spell and grammar checking. It reflects on his quiet but profound impact on modern word processing and everyday written communication.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48648959" target="_blank">HN Discussion (67)</a></div>
+<div class="source">🔗 <a href="https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451" target="_blank">https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+<div class="card-header">
+<div class="rank">#6</div>
+<div class="title-section">
+<h2><a href="https://swipe.futo.tech/" target="_blank">FUTO Swipe – A new swipe typing model</a></h2>
+<div class="meta">
+<span class="score">⭐ 562</span>
+<span class="comments">💬 188</span>
+<span class="by">👤 futohq</span>
+</div>
+<div class="summary"><p>FUTO Swipe introduces a novel machine learning approach to continuous gesture typing designed to improve accuracy and speed over traditional keyboard prediction methods. This new model rethinks how finger swipes are interpreted to deliver a more intuitive mobile input experience.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48648619" target="_blank">HN Discussion (188)</a></div>
+<div class="source">🔗 <a href="https://swipe.futo.tech/" target="_blank">https://swipe.futo.tech/</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+<div class="card-header">
+<div class="rank">#7</div>
+<div class="title-section">
+<h2><a href="https://kolistat.com/blog/the-stats-duck-v0-6-0/" target="_blank">Statistics that live in your SQL</a></h2>
+<div class="meta">
+<span class="score">⭐ 14</span>
+<span class="comments">💬 0</span>
+<span class="by">👤 caerbannogwhite</span>
+</div>
+<div class="summary"><p>Advanced statistical analysis can now be performed directly within SQL databases, eliminating the need to export data to external programming environments. By embedding statistical functions natively into queries, developers can streamline analytics workflows while maintaining database performance.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48629810" target="_blank">HN Discussion (0)</a></div>
+<div class="source">🔗 <a href="https://kolistat.com/blog/the-stats-duck-v0-6-0/" target="_blank">https://kolistat.com/blog/the-stats-duck-v0-6-0/</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+<div class="card-header">
+<div class="rank">#8</div>
+<div class="title-section">
+<h2><a href="https://arxiv.org/abs/2606.24597" target="_blank">Qwen-AgentWorld: Language World Models for General Agents</a></h2>
+<div class="meta">
+<span class="score">⭐ 119</span>
+<span class="comments">💬 36</span>
+<span class="by">👤 ilreb</span>
+</div>
+<div class="summary"><p>This project introduces a language-driven world modeling framework designed to help general-purpose AI agents better understand, plan, and navigate complex environments. By translating environmental dynamics into natural language representations, it aims to improve autonomous reasoning and task execution across a wide range of applications.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48654351" target="_blank">HN Discussion (36)</a></div>
+<div class="source">🔗 <a href="https://arxiv.org/abs/2606.24597" target="_blank">https://arxiv.org/abs/2606.24597</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+<div class="card-header">
+<div class="rank">#9</div>
+<div class="title-section">
+<h2><a href="https://thomasliao.com/eval-startups" target="_blank">Why eval startups fail (2025)</a></h2>
+<div class="meta">
+<span class="score">⭐ 25</span>
+<span class="comments">💬 27</span>
+<span class="by">👤 jxmorris12</span>
+</div>
+<div class="summary"><p>This post analyzes the common reasons why startups focused on evaluation tools struggle to achieve sustainable growth in the current market. The discussion likely covers challenges such as integration complexity, shifting technical standards, and the difficulty of proving distinct value to potential customers.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48637868" target="_blank">HN Discussion (27)</a></div>
+<div class="source">🔗 <a href="https://thomasliao.com/eval-startups" target="_blank">https://thomasliao.com/eval-startups</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+<div class="card-header">
+<div class="rank">#10</div>
+<div class="title-section">
+<h2><a href="https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf" target="_blank">"Fix" MacBook Neo Cursor Lag: Record 1 Pixel of the Screen Every 10 Seconds</a></h2>
+<div class="meta">
+<span class="score">⭐ 116</span>
+<span class="comments">💬 45</span>
+<span class="by">👤 retroplasma</span>
+</div>
+<div class="summary"><p>This post presents a satirical workaround for MacBook cursor lag by suggesting the completely ineffective method of recording a single screen pixel every ten seconds. It likely serves as a humorous commentary on the absurdity of online tech troubleshooting and will probably spark discussion about the actual causes of macOS performance issues.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48654465" target="_blank">HN Discussion (45)</a></div>
+<div class="source">🔗 <a href="https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf" target="_blank">https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf</a></div>
+</div>
+</div>
+
+        <footer>
+            <p>June 24, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>June 25, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://hl2.slqnt.dev/" target="_blank">Half-Life 2 in a Browser</a></h2><div class="meta"><span class="score">⭐ 286</span><span class="comments">💬 101</span><span class="by">👤 panza</span></div><div class="summary"><p>This project enables the classic first-person shooter Half-Life 2 to run directly in modern web browsers using advanced web technologies. Players can instantly access and play the full game without downloading or installing any software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48669534" target="_blank">HN Discussion (101)</a></div><div class="source">🔗 <a href="https://hl2.slqnt.dev/" target="_blank">https://hl2.slqnt.dev/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://dolphin-emu.org/blog/2026/06/25/dolphin-progress-report-release-2606/" target="_blank">Dolphin Emulator Progress Release 2606</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 0</span><span class="by">👤 exploraz</span></div><div class="summary"><p>This development build of the Dolphin emulator delivers bug fixes, performance optimizations, and improved compatibility for GameCube and Wii games. The update continues refining gameplay stability and feature support as the project moves toward future stable versions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48671392" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://dolphin-emu.org/blog/2026/06/25/dolphin-progress-report-release-2606/" target="_blank">https://dolphin-emu.org/blog/2026/06/25/dolphin-progress-report-release-2606/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/" target="_blank">Anthropic says Alibaba illicitly extracted Claude AI model capabilities</a></h2><div class="meta"><span class="score">⭐ 450</span><span class="comments">💬 786</span><span class="by">👤 htrp</span></div><div class="summary"><p>Anthropic has accused Alibaba of illegally extracting capabilities from its Claude AI model to train competing systems. The company is pursuing legal action to protect its proprietary technology and halt the unauthorized use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48664814" target="_blank">HN Discussion (786)</a></div><div class="source">🔗 <a href="https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/" target="_blank">https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracte...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank">OpenAI unveils its first custom chip, built by Broadcom</a></h2><div class="meta"><span class="score">⭐ 714</span><span class="comments">💬 402</span><span class="by">👤 jamdesk</span></div><div class="summary"><p>OpenAI has introduced its first custom AI chip, manufactured by Broadcom, to improve processing efficiency and reduce reliance on third-party hardware suppliers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48663324" target="_blank">HN Discussion (402)</a></div><div class="source">🔗 <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank">https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://blog.cloudflare.com/oauth-for-all/" target="_blank">Cloudflare launched self-managed OAuth for all</a></h2><div class="meta"><span class="score">⭐ 181</span><span class="comments">💬 82</span><span class="by">👤 terryds</span></div><div class="summary"><p>Cloudflare has made self-managed OAuth available to all users, enabling independent configuration and control of authentication workflows without requiring direct support.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48668033" target="_blank">HN Discussion (82)</a></div><div class="source">🔗 <a href="https://blog.cloudflare.com/oauth-for-all/" target="_blank">https://blog.cloudflare.com/oauth-for-all/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/BohemiaInteractive/CWR" target="_blank">Bohemia Interactive: Cold War Assault Remastered Source Code on GitHub</a></h2><div class="meta"><span class="score">⭐ 86</span><span class="comments">💬 15</span><span class="by">👤 dewey</span></div><div class="summary"><p>Bohemia Interactive has released the source code for Cold War Assault Remastered on GitHub, allowing developers and enthusiasts to study and modify the classic game's engine.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48636753" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://github.com/BohemiaInteractive/CWR" target="_blank">https://github.com/BohemiaInteractive/CWR</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://markdy.com" target="_blank">Markdy: Like Mermaid Diagrams, but for Motion</a></h2><div class="meta"><span class="score">⭐ 77</span><span class="comments">💬 33</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>Markdy is a text-based tool that generates animated diagrams and visualizations, functioning similarly to Mermaid but with a focus on motion and interactivity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48646077" target="_blank">HN Discussion (33)</a></div><div class="source">🔗 <a href="https://markdy.com" target="_blank">https://markdy.com</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/" target="_blank">Blogging can just be stating the obvious</a></h2><div class="meta"><span class="score">⭐ 249</span><span class="comments">💬 87</span><span class="by">👤 Curiositry</span></div><div class="summary"><p>Blogging often involves sharing widely known ideas, but restating the obvious can still provide value by reinforcing concepts, reaching new audiences, or offering fresh perspectives on familiar topics.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48666927" target="_blank">HN Discussion (87)</a></div><div class="source">🔗 <a href="https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/" target="_blank">https://blog.jim-nielsen.com/2026/blogging-stating-the-obvious/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/LuaJIT/LuaJIT/issues/1475" target="_blank">LuaJIT 3.0 proposed syntax extensions</a></h2><div class="meta"><span class="score">⭐ 166</span><span class="comments">💬 97</span><span class="by">👤 phreddypharkus</span></div><div class="summary"><p>The proposal outlines new language features and syntax improvements for LuaJIT 3.0 designed to enhance code readability and developer productivity. These extensions aim to modernize the language while maintaining compatibility with existing Lua codebases.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48667336" target="_blank">HN Discussion (97)</a></div><div class="source">🔗 <a href="https://github.com/LuaJIT/LuaJIT/issues/1475" target="_blank">https://github.com/LuaJIT/LuaJIT/issues/1475</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://aeon.co/essays/literature-fans-should-welcome-ai-as-a-fellow-wordsmith" target="_blank">Words, Words, Words</a></h2><div class="meta"><span class="score">⭐ 6</span><span class="comments">💬 1</span><span class="by">👤 benbreen</span></div><div class="summary"><p>This piece explores the power of language and how vocabulary shapes communication and thought. It emphasizes the importance of precise word choice for clarity and meaningful connection.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48640919" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://aeon.co/essays/literature-fans-should-welcome-ai-as-a-fellow-wordsmith" target="_blank">https://aeon.co/essays/literature-fans-should-welcome-ai-as-a-fellow-wordsmith</a></div></div></div>
+
+        <footer>
+            <p>June 25, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

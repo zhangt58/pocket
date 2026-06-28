@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-06-28</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep" target="_blank">Marfa Public Radio Puts You to Sleep</a></h2><div class="meta"><span class="score">⭐ 250</span><span class="comments">💬 67</span><span class="by">👤 reaperducer</span></div><div class="summary"><p>This post likely links to a streaming audio channel or podcast from Marfa, Texas, that broadcasts continuous ambient sounds, gentle narration, or low-volume programming specifically designed to help listeners fall asleep. It probably explores how the station leverages the region's quiet desert atmosphere to create a soothing, sleep-focused broadcast.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48703759" target="_blank">HN Discussion (67)</a></div><div class="source">🔗 <a href="https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep" target="_blank">https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/cfenollosa/bashblog" target="_blank">Bashblog – a single bash script to create blogs</a></h2><div class="meta"><span class="score">⭐ 56</span><span class="comments">💬 28</span><span class="by">👤 ludicrousdispla</span></div><div class="summary"><p>This post introduces Bashblog, a minimalist static site generator that builds blogs using only a single Bash script. It likely discusses the tool's lightweight architecture, zero external dependencies, and how it leverages standard Unix utilities as a simple alternative to heavier blogging frameworks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48704454" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://github.com/cfenollosa/bashblog" target="_blank">https://github.com/cfenollosa/bashblog</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md" target="_blank">AMD Strix Halo RDMA Cluster Setup Guide</a></h2><div class="meta"><span class="score">⭐ 147</span><span class="comments">💬 49</span><span class="by">👤 jakogut</span></div><div class="summary"><p>This post provides a technical guide for building a multi-node computing cluster with AMD Strix Halo hardware. It details the configuration steps required to enable Remote Direct Memory Access networking for high-speed, low-latency data transfer between nodes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48703258" target="_blank">HN Discussion (49)</a></div><div class="source">🔗 <a href="https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md" target="_blank">https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.openra.net/" target="_blank">OpenRA</a></h2><div class="meta"><span class="score">⭐ 728</span><span class="comments">💬 137</span><span class="by">👤 tosh</span></div><div class="summary"><p>This post likely covers updates, community contributions, or technical discussions surrounding OpenRA, an open-source real-time strategy engine that recreates classic Westwood games like Command & Conquer and Red Alert with modern cross-platform support and robust modding tools.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48697560" target="_blank">HN Discussion (137)</a></div><div class="source">🔗 <a href="https://www.openra.net/" target="_blank">https://www.openra.net/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://decomp-academy.dev" target="_blank">Show HN: Decomp Academy – Learn to decompile GameCube games into matching C</a></h2><div class="meta"><span class="score">⭐ 135</span><span class="comments">💬 47</span><span class="by">👤 jackpriceburns</span></div><div class="summary"><p>This post introduces Decomp Academy, an educational platform designed to teach developers how to reverse engineer and decompile Nintendo GameCube game binaries into clean, readable C code. It likely provides structured tutorials, practical examples, and community resources for hobbyists and professionals interested in game preservation and reverse engineering.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48703412" target="_blank">HN Discussion (47)</a></div><div class="source">🔗 <a href="https://decomp-academy.dev" target="_blank">https://decomp-academy.dev</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/bikini/exploitarium" target="_blank">Anonymous GitHub account mass-dropping undisclosed 0-days</a></h2><div class="meta"><span class="score">⭐ 824</span><span class="comments">💬 325</span><span class="by">👤 binyu</span></div><div class="summary"><p>This post likely discusses a cybersecurity incident where an unidentified user has published numerous unpatched zero-day vulnerabilities on GitHub without notifying affected vendors. It probably examines the immediate security risks, the ethics of bypassing responsible disclosure, and how developers can protect their systems from these publicly available exploits.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48698617" target="_blank">HN Discussion (325)</a></div><div class="source">🔗 <a href="https://github.com/bikini/exploitarium" target="_blank">https://github.com/bikini/exploitarium</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/itsthelore/wayfinder-router" target="_blank">Wayfinder Router: deterministic routing of queries between local and hosted LLM</a></h2><div class="meta"><span class="score">⭐ 71</span><span class="comments">💬 22</span><span class="by">👤 handfuloflight</span></div><div class="summary"><p>This post introduces Wayfinder Router, a tool that predictably directs user prompts to either locally hosted or cloud-based large language models based on predefined criteria. It likely aims to optimize performance, reduce costs, and enhance privacy by automatically selecting the most appropriate model for each specific query.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48704373" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://github.com/itsthelore/wayfinder-router" target="_blank">https://github.com/itsthelore/wayfinder-router</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://evilbit.de/dns-resolver-guide.html" target="_blank">Choosing a Public DNS Resolver</a></h2><div class="meta"><span class="score">⭐ 178</span><span class="comments">💬 57</span><span class="by">👤 pawal</span></div><div class="summary"><p>This post likely explores the key factors to consider when selecting a public DNS resolver, such as query speed, privacy policies, security features, and reliability. It probably compares popular providers like Cloudflare, Google, and Quad9 to help readers make an informed decision based on their specific networking needs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48702273" target="_blank">HN Discussion (57)</a></div><div class="source">🔗 <a href="https://evilbit.de/dns-resolver-guide.html" target="_blank">https://evilbit.de/dns-resolver-guide.html</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://magnusross.github.io/posts/reflecting-to-optimise/" target="_blank">Reflecting to optimise</a></h2><div class="meta"><span class="score">⭐ 26</span><span class="comments">💬 2</span><span class="by">👤 magni121</span></div><div class="summary"><p>This post likely examines how developers leverage runtime reflection to inspect and modify code dynamically, enabling performance optimizations, automated code generation, or reduced boilerplate in modern programming languages. It probably discusses the trade-offs between reflection overhead and optimization benefits, along with practical implementation strategies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48686804" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://magnusross.github.io/posts/reflecting-to-optimise/" target="_blank">https://magnusross.github.io/posts/reflecting-to-optimise/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://w.pitula.me/fintech-engineering-handbook/" target="_blank">Fintech Engineering Handbook</a></h2><div class="meta"><span class="score">⭐ 584</span><span class="comments">💬 177</span><span class="by">👤 signa11</span></div><div class="summary"><p>This post likely shares a comprehensive guide detailing software architecture, security standards, and development best practices specifically tailored for building and scaling financial technology platforms. It serves as a practical reference for engineering teams navigating the unique regulatory, compliance, and high-availability demands of the fintech industry.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48696982" target="_blank">HN Discussion (177)</a></div><div class="source">🔗 <a href="https://w.pitula.me/fintech-engineering-handbook/" target="_blank">https://w.pitula.me/fintech-engineering-handbook/</a></div></div></div>
+
+        <footer>
+            <p>2026-06-28</p>
+        </footer>
+    </div>
+</body>
+</html>

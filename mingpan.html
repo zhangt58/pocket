@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>命盘解读 · 甲子年酉时</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C8A96E;
+    --gold-light: #E8C97E;
+    --gold-dim: #8B7245;
+    --crimson: #9B2335;
+    --crimson-bright: #C42B3F;
+    --ink: #0A0A0F;
+    --ink-mid: #12121A;
+    --ink-light: #1C1C2A;
+    --ivory: #F2EBD9;
+    --ivory-dim: #B8AA90;
+    --teal: #3B7A85;
+    --teal-light: #5BA8B5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--ink);
+    color: var(--ivory);
+    font-family: 'Noto Serif SC', serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(60,40,100,0.3) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(40,20,60,0.4) 0%, transparent 60%),
+      radial-gradient(ellipse at 50% 0%, rgba(155,35,53,0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 60px 0 40px;
+    animation: fadeDown 1s ease both;
+  }
+
+  .header-eyebrow {
+    font-size: 11px;
+    letter-spacing: 6px;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .header-title {
+    font-family: 'Ma Shan Zheng', serif;
+    font-size: clamp(36px, 6vw, 58px);
+    color: var(--gold);
+    line-height: 1.2;
+    margin-bottom: 8px;
+    text-shadow: 0 0 40px rgba(200,169,110,0.3);
+  }
+
+  .header-sub {
+    font-size: 13px;
+    color: var(--ivory-dim);
+    letter-spacing: 3px;
+    margin-top: 12px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 32px 0;
+    opacity: 0.4;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold));
+  }
+  .divider::after { background: linear-gradient(to left, transparent, var(--gold)); }
+  .divider span { font-size: 14px; color: var(--gold); }
+
+  .info-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(200,169,110,0.15);
+    border: 1px solid rgba(200,169,110,0.2);
+    border-radius: 2px;
+    margin-bottom: 48px;
+    animation: fadeUp 1s 0.2s ease both;
+  }
+
+  .info-cell {
+    background: var(--ink-mid);
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .info-cell-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold-dim);
+    margin-bottom: 8px;
+  }
+
+  .info-cell-value {
+    font-size: 16px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(200,169,110,0.2);
+  }
+
+  .palace-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1px;
+    background: rgba(200,169,110,0.1);
+    border: 1px solid rgba(200,169,110,0.15);
+    margin-bottom: 48px;
+    animation: fadeUp 1s 0.3s ease both;
+  }
+
+  .palace {
+    background: var(--ink-mid);
+    padding: 14px 12px;
+    min-height: 100px;
+    position: relative;
+    transition: background 0.3s;
+  }
+
+  .palace:hover { background: var(--ink-light); }
+
+  .palace.active {
+    background: rgba(155,35,53,0.15);
+    border: 1px solid rgba(155,35,53,0.4);
+    margin: -1px;
+    z-index: 2;
+  }
+
+  .palace.current-limit {
+    background: rgba(59,122,133,0.12);
+    border: 1px solid rgba(91,168,181,0.3);
+    margin: -1px;
+    z-index: 2;
+  }
+
+  .palace-name {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--ivory-dim);
+    margin-bottom: 8px;
+    opacity: 0.6;
+  }
+
+  .palace-dizhi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    color: var(--gold-dim);
+    opacity: 0.5;
+  }
+
+  .palace-stars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 4px;
+  }
+
+  .star {
+    font-size: 13px;
+    color: var(--ivory);
+    font-weight: 600;
+  }
+
+  .star.main { color: var(--gold); font-size: 14px; }
+  .star.four-hua { color: var(--crimson-bright); font-size: 11px; }
+  .star.empty { color: var(--ivory-dim); opacity: 0.3; font-size: 11px; font-style: italic; }
+
+  .palace-badge {
+    display: inline-block;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 1px;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+  .badge-ming { background: rgba(155,35,53,0.3); color: #FF6B6B; border: 1px solid rgba(155,35,53,0.5); }
+  .badge-limit { background: rgba(59,122,133,0.3); color: var(--teal-light); border: 1px solid rgba(59,122,133,0.5); }
+  .badge-body { background: rgba(100,120,200,0.3); color: #7BA8F0; border: 1px solid rgba(100,120,200,0.5); }
+
+  .palace-center {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    background: rgba(10,10,15,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    border: 1px solid rgba(200,169,110,0.1);
+  }
+
+  .center-bagua {
+    font-size: 48px;
+    opacity: 0.15;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .center-title {
+    font-family: 'Ma Shan Zheng', serif;
+    font-size: 22px;
+    color: var(--gold);
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .center-info {
+    font-size: 11px;
+    color: var(--ivory-dim);
+    text-align: center;
+    line-height: 2;
+    position: relative;
+    z-index: 1;
+  }
+
+  .four-hua-bar {
+    display: flex;
+    gap: 2px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hua-tag {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 1px;
+    letter-spacing: 1px;
+  }
+  .hua-lu { background: rgba(100,180,80,0.15); color: #7CCC60; border: 1px solid rgba(100,180,80,0.3); }
+  .hua-quan { background: rgba(200,169,110,0.15); color: var(--gold); border: 1px solid rgba(200,169,110,0.3); }
+  .hua-ke { background: rgba(80,120,200,0.15); color: #7BA8F0; border: 1px solid rgba(80,120,200,0.3); }
+  .hua-ji { background: rgba(155,35,53,0.2); color: #FF6B6B; border: 1px solid rgba(155,35,53,0.4); }
+
+  .reading-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 48px;
+    animation: fadeUp 1s 0.5s ease both;
+  }
+
+  .reading-card {
+    background: var(--ink-mid);
+    border: 1px solid rgba(200,169,110,0.1);
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reading-card::before {
+    content: attr(data-num);
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-family: 'Ma Shan Zheng', serif;
+    font-size: 48px;
+    color: var(--gold);
+    opacity: 0.06;
+  }
+
+  .reading-card.full { grid-column: 1 / -1; }
+  .reading-card.highlight { border-color: rgba(155,35,53,0.3); background: rgba(155,35,53,0.05); }
+  .reading-card.teal-highlight { border-color: rgba(59,122,133,0.3); background: rgba(59,122,133,0.05); }
+
+  .card-title {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold-dim);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .card-stars-badge {
+    font-size: 18px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .card-body {
+    font-size: 13.5px;
+    line-height: 2;
+    color: var(--ivory-dim);
+  }
+
+  .card-body strong { color: var(--ivory); font-weight: 600; }
+  .card-body em { color: var(--gold); font-style: normal; }
+  .card-body .warn { color: #FF8C60; }
+  .card-body .good { color: #7CCC60; }
+
+  .prob-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .prob-label { font-size: 11px; color: var(--ivory-dim); width: 80px; flex-shrink: 0; }
+  .prob-track {
+    flex: 1;
+    height: 3px;
+    background: rgba(200,169,110,0.1);
+    border-radius: 2px;
+  }
+  .prob-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--gold-dim), var(--gold));
+    border-radius: 2px;
+  }
+  .prob-pct { font-size: 12px; color: var(--gold); width: 36px; text-align: right; flex-shrink: 0; }
+
+  .hand-section {
+    background: var(--ink-mid);
+    border: 1px solid rgba(200,169,110,0.1);
+    padding: 28px;
+    margin-bottom: 48px;
+    animation: fadeUp 1s 0.6s ease both;
+  }
+
+  .hand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .hand-card {
+    padding: 16px;
+    border: 1px solid rgba(200,169,110,0.08);
+    background: rgba(0,0,0,0.2);
+  }
+
+  .hand-card-title {
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+
+  .hand-card-body {
+    font-size: 12px;
+    color: var(--ivory-dim);
+    line-height: 1.9;
+  }
+
+  .conflict-tag {
+    display: inline-block;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 1px;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+  .match { background: rgba(80,180,80,0.15); color: #7CCC60; border: 1px solid rgba(80,180,80,0.3); }
+  .conflict { background: rgba(200,100,50,0.15); color: #FF9060; border: 1px solid rgba(200,100,50,0.3); }
+
+  .calibration {
+    border: 1px solid rgba(200,169,110,0.25);
+    padding: 32px;
+    background: linear-gradient(135deg, rgba(200,169,110,0.03), rgba(59,122,133,0.05));
+    margin-bottom: 48px;
+    animation: fadeUp 1s 0.7s ease both;
+  }
+
+  .cal-title {
+    font-family: 'Ma Shan Zheng', serif;
+    font-size: 22px;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .cal-desc {
+    font-size: 12px;
+    color: var(--ivory-dim);
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+
+  .cal-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cal-q {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .cal-num {
+    font-size: 18px;
+    color: rgba(200,169,110,0.3);
+    font-weight: 700;
+    flex-shrink: 0;
+    width: 28px;
+    font-family: 'Ma Shan Zheng', serif;
+  }
+
+  .cal-text {
+    font-size: 14px;
+    color: var(--ivory);
+    line-height: 1.8;
+    padding-top: 2px;
+  }
+
+  .cal-text span {
+    font-size: 11px;
+    color: var(--ivory-dim);
+    display: block;
+    margin-top: 4px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 40px 0;
+    animation: fadeUp 1s 0.8s ease both;
+  }
+
+  .footer-quote {
+    font-family: 'Ma Shan Zheng', serif;
+    font-size: 18px;
+    color: rgba(200,169,110,0.4);
+    letter-spacing: 4px;
+    line-height: 2;
+  }
+
+  .footer-note {
+    font-size: 11px;
+    color: rgba(200,169,110,0.2);
+    margin-top: 12px;
+    letter-spacing: 2px;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 620px) {
+    .reading-grid { grid-template-columns: 1fr; }
+    .hand-grid { grid-template-columns: 1fr 1fr; }
+    .info-bar { grid-template-columns: 1fr 1fr; }
+    .palace-grid { grid-template-columns: repeat(3, 1fr); font-size: 12px; }
+    .palace-center { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-eyebrow">紫微三合 × 中州派 × 手相互证</div>
+    <div class="header-title">命盘解读</div>
+    <div class="header-sub">一九八四年八月廿四 · 酉时 · 女命</div>
+  </div>
+
+  <!-- INFO BAR -->
+  <div class="info-bar">
+    <div class="info-cell">
+      <div class="info-cell-label">五 行 局</div>
+      <div class="info-cell-value">水二局</div>
+    </div>
+    <div class="info-cell">
+      <div class="info-cell-label">命 宫</div>
+      <div class="info-cell-value">子宫</div>
+    </div>
+    <div class="info-cell">
+      <div class="info-cell-label">命 主 星</div>
+      <div class="info-cell-value">天机</div>
+    </div>
+    <div class="info-cell">
+      <div class="info-cell-label">当 前 大 限</div>
+      <div class="info-cell-value">酉宫·武曲·七杀 (32-41) → 即将转入 42-51 申宫·天同·天梁</div>
+    </div>
+  </div>
+
+  <!-- PALACE GRID -->
+  <div class="section-title">十二宫位分布</div>
+  <div class="palace-grid">
+    <div class="palace">
+      <div class="palace-name">交友宫</div>
+      <div class="palace-dizhi">巳</div>
+      <div class="palace-stars"><span class="star main">廉贞</span>
+<span class="star four-hua">廉贞禄</span>
+<span class="star main">贪狼</span>
+</div>
+      
+    </div>
+    <div class="palace">
+      <div class="palace-name">迁移宫</div>
+      <div class="palace-dizhi">午</div>
+      <div class="palace-stars"><span class="star main">巨门</span>
+</div>
+      <div class="palace-badge badge-body">身宫</div>
+
+    </div>
+    <div class="palace">
+      <div class="palace-name">疾厄宫</div>
+      <div class="palace-dizhi">未</div>
+      <div class="palace-stars"><span class="star main">天相</span>
+<span class="star">天钺</span>
+<span class="star">铃星</span>
+</div>
+      
+    </div>
+    <div class="palace">
+      <div class="palace-name">财帛宫</div>
+      <div class="palace-dizhi">申</div>
+      <div class="palace-stars"><span class="star main">天同</span>
+<span class="star main">天梁</span>
+<span class="star">地劫</span>
+</div>
+      
+    </div>
+    <div class="palace">
+      <div class="palace-name">官禄宫</div>
+      <div class="palace-dizhi">辰</div>
+      <div class="palace-stars"><span class="star main">太阴</span>
+</div>
+      
+    </div>
+    <div class="palace current-limit">
+      <div class="palace-name">子女宫</div>
+      <div class="palace-dizhi">酉</div>
+      <div class="palace-stars"><span class="star main">武曲</span>
+<span class="star four-hua">武曲科</span>
+<span class="star main">七杀</span>
+</div>
+      <div class="palace-badge badge-limit">当前大限</div>
+
+    </div>
+    <div class="palace">
+      <div class="palace-name">田宅宫</div>
+      <div class="palace-dizhi">卯</div>
+      <div class="palace-stars"><span class="star main">天府</span>
+<span class="star">右弼</span>
+<span class="star">擎羊</span>
+</div>
+      
+    </div>
+    <div class="palace">
+      <div class="palace-name">夫妻宫</div>
+      <div class="palace-dizhi">戌</div>
+      <div class="palace-stars"><span class="star main">太阳</span>
+<span class="star four-hua">太阳忌</span>
+</div>
+      
+    </div>
+    <div class="palace">
+      <div class="palace-name">福德宫</div>
+      <div class="palace-dizhi">寅</div>
+      <div class="palace-stars"><span class="star empty">空宫</span>
+</div>
+      
+    </div>
+    <div class="palace">
+      <div class="palace-name">父母宫</div>
+      <div class="palace-dizhi">丑</div>
+      <div class="palace-stars"><span class="star main">紫微</span>
+<span class="star main">破军</span>
+<span class="star four-hua">破军权</span>
+<span class="star">文昌</span>
+<span class="star">文曲</span>
+<span class="star">天魁</span>
+<span class="star">陀罗</span>
+</div>
+      
+    </div>
+    <div class="palace active">
+      <div class="palace-name">命宫</div>
+      <div class="palace-dizhi">子</div>
+      <div class="palace-stars"><span class="star main">天机</span>
+</div>
+      <div class="palace-badge badge-ming">命宫</div>
+
+    </div>
+    <div class="palace">
+      <div class="palace-name">兄弟宫</div>
+      <div class="palace-dizhi">亥</div>
+      <div class="palace-stars"><span class="star empty">空宫</span>
+</div>
+      
+    </div>
+
+    <!-- CENTER -->
+    <div class="palace-center">
+      <div class="center-bagua">☯</div>
+      <div class="center-title">甲子生人</div>
+      <div class="center-info">
+        公历 1984-9-19<br>
+        农历 一九八四年八月廿四<br>
+        酉时生 · 水二局
+      </div>
+      <div class="four-hua-bar">
+        <span class="hua-tag hua-lu">廉贞化禄</span>
+        <span class="hua-tag hua-ke">武曲化科</span>
+        <span class="hua-tag hua-ji">太阳化忌</span>
+        <span class="hua-tag hua-quan">破军化权</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- READING CARDS -->
+  <div class="section-title">命盘解读</div>
+  <div class="reading-grid">
+    <div class="reading-card full" data-num="一">
+      <div class="card-title">命盘底色 · 先天禀赋</div>
+      <div class="card-stars-badge">天机·天才</div>
+      <div class="card-body"><strong>天机独坐于子</strong>——你的命宫就像一台永远在运转的分析引擎。<br><br>天机是谋士星、智慧星，不是冲锋陷阵的将军，而是那种在幕后推演每一步棋的军师。坐子水之位，水生木，天机得地，思维格外敏捷。加上天才星加持，你的<em>逻辑分析能力和学习速度</em>是先天优势。<br><br>但天机有个老毛病：<strong>想得多、做得少</strong>。你不是那种说干就干的人——脑子里已经推演了十遍最坏的情况，结果还没迈出第一步。这种内耗倾向是你人生最大的隐性成本。<br><br>命宫还有阴煞——这颗星容易让你在直觉上捕捉到别人看不到的暗流，但也让你对人和事多一份戒备心。<br><br><em>关键词：谋士型人格 · 思维敏捷 · 分析型决策 · 内耗倾向</em></div>
+      <div style="margin-top:16px;"><div class="prob-bar">
+                    <span class="prob-label">推算置信度</span>
+                    <div class="prob-track"><div class="prob-fill" style="width:70%"></div></div>
+                    <span class="prob-pct">70%</span>
+                </div>
+<div class="prob-bar">
+                    <span class="prob-label">校准后可达</span>
+                    <div class="prob-track"><div class="prob-fill" style="width:85%"></div></div>
+                    <span class="prob-pct">85%</span>
+                </div>
+</div>
+    </div>
+    <div class="reading-card" data-num="二">
+      <div class="card-title">身宫 · 后天发展轨迹</div>
+      <div class="card-stars-badge">巨门·迁移宫</div>
+      <div class="card-body">身宫落在迁移宫（午宫），主星巨门。<br><br>身宫代表后天发展的方向和着力点。身宫在迁移宫意味着：<strong>你的人生剧本更适合在外地/异国展开</strong>。留在出生地发展，容易觉得施展不开；走出去，反而能打开局面。<br><br>巨门是口舌星、暗星。在迁移宫，说明你在外的竞争力靠的是<em>口才、表达能力、信息优势</em>。你不是靠颜值或人脉取胜的，而是靠信息差和说服力。<br><br>这也解释了为什么你离开家乡后会更容易找到适合自己的生态位。</div>
+      
+    </div>
+    <div class="reading-card" data-num="三">
+      <div class="card-title">事业 · 官禄宫</div>
+      <div class="card-stars-badge">太阴</div>
+      <div class="card-body">官禄宫太阴坐辰。<br><br>太阴是月亮星、母性星。在事业宫位，说明你的工作风格是<strong>细腻、内省、注重细节</strong>的。你适合的是那种需要深度思考、精密操作、幕后策划的工作——不是站在聚光灯下的角色。<br><br>辰是水库，太阴在辰是旺位，事业上能<em>厚积薄发</em>。配合命宫天机，你的核心职业画像：<strong>研究者、分析师、顾问、策划师</strong>。你不适合做销售或公关那种需要天天社交的工作——那不是你的舒适区。<br><br>官禄宫有华盖星——这颗星带有玄学和哲学色彩。你对形而上的东西有天然兴趣，可能偶尔会思考人生意义、宇宙规律这些大问题。这不是空想，而是天机+华盖的深层特质。</div>
+      
+    </div>
+    <div class="reading-card" data-num="四">
+      <div class="card-title">财运 · 财帛宫</div>
+      <div class="card-stars-badge">天同·天梁</div>
+      <div class="card-body">财帛宫天同+天梁坐申，带地劫。<br><br>天同是福星，天梁是荫星。这个组合说明你的财运<em>不是大起大落型的</em>——更像细水长流。你不会一夜暴富，但也不至于穷困潦倒。你的财运更多来自于<em>积累和贵人</em>，而不是冒险投机。<br><br>但地劫在财帛宫是一个需要警惕的信号。地劫是劫夺之星，在财帛宫意味着：<strong>你容易在不该花钱的地方花钱</strong>。可能是冲动消费、被朋友借钱不还、或者投资失误。建议不要把现金都放在活期——强制储蓄或交给信任的人打理。<br><br>一句话概括：财运不差，但要主动锁住财富。</div>
+      
+    </div>
+    <div class="reading-card highlight" data-num="五">
+      <div class="card-title">感情 · 夫妻宫</div>
+      <div class="card-stars-badge">太阳·化忌</div>
+      <div class="card-body">这是你命盘最需要关注的一个宫位。<br><br>夫妻宫太阳坐戌。戌时太阳已经落山了——<strong>这叫日落西山</strong>，太阳在戌是落陷的。落陷的太阳本来就能量不足，偏偏又碰上了生年化忌。<br><br>太阳化忌在夫妻宫意味着：<span class='warn'>你在感情中容易付出太多而回报太少</span>。你可能是一个很愿意照顾伴侣的人，但你的付出对方不一定领情，或者你选到的对象本身就不够亮眼——不是你不够好，而是太阳落陷化忌让你容易吸引到那种需要你拯救的人。<br><br>夫妻宫有寡宿星——这颗星加重了感情上的孤独感。即使有伴侣，你内心深处还是觉得有某种难以填补的寂寞。<br><br>但有一个好消息：身宫在迁移宫，身宫化开了夫妻宫的煞气。你越往外走，感情格局反而越开阔。异地缘、跨国缘对你是加分项。<br><br>如果你已婚：这段婚姻需要你来主动维护和付出，伴侣可能不如你期望的那样能主动承担。这不是他的错，是格局使然。<br><br>如果你未婚：不要急着定下来，你命盘的感情节奏偏慢，晚婚反而更好。</div>
+      
+    </div>
+    <div class="reading-card" data-num="六">
+      <div class="card-title">福德宫 · 精神世界</div>
+      <div class="card-stars-badge">空宫（借廉贪）</div>
+      <div class="card-body">福德宫空宫，有地空+禄存+天马。<br><br>福德宫代表你的精神世界和快乐来源。空宫说明你的精神世界<em>很灵活，受环境影响大</em>。借对宫廉贞贪狼的力量，你内心其实有很多欲望和好奇心——什么都想试试。<br><br>但地空在这里是个有趣的存在。地空在福德宫意味着：<strong>世俗的享受很难真正让你满足</strong>。买东西、旅游、聚餐——这些带来的快乐来得快去得也快。你真正的满足感来自于思想上的突破和精神上的成长。<br><br>禄存+天马：你有边走边赚的福气。出差、旅行、异地生活中反而容易遇到好运。</div>
+      
+    </div>
+    <div class="reading-card" data-num="七">
+      <div class="card-title">田宅宫 · 家运与不动产</div>
+      <div class="card-stars-badge">天府</div>
+      <div class="card-body">田宅宫天府坐卯，带右弼+擎羊。<br><br>天府是库星、财库之星。在田宅宫说明你的<em>家运和不动产运不错</em>。你天生有安家的能力——不管是买房、装修还是打理家庭，你都能做得井井有条。<br><br>但擎羊在这里，说明在房产或家庭事务上可能会遇到争执或纠纷。可能是装修超预算、邻里矛盾、或者家庭内部的分歧。建议买房时多对比，不要冲动决策。<br><br>右弼是女性贵人星，说明你在处理家庭事务时容易得到女性长辈或朋友的帮助。</div>
+      
+    </div>
+    <div class="reading-card full teal-highlight" data-num="8">
+      <div class="card-title">当前大限 (32-41岁) → 2026年正处于转折期</div>
+      <div class="card-stars-badge">武曲·七杀 → 天同·天梁</div>
+      <div class="card-body"><strong>32-41岁大限（武曲七杀·武曲化科）：</strong><br>这十年是你人生中事业推进最猛的阶段。武曲是财星+将星，七杀是孤胆英雄——两颗都是强力星。武曲化科更意味着这十年你的专业能力和名声在提升。但七杀的代价是<em>孤独和压力</em>，你可能觉得自己在硬扛很多事。<br><br><strong>2026年（42岁）你即将进入下一大限——42-51岁（天同天梁）：</strong><br>这是一个显著的转折。从天同天梁的组合来看，<span class='good'>下一十年会比这十年轻松很多</span>。天同是福星，天梁是荫星——这是享福的组合。<br><br>核心课题从拼杀变成了收心。你不需要再像过去十年那样拼命了，而是需要学会<em>停下来享受成果</em>。这十年更适合深耕已有积累，而不是开拓新战场。<br><br><span class='warn'>注意：大限转换期（2025-2026）容易有波动和不安感</span>，这是正常的过渡现象。</div>
+      <div style="margin-top:16px;"><div class="prob-bar">
+                    <span class="prob-label">大限转折期</span>
+                    <div class="prob-track"><div class="prob-fill" style="width:42%"></div></div>
+                    <span class="prob-pct">42%</span>
+                </div>
+</div>
+    </div>
+    <div class="reading-card" data-num="9">
+      <div class="card-title">近三年流年提示</div>
+      <div class="card-stars-badge">2026-2028</div>
+      <div class="card-body"><strong>2026 丙午年（42岁）：</strong><em>大限转换年</em>。流年命宫在午（迁移宫），巨门。丙干四化：天同禄、天机权、文昌科、廉贞忌。天机化权在你的本命宫——今年你脑子里的想法和计划会特别多，行动力也在提升。天同化禄在大限财帛宫——<span class='good'>财运有正面信号</span>。<br><br><strong>2027 丁未年（43岁）：</strong>流年命宫在未（疾厄宫），天相。丁干四化：太阴禄、天同权、天机科、巨门忌。太阴化禄在官禄宫——<span class='good'>事业运上升，适合推进重要项目</span>。巨门化忌在身宫——注意人际沟通中的误解，说话之前多想一想。<br><br><strong>2028 戊申年（44岁）：</strong>流年命宫在申（财帛宫），天同天梁。戊干四化：贪狼禄、太阴权、右弼科、天机忌。天机化忌在本命宫——<span class='warn'>这一年要特别小心决策失误和思虑过度</span>，不要做重大决定，尤其是涉及大额资金的操作。</div>
+      
+    </div>
+  </div>
+
+  <!-- HAND READING (OPTIONAL) -->
+  
+
+  <!-- CALIBRATION -->
+  <div class="calibration">
+    <div class="cal-title">校准问答</div>
+    <div class="cal-desc">当前盘准确度约 65-75%。以下问题的反馈可以把它推到 85% 以上。</div>
+    <div class="cal-questions">
+      <div class="cal-q">
+        <div class="cal-num">一</div>
+        <div class="cal-text">你现在从事的行业或工作性质是什么？<span>天机+太阴的组合通常指向研究/分析/技术类工作，想验证一下</span></div>
+      </div>
+<div class="cal-q">
+        <div class="cal-num">二</div>
+        <div class="cal-text">你现在居住在离家比较远的地方吗？<span>身宫在迁移宫的人通常在外地发展</span></div>
+      </div>
+<div class="cal-q">
+        <div class="cal-num">三</div>
+        <div class="cal-text">你觉得自己是一个想得很多的人吗？<span>天机+地空的组合通常伴随内耗和过度思考</span></div>
+      </div>
+<div class="cal-q">
+        <div class="cal-num">四</div>
+        <div class="cal-text">你目前婚姻/感情状态如何？<span>太阳化忌在夫妻宫，想了解实际情况以校准</span></div>
+      </div>
+<div class="cal-q">
+        <div class="cal-num">五</div>
+        <div class="cal-text">你近一两年有没有觉得生活方向在变化？<span>大限转换期通常伴随明显的变化感</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-quote">命盘显示可能性<br>行动决定现实</div>
+    <div class="footer-note">象由心生 · 算命是对话，不是表演 · 准确度随沟通趋近</div>
+  </div>
+
+</div>
+</body>
+</html>

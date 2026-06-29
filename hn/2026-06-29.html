@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>June 29, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://danunparsed.com/p/hackerrank-open-source-ats" target="_blank">HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88</a></h2><div class="meta"><span class="score">⭐ 510</span><span class="comments">💬 202</span><span class="by">👤 sambellll</span></div><div class="summary"><p>The author shares their experience using HackerRank's newly open-sourced applicant tracking system to score their own resume, noting how scores fluctuate between 74 and 90 depending on minor formatting and keyword changes. The post highlights how ATS algorithms can produce inconsistent results and the broader implications for job seekers navigating automated screening.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48713832" target="_blank">HN Discussion (202)</a></div><div class="source">🔗 <a href="https://danunparsed.com/p/hackerrank-open-source-ats" target="_blank">https://danunparsed.com/p/hackerrank-open-source-ats</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">GLM 5.2 beats Claude in our benchmarks</a></h2><div class="meta"><span class="score">⭐ 879</span><span class="comments">💬 407</span><span class="by">👤 jms703</span></div><div class="summary"><p>This post presents benchmark results from the GLM-5.2 model developed by THUDM, showing competitive performance against Claude on various AI evaluation tasks. The benchmarks likely cover reasoning, coding, multilingual capabilities, and instruction-following to demonstrate the model's strengths across different AI capability dimensions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48709670" target="_blank">HN Discussion (407)</a></div><div class="source">🔗 <a href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-o...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://blog.pragmaticengineer.com/pollen-tried-to-remove-my-article-about-callum-negus-fancey-and-google-is-assisting-to-it/" target="_blank">Pollen (CEO Negus-Fancey, CTO Wright) tried to remove article, and Google helped</a></h2><div class="meta"><span class="score">⭐ 177</span><span class="comments">💬 23</span><span class="by">👤 taubek</span></div><div class="summary"><p>This post discusses a controversy where Pollen executives attempted to suppress a news article about the company, with Google reportedly assisting in the removal. It likely examines the intersection of corporate influence, search engine policies, and freedom of information in the context of startup controversies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48716902" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://blog.pragmaticengineer.com/pollen-tried-to-remove-my-article-about-callum-negus-fancey-and-google-is-assisting-to-it/" target="_blank">https://blog.pragmaticengineer.com/pollen-tried-to-remove-my-article-about-ca...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://schamper.dev/dissecting-apples-sparse-image-format-asif/" target="_blank">Dissecting Apple's Sparse Image Format (ASIF)</a></h2><div class="meta"><span class="score">⭐ 90</span><span class="comments">💬 11</span><span class="by">👤 supermatou</span></div><div class="summary"><p>This post provides a technical deep dive into Apple's Sparse Image Format, examining how the system handles disk images with sparse allocation for efficient storage of virtual machines and backups. It likely covers the file structure, compression methods, and practical implications for macOS developers working with disk images.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48708644" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://schamper.dev/dissecting-apples-sparse-image-format-asif/" target="_blank">https://schamper.dev/dissecting-apples-sparse-image-format-asif/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them" target="_blank">NUMA: Cores, memory, and the distance between them</a></h2><div class="meta"><span class="score">⭐ 33</span><span class="comments">💬 3</span><span class="by">👤 sys_call</span></div><div class="summary"><p>This post examines Non-Uniform Memory Access architecture, exploring how CPU cores access local versus remote memory modules and the performance implications of physical distance between processors and RAM. It likely discusses NUMA topology awareness for system optimization and why memory placement matters for high-performance computing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48662018" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them" target="_blank">https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026" target="_blank">Age verification is just a precursor to automated attribution of speech</a></h2><div class="meta"><span class="score">⭐ 545</span><span class="comments">💬 310</span><span class="by">👤 arkhiver</span></div><div class="summary"><p>This post argues that age verification systems serve as foundational infrastructure for broader speech attribution and surveillance capabilities. It likely examines how seemingly narrow identity requirements create data pipelines and legal precedents that enable much wider tracking and monitoring of online communications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48714529" target="_blank">HN Discussion (310)</a></div><div class="source">🔗 <a href="https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026" target="_blank">https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-spe...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://blog.cloudflare.com/hyper-bug/" target="_blank">We found a bug in the hyper HTTP library</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 13</span><span class="by">👤 Pop_-</span></div><div class="summary"><p>This post details the discovery of a security vulnerability in the hyper HTTP library, a popular Rust HTTP server and client implementation. It likely explains the nature of the bug, its potential impact on applications using the library, and how the Cloudflare team identified and responsibly disclosed the issue.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48670314" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://blog.cloudflare.com/hyper-bug/" target="_blank">https://blog.cloudflare.com/hyper-bug/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://dam.stanford.edu/memory-prices.html" target="_blank">Historical memory prices 1960-2026</a></h2><div class="meta"><span class="score">⭐ 321</span><span class="comments">💬 118</span><span class="by">👤 vga1</span></div><div class="summary"><p>This post presents a comprehensive historical chart tracking memory prices from the 1960s through 2026, showing the dramatic cost reductions that have driven computing advances over six decades. It likely illustrates Moore's Law-like trends for storage technology and compares prices across different memory types including core, DRAM, and SSD.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48710092" target="_blank">HN Discussion (118)</a></div><div class="source">🔗 <a href="https://dam.stanford.edu/memory-prices.html" target="_blank">https://dam.stanford.edu/memory-prices.html</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://arstechnica.com/science/2026/06/why-did-this-journal-retract-two-1940s-papers-by-max-planck/" target="_blank">Why did this journal retract two 1940s papers by Max Planck?</a></h2><div class="meta"><span class="score">⭐ 137</span><span class="comments">💬 6</span><span class="by">👤 DR_MING</span></div><div class="summary"><p>This post examines the retraction of two papers by Nobel laureate Max Planck from a 1940s publication, raising questions about how modern academic standards are applied retroactively to historical scientific work. It likely explores the ethical and methodological challenges of applying contemporary peer review criteria to research conducted under vastly different historical circumstances.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48716634" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://arstechnica.com/science/2026/06/why-did-this-journal-retract-two-1940s-papers-by-max-planck/" target="_blank">https://arstechnica.com/science/2026/06/why-did-this-journal-retract-two-1940...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://pudding.cool/2026/06/menu-story/" target="_blank">5k menus from the New York Public Library’s Buttolph Collection (1880-1920)</a></h2><div class="meta"><span class="score">⭐ 375</span><span class="comments">💬 96</span><span class="by">👤 xbryanx</span></div><div class="summary"><p>This post showcases a digital collection of 5,000 restaurant menus from the New York Public Library's Buttolph Collection, spanning the period from 1880 to 1920. It offers a fascinating glimpse into dining culture, food prices, and culinary trends in American restaurants during the Gilded Age and early Progressive Era.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48707763" target="_blank">HN Discussion (96)</a></div><div class="source">🔗 <a href="https://pudding.cool/2026/06/menu-story/" target="_blank">https://pudding.cool/2026/06/menu-story/</a></div></div></div>
+
+        <footer>
+            <p>June 29, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

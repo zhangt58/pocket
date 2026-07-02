@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-07-02</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://f-droid.org/2026/07/01/adv-malware.html" target="_blank">A new Android malware from Google</a></h2><div class="meta"><span class="score">⭐ 688</span><span class="comments">💬 279</span><span class="by">👤 drewfax</span></div><div class="summary"><p>This post likely discusses a newly discovered malicious software targeting Android devices, potentially distributed through or exploiting Google's ecosystem. The thread probably covers technical details about the threat, its impact on users, and the broader security implications for Google's platform.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48755965" target="_blank">HN Discussion (279)</a></div><div class="source">🔗 <a href="https://f-droid.org/2026/07/01/adv-malware.html" target="_blank">https://f-droid.org/2026/07/01/adv-malware.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/" target="_blank">Kimi K2.7 Code is generally available in GitHub Copilot</a></h2><div class="meta"><span class="score">⭐ 184</span><span class="comments">💬 72</span><span class="by">👤 unliftedq</span></div><div class="summary"><p>This post covers the public release of the Kimi K2.7 Code AI model within GitHub Copilot, making its advanced programming assistance features available to all developers. The discussion likely explores the model's technical capabilities, integration details, and how it compares to other AI coding assistants currently supported on the platform.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48756602" target="_blank">HN Discussion (72)</a></div><div class="source">🔗 <a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/" target="_blank">https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy" target="_blank">The Fall of the Theorem Economy</a></h2><div class="meta"><span class="score">⭐ 70</span><span class="comments">💬 20</span><span class="by">👤 varjag</span></div><div class="summary"><p>This post likely examines how artificial intelligence and automated proof systems are disrupting the traditional academic and commercial frameworks that produce, validate, and monetize mathematical theorems. It probably explores the resulting shift in research incentives and the potential collapse of established systems that treat formal proofs as valuable intellectual commodities.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48758048" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy" target="_blank">https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/" target="_blank">Oomwoo, an open-source robot vacuum you build yourself</a></h2><div class="meta"><span class="score">⭐ 333</span><span class="comments">💬 63</span><span class="by">👤 devicelimit</span></div><div class="summary"><p>This post introduces Oomwoo, a DIY open-source robot vacuum that allows hobbyists and developers to design, assemble, and customize their own cleaning robots from scratch. The project likely shares hardware schematics, software frameworks, and community resources for building a functional autonomous vacuum.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48755005" target="_blank">HN Discussion (63)</a></div><div class="source">🔗 <a href="https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/" target="_blank">https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://zcode.z.ai/en" target="_blank">ZCode – Harness for GLM-5.2</a></h2><div class="meta"><span class="score">⭐ 413</span><span class="comments">💬 297</span><span class="by">👤 chvid</span></div><div class="summary"><p>This post likely introduces ZCode, a specialized testing and execution framework built to evaluate and manage the GLM-5.2 AI language model. It probably outlines how developers can use the tool to benchmark performance, run inference, or integrate the model into their development workflows.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48753715" target="_blank">HN Discussion (297)</a></div><div class="source">🔗 <a href="https://zcode.z.ai/en" target="_blank">https://zcode.z.ai/en</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://fabiensanglard.net/keyboards/index.html" target="_blank">My Favorite Keyboards</a></h2><div class="meta"><span class="score">⭐ 47</span><span class="comments">💬 24</span><span class="by">👤 tmach32</span></div><div class="summary"><p>The author likely shares their personal preferences for various keyboards, highlighting specific models, switch types, and layouts that they find most comfortable. The post probably details the tactile feedback and build quality of different mechanical switches and ergonomic designs based on the user's experience.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48714884" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://fabiensanglard.net/keyboards/index.html" target="_blank">https://fabiensanglard.net/keyboards/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.mixedbread.com/blog/asymmetric-quant" target="_blank">Asymmetric Quantization: Near-Lossless Retrieval with 97% Storage Reduction</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 8</span><span class="by">👤 breadislove</span></div><div class="summary"><p>This post likely explores a machine learning optimization technique that uses asymmetric quantization to compress vector data or model weights, achieving a 97% reduction in storage requirements while maintaining nearly perfect search accuracy. It details how this approach enables highly efficient, cost-effective retrieval systems for large-scale AI and database applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48724127" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://www.mixedbread.com/blog/asymmetric-quant" target="_blank">https://www.mixedbread.com/blog/asymmetric-quant</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://tedium.co/2026/07/01/online-web-forums-retrospective/" target="_blank">Bring back crappy forums</a></h2><div class="meta"><span class="score">⭐ 311</span><span class="comments">💬 191</span><span class="by">👤 pentagrama</span></div><div class="summary"><p>This post likely advocates for the revival of traditional web discussion boards, arguing that their chronological threads, user-driven moderation, and niche community focus offer a more authentic alternative to modern algorithmic social media platforms. It probably explores how early internet forums fostered deeper conversations and decentralized ownership despite their outdated interfaces and technical limitations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48755731" target="_blank">HN Discussion (191)</a></div><div class="source">🔗 <a href="https://tedium.co/2026/07/01/online-web-forums-retrospective/" target="_blank">https://tedium.co/2026/07/01/online-web-forums-retrospective/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.reuters.com/business/meta-sell-excess-ai-computing-capacity-via-cloud-business-bloomberg-news-reports-2026-07-01/" target="_blank">Meta building cloud business to sell excess AI capacity</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 6</span><span class="by">👤 mgh2</span></div><div class="summary"><p>Meta is reportedly developing a new cloud computing service designed to monetize its surplus artificial intelligence infrastructure. The post likely discusses how the company plans to enter the cloud market by offering external developers and enterprises access to its unused AI processing power.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48759329" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://www.reuters.com/business/meta-sell-excess-ai-computing-capacity-via-cloud-business-bloomberg-news-reports-2026-07-01/" target="_blank">https://www.reuters.com/business/meta-sell-excess-ai-computing-capacity-via-c...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/" target="_blank">What to learn to be a graphics programmer</a></h2><div class="meta"><span class="score">⭐ 362</span><span class="comments">💬 186</span><span class="by">👤 atan2</span></div><div class="summary"><p>This post likely outlines the essential technical skills and knowledge required to pursue a career in graphics programming, covering topics like linear algebra, shader languages, modern rendering APIs, and GPU architecture. It probably serves as a curated learning roadmap for developers looking to break into real-time or offline rendering fields.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48750710" target="_blank">HN Discussion (186)</a></div><div class="source">🔗 <a href="https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/" target="_blank">https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/</a></div></div></div>
+
+        <footer>
+            <p>2026-07-02</p>
+        </footer>
+    </div>
+</body>
+</html>

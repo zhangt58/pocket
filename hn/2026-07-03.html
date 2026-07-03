@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-07-03</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://weli.dev/blog/half-baked-product/" target="_blank">Half-Baked Product</a></h2><div class="meta"><span class="score">⭐ 170</span><span class="comments">💬 37</span><span class="by">👤 weli</span></div><div class="summary"><p>A post titled "Half-Baked Product" on Hacker News. Submitted by weli.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48772388" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://weli.dev/blog/half-baked-product/" target="_blank">https://weli.dev/blog/half-baked-product/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data" target="_blank">Virginia bans sale of geolocation data</a></h2><div class="meta"><span class="score">⭐ 819</span><span class="comments">💬 128</span><span class="by">👤 toomuchtodo</span></div><div class="summary"><p>A post titled "Virginia bans sale of geolocation data" on Hacker News. Submitted by toomuchtodo.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48767347" target="_blank">HN Discussion (128)</a></div><div class="source">🔗 <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data" target="_blank">https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://righttointelligence.org/" target="_blank">Right to Local Intelligence</a></h2><div class="meta"><span class="score">⭐ 287</span><span class="comments">💬 93</span><span class="by">👤 thoughtpeddler</span></div><div class="summary"><p>A post titled "Right to Local Intelligence" on Hacker News. Submitted by thoughtpeddler.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48768951" target="_blank">HN Discussion (93)</a></div><div class="source">🔗 <a href="https://righttointelligence.org/" target="_blank">https://righttointelligence.org/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts" target="_blank">CarPlay Is Additive</a></h2><div class="meta"><span class="score">⭐ 329</span><span class="comments">💬 436</span><span class="by">👤 sprawl_</span></div><div class="summary"><p>A post titled "CarPlay Is Additive" on Hacker News. Submitted by sprawl_.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48769397" target="_blank">HN Discussion (436)</a></div><div class="source">🔗 <a href="https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts" target="_blank">https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://wordgard.net/" target="_blank">Wordgard: The new in-browser rich-text editor from the creator of ProseMirror</a></h2><div class="meta"><span class="score">⭐ 27</span><span class="comments">💬 3</span><span class="by">👤 indy</span></div><div class="summary"><p>A post titled "Wordgard: The new in-browser rich-text editor from the creator of ProseMirror" on Hacker News. Submitted by indy.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48772573" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://wordgard.net/" target="_blank">https://wordgard.net/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/" target="_blank">Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says</a></h2><div class="meta"><span class="score">⭐ 102</span><span class="comments">💬 59</span><span class="by">👤 nsoonhui</span></div><div class="summary"><p>A post titled "Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says" on Hacker News. Submitted by nsoonhui.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48772443" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/" target="_blank">https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-al...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://iinteractive.com/resources/blog/read-only" target="_blank">How working with a blind client revealed invisible accessibility gaps</a></h2><div class="meta"><span class="score">⭐ 26</span><span class="comments">💬 6</span><span class="by">👤 fortyseven</span></div><div class="summary"><p>Collaborating with a visually impaired client exposed subtle digital accessibility flaws that standard compliance audits routinely miss. The experience highlights how real-world user testing uncovers hidden barriers in navigation, screen reader compatibility, and interface design. Ultimately, the project demonstrates that meaningful inclusion requires moving beyond technical checklists to prioritize empathetic, user-centered development practices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48725857" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://iinteractive.com/resources/blog/read-only" target="_blank">https://iinteractive.com/resources/blog/read-only</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/FractalFir/crustc" target="_blank">crustc: entirety of `rustc`, translated to C</a></h2><div class="meta"><span class="score">⭐ 291</span><span class="comments">💬 56</span><span class="by">👤 Philpax</span></div><div class="summary"><p>A post titled "crustc: entirety of `rustc`, translated to C" on Hacker News. Submitted by Philpax.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48768464" target="_blank">HN Discussion (56)</a></div><div class="source">🔗 <a href="https://github.com/FractalFir/crustc" target="_blank">https://github.com/FractalFir/crustc</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://mathstodon.xyz/@iblech/116769502749142438" target="_blank">Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory</a></h2><div class="meta"><span class="score">⭐ 484</span><span class="comments">💬 209</span><span class="by">👤 IngoBlechschmid</span></div><div class="summary"><p>A post titled "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory" on Hacker News. Submitted by IngoBlechschmid.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48763035" target="_blank">HN Discussion (209)</a></div><div class="source">🔗 <a href="https://mathstodon.xyz/@iblech/116769502749142438" target="_blank">https://mathstodon.xyz/@iblech/116769502749142438</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/" target="_blank">The Safari MCP server for web developers</a></h2><div class="meta"><span class="score">⭐ 109</span><span class="comments">💬 23</span><span class="by">👤 coloneltcb</span></div><div class="summary"><p>A post titled "The Safari MCP server for web developers" on Hacker News. Submitted by coloneltcb.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48769639" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/" target="_blank">https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-devel...</a></div></div></div>
+
+        <footer>
+            <p>2026-07-03</p>
+        </footer>
+    </div>
+</body>
+</html>

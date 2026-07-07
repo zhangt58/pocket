@@ -10,9 +10,11 @@ events_dir = os.path.join(repo_wdir, "events")
 dist_dir = os.path.join(repo_wdir, "dist")
 dist_hn_dir = os.path.join(dist_dir, "hn")
 dist_events_dir = os.path.join(dist_dir, "events")
+dist_fifa_dir = os.path.join(dist_dir, "fifa2026")
 out_index_path = os.path.join(dist_dir, "index.html")
 os.makedirs(dist_hn_dir, exist_ok=True)
 os.makedirs(dist_events_dir, exist_ok=True)
+os.makedirs(dist_fifa_dir, exist_ok=True)
 
 # --- HN files ---
 hn_files = sorted(
@@ -146,6 +148,32 @@ if events_links_html:
     html += f'''        <div class="section-title">\U0001f5fa Michigan Events</div>
         <ul class="list">
 {events_links_html}        </ul>
+'''
+
+# --- FIFA World Cup ---
+fifa_index_src = os.path.join(repo_wdir, "fifa2026", "index.html")
+fifa_chart_src = os.path.join(repo_wdir, "fifa-2026-chart.png")
+if os.path.exists(fifa_index_src):
+    shutil.copy2(fifa_index_src, os.path.join(dist_fifa_dir, "index.html"))
+    if os.path.exists(fifa_chart_src):
+        shutil.copy2(fifa_chart_src, os.path.join(dist_fifa_dir, "fifa-2026-chart.png"))
+    fifa_html = open(os.path.join(dist_fifa_dir, "index.html")).read()
+    fifa_html = fifa_html.replace('src="../fifa-2026-chart.png"', 'src="fifa-2026-chart.png"')
+    open(os.path.join(dist_fifa_dir, "index.html"), "w").write(fifa_html)
+
+    html += '''        <div class="section-title">\u26bd FIFA World Cup 2026</div>
+        <ul class="list">
+            <li>
+                <a href="fifa2026/">
+                    <span class="rank">\u26bd</span>
+                    <div class="info">
+                        <h2>World Cup 2026 - Round of 16</h2>
+                        <p>Live match tracker &amp; results</p>
+                    </div>
+                    <span class="arrow">\u2192</span>
+                </a>
+            </li>
+        </ul>
 '''
 
 html += f'''        <div class="section-title">\U0001f4c4 HN Top 10</div>

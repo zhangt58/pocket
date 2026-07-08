@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 08, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/" target="_blank">Decoding the obfuscated bash script on a Uniqlo t-shirt</a></h2><div class="meta"><span class="score">⭐ 235</span><span class="comments">💬 55</span><span class="by">👤 speerer</span></div><div class="summary"><p>Security researcher tris sherliker decoded a deliberately obfuscated bash script found printed on a Uniqlo t-shirt, revealing it was a self-evaluating challenge supplied by Akamai CDN through retail stores. The script contained multiple layers of encoding and clever tricks typical of code golf, turning a fashion item into an interactive CTF-style puzzle for consumers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48829312" target="_blank">HN Discussion (55)</a></div><div class="source">🔗 <a href="https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/" target="_blank">https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/" target="_blank">GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos</a></h2><div class="meta"><span class="score">⭐ 219</span><span class="comments">💬 90</span><span class="by">👤 ColinEberhardt</span></div><div class="summary"><p>Noma Security researchers demonstrated how GitHub's AI agent can be manipulated into leaking code from private repositories through social engineering prompts. Their GitLost attack shows that AI coding assistants, when granted broad repository access, may inadvertently expose sensitive code to unauthorized parties through seemingly innocuous interactions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48827858" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/" target="_blank">https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaki...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/" target="_blank">How to Build a Minimal ZFS NAS Without Synology, QNAP, TrueNAS (2024)</a></h2><div class="meta"><span class="score">⭐ 208</span><span class="comments">💬 128</span><span class="by">👤 4diii</span></div><div class="summary"><p>A practical guide to building a cost-effective ZFS-based NAS using commodity hardware instead of expensive appliances from Synology or QNAP. The article walks through setting up TrueNAS alternatives with minimal configuration, covering hardware selection, ZFS pool creation, and network sharing for a reliable home storage solution.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48827325" target="_blank">HN Discussion (128)</a></div><div class="source">🔗 <a href="https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/" target="_blank">https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/dekart-xyz/geosql" target="_blank">Geosql: A Claude/Codex skill for geospatial data</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 0</span><span class="by">👤 rzk</span></div><div class="summary"><p>An open-source Claude and Codex skill for working with geospatial data using SQL queries. The tool enables developers to perform location-based analysis, map generation, and spatial data manipulation directly within AI coding agent workflows without requiring specialized GIS software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48829242" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://github.com/dekart-xyz/geosql" target="_blank">https://github.com/dekart-xyz/geosql</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://kb.cert.org/vuls/id/213560" target="_blank">Tenda firmware (multiple versions) contains hidden authentication backdoor</a></h2><div class="meta"><span class="score">⭐ 230</span><span class="comments">💬 72</span><span class="by">👤 miniBill</span></div><div class="summary"><p>CERT has published an advisory revealing that multiple versions of Tenda router firmware contain a hidden authentication backdoor allowing unauthorized access. The vulnerability affects widely deployed consumer and small-business routers, enabling attackers to bypass login mechanisms and gain full administrative control of the device.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48825749" target="_blank">HN Discussion (72)</a></div><div class="source">🔗 <a href="https://kb.cert.org/vuls/id/213560" target="_blank">https://kb.cert.org/vuls/id/213560</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.digipres.org/the-floppy-guide/" target="_blank">Copy That Floppy – Cambridge guide for preserving data from fragile floppy disks</a></h2><div class="meta"><span class="score">⭐ 84</span><span class="comments">💬 25</span><span class="by">👤 whiteblossom</span></div><div class="summary"><p>The University of Cambridge has published a comprehensive guide for digitally preserving data from aging and fragile floppy disks. The 'Copy That Floppy' manual covers hardware preparation, imaging techniques, error recovery, and best practices for archiving data from obsolete magnetic media before it becomes unreadable.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48827092" target="_blank">HN Discussion (25)</a></div><div class="source">🔗 <a href="https://www.digipres.org/the-floppy-guide/" target="_blank">https://www.digipres.org/the-floppy-guide/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/" target="_blank">Structure and Interpretation of Computer Programs Video Lectures (1986)</a></h2><div class="meta"><span class="score">⭐ 196</span><span class="comments">💬 21</span><span class="by">👤 gjvc</span></div><div class="summary"><p>MIT OpenCourseWare has made the legendary 1986 'Structure and Interpretation of Computer Programs' video lectures available online. These foundational CS lectures by Gerald Jay Sussman and Jerome Abrahams cover Scheme, functional programming, abstraction, and interpreter design — core concepts that shaped computer science education for decades.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48825664" target="_blank">HN Discussion (21)</a></div><div class="source">🔗 <a href="https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/" target="_blank">https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-pr...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://fightchatcontrol.eu/chat-control-overview" target="_blank">Chat Control 1.0 and 2.0 Explained</a></h2><div class="meta"><span class="score">⭐ 689</span><span class="comments">💬 276</span><span class="by">👤 gasull</span></div><div class="summary"><p>A detailed explainer of Austria's Chat Control laws (versions 1.0 and 2.0), which mandate end-to-end encryption scanning for all messaging apps operating in or accessible from Austria. The legislation requires providers to implement client-side scanning to detect child abuse material, effectively breaking encryption and raising major privacy and technical concerns.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48818311" target="_blank">HN Discussion (276)</a></div><div class="source">🔗 <a href="https://fightchatcontrol.eu/chat-control-overview" target="_blank">https://fightchatcontrol.eu/chat-control-overview</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.gao.gov/products/gao-26-108193" target="_blank">GAO: DOE Is Prematurely Excluding Less Expensive Options for Nuclear Cleanup</a></h2><div class="meta"><span class="score">⭐ 212</span><span class="comments">💬 100</span><span class="by">👤 Jimmc414</span></div><div class="summary"><p>The US Government Accountability Office released a report criticizing the Department of Energy for prematurely ruling out less expensive cleanup methods at nuclear contamination sites. The GAO found the DOE has excluded cost-effective remediation options without adequate justification, potentially wasting billions in nuclear waste cleanup programs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48824826" target="_blank">HN Discussion (100)</a></div><div class="source">🔗 <a href="https://www.gao.gov/products/gao-26-108193" target="_blank">https://www.gao.gov/products/gao-26-108193</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why" target="_blank">EVE Online's Carbon engine is now open source: Fenris Creations explains why</a></h2><div class="meta"><span class="score">⭐ 53</span><span class="comments">💬 3</span><span class="by">👤 Stevvo</span></div><div class="summary"><p>CCP Games, developer of the space MMO EVE Online, has open-sourced their Carbon rendering engine through subsidiary Fenris Creations. The decision makes a battle-tested, production-grade 3D game engine available to the broader developer community, providing insights into real-time rendering at the scale required for massive persistent virtual worlds.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48780387" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why" target="_blank">https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fe...</a></div></div></div>
+
+        <footer>
+            <p>July 08, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

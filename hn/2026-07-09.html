@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 09, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02" target="_blank">John Deere owners will get the right to repair equipment under FTC settlement</a></h2><div class="meta"><span class="score">⭐ 886</span><span class="comments">💬 173</span><span class="by">👤 djoldman</span></div><div class="summary"><p>Under a settlement with the FTC, John Deere will grant owners the legal right to repair their agricultural equipment. The agreement covers diagnostics, spare parts, and repair manuals — areas that have historically been restricted by the company, limiting farmers' ability to service their own machinery.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48838876" target="_blank">HN Discussion (173)</a></div><div class="source">🔗 <a href="https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02" target="_blank">https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb75...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://connectsci.au/news/news-parent/9703/Spider-venom-kills-varroa-mites-without-harming" target="_blank">Spider venom kills varroa mites without harming honeybees</a></h2><div class="meta"><span class="score">⭐ 145</span><span class="comments">💬 64</span><span class="by">👤 Jedd</span></div><div class="summary"><p>Researchers found that specific spider venom components effectively kill varroa destructor mites — a devastating pest for honeybee colonies — without harming the bees themselves. The discovery offers a potential new class of targeted treatments for colony collapse issues, avoiding the resistance problems of chemical miticides.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48841259" target="_blank">HN Discussion (64)</a></div><div class="source">🔗 <a href="https://connectsci.au/news/news-parent/9703/Spider-venom-kills-varroa-mites-without-harming" target="_blank">https://connectsci.au/news/news-parent/9703/Spider-venom-kills-varroa-mites-with...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.networkworld.com/article/4192827/meta-reuses-old-ram-in-new-servers-with-custom-bridge-chip.html" target="_blank">Meta reuses old RAM in new servers with custom bridge chip</a></h2><div class="meta"><span class="score">⭐ 55</span><span class="comments">💬 11</span><span class="by">👤 ihsw</span></div><div class="summary"><p>Meta has developed a custom bridge chip that allows older DDR4 memory modules to be reused in new servers running DDR5. This approach extends the lifecycle of existing hardware inventory while reducing e-waste and procurement costs for data center expansion.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48778956" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://www.networkworld.com/article/4192827/meta-reuses-old-ram-in-new-servers-with-custom-bridge-chip.html" target="_blank">https://www.networkworld.com/article/4192827/meta-reuses-old-ram-in-new-servers-...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.howtogeek.com/why-developers-are-ditching-github-for-codeberg-and-self-hosting-alternatives/" target="_blank">Why developers are ditching GitHub for Codeberg and self-hosting alternatives</a></h2><div class="meta"><span class="score">⭐ 149</span><span class="comments">💬 100</span><span class="by">👤 Gedxx</span></div><div class="summary"><p>An increasing number of developers are exploring self-hosted alternatives like Codeberg and Gitea as they seek to reduce dependence on GitHub. Concerns include corporate ownership by Microsoft, potential data access policies, API rate limits, and the desire for open, community-controlled infrastructure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48842611" target="_blank">HN Discussion (100)</a></div><div class="source">🔗 <a href="https://www.howtogeek.com/why-developers-are-ditching-github-for-codeberg-and-self-hosting-alternatives/" target="_blank">https://www.howtogeek.com/why-developers-are-ditching-github-for-codeberg-and-se...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html" target="_blank">My Thoughts on the Bun Rust Rewrite</a></h2><div class="meta"><span class="score">⭐ 70</span><span class="comments">💬 14</span><span class="by">👤 kristoff_it</span></div><div class="summary"><p>Andrew Kelley reflects on the decision to rewrite the Bun JavaScript runtime in Rust. He discusses the tradeoffs between Zig and Rust for systems programming, the engineering considerations behind the rewrite, and what the change means for Bun's performance and developer experience.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48843352" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html" target="_blank">https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.theautopian.com/i-bet-my-company-on-an-impossible-jeep-build-then-a-miracle-happened/" target="_blank">I Built the Only 2026 WWII Jeep</a></h2><div class="meta"><span class="score">⭐ 53</span><span class="comments">💬 11</span><span class="by">👤 martey</span></div><div class="summary"><p>An engineer took a bet on building the only WWII-style Jeep produced in 2026, facing numerous supply chain and manufacturing challenges along the way. The story documents the journey from prototype to a fully functional vehicle, driven by passion for historical automotive engineering and small-scale craftsmanship.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48814023" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://www.theautopian.com/i-bet-my-company-on-an-impossible-jeep-build-then-a-miracle-happened/" target="_blank">https://www.theautopian.com/i-bet-my-company-on-an-impossible-jeep-build-then-a-...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://nexte.st/" target="_blank">Cargo-nextest: 3x faster than cargo test, per-test isolation, first-class CI</a></h2><div class="meta"><span class="score">⭐ 116</span><span class="comments">💬 30</span><span class="by">👤 nateb2022</span></div><div class="summary"><p>Cargo-nextest is a Rust test runner that delivers up to 3x faster test execution compared to the standard cargo test. It provides per-test isolation, parallel execution, and first-class CI integration — making it particularly valuable for large Rust codebases with slow test suites.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48800596" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://nexte.st/" target="_blank">https://nexte.st/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://bittlex-sim.petoi.com/" target="_blank">In-browser programmable robot simulator</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 0</span><span class="by">👤 lijay</span></div><div class="summary"><p>A fully in-browser programmable robot simulator lets users simulate the PETOI Bittle hexapod robot directly from a web page. It provides a low-friction environment for learning robotics programming, testing locomotion algorithms, and experimenting with sensor-driven behavior without any physical hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48784126" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://bittlex-sim.petoi.com/" target="_blank">https://bittlex-sim.petoi.com/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://dfarq.homeip.net/how-donkey-kong-toppled-atari/" target="_blank">How Donkey Kong Toppled Atari</a></h2><div class="meta"><span class="score">⭐ 31</span><span class="comments">💬 9</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>A deep dive into how Donkey Kong's success and cultural impact undermined Atari's market dominance in the early 1980s. The article traces the competitive dynamics between Nintendo and Atari, showing how game design quality and licensing strategy shifted the balance of power in the video game industry.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48841385" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://dfarq.homeip.net/how-donkey-kong-toppled-atari/" target="_blank">https://dfarq.homeip.net/how-donkey-kong-toppled-atari/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://sand-morph.up.railway.app/the-field-equation" target="_blank">The Field Equation, living shader geometry folded into a breathing object</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 1</span><span class="by">👤 echohive42</span></div><div class="summary"><p>An interactive WebGL shader project that creates living, breathing geometric forms inspired by field equations from physics. The visualizations fold mathematical concepts into real-time animated objects, demonstrating the creative potential of programmable shaders for generative art.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48758059" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://sand-morph.up.railway.app/the-field-equation" target="_blank">https://sand-morph.up.railway.app/the-field-equation</a></div></div></div>
+
+        <footer>
+            <p>July 09, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

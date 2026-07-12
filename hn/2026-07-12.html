@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 12, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/" target="_blank">Vint Cerf, a "father of the Internet", is retiring</a></h2><div class="meta"><span class="score">⭐ 99</span><span class="comments">💬 60</span><span class="by">👤 compiler-guy</span></div><div class="summary"><p>Vint Cerf, co-inventor of TCP/IP protocols and one of the founding architects of the Internet, is stepping down from his role at Google after a decades-long career that shaped the modern digital world. The post celebrates his legacy and impact on network technology.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48854168" target="_blank">HN Discussion (60)</a></div><div class="source">🔗 <a href="https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/" target="_blank">https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retir...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/cosmtrek/mindwalk" target="_blank">Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 35</span><span class="by">👤 cosmtrek</span></div><div class="summary"><p>Mindwalk is a tool that records and replays coding-agent sessions as a navigable 3D visualization of your codebase. It lets developers revisit the full context and flow of AI-assisted coding sessions, making it easier to understand how decisions were made during automated development.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48878682" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://github.com/cosmtrek/mindwalk" target="_blank">https://github.com/cosmtrek/mindwalk</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.iroh.computer/blog/mesh-llm" target="_blank">Mesh LLM: distributed AI computing on iroh</a></h2><div class="meta"><span class="score">⭐ 266</span><span class="comments">💬 59</span><span class="by">👤 tionis</span></div><div class="summary"><p>Mesh LLM is a framework that enables distributed large language model inference across multiple devices using iroh, a peer-to-peer networking library. It splits model computation across a mesh network of connected machines, making it possible to run larger models than any single device could handle alone.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48876505" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://www.iroh.computer/blog/mesh-llm" target="_blank">https://www.iroh.computer/blog/mesh-llm</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://buf.build/blog/protobuf-py" target="_blank">Protobuf-py: Protobuf for Python, without compromises</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 8</span><span class="by">👤 ming13</span></div><div class="summary"><p>Protobuf-py is a new Protocol Buffers implementation for Python that aims to provide full feature parity with the official protobuf specification. It eliminates common compromises found in Python bindings like slow performance, incomplete type support, and compatibility gaps.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48827058" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://buf.build/blog/protobuf-py" target="_blank">https://buf.build/blog/protobuf-py</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://thebeach.dev/posts/lisp-agent/" target="_blank">An agent in 100 lines of Lisp</a></h2><div class="meta"><span class="score">⭐ 164</span><span class="comments">💬 32</span><span class="by">👤 jamiebeach</span></div><div class="summary"><p>This post demonstrates building a complete AI agent system in approximately 100 lines of Lisp. The implementation shows how the language's minimalism and powerful macro system make it possible to construct complex agentic behavior with remarkably little code.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48823981" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://thebeach.dev/posts/lisp-agent/" target="_blank">https://thebeach.dev/posts/lisp-agent/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://hlnet.notion.site/text-art-tools" target="_blank">Text art tools</a></h2><div class="meta"><span class="score">⭐ 51</span><span class="comments">💬 14</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>A curated collection of tools for creating text-based art, including ASCII generators, ANSI art editors, and Unicode typography utilities. The resource covers both classic text-art traditions and modern tools for creating visual designs using only characters.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48831384" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://hlnet.notion.site/text-art-tools" target="_blank">https://hlnet.notion.site/text-art-tools</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://antjs.org" target="_blank">Show HN: Ant – A JavaScript runtime and ecosystem</a></h2><div class="meta"><span class="score">⭐ 274</span><span class="comments">💬 118</span><span class="by">👤 theMackabu</span></div><div class="summary"><p>Ant is a new JavaScript ecosystem featuring its own runtime with a custom JavaScript engine, a package manager with the ants.land registry, a deployment platform, and Ant Desktop for native desktop apps using web technologies. The author is seeking early feedback on this end-to-end alternative to existing JavaScript stacks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48875377" target="_blank">HN Discussion (118)</a></div><div class="source">🔗 <a href="https://antjs.org" target="_blank">https://antjs.org</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom" target="_blank">Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom</a></h2><div class="meta"><span class="score">⭐ 273</span><span class="comments">💬 110</span><span class="by">👤 adletbalzhanov</span></div><div class="summary"><p>This investigative report reveals how Nvidia, CoreWeave, and Nebius are caught in a circular financing arrangement that has helped fuel the GPU boom. The interconnected investment relationships raise questions about valuation transparency and the sustainability of the current AI infrastructure investment cycle.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48873836" target="_blank">HN Discussion (110)</a></div><div class="source">🔗 <a href="https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom" target="_blank">https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/Wren6991/RISCBoy" target="_blank">RISCBoy is an open-source portable games console, designed from scratch</a></h2><div class="meta"><span class="score">⭐ 146</span><span class="comments">💬 21</span><span class="by">👤 mariuz</span></div><div class="summary"><p>RISCBoy is an open-source portable gaming console built around a custom RISC-V architecture. The project was designed entirely from scratch, featuring a self-contained CPU that can run retro games. It showcases how modern FPGA and RISC-V tooling make it feasible to build a complete gaming system as a personal hardware project.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48876245" target="_blank">HN Discussion (21)</a></div><div class="source">🔗 <a href="https://github.com/Wren6991/RISCBoy" target="_blank">https://github.com/Wren6991/RISCBoy</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://triapul.cz/automa/i_did_not_kill_stanley_lieber" target="_blank">I Did Not Kill Stanley Lieber: How to Draw (With 9front)</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 25</span><span class="by">👤 c-c-c-c-c</span></div><div class="summary"><p>A detailed guide to drawing and typography using 9front, a lightweight Unix-like operating system from the Plan 9 family. The post covers creating vector-style artwork with 9front's native tools like acme and draw, demonstrating how its minimalist design philosophy extends to graphic creation workflows.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48846177" target="_blank">HN Discussion (25)</a></div><div class="source">🔗 <a href="https://triapul.cz/automa/i_did_not_kill_stanley_lieber" target="_blank">https://triapul.cz/automa/i_did_not_kill_stanley_lieber</a></div></div></div>
+
+        <footer>
+            <p>July 12, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

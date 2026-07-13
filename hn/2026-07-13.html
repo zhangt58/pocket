@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 13, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://raymyers.org/post/zed-creator-calls-spade-a-spade/" target="_blank">Zig Creator Calls Spade a Spade, Anthropic Blows Smoke</a></h2><div class="meta"><span class="score">⭐ 320</span><span class="comments">💬 164</span><span class="by">👤 crowdhailer</span></div><div class="summary"><p>Andrew Kelley, creator of the Zig programming language, publishes a pointed critique contrasting his team's transparent engineering approach with Anthropic's vague and overly promotional messaging about AI capabilities. The piece argues that concrete technical work speaks louder than marketing claims in building genuine technological progress.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48889637" target="_blank">HN Discussion (164)</a></div><div class="source">🔗 <a href="https://raymyers.org/post/zed-creator-calls-spade-a-spade/" target="_blank">https://raymyers.org/post/zed-creator-calls-spade-a-spade/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://shkspr.mobi/blog/2026/07/another-ridiculous-interrail-holiday-6379km-and-13-countries-over-7-weeks/" target="_blank">Interrail: 6,379Km and 13 Countries over 7 weeks</a></h2><div class="meta"><span class="score">⭐ 76</span><span class="comments">💬 52</span><span class="by">👤 coinfused</span></div><div class="summary"><p>A detailed personal travelogue documenting an ambitious European Interrail journey covering 6,379 kilometers across 13 countries in just 7 weeks. The author shares practical tips, highlights, and reflections on budget-friendly cross-border rail travel throughout Europe.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48889350" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://shkspr.mobi/blog/2026/07/another-ridiculous-interrail-holiday-6379km-and-13-countries-over-7-weeks/" target="_blank">https://shkspr.mobi/blog/2026/07/another-ridiculous-interrail-holiday-6379km-...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://nebusec.ai/research/ionstack-part-2/" target="_blank">GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years</a></h2><div class="meta"><span class="score">⭐ 289</span><span class="comments">💬 123</span><span class="by">👤 ranger_danger</span></div><div class="summary"><p>NebuSec researchers uncovered GhostLock, a use-after-free vulnerability in the Linux kernel's rw_semaphore implementation that persisted silently for 15 years across all major Linux distributions. The flaw could potentially be exploited for local privilege escalation or denial-of-service attacks, highlighting challenges in kernel security auditing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48834309" target="_blank">HN Discussion (123)</a></div><div class="source">🔗 <a href="https://nebusec.ai/research/ionstack-part-2/" target="_blank">https://nebusec.ai/research/ionstack-part-2/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://andiroberts.com/citizenship/the-social-physics-of-conversation-citizenship-leadership" target="_blank">The social physics of conversation: Communication patterns matter</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 6</span><span class="by">👤 kiyanwang</span></div><div class="summary"><p>An exploration of how communication patterns and social dynamics shape leadership effectiveness and civic engagement. The author examines research on conversational reciprocity, listening ratios, and group interaction styles to show how the physics-like properties of dialogue influence organizational and community outcomes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48828576" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://andiroberts.com/citizenship/the-social-physics-of-conversation-citizenship-leadership" target="_blank">https://andiroberts.com/citizenship/the-social-physics-of-conversation-citize...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://github.com/schlae/BeavisUltrasound" target="_blank">Beavis Ultrasound PnP ISA Sound Card Replica</a></h2><div class="meta"><span class="score">⭐ 66</span><span class="comments">💬 23</span><span class="by">👤 mariuz</span></div><div class="summary"><p>A retro hardware project that faithfully recreates the classic Sound Blaster 16 ISA sound card as a modern fabrication. The open-source design targets PC enthusiasts and retro computing hobbyists who want authentic 16-bit audio capabilities with original motherboard compatibility.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48888193" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://github.com/schlae/BeavisUltrasound" target="_blank">https://github.com/schlae/BeavisUltrasound</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://mmapped.blog/posts/52-backtrack-free-cursive" target="_blank">Backtrack-Free Cursive</a></h2><div class="meta"><span class="score">⭐ 97</span><span class="comments">💬 42</span><span class="by">👤 dmit</span></div><div class="summary"><p>A technical deep-dive into algorithms for generating cursive letterforms without requiring the pen to backtrack or lift unnecessarily. The approach has applications in computational typography, pen-plotter design, and creating natural-looking handwritten fonts that can be rendered in a single continuous stroke.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48888518" target="_blank">HN Discussion (42)</a></div><div class="source">🔗 <a href="https://mmapped.blog/posts/52-backtrack-free-cursive" target="_blank">https://mmapped.blog/posts/52-backtrack-free-cursive</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.lyrebirddreaming.com/post/the-graph-that-should-be-front-page-news" target="_blank">The Graph That Should Be Front-Page News</a></h2><div class="meta"><span class="score">⭐ 112</span><span class="comments">💬 56</span><span class="by">👤 rakel_rakel</span></div><div class="summary"><p>A data visualization post presenting a graph that the author believes reveals a significant, underreported trend deserving mainstream media attention. The piece argues that certain patterns in the data are being overlooked by traditional news outlets despite their broader societal implications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48888331" target="_blank">HN Discussion (56)</a></div><div class="source">🔗 <a href="https://www.lyrebirddreaming.com/post/the-graph-that-should-be-front-page-news" target="_blank">https://www.lyrebirddreaming.com/post/the-graph-that-should-be-front-page-news</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://shellzine.net/cyberpunk-comics/" target="_blank">Cyberpunk Comics, Manga and Graphic Novels</a></h2><div class="meta"><span class="score">⭐ 200</span><span class="comments">💬 65</span><span class="by">👤 zdw</span></div><div class="summary"><p>A curated guide to cyberpunk-themed comics, manga, and graphic novels spanning decades of publishing. The collection covers foundational works like Blade Runner adaptations through to contemporary indie titles, offering recommendations across different artistic styles and narrative approaches within the genre.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48885643" target="_blank">HN Discussion (65)</a></div><div class="source">🔗 <a href="https://shellzine.net/cyberpunk-comics/" target="_blank">https://shellzine.net/cyberpunk-comics/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://floooh.github.io/tiny8bit-preview/index.html" target="_blank">Tiny Emulators</a></h2><div class="meta"><span class="score">⭐ 271</span><span class="comments">💬 23</span><span class="by">👤 naves</span></div><div class="summary"><p>An impressive collection of browser-based emulators for classic 8-bit computers and gaming consoles, all built with minimal code. The project demonstrates how lean and efficient modern web assembly and JavaScript can be while faithfully recreating the experience of vintage systems like the C64, ZX Spectrum, and Game Boy.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48884395" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://floooh.github.io/tiny8bit-preview/index.html" target="_blank">https://floooh.github.io/tiny8bit-preview/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.susanrigetti.com/physics" target="_blank">So you want to learn physics (second edition, 2021)</a></h2><div class="meta"><span class="score">⭐ 234</span><span class="comments">💬 42</span><span class="by">👤 azhenley</span></div><div class="summary"><p>Susan Rigetti's comprehensive self-directed physics curriculum, updated in its second edition for 2021. The guide provides a structured learning path for independent students, covering topics from mechanics through quantum physics with curated textbook recommendations, problem sets, and study strategies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48827126" target="_blank">HN Discussion (42)</a></div><div class="source">🔗 <a href="https://www.susanrigetti.com/physics" target="_blank">https://www.susanrigetti.com/physics</a></div></div></div>
+
+        <footer>
+            <p>July 13, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

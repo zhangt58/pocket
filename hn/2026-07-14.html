@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 14, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/" target="_blank">Japan develops a method to recover up to 90% of lithium from used EV batteries</a></h2><div class="meta"><span class="score">⭐ 525</span><span class="comments">💬 132</span><span class="by">👤 donohoe</span></div><div class="summary"><p>Japanese researchers have developed a hydrometallurgical process that recovers up to 90 percent of lithium from spent electric vehicle batteries, significantly higher than the 50-70 percent typical of current methods. The approach uses a selective leaching agent that targets lithium while leaving other metals intact, potentially reducing recycling costs and supply chain dependencies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48901569" target="_blank">HN Discussion (132)</a></div><div class="source">🔗 <a href="https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/" target="_blank">https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/" target="_blank">Alternative(s) to run CUDA on non-Nvidia hardware</a></h2><div class="meta"><span class="score">⭐ 51</span><span class="comments">💬 22</span><span class="by">👤 alok-g</span></div><div class="summary"><p>Spectral Compute is building hardware and software tools to run CUDA workloads on non-NVIDIA accelerators, targeting the growing frustration with CUDA's vendor lock-in. The article examines their emulation layer approach, competitive landscape including AMD ROCm and open-source alternatives, and whether their strategy can succeed against entrenched ecosystem advantages.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48903715" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/" target="_blank">https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-wil...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actually-works/" target="_blank">Australian energy retailers must provide three hours of free daytime electricity</a></h2><div class="meta"><span class="score">⭐ 121</span><span class="comments">💬 186</span><span class="by">👤 i2oc</span></div><div class="summary"><p>Australia's energy regulator mandated that all residential electricity retailers must offer three hours of free daytime electricity, aimed at reducing peak demand and encouraging solar energy adoption. The policy applies to standard variable tariffs and is designed to shift consumption patterns toward midday when renewable generation is highest.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48902320" target="_blank">HN Discussion (186)</a></div><div class="source">🔗 <a href="https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actually-works/" target="_blank">https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actual...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://lalitm.com/post/git-history/" target="_blank">The git history command</a></h2><div class="meta"><span class="score">⭐ 324</span><span class="comments">💬 187</span><span class="by">👤 turbocon</span></div><div class="summary"><p>A comprehensive guide to the git history command and related tools for navigating repository history, including git log, git blame, git bisect, and git reflog. The post covers practical techniques for understanding who changed what and when, finding when bugs were introduced, and reconstructing lost commits.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48901010" target="_blank">HN Discussion (187)</a></div><div class="source">🔗 <a href="https://lalitm.com/post/git-history/" target="_blank">https://lalitm.com/post/git-history/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/cg53l737v1qo" target="_blank">Indian scientists produce most detailed 3D atlas of the human brainstem</a></h2><div class="meta"><span class="score">⭐ 67</span><span class="comments">💬 5</span><span class="by">👤 BaudouinVH</span></div><div class="summary"><p>Indian researchers have created the most detailed three-dimensional atlas of the human brainstem to date, mapping over 100 distinct nuclear structures with sub-millimeter resolution. The atlas was built using advanced MRI techniques and high-resolution histology, providing a valuable reference for neurology research and surgical planning.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48903082" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/cg53l737v1qo" target="_blank">https://www.bbc.com/news/articles/cg53l737v1qo</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/JetBrains/youtrackdb" target="_blank">YouTrackDB is a general-use object-oriented graph database</a></h2><div class="meta"><span class="score">⭐ 130</span><span class="comments">💬 40</span><span class="by">👤 gjvc</span></div><div class="summary"><p>YouTrackDB is an open-source, general-purpose object-oriented graph database that stores data as interconnected objects rather than relational tables. It supports ACID transactions, ad-hoc queries through a built-in DSL, and automatic relationship tracking, positioning itself as an alternative to traditional databases for highly connected data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48902026" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://github.com/JetBrains/youtrackdb" target="_blank">https://github.com/JetBrains/youtrackdb</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://knots.neocities.org/knotindex" target="_blank">Notable Knot Index (2016)</a></h2><div class="meta"><span class="score">⭐ 11</span><span class="comments">💬 0</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>The Notable Knot Index from 2016 catalogs historically and culturally significant knots, their origins, and traditional applications across different civilizations. This revival of a mathematics and culture crossover resource highlights how knot theory connects abstract mathematics with practical human knowledge spanning thousands of years.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48845527" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://knots.neocities.org/knotindex" target="_blank">https://knots.neocities.org/knotindex</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/" target="_blank">Building and shipping Mac and iOS apps without opening Xcode</a></h2><div class="meta"><span class="score">⭐ 489</span><span class="comments">💬 208</span><span class="by">👤 speckx</span></div><div class="summary"><p>An in-depth guide to building and distributing macOS and iOS applications entirely from the command line, without ever opening Xcode. It covers toolchains like xcodebuild, swift build, and automated signing and notarization, plus CI/CD workflows for complete headless app development and deployment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48896665" target="_blank">HN Discussion (208)</a></div><div class="source">🔗 <a href="https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/" target="_blank">https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://web.stanford.edu/~dntse/wireless_book.html" target="_blank">Fundamentals of Wireless Communication (2005)</a></h2><div class="meta"><span class="score">⭐ 138</span><span class="comments">💬 6</span><span class="by">👤 teleforce</span></div><div class="summary"><p>The complete textbook 'Fundamentals of Wireless Communication' by David Tse and Pramod Viswanath (2005) is now freely available. This MIT Press reference covers modern wireless system design including MIMO, OFDM, capacity theory, and physical layer protocols, and remains a standard graduate-level text in communications engineering.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48901454" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://web.stanford.edu/~dntse/wireless_book.html" target="_blank">https://web.stanford.edu/~dntse/wireless_book.html</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blinry.org/lcd-clock/" target="_blank">How to build a circular LCD clock</a></h2><div class="meta"><span class="score">⭐ 86</span><span class="comments">💬 34</span><span class="by">👤 birdculture</span></div><div class="summary"><p>A detailed DIY walkthrough for building a circular LCD clock using a round IPS display, ESP32 microcontroller, and custom firmware. The project covers hardware sourcing, 3D-printed enclosure design, software for time display and animations, and power supply considerations for a wall-mounted digital clock.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48872833" target="_blank">HN Discussion (34)</a></div><div class="source">🔗 <a href="https://blinry.org/lcd-clock/" target="_blank">https://blinry.org/lcd-clock/</a></div></div></div>
+
+        <footer>
+            <p>July 14, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 15, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://fabiensanglard.net/jurrasic_park_computers/index.html" target="_blank">Jurassic Park computers in excruciating detail</a></h2><div class="meta"><span class="score">⭐ 508</span><span class="comments">💬 123</span><span class="by">👤 vinhnx</span></div><div class="summary"><p>An in-depth technical retrospective on the custom-built computers used for visual effects in Jurassic Park, including the specific hardware architecture, software tools, and programming techniques that brought the T-Rex to life over 30 years ago.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48915709" target="_blank">HN Discussion (123)</a></div><div class="source">🔗 <a href="https://fabiensanglard.net/jurrasic_park_computers/index.html" target="_blank">https://fabiensanglard.net/jurrasic_park_computers/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://vpd.ca/" target="_blank">Vancouver PD website features Quick Escape button that wipes itself from history</a></h2><div class="meta"><span class="score">⭐ 280</span><span class="comments">💬 117</span><span class="by">👤 LookAtThatBacon</span></div><div class="summary"><p>The Vancouver Police Department website includes a discreet Quick Escape button that instantly clears browser history and redirects users to Google. This safety feature allows individuals in domestic abuse situations to quickly hide their browsing activity from potential abusers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48914644" target="_blank">HN Discussion (117)</a></div><div class="source">🔗 <a href="https://vpd.ca/" target="_blank">https://vpd.ca/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://prismml.com/news/bonsai-27b" target="_blank">Bonsai 27B: A 27B-Class model that runs on a phone</a></h2><div class="meta"><span class="score">⭐ 612</span><span class="comments">💬 214</span><span class="by">👤 xenova</span></div><div class="summary"><p>PrismML has released Bonsai 27B, a 27-billion-parameter language model optimized to run entirely on modern smartphones. The model uses aggressive quantization and architectural optimizations to achieve desktop-class performance while consuming minimal battery and memory.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48910545" target="_blank">HN Discussion (214)</a></div><div class="source">🔗 <a href="https://prismml.com/news/bonsai-27b" target="_blank">https://prismml.com/news/bonsai-27b</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://tailscale.com/security-bulletins" target="_blank">TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access</a></h2><div class="meta"><span class="score">⭐ 161</span><span class="comments">💬 84</span><span class="by">👤 jervant</span></div><div class="summary"><p>Tailscale disclosed a security vulnerability in its SSH implementation where insecure argument handling could allow unauthenticated attackers to escalate privileges and gain root access on affected devices. Users are advised to update to the patched version immediately.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48915004" target="_blank">HN Discussion (84)</a></div><div class="source">🔗 <a href="https://tailscale.com/security-bulletins" target="_blank">https://tailscale.com/security-bulletins</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/" target="_blank">Who's running all those tiny RPKI servers?</a></h2><div class="meta"><span class="score">⭐ 45</span><span class="comments">💬 1</span><span class="by">👤 enz</span></div><div class="summary"><p>APNIC explores the growing ecosystem of small-scale RPKI (Resource Public Key Infrastructure) validation servers and examines who operates them, why the distribution matters for Internet routing security, and what it means for network operators.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48917055" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/" target="_blank">https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.eetimes.com/risc-v-is-inevitable-state-of-the-union-keynote-argues/" target="_blank">RISC-V Is Inevitable: State of the Union Keynote Argues</a></h2><div class="meta"><span class="score">⭐ 75</span><span class="comments">💬 63</span><span class="by">👤 signa11</span></div><div class="summary"><p>A keynote from the RISC-V State of the Union argues that the open-source instruction set architecture has reached an inflection point where adoption across mobile, cloud, and edge computing makes RISC-V dominance inevitable, challenging the ARM and x86 duopoly.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48916805" target="_blank">HN Discussion (63)</a></div><div class="source">🔗 <a href="https://www.eetimes.com/risc-v-is-inevitable-state-of-the-union-keynote-argues/" target="_blank">https://www.eetimes.com/risc-v-is-inevitable-state-of-the-union-keynote-argues/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.ayush.digital/blog/the-memory-heist" target="_blank">I tricked Claude into leaking your deepest, darkest secrets</a></h2><div class="meta"><span class="score">⭐ 350</span><span class="comments">💬 162</span><span class="by">👤 macleginn</span></div><div class="summary"><p>A security researcher demonstrates how they manipulated Claude into revealing stored memory data about other users through a series of carefully crafted prompts exploiting the model's memory system, exposing serious privacy concerns in conversational AI.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48916975" target="_blank">HN Discussion (162)</a></div><div class="source">🔗 <a href="https://www.ayush.digital/blog/the-memory-heist" target="_blank">https://www.ayush.digital/blog/the-memory-heist</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/" target="_blank">The Tower Keeps Rising</a></h2><div class="meta"><span class="score">⭐ 479</span><span class="comments">💬 226</span><span class="by">👤 cdrnsf</span></div><div class="summary"><p>A personal essay reflecting on the author's journey through building and maintaining long-term projects, using the metaphor of a tower that continues growing despite setbacks, uncertainties, and the passage of time.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48909785" target="_blank">HN Discussion (226)</a></div><div class="source">🔗 <a href="https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/" target="_blank">https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/vihdzp/combinatorial-games" target="_blank">Combinatorial Games in Lean</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 2</span><span class="by">👤 wertyk</span></div><div class="summary"><p>A formal mathematics project implementing combinatorial game theory in the Lean proof assistant, providing verified definitions and theorems about impartial games, normal play convention, and Sprague-Grundy theory.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48876329" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://github.com/vihdzp/combinatorial-games" target="_blank">https://github.com/vihdzp/combinatorial-games</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/" target="_blank">Dependabot version updates introduce default package cooldown</a></h2><div class="meta"><span class="score">⭐ 181</span><span class="comments">💬 113</span><span class="by">👤 woodruffw</span></div><div class="summary"><p>GitHub Dependabot has introduced a default cooldown period between version update pull requests to reduce PR noise and prevent rate limits. Repositories with many dependencies will see fewer simultaneous update requests, giving teams more manageable review queues.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48913050" target="_blank">HN Discussion (113)</a></div><div class="source">🔗 <a href="https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/" target="_blank">https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce...</a></div></div></div>
+
+        <footer>
+            <p>July 15, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

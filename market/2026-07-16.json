@@ -1,0 +1,249 @@
+{
+  "timestamp": "2026-07-16T16:15:14.435733",
+  "indices": {
+    "S&P 500": {
+      "price": 7533.77,
+      "change": -38.63,
+      "change_pct": -0.51,
+      "high": 7570.74,
+      "low": 7504.02,
+      "volume": 3153554000,
+      "ma50": 7460.91,
+      "ma200": 6983.25
+    },
+    "NASDAQ": {
+      "price": 25881.95,
+      "change": -387.28,
+      "change_pct": -1.47,
+      "high": 26165.37,
+      "low": 25765.45,
+      "volume": 7048434000,
+      "ma50": 26136.16,
+      "ma200": 23862.61
+    },
+    "DOW": {
+      "price": 52552.97,
+      "change": -105.67,
+      "change_pct": -0.2,
+      "high": 52924.86,
+      "low": 52367.42,
+      "volume": 527778554,
+      "ma50": 51163.16,
+      "ma200": 48734.98
+    },
+    "Russell 2000": {
+      "price": 2974.58,
+      "change": -1.68,
+      "change_pct": -0.06,
+      "high": 2996.28,
+      "low": 2963.51,
+      "volume": 0,
+      "ma50": 2918.71,
+      "ma200": 2649.47
+    }
+  },
+  "etfs": {
+    "SPY (S&P 500)": {
+      "price": 750.72,
+      "change": -4.09,
+      "change_pct": -0.54,
+      "high": 754.57,
+      "low": 747.89,
+      "volume": 40872196,
+      "ma50": 742.81,
+      "ma200": 693.01
+    },
+    "QQQ (Nasdaq 100)": {
+      "price": 705.94,
+      "change": -11.8,
+      "change_pct": -1.64,
+      "high": 713.59,
+      "low": 702.61,
+      "volume": 35836836,
+      "ma50": 718.23,
+      "ma200": 639.03
+    },
+    "IWM (Russell 2000)": {
+      "price": 295.59,
+      "change": -0.18,
+      "change_pct": -0.06,
+      "high": 297.81,
+      "low": 294.35,
+      "volume": 21343847,
+      "ma50": 289.69,
+      "ma200": 262.14
+    },
+    "EFA (Intl Dev)": {
+      "price": 103.81,
+      "change": -0.84,
+      "change_pct": -0.8,
+      "high": 104.21,
+      "low": 103.47,
+      "volume": 7936068,
+      "ma50": 102.82,
+      "ma200": 97.58
+    },
+    "EEM (Emerging Mkt)": {
+      "price": 64.19,
+      "change": -1.38,
+      "change_pct": -2.1,
+      "high": 64.72,
+      "low": 63.92,
+      "volume": 20892619,
+      "ma50": 66.95,
+      "ma200": 59.27
+    },
+    "AGG (Bonds)": {
+      "price": 98.13,
+      "change": -0.01,
+      "change_pct": -0.01,
+      "high": 98.17,
+      "low": 97.99,
+      "volume": 6667401,
+      "ma50": 98.21,
+      "ma200": 98.14
+    },
+    "TLT (Long Bonds)": {
+      "price": 84.21,
+      "change": -0.03,
+      "change_pct": -0.04,
+      "high": 84.22,
+      "low": 83.79,
+      "volume": 20483132,
+      "ma50": 84.95,
+      "ma200": 86.03
+    },
+    "GLD (Gold)": {
+      "price": 364.96,
+      "change": -7.39,
+      "change_pct": -1.98,
+      "high": 368.43,
+      "low": 364.05,
+      "volume": 8658367,
+      "ma50": 397.08,
+      "ma200": 411.34
+    },
+    "VNQ (REITs)": {
+      "price": 100.07,
+      "change": 2.21,
+      "change_pct": 2.26,
+      "high": 100.13,
+      "low": 98.11,
+      "volume": 3217746,
+      "ma50": 96.18,
+      "ma200": 91.08
+    },
+    "XLF (Financials)": {
+      "price": 56.75,
+      "change": 0.19,
+      "change_pct": 0.34,
+      "high": 56.84,
+      "low": 56.38,
+      "volume": 26783892,
+      "ma50": 52.95,
+      "ma200": 52.29
+    },
+    "XLK (Tech)": {
+      "price": 177.52,
+      "change": -4.06,
+      "change_pct": -2.24,
+      "high": 179.48,
+      "low": 176.41,
+      "volume": 8414127,
+      "ma50": 182.52,
+      "ma200": 153.26
+    },
+    "XLE (Energy)": {
+      "price": 57.02,
+      "change": 0.52,
+      "change_pct": 0.92,
+      "high": 57.3,
+      "low": 56.6,
+      "volume": 24816094,
+      "ma50": 56.29,
+      "ma200": 51.19
+    },
+    "XLV (Healthcare)": {
+      "price": 161.8,
+      "change": 3.51,
+      "change_pct": 2.22,
+      "high": 162.64,
+      "low": 159.94,
+      "volume": 11765706,
+      "ma50": 152.15,
+      "ma200": 150.18
+    },
+    "IEMG (Emerg Mk ETF)": {
+      "price": 78.11,
+      "change": -1.57,
+      "change_pct": -1.97,
+      "high": 78.71,
+      "low": 77.8,
+      "volume": 11171866,
+      "ma50": 81.3,
+      "ma200": 72.43
+    }
+  },
+  "vix": {
+    "current": 16.56,
+    "change": 0.89
+  },
+  "sentiment": "Bearish",
+  "risk": "Moderate",
+  "suggestions": [
+    {
+      "type": "defensive",
+      "title": "Market Under Pressure",
+      "desc": "Reduce equity exposure, raise cash. Wait for better entry points.",
+      "icon": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "type": "defensive",
+      "title": "Defensive Positions",
+      "desc": "Consider defensive ETFs: TLT (long bonds), GLD (gold), XLV (healthcare).",
+      "icon": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "type": "trend",
+      "title": "SPY (S&P 500): Bullish Trend",
+      "desc": "Price ($750.72) above MA50 ($742.81) and MA200 ($693.01) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "IWM (Russell 2000): Bullish Trend",
+      "desc": "Price ($295.59) above MA50 ($289.69) and MA200 ($262.14) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "EFA (Intl Dev): Bullish Trend",
+      "desc": "Price ($103.81) above MA50 ($102.82) and MA200 ($97.58) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "VNQ (REITs): Bullish Trend",
+      "desc": "Price ($100.07) above MA50 ($96.18) and MA200 ($91.08) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "XLF (Financials): Bullish Trend",
+      "desc": "Price ($56.75) above MA50 ($52.95) and MA200 ($52.29) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "XLE (Energy): Bullish Trend",
+      "desc": "Price ($57.02) above MA50 ($56.29) and MA200 ($51.19) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    },
+    {
+      "type": "trend",
+      "title": "XLV (Healthcare): Bullish Trend",
+      "desc": "Price ($161.80) above MA50 ($152.15) and MA200 ($150.18) \u2014 uptrend intact.",
+      "icon": "\u2705"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 17, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003876" target="_blank">EEG shows brain can simultaneous encode two speech streams</a></h2><div class="meta"><span class="score">⭐ 117</span><span class="comments">💬 68</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>Research published in PLOS Biology reveals that EEG measurements can detect neural signatures of two speech streams processed simultaneously by the brain. The findings challenge previous assumptions about selective auditory attention and suggest the brain maintains parallel encoding of multiple conversations even when focusing on one.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48943745" target="_blank">HN Discussion (68)</a></div><div class="source">🔗 <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003876" target="_blank">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003876</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.kimi.com/blog/kimi-k3" target="_blank">Kimi K3: Open Frontier Intelligence</a></h2><div class="meta"><span class="score">⭐ 1680</span><span class="comments">💬 989</span><span class="by">👤 vincent_s</span></div><div class="summary"><p>Kimi AI has released K3, described as an open frontier intelligence model competing with leading systems from OpenAI and DeepSeek. The blog post details the model's architecture, benchmark performance, and availability, positioning it as a significant new player in the large language model landscape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48935342" target="_blank">HN Discussion (989)</a></div><div class="source">🔗 <a href="https://www.kimi.com/blog/kimi-k3" target="_blank">https://www.kimi.com/blog/kimi-k3</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://repebble.com/blog/pebble-mega-update-july-2026" target="_blank">Pebble Mega Update – July 2026</a></h2><div class="meta"><span class="score">⭐ 128</span><span class="comments">💬 52</span><span class="by">👤 crazysaem</span></div><div class="summary"><p>The Pebble smartwatch community continues its legacy with a major firmware update for July 2026. The RePebble project brings new features, bug fixes, and compatibility improvements to the open-source revival of the original Pebble watch, keeping the beloved device functional years after its discontinuation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48943174" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://repebble.com/blog/pebble-mega-update-july-2026" target="_blank">https://repebble.com/blog/pebble-mega-update-july-2026</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/" target="_blank">How Has Roman Concrete Lasted for Millennia? 1,900-Year-Old Latrine Offers Clues</a></h2><div class="meta"><span class="score">⭐ 136</span><span class="comments">💬 104</span><span class="by">👤 divbzero</span></div><div class="summary"><p>Archaeologists studying a 1,900-year-old Roman latrine have uncovered new insights into the exceptional durability of Roman concrete. The analysis reveals specific chemical reactions and material compositions that allowed Roman structures to withstand centuries of exposure, offering potential lessons for modern sustainable construction.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48943142" target="_blank">HN Discussion (104)</a></div><div class="source">🔗 <a href="https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/" target="_blank">https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-m...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/" target="_blank">Microsoft Comic Chat is now open source</a></h2><div class="meta"><span class="score">⭐ 697</span><span class="comments">💬 155</span><span class="by">👤 jervant</span></div><div class="summary"><p>Microsoft has open-sourced Comic Chat, its classic 1990s animated messaging application that was once bundled with Windows. The project includes the original source code and assets, allowing developers and retro computing enthusiasts to explore, modify, and potentially revive the nostalgic communication tool that popularized visual chat before modern emoji.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48936426" target="_blank">HN Discussion (155)</a></div><div class="source">🔗 <a href="https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/" target="_blank">https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.mixfont.com/experiments/decoy-font" target="_blank">Decoy Font</a></h2><div class="meta"><span class="score">⭐ 571</span><span class="comments">💬 135</span><span class="by">👤 ray__</span></div><div class="summary"><p>Decoy Font is an experimental typeface designed to deliberately mislead OCR systems and AI text extraction tools while remaining fully legible to human readers. The font uses subtle visual distortions that exploit weaknesses in machine text recognition, creating a practical defense against automated scraping and document processing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48936584" target="_blank">HN Discussion (135)</a></div><div class="source">🔗 <a href="https://www.mixfont.com/experiments/decoy-font" target="_blank">https://www.mixfont.com/experiments/decoy-font</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.ti.com/lit/eb/slyy228/slyy228.pdf?ts=1759892558029" target="_blank">An Engineer's Guide to USB Typе-С (2024)</a></h2><div class="meta"><span class="score">⭐ 184</span><span class="comments">💬 18</span><span class="by">👤 gregsadetsky</span></div><div class="summary"><p>Texas Instruments published a comprehensive technical guide covering USB Type-C specifications, implementation details, and design considerations for hardware engineers. The document covers the complex pin assignments, protocol layers, power delivery standards, and common pitfalls in USB-C circuit design.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48862165" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://www.ti.com/lit/eb/slyy228/slyy228.pdf?ts=1759892558029" target="_blank">https://www.ti.com/lit/eb/slyy228/slyy228.pdf?ts=1759892558029</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic" target="_blank">LM Studio Bionic: the AI agent for open models</a></h2><div class="meta"><span class="score">⭐ 264</span><span class="comments">💬 93</span><span class="by">👤 minimaxir</span></div><div class="summary"><p>LM Studio has launched Bionic, an AI agent built specifically for running with open-weight models locally on consumer hardware. The tool focuses on autonomous task execution, file manipulation, and multi-step reasoning using models that can run offline, targeting users who prioritize privacy and self-hosted AI workflows.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48939662" target="_blank">HN Discussion (93)</a></div><div class="source">🔗 <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic" target="_blank">https://lmstudio.ai/blog/introducing-lm-studio-bionic</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://solod.dev" target="_blank">Solod: Go can be a better C</a></h2><div class="meta"><span class="score">⭐ 141</span><span class="comments">💬 80</span><span class="by">👤 koeng</span></div><div class="summary"><p>Solod is a Go-based project that demonstrates how the Go programming language can be used as a modern, safer alternative to C for systems programming. It showcases Go's memory safety, concurrency primitives, and build tooling while maintaining low-level control comparable to traditional C codebases.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48895199" target="_blank">HN Discussion (80)</a></div><div class="source">🔗 <a href="https://solod.dev" target="_blank">https://solod.dev</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://nemanjatrifunovic.substack.com/p/starlink-from-1984" target="_blank">Starlink from 1984</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 15</span><span class="by">👤 ingve</span></div><div class="summary"><p>This article explores the conceptual precursor to Starlink described in a 1984 vision, examining how early ideas about satellite-based internet connectivity anticipated today's megaconstellation. The piece traces the intellectual lineage from Cold War-era space communication concepts to modern low-Earth-orbit broadband networks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48876811" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://nemanjatrifunovic.substack.com/p/starlink-from-1984" target="_blank">https://nemanjatrifunovic.substack.com/p/starlink-from-1984</a></div></div></div>
+
+        <footer>
+            <p>July 17, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

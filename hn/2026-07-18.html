@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 18, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;">
+<div class="card-header">
+<div class="rank">#1</div>
+<div class="title-section">
+<h2><a href="https://maurycyz.com/projects/bad_jpeg/" target="_blank">Regressive JPEGs</a></h2>
+<div class="meta">
+<span class="score">⭐ 393</span>
+<span class="comments">💬 38</span>
+<span class="by">👤 vitaut</span>
+</div>
+<div class="summary"><p>A creative project demonstrating 'regressive JPEGs' — intentionally crafted JPEG images that exploit the compression algorithm to produce increasingly distorted or unexpected visual artifacts. The author explores how specific patterns in image data can cause the JPEG encoder to produce progressively worse results, revealing quirks in one of the most widely-used image formats.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48954851" target="_blank">HN Discussion (38)</a></div>
+<div class="source">🔗 <a href="https://maurycyz.com/projects/bad_jpeg/" target="_blank">https://maurycyz.com/projects/bad_jpeg/</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #4ecdc4;">
+<div class="card-header">
+<div class="rank">#2</div>
+<div class="title-section">
+<h2><a href="https://rogerdickey.com/funny-item-co-occurrences-in-3-million-instacart-orders/" target="_blank">Funny item co-occurrences in 3.2M Instacart orders</a></h2>
+<div class="meta">
+<span class="score">⭐ 16</span>
+<span class="comments">💬 14</span>
+<span class="by">👤 rogerdickey</span>
+</div>
+<div class="summary"><p>An analysis of 3.2 million Instacart grocery orders revealing amusing and unexpected item pairings. The author mined this large dataset to find product combinations that frequently appear together — combinations like items from very different grocery categories — highlighting interesting patterns in how people actually shop.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48923929" target="_blank">HN Discussion (14)</a></div>
+<div class="source">🔗 <a href="https://rogerdickey.com/funny-item-co-occurrences-in-3-million-instacart-orders/" target="_blank">https://rogerdickey.com/funny-item-co-occurrences-in-3-million-instacart-orders/</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #45b7d1;">
+<div class="card-header">
+<div class="rank">#3</div>
+<div class="title-section">
+<h2><a href="https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent" target="_blank">LG monitors silently install software through Windows Update without consent</a></h2>
+<div class="meta">
+<span class="score">⭐ 35</span>
+<span class="comments">💬 1</span>
+<span class="by">👤 baranul</span>
+</div>
+<div class="summary"><p>LG has been distributing monitor configuration software through Microsoft's Windows Update service without user knowledge or consent. When users connect an LG monitor via USB, Windows automatically pushes and installs LG's software in the background. This raises privacy and consent concerns about manufacturers piggybacking on trusted update channels.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48956688" target="_blank">HN Discussion (1)</a></div>
+<div class="source">🔗 <a href="https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent" target="_blank">https://videocardz.com/newz/lg-monitors-silently-install-software-through-win...</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #96ceb4;">
+<div class="card-header">
+<div class="rank">#4</div>
+<div class="title-section">
+<h2><a href="https://health.aws.amazon.com/health/status" target="_blank">AWS: Inaccurate Estimated Billing Data – $1.7 billion</a></h2>
+<div class="meta">
+<span class="score">⭐ 1207</span>
+<span class="comments">💬 711</span>
+<span class="by">👤 nprateem</span>
+</div>
+<div class="summary"><p>An AWS user reported seeing estimated billing data showing $1.7 billion for a month of usage that normally costs under $5. This highlights a bug in AWS's billing estimation system where the displayed costs are wildly inaccurate. The post has generated massive discussion with over 700 comments as other users share their own experiences with AWS billing anomalies and concerns about cloud cost visibility.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48945241" target="_blank">HN Discussion (711)</a></div>
+<div class="source">🔗 <a href="https://health.aws.amazon.com/health/status" target="_blank">https://health.aws.amazon.com/health/status</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #ffeaa7;">
+<div class="card-header">
+<div class="rank">#5</div>
+<div class="title-section">
+<h2><a href="https://news.ycombinator.com/item?id=48949551" target="_blank">Thanks HN for 15 years of support and helping me find my life's work</a></h2>
+<div class="meta">
+<span class="score">⭐ 622</span>
+<span class="comments">💬 68</span>
+<span class="by">👤 nicholasjbs</span>
+</div>
+<div class="summary"><p>Nicholas St. Bernard of the Recurse Center reflects on 15 years since launching the self-directed programming retreat. What started as a YC startup idea that failed evolved into something meaningful after a Hacker News post in 2011 helped reach beyond personal networks. HN remains their #2 source of applicants, and the center has positively impacted over 3,000 people. A heartfelt thank-you to the community.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48949551" target="_blank">HN Discussion (68)</a></div>
+
+</div>
+</div>
+
+<div class="card" style="--accent: #dda15e;">
+<div class="card-header">
+<div class="rank">#6</div>
+<div class="title-section">
+<h2><a href="https://arxiv.org/abs/2607.14587" target="_blank">Qubes OS Security in the Public Record</a></h2>
+<div class="meta">
+<span class="score">⭐ 12</span>
+<span class="comments">💬 0</span>
+<span class="by">👤 sciences44</span>
+</div>
+<div class="summary"><p>An academic paper on Qubes OS, a security-focused operating system that uses hardware virtualization to run isolated applications in separate virtual machines. The paper examines Qubes' security model and its documentation in the public record, analyzing how the isolation-based approach to desktop security can be formally described and evaluated.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48956307" target="_blank">HN Discussion (0)</a></div>
+<div class="source">🔗 <a href="https://arxiv.org/abs/2607.14587" target="_blank">https://arxiv.org/abs/2607.14587</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #98d8c8;">
+<div class="card-header">
+<div class="rank">#7</div>
+<div class="title-section">
+<h2><a href="https://github.com/tucan9389/nanochat-jax/discussions/1" target="_blank">Porting nanochat to a TPU: what carries over from PyTorch, and what breaks</a></h2>
+<div class="meta">
+<span class="score">⭐ 38</span>
+<span class="comments">💬 8</span>
+<span class="by">👤 tucan9389</span>
+</div>
+<div class="summary"><p>A detailed write-up about porting the nanochat language model from PyTorch (running on GPU) to JAX for execution on Google TPUs. The author documents which parts of the code transfer cleanly, what API differences cause problems, and the specific changes needed to make the same model work on a different hardware/software stack.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48917755" target="_blank">HN Discussion (8)</a></div>
+<div class="source">🔗 <a href="https://github.com/tucan9389/nanochat-jax/discussions/1" target="_blank">https://github.com/tucan9389/nanochat-jax/discussions/1</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #f7dc6f;">
+<div class="card-header">
+<div class="rank">#8</div>
+<div class="title-section">
+<h2><a href="https://parksb.github.io/en/article/41.html" target="_blank">Reviving a 15-year-old netbook with Arch Linux</a></h2>
+<div class="meta">
+<span class="score">⭐ 118</span>
+<span class="comments">💬 79</span>
+<span class="by">👤 parksb</span>
+</div>
+<div class="summary"><p>A walkthrough of giving new life to a 15-year-old netbook by installing a lightweight Arch Linux setup. The author documents the hardware limitations of the old device, the choices made to keep things running smoothly on minimal resources, and the practical steps involved. A practical guide for anyone looking to extend the life of aging hardware.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48907063" target="_blank">HN Discussion (79)</a></div>
+<div class="source">🔗 <a href="https://parksb.github.io/en/article/41.html" target="_blank">https://parksb.github.io/en/article/41.html</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #bb8fce;">
+<div class="card-header">
+<div class="rank">#9</div>
+<div class="title-section">
+<h2><a href="https://www.bbc.com/news/articles/cy4kdd1e0ejo" target="_blank">First atmosphere found on Earth-like planet in habitable zone of distant star</a></h2>
+<div class="meta">
+<span class="score">⭐ 466</span>
+<span class="comments">💬 275</span>
+<span class="by">👤 neversaydie</span>
+</div>
+<div class="summary"><p>Astronomers have detected the first atmosphere on an Earth-sized planet located in the habitable zone of a distant star. This represents a significant milestone in the search for potentially habitable exoplanets, as detecting atmospheric composition is a key step toward evaluating whether a planet could support life. The discovery was made using advanced telescopic observation techniques.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48947560" target="_blank">HN Discussion (275)</a></div>
+<div class="source">🔗 <a href="https://www.bbc.com/news/articles/cy4kdd1e0ejo" target="_blank">https://www.bbc.com/news/articles/cy4kdd1e0ejo</a></div>
+</div>
+</div>
+
+<div class="card" style="--accent: #85c1e9;">
+<div class="card-header">
+<div class="rank">#10</div>
+<div class="title-section">
+<h2><a href="https://github.com/waaldev/waldi" target="_blank">Waldi: A quiet place to write, and to be read</a></h2>
+<div class="meta">
+<span class="score">⭐ 13</span>
+<span class="comments">💬 9</span>
+<span class="by">👤 waaldev</span>
+</div>
+<div class="summary"><p>Waldi is a minimal, distraction-free writing application designed to be both a personal writing space and a platform for publishing. It emphasizes simplicity and focus, stripping away the noise and complexity found in most writing tools and platforms. The project is open source.</p></div>
+</div>
+</div>
+<div class="source-links">
+<div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48880258" target="_blank">HN Discussion (9)</a></div>
+<div class="source">🔗 <a href="https://github.com/waaldev/waldi" target="_blank">https://github.com/waaldev/waldi</a></div>
+</div>
+</div>
+
+        <footer>
+            <p>July 18, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

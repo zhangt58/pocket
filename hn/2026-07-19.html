@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-07-19</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" target="_blank">Claude Code uses Bun written in Rust now</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 18</span><span class="by">👤 tosh</span></div><div class="summary"><p>This post likely discusses Anthropic's Claude Code AI assistant adopting Bun as its JavaScript runtime, leveraging Bun's Rust-based architecture to boost performance and execution speed. The discussion probably explores the technical benefits of this integration and how it streamlines the tool's overall coding workflow.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48966569" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" target="_blank">https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.qwencloud.com/pricing/token-plan" target="_blank">Qwen 3.8 Max Preview</a></h2><div class="meta"><span class="score">⭐ 26</span><span class="comments">💬 2</span><span class="by">👤 lebovic</span></div><div class="summary"><p>This post likely discusses an early preview of Alibaba's Qwen 3.8 Max large language model, highlighting its updated architecture, performance benchmarks, and new capabilities for developers and researchers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48966190" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.qwencloud.com/pricing/token-plan" target="_blank">https://www.qwencloud.com/pricing/token-plan</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://twitter.com/Alibaba_Qwen/status/2078759124914098291" target="_blank">Qwen3.8 is launching and going open-weight soon</a></h2><div class="meta"><span class="score">⭐ 205</span><span class="comments">💬 92</span><span class="by">👤 nh43215rgb</span></div><div class="summary"><p>This post likely discusses the upcoming release of Qwen3.8, a new large language model from Alibaba, which will soon be made available with open weights for public use and fine-tuning. The announcement is expected to spark discussion around its technical capabilities, licensing terms, and how it compares to other open-source AI models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48966120" target="_blank">HN Discussion (92)</a></div><div class="source">🔗 <a href="https://twitter.com/Alibaba_Qwen/status/2078759124914098291" target="_blank">https://twitter.com/Alibaba_Qwen/status/2078759124914098291</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://workshop.cjpais.com/projects/transcribe-cpp" target="_blank">Transcribe.cpp</a></h2><div class="meta"><span class="score">⭐ 550</span><span class="comments">💬 113</span><span class="by">👤 sebjones</span></div><div class="summary"><p>This post likely introduces an open-source C++ library for audio-to-text transcription, focusing on efficient native speech recognition. It probably covers the project's architecture, performance benchmarks, and integration guidelines for developers building transcription features directly in C++.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48963879" target="_blank">HN Discussion (113)</a></div><div class="source">🔗 <a href="https://workshop.cjpais.com/projects/transcribe-cpp" target="_blank">https://workshop.cjpais.com/projects/transcribe-cpp</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.blender.org/download/releases/5-2-lts/" target="_blank">Blender 5.2 LTS</a></h2><div class="meta"><span class="score">⭐ 20</span><span class="comments">💬 7</span><span class="by">👤 makizar</span></div><div class="summary"><p>This post likely announces the release of Blender 5.2 LTS, a long-term support version of the open-source 3D creation suite designed for extended stability and professional workflows. The discussion will probably cover new features, performance optimizations, and the practical benefits of adopting a stable release for production environments.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48911021" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://www.blender.org/download/releases/5-2-lts/" target="_blank">https://www.blender.org/download/releases/5-2-lts/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/moonshine-ai/moonshine/tree/main/micro" target="_blank">Speech Recognition and TTS in less than 500kb</a></h2><div class="meta"><span class="score">⭐ 467</span><span class="comments">💬 62</span><span class="by">👤 petewarden</span></div><div class="summary"><p>This post likely showcases a highly optimized software library or framework that delivers both speech recognition and text-to-speech capabilities in a remarkably compact package under 500 kilobytes. It probably explores advanced model compression, quantization, or efficient algorithm design to enable lightweight voice AI for bandwidth-constrained, mobile, or embedded environments.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48911793" target="_blank">HN Discussion (62)</a></div><div class="source">🔗 <a href="https://github.com/moonshine-ai/moonshine/tree/main/micro" target="_blank">https://github.com/moonshine-ai/moonshine/tree/main/micro</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/openai/codex/pull/33972/files" target="_blank">OpenAI reduces Codex Model Context Size from 372k to 272k</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 1</span><span class="by">👤 AmazingTurtle</span></div><div class="summary"><p>This post covers OpenAI's decision to shrink the maximum context window of its Codex AI model from 372,000 to 272,000 tokens. The reduction will likely impact developers who rely on the model to process large codebases or extensive documentation within a single prompt.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48965850" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://github.com/openai/codex/pull/33972/files" target="_blank">https://github.com/openai/codex/pull/33972/files</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.half-second.com/" target="_blank">Half a Second – a book about the XZ backdoor</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 3</span><span class="by">👤 zvr</span></div><div class="summary"><p>This post highlights a new book titled Half a Second that chronicles the 2024 XZ Utils supply chain attack, detailing how a hidden backdoor was nearly embedded into a critical Linux compression library. The work likely examines the technical investigation, the rapid response by security researchers, and the broader implications for open source software security.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48966139" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://www.half-second.com/" target="_blank">https://www.half-second.com/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/stupside/castor" target="_blank">Better and Cheaper Than IPTV</a></h2><div class="meta"><span class="score">⭐ 215</span><span class="comments">💬 53</span><span class="by">👤 xonery</span></div><div class="summary"><p>This post likely explores an alternative streaming solution or open-source project that delivers television content over the internet with superior reliability and lower costs than traditional IPTV services. It probably details technical setups, performance comparisons, and practical guidance for users seeking a more efficient way to stream live and on-demand video.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48964015" target="_blank">HN Discussion (53)</a></div><div class="source">🔗 <a href="https://github.com/stupside/castor" target="_blank">https://github.com/stupside/castor</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://codex-resets.com/" target="_blank">Codex Resets</a></h2><div class="meta"><span class="score">⭐ 197</span><span class="comments">💬 139</span><span class="by">👤 denysvitali</span></div><div class="summary"><p>This post likely covers a discussion or release about resetting the context, state, or configuration of OpenAI's Codex AI coding tool. It probably explores methods for clearing accumulated prompts, improving code generation reliability, or managing session limits in AI-assisted development workflows.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48963465" target="_blank">HN Discussion (139)</a></div><div class="source">🔗 <a href="https://codex-resets.com/" target="_blank">https://codex-resets.com/</a></div></div></div>
+
+        <footer>
+            <p>2026-07-19</p>
+        </footer>
+    </div>
+</body>
+</html>

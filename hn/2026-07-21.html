@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-07-21</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://qwen.ai/blog?id=qwen-image-3.0" target="_blank">Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge</a></h2><div class="meta"><span class="score">⭐ 123</span><span class="comments">💬 63</span><span class="by">👤 ilreb</span></div><div class="summary"><p>This post likely discusses the release of Qwen-Image-3.0, an AI image generation model that emphasizes creating complex visuals with highly accurate details and integrated factual knowledge. The update appears to focus on advancing the model's ability to render authentic, information-rich imagery.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48989701" target="_blank">HN Discussion (63)</a></div><div class="source">🔗 <a href="https://qwen.ai/blog?id=qwen-image-3.0" target="_blank">https://qwen.ai/blog?id=qwen-image-3.0</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/janestreet/incremental" target="_blank">Incremental – A library for incremental computations</a></h2><div class="meta"><span class="score">⭐ 224</span><span class="comments">💬 39</span><span class="by">👤 handfuloflight</span></div><div class="summary"><p>This post introduces Incremental, a software library that optimizes performance by only recalculating the specific parts of a program affected by new inputs rather than processing everything from scratch. It likely discusses practical applications in reactive programming, compiler design, and data processing where minimizing redundant computation is critical.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48987822" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://github.com/janestreet/incremental" target="_blank">https://github.com/janestreet/incremental</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://stratechery.com/2026/whos-afraid-of-chinese-models/" target="_blank">Who's afraid of Chinese models?</a></h2><div class="meta"><span class="score">⭐ 681</span><span class="comments">💬 484</span><span class="by">👤 mfiguiere</span></div><div class="summary"><p>This post likely examines the rapid advancement of AI models developed by Chinese tech companies and discusses whether Western developers and investors should be concerned about their competitive threat. It probably covers performance benchmarks, open-source strategies, and the shifting dynamics of the global artificial intelligence market.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48977128" target="_blank">HN Discussion (484)</a></div><div class="source">🔗 <a href="https://stratechery.com/2026/whos-afraid-of-chinese-models/" target="_blank">https://stratechery.com/2026/whos-afraid-of-chinese-models/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.allaboutcircuits.com/news/arduino-launches-plug-and-play-modules-for-long-range-sensor-projects/" target="_blank">Arduino Launches Plug-and-Play Modules for Long-Range Sensor Projects</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 7</span><span class="by">👤 WaitWaitWha</span></div><div class="summary"><p>Arduino has introduced a new line of ready-to-use hardware modules designed to simplify the development of remote sensing and IoT applications. These plug-and-play components enable developers to easily build long-range wireless sensor networks without complex configuration or custom circuit design.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48954668" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://www.allaboutcircuits.com/news/arduino-launches-plug-and-play-modules-for-long-range-sensor-projects/" target="_blank">https://www.allaboutcircuits.com/news/arduino-launches-plug-and-play-modules-...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://fzakaria.com/2026/07/20/linux-kernel-will-support-origin-sort-of" target="_blank">Linux kernel will support $ORIGIN, sort of</a></h2><div class="meta"><span class="score">⭐ 59</span><span class="comments">💬 35</span><span class="by">👤 ingve</span></div><div class="summary"><p>This post likely discusses a recent Linux kernel patch that introduces limited or conditional support for the $ORIGIN token in dynamic library path resolution. The update would enable executables and shared libraries to reference their own directory for dependency loading, though the implementation likely carries specific constraints or security caveats.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48988793" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://fzakaria.com/2026/07/20/linux-kernel-will-support-origin-sort-of" target="_blank">https://fzakaria.com/2026/07/20/linux-kernel-will-support-origin-sort-of</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.kimi.com/products/kimi-work" target="_blank">Kimi Work</a></h2><div class="meta"><span class="score">⭐ 570</span><span class="comments">💬 243</span><span class="by">👤 ms7892</span></div><div class="summary"><p>Kimi Work is likely a new AI-driven productivity platform from Moonshot AI designed to streamline workflows, automate routine tasks, and assist with professional projects. The post probably discusses its core features, technical architecture, and how it compares to other AI workplace assistants.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48981703" target="_blank">HN Discussion (243)</a></div><div class="source">🔗 <a href="https://www.kimi.com/products/kimi-work" target="_blank">https://www.kimi.com/products/kimi-work</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://jelly-ui.com/" target="_blank">Jelly UI: Soft-body physics for native HTML form controls</a></h2><div class="meta"><span class="score">⭐ 513</span><span class="comments">💬 157</span><span class="by">👤 baldvinmar</span></div><div class="summary"><p>This post introduces Jelly UI, a library that applies realistic soft-body physics animations to standard HTML form elements like buttons and input fields. It likely demonstrates how developers can add squishy, elastic interactions to native web components without replacing them with custom-built alternatives.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48981620" target="_blank">HN Discussion (157)</a></div><div class="source">🔗 <a href="https://jelly-ui.com/" target="_blank">https://jelly-ui.com/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.armaangomes.com/blogs/doom/" target="_blank">Running Doom on Our Custom CPU and Going Viral</a></h2><div class="meta"><span class="score">⭐ 81</span><span class="comments">💬 19</span><span class="by">👤 arghunter</span></div><div class="summary"><p>This post details the technical process of porting the classic video game Doom to a processor designed and built by the authors. The successful demonstration quickly captured widespread online attention, highlighting both the capabilities of their custom hardware and the enduring appeal of retro gaming.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48987846" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://www.armaangomes.com/blogs/doom/" target="_blank">https://www.armaangomes.com/blogs/doom/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/" target="_blank">Human mathematicians are being outcounterexampled</a></h2><div class="meta"><span class="score">⭐ 358</span><span class="comments">💬 150</span><span class="by">👤 artninja1988</span></div><div class="summary"><p>This post likely explores how artificial intelligence and automated reasoning systems are surpassing human mathematicians at discovering counterexamples to mathematical conjectures. It probably examines the growing role of computational tools in mathematical research and the shifting dynamics between human intuition and algorithmic verification.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48983382" target="_blank">HN Discussion (150)</a></div><div class="source">🔗 <a href="https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/" target="_blank">https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-o...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://compilade.net/blog/ternary-packing" target="_blank">How to pack ternary numbers in 8-bit bytes</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 10</span><span class="by">👤 JoshTriplett</span></div><div class="summary"><p>This post likely explains a technique for efficiently encoding base-3 data into standard 8-bit binary formats using bit manipulation and space optimization. It probably covers the mathematical conversion process, practical implementation strategies, and potential applications for compact data storage or transmission.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48912812" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://compilade.net/blog/ternary-packing" target="_blank">https://compilade.net/blog/ternary-packing</a></div></div></div>
+
+        <footer>
+            <p>2026-07-21</p>
+        </footer>
+    </div>
+</body>
+</html>

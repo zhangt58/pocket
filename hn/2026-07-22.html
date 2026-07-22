@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-07-22</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/" target="_blank">OpenAI and Hugging Face address security incident during model evaluation</a></h2><div class="meta"><span class="score">⭐ 1213</span><span class="comments">💬 835</span><span class="by">👤 mfiguiere</span></div><div class="summary"><p>OpenAI and Hugging Face have jointly disclosed a security incident that occurred during the model evaluation process. An attacker exploited a vulnerability in the evaluation pipeline to access sensitive model parameters and internal data from both companies. Both organizations have since patched the vulnerability and are working with security researchers to prevent similar attacks on AI infrastructure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48997548" target="_blank">HN Discussion (835)</a></div><div class="source">🔗 <a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/" target="_blank">https://openai.com/index/hugging-face-model-evaluation-security-incident/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://fireworks.ai/blog/kimik3-fable" target="_blank">Kimi K3 Is Competitive with Fable; Kimi K3 and Fable Is SoTA</a></h2><div class="meta"><span class="score">⭐ 670</span><span class="comments">💬 355</span><span class="by">👤 piotrgrabowski</span></div><div class="summary"><p>Fireworks AI has published benchmark results showing Kimi K3 performing competitively with leading models on key evaluation suites. The model demonstrates strong reasoning capabilities and achieves state-of-the-art results when evaluated alongside top-tier competitors. These results position Kimi K3 as a serious contender in the frontier model landscape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48999291" target="_blank">HN Discussion (355)</a></div><div class="source">🔗 <a href="https://fireworks.ai/blog/kimik3-fable" target="_blank">https://fireworks.ai/blog/kimik3-fable</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1)" target="_blank">Introduction to Formal Verification with Lean Part 1</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 0</span><span class="by">👤 badcryptobitch</span></div><div class="summary"><p>A tutorial introducing formal verification using the Lean theorem prover. The article covers the basics of writing and proving mathematical theorems in Lean, providing a practical entry point for developers interested in rigorous software verification and formal methods.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48969200" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1)" target="_blank">https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv" target="_blank">Intel Starts Shipping High-NA EUV Silicon</a></h2><div class="meta"><span class="score">⭐ 97</span><span class="comments">💬 26</span><span class="by">👤 zdw</span></div><div class="summary"><p>Intel has begun shipping silicon wafers processed using high-NA EUV lithography technology. This represents a significant milestone in semiconductor manufacturing, as high-NA systems enable finer feature sizes and improved chip performance. The move signals Intel's continued investment in advanced process nodes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48961698" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv" target="_blank">https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://github.com/chrislgarry/Apollo-11" target="_blank">Original Apollo 11 Guidance Computer source code for command and lunar modules</a></h2><div class="meta"><span class="score">⭐ 88</span><span class="comments">💬 26</span><span class="by">👤 noteness</span></div><div class="summary"><p>The original source code for NASA's Apollo 11 Guidance Computer, covering both the command module and lunar module flight software. Written in assembly language for the AGC hardware, this historic code base enabled the first lunar landing and remains one of the most influential software projects in computing history.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49002166" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://github.com/chrislgarry/Apollo-11" target="_blank">https://github.com/chrislgarry/Apollo-11</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://ads.openai.com/" target="_blank">Advertise in ChatGPT</a></h2><div class="meta"><span class="score">⭐ 806</span><span class="comments">💬 611</span><span class="by">👤 montecarl</span></div><div class="summary"><p>OpenAI has launched an advertising platform for ChatGPT, allowing businesses to place ads directly within the ChatGPT interface. The initiative marks a significant shift in how OpenAI monetizes its massive user base, moving beyond subscriptions toward an ad-supported model within its conversational AI product.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48996571" target="_blank">HN Discussion (611)</a></div><div class="source">🔗 <a href="https://ads.openai.com/" target="_blank">https://ads.openai.com/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://freeink.org/" target="_blank">FreeInk: Open ecosystem for e-readers</a></h2><div class="meta"><span class="score">⭐ 587</span><span class="comments">💬 123</span><span class="by">👤 FriedPickles</span></div><div class="summary"><p>FreeInk is an open-source project creating a decentralized ecosystem for e-readers. The platform aims to break vendor lock-in by providing open standards for e-book formats, store interoperability, and reader customization. The project seeks to make e-reading more accessible and competitive.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48996318" target="_blank">HN Discussion (123)</a></div><div class="source">🔗 <a href="https://freeink.org/" target="_blank">https://freeink.org/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://codeberg.org/Codeberg/org/pulls/1253" target="_blank">Codeberg: ToU extension to prohibit LLM-extrusions</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 22</span><span class="by">👤 robin_reala</span></div><div class="summary"><p>Codeberg, the European open-source hosting platform, has proposed an extension to its Terms of Use that would prohibit the use of LLM-generated content. The pull request aims to maintain the quality and authenticity of hosted projects by preventing automated or AI-extruded code and repositories from polluting the platform.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49003465" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://codeberg.org/Codeberg/org/pulls/1253" target="_blank">https://codeberg.org/Codeberg/org/pulls/1253</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://late.sh/" target="_blank">Late.sh – a command-line Clubhouse for computer people</a></h2><div class="meta"><span class="score">⭐ 197</span><span class="comments">💬 68</span><span class="by">👤 itherseed</span></div><div class="summary"><p>Late.sh is a command-line social platform designed for programmers and tech enthusiasts. It provides a minimal, terminal-first interface for connecting with other developers, sharing ideas, and participating in technical discussions without the overhead of graphical social media platforms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49001127" target="_blank">HN Discussion (68)</a></div><div class="source">🔗 <a href="https://late.sh/" target="_blank">https://late.sh/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63" target="_blank">Judge approves $1.5B Anthropic settlement for pirated books used to train Claude</a></h2><div class="meta"><span class="score">⭐ 388</span><span class="comments">💬 338</span><span class="by">👤 BeetleB</span></div><div class="summary"><p>A US judge has approved a $1.5 billion settlement between Anthropic and a group of authors whose books were used without permission to train the Claude AI model. The settlement resolves one of the largest copyright claims against an AI company and may set precedent for how AI firms handle training data licensing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48996652" target="_blank">HN Discussion (338)</a></div><div class="source">🔗 <a href="https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63" target="_blank">https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bar...</a></div></div></div>
+
+        <footer>
+            <p>2026-07-22</p>
+        </footer>
+    </div>
+</body>
+</html>

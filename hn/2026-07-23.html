@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-07-23</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/index.html" target="_blank">Escape IntelliJ: Scala and Kotlin LSPs on Emacs Eglot</a></h2><div class="meta"><span class="score">⭐ 78</span><span class="comments">💬 39</span><span class="by">👤 jjba23</span></div><div class="summary"><p>A guide to setting up Scala and Kotlin language servers on Emacs using Eglot, providing a lightweight alternative to IntelliJ IDEA. The author demonstrates configuring build server protocol integration, dependency management, and code navigation for both languages within a single Emacs workflow.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48990219" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/index.html" target="_blank">https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/ind...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56" target="_blank">Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample</a></h2><div class="meta"><span class="score">⭐ 906</span><span class="comments">💬 525</span><span class="by">👤 gmays</span></div><div class="summary"><p>Mathematician Terence Tao engaged in a ChatGPT conversation examining the purported counterexample to the Jacobian Conjecture. The discussion explores the mathematical validity of the claim and its implications for the conjecture, which concerns polynomial maps and their inverses.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49010345" target="_blank">HN Discussion (525)</a></div><div class="source">🔗 <a href="https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56" target="_blank">https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://ziggit.dev/t/cruller-buns-zig-runtime-continued-on-zig-0-16/16734" target="_blank">Cruller: Bun's Zig Runtime, Continued on Zig 0.16</a></h2><div class="meta"><span class="score">⭐ 67</span><span class="comments">💬 32</span><span class="by">👤 Erenay09</span></div><div class="summary"><p>A community project continuing the Bun JavaScript runtime in Zig, now ported to Zig 0.16. Cruller builds on Bun's open-source runtime architecture and aims to maintain compatibility while updating the codebase for the latest Zig compiler features and API changes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49017344" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://ziggit.dev/t/cruller-buns-zig-runtime-continued-on-zig-0-16/16734" target="_blank">https://ziggit.dev/t/cruller-buns-zig-runtime-continued-on-zig-0-16/16734</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://resobscura.substack.com/p/quality-non-fiction-books-are-the" target="_blank">Quality non-fiction books are the antithesis of AI slop</a></h2><div class="meta"><span class="score">⭐ 381</span><span class="comments">💬 140</span><span class="by">👤 benbreen</span></div><div class="summary"><p>An argument that well-researched non-fiction books represent the opposite of AI-generated content — they require deep expertise, years of investigation, rigorous fact-checking, and editorial oversight. The piece contrasts the thoughtful, evidence-based writing process of quality non-fiction with the rapid, uncritical output characteristic of AI content mills.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49007247" target="_blank">HN Discussion (140)</a></div><div class="source">🔗 <a href="https://resobscura.substack.com/p/quality-non-fiction-books-are-the" target="_blank">https://resobscura.substack.com/p/quality-non-fiction-books-are-the</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://github.com/marcelroed/gigatoken/" target="_blank">GigaToken: ~1000x faster Language model tokenization</a></h2><div class="meta"><span class="score">⭐ 521</span><span class="comments">💬 110</span><span class="by">👤 syrusakbary</span></div><div class="summary"><p>A highly optimized tokenization library for language models claiming roughly 1000x speedup over standard implementations. GigaToken achieves its performance through careful memory management, batch processing, and algorithmic optimizations tailored for transformer-based model tokenizers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49010167" target="_blank">HN Discussion (110)</a></div><div class="source">🔗 <a href="https://github.com/marcelroed/gigatoken/" target="_blank">https://github.com/marcelroed/gigatoken/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://bento.page/slides/" target="_blank">Show HN: Bento – A single-file, offline-first presentation tool</a></h2><div class="meta"><span class="score">⭐ 862</span><span class="comments">💬 195</span><span class="by">👤 starfallg</span></div><div class="summary"><p>Bento is a presentation tool that fits in a single HTML file, requiring no installation or cloud login. It supports animations, live collaborative editing via an encrypted relay, offline use, and cross-platform sharing. The default deck is about 560 KB, and the entire workflow — editing, presenting, printing, and sharing — works in any browser.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49008211" target="_blank">HN Discussion (195)</a></div><div class="source">🔗 <a href="https://bento.page/slides/" target="_blank">https://bento.page/slides/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast/" target="_blank">ANSI escape injection in MCP servers: Hidden from humans, visible to AI</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 8</span><span class="by">👤 xgpyc2qp</span></div><div class="summary"><p>A security research finding about ANSI escape sequence injection vulnerabilities in Model Context Protocol servers. These payloads are invisible to human operators viewing terminal output but can be interpreted by AI agents, enabling attackers to manipulate AI behavior without human detection.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48989006" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast/" target="_blank">https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mc...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://mitchellh.com/writing/everyone-should-know-simd" target="_blank">Everyone should know SIMD</a></h2><div class="meta"><span class="score">⭐ 455</span><span class="comments">💬 164</span><span class="by">👤 WadeGrimridge</span></div><div class="summary"><p>HashiCorp's Mitchell Hashimoto makes the case that all software engineers should understand Single Instruction Multiple Data (SIMD) programming. The article explains why SIMD knowledge is increasingly relevant for writing performant code, from everyday data processing to modern AI workloads, and provides practical guidance for getting started.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49010648" target="_blank">HN Discussion (164)</a></div><div class="source">🔗 <a href="https://mitchellh.com/writing/everyone-should-know-simd" target="_blank">https://mitchellh.com/writing/everyone-should-know-simd</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://nesbitt.io/2026/07/21/end-of-options.html" target="_blank">git's –end-of-options Flag</a></h2><div class="meta"><span class="score">⭐ 155</span><span class="comments">💬 90</span><span class="by">👤 Erenay09</span></div><div class="summary"><p>An exploration of git's lesser-known --end-of-options flag, which signals the end of git command options and the start of file path arguments. This flag helps prevent ambiguities when filenames start with dashes, and the article covers practical use cases and security implications of this mechanism.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=48991882" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://nesbitt.io/2026/07/21/end-of-options.html" target="_blank">https://nesbitt.io/2026/07/21/end-of-options.html</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://dylancastillo.co/posts/pelicanmaxxing.html" target="_blank">Are AI labs pelicanmaxxing?</a></h2><div class="meta"><span class="score">⭐ 562</span><span class="comments">💬 215</span><span class="by">👤 dcastm</span></div><div class="summary"><p>An analysis of whether AI research labs are optimizing for maximum visibility and influence — a phenomenon the author terms 'pelicanmaxxing' after the pelican's oversized bill used for display. The piece examines how labs might prioritize high-profile announcements, competitive benchmarking, and strategic research directions to maximize their market position.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49010129" target="_blank">HN Discussion (215)</a></div><div class="source">🔗 <a href="https://dylancastillo.co/posts/pelicanmaxxing.html" target="_blank">https://dylancastillo.co/posts/pelicanmaxxing.html</a></div></div></div>
+
+        <footer>
+            <p>2026-07-23</p>
+        </footer>
+    </div>
+</body>
+</html>

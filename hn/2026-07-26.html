@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HN Top 10 — July 26, 2026</title>
+<style>
+:root {
+  --bg: #1a1a2e;
+  --bg2: #16213e;
+  --card: rgba(255,255,255,0.05);
+  --text: #e0e0e0;
+  --muted: #a0a0a0;
+  --link: #7ec8e3;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: linear-gradient(135deg, var(--bg), var(--bg2));
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.container { max-width: 760px; margin: 0 auto; }
+header { text-align:center; margin-bottom: 2rem; }
+header h1 { font-size: 1.8rem; color: #fff; }
+header p { color: var(--muted); margin-top: 0.3rem; }
+.card {
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent);
+}
+.card .rank { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.card .title { font-size: 1.15rem; color: #fff; margin: 0.3rem 0; }
+.card .title a { color: var(--link); text-decoration: none; }
+.card .title a:hover { text-decoration: underline; }
+.card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+.card .summary { font-size: 0.95rem; line-height: 1.5; color: var(--text); }
+.card .hn-link { font-size: 0.8rem; margin-top: 0.5rem; }
+.card .hn-link a { color: var(--muted); text-decoration: none; }
+.card .hn-link a:hover { color: var(--link); }
+footer { text-align:center; margin-top: 2rem; color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>HN Top 10 — July 26, 2026</h1>
+<p>Daily digest from Hacker News</p>
+</header>
+<div class="card" style="--accent: #ff6b35">
+<span class="rank">#1</span>
+<div class="title"><a href="https://astral.sh/blog/ruff-v0.16.0" target="_blank">Ruff v0.16.0 – Significant new updates – 413 default rules up from 59</a></div>
+<div class="meta">⭐ 74 | 💬 16 | 👤 vismit2000</div>
+<div class="summary">Ruff v0.16.0 brings a massive expansion of default linting rules, jumping from 59 to 413 — making the tool substantially more opinionated out of the box. The update includes new rule categories, improved performance, and tighter integration with the Python ecosystem's evolving standards.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49056112" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #4ecdc4">
+<span class="rank">#2</span>
+<div class="title"><a href="https://status.claude.com/incidents/zftg3gqkmv18" target="_blank">Elevated Errors for Opus 5</a></div>
+<div class="meta">⭐ 25 | 💬 18 | 👤 TimCTRL</div>
+<div class="summary">Claude's status page logged elevated error rates for Opus 5, Anthropic's most capable model. The incident highlights the ongoing reliability challenges that come with pushing frontier models into production — where even minor degradation affects power users running complex workflows.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49056194" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #45b7d1">
+<span class="rank">#3</span>
+<div class="title"><a href="https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices" target="_blank">GrapheneOS protections against data extraction from locked devices</a></div>
+<div class="meta">⭐ 98 | 💬 46 | 👤 Cider9986</div>
+<div class="summary">GrapheneOS has added new protections to prevent data extraction from locked devices, addressing physical attack vectors like USB debugging exploitation and bootloader-level bypasses. These hardening measures strengthen the already-strong security posture of the privacy-focused Android fork.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49055169" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #96ceb4">
+<span class="rank">#4</span>
+<div class="title"><a href="https://refp.se/articles/your-shell-and-the-magic-colon" target="_blank">A shell colon does nothing. Use it anyway</a></div>
+<div class="meta">⭐ 225 | 💬 89 | 👤 olexsmir</div>
+<div class="summary">A practical shell scripting guide explaining that the colon builtin (`:`) does absolutely nothing by design — yet it serves as a useful placeholder in scripts for no-op commands, conditional stubs, and preventing errors in edge cases. A small but useful shell scripting pattern many developers overlook.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49047453" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #ffeaa7">
+<span class="rank">#5</span>
+<div class="title"><a href="https://blog.ktz.me/esp32-plane-radar/" target="_blank">An ESP32 based plane radar for my desk</a></div>
+<div class="meta">⭐ 165 | 💬 34 | 👤 alexktz</div>
+<div class="summary">A hobbyist built a desktop plane radar using an ESP32 microcontroller that decodes ADS-B signals from aircraft transponders. The project displays real-time flight data on a local screen, turning any desk into an air traffic monitoring station with relatively inexpensive hardware.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49054107" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #dda15e">
+<span class="rank">#6</span>
+<div class="title"><a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank">The new rules of context engineering for Claude 5 generation models</a></div>
+<div class="meta">⭐ 350 | 💬 239 | 👤 mellosouls</div>
+<div class="summary">Claude's blog outlines new best practices for context engineering with their 5th-generation models. The guide covers how to structure prompts, manage context windows, and leverage the architectural changes in Claude 5 for more reliable and efficient AI interactions.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49051361" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #98d8c8">
+<span class="rank">#7</span>
+<div class="title"><a href="https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf" target="_blank">DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]</a></div>
+<div class="meta">⭐ 166 | 💬 117 | 👤 oliculipolicula</div>
+<div class="summary">Leaked investor meeting transcripts reveal DeepSeek pausing fundraising after internal discussions about the growing compute gap with US AI companies. The document shows the Chinese AI lab grappling with whether to continue investing heavily in infrastructure or pivot strategy amid intensifying competition.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49052912" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #f7dc6f">
+<span class="rank">#8</span>
+<div class="title"><a href="https://huggingface.co/owensong/Inflect-Micro-v2" target="_blank">Inflect-Micro-v2: complete voice in 9.36M parameters</a></div>
+<div class="meta">⭐ 142 | 💬 11 | 👤 nateb2022</div>
+<div class="summary">Inflect-Micro-v2 is a remarkably compact voice model at just 9.36M parameters that handles complete voice synthesis tasks. The model demonstrates that specialized voice AI can achieve usable quality at a fraction of the size of general-purpose multimodal models.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49053375" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #bb8fce">
+<span class="rank">#9</span>
+<div class="title"><a href="https://golfcoursebrowser.com/" target="_blank">Show HN: I mapped every US golf course</a></div>
+<div class="meta">⭐ 139 | 💬 77 | 👤 rickmf</div>
+<div class="summary">An interactive web application mapping every golf course across the United States, built as a Show HN project. The browser-based tool allows users to explore course locations geographically, combining hobbyist data collection with web mapping technologies.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49054010" target="_blank">Discuss on HN</a></div>
+</div>
+<div class="card" style="--accent: #85c1e9">
+<span class="rank">#10</span>
+<div class="title"><a href="https://powerfulpython.com/blog/overloaded-overloading/" target="_blank">Overloaded Overloading</a></div>
+<div class="meta">⭐ 19 | 💬 4 | 👤 redsymbol</div>
+<div class="summary">A deep Python tutorial on using `@overload` decorators for proper type hints in functions that return different types based on input. The post walks through practical examples showing how overloaded overloading enables better IDE autocomplete and static type checking for flexible APIs.</div>
+<div class="hn-link"><a href="https://news.ycombinator.com/item?id=49005197" target="_blank">Discuss on HN</a></div>
+</div>
+</div>
+<footer>Generated 2026-07-26 | <a href="https://news.ycombinator.com/" style="color:var(--link);text-decoration:none;">Hacker News</a></footer>
+</body>
+</html>

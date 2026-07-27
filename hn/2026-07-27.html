@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 27, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">Kimi-K3 Releases on HuggingFace 7/27</a></h2><div class="meta"><span class="score">⭐ 390</span><span class="comments">💬 169</span><span class="by">👤 nateb2022</span></div><div class="summary"><p>Moonshot AI releases the Kimi-K3 model on HuggingFace, continuing their series of competitive open-weight LLMs. The community is evaluating its performance against other leading models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49065752" target="_blank">HN Discussion (169)</a></div><div class="source">🔗 <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">https://huggingface.co/moonshotai/Kimi-K3</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://nikolays.github.io/PGSimCity/" target="_blank">PGSimCity - How PostgreSQL Works</a></h2><div class="meta"><span class="score">⭐ 659</span><span class="comments">💬 63</span><span class="by">👤 jonbaer</span></div><div class="summary"><p>An interactive visualization that simulates PostgreSQL's internal architecture using the SimCity game format. It shows how the database engine manages connections, buffers, WAL, and other subsystems in real time.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49063754" target="_blank">HN Discussion (63)</a></div><div class="source">🔗 <a href="https://nikolays.github.io/PGSimCity/" target="_blank">https://nikolays.github.io/PGSimCity/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://blackhole.plav.in" target="_blank">Show HN: Physically accurate black hole you can put in your room</a></h2><div class="meta"><span class="score">⭐ 339</span><span class="comments">💬 100</span><span class="by">👤 aplavin</span></div><div class="summary"><p>A WebGL-based real-time simulation of a black hole using ray marching and gravitational lensing physics. You can interact with it through a browser, placing a miniature black hole that distorts your surroundings.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49021270" target="_blank">HN Discussion (100)</a></div><div class="source">🔗 <a href="https://blackhole.plav.in" target="_blank">https://blackhole.plav.in</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.harpguitars.net/history/grunewald/12-string.htm" target="_blank">The Birth of the American 12-string Guitar</a></h2><div class="meta"><span class="score">⭐ 3</span><span class="comments">💬 0</span><span class="by">👤 bilegeek</span></div><div class="summary"><p>A detailed historical account of how the 12-string guitar evolved in America, tracing its development from earlier multi-string instruments through its rise in folk and rock music.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49067690" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.harpguitars.net/history/grunewald/12-string.htm" target="_blank">https://www.harpguitars.net/history/grunewald/12-string.htm</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://mymodernmet.com/magnolia-ancient-flowers-beetles/" target="_blank">Magnolias Are So Old That They're Pollinated by Beetles, Not Bees</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 17</span><span class="by">👤 speckx</span></div><div class="summary"><p>Magnolias are among the oldest flowering plants, predating bees by tens of millions of years. They rely on beetle pollination — an ancient reproductive strategy that dates back to before modern pollinators evolved.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49009706" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://mymodernmet.com/magnolia-ancient-flowers-beetles/" target="_blank">https://mymodernmet.com/magnolia-ancient-flowers-beetles/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/libsm64/libsm64" target="_blank">Libsm64: Mario 64 as a library for use in external game engines</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 2</span><span class="by">👤 klaussilveira</span></div><div class="summary"><p>A library that wraps Super Mario 64's gameplay code so it can be embedded into external game engines. Developers can integrate Mario 64 levels, physics, and mechanics into their own projects programmatically.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49067352" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://github.com/libsm64/libsm64" target="_blank">https://github.com/libsm64/libsm64</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/vercel-labs/scriptc" target="_blank">Scriptc by Vercel: TypeScript-to-Native compiler, no JavaScript engine in binary</a></h2><div class="meta"><span class="score">⭐ 204</span><span class="comments">💬 104</span><span class="by">👤 maxloh</span></div><div class="summary"><p>Vercel's Scriptc compiles TypeScript directly to native machine code, eliminating the need for a JavaScript runtime in the final binary. This approach aims to deliver native performance for TypeScript applications without bundling a VM.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49063175" target="_blank">HN Discussion (104)</a></div><div class="source">🔗 <a href="https://github.com/vercel-labs/scriptc" target="_blank">https://github.com/vercel-labs/scriptc</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/c9q9w3x9qn2o" target="_blank">Chinese chipmaker shares surge 470%</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 28</span><span class="by">👤 pingou</span></div><div class="summary"><p>Shares of a Chinese semiconductor company skyrocketed 470% following major announcements. The surge reflects growing investor confidence in domestic chip manufacturing amid global supply chain tensions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49066962" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/c9q9w3x9qn2o" target="_blank">https://www.bbc.com/news/articles/c9q9w3x9qn2o</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.france24.com/en/live-news/20260726-french-firefighters-face-pyrocumulonimbus-for-first-time" target="_blank">French firefighters face 'pyrocumulonimbus' for first time</a></h2><div class="meta"><span class="score">⭐ 396</span><span class="comments">💬 275</span><span class="by">👤 saaaaaam</span></div><div class="summary"><p>French wildfire crews encountered pyrocumulonimbus clouds — massive storm systems generated by intense fires that can produce their own lightning, wind, and even tornadoes. This marks a new escalation in the severity of European wildfires.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49060495" target="_blank">HN Discussion (275)</a></div><div class="source">🔗 <a href="https://www.france24.com/en/live-news/20260726-french-firefighters-face-pyrocumulonimbus-for-first-time" target="_blank">https://www.france24.com/en/live-news/20260726-french-firefighters-face-pyro...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://beyondloom.com/decker/" target="_blank">Decker, a platform that builds on the legacy of Hypercard and classic macOS</a></h2><div class="meta"><span class="score">⭐ 322</span><span class="comments">💬 74</span><span class="by">👤 tosh</span></div><div class="summary"><p>Decker is a new creative platform inspired by Apple's Hypercard and the golden era of classic Macintosh software. It aims to make powerful interactive applications accessible through visual, card-based programming.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49060856" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://beyondloom.com/decker/" target="_blank">https://beyondloom.com/decker/</a></div></div></div>
+
+        <footer>
+            <p>July 27, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 30, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://atomarine.co/" target="_blank">Atomarine: Nuclear Data Centers at Sea</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 16</span><span class="by">👤 ndr</span></div><div class="summary"><p>Atomarine proposes floating nuclear-powered data centers that use seawater for cooling and generate electricity at sea. The concept aims to provide clean, scalable infrastructure for AI and cloud computing workloads while avoiding land-use constraints and zoning restrictions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49108039" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://atomarine.co/" target="_blank">https://atomarine.co/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html" target="_blank">Google will expand age checks on Android worldwide till the end of the year</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 65</span><span class="by">👤 dmantis</span></div><div class="summary"><p>Google Play is rolling out expanded age verification signals on Android globally before the end of 2026. The Age Signals API lets developers tailor app experiences based on user age, improving compliance with regional regulations like COPPA and GDPR-K while keeping the experience seamless for adults.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49107950" target="_blank">HN Discussion (65)</a></div><div class="source">🔗 <a href="https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html" target="_blank">https://android-developers.googleblog.com/2026/07/google-play-age-signals-api...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://bennuttall.com/blog/2026/07/gpiozero-flow/" target="_blank">Gpiozero Flow</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 1</span><span class="by">👤 benn_88</span></div><div class="summary"><p>Gpiozero Flow is a new Python library for Raspberry Pi that enables flow-based, node-oriented programming for GPIO projects. It lets users wire up sensors, displays, and actuators using visual or code-based flow graphs, making physical computing more accessible for education and prototyping.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49108048" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://bennuttall.com/blog/2026/07/gpiozero-flow/" target="_blank">https://bennuttall.com/blog/2026/07/gpiozero-flow/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research" target="_blank">AI's top startups are barely publishing their research</a></h2><div class="meta"><span class="score">⭐ 493</span><span class="comments">💬 253</span><span class="by">👤 YeGoblynQueenne</span></div><div class="summary"><p>Leading AI startups including OpenAI, Anthropic, and others publish very little of their research in peer-reviewed academic journals. The article examines how this trend undermines scientific reproducibility, slows open progress, and creates an opaque landscape where breakthroughs emerge primarily through product launches.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49103285" target="_blank">HN Discussion (253)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research" target="_blank">https://www.science.org/content/article/ai-s-top-startups-are-barely-publishi...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://en.wikipedia.org/wiki/Azulejo" target="_blank">Azulejo</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 3</span><span class="by">👤 Amorymeltzer</span></div><div class="summary"><p>Azulejos are the traditional Portuguese and Spanish glazed ceramic tiles known for their intricate geometric and figurative patterns. Dating back to Moorish Spain in the 8th century, they became a defining element of Iberian architecture — adorning churches, palaces, and public buildings throughout the region.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49089502" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://en.wikipedia.org/wiki/Azulejo" target="_blank">https://en.wikipedia.org/wiki/Azulejo</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://christianselig.com/2026/07/vision-pro-house/" target="_blank">The coolest use for the Vision Pro</a></h2><div class="meta"><span class="score">⭐ 699</span><span class="comments">💬 268</span><span class="by">👤 robbiet480</span></div><div class="summary"><p>A developer used Apple Vision Pro as an ultra-high-resolution display wall, projecting a multi-monitor setup directly into a room for spatial computing. The experiment demonstrates an unconventional but visually impressive application of the headset's inside-out camera and spatial mapping capabilities.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49102774" target="_blank">HN Discussion (268)</a></div><div class="source">🔗 <a href="https://christianselig.com/2026/07/vision-pro-house/" target="_blank">https://christianselig.com/2026/07/vision-pro-house/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/drumih/turbo-fieldfare" target="_blank">Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac</a></h2><div class="meta"><span class="score">⭐ 823</span><span class="comments">💬 287</span><span class="by">👤 gitpusher42</span></div><div class="summary"><p>Turbo Fieldfare is an open-source inference engine that runs Google's Gemma 4 26B model using only 2GB of RAM on any Apple Silicon Mac. It uses aggressive quantization and memory mapping techniques to make large language models accessible on consumer hardware without cloud dependency.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49098510" target="_blank">HN Discussion (287)</a></div><div class="source">🔗 <a href="https://github.com/drumih/turbo-fieldfare" target="_blank">https://github.com/drumih/turbo-fieldfare</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.superlogical.com/" target="_blank">Superlogical</a></h2><div class="meta"><span class="score">⭐ 712</span><span class="comments">💬 422</span><span class="by">👤 yan</span></div><div class="summary"><p>Superlogical is a platform that lets users build and deploy AI applications with natural language, no coding required. It supports multi-agent workflows, retrieval-augmented generation, and custom tool integrations, targeting knowledge workers and small teams looking to automate complex reasoning tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49098965" target="_blank">HN Discussion (422)</a></div><div class="source">🔗 <a href="https://www.superlogical.com/" target="_blank">https://www.superlogical.com/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://by.seiko-design.com/140th/en/topic/58.html" target="_blank">The first watch featuring computer functions</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 1</span><span class="by">👤 stefanv</span></div><div class="summary"><p>This Seiko Design Archive entry documents the first watch featuring computer functions — an early calculator watch from the 1980s. It shows how Seiko pioneered the integration of digital computation into wristwatches, decades before smartwatches became mainstream.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49057130" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://by.seiko-design.com/140th/en/topic/58.html" target="_blank">https://by.seiko-design.com/140th/en/topic/58.html</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://llm2human.pages.dev/" target="_blank">LLM Honeypot</a></h2><div class="meta"><span class="score">⭐ 271</span><span class="comments">💬 80</span><span class="by">👤 8thom</span></div><div class="summary"><p>LLM Honeypot is a project that detects when large language models are being used to interact with humans online, essentially reverse-engineering AI impersonation. It uses behavioral analysis and statistical tests to distinguish LLM-generated responses from genuine human communication in real time.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49104117" target="_blank">HN Discussion (80)</a></div><div class="source">🔗 <a href="https://llm2human.pages.dev/" target="_blank">https://llm2human.pages.dev/</a></div></div></div>
+
+        <footer>
+            <p>July 30, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

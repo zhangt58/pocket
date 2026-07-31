@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>July 31, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://earendil.com/posts/session-portability/" target="_blank">The session you cannot take with you</a></h2><div class="meta"><span class="score">⭐ 401</span><span class="comments">💬 99</span><span class="by">👤 apitman</span></div><div class="summary"><p>An exploration of session portability challenges in modern computing, examining why user sessions — the ephemeral state that connects identity, context, and computation — resist being moved between devices, environments, or clouds. The post argues that session immobility is one of the last major unsolved problems in distributed systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49118781" target="_blank">HN Discussion (99)</a></div><div class="source">🔗 <a href="https://earendil.com/posts/session-portability/" target="_blank">https://earendil.com/posts/session-portability/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://blog.google/security/chrome-stronger-with-every-update/" target="_blank">Google fixed more Chrome bugs in June than over the past two years, thanks to AI</a></h2><div class="meta"><span class="score">⭐ 121</span><span class="comments">💬 124</span><span class="by">👤 Garbage</span></div><div class="summary"><p>Google reports that AI-assisted code analysis and fix generation led to a dramatic increase in Chrome vulnerability patches during June 2026, surpassing the total number of security fixes shipped over the previous two years combined. The post covers how automated systems now handle initial triage and patch drafting for Chrome bugs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49120097" target="_blank">HN Discussion (124)</a></div><div class="source">🔗 <a href="https://blog.google/security/chrome-stronger-with-every-update/" target="_blank">https://blog.google/security/chrome-stronger-with-every-update/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://github.com/openjdk/jdk/pull/31120" target="_blank">JEP 401: Value Objects (Preview) merged to OpenJDK master</a></h2><div class="meta"><span class="score">⭐ 131</span><span class="comments">💬 59</span><span class="by">👤 mfiguiere</span></div><div class="summary"><p>The first preview of JEP 401 (Value Objects), part of the Project Valhalla initiative, has been merged into OpenJDK master. This massive PR includes 2,934 commits implementing value types in the Java language, JVM, and standard library, along with JEP 539 for strict field initialization. The feature enables truly immutable, identity-less objects that can be stored inline.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49119063" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://github.com/openjdk/jdk/pull/31120" target="_blank">https://github.com/openjdk/jdk/pull/31120</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://api-docs.deepseek.com/updates/" target="_blank">DeepSeek-V4-Flash Update</a></h2><div class="meta"><span class="score">⭐ 329</span><span class="comments">💬 160</span><span class="by">👤 dnhkng</span></div><div class="summary"><p>DeepSeek has released an update to its V4-Flash model with improved performance and capabilities. The announcement details new features, performance improvements, and API changes for the fast, cost-effective variant of the DeepSeek V4 family, which has been gaining traction as a competitive alternative to larger reasoning models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49119559" target="_blank">HN Discussion (160)</a></div><div class="source">🔗 <a href="https://api-docs.deepseek.com/updates/" target="_blank">https://api-docs.deepseek.com/updates/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://artificialanalysis.ai/models/deepseek-v4-flash-ga" target="_blank">DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 6</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>Artificial Analysis benchmarks the July 31 version of DeepSeek V4 Flash across reasoning, coding, and general intelligence tasks, comparing it against other frontier models. The analysis covers accuracy, speed, and cost-per-token to position DeepSeek V4 Flash in the competitive landscape of fast, affordable LLMs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49120299" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://artificialanalysis.ai/models/deepseek-v4-flash-ga" target="_blank">https://artificialanalysis.ai/models/deepseek-v4-flash-ga</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/mokshablr/gander" target="_blank">Show HN: Gander, an Android file viewer that asks for no permissions at all</a></h2><div class="meta"><span class="score">⭐ 82</span><span class="comments">💬 36</span><span class="by">👤 mokshablr</span></div><div class="summary"><p>Gander is a tiny (15 MB), fully offline Android file viewer built in Kotlin that opens PDF, Word, Excel, PowerPoint, photos, video, audio, Markdown, text and code files. It requires zero permissions — no internet access, no storage permission beyond granted folders — and contains no ads or tracking. All rendering happens on-device.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49119425" target="_blank">HN Discussion (36)</a></div><div class="source">🔗 <a href="https://github.com/mokshablr/gander" target="_blank">https://github.com/mokshablr/gander</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/" target="_blank">Stacked PRs are now live on GitHub</a></h2><div class="meta"><span class="score">⭐ 668</span><span class="comments">💬 231</span><span class="by">👤 tomzorz</span></div><div class="summary"><p>GitHub has launched public preview of stacked pull requests, a feature long requested by developers working on complex multi-step changes. Stacked PRs allow creators to chain dependent pull requests together natively in GitHub's UI, making it easier to review, discuss, and merge incremental changes as a cohesive series without relying on third-party tools.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49112232" target="_blank">HN Discussion (231)</a></div><div class="source">🔗 <a href="https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/" target="_blank">https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-pub...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://geospatialml.com/posts/reviewing-ai-slop/" target="_blank">I flagged two research papers for fake authors and both were accepted as orals</a></h2><div class="meta"><span class="score">⭐ 217</span><span class="comments">💬 95</span><span class="by">👤 volumes94</span></div><div class="summary"><p>A researcher submitted two papers to peer-reviewed venues with fabricated author names and AI-generated content. Despite the obvious issues, both were accepted as oral presentations — highlighting systemic weaknesses in the academic review process where reviewers and program committees failed to detect basic fabrication, raising questions about the reliability of conference review systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49116721" target="_blank">HN Discussion (95)</a></div><div class="source">🔗 <a href="https://geospatialml.com/posts/reviewing-ai-slop/" target="_blank">https://geospatialml.com/posts/reviewing-ai-slop/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank">Gemini Robotics 2 brings whole body intelligence to robots</a></h2><div class="meta"><span class="score">⭐ 568</span><span class="comments">💬 451</span><span class="by">👤 ai2027</span></div><div class="summary"><p>DeepMind introduces Gemini Robotics 2, an AI system designed for whole-body robotic control that coordinates arms, legs, torso, and balance simultaneously rather than treating each body part independently. The model enables robots to perform complex physical tasks that require coordinated full-body movement, representing a step toward more capable general-purpose robots.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49111237" target="_blank">HN Discussion (451)</a></div><div class="source">🔗 <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank">https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://marbleos.com/demo" target="_blank">Show HN: What should the GUI for AI agents look like?</a></h2><div class="meta"><span class="score">⭐ 69</span><span class="comments">💬 39</span><span class="by">👤 akbabu</span></div><div class="summary"><p>A design exploration for what the user interface of AI agents should look like, presented as an interactive demo. The project questions current approaches to agent-human interaction and proposes alternative interfaces that could make AI agents more intuitive, transparent, and user-friendly in everyday computing tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49119274" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://marbleos.com/demo" target="_blank">https://marbleos.com/demo</a></div></div></div>
+
+        <footer>
+            <p>July 31, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

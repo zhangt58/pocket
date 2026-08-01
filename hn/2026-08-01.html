@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>August 01, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://weeraman.com/the-prototype-isnt-the-product/" target="_blank">AI doesn't generate working products, that's still your job</a></h2><div class="meta"><span class="score">⭐ 102</span><span class="comments">💬 87</span><span class="by">👤 smckk</span></div><div class="summary"><p>The author argues that AI-generated prototypes are not finished products. Building working software requires human judgment, architectural decisions, and iterative refinement that go far beyond what AI can produce automatically.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49132130" target="_blank">HN Discussion (87)</a></div><div class="source">🔗 <a href="https://weeraman.com/the-prototype-isnt-the-product/" target="_blank">https://weeraman.com/the-prototype-isnt-the-product/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://john.fun/elevators" target="_blank">Elevators</a></h2><div class="meta"><span class="score">⭐ 1328</span><span class="comments">💬 326</span><span class="by">👤 Jrh0203</span></div><div class="summary"><p>An interactive exploration of elevator technology, from basic mechanics to the engineering challenges of vertical transportation in skyscrapers. The article examines how elevators evolved from simple lifts to the sophisticated systems that enable modern cities.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49124218" target="_blank">HN Discussion (326)</a></div><div class="source">🔗 <a href="https://john.fun/elevators" target="_blank">https://john.fun/elevators</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://ramen.haus/" target="_blank">RamenHaus</a></h2><div class="meta"><span class="score">⭐ 92</span><span class="comments">💬 46</span><span class="by">👤 oler</span></div><div class="summary"><p>A web application for creating and customizing ramen recipes. Users can explore different styles, ingredients, and techniques for making ramen at home.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49132460" target="_blank">HN Discussion (46)</a></div><div class="source">🔗 <a href="https://ramen.haus/" target="_blank">https://ramen.haus/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://paulgraham.com/greatwork.html" target="_blank">How to Do Great Work</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 8</span><span class="by">👤 tosh</span></div><div class="summary"><p>Paul Graham's essay on the principles behind doing exceptional work, drawing from his experience at Y Combinator. It covers finding the right problems, working with high-standards colleagues, and the conditions that enable breakthrough contributions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49132289" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://paulgraham.com/greatwork.html" target="_blank">https://paulgraham.com/greatwork.html</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://microsoft.github.io/flint-chart/" target="_blank">Flint: A Visualization Language for the AI Era</a></h2><div class="meta"><span class="score">⭐ 131</span><span class="comments">💬 45</span><span class="by">👤 vinhnx</span></div><div class="summary"><p>Flint is a new declarative visualization language from Microsoft Research that uses natural language descriptions instead of manual chart configuration. It aims to simplify data visualization by letting users describe what they want to see in plain language.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49130604" target="_blank">HN Discussion (45)</a></div><div class="source">🔗 <a href="https://microsoft.github.io/flint-chart/" target="_blank">https://microsoft.github.io/flint-chart/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/yc-software/qm" target="_blank">qm – Multiplayer agent harness for work</a></h2><div class="meta"><span class="score">⭐ 583</span><span class="comments">💬 119</span><span class="by">👤 tosh</span></div><div class="summary"><p>qm is an open-source tool from Y Combinator for building multiplayer agent systems where multiple AI agents collaborate on tasks. It provides a framework for managing concurrent agents with shared context and coordinated workflows.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49126604" target="_blank">HN Discussion (119)</a></div><div class="source">🔗 <a href="https://github.com/yc-software/qm" target="_blank">https://github.com/yc-software/qm</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/rails/solid_queue/releases/tag/v1.6.0" target="_blank">Solid Queue 1.6.0 now supports fiber workers</a></h2><div class="meta"><span class="score">⭐ 16</span><span class="comments">💬 1</span><span class="by">👤 earcar</span></div><div class="summary"><p>Solid Queue 1.6.0 introduces fiber workers as a new concurrency model for background job processing in Rails applications. Fiber-based workers offer more granular concurrency control compared to traditional thread-based approaches.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49132083" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://github.com/rails/solid_queue/releases/tag/v1.6.0" target="_blank">https://github.com/rails/solid_queue/releases/tag/v1.6.0</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.raptitude.com/2026/07/how-to-exist/" target="_blank">How to Exist</a></h2><div class="meta"><span class="score">⭐ 219</span><span class="comments">💬 120</span><span class="by">👤 walterbell</span></div><div class="summary"><p>An exploration of how to navigate modern life with intention and authenticity. The essay discusses strategies for maintaining personal identity, managing attention, and finding meaning in an increasingly complex and demanding world.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49129990" target="_blank">HN Discussion (120)</a></div><div class="source">🔗 <a href="https://www.raptitude.com/2026/07/how-to-exist/" target="_blank">https://www.raptitude.com/2026/07/how-to-exist/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system" target="_blank">The development pipeline is a production system</a></h2><div class="meta"><span class="score">⭐ 90</span><span class="comments">💬 38</span><span class="by">👤 firefoxd</span></div><div class="summary"><p>The author argues that development pipelines — CI/CD, testing infrastructure, deployment systems — should be treated with the same reliability engineering rigor as production systems. When pipelines are fragile, they become bottlenecks that slow down delivery and undermine confidence in releases.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49130726" target="_blank">HN Discussion (38)</a></div><div class="source">🔗 <a href="https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system" target="_blank">https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-s...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.ajwaxman.com/writing/software-for-one" target="_blank">Software for One</a></h2><div class="meta"><span class="score">⭐ 124</span><span class="comments">💬 104</span><span class="by">👤 awaxman11</span></div><div class="summary"><p>The case for building software designed for a single user rather than starting with multi-user features. The author argues that many products become bloated by trying to serve everyone, and that focusing deeply on one user's workflow often produces better results.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49096605" target="_blank">HN Discussion (104)</a></div><div class="source">🔗 <a href="https://www.ajwaxman.com/writing/software-for-one" target="_blank">https://www.ajwaxman.com/writing/software-for-one</a></div></div></div>
+
+        <footer>
+            <p>August 01, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

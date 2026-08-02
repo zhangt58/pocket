@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-02</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://publicdomainreview.org/essay/ars-notoria/" target="_blank">Artificial Intelligence: Ars Notoria and the Promise of Instant Knowledge</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 1</span><span class="by">👤 jruohonen</span></div><div class="summary"><p>This post likely explores how modern artificial intelligence mirrors historical occult texts like the Ars Notoria by offering rapid access to information, examining the philosophical and practical implications of relying on instant answers. It probably questions whether AI's ability to generate immediate knowledge enhances learning or undermines deep understanding and critical thinking.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49143001" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://publicdomainreview.org/essay/ars-notoria/" target="_blank">https://publicdomainreview.org/essay/ars-notoria/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://getbor.dev/blog/2026-08-02-bor-v080-release/" target="_blank">Show HN: Bor – Open-source policy management for Linux desktops</a></h2><div class="meta"><span class="score">⭐ 22</span><span class="comments">💬 1</span><span class="by">👤 eniac111</span></div><div class="summary"><p>This post showcases Bor, an open-source project designed to centralize and enforce system policies on Linux desktop environments. It likely provides administrators and power users with tools to manage security rules, restrict application access, and maintain consistent workstation configurations through a transparent, community-driven codebase.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49142569" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://getbor.dev/blog/2026-08-02-bor-v080-release/" target="_blank">https://getbor.dev/blog/2026-08-02-bor-v080-release/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://mattsclancy.github.io/2026/07/27/industrial-revolution-growth.html" target="_blank">Is the Industrial Revolution a good precedent for explosive growth today?</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 1</span><span class="by">👤 NewCzech</span></div><div class="summary"><p>This discussion likely examines whether the rapid economic and technological shifts of the Industrial Revolution provide a useful framework for understanding today's accelerated growth in technology and artificial intelligence. It probably invites analysis of historical parallels, potential risks, and how modern innovation cycles differ from past industrial transformations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49143053" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://mattsclancy.github.io/2026/07/27/industrial-revolution-growth.html" target="_blank">https://mattsclancy.github.io/2026/07/27/industrial-revolution-growth.html</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/syncular/syncular" target="_blank">Show HN: Syncular – offline-first SQL sync with TypeScript and Rust cores</a></h2><div class="meta"><span class="score">⭐ 11</span><span class="comments">💬 5</span><span class="by">👤 quambo</span></div><div class="summary"><p>This post introduces Syncular, a developer tool designed for offline-first SQL database synchronization. Built with TypeScript and Rust, it aims to provide reliable data syncing capabilities for applications that need to function seamlessly without constant internet connectivity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49142794" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://github.com/syncular/syncular" target="_blank">https://github.com/syncular/syncular</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://victoriametrics.com/blog/go-1-27/index.html" target="_blank">Go 1.27 Interactive Tour</a></h2><div class="meta"><span class="score">⭐ 234</span><span class="comments">💬 88</span><span class="by">👤 Hixon10</span></div><div class="summary"><p>This post likely shares a link to a browser-based tutorial designed to help developers learn and practice the features of the Go 1.27 programming language release. It provides a hands-on environment for writing and testing code directly in the browser.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49140218" target="_blank">HN Discussion (88)</a></div><div class="source">🔗 <a href="https://victoriametrics.com/blog/go-1-27/index.html" target="_blank">https://victoriametrics.com/blog/go-1-27/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/tom-ilan/cycloidal_gearbox" target="_blank">Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built</a></h2><div class="meta"><span class="score">⭐ 179</span><span class="comments">💬 47</span><span class="by">👤 tomilan</span></div><div class="summary"><p>This Hacker News post features a 15-year-old aspiring engineer showcasing a self-designed and fabricated cycloidal gearbox. The submission likely details the mechanical design, manufacturing process, and technical challenges involved in building this high-precision transmission device at a young age.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49140396" target="_blank">HN Discussion (47)</a></div><div class="source">🔗 <a href="https://github.com/tom-ilan/cycloidal_gearbox" target="_blank">https://github.com/tom-ilan/cycloidal_gearbox</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.openhomefoundation.org/blog/a-big-win-for-android-interoperability/" target="_blank">A big win for Android interoperability</a></h2><div class="meta"><span class="score">⭐ 127</span><span class="comments">💬 41</span><span class="by">👤 soheilpro</span></div><div class="summary"><p>This post likely discusses a recent technical advancement or industry agreement that significantly improves how Android devices, applications, and services communicate across different manufacturers and platforms. It probably covers new standards or APIs designed to reduce ecosystem fragmentation and enable seamless cross-device functionality for developers and users.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49124051" target="_blank">HN Discussion (41)</a></div><div class="source">🔗 <a href="https://www.openhomefoundation.org/blog/a-big-win-for-android-interoperability/" target="_blank">https://www.openhomefoundation.org/blog/a-big-win-for-android-interoperability/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5" target="_blank">Seedance 2.5</a></h2><div class="meta"><span class="score">⭐ 357</span><span class="comments">💬 188</span><span class="by">👤 njaremko</span></div><div class="summary"><p>Seedance 2.5 is likely an updated release of an AI video or animation generation model that introduces improved motion synthesis, higher visual fidelity, and expanded creative controls. The post probably discusses the technical upgrades, new features, and performance benchmarks compared to earlier versions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49138302" target="_blank">HN Discussion (188)</a></div><div class="source">🔗 <a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5" target="_blank">https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-int...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://maze.toys" target="_blank">Maze Toys</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 0</span><span class="by">👤 bookofjoe</span></div><div class="summary"><p>This post likely discusses a collection of maze-themed toys, games, or software projects designed for entertainment and problem-solving. The content may showcase specific products or a developer's work on interactive maze mechanics.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49123984" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://maze.toys" target="_blank">https://maze.toys</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html" target="_blank">MkLinux and the pimped-out Apple Workgroup Server 9150</a></h2><div class="meta"><span class="score">⭐ 59</span><span class="comments">💬 3</span><span class="by">👤 goldenskye</span></div><div class="summary"><p>This post likely explores a retrocomputing project involving the installation and customization of MkLinux, a historical PowerPC Linux distribution, on a heavily modified Apple Workgroup Server 9150. It probably covers hardware upgrades, system configuration, and the technical experience of running this niche operating system on late-1990s enterprise Apple hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49140702" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html" target="_blank">https://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html</a></div></div></div>
+
+        <footer>
+            <p>2026-08-02</p>
+        </footer>
+    </div>
+</body>
+</html>

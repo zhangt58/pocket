@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-03</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/" target="_blank">Prevent cognitive debt by manually retyping LLM-generated code</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 33</span><span class="by">👤 mpweiher</span></div><div class="summary"><p>This post likely argues that copy-pasting AI-generated code leads to long-term maintenance challenges and reduced developer understanding, which the author terms cognitive debt. It proposes manually retyping the output as a deliberate practice to improve code comprehension, retention, and overall software quality.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49153374" target="_blank">HN Discussion (33)</a></div><div class="source">🔗 <a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/" target="_blank">https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-g...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://gruhn.me/blog/2026-08-03/" target="_blank">Don't be a meat proxy</a></h2><div class="meta"><span class="score">⭐ 665</span><span class="comments">💬 291</span><span class="by">👤 ngruhn</span></div><div class="summary"><p>This post likely warns about the cybersecurity risks of having your device or network connection exploited by attackers to route malicious traffic or bypass restrictions. It probably outlines how to identify compromised systems and provides steps to secure your hardware so you do not unknowingly facilitate cybercrime.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49151933" target="_blank">HN Discussion (291)</a></div><div class="source">🔗 <a href="https://gruhn.me/blog/2026-08-03/" target="_blank">https://gruhn.me/blog/2026-08-03/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://qwen.ai/blog?id=qwen3.8" target="_blank">Qwen3.8-Max: A New Bar for Coding and Cowork</a></h2><div class="meta"><span class="score">⭐ 613</span><span class="comments">💬 308</span><span class="by">👤 ai2027</span></div><div class="summary"><p>This post likely covers the release of Qwen3.8-Max, an advanced AI model that reportedly establishes new performance standards for automated coding and collaborative workflow integration. The discussion probably examines its technical upgrades, practical applications for software developers, and how it compares to existing AI coding assistants.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49150470" target="_blank">HN Discussion (308)</a></div><div class="source">🔗 <a href="https://qwen.ai/blog?id=qwen3.8" target="_blank">https://qwen.ai/blog?id=qwen3.8</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/janestreet/bonsai" target="_blank">Bonsai: Janestreet's UI Library</a></h2><div class="meta"><span class="score">⭐ 56</span><span class="comments">💬 13</span><span class="by">👤 KolmogorovComp</span></div><div class="summary"><p>This post introduces Bonsai, a user interface library developed by Jane Street that leverages functional programming principles to build reactive and performant applications. The discussion likely covers its architecture, integration with OCaml or ReScript, and how it compares to existing frontend frameworks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49152842" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://github.com/janestreet/bonsai" target="_blank">https://github.com/janestreet/bonsai</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://senderledger.com/articles/what-dmarc-actually-protects-you-from" target="_blank">What DMARC Protects You From, and What It Does Not</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 4</span><span class="by">👤 adulion</span></div><div class="summary"><p>This post examines the specific security benefits of implementing DMARC, such as preventing email spoofing and domain-based phishing, while clearly outlining its limitations. It likely explains that the protocol does not protect against compromised user accounts, malware delivered through authenticated messages, or threats that fall outside email authentication.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49153361" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://senderledger.com/articles/what-dmarc-actually-protects-you-from" target="_blank">https://senderledger.com/articles/what-dmarc-actually-protects-you-from</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md" target="_blank">Rust project goals: Immobile types and guaranteed destructors</a></h2><div class="meta"><span class="score">⭐ 86</span><span class="comments">💬 19</span><span class="by">👤 paavohtl</span></div><div class="summary"><p>This post likely covers an official Rust language proposal or design document detailing plans to implement immovable types and guarantee reliable destructor execution. These features aim to strengthen memory safety and resource management by preventing unsafe memory relocation and ensuring cleanup code runs predictably in complex scenarios.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49152023" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md" target="_blank">https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html" target="_blank">The true power of regular expressions (2012)</a></h2><div class="meta"><span class="score">⭐ 11</span><span class="comments">💬 2</span><span class="by">👤 uneven9434</span></div><div class="summary"><p>This post likely explores advanced regular expression features and practical use cases, demonstrating how pattern matching can efficiently replace verbose code and solve complex text processing tasks. It probably covers techniques like lookaheads, backreferences, and performance optimization for real-world programming scenarios.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49152973" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html" target="_blank">https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://sf.isopolis.city/" target="_blank">Show HN: Isopolis – Isometric pixel map of SF</a></h2><div class="meta"><span class="score">⭐ 230</span><span class="comments">💬 50</span><span class="by">👤 nuwandavek</span></div><div class="summary"><p>This post showcases Isopolis, a digital project featuring a detailed isometric pixel-art map of San Francisco. The creator is sharing the interactive visualization to gather community feedback and discuss the technical and artistic process behind building the stylized cityscape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49149966" target="_blank">HN Discussion (50)</a></div><div class="source">🔗 <a href="https://sf.isopolis.city/" target="_blank">https://sf.isopolis.city/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://octanejs.dev" target="_blank">Octane – React's programming model, compiled</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 8</span><span class="by">👤 nnx</span></div><div class="summary"><p>This post likely introduces Octane, a new compiler or framework that takes React's familiar component-based architecture and compiles it directly to optimized output. The discussion probably explores how this approach preserves React's developer experience while eliminating runtime overhead and improving performance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49152640" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://octanejs.dev" target="_blank">https://octanejs.dev</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/mohamed--abdel-maksoud/pisiguard" target="_blank">PISIGuard: Protect your personal and sensitive info when you chat with AI</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 5</span><span class="by">👤 mohamed_am83</span></div><div class="summary"><p>This post likely showcases PISIGuard, a privacy tool designed to automatically detect and redact personally identifiable information before users submit prompts to AI chatbots. It addresses growing concerns about data leakage by helping individuals safely interact with large language models without exposing sensitive details.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49153029" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://github.com/mohamed--abdel-maksoud/pisiguard" target="_blank">https://github.com/mohamed--abdel-maksoud/pisiguard</a></div></div></div>
+
+        <footer>
+            <p>2026-08-03</p>
+        </footer>
+    </div>
+</body>
+</html>

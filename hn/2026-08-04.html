@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-04</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES" target="_blank">FFmpeg 9.0</a></h2><div class="meta"><span class="score">⭐ 159</span><span class="comments">💬 22</span><span class="by">👤 gyan</span></div><div class="summary"><p>This post likely covers the release of FFmpeg 9.0, a major update to the widely used open-source multimedia framework. It probably details new codec support, performance optimizations, API changes, and other technical improvements that developers and content creators can expect in this version.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49166202" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES" target="_blank">https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/ryanzhou/deepseek-v4-flash-mi300x" target="_blank">DeepSeek V4 Flash on a Single AMD MI300X</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 4</span><span class="by">👤 zhoutong</span></div><div class="summary"><p>This post likely shares technical benchmarks and configuration details for running the optimized DeepSeek V4 Flash AI model on a single AMD MI300X GPU. It probably covers inference performance, memory management, and software optimizations to demonstrate the hardware's capability for efficient large language model deployment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49166386" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://github.com/ryanzhou/deepseek-v4-flash-mi300x" target="_blank">https://github.com/ryanzhou/deepseek-v4-flash-mi300x</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.seangoedecke.com/llms-reward-expertise/" target="_blank">LLMs reward expertise</a></h2><div class="meta"><span class="score">⭐ 992</span><span class="comments">💬 418</span><span class="by">👤 MaxMussio</span></div><div class="summary"><p>This discussion likely examines how large language models produce higher quality outputs and solve complex problems more effectively when guided by users with deep domain knowledge. It probably highlights research or practical examples showing that AI tools amplify human expertise rather than replace it, making skilled professionals significantly more productive while offering limited value to those without specialized background knowledge.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49161518" target="_blank">HN Discussion (418)</a></div><div class="source">🔗 <a href="https://www.seangoedecke.com/llms-reward-expertise/" target="_blank">https://www.seangoedecke.com/llms-reward-expertise/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://lilianweng.github.io/posts/2026-07-04-harness/" target="_blank">Harness Engineering for Self-Improvement</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 8</span><span class="by">👤 tosh</span></div><div class="summary"><p>This post likely explores how applying engineering principles like iterative design, systems thinking, and data-driven feedback loops can optimize personal habits and accelerate self-improvement. It probably offers practical frameworks for treating personal development as a structured, measurable process rather than a vague aspiration.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49164896" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://lilianweng.github.io/posts/2026-07-04-harness/" target="_blank">https://lilianweng.github.io/posts/2026-07-04-harness/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://github.com/leonickson1/Swiftlet" target="_blank">Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone</a></h2><div class="meta"><span class="score">⭐ 197</span><span class="comments">💬 88</span><span class="by">👤 leonickson</span></div><div class="summary"><p>This post showcases a tool or technique that enables users to run large language models locally on consumer hardware, including an 80-billion-parameter Qwen model on a Mac with just 4.3 GB of RAM and a 35-billion-parameter model directly on an iPhone. It highlights recent advances in model compression and on-device AI inference that make running massive AI models feasible on everyday devices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49158333" target="_blank">HN Discussion (88)</a></div><div class="source">🔗 <a href="https://github.com/leonickson1/Swiftlet" target="_blank">https://github.com/leonickson1/Swiftlet</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank">Ten advances in mathematics and theoretical computer science</a></h2><div class="meta"><span class="score">⭐ 546</span><span class="comments">💬 838</span><span class="by">👤 milkshakes</span></div><div class="summary"><p>This post likely presents a curated list of ten major breakthroughs in mathematics and theoretical computer science, highlighting key discoveries that have significantly influenced modern research. It probably examines how these developments bridge both fields and advance our understanding of computational theory and mathematical foundations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49157930" target="_blank">HN Discussion (838)</a></div><div class="source">🔗 <a href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank">https://openai.com/index/ten-advances-in-mathematics/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://blog.exe.dev/devtools-must-be-open-source" target="_blank">Devtools must be open source</a></h2><div class="meta"><span class="score">⭐ 624</span><span class="comments">💬 206</span><span class="by">👤 bryanmikaelian</span></div><div class="summary"><p>This post argues that developer tools should be released as open source to ensure transparency, foster community collaboration, and prevent vendor lock-in. It likely explores the technical, ethical, and economic reasons why open-sourcing devtools benefits both individual developers and the broader software ecosystem.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49156111" target="_blank">HN Discussion (206)</a></div><div class="source">🔗 <a href="https://blog.exe.dev/devtools-must-be-open-source" target="_blank">https://blog.exe.dev/devtools-must-be-open-source</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.science.org/content/article/odd-shapes-hidden-dense-amazon-rainforest-reveal-sprawling-ancient-civilization" target="_blank">Amazonian civilization had estimated 3M people in 3% of forest area</a></h2><div class="meta"><span class="score">⭐ 159</span><span class="comments">💬 134</span><span class="by">👤 marojejian</span></div><div class="summary"><p>This post likely discusses archaeological findings indicating that pre-Columbian societies in the Amazon supported a population of roughly three million people, concentrated within just three percent of the rainforest. The discussion probably covers how this challenges previous assumptions about the region's historical carrying capacity and indigenous land management practices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49099336" target="_blank">HN Discussion (134)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/odd-shapes-hidden-dense-amazon-rainforest-reveal-sprawling-ancient-civilization" target="_blank">https://www.science.org/content/article/odd-shapes-hidden-dense-amazon-rainfo...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.nytimes.com/2026/07/31/world/americas/amazon-archaeology-geoglyphs.html" target="_blank">Archaeologists Find Ancient Glyphs in the Amazon</a></h2><div class="meta"><span class="score">⭐ 9</span><span class="comments">💬 5</span><span class="by">👤 wglb</span></div><div class="summary"><p>This post likely covers a recent archaeological discovery of ancient carved symbols in the Amazon basin, offering new insights into the region's pre-Columbian civilizations and indigenous history. The discussion may explore how these findings challenge previous assumptions about the complexity and population density of ancient rainforest societies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49135005" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://www.nytimes.com/2026/07/31/world/americas/amazon-archaeology-geoglyphs.html" target="_blank">https://www.nytimes.com/2026/07/31/world/americas/amazon-archaeology-geoglyph...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://pedroth.github.io/?p=post/NoNeedReact" target="_blank">You don't need React: creating a minimal UI library in Vanilla JavaScript</a></h2><div class="meta"><span class="score">⭐ 53</span><span class="comments">💬 42</span><span class="by">👤 pedro_movai</span></div><div class="summary"><p>This post likely explores how modern vanilla JavaScript eliminates the need for heavy frontend frameworks like React by walking through the creation of a lightweight, custom UI library. It probably covers core concepts like state management, component rendering, and DOM manipulation using only standard browser APIs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49165665" target="_blank">HN Discussion (42)</a></div><div class="source">🔗 <a href="https://pedroth.github.io/?p=post/NoNeedReact" target="_blank">https://pedroth.github.io/?p=post/NoNeedReact</a></div></div></div>
+
+        <footer>
+            <p>2026-08-04</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-05</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://calpaterson.com/helsinki-hn.html" target="_blank">Helsinki Hacker News Meetup</a></h2><div class="meta"><span class="score">⭐ 65</span><span class="comments">💬 28</span><span class="by">👤 calpaterson</span></div><div class="summary"><p>This post likely announces an in-person gathering for the Hacker News community in Helsinki, providing details on the event's location, schedule, and opportunities for local tech enthusiasts to network and discuss industry topics.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49180407" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://calpaterson.com/helsinki-hn.html" target="_blank">https://calpaterson.com/helsinki-hn.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/" target="_blank">Stateless MCP has recaptured my interest</a></h2><div class="meta"><span class="score">⭐ 241</span><span class="comments">💬 125</span><span class="by">👤 tosh</span></div><div class="summary"><p>This post likely explores how a stateless implementation of the Model Context Protocol has renewed the author's enthusiasm for the standard, emphasizing its architectural advantages for scalable AI tool integration. The discussion probably covers how eliminating session state simplifies deployment and improves reliability for modern AI applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49131438" target="_blank">HN Discussion (125)</a></div><div class="source">🔗 <a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/" target="_blank">https://simonwillison.net/2026/Jul/31/stateless-mcp/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://unsung.aresluna.org/gravity-is-worth-asking-about/" target="_blank">“Gravity is worth asking about”</a></h2><div class="meta"><span class="score">⭐ 104</span><span class="comments">💬 60</span><span class="by">👤 nozzlegear</span></div><div class="summary"><p>This post likely features an article or discussion exploring why gravity remains one of physics' greatest unsolved mysteries and why continued scientific inquiry into its fundamental nature is essential. It probably examines current theoretical gaps, experimental challenges, or philosophical perspectives on how gravity interacts with other forces in the universe.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49105978" target="_blank">HN Discussion (60)</a></div><div class="source">🔗 <a href="https://unsung.aresluna.org/gravity-is-worth-asking-about/" target="_blank">https://unsung.aresluna.org/gravity-is-worth-asking-about/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://earendil.com/posts/pi-autoresearch-and-databricks/" target="_blank">Pi's Minimalism Is Its Advantage</a></h2><div class="meta"><span class="score">⭐ 388</span><span class="comments">💬 173</span><span class="by">👤 luispa</span></div><div class="summary"><p>This post likely examines how the Raspberry Pi's deliberately simple hardware architecture and streamlined software ecosystem deliver practical benefits over more complex computing platforms. It probably argues that this minimalist design philosophy improves system reliability, reduces development friction, and makes the board more accessible for hobbyists and embedded engineers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49176038" target="_blank">HN Discussion (173)</a></div><div class="source">🔗 <a href="https://earendil.com/posts/pi-autoresearch-and-databricks/" target="_blank">https://earendil.com/posts/pi-autoresearch-and-databricks/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://mistral.ai/news/shieldstral/" target="_blank">Mistral's Shieldstral: 3B open-weights model for multimodal moderation</a></h2><div class="meta"><span class="score">⭐ 433</span><span class="comments">💬 111</span><span class="by">👤 riadsila</span></div><div class="summary"><p>This post likely covers Mistral AI's release of Shieldstral, a 3-billion-parameter open-weights model designed to automatically moderate content across text, images, and video. The discussion probably explores its technical architecture, performance benchmarks, and how it advances open-source AI safety and content filtering.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49171268" target="_blank">HN Discussion (111)</a></div><div class="source">🔗 <a href="https://mistral.ai/news/shieldstral/" target="_blank">https://mistral.ai/news/shieldstral/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://toneyalexander.github.io/inclusive-color-space/" target="_blank">Show HN: Simple algorithm and color space to generate diverse skin tones</a></h2><div class="meta"><span class="score">⭐ 543</span><span class="comments">💬 93</span><span class="by">👤 automatoney</span></div><div class="summary"><p>This post introduces a lightweight computational method and custom color model designed to generate a wide range of realistic human skin tones. The author is likely sharing the underlying algorithm and implementation details for developers working on graphics, character design, or inclusive digital tools.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49170165" target="_blank">HN Discussion (93)</a></div><div class="source">🔗 <a href="https://toneyalexander.github.io/inclusive-color-space/" target="_blank">https://toneyalexander.github.io/inclusive-color-space/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2607.29377" target="_blank">Zero-Mem: Zero-Token Memory Operations for LLM Agents</a></h2><div class="meta"><span class="score">⭐ 49</span><span class="comments">💬 10</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>This post likely introduces a new framework or research paper that enables AI agents to store and retrieve memory without consuming any tokens in the LLM's context window. The approach aims to bypass traditional context limits while providing efficient long-term memory management for autonomous language model agents.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49178608" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2607.29377" target="_blank">https://arxiv.org/abs/2607.29377</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html" target="_blank">The Pneumatics of Hero of Alexandria (1851)</a></h2><div class="meta"><span class="score">⭐ 34</span><span class="comments">💬 2</span><span class="by">👤 gregsadetsky</span></div><div class="summary"><p>This post likely shares a digitized 1851 edition of Hero of Alexandria's ancient treatise on pneumatics, which documents early mechanical devices powered by air pressure, steam, and hydraulics. The text offers historical insight into foundational engineering concepts that influenced later developments in fluid dynamics and automation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49124273" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html" target="_blank">https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/" target="_blank">IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay</a></h2><div class="meta"><span class="score">⭐ 121</span><span class="comments">💬 17</span><span class="by">👤 lapcat</span></div><div class="summary"><p>This post discusses a security vulnerability in the WebKit browser engine that allows real IP addresses and DNS queries to bypass proxy configurations and Apple's iCloud Private Relay. The discussion likely covers the technical mechanisms behind the leak, its implications for user privacy, and potential workarounds or fixes for affected browsers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49176697" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/" target="_blank">https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://hannahilea.com/blog/birduino/" target="_blank">Birduino: A card-triggered audio player for [learning] the birds</a></h2><div class="meta"><span class="score">⭐ 5</span><span class="comments">💬 0</span><span class="by">👤 austinallegro</span></div><div class="summary"><p>This post likely showcases a DIY Arduino-based project that uses RFID or NFC cards to trigger audio recordings of bird songs. The device serves as an interactive educational tool designed to help users learn and identify different bird species by scanning cards to hear their corresponding calls.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49113523" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://hannahilea.com/blog/birduino/" target="_blank">https://hannahilea.com/blog/birduino/</a></div></div></div>
+
+        <footer>
+            <p>2026-08-05</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-06</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.crimepaysbutbotanydoesnt.com/reading-list" target="_blank">Crime Pays but Botany Doesn't</a></h2><div class="meta"><span class="score">⭐ 248</span><span class="comments">💬 98</span><span class="by">👤 DarkContinent</span></div><div class="summary"><p>This post likely explores the stark financial contrast between lucrative illegal activities and the often underfunded, low-paying reality of pursuing a career in botany. It probably examines the economic challenges facing plant scientists and advocates for better recognition and funding for botanical research.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49192566" target="_blank">HN Discussion (98)</a></div><div class="source">🔗 <a href="https://www.crimepaysbutbotanydoesnt.com/reading-list" target="_blank">https://www.crimepaysbutbotanydoesnt.com/reading-list</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://phoboslab.org/log/2026/08/xibalba64-making-of" target="_blank">How to Make a Nintendo 64 Game in 2026</a></h2><div class="meta"><span class="score">⭐ 109</span><span class="comments">💬 32</span><span class="by">👤 atan2</span></div><div class="summary"><p>This post likely outlines modern development tools, software workflows, and community resources that enable creators to build authentic Nintendo 64 games using 2026 technology. It probably covers updated compilers, emulator-based testing, and hardware flashing methods to bridge retro console development with contemporary programming practices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49168622" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://phoboslab.org/log/2026/08/xibalba64-making-of" target="_blank">https://phoboslab.org/log/2026/08/xibalba64-making-of</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.discoveryloop.com/" target="_blank">Discovery Loop</a></h2><div class="meta"><span class="score">⭐ 768</span><span class="comments">💬 482</span><span class="by">👤 xtreak29</span></div><div class="summary"><p>This post likely examines how digital platforms use algorithmic recommendation systems and user engagement metrics to create continuous feedback cycles that drive content consumption. It probably covers the design strategies, technical architecture, and potential ethical concerns behind these self-reinforcing discovery mechanisms commonly found in social media and streaming services.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49184960" target="_blank">HN Discussion (482)</a></div><div class="source">🔗 <a href="https://www.discoveryloop.com/" target="_blank">https://www.discoveryloop.com/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://blog.gingerbeardman.com/2026/08/06/lets-all-meet-up-in-the-y2k/" target="_blank">Let's all meet up in the Y2K</a></h2><div class="meta"><span class="score">⭐ 58</span><span class="comments">💬 24</span><span class="by">👤 msephton</span></div><div class="summary"><p>This post likely invites the community to a gathering or discussion centered on Y2K nostalgia, retro computing, and early internet culture. It probably encourages readers to share memories, projects, or events related to the turn of the millennium and its lasting technological and aesthetic influence.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49193314" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://blog.gingerbeardman.com/2026/08/06/lets-all-meet-up-in-the-y2k/" target="_blank">https://blog.gingerbeardman.com/2026/08/06/lets-all-meet-up-in-the-y2k/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/" target="_blank">Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs</a></h2><div class="meta"><span class="score">⭐ 672</span><span class="comments">💬 729</span><span class="by">👤 colesantiago</span></div><div class="summary"><p>Google DeepMind is undergoing leadership changes as Demis Hassabis transitions from CEO to Chair and Jeff Dean departs from the company.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49184755" target="_blank">HN Discussion (729)</a></div><div class="source">🔗 <a href="https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/" target="_blank">https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-mo...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://en.wikipedia.org/wiki/Pareto_front" target="_blank">Pareto Front</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 1</span><span class="by">👤 binyu</span></div><div class="summary"><p>This post likely explores the concept of the Pareto front in multi-objective optimization, explaining how it identifies the best possible trade-offs between competing goals in fields like engineering, economics, and software development. It may also cover practical applications or computational methods used to calculate and visualize these optimal solution sets.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49096439" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://en.wikipedia.org/wiki/Pareto_front" target="_blank">https://en.wikipedia.org/wiki/Pareto_front</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://zed.dev/deltadb" target="_blank">Zed DeltaDB</a></h2><div class="meta"><span class="score">⭐ 442</span><span class="comments">💬 232</span><span class="by">👤 ahamez</span></div><div class="summary"><p>This post likely covers DeltaDB, a new database or data storage engine developed by the team behind the Zed code editor, detailing its architecture and performance characteristics. The discussion probably focuses on how the system handles incremental data updates, synchronization, or developer tooling integrations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49187256" target="_blank">HN Discussion (232)</a></div><div class="source">🔗 <a href="https://zed.dev/deltadb" target="_blank">https://zed.dev/deltadb</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://buttondown.com/blog/what-i-love-about-django" target="_blank">What I love about Django</a></h2><div class="meta"><span class="score">⭐ 72</span><span class="comments">💬 48</span><span class="by">👤 j4mie</span></div><div class="summary"><p>This post likely shares a developer's personal perspective on the standout features and strengths of the Django web framework, highlighting why it remains a preferred choice for building Python-based applications. The author probably discusses aspects like its robust ORM, built-in admin panel, security features, or overall developer experience.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49193673" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://buttondown.com/blog/what-i-love-about-django" target="_blank">https://buttondown.com/blog/what-i-love-about-django</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://randsinrepose.com/archives/blade-runner-title-cards/" target="_blank">The title cards in Blade Runner are amazing</a></h2><div class="meta"><span class="score">⭐ 288</span><span class="comments">💬 139</span><span class="by">👤 ExMachina73</span></div><div class="summary"><p>This post likely explores the distinctive typography and design of the opening and interstitial title cards in Ridley Scott's 1982 film Blade Runner. It probably highlights how their minimalist, retro-futuristic aesthetic perfectly complements the movie's cyberpunk atmosphere and has influenced modern cinematic design.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49189287" target="_blank">HN Discussion (139)</a></div><div class="source">🔗 <a href="https://randsinrepose.com/archives/blade-runner-title-cards/" target="_blank">https://randsinrepose.com/archives/blade-runner-title-cards/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2" target="_blank">Muse Code and Muse Spark 1.2</a></h2><div class="meta"><span class="score">⭐ 265</span><span class="comments">💬 166</span><span class="by">👤 paulkrush</span></div><div class="summary"><p>This post likely covers the release of version 1.2 for the Muse Code and Muse Spark educational electronics kits, detailing new features, performance improvements, or updated coding tools designed to help beginners learn programming and hardware integration.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49187575" target="_blank">HN Discussion (166)</a></div><div class="source">🔗 <a href="https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2" target="_blank">https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2</a></div></div></div>
+
+        <footer>
+            <p>2026-08-06</p>
+        </footer>
+    </div>
+</body>
+</html>

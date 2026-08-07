@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-07</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/c1e1vg0gjl5o" target="_blank">US strikes $1.2B deal to pay German firm to halt offshore wind projects</a></h2><div class="meta"><span class="score">⭐ 34</span><span class="comments">💬 11</span><span class="by">👤 defrost</span></div><div class="summary"><p>The United States government has agreed to a $1.2 billion payment to a German energy company in exchange for canceling or pausing its offshore wind development projects. This agreement likely signals a broader policy reversal on renewable energy initiatives and compensates the firm for sunk costs and terminated contracts.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49208314" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/c1e1vg0gjl5o" target="_blank">https://www.bbc.com/news/articles/c1e1vg0gjl5o</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta" target="_blank">New Mexico court orders Meta to pay $567m over harms to children’s mental health</a></h2><div class="meta"><span class="score">⭐ 329</span><span class="comments">💬 212</span><span class="by">👤 boplicity</span></div><div class="summary"><p>A New Mexico court has ordered Meta to pay $567 million in damages, ruling that the company's social media platforms caused significant harm to the mental health of children. This decision underscores increasing legal and regulatory pressure on tech giants to address the safety of young users on their platforms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49204352" target="_blank">HN Discussion (212)</a></div><div class="source">🔗 <a href="https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta" target="_blank">https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344" target="_blank">AMD acquires Taalas to boost inference performance by etching models in silicon</a></h2><div class="meta"><span class="score">⭐ 698</span><span class="comments">💬 528</span><span class="by">👤 itvision</span></div><div class="summary"><p>This post likely discusses AMD's acquisition of Taalas, a company that develops custom silicon designed to physically embed AI models directly into chips. The acquisition aims to dramatically improve AI inference speed and efficiency by eliminating the computational overhead associated with traditional software-based model execution.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49201970" target="_blank">HN Discussion (528)</a></div><div class="source">🔗 <a href="https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344" target="_blank">https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-t...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://bkaradzic.github.io/posts/scanner/" target="_blank">Parsers don't have to be complicated</a></h2><div class="meta"><span class="score">⭐ 46</span><span class="comments">💬 32</span><span class="by">👤 signa11</span></div><div class="summary"><p>This post likely explores accessible techniques and modern tools that simplify building parsers, challenging the common perception that they require complex algorithms or extensive boilerplate. It probably provides practical examples or frameworks to make parsing approachable for developers of all experience levels.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49095943" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://bkaradzic.github.io/posts/scanner/" target="_blank">https://bkaradzic.github.io/posts/scanner/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.coinbase.com/blog/interviewing-engineers-in-the-ai-era-lessons-from-a-year-of-rebuilding" target="_blank">Interviewing Engineers in the AI Era: Lessons from a Year of Rebuilding</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 4</span><span class="by">👤 dukebartnik</span></div><div class="summary"><p>This post likely shares practical insights on how artificial intelligence is transforming technical hiring, drawing on a year-long effort to redesign an engineering interview process. It probably covers updated evaluation methods, new challenges posed by AI coding assistants, and actionable strategies for assessing candidate skills in a rapidly evolving landscape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49162299" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.coinbase.com/blog/interviewing-engineers-in-the-ai-era-lessons-from-a-year-of-rebuilding" target="_blank">https://www.coinbase.com/blog/interviewing-engineers-in-the-ai-era-lessons-fr...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://notashelf.dev/posts/taste-is-all-thats-left" target="_blank">Taste Is All That's Left</a></h2><div class="meta"><span class="score">⭐ 448</span><span class="comments">💬 330</span><span class="by">👤 tsak</span></div><div class="summary"><p>This post likely explores how subjective judgment and aesthetic discernment have become the primary differentiators in fields where technical execution and content creation are increasingly automated or commoditized. It probably examines the growing importance of curation, design sense, and editorial taste as the last meaningful human advantages in technology and digital media.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49199346" target="_blank">HN Discussion (330)</a></div><div class="source">🔗 <a href="https://notashelf.dev/posts/taste-is-all-thats-left" target="_blank">https://notashelf.dev/posts/taste-is-all-thats-left</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/" target="_blank">Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun</a></h2><div class="meta"><span class="score">⭐ 239</span><span class="comments">💬 48</span><span class="by">👤 neversaydie</span></div><div class="summary"><p>This post likely covers a recent astrophysical study confirming the presence of Kelvin-Helmholtz instabilities in the solar atmosphere, a fluid dynamics phenomenon where velocity differences between plasma layers generate wave-like structures. The observation offers new insights into how magnetic fields and energy transfer operate in stellar environments.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49184355" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/" target="_blank">https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discov...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.sciencedaily.com/releases/2026/08/260803080917.htm" target="_blank">Bioengineered chewing gum may offer a way to fight HPV and other microbes</a></h2><div class="meta"><span class="score">⭐ 137</span><span class="comments">💬 39</span><span class="by">👤 Audiophilip</span></div><div class="summary"><p>This post likely discusses a novel biomedical approach using genetically modified chewing gum to deliver therapeutic compounds that target human papillomavirus and other harmful microbes. The research could represent a non-invasive, accessible method for preventing or treating infections through routine oral consumption.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49202716" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://www.sciencedaily.com/releases/2026/08/260803080917.htm" target="_blank">https://www.sciencedaily.com/releases/2026/08/260803080917.htm</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work" target="_blank">Atomic Clocks</a></h2><div class="meta"><span class="score">⭐ 76</span><span class="comments">💬 44</span><span class="by">👤 teleforce</span></div><div class="summary"><p>This post likely explores the science and engineering behind atomic clocks, which use precise atomic resonance frequencies to maintain exceptional timekeeping accuracy. It probably discusses their critical role in modern infrastructure like GPS navigation and telecommunications, alongside recent advancements in precision and miniaturization.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49129015" target="_blank">HN Discussion (44)</a></div><div class="source">🔗 <a href="https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work" target="_blank">https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.youtube.com/watch?v=GwMtzhjCzyc" target="_blank">A quine in Piet – a GIF image that prints itself [video]</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 1</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>This post features a video demonstration of a self-reproducing program written in Piet, an esoteric programming language that uses colored image blocks as code. The animated GIF executes to output its own source, effectively functioning as a visual quine.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49156157" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://www.youtube.com/watch?v=GwMtzhjCzyc" target="_blank">https://www.youtube.com/watch?v=GwMtzhjCzyc</a></div></div></div>
+
+        <footer>
+            <p>2026-08-07</p>
+        </footer>
+    </div>
+</body>
+</html>

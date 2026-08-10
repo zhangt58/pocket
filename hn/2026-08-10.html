@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-10</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank">Meta Muse Glimmer – open weights 30B local coding model</a></h2><div class="meta"><span class="score">⭐ 55</span><span class="comments">💬 10</span><span class="by">👤 riordan</span></div><div class="summary"><p>This post likely discusses Meta Muse Glimmer, a newly released 30-billion-parameter AI model designed specifically for coding tasks. With its open weights, developers can download and run the model locally on their own hardware for private, offline programming assistance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49241679" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank">https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.docker.com/products/docker-sandboxes/" target="_blank">Docker Sandboxes – Disposable, isolated sandboxes for AI agents</a></h2><div class="meta"><span class="score">⭐ 243</span><span class="comments">💬 152</span><span class="by">👤 etoxin</span></div><div class="summary"><p>This post likely introduces a tool or framework that leverages Docker to create temporary, secure environments specifically designed for running AI agents. These isolated sandboxes ensure that AI processes execute safely without affecting the host system or compromising data integrity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49239751" target="_blank">HN Discussion (152)</a></div><div class="source">🔗 <a href="https://www.docker.com/products/docker-sandboxes/" target="_blank">https://www.docker.com/products/docker-sandboxes/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://blog.teknogeek.io/posts/what-happened-to-hackerone/" target="_blank">What Happened to HackerOne?</a></h2><div class="meta"><span class="score">⭐ 252</span><span class="comments">💬 120</span><span class="by">👤 hipparchus</span></div><div class="summary"><p>This post likely examines recent controversies, leadership changes, or policy shifts at the bug bounty platform HackerOne and how they have affected its reputation. The discussion probably covers the current state of the service and what these developments mean for security researchers and participating organizations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49238561" target="_blank">HN Discussion (120)</a></div><div class="source">🔗 <a href="https://blog.teknogeek.io/posts/what-happened-to-hackerone/" target="_blank">https://blog.teknogeek.io/posts/what-happened-to-hackerone/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/shinyquagsire23/Klepton" target="_blank">Run Android ARM64 VR APKs on Apple Vision Pro</a></h2><div class="meta"><span class="score">⭐ 92</span><span class="comments">💬 8</span><span class="by">👤 LorenDB</span></div><div class="summary"><p>This post likely explores a technical method or tool for sideloading and executing Android ARM64 virtual reality applications on Apple's Vision Pro headset. It probably details the compatibility workarounds, performance trade-offs, and setup steps required to run Android VR software within Apple's visionOS ecosystem.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49238818" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://github.com/shinyquagsire23/Klepton" target="_blank">https://github.com/shinyquagsire23/Klepton</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://lordgoati.us/blog/tail-call/" target="_blank">Tail-Call Interpreters in Rust – Jimmy Ostler</a></h2><div class="meta"><span class="score">⭐ 22</span><span class="comments">💬 4</span><span class="by">👤 amatheus</span></div><div class="summary"><p>This post examines how to implement tail-call optimization in interpreters written in Rust, detailing strategies to handle recursive calls efficiently and prevent stack overflows. The discussion covers practical implementation techniques and memory-safe design patterns for building performant language runtimes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49209132" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://lordgoati.us/blog/tail-call/" target="_blank">https://lordgoati.us/blog/tail-call/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.whodunnitai.com/" target="_blank">Show HN: Voice driven murder mystery, Interview AI suspects with your voice</a></h2><div class="meta"><span class="score">⭐ 102</span><span class="comments">💬 35</span><span class="by">👤 MrRowTheBoat</span></div><div class="summary"><p>This post showcases an interactive voice-based game where players solve a murder mystery by using their own voice to question AI-generated suspects. The creator is sharing the project on Hacker News to gather community feedback on its real-time voice interaction mechanics and gameplay design.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49238851" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://www.whodunnitai.com/" target="_blank">https://www.whodunnitai.com/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.dsprelated.com/showarticle/40.php" target="_blank">An Interesting Fourier Transform – 1/F Noise</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 13</span><span class="by">👤 q7m</span></div><div class="summary"><p>This post likely explores the mathematical relationship between Fourier transforms and 1/f noise, examining how this ubiquitous signal pattern manifests in the frequency domain. It probably discusses the theoretical foundations, practical applications, or unique spectral characteristics that make 1/f noise a notable subject in signal processing and physics.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49205082" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://www.dsprelated.com/showarticle/40.php" target="_blank">https://www.dsprelated.com/showarticle/40.php</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://senderledger.com/articles/one-email-three-identities-spf-dkim-dmarc" target="_blank">One Email, Three Identities: SPF, DKIM and DMARC Explained</a></h2><div class="meta"><span class="score">⭐ 3</span><span class="comments">💬 0</span><span class="by">👤 adulion</span></div><div class="summary"><p>This post likely provides a technical breakdown of how SPF, DKIM, and DMARC work together to authenticate email senders and prevent spoofing. It explains the distinct roles each protocol plays in verifying domain ownership and securing email delivery.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49241578" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://senderledger.com/articles/one-email-three-identities-spf-dkim-dmarc" target="_blank">https://senderledger.com/articles/one-email-three-identities-spf-dkim-dmarc</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/" target="_blank">How I use LLMs to learn complex topics</a></h2><div class="meta"><span class="score">⭐ 657</span><span class="comments">💬 405</span><span class="by">👤 laurentiurad</span></div><div class="summary"><p>This post likely details a personal workflow for leveraging large language models to break down and master difficult subjects. The author probably shares specific prompting strategies, iterative learning techniques, and practical examples of how AI can accelerate comprehension of advanced material.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49234675" target="_blank">HN Discussion (405)</a></div><div class="source">🔗 <a href="https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/" target="_blank">https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650" target="_blank">Taxi drivers rarely die of Alzheimer's</a></h2><div class="meta"><span class="score">⭐ 300</span><span class="comments">💬 207</span><span class="by">👤 jader201</span></div><div class="summary"><p>This post likely covers a research study or news report examining why taxi drivers show a significantly lower incidence of Alzheimer's disease, attributing the effect to the cognitive benefits of constant spatial navigation and complex route planning. The discussion probably explores how these daily mental demands build cognitive reserve and protect long-term brain health.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49232253" target="_blank">HN Discussion (207)</a></div><div class="source">🔗 <a href="https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650" target="_blank">https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex...</a></div></div></div>
+
+        <footer>
+            <p>2026-08-10</p>
+        </footer>
+    </div>
+</body>
+</html>

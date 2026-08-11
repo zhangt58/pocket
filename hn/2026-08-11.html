@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-11</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls-from-august-11_6756208_7.html" target="_blank">France to ban unsolicited telemarketing calls</a></h2><div class="meta"><span class="score">⭐ 224</span><span class="comments">💬 134</span><span class="by">👤 aziaziazi</span></div><div class="summary"><p>France is implementing new legislation to prohibit unsolicited telemarketing calls, aiming to protect consumers from intrusive sales tactics and reduce spam. The discussion likely covers the specifics of the ban, potential penalties for violators, and how the regulation will impact both consumers and the telemarketing industry.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49254880" target="_blank">HN Discussion (134)</a></div><div class="source">🔗 <a href="https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls-from-august-11_6756208_7.html" target="_blank">https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/antirez/h3.c" target="_blank">H3-metal – Native MiniMax-H3 inference for Apple Silicon</a></h2><div class="meta"><span class="score">⭐ 293</span><span class="comments">💬 62</span><span class="by">👤 swyx</span></div><div class="summary"><p>This post introduces H3-metal, a new library that enables native, hardware-optimized inference of the MiniMax-H3 language model directly on Apple Silicon devices. It likely leverages Apple's Metal framework to deliver faster and more efficient local AI processing for Mac and iPad users.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49252179" target="_blank">HN Discussion (62)</a></div><div class="source">🔗 <a href="https://github.com/antirez/h3.c" target="_blank">https://github.com/antirez/h3.c</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://thewalrus.ca/google-search-is-dying/" target="_blank">As AI eats the web, the internet’s collective memory is disappearing</a></h2><div class="meta"><span class="score">⭐ 332</span><span class="comments">💬 356</span><span class="by">👤 awnird</span></div><div class="summary"><p>This post likely explores how the rapid expansion of AI training and content generation is overwriting or devaluing historical web content, leading to the gradual loss of the internet's diverse digital archives and long-term information preservation. It probably examines the tension between AI's data hunger and the preservation of human-generated online history.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49250836" target="_blank">HN Discussion (356)</a></div><div class="source">🔗 <a href="https://thewalrus.ca/google-search-is-dying/" target="_blank">https://thewalrus.ca/google-search-is-dying/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://thephd.dev/to-save-c-we-must-save-abi-fixing-c-function-abi" target="_blank">To Save C, We Must Save ABI</a></h2><div class="meta"><span class="score">⭐ 58</span><span class="comments">💬 31</span><span class="by">👤 gurjeet</span></div><div class="summary"><p>This post likely argues that preserving a stable and standardized Application Binary Interface is essential for the long-term survival and interoperability of the C programming language. It probably explores how ABI fragmentation threatens C's ecosystem and proposes strategies to maintain binary compatibility across different compilers and platforms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49219679" target="_blank">HN Discussion (31)</a></div><div class="source">🔗 <a href="https://thephd.dev/to-save-c-we-must-save-abi-fixing-c-function-abi" target="_blank">https://thephd.dev/to-save-c-we-must-save-abi-fixing-c-function-abi</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://code.call-cc.org/releases/6.0.0/NEWS" target="_blank">Chicken Scheme 6.0</a></h2><div class="meta"><span class="score">⭐ 201</span><span class="comments">💬 24</span><span class="by">👤 eatonphil</span></div><div class="summary"><p>This post likely announces the release of Chicken Scheme 6.0, a major update to the popular Scheme-to-C compiler. It probably outlines new language features, performance improvements, and migration details for developers using the implementation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49251702" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://code.call-cc.org/releases/6.0.0/NEWS" target="_blank">https://code.call-cc.org/releases/6.0.0/NEWS</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B" target="_blank">LFM2.5 2.6B model competitive with 4x larger models</a></h2><div class="meta"><span class="score">⭐ 86</span><span class="comments">💬 18</span><span class="by">👤 nateb2022</span></div><div class="summary"><p>This post likely covers the LFM2.5 language model, explaining how its 2.6 billion parameter design matches the performance of models four times larger. The discussion probably focuses on the architectural optimizations, training techniques, or benchmark results that drive this efficiency gain in AI model scaling.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49173107" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B" target="_blank">https://huggingface.co/LiquidAI/LFM2.5-2.6B</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://everycube.alen.is/" target="_blank">Show HN: Scroll through all 43252003274489856000 Rubik's Cube states</a></h2><div class="meta"><span class="score">⭐ 204</span><span class="comments">💬 67</span><span class="by">👤 Alen123</span></div><div class="summary"><p>This post showcases a software project that allows users to browse and visualize every possible permutation of a standard Rubik's Cube. The tool provides an interactive way to explore the cube's 43 quintillion unique configurations and is shared on Hacker News for community feedback.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49251179" target="_blank">HN Discussion (67)</a></div><div class="source">🔗 <a href="https://everycube.alen.is/" target="_blank">https://everycube.alen.is/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://cactuscompute.com/needle" target="_blank">Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots</a></h2><div class="meta"><span class="score">⭐ 355</span><span class="comments">💬 134</span><span class="by">👤 HenryNdubuaku</span></div><div class="summary"><p>This post showcases Needle2, an ultra-compact 14-megabyte AI model designed to run autonomously on resource-constrained devices. It enables local, agent-like reasoning and task execution directly on smartphones, wearables, smart home systems, and robots without requiring cloud connectivity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49246804" target="_blank">HN Discussion (134)</a></div><div class="source">🔗 <a href="https://cactuscompute.com/needle" target="_blank">https://cactuscompute.com/needle</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://doi.org/10.1016/j.watres.2026.125866" target="_blank">The Water Footprint of AI</a></h2><div class="meta"><span class="score">⭐ 28</span><span class="comments">💬 27</span><span class="by">👤 MASNeo</span></div><div class="summary"><p>This post likely explores the significant amount of water consumed by AI data centers for cooling servers and training large models. It probably examines the environmental impact of this resource usage and discusses potential mitigation strategies or industry responses.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49254351" target="_blank">HN Discussion (27)</a></div><div class="source">🔗 <a href="https://doi.org/10.1016/j.watres.2026.125866" target="_blank">https://doi.org/10.1016/j.watres.2026.125866</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://rxkids.org/about/" target="_blank">About Rx Kids</a></h2><div class="meta"><span class="score">⭐ 27</span><span class="comments">💬 13</span><span class="by">👤 mooreds</span></div><div class="summary"><p>This post likely introduces Rx Kids, a digital health or pharmacy service designed to streamline prescription management and medication safety for children. It probably outlines the company's mission, core features, and how it aims to simplify pediatric healthcare access for families.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49205441" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://rxkids.org/about/" target="_blank">https://rxkids.org/about/</a></div></div></div>
+
+        <footer>
+            <p>2026-08-11</p>
+        </footer>
+    </div>
+</body>
+</html>

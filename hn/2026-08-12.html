@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-12</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/" target="_blank">Tim Gowers: What sort of maths are LLMs good at?</a></h2><div class="meta"><span class="score">⭐ 47</span><span class="comments">💬 3</span><span class="by">👤 ColinWright</span></div><div class="summary"><p>This post features mathematician Tim Gowers examining the specific mathematical tasks and reasoning processes that large language models can currently handle effectively. It likely breaks down which areas like symbolic manipulation or basic arithmetic LLMs excel at, while highlighting their ongoing struggles with rigorous proof construction and complex logical deduction.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49270022" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/" target="_blank">https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://woxi.ad-si.com" target="_blank">Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 1</span><span class="by">👤 adius</span></div><div class="summary"><p>This post introduces Woxi, an open-source project that aims to recreate the functionality of Wolfram's proprietary Mathematica software and its associated programming language. The developer is sharing the tool with the Hacker News community for feedback, testing, and collaborative discussion.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49270040" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://woxi.ad-si.com" target="_blank">https://woxi.ad-si.com</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.cringebot3000.com/" target="_blank">LinkedIn CringeBot 3000</a></h2><div class="meta"><span class="score">⭐ 219</span><span class="comments">💬 81</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>This post likely covers a new AI tool or satirical project designed to generate the stereotypical, overly polished corporate jargon commonly found on LinkedIn. It probably sparks discussion about how automated content is reshaping professional networking or highlights the growing absurdity of algorithm-driven social media posts.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49268564" target="_blank">HN Discussion (81)</a></div><div class="source">🔗 <a href="https://www.cringebot3000.com/" target="_blank">https://www.cringebot3000.com/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://spoorkaart.zaza.dev" target="_blank">Dutch Train Map Simulator</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 14</span><span class="by">👤 zazaalaza</span></div><div class="summary"><p>This post likely features an interactive software tool or web application that models the Netherlands railway network, allowing users to visualize train routes, track schedules, and simulate operational dynamics. It probably highlights the technical implementation behind mapping complex transit systems and processing real-time or historical rail data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49269641" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://spoorkaart.zaza.dev" target="_blank">https://spoorkaart.zaza.dev</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.abc.net.au/news/2026-08-06/ragebait-how-facebook-is-paying-controversial-creators/106940696" target="_blank">Facebook is paying controversial creators to produce rage-bait content</a></h2><div class="meta"><span class="score">⭐ 95</span><span class="comments">💬 40</span><span class="by">👤 robtherobber</span></div><div class="summary"><p>This post likely covers reports that Facebook is financially incentivizing polarizing creators to produce highly engaging, emotionally charged content designed to provoke strong reactions and boost platform metrics. The discussion probably examines the ethical implications of this strategy and its broader impact on online discourse and content moderation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49269818" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://www.abc.net.au/news/2026-08-06/ragebait-how-facebook-is-paying-controversial-creators/106940696" target="_blank">https://www.abc.net.au/news/2026-08-06/ragebait-how-facebook-is-paying-contro...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://petapixel.com/2026/08/04/amazing-high-res-photo-shows-a-butte-rising-from-mars/" target="_blank">High-Res Photo Shows Sand-Capped Butte Rising from Mars Plain of Polygons</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 0</span><span class="by">👤 bookofjoe</span></div><div class="summary"><p>This post features a detailed image of a sand-capped butte emerging from a polygon-patterned plain on Mars, likely captured by an orbital camera or rover. The accompanying discussion probably examines the geological mechanisms behind the polygonal ground, such as subsurface ice or thermal contraction, and analyzes how Martian wind and erosion sculpted the butte.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49194856" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://petapixel.com/2026/08/04/amazing-high-res-photo-shows-a-butte-rising-from-mars/" target="_blank">https://petapixel.com/2026/08/04/amazing-high-res-photo-shows-a-butte-rising-...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://aresluna.org/the-hardest-working-font-in-manhattan/" target="_blank">The hardest working font in Manhattan (2025)</a></h2><div class="meta"><span class="score">⭐ 223</span><span class="comments">💬 39</span><span class="by">👤 dcminter</span></div><div class="summary"><p>This post likely discusses a specific typeface that has been widely adopted across New York City's public signage, transit networks, and municipal branding. It probably covers the font's design history, its functional benefits for urban environments, and the reasons behind its dominant presence in the city's visual landscape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49201953" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://aresluna.org/the-hardest-working-font-in-manhattan/" target="_blank">https://aresluna.org/the-hardest-working-font-in-manhattan/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://ngrok.com/blog/compression-is-prediction" target="_blank">Compression is prediction</a></h2><div class="meta"><span class="score">⭐ 548</span><span class="comments">💬 224</span><span class="by">👤 nikolay</span></div><div class="summary"><p>This post likely explores the theoretical connection between data compression and predictive modeling, explaining how accurately forecasting upcoming data enables more efficient file storage. It probably examines how this principle bridges traditional lossless compression algorithms and modern artificial intelligence systems that rely on next-token prediction.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49263497" target="_blank">HN Discussion (224)</a></div><div class="source">🔗 <a href="https://ngrok.com/blog/compression-is-prediction" target="_blank">https://ngrok.com/blog/compression-is-prediction</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://worm.net/" target="_blank">Worms: The Future of Yesterday's Worms Today</a></h2><div class="meta"><span class="score">⭐ 60</span><span class="comments">💬 20</span><span class="by">👤 doener</span></div><div class="summary"><p>This post likely examines how the historical concept of self-replicating computer worms is evolving into modern autonomous software agents and decentralized network systems. It probably explores how these worm-like behaviors are influencing future cybersecurity, artificial intelligence, and distributed computing architectures.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49208693" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://worm.net/" target="_blank">https://worm.net/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://refp.se/articles/your-shell-and-the-lazy-exclamation-mark" target="_blank">A shell exclamation mark is not for yelling. Be lazy</a></h2><div class="meta"><span class="score">⭐ 88</span><span class="comments">💬 35</span><span class="by">👤 refp</span></div><div class="summary"><p>This post explores the technical function of the exclamation mark in Unix shells, explaining how it enables command history expansion and automation rather than serving as punctuation. It encourages developers to leverage these shell features to streamline repetitive terminal tasks and work more efficiently.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49197565" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://refp.se/articles/your-shell-and-the-lazy-exclamation-mark" target="_blank">https://refp.se/articles/your-shell-and-the-lazy-exclamation-mark</a></div></div></div>
+
+        <footer>
+            <p>2026-08-12</p>
+        </footer>
+    </div>
+</body>
+</html>

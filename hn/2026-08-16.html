@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>August 16, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/" target="_blank">Asus Bike Booster</a></h2><div class="meta"><span class="score">⭐ 426</span><span class="comments">💬 276</span><span class="by">👤 wiradikusuma</span></div><div class="summary"><p>Asus Bike Booster is an intelligent device designed to provide cyclists with performance analytics and route optimization. The product uses sensors and AI to monitor riding conditions, offering real-time feedback to improve efficiency and safety for everyday commuters and serious cyclists alike.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49268580" target="_blank">HN Discussion (276)</a></div><div class="source">🔗 <a href="https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/" target="_blank">https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bi...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.nature.com/articles/s41586-026-10857-1" target="_blank">Superconducting monolayer cuprate with a single CuO2 plane</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 3</span><span class="by">👤 sbulaev</span></div><div class="summary"><p>Researchers have created a superconducting monolayer cuprate containing only a single CuO2 plane, published in Nature. This finding advances understanding of how high-temperature superconductivity emerges in the simplest possible cuprate structures, potentially informing future material design.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49277153" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://www.nature.com/articles/s41586-026-10857-1" target="_blank">https://www.nature.com/articles/s41586-026-10857-1</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.anthropic.com/research/multiagent-systems" target="_blank">Patterns and problems in emerging multi-agent systems</a></h2><div class="meta"><span class="score">⭐ 102</span><span class="comments">💬 48</span><span class="by">👤 maxutility</span></div><div class="summary"><p>Anthropic published research examining the patterns and problems that emerge when building multi-agent AI systems. The paper covers coordination challenges, safety considerations, and design patterns for systems where multiple AI agents interact to accomplish complex tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49316271" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/research/multiagent-systems" target="_blank">https://www.anthropic.com/research/multiagent-systems</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://duckdb.org/2026/07/31/asynchronous-io" target="_blank">Asynchronous I/O in DuckDB: Work, Thread, Work</a></h2><div class="meta"><span class="score">⭐ 170</span><span class="comments">💬 19</span><span class="by">👤 pdet</span></div><div class="summary"><p>DuckDB explores asynchronous I/O architectures, examining how work distribution across threads affects database performance. The article covers the trade-offs between synchronous and async approaches for analytics workloads and demonstrates measurable improvements in query throughput.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49243061" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://duckdb.org/2026/07/31/asynchronous-io" target="_blank">https://duckdb.org/2026/07/31/asynchronous-io</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://rhonabwy.com/2026/08/15/software-engineering-fundamentals-matter-more-than-ever/" target="_blank">Software Engineering fundamentals matter more</a></h2><div class="meta"><span class="score">⭐ 163</span><span class="comments">💬 101</span><span class="by">👤 ingve</span></div><div class="summary"><p>An argument that foundational software engineering skills — clean code, architecture, debugging, and system design — have become increasingly important rather than less relevant as tooling improves. The post argues against the notion that AI and automation make fundamentals optional.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49314902" target="_blank">HN Discussion (101)</a></div><div class="source">🔗 <a href="https://rhonabwy.com/2026/08/15/software-engineering-fundamentals-matter-more-than-ever/" target="_blank">https://rhonabwy.com/2026/08/15/software-engineering-fundamentals-matter-more...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432" target="_blank">Semaglutide linked to lower predicted dementia risk</a></h2><div class="meta"><span class="score">⭐ 437</span><span class="comments">💬 306</span><span class="by">👤 randycupertino</span></div><div class="summary"><p>A study published in Alzheimer's & Dementia: Advances & Practice found that semaglutide, a GLP-1 receptor agonist used for diabetes and weight management, is associated with lower predicted risk of dementia. The research adds to growing evidence of potential neuroprotective effects of GLP-1 drugs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49311651" target="_blank">HN Discussion (306)</a></div><div class="source">🔗 <a href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432" target="_blank">https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-to-record-strength-fall-winter-2026-2027-forecast-impact-united-states-canada-europe-fa/" target="_blank">Super El Niño Keeps Growing as New Forecasts Reach Record Territory Ahead Winter</a></h2><div class="meta"><span class="score">⭐ 259</span><span class="comments">💬 156</span><span class="by">👤 dgellow</span></div><div class="summary"><p>New climate forecasts indicate a developing Super El Niño event that could reach record intensity during fall and winter 2026-2027. The analysis covers potential impacts on weather patterns across the United States, Canada, and Europe, with implications for temperature and precipitation extremes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49313428" target="_blank">HN Discussion (156)</a></div><div class="source">🔗 <a href="https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-to-record-strength-fall-winter-2026-2027-forecast-impact-united-states-canada-europe-fa/" target="_blank">https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://littlelearner-ll.github.io/" target="_blank">What happens when an LLM never sees material beyond fifth grade?</a></h2><div class="meta"><span class="score">⭐ 133</span><span class="comments">💬 89</span><span class="by">👤 porridgeraisin</span></div><div class="summary"><p>A research project testing what happens when LLMs are trained exclusively on material at or below a fifth-grade reading level. The project explores how limiting vocabulary and complexity affects model capabilities, reasoning, and general performance across standard benchmarks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49317760" target="_blank">HN Discussion (89)</a></div><div class="source">🔗 <a href="https://littlelearner-ll.github.io/" target="_blank">https://littlelearner-ll.github.io/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.henrikkarlsson.xyz/p/good-ideas" target="_blank">Cultivating a state of mind where new ideas are born (2023)</a></h2><div class="meta"><span class="score">⭐ 183</span><span class="comments">💬 46</span><span class="by">👤 felixbraun</span></div><div class="summary"><p>Henrik Karlsson's essay on cultivating the mental conditions that foster original thinking and creative insight. The piece covers practices like deep work, deliberate isolation from noise, and building the kind of internal state where unexpected connections between ideas naturally emerge.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49314235" target="_blank">HN Discussion (46)</a></div><div class="source">🔗 <a href="https://www.henrikkarlsson.xyz/p/good-ideas" target="_blank">https://www.henrikkarlsson.xyz/p/good-ideas</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/" target="_blank">Guiding Ships with Moire Patterns</a></h2><div class="meta"><span class="score">⭐ 59</span><span class="comments">💬 17</span><span class="by">👤 Eridanus2</span></div><div class="summary"><p>A creative technical project using Moire patterns — the visual interference effect that occurs when two similar patterns overlap — as a navigation system for ships. The approach exploits the natural wave patterns of the ocean surface combined with fixed structures to create navigational guides.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49315995" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/" target="_blank">https://tinkerings.org/2018/03/28/guiding-ships-with-moire-patterns/</a></div></div></div>
+
+        <footer>
+            <p>August 16, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

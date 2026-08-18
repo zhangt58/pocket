@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-18</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/RyanCodrai/turbovec" target="_blank">Turbovec – Google's TurboQuant for vector search in Rust</a></h2><div class="meta"><span class="score">⭐ 42</span><span class="comments">💬 8</span><span class="by">👤 fittingopposite</span></div><div class="summary"><p>A post titled "Turbovec – Google's TurboQuant for vector search in Rust" on Hacker News. Submitted by fittingopposite. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49349898" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://github.com/RyanCodrai/turbovec" target="_blank">https://github.com/RyanCodrai/turbovec</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html" target="_blank">How does IKEA come up with names for its products?</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 26</span><span class="by">👤 NaOH</span></div><div class="summary"><p>A post titled "How does IKEA come up with names for its products?" on Hacker News. Submitted by NaOH. Links to content on ikea.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49349984" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html" target="_blank">https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://philo.gay/linecam/" target="_blank">Using the railway network as a flatbed scanner</a></h2><div class="meta"><span class="score">⭐ 306</span><span class="comments">💬 52</span><span class="by">👤 otherayden</span></div><div class="summary"><p>A post titled "Using the railway network as a flatbed scanner" on Hacker News. Submitted by otherayden. Links to content on philo.gay.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49344825" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://philo.gay/linecam/" target="_blank">https://philo.gay/linecam/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/" target="_blank">Fixing a bricked Framework laptop</a></h2><div class="meta"><span class="score">⭐ 253</span><span class="comments">💬 162</span><span class="by">👤 jp_sc</span></div><div class="summary"><p>A post titled "Fixing a bricked Framework laptop" on Hacker News. Submitted by jp_sc. Links to content on quantum5.ca.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49345220" target="_blank">HN Discussion (162)</a></div><div class="source">🔗 <a href="https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/" target="_blank">https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-la...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://seths.blog/2026/08/the-amazon-tax/" target="_blank">The Amazon tax</a></h2><div class="meta"><span class="score">⭐ 569</span><span class="comments">💬 398</span><span class="by">👤 herbertl</span></div><div class="summary"><p>A post titled "The Amazon tax" on Hacker News. Submitted by herbertl. Links to content on seths.blog.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49345263" target="_blank">HN Discussion (398)</a></div><div class="source">🔗 <a href="https://seths.blog/2026/08/the-amazon-tax/" target="_blank">https://seths.blog/2026/08/the-amazon-tax/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://cursor.com/changelog/origin-code-hosting" target="_blank">Cursor launches Origin, GitHub alternative</a></h2><div class="meta"><span class="score">⭐ 272</span><span class="comments">💬 216</span><span class="by">👤 tomasreimers</span></div><div class="summary"><p>A post titled "Cursor launches Origin, GitHub alternative" on Hacker News. Submitted by tomasreimers. Links to content on cursor.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49334209" target="_blank">HN Discussion (216)</a></div><div class="source">🔗 <a href="https://cursor.com/changelog/origin-code-hosting" target="_blank">https://cursor.com/changelog/origin-code-hosting</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban" target="_blank">Data centers raise nearby temperatures by up to 4 degrees in Phoenix</a></h2><div class="meta"><span class="score">⭐ 148</span><span class="comments">💬 162</span><span class="by">👤 cwwc</span></div><div class="summary"><p>A post titled "Data centers raise nearby temperatures by up to 4 degrees in Phoenix" on Hacker News. Submitted by cwwc. Links to content on asmedigitalcollection.asme.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49349147" target="_blank">HN Discussion (162)</a></div><div class="source">🔗 <a href="https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban" target="_blank">https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/02450...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/" target="_blank">And then the men with guns tell you to do it anyway</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 1</span><span class="by">👤 _djo_</span></div><div class="summary"><p>A post titled "And then the men with guns tell you to do it anyway" on Hacker News. Submitted by _djo_. Links to content on shkspr.mobi.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49348912" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/" target="_blank">https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://pixelcluster.dev/VRAM-Overcommit/" target="_blank">Linux 7.3 improves performance when running out of vRAM</a></h2><div class="meta"><span class="score">⭐ 444</span><span class="comments">💬 199</span><span class="by">👤 flaburgan</span></div><div class="summary"><p>A post titled "Linux 7.3 improves performance when running out of vRAM" on Hacker News. Submitted by flaburgan. Links to content on pixelcluster.dev.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49342719" target="_blank">HN Discussion (199)</a></div><div class="source">🔗 <a href="https://pixelcluster.dev/VRAM-Overcommit/" target="_blank">https://pixelcluster.dev/VRAM-Overcommit/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://arstechnica.com/science/2026/08/weve-flown-a-radiation-blocking-vest-to-the-moon-and-back-and-it-worked/" target="_blank">We've flown a radiation-blocking vest to the Moon and back, and it worked</a></h2><div class="meta"><span class="score">⭐ 33</span><span class="comments">💬 15</span><span class="by">👤 rbanffy</span></div><div class="summary"><p>A post titled "We've flown a radiation-blocking vest to the Moon and back, and it worked" on Hacker News. Submitted by rbanffy. Links to content on arstechnica.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49297150" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://arstechnica.com/science/2026/08/weve-flown-a-radiation-blocking-vest-to-the-moon-and-back-and-it-worked/" target="_blank">https://arstechnica.com/science/2026/08/weve-flown-a-radiation-blocking-vest-...</a></div></div></div>
+
+        <footer>
+            <p>2026-08-18</p>
+        </footer>
+    </div>
+</body>
+</html>

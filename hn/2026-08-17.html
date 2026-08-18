@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-17</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" target="_blank">Qwen 3.8 27B is excellent, but it defaults to overthinking things</a></h2><div class="meta"><span class="score">⭐ 521</span><span class="comments">💬 250</span><span class="by">👤 bilsbie</span></div><div class="summary"><p>This post discusses the Qwen 3.8 27B large language model, highlighting its strong overall capabilities while noting a consistent tendency to overcomplicate responses and engage in unnecessary reasoning. The discussion likely explores how this default behavior impacts practical usage and potential workarounds for users seeking more direct outputs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49324985" target="_blank">HN Discussion (250)</a></div><div class="source">🔗 <a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" target="_blank">https://simonwillison.net/2026/Aug/16/qwen-38-27b/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://twitter.com/DarioAmodei/status/2088758816376807762" target="_blank">On A.I. regulation and messaging</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 133</span><span class="by">👤 jacquesm</span></div><div class="summary"><p>This post likely explores the intersection of artificial intelligence policy and public communication, examining how regulators, tech companies, and advocacy groups frame AI governance to shape legislative outcomes and public perception. It probably discusses the challenges of crafting clear, effective messaging around complex AI regulations while balancing innovation, safety, and societal trust.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49325789" target="_blank">HN Discussion (133)</a></div><div class="source">🔗 <a href="https://twitter.com/DarioAmodei/status/2088758816376807762" target="_blank">https://twitter.com/DarioAmodei/status/2088758816376807762</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://statmodeling.stat.columbia.edu/2026/08/13/we-should-probably-be-doing-more-coverage-of-science-adjacent-medical-scams-like-the-q-collar-and-less-on-repulsively-self-promoting-but-ultimately-less-harmful-academic-grifters/" target="_blank">The continuing "Q collar" scandal</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 3</span><span class="by">👤 luu</span></div><div class="summary"><p>This post likely discusses the ongoing controversy surrounding the Q-collar dog product, which has faced widespread criticism and legal scrutiny following numerous reports of severe injuries and deaths in pets. The thread probably covers consumer backlash, regulatory investigations, and the manufacturer's response to the mounting safety concerns.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49296495" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://statmodeling.stat.columbia.edu/2026/08/13/we-should-probably-be-doing-more-coverage-of-science-adjacent-medical-scams-like-the-q-collar-and-less-on-repulsively-self-promoting-but-ultimately-less-harmful-academic-grifters/" target="_blank">https://statmodeling.stat.columbia.edu/2026/08/13/we-should-probably-be-doing...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://rvembedded.com/blog_post/12/" target="_blank">A third world engineer responds to “RISC-V: They should have known better”</a></h2><div class="meta"><span class="score">⭐ 526</span><span class="comments">💬 272</span><span class="by">👤 Narishma</span></div><div class="summary"><p>This post presents a rebuttal from an engineer in a developing country addressing a critical article that questions the viability of the RISC-V open-source instruction set architecture. The author likely defends the project by emphasizing its accessibility, lower costs, and strategic value for regions that lack access to proprietary chip ecosystems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49321717" target="_blank">HN Discussion (272)</a></div><div class="source">🔗 <a href="https://rvembedded.com/blog_post/12/" target="_blank">https://rvembedded.com/blog_post/12/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing" target="_blank">Anthropic's 'watermark' text adulteration in Claude is a perversion of writing</a></h2><div class="meta"><span class="score">⭐ 308</span><span class="comments">💬 307</span><span class="by">👤 ropbear</span></div><div class="summary"><p>A post titled "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing" on Hacker News. Submitted by ropbear. Links to content on daringfireball.net.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49324087" target="_blank">HN Discussion (307)</a></div><div class="source">🔗 <a href="https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing" target="_blank">https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://reticulum.network/" target="_blank">Reticulum – Decentralized Mesh Network</a></h2><div class="meta"><span class="score">⭐ 134</span><span class="comments">💬 41</span><span class="by">👤 sudo_cowsay</span></div><div class="summary"><p>A post titled "Reticulum – Decentralized Mesh Network" on Hacker News. Submitted by sudo_cowsay. Links to content on reticulum.network.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49325061" target="_blank">HN Discussion (41)</a></div><div class="source">🔗 <a href="https://reticulum.network/" target="_blank">https://reticulum.network/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://platform.claude.com/docs/en/release-notes/system-prompts" target="_blank">Claude: System Prompts</a></h2><div class="meta"><span class="score">⭐ 671</span><span class="comments">💬 257</span><span class="by">👤 tosh</span></div><div class="summary"><p>A post titled "Claude: System Prompts" on Hacker News. Submitted by tosh. Links to content on platform.claude.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49319556" target="_blank">HN Discussion (257)</a></div><div class="source">🔗 <a href="https://platform.claude.com/docs/en/release-notes/system-prompts" target="_blank">https://platform.claude.com/docs/en/release-notes/system-prompts</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://en.wikipedia.org/wiki/Gakutensoku" target="_blank">Gakutensoku</a></h2><div class="meta"><span class="score">⭐ 35</span><span class="comments">💬 3</span><span class="by">👤 benbreen</span></div><div class="summary"><p>A post titled "Gakutensoku" on Hacker News. Submitted by benbreen. Links to content on en.wikipedia.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49288449" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://en.wikipedia.org/wiki/Gakutensoku" target="_blank">https://en.wikipedia.org/wiki/Gakutensoku</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64" target="_blank">AGI-64 Brings Sierra Adventures to the Commodore 64</a></h2><div class="meta"><span class="score">⭐ 89</span><span class="comments">💬 10</span><span class="by">👤 erickhill</span></div><div class="summary"><p>This post likely highlights a new software project or emulator that ports Sierra On-Line's classic Adventure Game Interpreter to the Commodore 64. It probably details the technical challenges of adapting the engine for 8-bit hardware and demonstrates how vintage point-and-click games perform on the retro system.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49325714" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64" target="_blank">https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blog.racket-lang.org/2026/08/rhombus-v1.1.html" target="_blank">Rhombus 1.1 is now available</a></h2><div class="meta"><span class="score">⭐ 90</span><span class="comments">💬 28</span><span class="by">👤 spdegabrielle</span></div><div class="summary"><p>This post announces the release of version 1.1 of Rhombus, likely a developer tool or open-source library, detailing its new features, bug fixes, and performance updates. The discussion will probably include links to the project repository, documentation, and installation instructions for users looking to upgrade or test the latest build.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49325384" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://blog.racket-lang.org/2026/08/rhombus-v1.1.html" target="_blank">https://blog.racket-lang.org/2026/08/rhombus-v1.1.html</a></div></div></div>
+
+        <footer>
+            <p>2026-08-17</p>
+        </footer>
+    </div>
+</body>
+</html>

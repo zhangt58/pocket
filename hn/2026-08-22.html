@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-22</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://rust-glancer.github.io/blog/hello-world/" target="_blank">Rust Glancer: Rust LSP using 100x less RAM</a></h2><div class="meta"><span class="score">⭐ 254</span><span class="comments">💬 54</span><span class="by">👤 matklad</span></div><div class="summary"><p>A post titled "Rust Glancer: Rust LSP using 100x less RAM" on Hacker News. Submitted by matklad. Links to content on rust-glancer.github.io.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49393052" target="_blank">HN Discussion (54)</a></div><div class="source">🔗 <a href="https://rust-glancer.github.io/blog/hello-world/" target="_blank">https://rust-glancer.github.io/blog/hello-world/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.pm.gc.ca/en/news/statements/2026/08/21/statement-prime-minister-carney-canada-us-trade-negotiations" target="_blank">Canada suspends trade negotiations with USA and match tariffs dollar for dollar</a></h2><div class="meta"><span class="score">⭐ 39</span><span class="comments">💬 10</span><span class="by">👤 backlit4034</span></div><div class="summary"><p>A post titled "Canada suspends trade negotiations with USA and match tariffs dollar for dollar" on Hacker News. Submitted by backlit4034. Links to content on pm.gc.ca.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49398304" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://www.pm.gc.ca/en/news/statements/2026/08/21/statement-prime-minister-carney-canada-us-trade-negotiations" target="_blank">https://www.pm.gc.ca/en/news/statements/2026/08/21/statement-prime-minister-c...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.felonybench.com/" target="_blank">Felony Bench</a></h2><div class="meta"><span class="score">⭐ 723</span><span class="comments">💬 279</span><span class="by">👤 colinprince</span></div><div class="summary"><p>A post titled "Felony Bench" on Hacker News. Submitted by colinprince. Links to content on felonybench.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49389430" target="_blank">HN Discussion (279)</a></div><div class="source">🔗 <a href="https://www.felonybench.com/" target="_blank">https://www.felonybench.com/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://bandarlabs.github.io/Cobalt/" target="_blank">Kobo can run apps now</a></h2><div class="meta"><span class="score">⭐ 563</span><span class="comments">💬 190</span><span class="by">👤 thepoet</span></div><div class="summary"><p>A post titled "Kobo can run apps now" on Hacker News. Submitted by thepoet. Links to content on bandarlabs.github.io.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49390427" target="_blank">HN Discussion (190)</a></div><div class="source">🔗 <a href="https://bandarlabs.github.io/Cobalt/" target="_blank">https://bandarlabs.github.io/Cobalt/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.computer.org/csdl/magazine/mi/2021/06/09623402/1yJTvlRLmhi" target="_blank">Z80–The 1970s Microprocessor Still Alive</a></h2><div class="meta"><span class="score">⭐ 9</span><span class="comments">💬 3</span><span class="by">👤 asdefghyk</span></div><div class="summary"><p>A post titled "Z80–The 1970s Microprocessor Still Alive" on Hacker News. Submitted by asdefghyk. Links to content on computer.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49398158" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://www.computer.org/csdl/magazine/mi/2021/06/09623402/1yJTvlRLmhi" target="_blank">https://www.computer.org/csdl/magazine/mi/2021/06/09623402/1yJTvlRLmhi</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html" target="_blank">Felony charges for citizen deleting phone data at US Border</a></h2><div class="meta"><span class="score">⭐ 814</span><span class="comments">💬 945</span><span class="by">👤 floathub</span></div><div class="summary"><p>A post titled "Felony charges for citizen deleting phone data at US Border" on Hacker News. Submitted by floathub. Links to content on nytimes.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49386895" target="_blank">HN Discussion (945)</a></div><div class="source">🔗 <a href="https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html" target="_blank">https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-fe...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://danluu.com/perf-opt/" target="_blank">There's no reason for software to be slow anymore</a></h2><div class="meta"><span class="score">⭐ 432</span><span class="comments">💬 309</span><span class="by">👤 Jach</span></div><div class="summary"><p>A post titled "There's no reason for software to be slow anymore" on Hacker News. Submitted by Jach. Links to content on danluu.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49395628" target="_blank">HN Discussion (309)</a></div><div class="source">🔗 <a href="https://danluu.com/perf-opt/" target="_blank">https://danluu.com/perf-opt/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://munderdiffl.in/" target="_blank">Munder Difflin – Agent harness to run an office of your clones</a></h2><div class="meta"><span class="score">⭐ 3</span><span class="comments">💬 0</span><span class="by">👤 simonpure</span></div><div class="summary"><p>A post titled "Munder Difflin – Agent harness to run an office of your clones" on Hacker News. Submitted by simonpure. Links to content on munderdiffl.in.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49398152" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://munderdiffl.in/" target="_blank">https://munderdiffl.in/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://lina.sh/blog/hijacking-e164-arpa" target="_blank">I accidentally logged hundreds of thousands of phone calls to military bases</a></h2><div class="meta"><span class="score">⭐ 559</span><span class="comments">💬 69</span><span class="by">👤 gavide</span></div><div class="summary"><p>A post titled "I accidentally logged hundreds of thousands of phone calls to military bases" on Hacker News. Submitted by gavide. Links to content on lina.sh.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49387570" target="_blank">HN Discussion (69)</a></div><div class="source">🔗 <a href="https://lina.sh/blog/hijacking-e164-arpa" target="_blank">https://lina.sh/blog/hijacking-e164-arpa</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://kagi.com/changelog#11296" target="_blank">Kagi added a setting for removing paywalled links from search results</a></h2><div class="meta"><span class="score">⭐ 1139</span><span class="comments">💬 366</span><span class="by">👤 speckx</span></div><div class="summary"><p>A post titled "Kagi added a setting for removing paywalled links from search results" on Hacker News. Submitted by speckx. Links to content on kagi.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49388154" target="_blank">HN Discussion (366)</a></div><div class="source">🔗 <a href="https://kagi.com/changelog#11296" target="_blank">https://kagi.com/changelog#11296</a></div></div></div>
+
+        <footer>
+            <p>2026-08-22</p>
+        </footer>
+    </div>
+</body>
+</html>

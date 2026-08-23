@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-23</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.os2museum.com/wp/the-end-of-an-athlon/" target="_blank">The End of an Athlon</a></h2><div class="meta"><span class="score">⭐ 104</span><span class="comments">💬 29</span><span class="by">👤 userbinator</span></div><div class="summary"><p>A post titled "The End of an Athlon" on Hacker News. Submitted by userbinator. Links to content on os2museum.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49406333" target="_blank">HN Discussion (29)</a></div><div class="source">🔗 <a href="https://www.os2museum.com/wp/the-end-of-an-athlon/" target="_blank">https://www.os2museum.com/wp/the-end-of-an-athlon/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://nappertime.com/the-golden-rule-of-becoming-a-better-writer/" target="_blank">To become a better writer, read as much as you can</a></h2><div class="meta"><span class="score">⭐ 174</span><span class="comments">💬 115</span><span class="by">👤 andsoitis</span></div><div class="summary"><p>A post titled "To become a better writer, read as much as you can" on Hacker News. Submitted by andsoitis. Links to content on nappertime.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49405870" target="_blank">HN Discussion (115)</a></div><div class="source">🔗 <a href="https://nappertime.com/the-golden-rule-of-becoming-a-better-writer/" target="_blank">https://nappertime.com/the-golden-rule-of-becoming-a-better-writer/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://malisper.me/jit-compiling-code-in-5-us/" target="_blank">JIT Compiling Code in 5μs</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 37</span><span class="by">👤 zX41ZdbW</span></div><div class="summary"><p>A post titled "JIT Compiling Code in 5μs" on Hacker News. Submitted by zX41ZdbW. Links to content on malisper.me.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49406387" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://malisper.me/jit-compiling-code-in-5-us/" target="_blank">https://malisper.me/jit-compiling-code-in-5-us/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://martypc.net/" target="_blank">MartyPC is a cross-platform emulator of early PCs written in Rust</a></h2><div class="meta"><span class="score">⭐ 123</span><span class="comments">💬 40</span><span class="by">👤 boilerupnc</span></div><div class="summary"><p>A post titled "MartyPC is a cross-platform emulator of early PCs written in Rust" on Hacker News. Submitted by boilerupnc. Links to content on martypc.net.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49405816" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://martypc.net/" target="_blank">https://martypc.net/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://lucumr.pocoo.org/2026/8/22/fast-hard-code/" target="_blank">Fast and Hard Code</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 7</span><span class="by">👤 tosh</span></div><div class="summary"><p>A post titled "Fast and Hard Code" on Hacker News. Submitted by tosh. Links to content on lucumr.pocoo.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49406285" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://lucumr.pocoo.org/2026/8/22/fast-hard-code/" target="_blank">https://lucumr.pocoo.org/2026/8/22/fast-hard-code/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917" target="_blank">Why your local LLM feels dumber than it is</a></h2><div class="meta"><span class="score">⭐ 364</span><span class="comments">💬 135</span><span class="by">👤 felineflock</span></div><div class="summary"><p>A post titled "Why your local LLM feels dumber than it is" on Hacker News. Submitted by felineflock. Links to content on forum.level1techs.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49402232" target="_blank">HN Discussion (135)</a></div><div class="source">🔗 <a href="https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917" target="_blank">https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/25...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://nappertime.com/the-art-of-and-beauty-of-blade-runner/" target="_blank">The Art and Beauty of Blade Runner (2015)</a></h2><div class="meta"><span class="score">⭐ 92</span><span class="comments">💬 36</span><span class="by">👤 cocacola1</span></div><div class="summary"><p>A post titled "The Art and Beauty of Blade Runner (2015)" on Hacker News. Submitted by cocacola1. Links to content on nappertime.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49405331" target="_blank">HN Discussion (36)</a></div><div class="source">🔗 <a href="https://nappertime.com/the-art-of-and-beauty-of-blade-runner/" target="_blank">https://nappertime.com/the-art-of-and-beauty-of-blade-runner/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://twitter.com/moxie/status/2091218652133732491" target="_blank">Scrap (2006)</a></h2><div class="meta"><span class="score">⭐ 376</span><span class="comments">💬 197</span><span class="by">👤 tosh</span></div><div class="summary"><p>A post titled "Scrap (2006)" on Hacker News. Submitted by tosh. Links to content on twitter.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49402189" target="_blank">HN Discussion (197)</a></div><div class="source">🔗 <a href="https://twitter.com/moxie/status/2091218652133732491" target="_blank">https://twitter.com/moxie/status/2091218652133732491</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://quantumi.sh/public/labs.html" target="_blank">ElevenLabs, TwelveLabs, ThirteenLabs</a></h2><div class="meta"><span class="score">⭐ 406</span><span class="comments">💬 122</span><span class="by">👤 jemoka</span></div><div class="summary"><p>A post titled "ElevenLabs, TwelveLabs, ThirteenLabs" on Hacker News. Submitted by jemoka. Links to content on quantumi.sh.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49400408" target="_blank">HN Discussion (122)</a></div><div class="source">🔗 <a href="https://quantumi.sh/public/labs.html" target="_blank">https://quantumi.sh/public/labs.html</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://hister.org/" target="_blank">Hister – A private, full content search index that you control</a></h2><div class="meta"><span class="score">⭐ 365</span><span class="comments">💬 83</span><span class="by">👤 auraham</span></div><div class="summary"><p>A post titled "Hister – A private, full content search index that you control" on Hacker News. Submitted by auraham. Links to content on hister.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49351802" target="_blank">HN Discussion (83)</a></div><div class="source">🔗 <a href="https://hister.org/" target="_blank">https://hister.org/</a></div></div></div>
+
+        <footer>
+            <p>2026-08-23</p>
+        </footer>
+    </div>
+</body>
+</html>

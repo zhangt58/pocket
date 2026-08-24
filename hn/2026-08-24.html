@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-24</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://schlarp.com/posts/everything-i-own-owned/" target="_blank">Everything I own, owned</a></h2><div class="meta"><span class="score">⭐ 981</span><span class="comments">💬 275</span><span class="by">👤 schlarpc</span></div><div class="summary"><p>A post titled "Everything I own, owned" on Hacker News. Submitted by schlarpc. Links to content on schlarp.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49413320" target="_blank">HN Discussion (275)</a></div><div class="source">🔗 <a href="https://schlarp.com/posts/everything-i-own-owned/" target="_blank">https://schlarp.com/posts/everything-i-own-owned/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://twitter.com/paulg/status/2091544343589060625" target="_blank">I were 17, I'd learn how to build LLMs from scratch</a></h2><div class="meta"><span class="score">⭐ 162</span><span class="comments">💬 238</span><span class="by">👤 bilsbie</span></div><div class="summary"><p>A post titled "I were 17, I'd learn how to build LLMs from scratch" on Hacker News. Submitted by bilsbie. Links to content on twitter.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49412396" target="_blank">HN Discussion (238)</a></div><div class="source">🔗 <a href="https://twitter.com/paulg/status/2091544343589060625" target="_blank">https://twitter.com/paulg/status/2091544343589060625</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/" target="_blank">FDA clears blood test to aid evaluation for Alzheimer's disease</a></h2><div class="meta"><span class="score">⭐ 61</span><span class="comments">💬 17</span><span class="by">👤 dabinat</span></div><div class="summary"><p>A post titled "FDA clears blood test to aid evaluation for Alzheimer's disease" on Hacker News. Submitted by dabinat. Links to content on medicine.washu.edu.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49415893" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-alzheimers-disease/" target="_blank">https://medicine.washu.edu/news/fda-clears-blood-test-to-aid-evaluation-for-a...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/thiagotigaz/ocr-it" target="_blank">OCR It – pull text out of un-copyable documents for your LLM</a></h2><div class="meta"><span class="score">⭐ 49</span><span class="comments">💬 11</span><span class="by">👤 thiagolima</span></div><div class="summary"><p>A post titled "OCR It – pull text out of un-copyable documents for your LLM" on Hacker News. Submitted by thiagolima. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49415852" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://github.com/thiagotigaz/ocr-it" target="_blank">https://github.com/thiagotigaz/ocr-it</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245" target="_blank">Anthropic's best AI model struggles to attract users as cheaper tools thrive</a></h2><div class="meta"><span class="score">⭐ 548</span><span class="comments">💬 485</span><span class="by">👤 naves</span></div><div class="summary"><p>A post titled "Anthropic's best AI model struggles to attract users as cheaper tools thrive" on Hacker News. Submitted by naves. Links to content on ft.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49411102" target="_blank">HN Discussion (485)</a></div><div class="source">🔗 <a href="https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245" target="_blank">https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database" target="_blank">Executable Is a SQLite Database</a></h2><div class="meta"><span class="score">⭐ 105</span><span class="comments">💬 14</span><span class="by">👤 setheron</span></div><div class="summary"><p>A post titled "Executable Is a SQLite Database" on Hacker News. Submitted by setheron. Links to content on fzakaria.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49415271" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database" target="_blank">https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/" target="_blank">Fast drilldown dashboards from a single Parquet file</a></h2><div class="meta"><span class="score">⭐ 19</span><span class="comments">💬 0</span><span class="by">👤 v3gas</span></div><div class="summary"><p>A post titled "Fast drilldown dashboards from a single Parquet file" on Hacker News. Submitted by v3gas. Links to content on hamiltonulmer.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49416652" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/" target="_blank">https://www.hamiltonulmer.com/customer-dashboards-r2-hyparquet/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://lalitm.com/post/find-problems-staff-engineer/" target="_blank">How I find problems to solve as a staff engineer</a></h2><div class="meta"><span class="score">⭐ 424</span><span class="comments">💬 132</span><span class="by">👤 vanpra</span></div><div class="summary"><p>A post titled "How I find problems to solve as a staff engineer" on Hacker News. Submitted by vanpra. Links to content on lalitm.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49411643" target="_blank">HN Discussion (132)</a></div><div class="source">🔗 <a href="https://lalitm.com/post/find-problems-staff-engineer/" target="_blank">https://lalitm.com/post/find-problems-staff-engineer/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.modelrepublic.org/articles/a16z-portfolio" target="_blank">Andreessen Horowitz is investing billions into a bleak future</a></h2><div class="meta"><span class="score">⭐ 189</span><span class="comments">💬 60</span><span class="by">👤 reasonableklout</span></div><div class="summary"><p>A post titled "Andreessen Horowitz is investing billions into a bleak future" on Hacker News. Submitted by reasonableklout. Links to content on modelrepublic.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49416055" target="_blank">HN Discussion (60)</a></div><div class="source">🔗 <a href="https://www.modelrepublic.org/articles/a16z-portfolio" target="_blank">https://www.modelrepublic.org/articles/a16z-portfolio</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://pantel.is/projects/ai-gaming-companion/" target="_blank">I built a low-latency AI companion that plays Skyrim with me</a></h2><div class="meta"><span class="score">⭐ 177</span><span class="comments">💬 36</span><span class="by">👤 pantelisk</span></div><div class="summary"><p>A post titled "I built a low-latency AI companion that plays Skyrim with me" on Hacker News. Submitted by pantelisk. Links to content on pantel.is.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49413561" target="_blank">HN Discussion (36)</a></div><div class="source">🔗 <a href="https://pantel.is/projects/ai-gaming-companion/" target="_blank">https://pantel.is/projects/ai-gaming-companion/</a></div></div></div>
+
+        <footer>
+            <p>2026-08-24</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-26</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://openstreetmap.us/news/2026/08/oim-charter-project/" target="_blank">Oldinsurancemaps.net is now a Charter Project</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 4</span><span class="by">👤 altilunium</span></div><div class="summary"><p>A post titled "Oldinsurancemaps.net is now a Charter Project" on Hacker News. Submitted by altilunium. Links to content on openstreetmap.us.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49445873" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://openstreetmap.us/news/2026/08/oim-charter-project/" target="_blank">https://openstreetmap.us/news/2026/08/oim-charter-project/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think" target="_blank">RAG Is Simpler Than You Think</a></h2><div class="meta"><span class="score">⭐ 61</span><span class="comments">💬 30</span><span class="by">👤 j0selit0</span></div><div class="summary"><p>A post titled "RAG Is Simpler Than You Think" on Hacker News. Submitted by j0selit0. Links to content on lighthousenewsletter.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49445727" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think" target="_blank">https://www.lighthousenewsletter.com/p/rag-is-simpler-than-you-think</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://rupertlinacre.com/buslens/" target="_blank">Show HN: Buslens – where can I get to by bus? (UK)</a></h2><div class="meta"><span class="score">⭐ 36</span><span class="comments">💬 22</span><span class="by">👤 RobinL</span></div><div class="summary"><p>A post titled "Show HN: Buslens – where can I get to by bus? (UK)" on Hacker News. Submitted by RobinL. Links to content on rupertlinacre.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49445286" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://rupertlinacre.com/buslens/" target="_blank">https://rupertlinacre.com/buslens/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek" target="_blank">Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights</a></h2><div class="meta"><span class="score">⭐ 52</span><span class="comments">💬 9</span><span class="by">👤 garo-pro</span></div><div class="summary"><p>A post titled "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights" on Hacker News. Submitted by garo-pro. Links to content on bloomberg.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49446422" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek" target="_blank">https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://johan-sjolen.github.io/post/compiler-sympathy/compiler-sympathy/" target="_blank">Value Classes Still Need Compiler Sympathy</a></h2><div class="meta"><span class="score">⭐ 19</span><span class="comments">💬 8</span><span class="by">👤 lichtenberger</span></div><div class="summary"><p>A post titled "Value Classes Still Need Compiler Sympathy" on Hacker News. Submitted by lichtenberger. Links to content on johan-sjolen.github.io.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49445884" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://johan-sjolen.github.io/post/compiler-sympathy/compiler-sympathy/" target="_blank">https://johan-sjolen.github.io/post/compiler-sympathy/compiler-sympathy/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/" target="_blank">Apple introduces M6 and M5 Ultra</a></h2><div class="meta"><span class="score">⭐ 1155</span><span class="comments">💬 1132</span><span class="by">👤 interpol_p</span></div><div class="summary"><p>A post titled "Apple introduces M6 and M5 Ultra" on Hacker News. Submitted by interpol_p. Links to content on apple.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49433292" target="_blank">HN Discussion (1132)</a></div><div class="source">🔗 <a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/" target="_blank">https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.youtube.com/watch?v=656058JxTM0" target="_blank">Stalking the Wily Hacker: 40 years later – Cliff Stoll [video]</a></h2><div class="meta"><span class="score">⭐ 118</span><span class="comments">💬 34</span><span class="by">👤 zoenolan</span></div><div class="summary"><p>A post titled "Stalking the Wily Hacker: 40 years later – Cliff Stoll [video]" on Hacker News. Submitted by zoenolan. Links to content on youtube.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49395802" target="_blank">HN Discussion (34)</a></div><div class="source">🔗 <a href="https://www.youtube.com/watch?v=656058JxTM0" target="_blank">https://www.youtube.com/watch?v=656058JxTM0</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar" target="_blank">FDA authorizes first wearable device that monitors ketone and blood sugar levels</a></h2><div class="meta"><span class="score">⭐ 413</span><span class="comments">💬 200</span><span class="by">👤 sunnynagra</span></div><div class="summary"><p>A post titled "FDA authorizes first wearable device that monitors ketone and blood sugar levels" on Hacker News. Submitted by sunnynagra. Links to content on fda.gov.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49439017" target="_blank">HN Discussion (200)</a></div><div class="source">🔗 <a href="https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar" target="_blank">https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wear...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://fzakaria.com/2026/08/24/actually-queryable-executables" target="_blank">Queryable Executables</a></h2><div class="meta"><span class="score">⭐ 203</span><span class="comments">💬 54</span><span class="by">👤 rguiscard</span></div><div class="summary"><p>A post titled "Queryable Executables" on Hacker News. Submitted by rguiscard. Links to content on fzakaria.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49442589" target="_blank">HN Discussion (54)</a></div><div class="source">🔗 <a href="https://fzakaria.com/2026/08/24/actually-queryable-executables" target="_blank">https://fzakaria.com/2026/08/24/actually-queryable-executables</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia" target="_blank">OpenAI Jalapeño: Better than Nvidia Blackwell</a></h2><div class="meta"><span class="score">⭐ 498</span><span class="comments">💬 320</span><span class="by">👤 bmulholland</span></div><div class="summary"><p>A post titled "OpenAI Jalapeño: Better than Nvidia Blackwell" on Hacker News. Submitted by bmulholland. Links to content on newsletter.semianalysis.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49434378" target="_blank">HN Discussion (320)</a></div><div class="source">🔗 <a href="https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia" target="_blank">https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia</a></div></div></div>
+
+        <footer>
+            <p>2026-08-26</p>
+        </footer>
+    </div>
+</body>
+</html>

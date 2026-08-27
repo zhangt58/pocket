@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-27</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8" target="_blank">Nvidia agrees to acquire Hugging Face for $13B</a></h2><div class="meta"><span class="score">⭐ 1206</span><span class="comments">💬 522</span><span class="by">👤 mfiguiere</span></div><div class="summary"><p>A post titled "Nvidia agrees to acquire Hugging Face for $13B" on Hacker News. Submitted by mfiguiere. Links to content on businessinsider.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49458161" target="_blank">HN Discussion (522)</a></div><div class="source">🔗 <a href="https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8" target="_blank">https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billio...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.mturk.com/" target="_blank">Mechanical Turk shutting down September 30</a></h2><div class="meta"><span class="score">⭐ 388</span><span class="comments">💬 112</span><span class="by">👤 tmp10423288442</span></div><div class="summary"><p>A post titled "Mechanical Turk shutting down September 30" on Hacker News. Submitted by tmp10423288442. Links to content on mturk.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49457545" target="_blank">HN Discussion (112)</a></div><div class="source">🔗 <a href="https://www.mturk.com/" target="_blank">https://www.mturk.com/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://z.ai/blog/glm-5.3-flash" target="_blank">GLM-5.3-Flash</a></h2><div class="meta"><span class="score">⭐ 1041</span><span class="comments">💬 525</span><span class="by">👤 Philpax</span></div><div class="summary"><p>A post titled "GLM-5.3-Flash" on Hacker News. Submitted by Philpax. Links to content on z.ai.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49449507" target="_blank">HN Discussion (525)</a></div><div class="source">🔗 <a href="https://z.ai/blog/glm-5.3-flash" target="_blank">https://z.ai/blog/glm-5.3-flash</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://asahilinux.org/2026/08/progress-report-7-2/" target="_blank">Asahi Linux Progress Report: Linux 7.2</a></h2><div class="meta"><span class="score">⭐ 295</span><span class="comments">💬 121</span><span class="by">👤 pizzaiolo</span></div><div class="summary"><p>A post titled "Asahi Linux Progress Report: Linux 7.2" on Hacker News. Submitted by pizzaiolo. Links to content on asahilinux.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49456851" target="_blank">HN Discussion (121)</a></div><div class="source">🔗 <a href="https://asahilinux.org/2026/08/progress-report-7-2/" target="_blank">https://asahilinux.org/2026/08/progress-report-7-2/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23" target="_blank">U.S. State Department pauses immigrant visa applications</a></h2><div class="meta"><span class="score">⭐ 547</span><span class="comments">💬 807</span><span class="by">👤 sss111</span></div><div class="summary"><p>A post titled "U.S. State Department pauses immigrant visa applications" on Hacker News. Submitted by sss111. Links to content on wsj.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49452709" target="_blank">HN Discussion (807)</a></div><div class="source">🔗 <a href="https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23" target="_blank">https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-vis...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/tailscale/tailcat" target="_blank">Tailcat – Like netcat, but over Tailscale’s data plane</a></h2><div class="meta"><span class="score">⭐ 586</span><span class="comments">💬 104</span><span class="by">👤 nderjung</span></div><div class="summary"><p>A post titled "Tailcat – Like netcat, but over Tailscale’s data plane" on Hacker News. Submitted by nderjung. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49452990" target="_blank">HN Discussion (104)</a></div><div class="source">🔗 <a href="https://github.com/tailscale/tailcat" target="_blank">https://github.com/tailscale/tailcat</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://nhess.copernicus.org/articles/22/3765/2022/nhess-22-3765-2022.html" target="_blank">Worst-case glacial lake flood scenarios in a transboundary Himalayan basin 2022</a></h2><div class="meta"><span class="score">⭐ 192</span><span class="comments">💬 119</span><span class="by">👤 totetsu</span></div><div class="summary"><p>A post titled "Worst-case glacial lake flood scenarios in a transboundary Himalayan basin 2022" on Hacker News. Submitted by totetsu. Links to content on nhess.copernicus.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49456929" target="_blank">HN Discussion (119)</a></div><div class="source">🔗 <a href="https://nhess.copernicus.org/articles/22/3765/2022/nhess-22-3765-2022.html" target="_blank">https://nhess.copernicus.org/articles/22/3765/2022/nhess-22-3765-2022.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://artificialanalysis.ai/models/qwen3-8-flash-next" target="_blank">Qwen3.8-Flash-Next Intelligence, Performance and Price Analysis</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 0</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>A post titled "Qwen3.8-Flash-Next Intelligence, Performance and Price Analysis" on Hacker News. Submitted by theanonymousone. Links to content on artificialanalysis.ai.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49461862" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://artificialanalysis.ai/models/qwen3-8-flash-next" target="_blank">https://artificialanalysis.ai/models/qwen3-8-flash-next</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/SenteLabsAI/OpenExecutive" target="_blank">CEO fired developers to make room for AI. Developers create open source AI CEO</a></h2><div class="meta"><span class="score">⭐ 652</span><span class="comments">💬 414</span><span class="by">👤 GrumpySciGuy</span></div><div class="summary"><p>A post titled "CEO fired developers to make room for AI. Developers create open source AI CEO" on Hacker News. Submitted by GrumpySciGuy. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49458418" target="_blank">HN Discussion (414)</a></div><div class="source">🔗 <a href="https://github.com/SenteLabsAI/OpenExecutive" target="_blank">https://github.com/SenteLabsAI/OpenExecutive</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://lwn.net/SubscriberLink/1089390/46116614cc74b814/" target="_blank">An ongoing 3D-printer AGPL violation</a></h2><div class="meta"><span class="score">⭐ 416</span><span class="comments">💬 178</span><span class="by">👤 Velocifyer</span></div><div class="summary"><p>A post titled "An ongoing 3D-printer AGPL violation" on Hacker News. Submitted by Velocifyer. Links to content on lwn.net.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49452980" target="_blank">HN Discussion (178)</a></div><div class="source">🔗 <a href="https://lwn.net/SubscriberLink/1089390/46116614cc74b814/" target="_blank">https://lwn.net/SubscriberLink/1089390/46116614cc74b814/</a></div></div></div>
+
+        <footer>
+            <p>2026-08-27</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-28</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html" target="_blank">Hilariously Fast Volume Computation with the Divergence Theorem</a></h2><div class="meta"><span class="score">⭐ 62</span><span class="comments">💬 9</span><span class="by">👤 luu</span></div><div class="summary"><p>A post titled "Hilariously Fast Volume Computation with the Divergence Theorem" on Hacker News. Submitted by luu. Links to content on alyssarosenzweig.ca.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49476143" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html" target="_blank">https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" target="_blank">Saving 100 terabytes of memory by optimizing 1.1.1.1's DNS cache</a></h2><div class="meta"><span class="score">⭐ 778</span><span class="comments">💬 233</span><span class="by">👤 TangerineDream</span></div><div class="summary"><p>A post titled "Saving 100 terabytes of memory by optimizing 1.1.1.1's DNS cache" on Hacker News. Submitted by TangerineDream. Links to content on blog.cloudflare.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49468083" target="_blank">HN Discussion (233)</a></div><div class="source">🔗 <a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" target="_blank">https://blog.cloudflare.com/dns-cache-memory-optimization-1111/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://calv.info/small-models-have-arrived" target="_blank">Small Models Have Arrived</a></h2><div class="meta"><span class="score">⭐ 662</span><span class="comments">💬 299</span><span class="by">👤 tosh</span></div><div class="summary"><p>A post titled "Small Models Have Arrived" on Hacker News. Submitted by tosh. Links to content on calv.info.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49466917" target="_blank">HN Discussion (299)</a></div><div class="source">🔗 <a href="https://calv.info/small-models-have-arrived" target="_blank">https://calv.info/small-models-have-arrived</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank">Sovereign Tech Agency invests €500k in Flatpak</a></h2><div class="meta"><span class="score">⭐ 147</span><span class="comments">💬 79</span><span class="by">👤 eigenspace</span></div><div class="summary"><p>A post titled "Sovereign Tech Agency invests €500k in Flatpak" on Hacker News. Submitted by eigenspace. Links to content on modal.cx.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49474786" target="_blank">HN Discussion (79)</a></div><div class="source">🔗 <a href="https://modal.cx/blog/announcing-flatpak-sta/" target="_blank">https://modal.cx/blog/announcing-flatpak-sta/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://507movements.com/" target="_blank">507 Mechanical Movements</a></h2><div class="meta"><span class="score">⭐ 591</span><span class="comments">💬 74</span><span class="by">👤 helloplanets</span></div><div class="summary"><p>A post titled "507 Mechanical Movements" on Hacker News. Submitted by helloplanets. Links to content on 507movements.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49465169" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://507movements.com/" target="_blank">https://507movements.com/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/elyosh/OpenTIE/" target="_blank">Show HN: OpenTIE and OpenXWA, Modern Ports of Tie Fighter and X-Wing Alliance</a></h2><div class="meta"><span class="score">⭐ 167</span><span class="comments">💬 41</span><span class="by">👤 elyosh</span></div><div class="summary"><p>A post titled "Show HN: OpenTIE and OpenXWA, Modern Ports of Tie Fighter and X-Wing Alliance" on Hacker News. Submitted by elyosh. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49471965" target="_blank">HN Discussion (41)</a></div><div class="source">🔗 <a href="https://github.com/elyosh/OpenTIE/" target="_blank">https://github.com/elyosh/OpenTIE/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://pollen-robotics.com/microduck/" target="_blank">Microduck</a></h2><div class="meta"><span class="score">⭐ 679</span><span class="comments">💬 215</span><span class="by">👤 robotswantdata</span></div><div class="summary"><p>A post titled "Microduck" on Hacker News. Submitted by robotswantdata. Links to content on pollen-robotics.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49462763" target="_blank">HN Discussion (215)</a></div><div class="source">🔗 <a href="https://pollen-robotics.com/microduck/" target="_blank">https://pollen-robotics.com/microduck/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/" target="_blank">Gemini-3.5-Transcribe</a></h2><div class="meta"><span class="score">⭐ 299</span><span class="comments">💬 97</span><span class="by">👤 k9294</span></div><div class="summary"><p>A post titled "Gemini-3.5-Transcribe" on Hacker News. Submitted by k9294. Links to content on blog.google.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49468818" target="_blank">HN Discussion (97)</a></div><div class="source">🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/" target="_blank">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemin...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.newscientist.com/article/2584861-antidepressant-withdrawal-symptoms-are-prompting-a-radical-rethink-of-how-we-treat-depression/" target="_blank">Doctors are finally learning to manage antidepressant withdrawal</a></h2><div class="meta"><span class="score">⭐ 141</span><span class="comments">💬 127</span><span class="by">👤 eutropheon</span></div><div class="summary"><p>A post titled "Doctors are finally learning to manage antidepressant withdrawal" on Hacker News. Submitted by eutropheon. Links to content on newscientist.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49472090" target="_blank">HN Discussion (127)</a></div><div class="source">🔗 <a href="https://www.newscientist.com/article/2584861-antidepressant-withdrawal-symptoms-are-prompting-a-radical-rethink-of-how-we-treat-depression/" target="_blank">https://www.newscientist.com/article/2584861-antidepressant-withdrawal-sympto...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290" target="_blank">We found a division by zero bug in FFmpeg with a vibecoded fuzzer</a></h2><div class="meta"><span class="score">⭐ 253</span><span class="comments">💬 200</span><span class="by">👤 dclavijo</span></div><div class="summary"><p>A post titled "We found a division by zero bug in FFmpeg with a vibecoded fuzzer" on Hacker News. Submitted by dclavijo. Links to content on code.ffmpeg.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49468642" target="_blank">HN Discussion (200)</a></div><div class="source">🔗 <a href="https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290" target="_blank">https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290</a></div></div></div>
+
+        <footer>
+            <p>2026-08-28</p>
+        </footer>
+    </div>
+</body>
+</html>

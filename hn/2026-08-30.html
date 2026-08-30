@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-30</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://arxiv.org/abs/1804.07389" target="_blank">Longest Straight Line Paths on Water or Land on the Earth (2018)</a></h2><div class="meta"><span class="score">⭐ 59</span><span class="comments">💬 13</span><span class="by">👤 joebig</span></div><div class="summary"><p>A post titled "Longest Straight Line Paths on Water or Land on the Earth (2018)" on Hacker News. Submitted by joebig. Links to content on arxiv.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49496782" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/1804.07389" target="_blank">https://arxiv.org/abs/1804.07389</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.qubes-os.org/news/2026/08/29/qsb-118/" target="_blank">Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel</a></h2><div class="meta"><span class="score">⭐ 35</span><span class="comments">💬 8</span><span class="by">👤 vntok</span></div><div class="summary"><p>A post titled "Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel" on Hacker News. Submitted by vntok. Links to content on qubes-os.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49496918" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://www.qubes-os.org/news/2026/08/29/qsb-118/" target="_blank">https://www.qubes-os.org/news/2026/08/29/qsb-118/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://git.zx2c4.com/spark/about/" target="_blank">Spark: Sparklines in your shell</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 1</span><span class="by">👤 hskimse</span></div><div class="summary"><p>A post titled "Spark: Sparklines in your shell" on Hacker News. Submitted by hskimse. Links to content on git.zx2c4.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49497265" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://git.zx2c4.com/spark/about/" target="_blank">https://git.zx2c4.com/spark/about/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-like-their-private-messages-to-stay-private/5292994" target="_blank">Brits would quite like their private messages to stay private</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 36</span><span class="by">👤 defrost</span></div><div class="summary"><p>A post titled "Brits would quite like their private messages to stay private" on Hacker News. Submitted by defrost. Links to content on theregister.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49497063" target="_blank">HN Discussion (36)</a></div><div class="source">🔗 <a href="https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-like-their-private-messages-to-stay-private/5292994" target="_blank">https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-l...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://blog.lyc8503.net/en/post/dn42-2-dnet/" target="_blank">Everyone Should Build Their Own Network Stack</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 1</span><span class="by">👤 uneven9434</span></div><div class="summary"><p>A post titled "Everyone Should Build Their Own Network Stack" on Hacker News. Submitted by uneven9434. Links to content on blog.lyc8503.net.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49497200" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://blog.lyc8503.net/en/post/dn42-2-dnet/" target="_blank">https://blog.lyc8503.net/en/post/dn42-2-dnet/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://blog.python.org/2026/08/riscv-now-officially-supported/" target="_blank">RISC-V is now officially supported by CPython</a></h2><div class="meta"><span class="score">⭐ 179</span><span class="comments">💬 37</span><span class="by">👤 lumpa</span></div><div class="summary"><p>A post titled "RISC-V is now officially supported by CPython" on Hacker News. Submitted by lumpa. Links to content on blog.python.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49425252" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://blog.python.org/2026/08/riscv-now-officially-supported/" target="_blank">https://blog.python.org/2026/08/riscv-now-officially-supported/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs" target="_blank">Xcena and Samsung's Near Memory Compute CXL Device</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 1</span><span class="by">👤 klelatti</span></div><div class="summary"><p>A post titled "Xcena and Samsung's Near Memory Compute CXL Device" on Hacker News. Submitted by klelatti. Links to content on chipsandcheese.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49496543" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs" target="_blank">https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank">Hy4 preview</a></h2><div class="meta"><span class="score">⭐ 312</span><span class="comments">💬 191</span><span class="by">👤 shenli3514</span></div><div class="summary"><p>A post titled "Hy4 preview" on Hacker News. Submitted by shenli3514. Links to content on tencent.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49492632" target="_blank">HN Discussion (191)</a></div><div class="source">🔗 <a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank">https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://freecore.org/" target="_blank">FreeCORE TrueNAS Core – Continued</a></h2><div class="meta"><span class="score">⭐ 106</span><span class="comments">💬 62</span><span class="by">👤 sashk</span></div><div class="summary"><p>A post titled "FreeCORE TrueNAS Core – Continued" on Hacker News. Submitted by sashk. Links to content on freecore.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49494856" target="_blank">HN Discussion (62)</a></div><div class="source">🔗 <a href="https://freecore.org/" target="_blank">https://freecore.org/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt" target="_blank">California lawmakers unanimously pass Linux exemption from age-verification law</a></h2><div class="meta"><span class="score">⭐ 317</span><span class="comments">💬 138</span><span class="by">👤 shscs911</span></div><div class="summary"><p>A post titled "California lawmakers unanimously pass Linux exemption from age-verification law" on Hacker News. Submitted by shscs911. Links to content on tomshardware.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49495372" target="_blank">HN Discussion (138)</a></div><div class="source">🔗 <a href="https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt" target="_blank">https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-...</a></div></div></div>
+
+        <footer>
+            <p>2026-08-30</p>
+        </footer>
+    </div>
+</body>
+</html>

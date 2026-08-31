@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }\n.hn-link a,\n.source a {\n    color: #5dade2;\n    text-decoration: none;\n    word-break: break-all;\n}\n.hn-link a:hover,\n.source a:hover { text-decoration: underline; }\nfooter {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-08-31</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/" target="_blank">OpenShot 4.0: Record, Edit, and Color Like Never Before</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 19</span><span class="by">👤 metrofun</span></div><div class="summary"><p>A post titled "OpenShot 4.0: Record, Edit, and Color Like Never Before" on Hacker News. Submitted by metrofun. Links to content on openshot.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49507822" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/" target="_blank">https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-n...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://unsung.aresluna.org/i-just-chose-words-carefully/" target="_blank">“I just chose words carefully”</a></h2><div class="meta"><span class="score">⭐ 843</span><span class="comments">💬 216</span><span class="by">👤 zdw</span></div><div class="summary"><p>A post titled "“I just chose words carefully”" on Hacker News. Submitted by zdw. Links to content on unsung.aresluna.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49503601" target="_blank">HN Discussion (216)</a></div><div class="source">🔗 <a href="https://unsung.aresluna.org/i-just-chose-words-carefully/" target="_blank">https://unsung.aresluna.org/i-just-chose-words-carefully/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" target="_blank">Breaking Claude Code Opus 5 Auto Mode</a></h2><div class="meta"><span class="score">⭐ 72</span><span class="comments">💬 9</span><span class="by">👤 Recursing</span></div><div class="summary"><p>A post titled "Breaking Claude Code Opus 5 Auto Mode" on Hacker News. Submitted by Recursing. Links to content on embracethered.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49506819" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" target="_blank">https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-aut...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://people.kernel.org/monsieuricon/creepy-crawlies" target="_blank">Creepy Crawlies</a></h2><div class="meta"><span class="score">⭐ 1192</span><span class="comments">💬 596</span><span class="by">👤 zdw</span></div><div class="summary"><p>A post titled "Creepy Crawlies" on Hacker News. Submitted by zdw. Links to content on people.kernel.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49491791" target="_blank">HN Discussion (596)</a></div><div class="source">🔗 <a href="https://people.kernel.org/monsieuricon/creepy-crawlies" target="_blank">https://people.kernel.org/monsieuricon/creepy-crawlies</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names" target="_blank">P99 0 ms* autocomplete for 240M domain names</a></h2><div class="meta"><span class="score">⭐ 133</span><span class="comments">💬 56</span><span class="by">👤 dbalatero</span></div><div class="summary"><p>A post titled "P99 0 ms* autocomplete for 240M domain names" on Hacker News. Submitted by dbalatero. Links to content on ruurtjan.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49505219" target="_blank">HN Discussion (56)</a></div><div class="source">🔗 <a href="https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names" target="_blank">https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/astral-sh/uv/pull/21327" target="_blank">uv: Deduplicate all files in the wheel cache</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 3</span><span class="by">👤 tosh</span></div><div class="summary"><p>A post titled "uv: Deduplicate all files in the wheel cache" on Hacker News. Submitted by tosh. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49506142" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://github.com/astral-sh/uv/pull/21327" target="_blank">https://github.com/astral-sh/uv/pull/21327</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://sandyuraz.com/blogs/tiny-cafe/" target="_blank">My hobby of building miniatures and taking pretty pictures</a></h2><div class="meta"><span class="score">⭐ 154</span><span class="comments">💬 24</span><span class="by">👤 thecsw</span></div><div class="summary"><p>A post titled "My hobby of building miniatures and taking pretty pictures" on Hacker News. Submitted by thecsw. Links to content on sandyuraz.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49481141" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://sandyuraz.com/blogs/tiny-cafe/" target="_blank">https://sandyuraz.com/blogs/tiny-cafe/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/" target="_blank">Highlighting My Code Based on How Much I Care</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 34</span><span class="by">👤 hankbond</span></div><div class="summary"><p>A post titled "Highlighting My Code Based on How Much I Care" on Hacker News. Submitted by hankbond. Links to content on hank.bond.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49485020" target="_blank">HN Discussion (34)</a></div><div class="source">🔗 <a href="https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/" target="_blank">https://hank.bond/posts/highlighting-my-code-based-on-how-much-i-care/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.abortretry.fail/p/matrox" target="_blank">Matrox: Graphics for Professionals</a></h2><div class="meta"><span class="score">⭐ 127</span><span class="comments">💬 37</span><span class="by">👤 BirAdam</span></div><div class="summary"><p>A post titled "Matrox: Graphics for Professionals" on Hacker News. Submitted by BirAdam. Links to content on abortretry.fail.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49503934" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://www.abortretry.fail/p/matrox" target="_blank">https://www.abortretry.fail/p/matrox</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history/" target="_blank">A 12TB Steam "teraleak" spills more than a decade of lost PC gaming history</a></h2><div class="meta"><span class="score">⭐ 155</span><span class="comments">💬 23</span><span class="by">👤 WithinReason</span></div><div class="summary"><p>A post titled "A 12TB Steam "teraleak" spills more than a decade of lost PC gaming history" on Hacker News. Submitted by WithinReason. Links to content on arstechnica.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49506182" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history/" target="_blank">https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than...</a></div></div></div>
+
+        <footer>
+            <p>2026-08-31</p>
+        </footer>
+    </div>
+</body>
+</html>

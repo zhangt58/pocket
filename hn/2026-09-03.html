@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-03</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://pola.rs/posts/announcing-polars-2/" target="_blank">Pre-Release of Polars 2.0</a></h2><div class="meta"><span class="score">⭐ 187</span><span class="comments">💬 35</span><span class="by">👤 komape</span></div><div class="summary"><p>A post titled "Pre-Release of Polars 2.0" on Hacker News. Submitted by komape. Links to content on pola.rs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49546753" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://pola.rs/posts/announcing-polars-2/" target="_blank">https://pola.rs/posts/announcing-polars-2/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://kciter.so/posts/the-expensive-main-thread/en/" target="_blank">The Browser's Main Thread Is Expensive</a></h2><div class="meta"><span class="score">⭐ 102</span><span class="comments">💬 30</span><span class="by">👤 kciter</span></div><div class="summary"><p>A post titled "The Browser's Main Thread Is Expensive" on Hacker News. Submitted by kciter. Links to content on kciter.so.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49522137" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://kciter.so/posts/the-expensive-main-thread/en/" target="_blank">https://kciter.so/posts/the-expensive-main-thread/en/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://developer.meta.com/ai/models/muse-spark/" target="_blank">Muse Spark 1.3</a></h2><div class="meta"><span class="score">⭐ 597</span><span class="comments">💬 393</span><span class="by">👤 bvaldivielso</span></div><div class="summary"><p>A post titled "Muse Spark 1.3" on Hacker News. Submitted by bvaldivielso. Links to content on developer.meta.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49541256" target="_blank">HN Discussion (393)</a></div><div class="source">🔗 <a href="https://developer.meta.com/ai/models/muse-spark/" target="_blank">https://developer.meta.com/ai/models/muse-spark/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank">Gemini 3.8 Flash and 3.8 Flash Cyber</a></h2><div class="meta"><span class="score">⭐ 1040</span><span class="comments">💬 581</span><span class="by">👤 bratao</span></div><div class="summary"><p>A post titled "Gemini 3.8 Flash and 3.8 Flash Cyber" on Hacker News. Submitted by bratao. Links to content on blog.google.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49537553" target="_blank">HN Discussion (581)</a></div><div class="source">🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank">https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-f...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/" target="_blank">Fish Bad, Sugar Good and Other Medieval Ideas About Food</a></h2><div class="meta"><span class="score">⭐ 13</span><span class="comments">💬 1</span><span class="by">👤 mooreds</span></div><div class="summary"><p>A post titled "Fish Bad, Sugar Good and Other Medieval Ideas About Food" on Hacker News. Submitted by mooreds. Links to content on lithub.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49513721" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/" target="_blank">https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.theguardian.com/world/2026/sep/02/japan-new-speed-limit-30kmh-narrow-city-streets" target="_blank">Japan halves speed limit to 30km/h on all narrow city streets</a></h2><div class="meta"><span class="score">⭐ 49</span><span class="comments">💬 31</span><span class="by">👤 haunter</span></div><div class="summary"><p>A post titled "Japan halves speed limit to 30km/h on all narrow city streets" on Hacker News. Submitted by haunter. Links to content on theguardian.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49547763" target="_blank">HN Discussion (31)</a></div><div class="source">🔗 <a href="https://www.theguardian.com/world/2026/sep/02/japan-new-speed-limit-30kmh-narrow-city-streets" target="_blank">https://www.theguardian.com/world/2026/sep/02/japan-new-speed-limit-30kmh-nar...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://scienceblog.com/b-three-schoolgirls-in-kinsale-pulled-up-a-pea-plant-covered-in-warts-and-instead-of-binning-it-spent-three-years-testing-13000-seeds-in-a-spare-bedroom-the-bacteria-living-in-those-warts-made-barley/" target="_blank">Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)</a></h2><div class="meta"><span class="score">⭐ 66</span><span class="comments">💬 22</span><span class="by">👤 DamonHD</span></div><div class="summary"><p>A post titled "Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)" on Hacker News. Submitted by DamonHD. Links to content on scienceblog.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49546800" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://scienceblog.com/b-three-schoolgirls-in-kinsale-pulled-up-a-pea-plant-covered-in-warts-and-instead-of-binning-it-spent-three-years-testing-13000-seeds-in-a-spare-bedroom-the-bacteria-living-in-those-warts-made-barley/" target="_blank">https://scienceblog.com/b-three-schoolgirls-in-kinsale-pulled-up-a-pea-plant-...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html" target="_blank">Google avoids a breakup of its ad tech business</a></h2><div class="meta"><span class="score">⭐ 402</span><span class="comments">💬 284</span><span class="by">👤 donohoe</span></div><div class="summary"><p>A post titled "Google avoids a breakup of its ad tech business" on Hacker News. Submitted by donohoe. Links to content on nytimes.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49537131" target="_blank">HN Discussion (284)</a></div><div class="source">🔗 <a href="https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html" target="_blank">https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/" target="_blank">Three sites made 215,128 “best software” pages for AI. Perplexity cites them</a></h2><div class="meta"><span class="score">⭐ 435</span><span class="comments">💬 212</span><span class="by">👤 jakobgreenfeld</span></div><div class="summary"><p>A post titled "Three sites made 215,128 “best software” pages for AI. Perplexity cites them" on Hacker News. Submitted by jakobgreenfeld. Links to content on trellner.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49536375" target="_blank">HN Discussion (212)</a></div><div class="source">🔗 <a href="https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/" target="_blank">https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://computer-museum.org/wp/" target="_blank">The Computer Museum of America reclamation project</a></h2><div class="meta"><span class="score">⭐ 51</span><span class="comments">💬 20</span><span class="by">👤 rbanffy</span></div><div class="summary"><p>A post titled "The Computer Museum of America reclamation project" on Hacker News. Submitted by rbanffy. Links to content on computer-museum.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49511493" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://computer-museum.org/wp/" target="_blank">https://computer-museum.org/wp/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-03</p>
+        </footer>
+    </div>
+</body>
+</html>

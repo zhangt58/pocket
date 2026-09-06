@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-06</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight" target="_blank">Isar Aerospace reaches orbit and deploys payloads on second flight</a></h2><div class="meta"><span class="score">⭐ 200</span><span class="comments">💬 30</span><span class="by">👤 mpweiher</span></div><div class="summary"><p>A post titled "Isar Aerospace reaches orbit and deploys payloads on second flight" on Hacker News. Submitted by mpweiher. Links to content on isaraerospace.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49584083" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight" target="_blank">https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospa...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://bergie.iki.fi/blog/eupl/" target="_blank">I Changed My License</a></h2><div class="meta"><span class="score">⭐ 13</span><span class="comments">💬 3</span><span class="by">👤 jllyhill</span></div><div class="summary"><p>A post titled "I Changed My License" on Hacker News. Submitted by jllyhill. Links to content on bergie.iki.fi.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49585161" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://bergie.iki.fi/blog/eupl/" target="_blank">https://bergie.iki.fi/blog/eupl/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://cloudinabottle.org/blog/launch-post" target="_blank">Cloud in a Bottle: making self-hosting accessible to everyone</a></h2><div class="meta"><span class="score">⭐ 429</span><span class="comments">💬 205</span><span class="by">👤 zplizzi</span></div><div class="summary"><p>A post titled "Cloud in a Bottle: making self-hosting accessible to everyone" on Hacker News. Submitted by zplizzi. Links to content on cloudinabottle.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49582000" target="_blank">HN Discussion (205)</a></div><div class="source">🔗 <a href="https://cloudinabottle.org/blog/launch-post" target="_blank">https://cloudinabottle.org/blog/launch-post</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://runjs.app/blog/music-theory-for-programmers" target="_blank">Music Theory for Programmers</a></h2><div class="meta"><span class="score">⭐ 155</span><span class="comments">💬 71</span><span class="by">👤 birdculture</span></div><div class="summary"><p>A post titled "Music Theory for Programmers" on Hacker News. Submitted by birdculture. Links to content on runjs.app.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49541888" target="_blank">HN Discussion (71)</a></div><div class="source">🔗 <a href="https://runjs.app/blog/music-theory-for-programmers" target="_blank">https://runjs.app/blog/music-theory-for-programmers</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/" target="_blank">The revolt of the reader</a></h2><div class="meta"><span class="score">⭐ 379</span><span class="comments">💬 155</span><span class="by">👤 chmaynard</span></div><div class="summary"><p>A post titled "The revolt of the reader" on Hacker News. Submitted by chmaynard. Links to content on bcantrill.dtrace.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49580939" target="_blank">HN Discussion (155)</a></div><div class="source">🔗 <a href="https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/" target="_blank">https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.ibm.com/quantum/blog/nighthawk-r2" target="_blank">IBM Quantum Nighthawk R2</a></h2><div class="meta"><span class="score">⭐ 19</span><span class="comments">💬 2</span><span class="by">👤 fuglede_</span></div><div class="summary"><p>A post titled "IBM Quantum Nighthawk R2" on Hacker News. Submitted by fuglede_. Links to content on ibm.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49546198" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.ibm.com/quantum/blog/nighthawk-r2" target="_blank">https://www.ibm.com/quantum/blog/nighthawk-r2</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://en.wikipedia.org/wiki/M-DISC" target="_blank">M-DISC – DVD/Blu-ray compatible discs that may last up to 1000 years</a></h2><div class="meta"><span class="score">⭐ 13</span><span class="comments">💬 2</span><span class="by">👤 gurjeet</span></div><div class="summary"><p>A post titled "M-DISC – DVD/Blu-ray compatible discs that may last up to 1000 years" on Hacker News. Submitted by gurjeet. Links to content on en.wikipedia.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49531619" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://en.wikipedia.org/wiki/M-DISC" target="_blank">https://en.wikipedia.org/wiki/M-DISC</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24-squares-turns-50/" target="_blank">The ColorChecker, photography's most important 24 squares, turns 50</a></h2><div class="meta"><span class="score">⭐ 70</span><span class="comments">💬 11</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>A post titled "The ColorChecker, photography's most important 24 squares, turns 50" on Hacker News. Submitted by sohkamyung. Links to content on dpreview.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49529398" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24-squares-turns-50/" target="_blank">https://www.dpreview.com/news/the-colorchecker-photographys-most-important-24...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation" target="_blank">AI, Tools and Transformation</a></h2><div class="meta"><span class="score">⭐ 70</span><span class="comments">💬 23</span><span class="by">👤 firexcy</span></div><div class="summary"><p>A post titled "AI, Tools and Transformation" on Hacker News. Submitted by firexcy. Links to content on ben-evans.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49582656" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation" target="_blank">https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded/" target="_blank">AMD Based FreeBSD Desktop Reloaded</a></h2><div class="meta"><span class="score">⭐ 60</span><span class="comments">💬 6</span><span class="by">👤 vermaden</span></div><div class="summary"><p>A post titled "AMD Based FreeBSD Desktop Reloaded" on Hacker News. Submitted by vermaden. Links to content on vermaden.wordpress.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49582719" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded/" target="_blank">https://vermaden.wordpress.com/2026/09/06/amd-based-freebsd-desktop-reloaded/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-06</p>
+        </footer>
+    </div>
+</body>
+</html>

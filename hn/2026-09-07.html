@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-07</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/" target="_blank">Keep Our Servers Running</a></h2><div class="meta"><span class="score">⭐ 524</span><span class="comments">💬 109</span><span class="by">👤 sonicrocketman</span></div><div class="summary"><p>The Internet Archive is seeking recurring donations to support the servers, storage, and staff needed to keep its free digital library and Wayback Machine accessible. A matching campaign will multiply initial recurring gifts, helping preserve and provide public access to its vast collection of knowledge.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49593563" target="_blank">HN Discussion (109)</a></div><div class="source">🔗 <a href="https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/" target="_blank">https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-d...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://mathathonchallenge.com/index.html" target="_blank">Caltech Mathathon – first hackathon ever devoted to research level mathematics</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 1</span><span class="by">👤 astroanax</span></div><div class="summary"><p>Caltech is hosting the first hackathon dedicated to research-level mathematics, where teams will use frontier AI models to tackle open conjectures and develop new mathematical theories. Participants will present their work to leading mathematicians, with prizes awarded for the most promising and well-explained results, followed by additional prizes after community verification.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49596055" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://mathathonchallenge.com/index.html" target="_blank">https://mathathonchallenge.com/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://openbaarvervoerbelgie.be/" target="_blank">Live map of public transport in Belgium</a></h2><div class="meta"><span class="score">⭐ 41</span><span class="comments">💬 16</span><span class="by">👤 coinfused</span></div><div class="summary"><p>The page provides a live map of public transport in Belgium, displaying trains, metro, trams, and buses. It uses open data from Belgian transit operators such as De Lijn, NMBS/SNCB, STIB, and LETEC. The service is an independent app rather than an official government or operator platform.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49595865" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://openbaarvervoerbelgie.be/" target="_blank">https://openbaarvervoerbelgie.be/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus" target="_blank">Speculative Decoding in vLLM on AMD GPUs</a></h2><div class="meta"><span class="score">⭐ 19</span><span class="comments">💬 3</span><span class="by">👤 ankitg12</span></div><div class="summary"><p>The article examines speculative decoding in vLLM, where a lightweight draft model proposes candidate tokens and the target model verifies them in a single pass to increase output-token throughput. It compares several drafting approaches and reports measurements on AMD Instinct GPUs using ROCm. Results show performance depends on the drafting method, proposal length, model family, draft checkpoint, workload, and token acceptance behavior.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49596054" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus" target="_blank">https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.edge.org/response-detail/27238" target="_blank">Impedance Matching</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 2</span><span class="by">👤 muti</span></div><div class="summary"><p>Impedance describes how a system resists the flow of energy, and an impedance matcher helps transfer that energy more efficiently between different parts of a system. The concept appears in many everyday technologies, from car transmissions and electrical transformers to sloped beaches, trumpet flares, anti-reflective coatings, and sound-absorbing foam. It also helps explain how materials and structures can either couple or reflect waves of sound, light, and other energy.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49596274" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.edge.org/response-detail/27238" target="_blank">https://www.edge.org/response-detail/27238</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html" target="_blank">LG smart TVs caught logging audio with screen off and snooping on local devices</a></h2><div class="meta"><span class="score">⭐ 202</span><span class="comments">💬 108</span><span class="by">👤 chris_overseas</span></div><div class="summary"><p>An investigation by Gamers Nexus and security researchers found that LG smart TVs running webOS actively scan home networks, map nearby devices, and collect Wi-Fi and location data for advertising. The TVs were also shown to capture microphone audio while in standby and upload the recordings after reconnecting to the internet, with additional remote code execution vulnerabilities reported. Researchers recommend disconnecting the TVs from the network and using external streaming devices instead.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49594878" target="_blank">HN Discussion (108)</a></div><div class="source">🔗 <a href="https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html" target="_blank">https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-o...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://variety.com/2026/film/reviews/nathan-fielder-surprise-film-telluride-elizabeth-holmes-1236853513/" target="_blank">'You Can See Everything' Review: Nathan Fielder's Doc About Elizabeth Holmes</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 12</span><span class="by">👤 cianmm</span></div><div class="summary"><p>Nathan Fielder’s documentary You Can See Everything follows Elizabeth Holmes in the final days before her prison sentence, using a reality-TV hangout style to probe her mindset after the Theranos fraud. Rather than rehashing the scandal, the film presents Holmes as a disarming, self-justifying figure and examines how her charisma and sense of entitlement enabled the deception.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49596119" target="_blank">HN Discussion (12)</a></div><div class="source">🔗 <a href="https://variety.com/2026/film/reviews/nathan-fielder-surprise-film-telluride-elizabeth-holmes-1236853513/" target="_blank">https://variety.com/2026/film/reviews/nathan-fielder-surprise-film-telluride-...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://austinhenley.com/blog/python1024.html" target="_blank">Making a Python interpreter in 1024 bytes</a></h2><div class="meta"><span class="score">⭐ 242</span><span class="comments">💬 85</span><span class="by">👤 azhenley</span></div><div class="summary"><p>The article describes a code-golf project to build a Python-like interpreter in 1024 bytes of C, supporting a small subset such as functions, loops, conditionals, and arithmetic. Instead of a full parser, it uses a recursive descent approach that executes expressions as it reads the source, with single-letter variables and no error handling. The goal is to make a recognizable Python-style FizzBuzz program run within the tight size limit.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49591876" target="_blank">HN Discussion (85)</a></div><div class="source">🔗 <a href="https://austinhenley.com/blog/python1024.html" target="_blank">https://austinhenley.com/blog/python1024.html</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=49589914" target="_blank">Ask HN: How do you manage skills files?</a></h2><div class="meta"><span class="score">⭐ 151</span><span class="comments">💬 129</span><span class="by">👤 imadtaieber</span></div><div class="summary"><p>This Hacker News post asks how developers organize and maintain their skills files, likely referring to shell configuration, dotfiles, or tool-specific skill definitions. It likely invites readers to share workflows for versioning, syncing, and keeping those files consistent across machines.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49589914" target="_blank">HN Discussion (129)</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://orchidfiles.com/programming-is-art/" target="_blank">Programming is Art</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 75</span><span class="by">👤 theorchid</span></div><div class="summary"><p>The author contrasts people who treat programming as a tool for building products and earning income with true programmers who write code for the creative process itself. For these “artists,” coding is an expressive practice that AI cannot replace, even if it can automate many technical tasks. The piece argues that the desire to create code by hand will persist because it is driven by passion rather than productivity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49595360" target="_blank">HN Discussion (75)</a></div><div class="source">🔗 <a href="https://orchidfiles.com/programming-is-art/" target="_blank">https://orchidfiles.com/programming-is-art/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-07</p>
+        </footer>
+    </div>
+</body>
+</html>

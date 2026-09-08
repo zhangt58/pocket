@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-08</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten" target="_blank">Among European Companies That Use a CDN, Nearly 9 in 10 Use Cloudflare</a></h2><div class="meta"><span class="score">⭐ 125</span><span class="comments">💬 0</span><span class="by">👤 adulion</span></div><div class="summary"><p>An analysis of European companies using a content delivery network found that nearly 90% rely on Cloudflare, far ahead of Amazon, Fastly, and Akamai. This high concentration means a single provider outage can affect a large share of the market at once. The article notes that CDNs are only the front door to websites and do not determine where data is stored.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49607443" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten" target="_blank">https://ciphercue.com/blog/european-cdn-concentration-cloudflare-nine-in-ten</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://vale.rocks/posts/html-relics" target="_blank">Antiquated HTML Snippets and Artefacts</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 0</span><span class="by">👤 patadune</span></div><div class="summary"><p>The article surveys obsolete and nonstandard HTML snippets that once addressed browser compatibility, vendor features, and third-party integrations during the early web's browser wars. Examples include X-UA-Compatible meta tags, conditional comments, Microsoft Smart Tags, PICS labels, frame busters, and opt-out tags for Baidu transcoding and Skype toolbars. These artifacts are now largely irrelevant, surviving mainly in old markup and as historical reminders of platform-specific hacks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49607991" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://vale.rocks/posts/html-relics" target="_blank">https://vale.rocks/posts/html-relics</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://lanparty.house/" target="_blank">We built our house for LAN parties</a></h2><div class="meta"><span class="score">⭐ 148</span><span class="comments">💬 0</span><span class="by">👤 fittingopposite</span></div><div class="summary"><p>A family home in Austin was designed and built from scratch for LAN parties, featuring a basement game room with wall-mounted PCs, Dance Dance Revolution pads, and a server room of identical netbooted machines. The house also includes an upstairs office with a transforming table, extensive networking, and cat-friendly features throughout. It blends normal living spaces, kids' rooms, guest rooms, and a roof deck with dedicated infrastructure for gaming and work.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49579443" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://lanparty.house/" target="_blank">https://lanparty.house/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://mcpherrin.ca/2026/09/07/rsa.html" target="_blank">I've factored the RSA keys of a Certificate Authority from the 90s</a></h2><div class="meta"><span class="score">⭐ 357</span><span class="comments">💬 0</span><span class="by">👤 ahlCVA</span></div><div class="summary"><p>The 512-bit RSA keys of a long-defunct certificate authority shipped with early Netscape browsers were factored on a desktop computer, allowing reconstruction of the private keys. This demonstrated that early web PKI roots used weak key sizes that are now easily broken. A test VeriSign code-signing key was also factored, highlighting the fragility of legacy cryptographic deployments.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49604637" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://mcpherrin.ca/2026/09/07/rsa.html" target="_blank">https://mcpherrin.ca/2026/09/07/rsa.html</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://weirdgloop.org/blog/google-jail" target="_blank">There's a new "Google Jail" for independent wikis</a></h2><div class="meta"><span class="score">⭐ 191</span><span class="comments">💬 0</span><span class="by">👤 pizzaiolo</span></div><div class="summary"><p>A recent change in how Google treats brand-new domains has created a “Google Jail” for independent wikis, where only the main page appears in search results for months or longer. Because most wiki traffic comes from Google, this has made launching new wikis on fresh domains very difficult. As a workaround, hosts are placing new wikis on subdomains of established domains to get indexed, with plans to move them to their own domains later once search visibility is established.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49604870" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://weirdgloop.org/blog/google-jail" target="_blank">https://weirdgloop.org/blog/google-jail</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.bbc.com/future/article/20260904-how-getting-your-hands-dirty-boosts-your-health-within-weeks" target="_blank">Why getting your hands dirty is good for you</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 0</span><span class="by">👤 HatchedLake721</span></div><div class="summary"><p>Research suggests that touching soil, plants, and other natural materials increases the diversity of microbes on our skin. This richer microbial community can help crowd out harmful bacteria and support immune regulation, potentially lowering the risk of immune-related conditions. Simple activities like gardening, playing outdoors, or installing green walls may provide these benefits for both children and adults.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49608023" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.bbc.com/future/article/20260904-how-getting-your-hands-dirty-boosts-your-health-within-weeks" target="_blank">https://www.bbc.com/future/article/20260904-how-getting-your-hands-dirty-boos...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/" target="_blank">Mistral raises €3B</a></h2><div class="meta"><span class="score">⭐ 503</span><span class="comments">💬 0</span><span class="by">👤 kuberwastaken</span></div><div class="summary"><p>Mistral has raised €3 billion in a Series D round at a post-money valuation above €21 billion, making it the largest equity fundraising by a European technology company. The funding, led by Samsung Electronics, will expand its frontier AI research, compute capacity, infrastructure, and commercial reach. Mistral is positioning its open-weight models, private compute, and production systems as a sovereign AI stack that lets enterprises and governments maintain control over data, models, and deployment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49605767" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/" target="_blank">https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/TauricResearch/TradingAgents" target="_blank">Multi-Agents LLM Financial Trading Framework</a></h2><div class="meta"><span class="score">⭐ 58</span><span class="comments">💬 0</span><span class="by">👤 fittingopposite</span></div><div class="summary"><p>TradingAgents is a multi-agent large language model framework for financial trading that coordinates specialized agents to analyze market data, social sentiment, and macroeconomic information. It supports multiple LLM providers, data sources, backtesting, and persistent decision logs to help generate and evaluate trading decisions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49605822" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://github.com/TauricResearch/TradingAgents" target="_blank">https://github.com/TauricResearch/TradingAgents</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://d2lang.com/blog/tala-is-open-source/" target="_blank">TALA Is Open-Source</a></h2><div class="meta"><span class="score">⭐ 235</span><span class="comments">💬 0</span><span class="by">👤 alixanderwang</span></div><div class="summary"><p>TALA, Terrastruct's AutoLayout Algorithm, is now open-source under the MPL-2.0 license and is bundled with D2 as an alternative layout engine. It is an orthogonal autolayout algorithm designed for software architecture diagrams, optimizing aesthetics such as symmetry, flow, and clustering while allowing users to pin or partially specify node positions. The release highlights comparisons with Dagre and ELK, but notes tradeoffs including randomness, weaker DAG handling, and slower performance on large diagrams.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49604150" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://d2lang.com/blog/tala-is-open-source/" target="_blank">https://d2lang.com/blog/tala-is-open-source/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://danluu.com/agentic-testing/" target="_blank">How well do agents use test/verification techniques?</a></h2><div class="meta"><span class="score">⭐ 92</span><span class="comments">💬 0</span><span class="by">👤 vinhnx</span></div><div class="summary"><p>The article evaluates whether coding agents improve implementation correctness when prompted to use specific testing or verification techniques, including TDD, property-based testing, fuzzing, formal methods, and various Rust testing libraries. Across many prompt conditions, no technique dramatically outperforms the default, and agents generally use the tools superficially, producing low-value or irrelevant tests. The findings suggest that simply instructing agents to use a named testing method does not reliably improve software quality.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49605246" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://danluu.com/agentic-testing/" target="_blank">https://danluu.com/agentic-testing/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-08</p>
+        </footer>
+    </div>
+</body>
+</html>

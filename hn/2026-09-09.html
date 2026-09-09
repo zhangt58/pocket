@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-09</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://openai.com/index/codex-quantum-computing-experiments/" target="_blank">How GPT‑5.6 Sol helps run quantum computing experiments</a></h2><div class="meta"><span class="score">⭐ 83</span><span class="comments">💬 59</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>OpenAI says its new GPT-5.6 'Sol' model (via Codex) can run quantum computing experiments hands-on — writing and debugging the experiment code, calibrating qubits, and interpreting measurement data. The HN thread is more skeptical, with commenters noting that Python-based qubit calibration and full process tomography have been automated for over a decade, and debating whether 'AI frees people from work' is the right framing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49622561" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://openai.com/index/codex-quantum-computing-experiments/" target="_blank">https://openai.com/index/codex-quantum-computing-experiments/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://ai.meta.com/muse/" target="_blank">Muse – Meta’s personal AI agent</a></h2><div class="meta"><span class="score">⭐ 530</span><span class="comments">💬 573</span><span class="by">👤 yks</span></div><div class="summary"><p>Meta's Muse is a personal AI agent that runs in a persistent, dedicated 'Secure VM' with its own modern browser — it books appointments, fills out forms, and handles customer service. You drive it conversationally (Muse app or WhatsApp), approve sensitive actions like purchases or sending emails, and get a full audit trail. Credentials live in a secure store the agent can't read, checkouts use one-time card numbers, and Muse can connect to email, calendar, and Instagram or even build its own missing tools.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49615537" target="_blank">HN Discussion (573)</a></div><div class="source">🔗 <a href="https://ai.meta.com/muse/" target="_blank">https://ai.meta.com/muse/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.science.org/content/article/how-ai-math-breakthrough-ignited-controversy" target="_blank">How An AI math breakthrough ignited a controversy</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 1</span><span class="by">👤 pseudolus</span></div><div class="summary"><p>Science magazine covers the controversy ignited by this week's AI-assisted Navier-Stokes breakthrough (the same result as post #4) — one of the $1 million Millennium Prize problems. Quanta Magazine also reports on the fight over how much of the mathematics was done by LLMs and how the result has been verified.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49624163" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/how-ai-math-breakthrough-ignited-controversy" target="_blank">https://www.science.org/content/article/how-ai-math-breakthrough-ignited-cont...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://cims.nyu.edu/~tristanb/statement.pdf" target="_blank">Navier-Stokes – Tristan Buckmaster [pdf]</a></h2><div class="meta"><span class="score">⭐ 1719</span><span class="comments">💬 723</span><span class="by">👤 procedurecall</span></div><div class="summary"><p>Tristan Buckmaster and Levent Alpöge announce three new results: finite-time blowup for the incompressible porous media equations and Boussinesq with smooth forcing, and — the headline — for 3D incompressible Euler, a Millennium Prize problem. The proof extends the Córdoba–Martínez-Zoroa forced-blowup program, with LLMs doing the heavy lifting to reach smooth forcing and Euler. They also claim blowup for hypo-dissipative Navier-Stokes but are withholding that paper until the Lean verification finishes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49605915" target="_blank">HN Discussion (723)</a></div><div class="source">🔗 <a href="https://cims.nyu.edu/~tristanb/statement.pdf" target="_blank">https://cims.nyu.edu/~tristanb/statement.pdf</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://buttondown.com/blog/lotus-notes-email" target="_blank">Lotus Notes and the dangers of starting from scratch</a></h2><div class="meta"><span class="score">⭐ 18</span><span class="comments">💬 6</span><span class="by">👤 maguay</span></div><div class="summary"><p>Matthew Guay's retrospective on Lotus Notes: in 1989 it already had encryption (two years before PGP), rich text and attachments (before MIME), read receipts, user directories, and wiki-style cross-message links. It was fundamentally a notes and collaboration app — the thing you could build other apps on — with email as one feature. Tracing the line from PLATO's shared 'notes' text file to Notes, he argues that starting from scratch threw away a decade of solved problems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49623937" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://buttondown.com/blog/lotus-notes-email" target="_blank">https://buttondown.com/blog/lotus-notes-email</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://gwern.net/on-really-trying" target="_blank">On Really Trying (2009)</a></h2><div class="meta"><span class="score">⭐ 60</span><span class="comments">💬 37</span><span class="by">👤 whoami_nr</span></div><div class="summary"><p>Gwern's 2009 essay on the real limits of motivation and willpower, sparked by Zen 'beisutsukai' practitioners — people who seek sudden breakthroughs — and Yudkowsky's thought experiment about researchers who intellectually know their theory is wrong but lack the pragmatic drive to fix it. Why does conviction, not just knowledge, determine whether the work actually happens?</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49622305" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://gwern.net/on-really-trying" target="_blank">https://gwern.net/on-really-trying</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://phys.org/news/2026-09-trees-muscle-posture-newly-role.html" target="_blank">Tension wood: A 'muscle' that can both bend and straighten plants</a></h2><div class="meta"><span class="score">⭐ 123</span><span class="comments">💬 34</span><span class="by">👤 mdp2021</span></div><div class="summary"><p>INRAE and University Clermont Auvergne researchers showed that trees can perceive their own stem curvature — a form of proprioception — and produce tension wood that works like a muscle to straighten it back. In their experiment, bent young trees were shielded from light and gravity cues so curvature perception was the only signal, and stems realigned within weeks. Published in New Phytologist, the work matters for tree resilience to storms and landslides.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49546964" target="_blank">HN Discussion (34)</a></div><div class="source">🔗 <a href="https://phys.org/news/2026-09-trees-muscle-posture-newly-role.html" target="_blank">https://phys.org/news/2026-09-trees-muscle-posture-newly-role.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/" target="_blank">How to build a printer</a></h2><div class="meta"><span class="score">⭐ 352</span><span class="comments">💬 76</span><span class="by">👤 cat-whisperer</span></div><div class="summary"><p>An engineer turned an Xteink X3 e-ink reader into a real printer that macOS discovers and prints to natively, by implementing the Internet Printing Protocol (IPP) over HTTP and advertising it via Bonjour/mDNS. The hard part was receiving a Letter page at 300 dpi — about 8.4 MB of uncompressed grayscale — on a device with only 400 KB of RAM while still running Wi-Fi and the print server.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49617255" target="_blank">HN Discussion (76)</a></div><div class="source">🔗 <a href="https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/" target="_blank">https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/" target="_blank">AlphaGenome Atlas: a high-resolution map of human DNA</a></h2><div class="meta"><span class="score">⭐ 567</span><span class="comments">💬 122</span><span class="by">👤 utiiiD</span></div><div class="summary"><p>Google DeepMind's AlphaGenome Atlas pre-calculates the regulatory impact of all ~9 billion possible single-nucleotide variants in the human genome, producing a 1-petabyte dataset that covers the 98% of DNA that doesn't code for proteins. A new AVI score combines coding and non-coding predictions so researchers can prioritize variants quickly. It's already in use: at the Broad Institute it flagged a DNM1 splice-site variant that solved an unsolved rare-disease case, and on 54,000 UK Biobank participants it found 22% more non-coding genetic associations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49611251" target="_blank">HN Discussion (122)</a></div><div class="source">🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/" target="_blank">https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alp...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.smithsonianmag.com/smart-news/researchers-determine-how-to-spot-fake-ancient-pottery-using-the-earths-magnetic-field-180989441/" target="_blank">Researchers Spot Fake Ancient Pottery Using the Earth's Magnetic Field</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 22</span><span class="by">👤 cisc</span></div><div class="summary"><p>A Scripps team has published a way to tell genuine ancient pottery from fakes using archaeomagnetism: when clay is fired in a kiln, its ferromagnetic minerals lock in the direction and intensity of Earth's magnetic field at that moment, creating a thermal remanent magnetization signature. Compared against the known geomagnetic record for a region and era, the signature reveals whether the piece was really fired then. The PNAS paper is aimed at museum curators, archaeologists, and law enforcement cracking down on the illicit antiquities trade.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49580761" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://www.smithsonianmag.com/smart-news/researchers-determine-how-to-spot-fake-ancient-pottery-using-the-earths-magnetic-field-180989441/" target="_blank">https://www.smithsonianmag.com/smart-news/researchers-determine-how-to-spot-f...</a></div></div></div>
+
+        <footer>
+            <p>2026-09-09</p>
+        </footer>
+    </div>
+</body>
+</html>

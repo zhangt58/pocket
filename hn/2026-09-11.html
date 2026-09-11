@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-11</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.iaea.org/newscenter/news/what-is-cherenkov-radiation" target="_blank">Cherenkov Radiation - traveling faster than light</a></h2><div class="meta"><span class="score">⭐ 66</span><span class="comments">💬 48</span><span class="by">👤 andsoitis</span></div><div class="summary"><p>The post likely explains Cherenkov radiation, the blue glow produced when charged particles move through a medium faster than light travels in that medium. It may discuss how this does not violate relativity because the particles exceed light's phase velocity in the material, not the vacuum speed of light.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49655286" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://www.iaea.org/newscenter/news/what-is-cherenkov-radiation" target="_blank">https://www.iaea.org/newscenter/news/what-is-cherenkov-radiation</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://shopify.engineering/back-to-native" target="_blank">Shopify is moving from React Native back to Swift and Kotlin</a></h2><div class="meta"><span class="score">⭐ 1085</span><span class="comments">💬 775</span><span class="by">👤 fnthawar2</span></div><div class="summary"><p>Shopify is shifting its mobile development from React Native back to native Swift and Kotlin after finding that AI coding agents have greatly reduced the cost of building and maintaining separate platform codebases. The company says agents can now translate features, tests, and reviews between iOS and Android, making the old need for a shared framework less compelling. Native development keeps Shopify closer to platform capabilities and first-party tools while reducing framework and dependency overhead.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49643982" target="_blank">HN Discussion (775)</a></div><div class="source">🔗 <a href="https://shopify.engineering/back-to-native" target="_blank">https://shopify.engineering/back-to-native</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://blog.jim-nielsen.com/2026/hands-off-my-cables/" target="_blank">Don't let anyone take away your big box of cables</a></h2><div class="meta"><span class="score">⭐ 559</span><span class="comments">💬 361</span><span class="by">👤 Brajeshwar</span></div><div class="summary"><p>The author shares a humorous anecdote about the enduring usefulness of a large box of cables, inspired by a post from Tyler Gaw. To preserve the advice, he prints the post and tapes it to the box, turning it into a reminder to keep the collection and a warning against discarding cables.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49645393" target="_blank">HN Discussion (361)</a></div><div class="source">🔗 <a href="https://blog.jim-nielsen.com/2026/hands-off-my-cables/" target="_blank">https://blog.jim-nielsen.com/2026/hands-off-my-cables/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://mmoustafa.com/blog/so-you-want-to-use-openrouter/" target="_blank">So you want to use OpenRouter?</a></h2><div class="meta"><span class="score">⭐ 132</span><span class="comments">💬 17</span><span class="by">👤 player85</span></div><div class="summary"><p>OpenRouter can be difficult to use reliably because the same open-source model hosted by different providers often performs differently due to varying hosting setups, optimizations, and bugs. The article highlights that benchmark scores, especially for tool calling and vision tasks, can differ significantly between providers, so a model that works well on one host may fail on another. Users should check provider-specific benchmarks and test their own workload before relying on a particular host.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49621546" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://mmoustafa.com/blog/so-you-want-to-use-openrouter/" target="_blank">https://mmoustafa.com/blog/so-you-want-to-use-openrouter/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/" target="_blank">Working with Git Worktrees in Magit</a></h2><div class="meta"><span class="score">⭐ 58</span><span class="comments">💬 19</span><span class="by">👤 srijan4</span></div><div class="summary"><p>Git worktrees let you maintain multiple working directories for the same repository, enabling parallel work on different branches without stashing or switching contexts. They are especially useful for long-running tasks, code review, and AI coding agents, though they require duplicated untracked files and build setup. Magit provides built-in worktree commands for creating, checking out, moving, and deleting worktrees, while Jujutsu offers an alternative VCS with safer parallel working copies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49606281" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/" target="_blank">https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://developers.openai.com/api/docs/guides/agents-api/overview" target="_blank">OpenAI Agents API</a></h2><div class="meta"><span class="score">⭐ 272</span><span class="comments">💬 151</span><span class="by">👤 aquir</span></div><div class="summary"><p>The OpenAI Agents API offers a platform for creating and deploying AI agents, with features for sessions, tools, sandboxes, multi-agent orchestration, and observability. It also covers SDKs, safety controls, and production best practices for building reliable agent applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49649213" target="_blank">HN Discussion (151)</a></div><div class="source">🔗 <a href="https://developers.openai.com/api/docs/guides/agents-api/overview" target="_blank">https://developers.openai.com/api/docs/guides/agents-api/overview</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://auberon.xyz/blog/posts/deathray/" target="_blank">The Deathray: A simple way for an untrusted site to freeze a Mac</a></h2><div class="meta"><span class="score">⭐ 209</span><span class="comments">💬 129</span><span class="by">👤 auberonedu</span></div><div class="summary"><p>A malicious WebGPU shader can freeze a Mac by submitting an infinite compute loop that blocks the GPU and makes the desktop unresponsive until a forced restart. The issue works in Chrome, Firefox, and Safari on macOS but not on other operating systems. It highlights a weakness in how untrusted browser shaders are handled, with similar earlier WebGL exploits showing the need for better safeguards.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49649124" target="_blank">HN Discussion (129)</a></div><div class="source">🔗 <a href="https://auberon.xyz/blog/posts/deathray/" target="_blank">https://auberon.xyz/blog/posts/deathray/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.newyorker.com/news/fault-lines/the-death-of-shame-is-tearing-us-apart" target="_blank">The Death of Shame Is Tearing Us Apart</a></h2><div class="meta"><span class="score">⭐ 9</span><span class="comments">💬 5</span><span class="by">👤 Michelangelo11</span></div><div class="summary"><p>The article argues that the fading role of shame in modern society undermines shared norms and social cohesion, leaving communities to rely on individual self-interest and optimization. It uses the NBA practice of tanking, where teams deliberately lose to improve draft odds, as an example of how the absence of social penalties can erode collective standards. This loss of shame, the piece suggests, contributes to broader cultural fragmentation and the difficulty of maintaining moral consensus.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49655619" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://www.newyorker.com/news/fault-lines/the-death-of-shame-is-tearing-us-apart" target="_blank">https://www.newyorker.com/news/fault-lines/the-death-of-shame-is-tearing-us-a...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/" target="_blank">Mexican student creates an acoustic fire extinguisher to put out fire in seconds</a></h2><div class="meta"><span class="score">⭐ 236</span><span class="comments">💬 83</span><span class="by">👤 rguiscard</span></div><div class="summary"><p>A 16-year-old Mexican student has developed an acoustic fire extinguisher that uses sound waves to remove oxygen from flames and put out fires within seconds. Her device, called Vortex Tech, has been tested on various fuels and materials without leaving residue or harming users. The invention is set to be presented at an international fair as a clean, low-cost alternative to traditional fire suppression.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49652237" target="_blank">HN Discussion (83)</a></div><div class="source">🔗 <a href="https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fire-extinguisher-that-uses-sound-waves-to-put-out-fires-in-seconds/" target="_blank">https://www.upsocl.com/en/16-year-old-mexican-student-creates-an-acoustic-fir...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://vale.rocks/posts/css-relics" target="_blank">CSS Curiosities of the Past</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 2</span><span class="by">👤 robin_reala</span></div><div class="summary"><p>This article explores historical CSS quirks and browser-specific hacks that developers used to work around inconsistent rendering, especially in older Internet Explorer versions. It covers nonstandard property parsing, such as the star hack and underscore or hyphen prefixes, as well as bugs involving !important, document-level browser detection, and IE's hasLayout behavior that led to workarounds like clearfix.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49654962" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://vale.rocks/posts/css-relics" target="_blank">https://vale.rocks/posts/css-relics</a></div></div></div>
+
+        <footer>
+            <p>2026-09-11</p>
+        </footer>
+    </div>
+</body>
+</html>

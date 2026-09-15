@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>September 15, 2026</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua" target="_blank">I can't stop thinking about Papua New Guinea</a></h2><div class="meta"><span class="score">⭐ 262</span><span class="comments">💬 83</span><span class="by">👤 networked</span></div><div class="summary"><p>A personal essay arguing that most people's mental picture of Papua New Guinea is a pile of exotic tidbits — Denisovan genetics, 1,000 languages, 1963 bow-and-arrow skirmishes — rather than any real understanding of the country. The author traces a change of mind after reading First Contact: New Guinea's Highlanders Encounter the Outside World, and uses it to unpack what the island is actually like.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49708431" target="_blank">HN Discussion (83)</a></div><div class="source">🔗 <a href="https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua" target="_blank">https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/c8ly49w9g1edo" target="_blank">Suspected sabotage causes major Netherlands rail disruption</a></h2><div class="meta"><span class="score">⭐ 44</span><span class="comments">💬 8</span><span class="by">👤 choult</span></div><div class="summary"><p>Suspected sabotage has thrown the Netherlands' rail network into major disruption, with ProRail saying deliberately placed materials — reportedly ~1.5m metal pipes — caused track malfunctions at multiple locations. At least 15 service disruptions were recorded, routes to Schiphol and Utrecht were affected, level crossings were closed, and a Eurostar from Amsterdam to Paris was delayed. Police are investigating with no suspects or motive identified; the incident follows a possible sabotage derailment in Normandy earlier in the week.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49710253" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/c8ly49w9g1edo" target="_blank">https://www.bbc.com/news/articles/c8ly49w9g1edo</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://tintotint.eu/whacky-corner/f-droid_slop/" target="_blank">How much of F-Droid is LLM generated?</a></h2><div class="meta"><span class="score">⭐ 37</span><span class="comments">💬 11</span><span class="by">👤 _ZeD_</span></div><div class="summary"><p>An essay by a F-Droid maintainer asking how much of the free Android app store is now LLM-generated. The author argues you can't measure it directly, but vibe-coded repos leave telltale signs — LLM-written READMEs, self-reviewed commits, low-effort everything — and uses them to reason about the real state of human-written software in 2026, while being clear that LLMs are also genuinely useful.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49710015" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://tintotint.eu/whacky-corner/f-droid_slop/" target="_blank">https://tintotint.eu/whacky-corner/f-droid_slop/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/" target="_blank">Alternatives to MinIO for single-node local S3</a></h2><div class="meta"><span class="score">⭐ 31</span><span class="comments">💬 20</span><span class="by">👤 rmoff</span></div><div class="summary"><p>A hands-on comparison of MinIO alternatives for single-node local S3 storage, tested by swapping them into the same project with minimal changes. It covers S3Proxy (lightweight, very easy to configure), RustFS (nice GUI but only alpha and hit by a recent security vulnerability), and SeaweedFS (straightforward swap with some auth tweaks), rating each on Docker image, licence, S3 compatibility, and ease of configuration.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49709381" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/" target="_blank">https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/" target="_blank">iOS 27, iPadOS 27, and macOS 27</a></h2><div class="meta"><span class="score">⭐ 620</span><span class="comments">💬 711</span><span class="by">👤 throw0101d</span></div><div class="summary"><p>Apple has released iOS 27, iPadOS 27, and macOS 27, headlined by Siri AI — an entirely new, more conversational version of Siri built on the next generation of Apple Intelligence, with personal context understanding, onscreen awareness, and systemwide app actions. The update rolls out as an English beta first (French, Japanese, Korean, Portuguese, and Spanish in October), and also brings new parental controls and broad platform-wide improvements.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49701004" target="_blank">HN Discussion (711)</a></div><div class="source">🔗 <a href="https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/" target="_blank">https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-plat...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/enactic/OpenArm" target="_blank">OpenArm: An open-source 7DOF humanoid arm</a></h2><div class="meta"><span class="score">⭐ 104</span><span class="comments">💬 21</span><span class="by">👤 Lwrless</span></div><div class="summary"><p>OpenArm is an open-source 7-DOF humanoid arm from Enactic aimed at physical AI research and deployment in contact-rich environments. With high backdrivability and compliance for safe human-robot interaction, a $6,500 bimanual system, and a standardized 'OpenArm Cell' test environment (unified lighting, background, and camera placement), it targets reproducible, globally comparable physical-AI evaluation across teleoperation, imitation learning, and simulation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49684289" target="_blank">HN Discussion (21)</a></div><div class="source">🔗 <a href="https://github.com/enactic/OpenArm" target="_blank">https://github.com/enactic/OpenArm</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.forbrukerradet.no/short-life/" target="_blank">Let's make quality the norm again</a></h2><div class="meta"><span class="score">⭐ 66</span><span class="comments">💬 59</span><span class="by">👤 ingve</span></div><div class="summary"><p>A report from the Norwegian Consumer Council (Forbrukerrådet) arguing that a more circular economy isn't just an environmental issue — it also strengthens consumer rights and societal resilience. The report, titled Kjøp. Bruk. Kast. Gjenta? (Buy. Use. Toss. Repeat?), examines how consumer policy can make circular choices easier, safer, and more attractive for consumers, responding to a trend of products dying too early.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49710109" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://www.forbrukerradet.no/short-life/" target="_blank">https://www.forbrukerradet.no/short-life/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://andonlabs.com/blog/why-we-built-pion" target="_blank">Pion, an agent designed to run any company autonomously</a></h2><div class="meta"><span class="score">⭐ 419</span><span class="comments">💬 518</span><span class="by">👤 lukaspetersson</span></div><div class="summary"><p>Andon Labs is releasing Pion, a platform for running businesses fully autonomously with AI agents. It grew out of their Vending-Bench work (measuring how well LLMs run a simulated vending-machine business) and real deployments — vending machines, a store, a cafe — where model performance keeps climbing without plateauing. The post explains why Andon studies this, given its origins in dangerous-capabilities evaluations, and opens the platform up via a waitlist.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49700477" target="_blank">HN Discussion (518)</a></div><div class="source">🔗 <a href="https://andonlabs.com/blog/why-we-built-pion" target="_blank">https://andonlabs.com/blog/why-we-built-pion</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://arkeonews.net/4400-year-old-tomb-of-an-egyptian-judge-found-at-saqqara-with-colors-still-on-the-walls/" target="_blank">4,400-Year-Old Tomb of Egyptian Judge Found at Saqqara with Colors on Walls</a></h2><div class="meta"><span class="score">⭐ 148</span><span class="comments">💬 44</span><span class="by">👤 arunbahl</span></div><div class="summary"><p>Archaeologists at the Mariette Necropolis near Saqqara uncovered a 4,400-year-old mastaba tomb from the late Fifth Dynasty (reign of Djedkare Isesi) belonging to a high-ranking official named Younmin and his father Ity. The finely carved agricultural scenes and offering processions still preserve traces of original colors; Younmin's titles — judge, director of the court, head of the scribes handling petitions — offer a direct glimpse into Old Kingdom administration.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49675817" target="_blank">HN Discussion (44)</a></div><div class="source">🔗 <a href="https://arkeonews.net/4400-year-old-tomb-of-an-egyptian-judge-found-at-saqqara-with-colors-still-on-the-walls/" target="_blank">https://arkeonews.net/4400-year-old-tomb-of-an-egyptian-judge-found-at-saqqar...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.linuxfromscratch.org/" target="_blank">Linux from Scratch</a></h2><div class="meta"><span class="score">⭐ 199</span><span class="comments">💬 66</span><span class="by">👤 sippingabonedry</span></div><div class="summary"><p>Linux From Scratch (LFS) is the project that provides step-by-step instructions for building your own custom Linux system entirely from source code. The organization also maintains a family of subprojects: BLFS (extending an LFS system), ALFS (automated builds), MLFS (multilib 32-bit support), GLFS (gaming software like Steam and Wine), SLFS (supplemental packages), plus hints, patches, and an editors' guide.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49707627" target="_blank">HN Discussion (66)</a></div><div class="source">🔗 <a href="https://www.linuxfromscratch.org/" target="_blank">https://www.linuxfromscratch.org/</a></div></div></div>
+
+        <footer>
+            <p>September 15, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

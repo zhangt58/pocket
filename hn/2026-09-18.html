@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-18</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://openjev.com/" target="_blank">OpenJev</a></h2><div class="meta"><span class="score">⭐ 100</span><span class="comments">💬 49</span><span class="by">👤 ilreb</span></div><div class="summary"><p>OpenJev runs a decision model entirely in your browser using open models and WebGPU. It can read typed probabilities for your allowed options without decoding them, or generate the same distribution token by token, so you can measure the difference on your own hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49752041" target="_blank">HN Discussion (49)</a></div><div class="source">🔗 <a href="https://openjev.com/" target="_blank">https://openjev.com/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/jemalloc/jemalloc/releases/tag/5.4.0" target="_blank">Jemalloc 5.4.0</a></h2><div class="meta"><span class="score">⭐ 167</span><span class="comments">💬 47</span><span class="by">👤 gkfasdfasdf</span></div><div class="summary"><p>jemalloc is a general-purpose malloc(3) implementation that emphasizes fragmentation avoidance and scalable concurrency, originally adopted as FreeBSD's libc allocator in 2005. Version 5.4.0 continues the project's effort to make it one of the best allocators for a broad range of demanding applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49750152" target="_blank">HN Discussion (47)</a></div><div class="source">🔗 <a href="https://github.com/jemalloc/jemalloc/releases/tag/5.4.0" target="_blank">https://github.com/jemalloc/jemalloc/releases/tag/5.4.0</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/" target="_blank">Microsoft exec called AI scraping 'the largest theft of labor in human history'</a></h2><div class="meta"><span class="score">⭐ 101</span><span class="comments">💬 45</span><span class="by">👤 pluc</span></div><div class="summary"><p>New unredacted filings in the New York Times' copyright lawsuit against OpenAI and Microsoft reveal a Microsoft exec privately called AI scraping 'theft' and OpenAI leadership described its models as an 'existential threat' to publishers. The material also details how content was obtained by bypassing paywalls and stripping copyright notices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49752056" target="_blank">HN Discussion (45)</a></div><div class="source">🔗 <a href="https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/" target="_blank">https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-large...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://fex-emu.com/Scourge-of-emulation/" target="_blank">The scourge of x86 emulation</a></h2><div class="meta"><span class="score">⭐ 161</span><span class="comments">💬 28</span><span class="by">👤 dagmx</span></div><div class="summary"><p>A FEX-EMU feature article on the core difficulty of emulating the x86 Total Store Ordering (TSO) memory model on ARM's weaker ordering model. It walks through the multi-faceted problems, from atomic instructions to split-lock and uncached memory, and how each is solved, or can't be.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49750094" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://fex-emu.com/Scourge-of-emulation/" target="_blank">https://fex-emu.com/Scourge-of-emulation/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://openai.com/index/astra-for-law/" target="_blank">Astra for Law</a></h2><div class="meta"><span class="score">⭐ 502</span><span class="comments">💬 591</span><span class="by">👤 vertigoruntime</span></div><div class="summary"><p>OpenAI introduces Astra for Law, a foundation for law firms and legal-tech companies built on GPT-6 Astra combined with a legal search index and tools tailored for professional legal work. It adds privacy and governance controls for confidential client work plus 26 new ecosystem plugins connecting to tools like Relativity and Clio.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49745940" target="_blank">HN Discussion (591)</a></div><div class="source">🔗 <a href="https://openai.com/index/astra-for-law/" target="_blank">https://openai.com/index/astra-for-law/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://prismml.com/news/bonsai-2-27b" target="_blank">Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint</a></h2><div class="meta"><span class="score">⭐ 461</span><span class="comments">💬 135</span><span class="by">👤 JonSchneider</span></div><div class="summary"><p>Ternary Bonsai 2 27B, based on Qwen3.8 27B, uses ternary -1/0/+1 weights with FP16 group-wise scaling for 1.76 effective bits per weight and a 5.9GB footprint. It is more than 9x smaller than its full-precision counterpart while retaining 98.2% of benchmark performance, with a 262K-token context window and an Apache 2.0 license.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49746618" target="_blank">HN Discussion (135)</a></div><div class="source">🔗 <a href="https://prismml.com/news/bonsai-2-27b" target="_blank">https://prismml.com/news/bonsai-2-27b</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://bend-lang.com/" target="_blank">Bend – A language that blocks AI mistakes via proof, on CPU and GPU</a></h2><div class="meta"><span class="score">⭐ 487</span><span class="comments">💬 230</span><span class="by">👤 nicolas-siplis</span></div><div class="summary"><p>Bend is a fast language that blocks AI mistakes via proof, compiling to native code near C speed with CUDA parallelism, Lean proofs, and Python syntax. You express intent as precise 'laws' and verify that an AI implemented them correctly with 'proofs' before committing, on CPU or GPU.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49746163" target="_blank">HN Discussion (230)</a></div><div class="source">🔗 <a href="https://bend-lang.com/" target="_blank">https://bend-lang.com/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://zed.dev/blog/delta-public-beta" target="_blank">Replacing Pull Requests with Delta</a></h2><div class="meta"><span class="score">⭐ 34</span><span class="comments">💬 5</span><span class="by">👤 vquemener</span></div><div class="summary"><p>Zed launches the public beta of Delta, a multiplayer environment for coding with agents and reviewing their work, where collaboration does not depend on committing and pushing code. Teammates join your agent threads and share the same worktrees, and Delta has already disabled pull requests on its own repository.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49727245" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://zed.dev/blog/delta-public-beta" target="_blank">https://zed.dev/blog/delta-public-beta</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://qwen.ai/blog?id=qwen3.8-omni-flash" target="_blank">Qwen 3.8 Omni Flash</a></h2><div class="meta"><span class="score">⭐ 235</span><span class="comments">💬 84</span><span class="by">👤 jjcm</span></div><div class="summary"><p>Qwen's next-generation native omnimodal model is built to strengthen agentic capabilities in real-world productivity scenarios, moving from understanding omnimodal content to planning tasks, calling tools, and completing creative work. It accepts text, image, audio, and video with a 1M-token context window, scoring over 25% better than Qwen3.5-Omni-Plus across 29 evaluations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49747925" target="_blank">HN Discussion (84)</a></div><div class="source">🔗 <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash" target="_blank">https://qwen.ai/blog?id=qwen3.8-omni-flash</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/asciimoo/hister" target="_blank">Hister: A private search engine for the pages you visit and the files you keep</a></h2><div class="meta"><span class="score">⭐ 624</span><span class="comments">💬 170</span><span class="by">👤 bookofjoe</span></div><div class="summary"><p>Hister is a private search engine that indexes the full contents of the pages you visit and files you keep, so you can find information again from a web interface, the terminal, or an MCP-connected AI assistant. It needs no configuration for a local setup and ships browser extensions for Firefox and Chrome.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49743097" target="_blank">HN Discussion (170)</a></div><div class="source">🔗 <a href="https://github.com/asciimoo/hister" target="_blank">https://github.com/asciimoo/hister</a></div></div></div>
+
+        <footer>
+            <p>2026-09-18</p>
+        </footer>
+    </div>
+</body>
+</html>

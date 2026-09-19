@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-19</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://john.hartnup.uk/2026/06/07/ai-event-posters.html" target="_blank">AI-generated posters don’t have to be horrible</a></h2><div class="meta"><span class="score">⭐ 136</span><span class="comments">💬 87</span><span class="by">👤 ereiamjh</span></div><div class="summary"><p>The article argues that AI-generated event posters are often poor because they repeat the same generic craft-fair look. By giving ChatGPT specific design instructions, the author shows that alternative styles such as Bauhaus-inspired geometric minimalism can produce cleaner and more distinctive posters. The point is that AI posters do not have to be bad if the prompt avoids the default aesthetic.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49764791" target="_blank">HN Discussion (87)</a></div><div class="source">🔗 <a href="https://john.hartnup.uk/2026/06/07/ai-event-posters.html" target="_blank">https://john.hartnup.uk/2026/06/07/ai-event-posters.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html" target="_blank">Human brain is two separate organs, Stanford Medicine-led research finds</a></h2><div class="meta"><span class="score">⭐ 258</span><span class="comments">💬 105</span><span class="by">👤 emigre</span></div><div class="summary"><p>New research led by Stanford Medicine shows that the human brain is not one unified organ but two distinct systems that evolved independently. The forebrain and hindbrain arise from separate progenitor cells during early development, with the hindbrain controlling vital automatic functions such as breathing and heartbeat. This finding may help scientists grow hindbrain neurons in the lab and study brain stem diseases including spinal muscular atrophy and amyotrophic lateral sclerosis.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49763697" target="_blank">HN Discussion (105)</a></div><div class="source">🔗 <a href="https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html" target="_blank">https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/" target="_blank">If math is more than proof, we need to better celebrate the rest of it</a></h2><div class="meta"><span class="score">⭐ 114</span><span class="comments">💬 80</span><span class="by">👤 num42</span></div><div class="summary"><p>The article argues that mathematics should place greater value on motivated explanations, which show why an idea is natural and how to think of it, rather than treating proofs as the main measure of progress. It proposes giving such explanations academic credit similar to new proofs, especially as automated proof generation may weaken proofs as a proxy for understanding. This would help the field communicate its true contributions and reward work that deepens human understanding.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49763928" target="_blank">HN Discussion (80)</a></div><div class="source">🔗 <a href="https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/" target="_blank">https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio" target="_blank">GPT-6 Astra Solves a WWI German Radio Cipher</a></h2><div class="meta"><span class="score">⭐ 129</span><span class="comments">💬 62</span><span class="by">👤 nsoonhui</span></div><div class="summary"><p>GPT-6 Astra reportedly solved a long-unsolved World War I German radio message encrypted with the ADFGVX system. The model identified the key TRUPPENVERSCHIEBUNG and decoded the text as a report that an English cruiser arrived at Sevastopol and an allied squadron would follow. The result adds to a small number of remaining ADFGVX ciphers that have resisted human codebreakers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49763987" target="_blank">HN Discussion (62)</a></div><div class="source">🔗 <a href="https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio" target="_blank">https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://grapheneos.social/@GrapheneOS/117282080803799576" target="_blank">Android 17 is the first since 3.x to add new APIs without releasing to the AOSP</a></h2><div class="meta"><span class="score">⭐ 858</span><span class="comments">💬 433</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>A post titled "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP" on Hacker News. Submitted by theanonymousone. Links to content on grapheneos.social.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49758736" target="_blank">HN Discussion (433)</a></div><div class="source">🔗 <a href="https://grapheneos.social/@GrapheneOS/117282080803799576" target="_blank">https://grapheneos.social/@GrapheneOS/117282080803799576</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://onionfutures.com/" target="_blank">San Francisco Onion Futures Company</a></h2><div class="meta"><span class="score">⭐ 202</span><span class="comments">💬 72</span><span class="by">👤 z-mach9</span></div><div class="summary"><p>The San Francisco Onion Futures Company sells private, transferable contracts for the future physical delivery of yellow onions, with monthly contracts and prices that are recalculated daily. Buyers receive unique contract keys that can be transferred to others, and delivery is arranged in the first week of the contract month in areas such as San Francisco, Toronto, Seattle, and Chicago. The company states it is not a regulated board of trade, offers no refunds or cash settlement, and relies on contract keys to manage ownership and delivery information.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49763296" target="_blank">HN Discussion (72)</a></div><div class="source">🔗 <a href="https://onionfutures.com/" target="_blank">https://onionfutures.com/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here" target="_blank">“The Secret Life of Circuits” is here</a></h2><div class="meta"><span class="score">⭐ 38</span><span class="comments">💬 17</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>The book The Secret Life of Circuits is now available as a premium full-color hardcover with nearly 300 custom diagrams and illustrations. It presents a practical, modern approach to electronics design, explaining how to create original circuits without requiring advanced mathematics. The book is described as a hands-on reference for learning electronics from basic components to microcontrollers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49720143" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here" target="_blank">https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://browser.geekbench.com/v7/cpu/389219" target="_blank">Apple M6 Pro Achieves the Highest Single-Core CPU Score in Geekbench 7</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 48</span><span class="by">👤 gainsurier</span></div><div class="summary"><p>The Apple M6 Pro has reportedly achieved the highest single-core CPU score in Geekbench 7. This result indicates strong single-threaded performance for the chip.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49763883" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://browser.geekbench.com/v7/cpu/389219" target="_blank">https://browser.geekbench.com/v7/cpu/389219</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://try.cloudflare.com/" target="_blank">Cloudflare Quick Tunnels</a></h2><div class="meta"><span class="score">⭐ 714</span><span class="comments">💬 285</span><span class="by">👤 jcbhmr</span></div><div class="summary"><p>Cloudflare Quick Tunnels lets a user run a single command to expose a local server as a public, encrypted URL on Cloudflare's edge network. It requires no account, DNS changes, or open inbound ports, using an outbound-only connection with automatic HTTPS and DDoS filtering. The service is aimed at developers and coding agents who need fast, temporary access to local apps from anywhere.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49754785" target="_blank">HN Discussion (285)</a></div><div class="source">🔗 <a href="https://try.cloudflare.com/" target="_blank">https://try.cloudflare.com/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://sdcc.sourceforge.net/" target="_blank">SDCC – Small Device C Compiler</a></h2><div class="meta"><span class="score">⭐ 89</span><span class="comments">💬 18</span><span class="by">👤 lioeters</span></div><div class="summary"><p>SDCC is a C compiler for small embedded devices. It targets microcontrollers and other low-resource systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49762744" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://sdcc.sourceforge.net/" target="_blank">https://sdcc.sourceforge.net/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-19</p>
+        </footer>
+    </div>
+</body>
+</html>

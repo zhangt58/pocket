@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-21</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://zuckoff.app/" target="_blank">ZuckOff Know when a camera is in the room</a></h2><div class="meta"><span class="score">⭐ 27</span><span class="comments">💬 3</span><span class="by">👤 Bluestein</span></div><div class="summary"><p>A post titled "ZuckOff Know when a camera is in the room" on Hacker News. Submitted by Bluestein. Links to content on zuckoff.app.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49785429" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://zuckoff.app/" target="_blank">https://zuckoff.app/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.wired.me/story/meta-smart-glasses-detector-app-zuckoff" target="_blank">ZuckOff Is a Free App That Sees Meta Glasses Before They See You</a></h2><div class="meta"><span class="score">⭐ 22</span><span class="comments">💬 0</span><span class="by">👤 choult</span></div><div class="summary"><p>A post titled "ZuckOff Is a Free App That Sees Meta Glasses Before They See You" on Hacker News. Submitted by choult. Links to content on wired.me.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49785397" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.wired.me/story/meta-smart-glasses-detector-app-zuckoff" target="_blank">https://www.wired.me/story/meta-smart-glasses-detector-app-zuckoff</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://github.com/jaredpalmer/kev/tree/main" target="_blank">Kev: Tiny Jev-like family of decision models built on top of Qwen3.5</a></h2><div class="meta"><span class="score">⭐ 123</span><span class="comments">💬 56</span><span class="by">👤 tosh</span></div><div class="summary"><p>A post titled "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5" on Hacker News. Submitted by tosh. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49783999" target="_blank">HN Discussion (56)</a></div><div class="source">🔗 <a href="https://github.com/jaredpalmer/kev/tree/main" target="_blank">https://github.com/jaredpalmer/kev/tree/main</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/f/jev-leftpad" target="_blank">Jev-Leftpad</a></h2><div class="meta"><span class="score">⭐ 66</span><span class="comments">💬 33</span><span class="by">👤 fka</span></div><div class="summary"><p>A post titled "Jev-Leftpad" on Hacker News. Submitted by fka. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49784706" target="_blank">HN Discussion (33)</a></div><div class="source">🔗 <a href="https://github.com/f/jev-leftpad" target="_blank">https://github.com/f/jev-leftpad</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf" target="_blank">Grim Fandango Puzzle Document (1996) [pdf]</a></h2><div class="meta"><span class="score">⭐ 207</span><span class="comments">💬 44</span><span class="by">👤 kelseyfrog</span></div><div class="summary"><p>A post titled "Grim Fandango Puzzle Document (1996) [pdf]" on Hacker News. Submitted by kelseyfrog. Links to content on gameshelf.jmac.org.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49783495" target="_blank">HN Discussion (44)</a></div><div class="source">🔗 <a href="https://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf" target="_blank">https://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://agentexecutor.io" target="_blank">AX – Google’s Open Agentic Orchestrator</a></h2><div class="meta"><span class="score">⭐ 520</span><span class="comments">💬 226</span><span class="by">👤 blazarquasar</span></div><div class="summary"><p>A post titled "AX – Google’s Open Agentic Orchestrator" on Hacker News. Submitted by blazarquasar. Links to content on agentexecutor.io.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49780797" target="_blank">HN Discussion (226)</a></div><div class="source">🔗 <a href="https://agentexecutor.io" target="_blank">https://agentexecutor.io</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say" target="_blank">Samsung is expected to more than double output of its HBM4 and HBM4E DRAM</a></h2><div class="meta"><span class="score">⭐ 485</span><span class="comments">💬 335</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>A post titled "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM" on Hacker News. Submitted by giuliomagnifico. Links to content on en.sedaily.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49778029" target="_blank">HN Discussion (335)</a></div><div class="source">🔗 <a href="https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say" target="_blank">https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/volotat/mini-AGI/" target="_blank">Show HN: Mini-AGI – Dynamic continual learning model trained on 8GB VRAM</a></h2><div class="meta"><span class="score">⭐ 104</span><span class="comments">💬 16</span><span class="by">👤 volotat</span></div><div class="summary"><p>A post titled "Show HN: Mini-AGI – Dynamic continual learning model trained on 8GB VRAM" on Hacker News. Submitted by volotat. Links to content on github.com.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49783133" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://github.com/volotat/mini-AGI/" target="_blank">https://github.com/volotat/mini-AGI/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://consumerrights.wiki/w/Disney%2B_ad_policy_change" target="_blank">Disney+: New user agreement allows ads before movies in all subscriptions</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 11</span><span class="by">👤 DeepLogin</span></div><div class="summary"><p>A post titled "Disney+: New user agreement allows ads before movies in all subscriptions" on Hacker News. Submitted by DeepLogin. Links to content on consumerrights.wiki.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49784336" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://consumerrights.wiki/w/Disney%2B_ad_policy_change" target="_blank">https://consumerrights.wiki/w/Disney%2B_ad_policy_change</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://qwen.ai/blog?id=qwen-image-2.1" target="_blank">Qwen Image 2.1</a></h2><div class="meta"><span class="score">⭐ 657</span><span class="comments">💬 181</span><span class="by">👤 jmillikin</span></div><div class="summary"><p>A post titled "Qwen Image 2.1" on Hacker News. Submitted by jmillikin. Links to content on qwen.ai.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49775499" target="_blank">HN Discussion (181)</a></div><div class="source">🔗 <a href="https://qwen.ai/blog?id=qwen-image-2.1" target="_blank">https://qwen.ai/blog?id=qwen-image-2.1</a></div></div></div>
+
+        <footer>
+            <p>2026-09-21</p>
+        </footer>
+    </div>
+</body>
+</html>

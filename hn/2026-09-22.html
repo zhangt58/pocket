@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-22</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.bristol.ac.uk/news/2026/september/world-cup-viewers.html" target="_blank">9 Ads per Minute: FIFA Cup 26 – "the price of the beautiful game"</a></h2><div class="meta"><span class="score">⭐ 28</span><span class="comments">💬 26</span><span class="by">👤 KellyCriterion</span></div><div class="summary"><p>Research analyzing the FIFA World Cup found that harmful commodity branding was embedded throughout match coverage, with more than 93,000 visible appearances of unhealthy food and drink, alcohol, gambling, and speculative products. Unhealthy food and drink brands accounted for over 70% of the branding, making exposure to such products unavoidable for viewers. The study warns that the tournament’s global reach turns sport into a major advertising platform for products linked to health, social, and financial harms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49799083" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://www.bristol.ac.uk/news/2026/september/world-cup-viewers.html" target="_blank">https://www.bristol.ac.uk/news/2026/september/world-cup-viewers.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://board.flatassembler.net/topic.php?t=24261" target="_blank">AMD's random number generator can't generate a 0?</a></h2><div class="meta"><span class="score">⭐ 78</span><span class="comments">💬 29</span><span class="by">👤 BruceEel</span></div><div class="summary"><p>A forum discussion reports that AMD processors appear unable to generate a 16-bit zero using the rdrand and rdseed random number instructions, while Intel processors produce zeros normally. A test program shows the missing zero in 16-bit output and notes that 32-bit or 64-bit results can contain zero in their lower bits, suggesting the issue may be specific to how AMD handles smaller output sizes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49798204" target="_blank">HN Discussion (29)</a></div><div class="source">🔗 <a href="https://board.flatassembler.net/topic.php?t=24261" target="_blank">https://board.flatassembler.net/topic.php?t=24261</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://nathan.rs/posts/gzip-lm/" target="_blank">Can gzip be a language model?</a></h2><div class="meta"><span class="score">⭐ 169</span><span class="comments">💬 71</span><span class="by">👤 networked</span></div><div class="summary"><p>The article explores whether gzip can function as a language model by exploiting the equivalence between compression and prediction. By priming gzip with a corpus and scoring candidate continuations based on how well they compress, the author uses beam search to generate text that is incoherent but still reflects patterns in the source material.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49797323" target="_blank">HN Discussion (71)</a></div><div class="source">🔗 <a href="https://nathan.rs/posts/gzip-lm/" target="_blank">https://nathan.rs/posts/gzip-lm/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://mimo.xiaomi.com/mimo-v2-6" target="_blank">MiMo v2.6</a></h2><div class="meta"><span class="score">⭐ 932</span><span class="comments">💬 414</span><span class="by">👤 volf_</span></div><div class="summary"><p>The MiMo-V2.6 series is an open-sourced, natively omnimodal model family featuring Pro, Flash, and UltraSpeed variants that emphasize frontier intelligence, efficiency, and generation speed. The release highlights strong performance across coding, general, visual, and cyber benchmarks, with Pro becoming the strongest open-source model on the Artificial Analysis Intelligence Index. The models were developed through large-scale reinforcement learning on verifiable complex tasks, improving capability while maintaining the previous series' API pricing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49792730" target="_blank">HN Discussion (414)</a></div><div class="source">🔗 <a href="https://mimo.xiaomi.com/mimo-v2-6" target="_blank">https://mimo.xiaomi.com/mimo-v2-6</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://brand.io/article/spymarks/" target="_blank">Spymarks, Not Watermarks</a></h2><div class="meta"><span class="score">⭐ 468</span><span class="comments">💬 120</span><span class="by">👤 possibilistic</span></div><div class="summary"><p>The article argues that modern hidden signals in AI-generated images, audio, and video are better called spymarks than watermarks because they can trace content back to creators without consent. It cites systems like Google's SynthID and OpenAI's provenance tools, which embed imperceptible identifiers that may be linked to personal data. The author says renaming the technology makes the privacy risk clearer and separates it from traditional authenticity marks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49794615" target="_blank">HN Discussion (120)</a></div><div class="source">🔗 <a href="https://brand.io/article/spymarks/" target="_blank">https://brand.io/article/spymarks/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://poloclub.github.io/transformer-explainer/" target="_blank">Transformers Explained Visually</a></h2><div class="meta"><span class="score">⭐ 440</span><span class="comments">💬 67</span><span class="by">👤 aray07</span></div><div class="summary"><p>The article explains the Transformer neural network architecture that underpins modern AI models such as GPT, Llama, and Gemini. It describes how Transformers use next-token prediction and self-attention to process sequences, and breaks down their core components: embedding, transformer blocks with attention and MLP layers, and output probability generation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49792342" target="_blank">HN Discussion (67)</a></div><div class="source">🔗 <a href="https://poloclub.github.io/transformer-explainer/" target="_blank">https://poloclub.github.io/transformer-explainer/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://alicegg.tech/2026/09/21/attention" target="_blank">Attention is all you have</a></h2><div class="meta"><span class="score">⭐ 834</span><span class="comments">💬 249</span><span class="by">👤 zer0tonin</span></div><div class="summary"><p>The article argues that constant focus on algorithm-driven feeds shapes our thoughts and attention, much like the Tetris effect. It criticizes platforms for hijacking attention with recommendations, ads, and low-quality content. The author advocates returning to a more intentional internet using bookmarks, blogs, RSS feeds, and slower, self-directed browsing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49787726" target="_blank">HN Discussion (249)</a></div><div class="source">🔗 <a href="https://alicegg.tech/2026/09/21/attention" target="_blank">https://alicegg.tech/2026/09/21/attention</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/" target="_blank">What Sun got wrong</a></h2><div class="meta"><span class="score">⭐ 598</span><span class="comments">💬 347</span><span class="by">👤 chmaynard</span></div><div class="summary"><p>The author reflects on Sun Microsystems' legacy and argues that its biggest failure was becoming bored with the mechanics of running a business. Despite strong strategy and the success of open-sourcing Solaris, Sun struggled with customer service and sales execution, as illustrated by a startup that could not get Sun to respond while Dell provided rapid, attentive support. This operational disinterest, not technical shortcomings, ultimately undermined Sun's success.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49787436" target="_blank">HN Discussion (347)</a></div><div class="source">🔗 <a href="https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/" target="_blank">https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://artificialanalysis.ai/models/mimo-v2-6-pro" target="_blank">MiMo-v2.6-Pro: Intelligence, Performance and Price Analysis</a></h2><div class="meta"><span class="score">⭐ 82</span><span class="comments">💬 27</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>The article examines MiMo-v2.6-Pro using Artificial Analysis benchmarks, focusing on its intelligence index, capability scores, and openness. It describes how the model is measured across agentic knowledge work, coding, document reasoning, and hallucination resistance. The analysis positions the model among open and proprietary systems based on these evaluations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49796660" target="_blank">HN Discussion (27)</a></div><div class="source">🔗 <a href="https://artificialanalysis.ai/models/mimo-v2-6-pro" target="_blank">https://artificialanalysis.ai/models/mimo-v2-6-pro</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://dbushell.com/2026/09/22/apple-intelligence/" target="_blank">I said no and Apple said yes</a></h2><div class="meta"><span class="score">⭐ 247</span><span class="comments">💬 170</span><span class="by">👤 thatslast</span></div><div class="summary"><p>The article recounts how macOS AI features initially allowed users to opt out, but after an upgrade Apple removed or obscured the disable option, enabling data collection and large system overhead despite explicit refusal. It uses this experience to criticize the AI industry for ignoring consent, privacy, and user control while pushing intrusive features.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49797982" target="_blank">HN Discussion (170)</a></div><div class="source">🔗 <a href="https://dbushell.com/2026/09/22/apple-intelligence/" target="_blank">https://dbushell.com/2026/09/22/apple-intelligence/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-22</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-23</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.nobodywho.ai/posts/jev-in-25-lines/" target="_blank">Jev in 25 Lines of Python</a></h2><div class="meta"><span class="score">⭐ 197</span><span class="comments">💬 65</span><span class="by">👤 bashbjorn</span></div><div class="summary"><p>A skeptical takedown of the much-hyped 'Jev' System One decision model. The authors show you can replicate Jev-style calibrated decisions - a prompt with choices mapped to probabilities - in 25 lines of Python using a small local GGUF model via llama-cpp, with no API calls, no synthetic data, and no RLCD training, keeping everything local.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49812769" target="_blank">HN Discussion (65)</a></div><div class="source">🔗 <a href="https://www.nobodywho.ai/posts/jev-in-25-lines/" target="_blank">https://www.nobodywho.ai/posts/jev-in-25-lines/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank">GPT-6 Sol and Luna</a></h2><div class="meta"><span class="score">⭐ 1559</span><span class="comments">💬 750</span><span class="by">👤 OfficialTurkey</span></div><div class="summary"><p>OpenAI expands the GPT-6 family with Sol and Luna, faster and cheaper models trained with the same methods as flagship GPT-6 Astra. API prices drop 50% versus GPT-5.6 promotional pricing (Sol: $2/$10 per million tokens, Luna: $0.10/$0.50), and OpenAI claims Sol beats Claude Opus 5 and other models on business-workflow benchmarks at a fraction of the cost per task, with roughly half the factuality errors of its predecessor.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49805509" target="_blank">HN Discussion (750)</a></div><div class="source">🔗 <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank">https://openai.com/index/introducing-gpt-6-sol-and-luna/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank">Claude Opus 5.5</a></h2><div class="meta"><span class="score">⭐ 1571</span><span class="comments">💬 974</span><span class="by">👤 km144</span></div><div class="summary"><p>Anthropic's first model in the new Claude 5.5 family, performing at Claude Fable 5.1 level on most work while costing 40% less to run. It passed external pre-release evaluations (METR, Frontier Design), posts the strongest scores yet on Anthropic's automated behavioral audit, and ships with Fable 5.1-style safeguards including Life Sciences and Cyber verification programs. Priced at $4/$20 per million tokens with output 30% faster than Opus 5.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49803892" target="_blank">HN Discussion (974)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank">https://www.anthropic.com/claude-opus-5-5</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://camplight.net/ai/ai-software-factory/" target="_blank">What Is an AI Software Factory? Lessons from 3 Client Deployments</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 0</span><span class="by">👤 altras</span></div><div class="summary"><p>Camplight defines an AI software factory as a managed system that turns defined requirements into validated software changes using AI agents, connected tools, automated checks, and human oversight. Drawing on three NDA-bound client deployments, they present 'Nest,' a public generalized model tracing the flow from intent through context, execution, verification, approval, and release - arguing the differentiator is the system around the agents, not the agents themselves.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49813704" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://camplight.net/ai/ai-software-factory/" target="_blank">https://camplight.net/ai/ai-software-factory/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://waymo.com/blog/2026/09/transit-rewards/" target="_blank">Transit rewards</a></h2><div class="meta"><span class="score">⭐ 148</span><span class="comments">💬 157</span><span class="by">👤 raybb</span></div><div class="summary"><p>Waymo launches a transit rewards program in the San Francisco Bay Area that pays riders about $2.85 in Waymo Cash - the cost of a local bus fare - when a Visa-paid Waymo trip and public transit ride happen within two hours of each other. It covers all 27 Bay Area transit agencies accepting tap-to-pay, and comes with a Caltrain partnership leasing 40 dedicated station parking spaces for staged Waymo vehicles.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49811065" target="_blank">HN Discussion (157)</a></div><div class="source">🔗 <a href="https://waymo.com/blog/2026/09/transit-rewards/" target="_blank">https://waymo.com/blog/2026/09/transit-rewards/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.cryptocellar.org/bgac/the-mvueh-break.html" target="_blank">OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005</a></h2><div class="meta"><span class="score">⭐ 668</span><span class="comments">💬 387</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>OpenAI's GPT-6 Astra independently broke the German Army Enigma message MVUEH from 10 July 1941, which had resisted cryptanalysis since 2005. Given only the list of unbroken messages, the model chose its target, suspected the plaintext was related to an adjacent already-decoded message, used the repeated place name ROSENOW as a crib, and wrote its own Python and C++ Enigma simulator and Bombe to recover the key and plaintext.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49801324" target="_blank">HN Discussion (387)</a></div><div class="source">🔗 <a href="https://www.cryptocellar.org/bgac/the-mvueh-break.html" target="_blank">https://www.cryptocellar.org/bgac/the-mvueh-break.html</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://foxscript.org/" target="_blank">Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived</a></h2><div class="meta"><span class="score">⭐ 335</span><span class="comments">💬 193</span><span class="by">👤 boredjohnny</span></div><div class="summary"><p>FoxDev Studio is an IDE that runs existing Visual FoxPro 9 projects on modern machines with no rewrite, conversion, or export step. It opens your existing projects, forms, tables, class libraries, and menus in their original file formats, with familiar designers, a line-level debugger, in-place data access, and continued support for legacy COM and add-in libraries - plus a new FoxScript language with lambdas demonstrated running an HTTP server.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49808023" target="_blank">HN Discussion (193)</a></div><div class="source">🔗 <a href="https://foxscript.org/" target="_blank">https://foxscript.org/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/" target="_blank">'We hacked the FBI:' Hackers say they have data on all FBI employees</a></h2><div class="meta"><span class="score">⭐ 628</span><span class="comments">💬 455</span><span class="by">👤 spenvo</span></div><div class="summary"><p>A high-profile hacking group claims it breached multiple FBI-related services and stole data 'on all FBI employees and their families.' 404 Media examined a 5,000-record sample that includes names, addresses, and phone numbers of agents along with details on spouses. The full extent and authenticity of the breach remains under investigation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49805278" target="_blank">HN Discussion (455)</a></div><div class="source">🔗 <a href="https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/" target="_blank">https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-f...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.usenix.org/publications/loginonline/data-only-attacks-are-easier-you-think" target="_blank">Data-only attacks are easier than you think (2024)</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 22</span><span class="by">👤 segfaultbuserr</span></div><div class="summary"><p>Research by Johannesmeyer, Bos, Giuffrida, and Slowinska shows data-only attacks - which do not affect a program's control flow and have long been considered too sophisticated and niche to be a practical threat - can be generated automatically with surprising ease. Their tool Einstein automates the construction of such attacks, moving them from theoretical curiosity to realistic threat.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49811429" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://www.usenix.org/publications/loginonline/data-only-attacks-are-easier-you-think" target="_blank">https://www.usenix.org/publications/loginonline/data-only-attacks-are-easier-...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/xCuri0/ReBarUEFI" target="_blank">ReBarUEFI: Resizable BAR for almost any UEFI system</a></h2><div class="meta"><span class="score">⭐ 162</span><span class="comments">💬 50</span><span class="by">👤 nateb2022</span></div><div class="summary"><p>ReBarUEFI is an open-source UEFI DXE driver that enables Resizable BAR on systems that don't officially support it, unlocking GPU performance benefits and functionality that Intel Arc GPUs require to run optimally. It works by patching the module into your firmware, enabling 4G decoding with CSM off, then running ReBarState to set the BAR size (typically unlimited at 32-bit addressing).</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49781862" target="_blank">HN Discussion (50)</a></div><div class="source">🔗 <a href="https://github.com/xCuri0/ReBarUEFI" target="_blank">https://github.com/xCuri0/ReBarUEFI</a></div></div></div>
+
+        <footer>
+            <p>2026-09-23</p>
+        </footer>
+    </div>
+</body>
+</html>

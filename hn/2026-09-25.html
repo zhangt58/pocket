@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-25</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.dawo.community/en/" target="_blank">Dutch governments builds alternative for Microsoft based on NixOS</a></h2><div class="meta"><span class="score">⭐ 264</span><span class="comments">💬 108</span><span class="by">👤 fjfaase</span></div><div class="summary"><p>The Dutch government is developing an open, NixOS-based alternative to Microsoft workplace tools through DAWO, a community collaboration involving government, industry, and open source. The project uses modular, inspectable building blocks for the operating system, cloud infrastructure, AI, and collaboration software. Its goals are to strengthen digital autonomy, improve security, and make government IT systems more verifiable and efficient.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49841563" target="_blank">HN Discussion (108)</a></div><div class="source">🔗 <a href="https://www.dawo.community/en/" target="_blank">https://www.dawo.community/en/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.inkandswitch.com/" target="_blank">Ink and Switch Interactive Homepage</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 4</span><span class="by">👤 iFreilicht</span></div><div class="summary"><p>Ink and Switch is an independent research lab developing tools that help people think, collaborate, and create more effectively. Its work focuses on local-first software, malleable environments, programmable ink, and universal version control. Projects include scenario spreadsheets, secure local-first access control, dynamic creative environments, collaborative programming, and programmable sketches.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49842270" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.inkandswitch.com/" target="_blank">https://www.inkandswitch.com/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://economist.com/europe/2026/09/24/the-mafia-may-be-keeping-fentanyl-out-of-italy" target="_blank">The Mafia may be keeping fentanyl out of Italy</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 11</span><span class="by">👤 runeks</span></div><div class="summary"><p>The article suggests that Italian organized crime groups may be limiting the spread of fentanyl, possibly to protect existing drug markets and maintain control over trafficking networks. This dynamic may help explain why fentanyl has not become as widespread in Italy as in some other countries.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49842487" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://economist.com/europe/2026/09/24/the-mafia-may-be-keeping-fentanyl-out-of-italy" target="_blank">https://economist.com/europe/2026/09/24/the-mafia-may-be-keeping-fentanyl-out...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://nyaa.sh/reviews/mac-mini-m6-emulation" target="_blank">Pentium II at 600Mhz with Voodoo 3 Emulated on 86Box with M6 Mac Mini</a></h2><div class="meta"><span class="score">⭐ 79</span><span class="comments">💬 28</span><span class="by">👤 hugh4life</span></div><div class="summary"><p>86Box emulates old PCs at the hardware level, but its workload is dominated by a single host thread, making single-core speed and sustained clock more important than core count. The M6 Mac Mini’s strong single-thread performance lets it run a 600MHz Pentium II with an emulated Voodoo 3 at a stable 100% emulation speed, while 650MHz produced audio underruns. Improved ARM support in 86Box 6.0, including a JIT recompiler for Voodoo graphics, also helps the setup perform well.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49841285" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://nyaa.sh/reviews/mac-mini-m6-emulation" target="_blank">https://nyaa.sh/reviews/mac-mini-m6-emulation</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html" target="_blank">F-Droid 2.0</a></h2><div class="meta"><span class="score">⭐ 1265</span><span class="comments">💬 364</span><span class="by">👤 daveoc64</span></div><div class="summary"><p>F-Droid 2.0 is a major redesign of the official F-Droid app that modernizes the interface and improves how users discover, search for, and manage free and open source Android applications. The update reorganizes the app around Discover, Search, and My Apps, adds expanded and more specialized categories, and rebuilds key components with Kotlin Compose for a smoother, more maintainable experience.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49831968" target="_blank">HN Discussion (364)</a></div><div class="source">🔗 <a href="https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html" target="_blank">https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom....</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2" target="_blank">CVE-2025-13032: Entering and Breaking the Avast Antivirus Sandbox Part 2</a></h2><div class="meta"><span class="score">⭐ 56</span><span class="comments">💬 14</span><span class="by">👤 safateam</span></div><div class="summary"><p>The article details exploitation of CVE-2025-13032, a double-fetch vulnerability in Avast's kernel driver that causes a paged pool overflow when a user-supplied UNICODE_STRING length is read inconsistently. Researchers demonstrate a race-condition attack on Windows 11 to turn the overflow into arbitrary kernel read/write and local privilege escalation. It also notes that newer Windows user-mode accessors can prevent the described technique.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49841115" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2" target="_blank">https://www.safateam.com/intelligence-hub/research/technical-articles/cve-202...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://openai.com/index/special-projects/" target="_blank">Special Projects (2016)</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 9</span><span class="by">👤 vinhnx</span></div><div class="summary"><p>The article identifies high-impact AI research areas, including detecting undisclosed breakthrough AI systems, creating agents capable of winning programming competitions, and developing AI-based cybersecurity defenses. It also proposes building a large simulation with many long-lived agents that interact, learn, and pursue diverse goals.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49841893" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://openai.com/index/special-projects/" target="_blank">https://openai.com/index/special-projects/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://bastardica.mitpit.com" target="_blank">Show HN: Make cursed fonts like Times New Bastard</a></h2><div class="meta"><span class="score">⭐ 717</span><span class="comments">💬 95</span><span class="by">👤 MitPitt</span></div><div class="summary"><p>The article introduces Bastardica, a browser-based tool for creating “bastard” web fonts by mixing, stretching, and skewing glyphs from multiple fonts. It runs locally using Pyodide and fontTools, outputs standard OpenType fonts with contextual ligature substitutions, and notes that users should check source font licenses for commercial use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49823738" target="_blank">HN Discussion (95)</a></div><div class="source">🔗 <a href="https://bastardica.mitpit.com" target="_blank">https://bastardica.mitpit.com</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/devdotfast/whiteboard" target="_blank">Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design</a></h2><div class="meta"><span class="score">⭐ 323</span><span class="comments">💬 119</span><span class="by">👤 sidharthkmenon</span></div><div class="summary"><p>This post introduces Whiteboard, an open-source IDE aimed at making software design more deliberate and structured. It likely demonstrates how the tool helps developers visualize architecture and write code with greater intention.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49833867" target="_blank">HN Discussion (119)</a></div><div class="source">🔗 <a href="https://github.com/devdotfast/whiteboard" target="_blank">https://github.com/devdotfast/whiteboard</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/ck7v4y45893go" target="_blank">Uproar in France over award-winning author accused of using AI</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 10</span><span class="by">👤 harscoat</span></div><div class="summary"><p>French literary circles are in turmoil after award-winning Canadian-Haitian author Thélyson Orélien was accused of using artificial intelligence to write his novel, which won the Prix du Roman Fnac and is a finalist for major French prizes. Orélien and his publisher deny the claims, arguing the book reflects his Haitian and Caribbean voice, while critics note AI-detection tools can be unreliable. The dispute echoes earlier controversies over AI-written fiction and raises questions about how to verify authorship in the age of generative AI.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49842707" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/ck7v4y45893go" target="_blank">https://www.bbc.com/news/articles/ck7v4y45893go</a></div></div></div>
+
+        <footer>
+            <p>2026-09-25</p>
+        </footer>
+    </div>
+</body>
+</html>

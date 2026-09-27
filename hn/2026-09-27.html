@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-27</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2609.25021" target="_blank">"As a Language Model": Chat Template Switches LLM Self-Referential Voice</a></h2><div class="meta"><span class="score">⭐ 18</span><span class="comments">💬 2</span><span class="by">👤 yu3zhou4</span></div><div class="summary"><p>A study finds that chat templates act as a switch controlling whether large language models use self-disclaimer language or experiential language when describing themselves. Researchers identified an internal activation direction that can increase or decrease this disclaimer voice, showing that a model's self-description is partly shaped by its deployment format rather than being a literal fact about the model.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49865343" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2609.25021" target="_blank">https://arxiv.org/abs/2609.25021</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://mitxela.com/projects/flipflip" target="_blank">Flip Fluid on Flip Dots</a></h2><div class="meta"><span class="score">⭐ 105</span><span class="comments">💬 11</span><span class="by">👤 blutack</span></div><div class="summary"><p>The article describes a project that runs a FLIP fluid simulation on a flipdot electromechanical display, combining fluid dynamics with the clicky sound and visual style of flip dots. It details the technical build, including sourcing panels, designing custom circuitry and decoder boards, creating a power supply and control system, and assembling the installation. The work was created as an interactive art piece, with the FLIP name serving as a playful pun on the display technology.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49854219" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://mitxela.com/projects/flipflip" target="_blank">https://mitxela.com/projects/flipflip</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.astralcodexten.com/p/does-georgism-work-five-years-later" target="_blank">Does Georgism work? Five years later</a></h2><div class="meta"><span class="score">⭐ 353</span><span class="comments">💬 256</span><span class="by">👤 silveraxe93</span></div><div class="summary"><p>The article revisits Georgism and land value tax, arguing that Henry George's idea of taxing land value while exempting improvements has gained significant legislative momentum in the U.S. and elsewhere. It explains how LVT aims to address rising rents and inequality by capturing unearned locational value, and notes that while the single-tax ideal remains debated, LVT itself is increasingly viewed as a practical policy option.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49844657" target="_blank">HN Discussion (256)</a></div><div class="source">🔗 <a href="https://www.astralcodexten.com/p/does-georgism-work-five-years-later" target="_blank">https://www.astralcodexten.com/p/does-georgism-work-five-years-later</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/" target="_blank">OpenAI Feared "Optics" of what might appear on Hacker News</a></h2><div class="meta"><span class="score">⭐ 234</span><span class="comments">💬 201</span><span class="by">👤 papergirl</span></div><div class="summary"><p>New unsealed filings in the Authors Guild lawsuit against OpenAI and Microsoft allege that company leaders knowingly trained AI models on pirated books and dismissed the harm to writers. The documents include internal statements acknowledging that AI-generated content could replace human authors and cause job losses, while describing such disruption as acceptable. The case centers on whether the companies intentionally violated copyright law and devalued human authorship in the AI race.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49863864" target="_blank">HN Discussion (201)</a></div><div class="source">🔗 <a href="https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/" target="_blank">https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/" target="_blank">Meta Blocks President Lula's Facebook Page, Campaign Ads 2 Weeks from Election</a></h2><div class="meta"><span class="score">⭐ 177</span><span class="comments">💬 98</span><span class="by">👤 rbanffy</span></div><div class="summary"><p>Meta temporarily blocked Brazilian President Lula's Facebook page and campaign ads shortly before an election. The page was later restored, but Lula's electoral coalition said the disruption damaged the president's campaign.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49864642" target="_blank">HN Discussion (98)</a></div><div class="source">🔗 <a href="https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lulas_facebook_page_and/" target="_blank">https://www.reddit.com/r/worldnews/comments/1wr3id3/meta_blocks_president_lul...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://antonz.org/go-concurrency-distilled/" target="_blank">Go Concurrency Distilled</a></h2><div class="meta"><span class="score">⭐ 230</span><span class="comments">💬 90</span><span class="by">👤 chmaynard</span></div><div class="summary"><p>Go Concurrency Distilled is a concise refresher on Go concurrency, covering core concepts such as goroutines, channels, wait groups, mutexes, atomics, and scheduling. It presents each topic with interactive code examples for hands-on exploration. The material is intended for readers who already know the basics and want a quick review of practical concurrency patterns.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49856988" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://antonz.org/go-concurrency-distilled/" target="_blank">https://antonz.org/go-concurrency-distilled/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/InfinityLoop1308/PipePipe" target="_blank">PipePipe: NewPipe hard fork implementing SponsorBlock</a></h2><div class="meta"><span class="score">⭐ 427</span><span class="comments">💬 228</span><span class="by">👤 Qision</span></div><div class="summary"><p>PipePipe is a hard fork of the NewPipe Android YouTube client that adds SponsorBlock skipping, restored YouTube dislikes, danmaku-style live chat overlays, AV1/VP9 codec support, a music player mode with background playback, advanced search and channel filtering, swipe-to-seek gestures, and full playlist downloads. Forked from NewPipe in early 2022, it develops independently without receiving or pushing upstream updates, allowing quick fixes and frequent feature additions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49842764" target="_blank">HN Discussion (228)</a></div><div class="source">🔗 <a href="https://github.com/InfinityLoop1308/PipePipe" target="_blank">https://github.com/InfinityLoop1308/PipePipe</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.light-cloud.com/" target="_blank">Show HN: LightCloud – A cloud console organised like file system</a></h2><div class="meta"><span class="score">⭐ 4</span><span class="comments">💬 0</span><span class="by">👤 yullius</span></div><div class="summary"><p>LightCloud is a cloud console that organizes projects like a file system and automates full-stack deployments, routing static sites to a CDN, containers to Cloud Run, and managed Postgres databases into the same project. It provides a preview URL for every branch and pull request, scales idle containers to zero, and supports AI-assisted deployment through Claude Code, GitHub Copilot, or a CLI. The platform also includes ICE, an open-source visual editor for designing and deploying cloud infrastructure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49865067" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.light-cloud.com/" target="_blank">https://www.light-cloud.com/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/" target="_blank">Improving site performance by shipping more CSS</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 29</span><span class="by">👤 torutofu</span></div><div class="summary"><p>GitHub’s Primer team replaced CSS-in-JS with CSS Modules to improve page load and server rendering performance while preserving component encapsulation. The migration was done incrementally, using feature flags and visual regression tests to ensure styles remained consistent and avoid breaking existing GitHub components. This approach let styles ship as native CSS in the page HTML, reducing runtime overhead across the site.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49856193" target="_blank">HN Discussion (29)</a></div><div class="source">🔗 <a href="https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/" target="_blank">https://github.blog/engineering/architecture-optimization/improving-site-perf...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2609.22978" target="_blank">DeepSeek Elastic Compute (DSec)</a></h2><div class="meta"><span class="score">⭐ 253</span><span class="comments">💬 85</span><span class="by">👤 shenli3514</span></div><div class="summary"><p>DSec is DeepSeek's production sandbox platform for large-scale agentic training and RL evaluation, exposing FnCall, container, microVM, and full-VM sandbox backends through a unified SDK. It composes environments from independently versioned layers, loads image data on demand from the Fire-Flyer File System, and coordinates sandbox lifecycle with preemptible GPU training to preserve rollout state. A single production unit spans around 160 nodes, serving about 3 million sandboxes per day and sustaining over 380,000 concurrent sandboxes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49859112" target="_blank">HN Discussion (85)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2609.22978" target="_blank">https://arxiv.org/abs/2609.22978</a></div></div></div>
+
+        <footer>
+            <p>2026-09-27</p>
+        </footer>
+    </div>
+</body>
+</html>

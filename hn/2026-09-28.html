@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-28</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://git.mills.io/prologic/parley" target="_blank">Parley: Federated, decentralised chat that speaks plain IRC</a></h2><div class="meta"><span class="score">⭐ 9</span><span class="comments">💬 4</span><span class="by">👤 davidcollantes</span></div><div class="summary"><p>Parley is a federated, decentralized chat network that lets each person or team run their own domain instance and communicate over plain IRC. Instances discover one another through DNS and signed HTTPS messages, allowing users with email-style identities to send direct messages and join replicated channels using standard IRC clients. The project is currently a working proof of concept demonstrating the design end to end.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49875913" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://git.mills.io/prologic/parley" target="_blank">https://git.mills.io/prologic/parley</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://colo.to/nvidia-stock-narrative.html" target="_blank">Owed a billion dollars in Nvidia stock</a></h2><div class="meta"><span class="score">⭐ 749</span><span class="comments">💬 309</span><span class="by">👤 Eric_Gullichsen</span></div><div class="summary"><p>An early NVIDIA advisor says he was granted 25,000 stock options that, under the signed agreement, should have vested within one year. He was later told only 15,625 shares had vested, exercised those, and decades later discovered the unvested balance was worth roughly a billion dollars after stock splits. NVIDIA does not dispute the agreement but argues the claim is time-barred, leading to legal proceedings.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49872723" target="_blank">HN Discussion (309)</a></div><div class="source">🔗 <a href="https://colo.to/nvidia-stock-narrative.html" target="_blank">https://colo.to/nvidia-stock-narrative.html</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does" target="_blank">Footguns with Postgres "at time zone 'UTC'"</a></h2><div class="meta"><span class="score">⭐ 36</span><span class="comments">💬 23</span><span class="by">👤 birdculture</span></div><div class="summary"><p>The post likely discusses common pitfalls when using PostgreSQL's AT TIME ZONE 'UTC' operator, especially how it converts between timestamp and timestamptz values and can silently change the displayed time. It probably highlights cases where developers expect a timezone conversion but instead get a cast or misinterpret the result.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49865312" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does" target="_blank">https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2110.01834" target="_blank">Thinking fast and slow in AI: The role of metacognition (2021)</a></h2><div class="meta"><span class="score">⭐ 110</span><span class="comments">💬 36</span><span class="by">👤 teleforce</span></div><div class="summary"><p>The post likely explores how AI systems can combine fast, intuitive processing with slower, deliberate reasoning. It focuses on metacognition as a mechanism for models to monitor, evaluate, and control their own cognitive steps.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49873241" target="_blank">HN Discussion (36)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2110.01834" target="_blank">https://arxiv.org/abs/2110.01834</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://fireworks.ai/blog/ember-1" target="_blank">Ember-1</a></h2><div class="meta"><span class="score">⭐ 479</span><span class="comments">💬 219</span><span class="by">👤 gmays</span></div><div class="summary"><p>Ember-1 is a specialized model from Fireworks Research that provides Kimi K3-level quality while using about 40% fewer tokens by learning to reduce unnecessary reasoning. It was trained on Fireworks’ platform across coding, math, and agentic tasks, and evaluated on benchmarks and live workloads to confirm quality is maintained. The model is the first in an ongoing series of specialized Fireworks models aimed at lowering inference costs for developers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49868830" target="_blank">HN Discussion (219)</a></div><div class="source">🔗 <a href="https://fireworks.ai/blog/ember-1" target="_blank">https://fireworks.ai/blog/ember-1</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://sancho.bearblog.dev/google-weird/" target="_blank">When did Google get so weird?</a></h2><div class="meta"><span class="score">⭐ 1347</span><span class="comments">💬 738</span><span class="by">👤 sancho-panza</span></div><div class="summary"><p>The article appears to question recent changes in Google's products or behavior that feel unusual to users. It likely explores what has shifted in Google's design, policies, or user experience to prompt that reaction.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49870367" target="_blank">HN Discussion (738)</a></div><div class="source">🔗 <a href="https://sancho.bearblog.dev/google-weird/" target="_blank">https://sancho.bearblog.dev/google-weird/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/" target="_blank">Nissan's third generation e-POWER powertrain</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 90</span><span class="by">👤 mroche</span></div><div class="summary"><p>Nissan's third-generation e-POWER is an electric-drive hybrid that pairs a high-output electric motor with a purpose-built gasoline engine used only to generate electricity. Its new 5-in-1 electric unit integrates the motor, reducer, inverter, increaser, and generator to improve output, fuel efficiency, and quietness. The system also uses flat-wire coils, advanced cooling, and silicon carbide semiconductors to reduce losses and share components with Nissan's EV powertrains.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49872883" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/" target="_blank">https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5" target="_blank">Prompting Claude Opus 5.5</a></h2><div class="meta"><span class="score">⭐ 110</span><span class="comments">💬 101</span><span class="by">👤 Michelangelo11</span></div><div class="summary"><p>The post likely explores effective prompting strategies for Claude Opus 5.5, Anthropic's advanced language model. It may share examples, tips, or comparisons for getting better outputs from the model.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49874728" target="_blank">HN Discussion (101)</a></div><div class="source">🔗 <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5" target="_blank">https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prom...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://markmanson.substack.com/p/intellectuals-are-fcking-idiots" target="_blank">Intellectuals Are Fucking Idiots</a></h2><div class="meta"><span class="score">⭐ 16</span><span class="comments">💬 5</span><span class="by">👤 speckx</span></div><div class="summary"><p>The article recounts how British Marxist scholar Malcolm Caldwell, a leading expert on Southeast Asia, enthusiastically defended Pol Pot’s Cambodian regime despite mounting evidence of genocide. After visiting Cambodia and meeting Pol Pot, Caldwell offered unsolicited criticism during a private audience and was killed that night. The story is used to argue that highly educated intellectuals can become “intelligent idiots” when ideology blinds them to reality.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49875802" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://markmanson.substack.com/p/intellectuals-are-fcking-idiots" target="_blank">https://markmanson.substack.com/p/intellectuals-are-fcking-idiots</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live" target="_blank">SpaceX's Starship launching to orbit for first time ever today</a></h2><div class="meta"><span class="score">⭐ 39</span><span class="comments">💬 6</span><span class="by">👤 geox</span></div><div class="summary"><p>SpaceX's Starship is making its first-ever orbital launch, a major milestone for the company's next-generation rocket program. The flight will test the vehicle's ability to reach orbit and support future deep-space missions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49875411" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-megarocket-launching-to-orbit-for-1st-time-ever-on-sept-28-watch-it-live" target="_blank">https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-...</a></div></div></div>
+
+        <footer>
+            <p>2026-09-28</p>
+        </footer>
+    </div>
+</body>
+</html>

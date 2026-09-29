@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-29</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf" target="_blank">AI companies leak data to advertisers [pdf]</a></h2><div class="meta"><span class="score">⭐ 77</span><span class="comments">💬 11</span><span class="by">👤 damaru2</span></div><div class="summary"><p>A privacy analysis of nine major conversational AI services finds that their web and mobile versions increasingly use third-party advertising and tracking technologies that can expose sensitive conversation-derived data. Some providers share titles, prompts, screenshots, or full conversation links with trackers, sometimes alongside persistent user identifiers that allow attribution. The study highlights new privacy risks in AI-mediated interactions and calls for stronger safeguards under GDPR and ePrivacy rules.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49890226" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf" target="_blank">https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html" target="_blank">Using any C++ library in Godot</a></h2><div class="meta"><span class="score">⭐ 47</span><span class="comments">💬 16</span><span class="by">👤 czoido</span></div><div class="summary"><p>The article explains how to integrate C++ libraries into Godot using GDExtension and the official godot-cpp bindings, which expose native code as standard engine classes usable from GDScript. It highlights the build challenges of matching Godot versions and compiling for each target platform, then shows a workflow with Conan and godot-cpp 10 from ConanCenter. As a practical example, it uses the flecs Entity Component System library to simulate 100,000 particles inside a Godot scene.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49890051" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html" target="_blank">https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://jagi.studio/posts/phyllotaxis/" target="_blank">Phyllotaxis: An audio-reactive LED display</a></h2><div class="meta"><span class="score">⭐ 155</span><span class="comments">💬 17</span><span class="by">👤 evakhoury</span></div><div class="summary"><p>The article describes a project that turns the natural phyllotaxis pattern into an audio-reactive LED sculpture. The creator generates the sunflower-like spiral with code, applies Voronoi tessellation, and uses the resulting geometry to design a 3D-printed cellular matrix with addressable LEDs. Translucent paper and soldered LEDs give the physical display an organic, light-diffusing appearance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49880411" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://jagi.studio/posts/phyllotaxis/" target="_blank">https://jagi.studio/posts/phyllotaxis/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/" target="_blank">The systems that no one will test</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 30</span><span class="by">👤 perone</span></div><div class="summary"><p>A researcher discovered a vulnerability in a Brazilian federal system that exposed personal data for millions of people. The article argues that rapid advances in AI, especially reinforcement-learning environments and autonomous agents, make such vulnerabilities more dangerous because AI systems can be trained to find and exploit them. Many critical government systems will likely never be tested against AI-driven attacks, leaving them vulnerable.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49876052" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/" target="_blank">https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.computerworld.com/article/1673071/booted-up-in-1993-this-server-still-runs-but-not-for-much-longer-2.html" target="_blank">Booted up in 1993, this server still runs – but not for much longer (2017)</a></h2><div class="meta"><span class="score">⭐ 62</span><span class="comments">💬 20</span><span class="by">👤 doener</span></div><div class="summary"><p>A server that has been running for decades is nearing the end of its operational life. The article highlights the remarkable longevity of the aging system and the imminent plans to retire or replace it.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49870376" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://www.computerworld.com/article/1673071/booted-up-in-1993-this-server-still-runs-but-not-for-much-longer-2.html" target="_blank">https://www.computerworld.com/article/1673071/booted-up-in-1993-this-server-s...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game/" target="_blank">Software occlusion culling in Block Game</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 2</span><span class="by">👤 airhangerf15</span></div><div class="summary"><p>The article describes a software-rendered occlusion culling system for a block game, built to run efficiently on weak integrated graphics. By using a simple CPU-based depth buffer approach, it avoids complex GPU-dependent techniques and can cull 50% to over 95% of chunks depending on the scene. The result is a major performance improvement, allowing the game to maintain high framerates even on low-end hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49866783" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game/" target="_blank">https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://mubi.com/en/notebook/posts/pirating-the-pirates" target="_blank">Pirating the Pirates</a></h2><div class="meta"><span class="score">⭐ 600</span><span class="comments">💬 301</span><span class="by">👤 piotrgrabowski</span></div><div class="summary"><p>The article explores how studio restorations and careless home video releases can alter or damage classic films, sometimes making the only available versions far from the director’s intended cut. It follows fans who illegally rip and combine different releases to reconstruct a more faithful version of a Sergio Leone western, highlighting the broader problem of flawed preservation. Boutique labels are presented as a better alternative, though the piece suggests that inadequate commercial releases can still drive audiences toward piracy.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49880036" target="_blank">HN Discussion (301)</a></div><div class="source">🔗 <a href="https://mubi.com/en/notebook/posts/pirating-the-pirates" target="_blank">https://mubi.com/en/notebook/posts/pirating-the-pirates</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops" target="_blank">California farmers are struggling to sell grapes as demand for wine drops</a></h2><div class="meta"><span class="score">⭐ 235</span><span class="comments">💬 583</span><span class="by">👤 randycupertino</span></div><div class="summary"><p>California grape growers are struggling to sell their harvest as declining wine demand has pushed sales down more than 20% over five years and cut grape prices. The downturn has led many farmers to remove vineyards, leave grapes unharvested, or switch to crops such as almonds, walnuts, pistachios, and olives. The shift is also hurting farmworkers and local businesses that depend on the wine industry.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49883539" target="_blank">HN Discussion (583)</a></div><div class="source">🔗 <a href="https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops" target="_blank">https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.jimsitu.com" target="_blank">Tank Body Problem</a></h2><div class="meta"><span class="score">⭐ 117</span><span class="comments">💬 26</span><span class="by">👤 jimbooonooo</span></div><div class="summary"><p>The post likely describes a game-development or physics puzzle involving a tank’s body, such as how its hull moves, rotates, or collides in a simulation. It probably presents the problem and explores a solution or workaround.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49886482" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://www.jimsitu.com" target="_blank">https://www.jimsitu.com</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://stateofutopia.com/experiments/microllmlab/" target="_blank">MicroLLM Lab – Try 7 tiny LLM's in the browser</a></h2><div class="meta"><span class="score">⭐ 248</span><span class="comments">💬 86</span><span class="by">👤 logicallee</span></div><div class="summary"><p>MicroLLM Lab is a browser-based tool for running, chatting with, and benchmarking seven small language models directly on a user's device. It uses WebGPU hardware acceleration and 4-bit quantization to keep models lightweight, private, and fast without cloud servers or accounts. The lab is aimed at edge AI tasks such as quick triage, autocomplete, and comparing model performance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49882781" target="_blank">HN Discussion (86)</a></div><div class="source">🔗 <a href="https://stateofutopia.com/experiments/microllmlab/" target="_blank">https://stateofutopia.com/experiments/microllmlab/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-29</p>
+        </footer>
+    </div>
+</body>
+</html>

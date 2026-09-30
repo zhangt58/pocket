@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-09-30</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://earendil.com/posts/you-said-no-mcp/" target="_blank">Pi.dev: You Said No MCP</a></h2><div class="meta"><span class="score">⭐ 73</span><span class="comments">💬 26</span><span class="by">👤 yarapavan</span></div><div class="summary"><p>Pi.dev has reversed its earlier stance against MCP and now includes it as a core feature. The team says MCP has improved and that integrating it allowed useful changes, including better support for structured tools, deferred loading, and a JavaScript sandbox similar to Codemode. Pi views modern MCP as closer to OpenAPI with intelligent tool discovery and wants to help shape it for small harnesses.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49906637" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://earendil.com/posts/you-said-no-mcp/" target="_blank">https://earendil.com/posts/you-said-no-mcp/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence" target="_blank">GPT-6.1 Sol replaces GPT-6 Sol after just 7 days, with near-Astra intelligence</a></h2><div class="meta"><span class="score">⭐ 16</span><span class="comments">💬 11</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>GPT-6.1 Sol is a rapid update to GPT-6 Sol that reaches near-Astra intelligence. It scores one point below GPT-6 Astra on the Intelligence Index and shows notable gains in agentic knowledge work, coding, and factual accuracy. The model also improves token efficiency and reduces hallucinations, making it a stronger option for complex workloads.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49906669" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence" target="_blank">https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-j...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://github.com/ninjahawk/livenerf" target="_blank">Livenerf: Has Opus 5.5 been nerfed yet?</a></h2><div class="meta"><span class="score">⭐ 656</span><span class="comments">💬 261</span><span class="by">👤 bryan0</span></div><div class="summary"><p>The post likely asks whether the Opus 5.5 model has been nerfed, prompting discussion about recent changes or perceived performance drops in that AI model. It may reference Livenerf as the context or benchmark where the degradation is being observed.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49901736" target="_blank">HN Discussion (261)</a></div><div class="source">🔗 <a href="https://github.com/ninjahawk/livenerf" target="_blank">https://github.com/ninjahawk/livenerf</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://exyr.org/2026/solving-factorio-quality/" target="_blank">Solving Factorio Quality</a></h2><div class="meta"><span class="score">⭐ 95</span><span class="comments">💬 32</span><span class="by">👤 laurenth</span></div><div class="summary"><p>The article explains how Factorio's Space Age quality system works, where quality modules give machines a chance to upgrade crafted items through tiers. Because the process is probabilistic and produces many lower-quality byproducts, the author uses matrix math to model production and offers an online calculator for planning efficient quality factories.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49887343" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://exyr.org/2026/solving-factorio-quality/" target="_blank">https://exyr.org/2026/solving-factorio-quality/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://dental-scope.com/" target="_blank">Built Dental Scope</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 6</span><span class="by">👤 Zeruxe</span></div><div class="summary"><p>Dental Scope is an open-source, interactive 3D explorer that lets users examine dental anatomy from the whole mouth down to individual tooth structures such as pulp and root canals. It is intended for education only and is not a diagnostic or clinical decision tool. The project combines sourced anatomical meshes with modeled and schematic details, and provides controls for orbiting, zooming, selecting, and dissecting teeth.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49886535" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://dental-scope.com/" target="_blank">https://dental-scope.com/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://tomwojcik.com/posts/2026-09-21/september-2026-the-world-today/" target="_blank">September 2026: The world today, as seen by one Polish guy</a></h2><div class="meta"><span class="score">⭐ 273</span><span class="comments">💬 149</span><span class="by">👤 marjancek</span></div><div class="summary"><p>A Polish perspective links the closure of the Strait of Hormuz to global fuel, food, and heating pressures, showing how interconnected dependencies turn a regional conflict into multiple simultaneous crises. The article traces the disruption from tanker shipping and refinery damage to fuel shortages and market gains, arguing that decades of replacing buffers with cheaper dependencies have left systems vulnerable when several fail at once.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49905487" target="_blank">HN Discussion (149)</a></div><div class="source">🔗 <a href="https://tomwojcik.com/posts/2026-09-21/september-2026-the-world-today/" target="_blank">https://tomwojcik.com/posts/2026-09-21/september-2026-the-world-today/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://openai.com/index/introducing-dots/" target="_blank">Dots: Always-on agents</a></h2><div class="meta"><span class="score">⭐ 636</span><span class="comments">💬 498</span><span class="by">👤 alvis</span></div><div class="summary"><p>Dots are always-on AI agents that operate on their own cloud computer, learn user preferences over time, and can connect to thousands of apps to help with tasks across ChatGPT, Slack, and Teams. They can investigate issues, draft work, manage projects, and carry context between channels while users remain in control through boundaries and approvals. OpenAI is rolling out Dots and previewing specialist versions designed for deeper organizational integrations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49896604" target="_blank">HN Discussion (498)</a></div><div class="source">🔗 <a href="https://openai.com/index/introducing-dots/" target="_blank">https://openai.com/index/introducing-dots/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms" target="_blank">Vermont replacing power plants with home batteries</a></h2><div class="meta"><span class="score">⭐ 216</span><span class="comments">💬 169</span><span class="by">👤 devonnull</span></div><div class="summary"><p>Vermont is turning thousands of residential battery systems into a virtual power plant that has become the state's largest power source. The distributed batteries help homeowners avoid outages while reducing reliance on traditional fossil-fuel plants. The utility-run program shows how everyday homes can collectively provide reliable, cleaner electricity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49897993" target="_blank">HN Discussion (169)</a></div><div class="source">🔗 <a href="https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms" target="_blank">https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-v...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/" target="_blank">U.S. postal inspectors shut down website selling counterfeit postage labels</a></h2><div class="meta"><span class="score">⭐ 237</span><span class="comments">💬 139</span><span class="by">👤 ilamont</span></div><div class="summary"><p>U.S. postal inspectors shut down a website that was selling counterfeit postage labels. The action targeted an online fraud operation involving fake postage products.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49899090" target="_blank">HN Discussion (139)</a></div><div class="source">🔗 <a href="https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/" target="_blank">https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://america.gov/" target="_blank">America.gov</a></h2><div class="meta"><span class="score">⭐ 584</span><span class="comments">💬 488</span><span class="by">👤 plesiv</span></div><div class="summary"><p>America.gov is an official United States government website that helps people find information and services by describing what they need. It uses AI to provide simple answers drawn only from official government sources. The service is free, ad-free, and designed to protect user privacy.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49893509" target="_blank">HN Discussion (488)</a></div><div class="source">🔗 <a href="https://america.gov/" target="_blank">https://america.gov/</a></div></div></div>
+
+        <footer>
+            <p>2026-09-30</p>
+        </footer>
+    </div>
+</body>
+</html>

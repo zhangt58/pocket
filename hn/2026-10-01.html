@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-01</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/maanHimself/OpenDLSS-NR" target="_blank">OpenDLSS: A Vulkan Reimplementation of Nvidia's DLSS 5 Neural Rendering Network</a></h2><div class="meta"><span class="score">⭐ 95</span><span class="comments">💬 54</span><span class="by">👤 sagacity</span></div><div class="summary"><p>OpenDLSS is an open-source Vulkan-based reimplementation of Nvidia's DLSS 5 neural rendering network. It likely aims to provide DLSS-like AI upscaling and image enhancement in Vulkan applications without depending on Nvidia's proprietary software stack.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49906100" target="_blank">HN Discussion (54)</a></div><div class="source">🔗 <a href="https://github.com/maanHimself/OpenDLSS-NR" target="_blank">https://github.com/maanHimself/OpenDLSS-NR</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank">Gemini 4 Argon</a></h2><div class="meta"><span class="score">⭐ 1416</span><span class="comments">💬 931</span><span class="by">👤 bradleyg223</span></div><div class="summary"><p>Gemini 4 Argon is a new frontier AI model designed for sustained deep reasoning across complex, long-running tasks in software engineering, enterprise knowledge work, and cybersecurity defense. It is already being used inside Google to improve coding, research, and infrastructure optimization, and it will be released gradually with expanded safeguards before broader availability.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49913571" target="_blank">HN Discussion (931)</a></div><div class="source">🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemin...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design" target="_blank">GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 1</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>OpenAI and Synopsys have formed a multi-year partnership to develop GPT-Synopsys, a specialized AI model for semiconductor design. The system combines OpenAI's frontier AI with Synopsys' electronic design automation tools to help engineers run chip-design workflows, optimize power, performance, and area, and iterate toward verified designs. The collaboration aims to accelerate the creation of more advanced chips while maintaining the reliability needed for manufacturing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49919910" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design" target="_blank">https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsy...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://bookofshapes.com/" target="_blank">Book of Shapes – Collection of minimal, generative and customizable SVG-patterns</a></h2><div class="meta"><span class="score">⭐ 69</span><span class="comments">💬 5</span><span class="by">👤 eustoria</span></div><div class="summary"><p>Book of Shapes is a collection of minimal, generative, and customizable SVG patterns organized into categories such as grid, radial, noise, flow, isometric, organic, distortion, and physics. It features a wide range of vector-based designs, including flow, mosaic, truchet, cube, and wave patterns, making it a useful resource for designers and developers seeking flexible visual elements.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49894430" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://bookofshapes.com/" target="_blank">https://bookofshapes.com/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.thespacereview.com/article/4951/1" target="_blank">The top secret URSALA, RAQUEL, and FARRAH satellites (2025)</a></h2><div class="meta"><span class="score">⭐ 228</span><span class="comments">💬 112</span><span class="by">👤 Bluestein</span></div><div class="summary"><p>Recently declassified documents reveal that URSALA, RAQUEL, and FARRAH were small, suitcase-sized electronic intelligence satellites deployed as subsatellites from larger reconnaissance spacecraft. Beginning in the 1960s as ad hoc hitchhiker payloads, the program evolved into a standardized NRO effort that collected radar and communications signals from low Earth orbit to support both national intelligence and tactical military operations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49915082" target="_blank">HN Discussion (112)</a></div><div class="source">🔗 <a href="https://www.thespacereview.com/article/4951/1" target="_blank">https://www.thespacereview.com/article/4951/1</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.worksinprogress.news/p/why-really-caused-the-bronze-age" target="_blank">Why the Bronze Age Collapsed</a></h2><div class="meta"><span class="score">⭐ 255</span><span class="comments">💬 161</span><span class="by">👤 AnodicElegy</span></div><div class="summary"><p>The article examines the Bronze Age collapse, when major eastern Mediterranean empires such as Egypt, the Hittites, Assyria, Babylonia, and Mycenaean Greece suddenly declined. It argues that familiar causes like drought, famine, and the Sea Peoples do not explain why complex empires failed to re-emerge for centuries. Instead, the spread of iron weapons, which could be produced locally, weakened the military advantage of imperial elites and permanently altered the political balance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49890732" target="_blank">HN Discussion (161)</a></div><div class="source">🔗 <a href="https://www.worksinprogress.news/p/why-really-caused-the-bronze-age" target="_blank">https://www.worksinprogress.news/p/why-really-caused-the-bronze-age</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/" target="_blank">Surprisingly complex waves reveal the brain's inner workings</a></h2><div class="meta"><span class="score">⭐ 192</span><span class="comments">💬 74</span><span class="by">👤 ibobev</span></div><div class="summary"><p>New research shows that the brain's electrical activity forms complex traveling waves, including source, sink, and spiral patterns, rather than simple uniform oscillations. These wave patterns vary with different behaviors and may help the cortex rapidly reorganize to process information and meet everyday demands.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49912955" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/" target="_blank">https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-i...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.ycombinator.com/companies/truemetrics/jobs/THLEzXI-gtm-founder-s-associate" target="_blank">Truemetrics (YC S23) Is Hiring a GTM Founder's Associate</a></h2><div class="meta"><span class="score">⭐ 1</span><span class="comments">💬 0</span><span class="by">👤 truemetricsIngo</span></div><div class="summary"><p>Truemetrics, a startup that helps couriers navigate buildings and improve last-mile delivery, is hiring a GTM Founder's Associate to work directly with its founders. The role focuses on running and improving the company's outbound sales engine while also exploring new markets, products, and go-to-market experiments. The company is seeking a curious, commercially driven problem-solver who can take ownership of pipeline growth and customer-facing initiatives.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49919680" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.ycombinator.com/companies/truemetrics/jobs/THLEzXI-gtm-founder-s-associate" target="_blank">https://www.ycombinator.com/companies/truemetrics/jobs/THLEzXI-gtm-founder-s-...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://unsung.aresluna.org/before-pixels-modular-industrial-dashboards/" target="_blank">Before pixels: Modular industrial dashboards</a></h2><div class="meta"><span class="score">⭐ 159</span><span class="comments">💬 35</span><span class="by">👤 leephillips</span></div><div class="summary"><p>The article shares observations from German and Polish museums about modular industrial dashboards that predate digital screens. These physical control panels, used for air traffic, rail, and power plant operations, featured illuminated status indicators, counters, buttons, and day-night switches. The author highlights them as interesting design and interaction systems that have largely been replaced by software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49912792" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://unsung.aresluna.org/before-pixels-modular-industrial-dashboards/" target="_blank">https://unsung.aresluna.org/before-pixels-modular-industrial-dashboards/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blog.vero.site/post/float" target="_blank">Adding Floating-Point Decimals for Fun and Profit</a></h2><div class="meta"><span class="score">⭐ 6</span><span class="comments">💬 0</span><span class="by">👤 ibobev</span></div><div class="summary"><p>The article explains why decimal calculations in programming languages can produce small rounding errors because decimal values like 0.1 cannot be represented exactly in binary floating-point format. It examines how IEEE double-precision numbers store values using sign, exponent, and fraction bits, and how addition rounds the exact result to the nearest representable float. The piece also explores patterns that emerge when summing small decimal amounts, showing when errors appear and why they often remain tiny.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49893519" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://blog.vero.site/post/float" target="_blank">https://blog.vero.site/post/float</a></div></div></div>
+
+        <footer>
+            <p>2026-10-01</p>
+        </footer>
+    </div>
+</body>
+</html>

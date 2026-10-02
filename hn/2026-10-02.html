@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-02</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://earendil.com/posts/pi-1-0/" target="_blank">Pi 1.0</a></h2><div class="meta"><span class="score">⭐ 1335</span><span class="comments">💬 423</span><span class="by">👤 sergiotapia</span></div><div class="summary"><p>Pi 1.0 is a stable, minimal, and extensible agent harness that adds features such as Codemode, MCP support, virtual models, deferred tool loading, and an improved terminal experience. It is designed to remain simple while supporting agentic coding and application building. Alongside it, Pi Durable is an experimental package for creating longer-running agentic applications with the same minimal, flexible principles.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49926069" target="_blank">HN Discussion (423)</a></div><div class="source">🔗 <a href="https://earendil.com/posts/pi-1-0/" target="_blank">https://earendil.com/posts/pi-1-0/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://inrng.com/2026/10/shimano-bicycle-museum/" target="_blank">Shimano Bicycle Museum Review</a></h2><div class="meta"><span class="score">⭐ 125</span><span class="comments">💬 21</span><span class="by">👤 pietroppeter</span></div><div class="summary"><p>The Shimano Bicycle Museum in Japan’s Kansai region presents an extensive, well-designed collection tracing the evolution of bicycles from early prototypes to modern racing, mountain, and utility bikes. Its exhibits are accessible and educational, highlighting materials, cycling culture, and the practical uses of bicycles while offering only limited information about Shimano’s own corporate history.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49930047" target="_blank">HN Discussion (21)</a></div><div class="source">🔗 <a href="https://inrng.com/2026/10/shimano-bicycle-museum/" target="_blank">https://inrng.com/2026/10/shimano-bicycle-museum/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://lwn.net/Articles/1097401/" target="_blank">Several vulnerabilities have been discovered in the Linux kernel</a></h2><div class="meta"><span class="score">⭐ 328</span><span class="comments">💬 236</span><span class="by">👤 luispa</span></div><div class="summary"><p>A Debian security advisory reports multiple vulnerabilities in the Linux kernel, identified through a large number of CVEs. The advisory provides updated linux packages to address these security flaws. Users should apply the update to reduce the risk of exploitation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49928121" target="_blank">HN Discussion (236)</a></div><div class="source">🔗 <a href="https://lwn.net/Articles/1097401/" target="_blank">https://lwn.net/Articles/1097401/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/kvoltmer/Audionaut" target="_blank">Show HN: Audionaut – an open-source cross-platform multitrack audio editor</a></h2><div class="meta"><span class="score">⭐ 19</span><span class="comments">💬 5</span><span class="by">👤 vltmrkls</span></div><div class="summary"><p>Audionaut is a free, open-source multitrack audio editor written in C++ on the JUCE framework, running natively on Windows, macOS, and Linux. It offers precise cutting, per-track playlists, multi-channel support, and clean exports for music, podcasts, and multitrack recordings — without the weight of a full DAW. A standout feature is MCP support, letting AI agents like Claude drive the editor so each edit arrives as a single undo step.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49931031" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://github.com/kvoltmer/Audionaut" target="_blank">https://github.com/kvoltmer/Audionaut</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank">Clef: Open-weight decision models, and new RL fine-tuning platform</a></h2><div class="meta"><span class="score">⭐ 524</span><span class="comments">💬 182</span><span class="by">👤 jasondavies</span></div><div class="summary"><p>Cloudflare has released Clef and Clef-flash, open-weight decision models that generate fast, structured, bounded outputs for agentic workflows and are hosted on Workers AI as well as open-sourced under an Apache 2.0 license. The models are positioned as alternatives to large language models for tasks requiring quick, reliable classifications, such as routing support tickets or assessing website domains. Cloudflare also introduced a reinforcement learning platform that lets customers fine-tune Clef for specific use cases.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49923692" target="_blank">HN Discussion (182)</a></div><div class="source">🔗 <a href="https://blog.cloudflare.com/clef-decision-models/" target="_blank">https://blog.cloudflare.com/clef-decision-models/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.deepseek.com/en/harness/" target="_blank">DeepSeek Harness Desktop for macOS and Windows</a></h2><div class="meta"><span class="score">⭐ 250</span><span class="comments">💬 121</span><span class="by">👤 Kuyawa</span></div><div class="summary"><p>DeepSeek Harness is an open-source desktop application for macOS and Windows that provides an AI assistant for everyday tasks, coding, research, and background automation. It uses a plugin-based architecture, allowing users to install or create custom plugins to extend its capabilities. The tool is available in public preview and can be run as a desktop app or web interface.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49929489" target="_blank">HN Discussion (121)</a></div><div class="source">🔗 <a href="https://www.deepseek.com/en/harness/" target="_blank">https://www.deepseek.com/en/harness/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.singapore-samizdat.com/p/how-singapores-government-run-dating-service-firstdate-works" target="_blank">How Singapore's government-run dating service works</a></h2><div class="meta"><span class="score">⭐ 180</span><span class="comments">💬 144</span><span class="by">👤 danielfoster</span></div><div class="summary"><p>Singapore's GovTech has launched a pilot government-run dating service called FirstDate, initially limited to government workers. It verifies users through Singpass, matches them in cycles using the Gale-Shapley Stable Marriage Algorithm, and shares contact details only when both parties agree. Participants complete a detailed questionnaire covering interests, lifestyle, habits, and relationship preferences.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49929113" target="_blank">HN Discussion (144)</a></div><div class="source">🔗 <a href="https://www.singapore-samizdat.com/p/how-singapores-government-run-dating-service-firstdate-works" target="_blank">https://www.singapore-samizdat.com/p/how-singapores-government-run-dating-ser...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://svelte.dev/blog/sveltekit-3-is-here" target="_blank">SvelteKit 3</a></h2><div class="meta"><span class="score">⭐ 288</span><span class="comments">💬 106</span><span class="by">👤 sampsn</span></div><div class="summary"><p>SvelteKit 3 is the latest major release of the official Svelte application framework, offering improved type safety, cleaner configuration, and easier migration from earlier versions. Key changes include moving configuration to vite.config.ts, replacing the $lib alias with lib, and enhancing environment variables, service workers, and error handling. Remote functions remain a top priority but are not yet ready, requiring experimental Async Svelte support.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49926536" target="_blank">HN Discussion (106)</a></div><div class="source">🔗 <a href="https://svelte.dev/blog/sveltekit-3-is-here" target="_blank">https://svelte.dev/blog/sveltekit-3-is-here</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://earendil.com/posts/pi-durable/" target="_blank">Pi Durable</a></h2><div class="meta"><span class="score">⭐ 394</span><span class="comments">💬 50</span><span class="by">👤 paulsmith</span></div><div class="summary"><p>Pi Durable is an experimental agentic framework shipped alongside Pi 1.0 by Earendil, built for long-running, durable agents that can run anywhere there is a JavaScript runtime. It shares Pi's minimalism and malleability principles, shipping with memory, SQLite, and JSONL storage backends plus a conformance suite for custom ones. The goal is a harness that survives failures, supports infinitely long conversations, and lets multiple humans steer the same agents.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49925969" target="_blank">HN Discussion (50)</a></div><div class="source">🔗 <a href="https://earendil.com/posts/pi-durable/" target="_blank">https://earendil.com/posts/pi-durable/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=49922569" target="_blank">Ask HN: Who is hiring? (October 2026)</a></h2><div class="meta"><span class="score">⭐ 209</span><span class="comments">💬 205</span><span class="by">👤 whoishiring</span></div><div class="summary"><p>This Hacker News thread is likely a monthly hiring discussion where companies and individuals post open roles, remote or on-site opportunities, and contact details for October 2026. It would also include comments from candidates and employers discussing salaries, tech stacks, and hiring needs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49922569" target="_blank">HN Discussion (205)</a></div></div></div>
+
+        <footer>
+            <p>2026-10-02</p>
+        </footer>
+    </div>
+</body>
+</html>

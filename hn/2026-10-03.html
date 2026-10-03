@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-03</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30CC4826561366615BFAEC807CDE28A7/S0007125026108046a.pdf/adhd-autism-or-complex-trauma-the-complicated-nature-of-the-question.pdf" target="_blank">ADHD, autism or complex trauma? [pdf]</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 7</span><span class="by">👤 skeptical1884</span></div><div class="summary"><p>The article examines the growing difficulty of distinguishing ADHD, autism, and complex trauma in adults, as rising self-diagnosis and social media amplify demand for assessment. It argues that childhood trauma and neurodiversity can overlap, with executive dysfunction and social difficulties arising from either or both conditions. It cautions that misattributing trauma-related symptoms to ADHD or autism may lead to ineffective or harmful treatment, especially with psychostimulants.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49946403" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30CC4826561366615BFAEC807CDE28A7/S0007125026108046a.pdf/adhd-autism-or-complex-trauma-the-complicated-nature-of-the-question.pdf" target="_blank">https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30CC4...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://aleph-alpha.com/downloads/tech-report.pdf" target="_blank">Kolibri – Tech Report [pdf]</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 1</span><span class="by">👤 yu3zhou4</span></div><div class="summary"><p>Kolibri is an open-weights, English-German mixture-of-experts transformer developed by Aleph Alpha for sovereign and regulated European deployments. With 78.1 billion total parameters but only 3.46 billion active per token, it is trained on 24 trillion tokens with over 20% German data and fine-tuned using supervised and reinforcement learning. The report positions it on the Pareto frontier for quality and serving cost in English and German.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49946069" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://aleph-alpha.com/downloads/tech-report.pdf" target="_blank">https://aleph-alpha.com/downloads/tech-report.pdf</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://notoriousbfg.com/hole-punch/" target="_blank">Hole Punch: Sling your spaceship around gravitational fields</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 1</span><span class="by">👤 trwhite</span></div><div class="summary"><p>Hole Punch is a physics puzzle game where players place and grow black holes to bend a spaceship's trajectory toward a station without direct steering. Later levels add beacons, restricted zones, and fuelless ships, while scoring rewards using fewer holes and less matter.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49946393" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://notoriousbfg.com/hole-punch/" target="_blank">https://notoriousbfg.com/hole-punch/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://ftl-os.org/" target="_blank">FTL: A new operating system for clouds</a></h2><div class="meta"><span class="score">⭐ 94</span><span class="comments">💬 43</span><span class="by">👤 romac</span></div><div class="summary"><p>FTL is a cloud-oriented operating system that runs each container as a userspace OS implemented as a shared library, allowing developers to add and update OS features like application code. Its lightweight kernel provides hypervisor-like isolation for containers while remaining compatible with Linux binaries and supporting specialized unikernel-style workloads. The design aims to make containers as secure as virtual machines without sacrificing performance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49944912" target="_blank">HN Discussion (43)</a></div><div class="source">🔗 <a href="https://ftl-os.org/" target="_blank">https://ftl-os.org/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank">Kolibri: A Sovereign Open-Weight Model</a></h2><div class="meta"><span class="score">⭐ 304</span><span class="comments">💬 226</span><span class="by">👤 bastitx</span></div><div class="summary"><p>Kolibri is an open-weight, English-German mixture-of-experts language model with 78 billion total parameters and 3 billion active parameters, supporting context lengths of up to 1 million tokens. It is designed for sovereign, mission-critical use in regulated sectors such as public administration, industrials, and aerospace, with full weights available under the Apache 2.0 license. The model emphasizes efficient on-premise deployment, supply-chain transparency, and specialized performance in German, reasoning, math, and agentic tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49942706" target="_blank">HN Discussion (226)</a></div><div class="source">🔗 <a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/" target="_blank">https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-mo...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.darbiansphotography.com/woking-electrical-control-room-urbex" target="_blank">Woking Electrical Control Room (2016)</a></h2><div class="meta"><span class="score">⭐ 96</span><span class="comments">💬 16</span><span class="by">👤 NaOH</span></div><div class="summary"><p>The article presents a photo tour of the Woking Electrical Control Room, highlighting its exterior, entrance, and interior features. It shows the control wall, where each position represents a substation or transformer, along with detailed views of panels, lighting, the main desk, and a vintage telephone.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49938399" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://www.darbiansphotography.com/woking-electrical-control-room-urbex" target="_blank">https://www.darbiansphotography.com/woking-electrical-control-room-urbex</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://pipod.dev/" target="_blank">Show HN: Pi pod – Run your pi coding agent in sandboxes on your own server</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 4</span><span class="by">👤 edverma2</span></div><div class="summary"><p>Pi pod is a self-hosted tool that extends the pi coding agent by running it in isolated sandboxes with curated tooling for agentic engineering workflows. It adds capabilities such as session sharing, browser and app automation, and native clients while preserving pi’s minimal, customizable harness. The project emphasizes ownership, privacy, and easy deployment on your own server.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49937304" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://pipod.dev/" target="_blank">https://pipod.dev/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/andreasfertig/cppinsights" target="_blank">C++ Insights – See your source code with the eyes of a Compiler</a></h2><div class="meta"><span class="score">⭐ 107</span><span class="comments">💬 17</span><span class="by">👤 rramadass</span></div><div class="summary"><p>C++ Insights is a web tool that rewrites C++ source code into more explicit, lower-level C++ or assembly to show how a compiler interprets language features. It helps developers understand what happens under the hood with constructs like templates, lambdas, and modern C++ syntax.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49928361" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://github.com/andreasfertig/cppinsights" target="_blank">https://github.com/andreasfertig/cppinsights</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.nature.com/articles/s41598-026-57500-7" target="_blank">Body Awareness in Goffin's Cockatoos</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 3</span><span class="by">👤 bryanrasmussen</span></div><div class="summary"><p>The article examines body awareness in Goffin's cockatoos by questioning the mirror self-recognition test as the main measure of self-awareness, since it relies heavily on vision and may not suit all species. It introduces the body-as-an-obstacle task, which tests whether animals recognize their own body as an obstacle to reaching a goal, offering a more ecologically valid and species-appropriate way to study self-representation. This approach helps clarify how nonhuman animals, including birds, may understand their bodies in relation to their environment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49913106" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://www.nature.com/articles/s41598-026-57500-7" target="_blank">https://www.nature.com/articles/s41598-026-57500-7</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.ycombinator.com/companies/retailready/jobs/bFcgIe4-implementations" target="_blank">RetailReady (YC W24) Is Hiring</a></h2><div class="meta"><span class="score">⭐ 1</span><span class="comments">💬 0</span><span class="by">👤 sarah74</span></div><div class="summary"><p>RetailReady, an AI-powered supply chain compliance startup, is hiring for a full-time implementations role in San Francisco. The operations position is open to candidates with any experience level, including new graduates, and requires US work authorization.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49945904" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.ycombinator.com/companies/retailready/jobs/bFcgIe4-implementations" target="_blank">https://www.ycombinator.com/companies/retailready/jobs/bFcgIe4-implementations</a></div></div></div>
+
+        <footer>
+            <p>2026-10-03</p>
+        </footer>
+    </div>
+</body>
+</html>

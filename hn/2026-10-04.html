@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-04</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://gamehistory.org/5k-magazines/" target="_blank">VGHF Digital Archive passes 5000 magazines. Here's what's next</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 2</span><span class="by">👤 rdmuser</span></div><div class="summary"><p>The Video Game History Foundation’s digital archive has grown to more than 5,000 video game magazines, covering 46 years of gaming history and serving as a major research resource. The collection was expanded through community scanning projects and now includes trade publications, newsletters, and niche gaming magazines. The foundation is next adding Japanese-language magazines, beginning with research access to Neo Geo Freak.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49952029" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://gamehistory.org/5k-magazines/" target="_blank">https://gamehistory.org/5k-magazines/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=49949438" target="_blank">Tell HN: Bob Cringely has died</a></h2><div class="meta"><span class="score">⭐ 484</span><span class="comments">💬 100</span><span class="by">👤 paveworld</span></div><div class="summary"><p>This Hacker News post announces the death of Bob Cringely, a well-known tech commentator, entrepreneur, and television presenter. It is likely an obituary or community notice about his passing and his influence on early personal computing culture.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49949438" target="_blank">HN Discussion (100)</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/" target="_blank">Why don't more developers “use the platform”?</a></h2><div class="meta"><span class="score">⭐ 156</span><span class="comments">💬 124</span><span class="by">👤 vinhnx</span></div><div class="summary"><p>Developers often avoid native browser APIs because for much of the web's history, browsers were inconsistent and incomplete, making custom libraries a safer choice. Familiarity with package ecosystems and frameworks, along with better documentation and polished examples for third-party tools, also make npm solutions feel easier than raw platform features. As a result, many developers reach for ready-made libraries even when the browser could handle the task natively.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49950554" target="_blank">HN Discussion (124)</a></div><div class="source">🔗 <a href="https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/" target="_blank">https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician" target="_blank">So you think you could be an electrician?</a></h2><div class="meta"><span class="score">⭐ 252</span><span class="comments">💬 173</span><span class="by">👤 zdw</span></div><div class="summary"><p>The article challenges the popular claim that skilled trades are a better path than college, arguing that the narrative is often promoted by people with degrees and oversimplifies the realities of trade work. It notes that college graduates still tend to earn more over their careers, actual college costs are often lower than advertised, and a degree remains a reliable route to higher earnings. The piece suggests the choice between trades and college is more complicated than the AI-proof six-figure job story implies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49910462" target="_blank">HN Discussion (173)</a></div><div class="source">🔗 <a href="https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician" target="_blank">https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU" target="_blank">The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux</a></h2><div class="meta"><span class="score">⭐ 307</span><span class="comments">💬 46</span><span class="by">👤 speckx</span></div><div class="summary"><p>Valve’s Linux graphics driver team has made significant improvements to the AMDGPU kernel driver for older AMD GCN 1.0 and 1.1 graphics cards. The work helps move these legacy cards from the older Radeon driver to the modern AMDGPU driver, enabling Vulkan support, better performance, and improved display and power management. These changes make decade-old AMD GPUs more practical for Linux gaming and other tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49946895" target="_blank">HN Discussion (46)</a></div><div class="source">🔗 <a href="https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU" target="_blank">https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict" target="_blank">Treachery in the Rodin Museum 3D scan verdict</a></h2><div class="meta"><span class="score">⭐ 211</span><span class="comments">💬 92</span><span class="by">👤 CosmoWenman</span></div><div class="summary"><p>The article recounts a long freedom-of-information fight over the Rodin Museum's 3D scans of Auguste Rodin's public-domain sculptures. It argues that the museum repeatedly resisted disclosure, misled courts, and benefited from judicial deference despite findings that the scans were administrative documents. The case is presented as a betrayal of public access to cultural heritage.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49946355" target="_blank">HN Discussion (92)</a></div><div class="source">🔗 <a href="https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict" target="_blank">https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://liao.gg/blog/agents-dont-need-memory" target="_blank">Agents don't need memory, they need documentation</a></h2><div class="meta"><span class="score">⭐ 193</span><span class="comments">💬 107</span><span class="by">👤 kmeh</span></div><div class="summary"><p>The author argues that AI-agent memory plugins address the wrong problem by relying on transcript snippets and vector similarity, which lacks context, currency, and auditability. These systems treat past interactions as truth and cannot reliably support agents as codebases change. Instead of memory, agents need clear, maintainable documentation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49945933" target="_blank">HN Discussion (107)</a></div><div class="source">🔗 <a href="https://liao.gg/blog/agents-dont-need-memory" target="_blank">https://liao.gg/blog/agents-dont-need-memory</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://notoriousbfg.com/hole-punch/" target="_blank">Hole Punch: Sling your spaceship around gravitational fields</a></h2><div class="meta"><span class="score">⭐ 299</span><span class="comments">💬 68</span><span class="by">👤 trwhite</span></div><div class="summary"><p>Hole Punch is a space-themed game in which players launch a spaceship and use gravitational fields to navigate through different sectors. The interface tracks fuel, matter, and holes while offering controls to launch, undo, reset, and replay progress.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49946393" target="_blank">HN Discussion (68)</a></div><div class="source">🔗 <a href="https://notoriousbfg.com/hole-punch/" target="_blank">https://notoriousbfg.com/hole-punch/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://play.runescape.com/4" target="_blank">We're working on a new RuneScape MMO</a></h2><div class="meta"><span class="score">⭐ 75</span><span class="comments">💬 30</span><span class="by">👤 droidjj</span></div><div class="summary"><p>RuneScape developers have announced a new MMORPG, currently called RS4, built in Unreal Engine and set in the world of Gielinor. The game will begin in Ashenfall and is intended to sit alongside existing RuneScape titles rather than replace them. The project is still in early development, with the team emphasizing community involvement and permanent progression.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49949588" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://play.runescape.com/4" target="_blank">https://play.runescape.com/4</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/mikesart/gpuvis" target="_blank">gpuvis: GPU Trace Visualizer</a></h2><div class="meta"><span class="score">⭐ 9</span><span class="comments">💬 0</span><span class="by">👤 luu</span></div><div class="summary"><p>gpuvis is a GPU execution trace visualizer from Valve (MIT-licensed), offering a GUI for inspecting kernel timelines, memory operations, and other performance details captured from GPU profiling traces. It is distributed with a wiki and a screenshot, and is being shared on Hacker News for those profiling GPU workloads.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49935097" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://github.com/mikesart/gpuvis" target="_blank">https://github.com/mikesart/gpuvis</a></div></div></div>
+
+        <footer>
+            <p>2026-10-04</p>
+        </footer>
+    </div>
+</body>
+</html>

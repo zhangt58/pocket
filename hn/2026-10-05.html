@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-05</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger" target="_blank">Denmark Data Breach Exposes 8.8M People's Personal Data</a></h2><div class="meta"><span class="score">⭐ 153</span><span class="comments">💬 104</span><span class="by">👤 clan</span></div><div class="summary"><p>Denmark's Central Personal Register experienced a data breach that exposed personal information for 8.8 million people. The incident involved unauthorized access to citizen data held in the national register. The affected individuals' personal records were compromised.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49962012" target="_blank">HN Discussion (104)</a></div><div class="source">🔗 <a href="https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger" target="_blank">https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgan...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement" target="_blank">Huawei and Qualcomm Announce Broad Patent License Agreement</a></h2><div class="meta"><span class="score">⭐ 71</span><span class="comments">💬 48</span><span class="by">👤 0xedb</span></div><div class="summary"><p>Huawei and Qualcomm have reached a multi-year patent licensing agreement that grants each company cross licenses to the other's patent portfolios in areas including 5G, compute, AI, and networking. The deal also includes Qualcomm purchasing certain Huawei U.S. patents in those technology fields. The agreement highlights both companies' intellectual property contributions and their commitment to fair, reasonable, and non-discriminatory licensing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49961861" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement" target="_blank">https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://stratechery.com/2026/apple-and-a-hackers-future/" target="_blank">Apple and a Hacker's Future</a></h2><div class="meta"><span class="score">⭐ 20</span><span class="comments">💬 6</span><span class="by">👤 maguay</span></div><div class="summary"><p>A high-severity macOS screen-sharing vulnerability is being actively exploited to give attackers root access and install cryptocurrency miners, prompting Apple to release patches for recent macOS versions. In the article, the author’s always-on Mac Mini was compromised, but a constrained AI agent detected the intrusion and identified malicious shell hooks and mining scripts. The incident highlights how narrowly scoped AI agents can serve as a useful line of defense against active cyberattacks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49962857" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://stratechery.com/2026/apple-and-a-hackers-future/" target="_blank">https://stratechery.com/2026/apple-and-a-hackers-future/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/Niko1221/Strata" target="_blank">Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s</a></h2><div class="meta"><span class="score">⭐ 817</span><span class="comments">💬 361</span><span class="by">👤 snehesht</span></div><div class="summary"><p>Strata is a free, open-source tool that runs the 125B-parameter Qwen3.8-Flash-Next model on a normal gaming PC with 12 GB or more of VRAM (NVIDIA or AMD), on Windows or Linux. On an RTX 5070 it writes at about 94 tokens/s (Q2_0 quantization) and ingests a 32K-token prompt at roughly 2,650 tokens/s, with a 24 GB RTX 3090 expected to hit 100–140 tokens/s. It needs 32–64 GB of RAM, about 80 GB of disk, and supports multi-GPU setups — nothing leaves the machine.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49953495" target="_blank">HN Discussion (361)</a></div><div class="source">🔗 <a href="https://github.com/Niko1221/Strata" target="_blank">https://github.com/Niko1221/Strata</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/" target="_blank">In the wake of Tippett Studios’ closure, a digital archive appears online</a></h2><div class="meta"><span class="score">⭐ 146</span><span class="comments">💬 17</span><span class="by">👤 rdmuser</span></div><div class="summary"><p>Following the closure of Tippett Studios, a digital archive of the studio's animated materials has been made available online. The archive preserves and shares the studio's legacy, offering access to its work and creative history.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49957812" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/" target="_blank">https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-d...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://cedardb.com/blog/sqldoom/" target="_blank">We ported the original Doom to SQL</a></h2><div class="meta"><span class="score">⭐ 139</span><span class="comments">💬 20</span><span class="by">👤 Vaslo</span></div><div class="summary"><p>The article describes a project that ports the original Doom game logic and renderer into SQL queries running inside a database. The game loop operates at the original 35 FPS, while the SQL renderer produces full 320x200 frames at up to 60 Hz, with Python handling only input, timing, and display. Multiplayer deathmatch also works, demonstrating that the complete game can run as database queries.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49948300" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://cedardb.com/blog/sqldoom/" target="_blank">https://cedardb.com/blog/sqldoom/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://wieslawsoltes.github.io/VB6/" target="_blank">A browser-native classic Visual Basic VB6 IDE</a></h2><div class="meta"><span class="score">⭐ 257</span><span class="comments">💬 88</span><span class="by">👤 wiso</span></div><div class="summary"><p>A browser-native recreation of the classic Visual Basic 6 IDE that runs entirely in the web browser, drawing its interface with Canvas2D. It reproduces the full VB6 design-time experience — project explorer, form designer, properties window, and a working runtime with syntax checking — letting users build and run VB6-style applications (it ships with a Northwind order-entry demo) without installing legacy Windows software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49956681" target="_blank">HN Discussion (88)</a></div><div class="source">🔗 <a href="https://wieslawsoltes.github.io/VB6/" target="_blank">https://wieslawsoltes.github.io/VB6/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.taobackup.com/index.html" target="_blank">The Tao of Backup</a></h2><div class="meta"><span class="score">⭐ 160</span><span class="comments">💬 52</span><span class="by">👤 vntok</span></div><div class="summary"><p>The post likely discusses a philosophical or practical approach to data backup, emphasizing principles such as redundancy, simplicity, and regular verification. It may offer guidance on building a resilient backup strategy that treats data preservation as an ongoing discipline rather than a one-time task.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49932236" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://www.taobackup.com/index.html" target="_blank">https://www.taobackup.com/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://blog.zarfhome.com/2026/10/infidel-goes-wild" target="_blank">Infidel goes wild</a></h2><div class="meta"><span class="score">⭐ 142</span><span class="comments">💬 24</span><span class="by">👤 tobr</span></div><div class="summary"><p>The article examines a rare memory-corruption bug in Infocom's Infidel, where the game's endless-desert tracking routine can write to unintended memory. The author describes how the bug is nearly invisible in normal play but is serious because it involves a wild pointer and appears to stem from a compiler issue. The piece walks through the game's desert mechanics and the ZIL code responsible for storing and retrieving dropped objects.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49943637" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://blog.zarfhome.com/2026/10/infidel-goes-wild" target="_blank">https://blog.zarfhome.com/2026/10/infidel-goes-wild</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.cambridge.org/core/journals/iraq/article/gods-in-the-classroom-religion-and-education-in-1st-millennium-bce-babylonia/EB059EE81804DCBC1848CACBD6298E0B" target="_blank">Gods in the Classroom: Religion and Education in First Millennium BCE Babylonia</a></h2><div class="meta"><span class="score">⭐ 41</span><span class="comments">💬 18</span><span class="by">👤 pseudolus</span></div><div class="summary"><p>In first-millennium BCE Babylonia, religious education was not a separate subject but a set of specialized knowledge and practices transmitted to elites, including priests, scribes, officials, and other specialists. Religious texts were woven into broader school curricula according to the skills students needed, alongside social and cultural norms. As a result, education in Mesopotamia did not distinguish between secular and religious learning, even when schools were located in temple complexes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49920332" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://www.cambridge.org/core/journals/iraq/article/gods-in-the-classroom-religion-and-education-in-1st-millennium-bce-babylonia/EB059EE81804DCBC1848CACBD6298E0B" target="_blank">https://www.cambridge.org/core/journals/iraq/article/gods-in-the-classroom-re...</a></div></div></div>
+
+        <footer>
+            <p>2026-10-05</p>
+        </footer>
+    </div>
+</body>
+</html>

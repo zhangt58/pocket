@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-06</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.nobelprize.org/prizes/physics/2026/" target="_blank">Nobel Prize in Physics goes to Francis Halzen</a></h2><div class="meta"><span class="score">⭐ 90</span><span class="comments">💬 14</span><span class="by">👤 solarist</span></div><div class="summary"><p>The Nobel Prize in Physics was awarded to Francis Halzen for his decisive contributions to the IceCube Neutrino Observatory. His work led to the discovery of high-energy neutrinos of astrophysical origin, advancing the field of neutrino astronomy.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49976265" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://www.nobelprize.org/prizes/physics/2026/" target="_blank">https://www.nobelprize.org/prizes/physics/2026/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://reflection.ai/blog/introducing-beam" target="_blank">Beam: Reflection's 501B open-weight model</a></h2><div class="meta"><span class="score">⭐ 468</span><span class="comments">💬 148</span><span class="by">👤 Philpax</span></div><div class="summary"><p>Beam is Reflection's first open-weight model, a sparse mixture-of-experts architecture with 501 billion total parameters and 23 billion active parameters, designed for coding, reasoning, and agentic workloads. It was trained on 23.8 trillion tokens and reinforced with large-scale RL, producing performance competitive with larger open models while using substantially less inference compute. The model is positioned as an efficient enterprise option for coding and agentic tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49969183" target="_blank">HN Discussion (148)</a></div><div class="source">🔗 <a href="https://reflection.ai/blog/introducing-beam" target="_blank">https://reflection.ai/blog/introducing-beam</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://flattensf.com/" target="_blank">Find the flattest route between any two points in SF</a></h2><div class="meta"><span class="score">⭐ 215</span><span class="comments">💬 77</span><span class="by">👤 ishan0102</span></div><div class="summary"><p>Flatten SF is a web tool that calculates routes between any two San Francisco locations, showing a spectrum from the shortest path to the flattest one. It uses street and elevation data in the browser to compare distance and cumulative climbing, with stairways included for walking but excluded for biking.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49971230" target="_blank">HN Discussion (77)</a></div><div class="source">🔗 <a href="https://flattensf.com/" target="_blank">https://flattensf.com/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://liquidbrain.net/blog/accountability-and-joy/" target="_blank">Accountability mechanisms can be joyful (2024)</a></h2><div class="meta"><span class="score">⭐ 45</span><span class="comments">💬 9</span><span class="by">👤 luu</span></div><div class="summary"><p>The author describes a music-based accountability system in which completing a daily task allows them to send a song to their partner. This approach makes accountability feel rewarding by focusing on sharing joy rather than imposing stressful penalties. While traditional accountability bets can help with large, difficult goals, lighter positive incentives may work better for small recurring habits.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49951155" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://liquidbrain.net/blog/accountability-and-joy/" target="_blank">https://liquidbrain.net/blog/accountability-and-joy/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://qlabs.sh/research/dust" target="_blank">Dust: Pretraining Transformers Without Backpropagation</a></h2><div class="meta"><span class="score">⭐ 206</span><span class="comments">💬 50</span><span class="by">👤 E-Reverance</span></div><div class="summary"><p>Dust is a zeroth-order training method for transformer language models that replaces backpropagation by perturbing activations independently at each token and using a single forward pass to estimate gradients. It is competitive with backprop at large compute budgets and far more efficient than weight-space evolutionary search, with larger models showing better population efficiency. The method’s gradient estimates remain well aligned with backprop across scales up to 1B tokens, suggesting it could scale to larger pretraining.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49970871" target="_blank">HN Discussion (50)</a></div><div class="source">🔗 <a href="https://qlabs.sh/research/dust" target="_blank">https://qlabs.sh/research/dust</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://dbushell.com/2026/10/03/deno-to-node/" target="_blank">Friendship ended with Deno, now Node is my best friend</a></h2><div class="meta"><span class="score">⭐ 183</span><span class="comments">💬 108</span><span class="by">👤 ibobev</span></div><div class="summary"><p>The author returns to Node.js after long using Deno, finding it modernized with better ECMAScript support, no require, and usable TypeScript. They adopt PNPM and FNM for safer package management and configure trust policies to avoid malicious dependencies. Finally, they migrate their static site generator from Deno to Node with surprisingly little refactoring.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49971719" target="_blank">HN Discussion (108)</a></div><div class="source">🔗 <a href="https://dbushell.com/2026/10/03/deno-to-node/" target="_blank">https://dbushell.com/2026/10/03/deno-to-node/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors" target="_blank">Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates</a></h2><div class="meta"><span class="score">⭐ 366</span><span class="comments">💬 245</span><span class="by">👤 outlier99</span></div><div class="summary"><p>A team of Opus 5.5 AI agents and a researcher identified two room-temperature magnetic semiconductor candidates with properties useful for spintronic memory. The work focuses on Luttinger-compensated antiferromagnets, which combine the fast switching and dense packing of antiferromagnets with the spin sorting needed for spintronics. One candidate was newly designed, while the other was an existing material first made in 1999 whose predicted properties match the target.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49970667" target="_blank">HN Discussion (245)</a></div><div class="source">🔗 <a href="https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors" target="_blank">https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/" target="_blank">Web Search API</a></h2><div class="meta"><span class="score">⭐ 556</span><span class="comments">💬 249</span><span class="by">👤 tosh</span></div><div class="summary"><p>Cloudflare’s Web Search API is now in beta, allowing AI agents and applications to search the internet and ground responses in live information. It supports Ceramic.ai, Exa, and Linkup with zero data retention and verified bot crawling standards, and runs through AI Gateway with optional bring-your-own API keys.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49963171" target="_blank">HN Discussion (249)</a></div><div class="source">🔗 <a href="https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/" target="_blank">https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-s...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/" target="_blank">Resurrecting iChat Audio and Video Conferencing</a></h2><div class="meta"><span class="score">⭐ 56</span><span class="comments">💬 13</span><span class="by">👤 thepipetogrep</span></div><div class="summary"><p>The article explains how to revive iChat audio and video calls on old Macs running Leopard or Show Leopard by adding a hosts file entry that points configuration.apple.com to a working server. This lets iChat discover its public IP through a SNATMAP server and establish peer-to-peer RTP connections, provided the router preserves outbound NAT source ports. The author also recounts the history of iChat AV and the debugging steps used to identify why modern HTTPS redirects broke the old client.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49973878" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/" target="_blank">https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-con...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.debugbear.com/blog/example-dot-com-redesign-history" target="_blank">Example.com just launched the biggest redesign in decades</a></h2><div class="meta"><span class="score">⭐ 233</span><span class="comments">💬 152</span><span class="by">👤 jgx0</span></div><div class="summary"><p>Example.com, the reserved domain used for documentation examples, has undergone a major redesign that adds JavaScript-driven multilingual support, cycling through several languages with animated text transitions. The changes also include a book icon and a split page structure intended to reduce bandwidth, since most traffic is automated and does not load the JavaScript. IANA emphasizes the site is a placeholder for illustrative use, not a service for testing or monitoring.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49971921" target="_blank">HN Discussion (152)</a></div><div class="source">🔗 <a href="https://www.debugbear.com/blog/example-dot-com-redesign-history" target="_blank">https://www.debugbear.com/blog/example-dot-com-redesign-history</a></div></div></div>
+
+        <footer>
+            <p>2026-10-06</p>
+        </footer>
+    </div>
+</body>
+</html>

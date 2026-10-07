@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-07</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/szabadkai/c64-keyboard-font/" target="_blank">A font recreated from photographs of classic Commodore 64 keycaps</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 9</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>A digital typeface reconstructed from photographs of classic Commodore 64 keycaps, with cleaned-up shapes and consistent proportions. It includes uppercase letters, numbers, punctuation, arrows, Hungarian characters, f1–f12 key legends, and all 63 PETSCII graphic front legends. Lowercase input displays as uppercase, recreating the printed key legends rather than the on-screen bitmap font. Available as TTF, OTF, and webfont.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49990224" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://github.com/szabadkai/c64-keyboard-font/" target="_blank">https://github.com/szabadkai/c64-keyboard-font/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.nobelprize.org/prizes/chemistry/2026/press-release/" target="_blank">Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai</a></h2><div class="meta"><span class="score">⭐ 37</span><span class="comments">💬 4</span><span class="by">👤 sasvari</span></div><div class="summary"><p>The Nobel Prize in Chemistry was awarded to Henri B. Kagan and Kenso Soai for discovering non-linear effects and autocatalysis in asymmetric organic synthesis. Their work explained how homochirality, the dominance of one molecular mirror image in living systems, can arise spontaneously. These findings have major implications for designing chemical reactions, especially in pharmaceuticals.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49990470" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.nobelprize.org/prizes/chemistry/2026/press-release/" target="_blank">https://www.nobelprize.org/prizes/chemistry/2026/press-release/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank">Sharing AI progress in mathematics</a></h2><div class="meta"><span class="score">⭐ 951</span><span class="comments">💬 894</span><span class="by">👤 OfficialTurkey</span></div><div class="summary"><p>Researchers are releasing new mathematical results generated by an internal frontier AI model, publishing them in a GitHub repository with Lean formalizations and transparency details about the model’s reasoning and compute usage. The release follows guidance from an independent advisory group on mathematics and AI, with plans to improve paper quality, explore community-hosted alternatives, and fund workshops to help scientists understand and build on the results.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49984923" target="_blank">HN Discussion (894)</a></div><div class="source">🔗 <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank">https://openai.com/index/sharing-ai-progress-in-mathematics/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://strandsagents.com/blog/introducing-strands-decider/" target="_blank">Strands Decider 2B: a small, open-source, decision model</a></h2><div class="meta"><span class="score">⭐ 186</span><span class="comments">💬 46</span><span class="by">👤 gmays</span></div><div class="summary"><p>Strands Decider 2B is a small open-source decision model that selects from predefined options and assigns confidence scores instead of generating free-form text. It is designed for fast, low-latency agentic workflows and can run locally on a CPU or GPU. The model is built from a 2B-parameter LLM torso with a lightweight pointer head, and its code, weights, and training materials are publicly released.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49987076" target="_blank">HN Discussion (46)</a></div><div class="source">🔗 <a href="https://strandsagents.com/blog/introducing-strands-decider/" target="_blank">https://strandsagents.com/blog/introducing-strands-decider/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://developers.openai.com/api/docs/guides/decisions" target="_blank">Decisions API is in public beta</a></h2><div class="meta"><span class="score">⭐ 310</span><span class="comments">💬 154</span><span class="by">👤 chiefstorm</span></div><div class="summary"><p>OpenAI has made its Decisions API available in public beta. The API is part of OpenAI's developer platform and is intended to help developers build applications that automate or support decision-making workflows. Documentation and related API guides are available for developers to explore.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49984025" target="_blank">HN Discussion (154)</a></div><div class="source">🔗 <a href="https://developers.openai.com/api/docs/guides/decisions" target="_blank">https://developers.openai.com/api/docs/guides/decisions</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://mistral.ai/news/mistral-large-4/" target="_blank">Mistral Large 4</a></h2><div class="meta"><span class="score">⭐ 1835</span><span class="comments">💬 1103</span><span class="by">👤 Philpax</span></div><div class="summary"><p>Mistral Large 4 is a 1-trillion-parameter, natively multimodal open-weight model with 49 billion active parameters, positioned as a frontier performer for coding, agentic workflows, and enterprise tasks. It is highlighted for strong cybersecurity capabilities, including vulnerability detection and patching, and for being trained and deployed in Europe to support AI sovereignty. The model is available through a public preview API, with weights planned for later release.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49977979" target="_blank">HN Discussion (1103)</a></div><div class="source">🔗 <a href="https://mistral.ai/news/mistral-large-4/" target="_blank">https://mistral.ai/news/mistral-large-4/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/shader-effects-inc/shaders" target="_blank">Shaders, WebGPU Components for React, Vue, Svelte, Solid, JavaScript and Framer</a></h2><div class="meta"><span class="score">⭐ 35</span><span class="comments">💬 18</span><span class="by">👤 jinqueeny</span></div><div class="summary"><p>A library that ships 200+ real WebGPU effects as declarative components for React, Vue, Svelte, Solid, and plain JavaScript. Effects like gradients, noise, glass, metal, light, distortions, blurs, and cursor trails drop in as components and can be nested, blended, and masked on the GPU. A free visual design editor at shaders.com lets you compose effects on an infinite canvas and export the exact component tree for your framework. Production-ready with TypeScript, typed props, and SSR safety; used by 16,000+ design engineers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49988709" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://github.com/shader-effects-inc/shaders" target="_blank">https://github.com/shader-effects-inc/shaders</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/" target="_blank">EmbeddingGemma 2: An open, lightweight multimodal embedding model</a></h2><div class="meta"><span class="score">⭐ 338</span><span class="comments">💬 35</span><span class="by">👤 ilreb</span></div><div class="summary"><p>EmbeddingGemma 2 is an open, lightweight multimodal embedding model that maps text, images, audio, and video into a unified embedding space for on-device use. With 740 million parameters, an 8K token context window, and modular encoders, it supports local semantic search, retrieval, and RAG while using minimal memory. The model is designed for efficient edge deployment and offers strong performance across text, code, vision, and audio tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49980487" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/" target="_blank">https://blog.google/innovation-and-ai/technology/developers-tools/embeddingge...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/M-Abozaid/esp32-c3-adblock" target="_blank">ESP32-C3 Adblock</a></h2><div class="meta"><span class="score">⭐ 107</span><span class="comments">💬 41</span><span class="by">👤 jayhoon</span></div><div class="summary"><p>A Pi-hole-style DNS ad-blocker that runs on a $2 ESP32-C3 with no PSRAM. Instead of keeping the blocklist in RAM, it stores 140,000+ domains as sorted 40-bit FNV-1a hashes in flash (~0.7 MB) and binary-searches them, using only ~50 KB of RAM with ~10 ms lookups. Ad domains are sinkholed to 0.0.0.0 while everything else is forwarded to an upstream resolver. The trick — hash-in-flash instead of string-in-RAM — cuts the hardware cost from ~$8 to ~$2.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49986862" target="_blank">HN Discussion (41)</a></div><div class="source">🔗 <a href="https://github.com/M-Abozaid/esp32-c3-adblock" target="_blank">https://github.com/M-Abozaid/esp32-c3-adblock</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://lucumr.pocoo.org/2026/10/6/codemode/" target="_blank">What is Codemode</a></h2><div class="meta"><span class="score">⭐ 92</span><span class="comments">💬 43</span><span class="by">👤 Tomte</span></div><div class="summary"><p>Codemode is a Pi 1.0 feature that adds MCP support by letting an LLM orchestrate tool calls from a sandboxed harness-side runtime instead of loading many custom tools into its context. It separates the trusted harness, which plans and composes operations, from the execution environment where tools actually run. This lets models express complex workflows in code while keeping the execution target isolated and secure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49978333" target="_blank">HN Discussion (43)</a></div><div class="source">🔗 <a href="https://lucumr.pocoo.org/2026/10/6/codemode/" target="_blank">https://lucumr.pocoo.org/2026/10/6/codemode/</a></div></div></div>
+
+        <footer>
+            <p>2026-10-07</p>
+        </footer>
+    </div>
+</body>
+</html>

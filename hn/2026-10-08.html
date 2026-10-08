@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-08</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://mathstodon.xyz/@tao/117395269325940185" target="_blank">“Math 2.0” will need to value mathematical progress more holistically</a></h2><div class="meta"><span class="score">⭐ 322</span><span class="comments">💬 306</span><span class="by">👤 ent101</span></div><div class="summary"><p>The article argues that the future of mathematics, or “Math 2.0,” should value mathematical progress more holistically than as isolated problem-solving. It warns that AI can solve problems quickly but may reduce the seminars, collaborations, teaching, and community building that traditionally help results become integrated into the field. The mathematical community therefore needs to preserve and reward the broader ecosystem of discussion, follow-up work, and public dissemination.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50002008" target="_blank">HN Discussion (306)</a></div><div class="source">🔗 <a href="https://mathstodon.xyz/@tao/117395269325940185" target="_blank">https://mathstodon.xyz/@tao/117395269325940185</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank">Claude Haiku 5.5</a></h2><div class="meta"><span class="score">⭐ 898</span><span class="comments">💬 431</span><span class="by">👤 sfkgtbor</span></div><div class="summary"><p>Claude Haiku 5.5 is a new small AI model positioned as the fastest and most capable in its class, aimed at high-volume, speed-sensitive work such as summaries, classification, database queries, live support, and browser use. It is intended to complement larger Claude models as a subagent for coding and other tasks, with adjustable effort settings that let users balance efficiency and intelligence. The article also reports benchmark improvements over previous Haiku models and notes related value changes to the broader Claude model lineup.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49996437" target="_blank">HN Discussion (431)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank">https://www.anthropic.com/claude-haiku-5-5</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://shahidhussain.com/writing/search-for-salvage/" target="_blank">The 15-year search for a band that charted once and vanished</a></h2><div class="meta"><span class="score">⭐ 130</span><span class="comments">💬 51</span><span class="by">👤 shahidhussain</span></div><div class="summary"><p>A writer recounts a 15-year effort to identify the mystery band Salvage, whose professionally produced tracks “Electric” and “Searchlights” appeared on a single CD and briefly charted. Generic names, a lost disc, and a tiny label made the band nearly impossible to trace online. After using AI-assisted research, the writer uncovered chart records, a London distributor, and clues about the label, but the band’s identity remains elusive.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49959280" target="_blank">HN Discussion (51)</a></div><div class="source">🔗 <a href="https://shahidhussain.com/writing/search-for-salvage/" target="_blank">https://shahidhussain.com/writing/search-for-salvage/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://100r.ca/site/home.html" target="_blank">Living off-grid: Hundred Rabbits</a></h2><div class="meta"><span class="score">⭐ 238</span><span class="comments">💬 74</span><span class="by">👤 Muhammad523</span></div><div class="summary"><p>Hundred Rabbits is an off-grid living project that documents sustainable experiments, software, and creative work. It highlights ongoing projects such as a wiki, games, cryptography guides, and analog art, while sharing updates on independent, privacy-focused activities.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49970767" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://100r.ca/site/home.html" target="_blank">https://100r.ca/site/home.html</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007" target="_blank">Margaret Hamilton has died</a></h2><div class="meta"><span class="score">⭐ 1605</span><span class="comments">💬 173</span><span class="by">👤 muglug</span></div><div class="summary"><p>Margaret Hamilton, a pioneering computer scientist who led the software engineering team for NASA’s Apollo program at MIT’s Instrumentation Lab, has died. She helped establish software engineering as a discipline and developed critical flight software that contributed to the moon landing. Her career also included entrepreneurship and major recognition for her contributions to computing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49998895" target="_blank">HN Discussion (173)</a></div><div class="source">🔗 <a href="https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007" target="_blank">https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank">GPT‑6 and Intelligent UI for everyone</a></h2><div class="meta"><span class="score">⭐ 650</span><span class="comments">💬 355</span><span class="by">👤 joshuawright11</span></div><div class="summary"><p>A new GPT-6 model is being brought to a much wider ChatGPT audience, introducing Intelligent UI, a capability that lets answers include interactive graphics, buttons, forms, charts, and other visual elements. The system chooses the most useful format for each question, making everyday tasks, comparisons, and complex explanations easier to understand and act on.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49996425" target="_blank">HN Discussion (355)</a></div><div class="source">🔗 <a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank">https://openai.com/index/gpt-6-for-everyone/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://treylorswift.github.io/demoscene-recomp/web/" target="_blank">Classic PC demoscene productions running natively in the browser</a></h2><div class="meta"><span class="score">⭐ 82</span><span class="comments">💬 60</span><span class="by">👤 adunk</span></div><div class="summary"><p>A project allows classic DOS demoscene productions to run directly in web browsers by recompiling their original code into WebAssembly. The process records the demos executed instructions, translates them with precise timing, and adds models for the timer, VGA graphics, and Sound Blaster audio. This lets the demos loaders, music, and visual effects behave as they originally did while only the hardware is simulated.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50002426" target="_blank">HN Discussion (60)</a></div><div class="source">🔗 <a href="https://treylorswift.github.io/demoscene-recomp/web/" target="_blank">https://treylorswift.github.io/demoscene-recomp/web/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t" target="_blank">How did Rosalind Franklin miss the helix in her iconic DNA image? She didn't</a></h2><div class="meta"><span class="score">⭐ 184</span><span class="comments">💬 66</span><span class="by">👤 pavel_lishin</span></div><div class="summary"><p>A new analysis of Rosalind Franklin's laboratory notes shows she recognized the helical structure of DNA in an earlier x-ray image, photograph 49, and used it to calculate key measurements of the spiral. This finding challenges the long-standing claim that she failed to understand the significance of the famous photograph 51, which she later produced as a more refined version. The work restores Franklin's scientific insight while still acknowledging Watson and Crick's broader model of DNA.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49969073" target="_blank">HN Discussion (66)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t" target="_blank">https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/" target="_blank">'Jonathan' is the oldest land animal on Earth</a></h2><div class="meta"><span class="score">⭐ 168</span><span class="comments">💬 86</span><span class="by">👤 gumby</span></div><div class="summary"><p>Jonathan, an Aldabra giant tortoise and the world's oldest living land animal at about 194 years old, has had his genome sequenced to help explain his exceptional longevity. Researchers found unique gene variants in aging-related pathways, including DNA repair, insulin regulation, mitochondrial function, and unusually stable methylation patterns. The study offers early clues about the biological mechanisms behind extreme lifespan in tortoises.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49998066" target="_blank">HN Discussion (86)</a></div><div class="source">🔗 <a href="https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/" target="_blank">https://www.404media.co/oldest-living-land-animal-jonathan-the-tortoise/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://scottaaronson.blog/?p=10169" target="_blank">The Mathocalypse</a></h2><div class="meta"><span class="score">⭐ 255</span><span class="comments">💬 281</span><span class="by">👤 6bitquant</span></div><div class="summary"><p>OpenAI released a large set of mathematical results, including a purported proof of the Unique Games Conjecture, a long-standing problem in theoretical computer science. The proof appears machine-generated and is not yet fully understood by mathematicians, though it has a formal verification certificate and suggests the conjecture is true. The episode marks a major shift in mathematics, raising both excitement and unease about AI’s role in discovering and checking deep results.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49997718" target="_blank">HN Discussion (281)</a></div><div class="source">🔗 <a href="https://scottaaronson.blog/?p=10169" target="_blank">https://scottaaronson.blog/?p=10169</a></div></div></div>
+
+        <footer>
+            <p>2026-10-08</p>
+        </footer>
+    </div>
+</body>
+</html>

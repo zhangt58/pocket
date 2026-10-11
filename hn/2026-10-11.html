@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-11</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://ircv3.net/" target="_blank">IRCv3</a></h2><div class="meta"><span class="score">⭐ 58</span><span class="comments">💬 38</span><span class="by">👤 basilikum</span></div><div class="summary"><p>IRCv3 is a set of backward-compatible extensions to the IRC client protocol developed by the IRCv3 Working Group to modernize Internet Relay Chat. It standardizes features such as SASL account login, account information, message tags, away notifications, server time, and message batching. The group is also working on account registration, chat history access, secure connection handling, Unicode names, and client avatars.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50041540" target="_blank">HN Discussion (38)</a></div><div class="source">🔗 <a href="https://ircv3.net/" target="_blank">https://ircv3.net/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://lineageos.org/Changelog-32/" target="_blank">LineageOS 24.0</a></h2><div class="meta"><span class="score">⭐ 124</span><span class="comments">💬 32</span><span class="by">👤 timschumi</span></div><div class="summary"><p>LineageOS 24.0 is an Android 17-based release that advances the project toward a major anniversary and includes updated security patches across multiple branches. It also refreshes core applications with a new image editor, a redesigned updater, and improvements to the browser, music player, and TV launcher.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50040276" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://lineageos.org/Changelog-32/" target="_blank">https://lineageos.org/Changelog-32/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://nitter.net" target="_blank">Nitter: Update Oct 10th seeking funding and legal help</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 0</span><span class="by">👤 ForHackernews</span></div><div class="summary"><p>Nitter is seeking funding and legal assistance after X Corp sent cease and desist letters demanding the permanent takedown of Nitter instances and its repository. The project says it currently has no legal counsel and is asking lawyers, organizations, or others for help to defend its future. Donations would first cover legal costs, with any remainder supporting development of Nitter or a successor.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50041682" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://nitter.net" target="_blank">https://nitter.net</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://nishtahir.com/build-your-own-decision-model/" target="_blank">Build your own decision model</a></h2><div class="meta"><span class="score">⭐ 323</span><span class="comments">💬 74</span><span class="by">👤 softwaredoug</span></div><div class="summary"><p>The article explains how to build a simple decision model by constraining a language model to choose from a fixed set of answer options. Instead of generating a full response token by token, the model scores only the allowed option tokens in a single pass and selects the highest-probability answer. A code example shows this approach using Qwen to answer a multiple-choice question, though the output probabilities are not guaranteed to represent true correctness.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50037949" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://nishtahir.com/build-your-own-decision-model/" target="_blank">https://nishtahir.com/build-your-own-decision-model/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://patkerr.co.uk/2d-vehicles/" target="_blank">2D Vehicles</a></h2><div class="meta"><span class="score">⭐ 495</span><span class="comments">💬 102</span><span class="by">👤 Michelangelo11</span></div><div class="summary"><p>The article describes a 2D vehicle physics simulation that originated as a simple wireframe demo and later influenced the vehicle system in Grand Theft Auto. It was recreated as an interactive JavaScript playground called Motion Lab, featuring car, spaceship, and brick modes built on rigid-body dynamics and a simplified tire model.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=49991852" target="_blank">HN Discussion (102)</a></div><div class="source">🔗 <a href="https://patkerr.co.uk/2d-vehicles/" target="_blank">https://patkerr.co.uk/2d-vehicles/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://housing.over.pizza/" target="_blank">A city-building game in which the city would prefer you didn't</a></h2><div class="meta"><span class="score">⭐ 360</span><span class="comments">💬 124</span><span class="by">👤 JumpCrisscross</span></div><div class="summary"><p>The article describes an interactive city-building game set in San Francisco, where players attempt to build housing while navigating local politics, zoning rules, and public opinion. It presents the city’s decision-making bodies, relevant housing laws, and market conditions as obstacles that shape whether projects succeed or fail. Player standing rises with completed homes and concessions but drops when they fight the system.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50036864" target="_blank">HN Discussion (124)</a></div><div class="source">🔗 <a href="https://housing.over.pizza/" target="_blank">https://housing.over.pizza/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://lightbulbcomputer.com/" target="_blank">The Lightbulb Computer</a></h2><div class="meta"><span class="score">⭐ 438</span><span class="comments">💬 66</span><span class="by">👤 oskarth</span></div><div class="summary"><p>The Lightbulb Computer is a speculative ambient computing device that combines a projector and computer vision in a lightbulb form factor, allowing it to be mounted in a portable lamp base or standard wall socket. It projects information onto everyday surfaces and responds to voice, gestures, and visual input, enabling tasks such as displaying recipes, maps, photos, and smart-home controls without relying on small screens or face-worn headsets.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50029487" target="_blank">HN Discussion (66)</a></div><div class="source">🔗 <a href="https://lightbulbcomputer.com/" target="_blank">https://lightbulbcomputer.com/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://ratfactor.com/cards/git-commit-size" target="_blank">How big is a Git commit?</a></h2><div class="meta"><span class="score">⭐ 39</span><span class="comments">💬 19</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>A Git commit's size depends on how compressible the changed files are and on Git's use of zlib compression and, later, packfiles. Small commits can add several kilobytes of overhead due to object metadata and tree structures, while larger commits are stored very efficiently, often at 10% to 50% of their uncompressed size.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50017548" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://ratfactor.com/cards/git-commit-size" target="_blank">https://ratfactor.com/cards/git-commit-size</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.nature.com/articles/s41586-026-11111-4" target="_blank">Retrofitting language models to operate over bytes</a></h2><div class="meta"><span class="score">⭐ 71</span><span class="comments">💬 7</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>The article argues that large language models are not fully end-to-end because they depend on subword tokenization, which can limit character-level understanding and shape model behavior. It proposes retrofitting existing models to process raw bytes instead of conventional tokens. This approach aims to make language models more end-to-end and reduce tokenization-related limitations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50001234" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://www.nature.com/articles/s41586-026-11111-4" target="_blank">https://www.nature.com/articles/s41586-026-11111-4</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/othermod/PSPi-Version-6" target="_blank">PSPi 6 – Raspberry Pi in a PSP</a></h2><div class="meta"><span class="score">⭐ 94</span><span class="comments">💬 9</span><span class="by">👤 therepanic</span></div><div class="summary"><p>The PSPi 6 is an open-source project that transforms a classic PSP 1000 into a modern handheld by replacing its mainboard with a custom circuit board that hosts a Raspberry Pi as its brain. It offers an 800x480 LCD display with adjustable brightness, battery monitoring, and PSP audio, while keeping all original controls. It fits Pi Zero, Zero 2W, and CM4 models and can run retro emulators as well as full Linux distributions, with the hardware released under a Creative Commons license.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50038623" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://github.com/othermod/PSPi-Version-6" target="_blank">https://github.com/othermod/PSPi-Version-6</a></div></div></div>
+
+        <footer>
+            <p>2026-10-11</p>
+        </footer>
+    </div>
+</body>
+</html>

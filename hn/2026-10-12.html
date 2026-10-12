@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-12</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html" target="_blank">Type-safe HTML templating in Zig</a></h2><div class="meta"><span class="score">⭐ 131</span><span class="comments">💬 58</span><span class="by">👤 lukaslalinsky</span></div><div class="summary"><p>The article describes zt, a Zig HTML templating library inspired by Go's Templ. Templates are transpiled to Zig code at build time, enabling compile-time type safety, direct output writing, and default escaping while preserving an HTML-like syntax.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50051573" target="_blank">HN Discussion (58)</a></div><div class="source">🔗 <a href="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html" target="_blank">https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.bbc.com/news/articles/c64g1l5389kvo" target="_blank">Deloitte falsified documents to evade tax on Abramovich's wealth</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 1</span><span class="by">👤 Betelbuddy</span></div><div class="summary"><p>An investigation found that Deloitte helped falsify documents to conceal Roman Abramovich's wealth and evade tax, causing assets including superyachts, mansions, and private jets to disappear from his company accounts. Abramovich denies evading tax or directing the falsification, while Deloitte says it acted in compliance with applicable laws.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50054207" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://www.bbc.com/news/articles/c64g1l5389kvo" target="_blank">https://www.bbc.com/news/articles/c64g1l5389kvo</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://royfish.dev/fingerprints-are-the-new-cookies" target="_blank">Fingerprints are the new cookies</a></h2><div class="meta"><span class="score">⭐ 406</span><span class="comments">💬 208</span><span class="by">👤 royfish</span></div><div class="summary"><p>Device fingerprinting is becoming a replacement for third-party cookies, allowing websites and ad networks to identify users across sessions and devices by combining browser, operating system, IP, and other technical signals. The article argues this tracking enables detailed profiling and data trading, while major tech companies have shifted from promising cookie deprecation to embracing fingerprinting. As a result, users may be tracked even when cookies are blocked or cleared.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50048642" target="_blank">HN Discussion (208)</a></div><div class="source">🔗 <a href="https://royfish.dev/fingerprints-are-the-new-cookies" target="_blank">https://royfish.dev/fingerprints-are-the-new-cookies</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storage-is" target="_blank">Postgres isn't slow, your storage is</a></h2><div class="meta"><span class="score">⭐ 105</span><span class="comments">💬 77</span><span class="by">👤 saisrirampur</span></div><div class="summary"><p>The article argues that many PostgreSQL performance problems at scale, such as slow ingestion, erratic read latency, vacuum lag, checkpoint spikes, and replication delay, are often caused by storage limitations rather than the database itself. A benchmark comparing the same large workload on network-attached EBS and local NVMe shows that local NVMe sharply reduces I/O cost, improving throughput and tail latency. It then outlines production patterns for running PostgreSQL on local NVMe to avoid these bottlenecks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50052163" target="_blank">HN Discussion (77)</a></div><div class="source">🔗 <a href="https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storage-is" target="_blank">https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storag...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://nanolathe.gg" target="_blank">Total Annihilation, rebuilt for modern computers</a></h2><div class="meta"><span class="score">⭐ 537</span><span class="comments">💬 206</span><span class="by">👤 jttnr</span></div><div class="summary"><p>Nanolathe is an open-source, MIT-licensed engine that rebuilds the classic real-time strategy game Total Annihilation for modern computers. It adds a modern GPU renderer with improved lighting and detail while preserving the original gameplay, and can be played in a browser demo or installed natively on Windows, Mac, and Linux using the player's existing game files.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50045984" target="_blank">HN Discussion (206)</a></div><div class="source">🔗 <a href="https://nanolathe.gg" target="_blank">https://nanolathe.gg</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/Geramy/LemonSeed-Studio" target="_blank">Running the unmodified Linux amdgpu driver on an iPad</a></h2><div class="meta"><span class="score">⭐ 33</span><span class="comments">💬 13</span><span class="by">👤 joshcsimmons</span></div><div class="summary"><p>LemonSeed Studio is an iPad app that runs the unmodified Linux amdgpu and amdkfd drivers through a PCIDriverKit extension, allowing an external AMD GPU in a Thunderbolt enclosure to be used on iPad. It includes an inference engine that executes on-device LLM workloads via the GPU's HSA runtime, along with live GPU telemetry. The project is available under either the MIT or GPL-2.0-only license.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50041573" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://github.com/Geramy/LemonSeed-Studio" target="_blank">https://github.com/Geramy/LemonSeed-Studio</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://jverzani.github.io/CalculusWithJuliaNotes.jl/" target="_blank">Calculus with Julia</a></h2><div class="meta"><span class="score">⭐ 141</span><span class="comments">💬 15</span><span class="by">👤 subset</span></div><div class="summary"><p>These notes teach calculus using the Julia programming language, focusing on graphical, numerical, and algebraic perspectives. They use Julia mainly for numeric computation while adding symbolic work, aiming to emphasize concepts rather than programming mechanics. Each section includes focused examples and self-graded practice questions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50034206" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://jverzani.github.io/CalculusWithJuliaNotes.jl/" target="_blank">https://jverzani.github.io/CalculusWithJuliaNotes.jl/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://cartographers-nk.wonyoung.so/" target="_blank">Cartographers of North Korea (2019)</a></h2><div class="meta"><span class="score">⭐ 267</span><span class="comments">💬 49</span><span class="by">👤 edent</span></div><div class="summary"><p>The article presents responses from OpenStreetMap contributors who mapped North Korea, explaining that they do so as a personal hobby and out of curiosity about the country. They rely mainly on satellite imagery, online photos, and existing map data rather than on-site visits or systematic professional methods. Their work reflects a desire to create free, accurate geographic information for a region that is difficult to access and politically sensitive.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50047091" target="_blank">HN Discussion (49)</a></div><div class="source">🔗 <a href="https://cartographers-nk.wonyoung.so/" target="_blank">https://cartographers-nk.wonyoung.so/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/snuri00/ps2-web-recomp" target="_blank">Show HN: PS2 games statically recompiled to WebAssembly</a></h2><div class="meta"><span class="score">⭐ 42</span><span class="comments">💬 12</span><span class="by">👤 deadxwarrior</span></div><div class="summary"><p>A project statically recompiles PlayStation 2 games into WebAssembly so they run directly in a browser without an emulator. The process converts the Emotion Engine code into C++, then compiles it to WebAssembly and links it with a reimplementation of PS2 system software and hardware that renders using WebGPU. Demonstrations include Gran Turismo 4 and God of War II, which run at full speed from user-supplied disc images.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50052251" target="_blank">HN Discussion (12)</a></div><div class="source">🔗 <a href="https://github.com/snuri00/ps2-web-recomp" target="_blank">https://github.com/snuri00/ps2-web-recomp</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.americanscientist.org/article/whatever-became-of-holography" target="_blank">Whatever became of holography? (2011)</a></h2><div class="meta"><span class="score">⭐ 137</span><span class="comments">💬 67</span><span class="by">👤 cainxinth</span></div><div class="summary"><p>The article explores the history and current status of holography, asking why the technology has not become widely used in everyday life. It likely discusses its scientific principles, commercial applications, and the challenges that have limited its adoption.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50049411" target="_blank">HN Discussion (67)</a></div><div class="source">🔗 <a href="https://www.americanscientist.org/article/whatever-became-of-holography" target="_blank">https://www.americanscientist.org/article/whatever-became-of-holography</a></div></div></div>
+
+        <footer>
+            <p>2026-10-12</p>
+        </footer>
+    </div>
+</body>
+</html>

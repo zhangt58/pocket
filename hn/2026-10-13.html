@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-13</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://pdftomp3.com/connect-ai/" target="_blank">Show HN: Use your OpenAI subscription to create audiobooks</a></h2><div class="meta"><span class="score">⭐ 11</span><span class="comments">💬 6</span><span class="by">👤 janpmz</span></div><div class="summary"><p>PDF TO MP3 lets users turn PDF documents into audiobooks by connecting an AI account or API key. It integrates with AI chat apps through an MCP server, so users can attach a PDF and request audio output. The service handles document processing while the selected AI provider generates the speech.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50069337" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://pdftomp3.com/connect-ai/" target="_blank">https://pdftomp3.com/connect-ai/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/rust-lang/rust/issues/164250" target="_blank">11 year old unsoundness bugs found in Rust borrow checker</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 0</span><span class="by">👤 formerly_proven</span></div><div class="summary"><p>The post likely discusses the discovery of long-standing unsoundness bugs in Rust's borrow checker that could allow unsafe memory access despite the language's safety guarantees. It probably covers how the flaws were found, their impact on Rust programs, and the fixes or security implications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50069499" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://github.com/rust-lang/rust/issues/164250" target="_blank">https://github.com/rust-lang/rust/issues/164250</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.thehistoryblog.com/archives/77107" target="_blank">Hittite royal archive found in Turkey</a></h2><div class="meta"><span class="score">⭐ 67</span><span class="comments">💬 4</span><span class="by">👤 benbreen</span></div><div class="summary"><p>Archaeologists in central Turkey have uncovered a major Hittite royal archive at the ancient city of Samuha, containing 184 cuneiform tablets and fragments from the reign of King Tudhaliya II. The texts, written in Hittite and Hurrian, offer rare insights into a fever epidemic, royal family health, religious rituals, and military logistics, including a desperate request for reinforcements. The discovery is now the largest and most comprehensive collection of Hittite-language documents found in the 21st century.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50067414" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.thehistoryblog.com/archives/77107" target="_blank">https://www.thehistoryblog.com/archives/77107</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://jsomers.net/e-coli-chemotaxis/" target="_blank">The baffling intelligence of a single cell (2024)</a></h2><div class="meta"><span class="score">⭐ 306</span><span class="comments">💬 74</span><span class="by">👤 jsomers</span></div><div class="summary"><p>The article explains how a single E. coli cell uses chemotaxis to forage for nutrients, a process that resembles a primitive form of intelligence. It senses chemical gradients with receptors and controls its flagellar motor to alternate between smooth runs and random tumbles, guided by the signaling molecule CheY. This system lets the bacterium navigate toward attractants while balancing exploration and exploitation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50041866" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://jsomers.net/e-coli-chemotaxis/" target="_blank">https://jsomers.net/e-coli-chemotaxis/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://z.ai/blog/glm-legal" target="_blank">GLM-Legal</a></h2><div class="meta"><span class="score">⭐ 576</span><span class="comments">💬 327</span><span class="by">👤 ilreb</span></div><div class="summary"><p>GLM-Legal is a specialized legal language model designed to handle complex, high-stakes professional tasks by extracting issues from source documents, applying legal doctrine, and producing client-ready work product. It achieves strong benchmark results, including a 19.2% all-pass rate on Harvey LAB and parity with frontier closed-source models on LegalBench and PLawBench, while using a smaller parameter footprint. Its training combines domain-focused mid-training with reinforcement-learning post-training to improve reliable end-to-end legal workflow execution.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50058507" target="_blank">HN Discussion (327)</a></div><div class="source">🔗 <a href="https://z.ai/blog/glm-legal" target="_blank">https://z.ai/blog/glm-legal</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html" target="_blank">Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X</a></h2><div class="meta"><span class="score">⭐ 228</span><span class="comments">💬 112</span><span class="by">👤 hurricanepootis</span></div><div class="summary"><p>Intel’s D270 GPU is a data center AI accelerator designed for agentic AI workloads, offering up to 480 GB of LPDDR5X memory, 350 W air-cooled operation, and 32 Xe3P cores with 256 XMX matrix engines. It targets memory-bound inference with long contexts and high concurrency, using standard PCIe 5.0 servers and support for open models in vLLM and PyTorch.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50063365" target="_blank">HN Discussion (112)</a></div><div class="source">🔗 <a href="https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html" target="_blank">https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-c...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident" target="_blank">Hackers activate automatic defrosting in supermarket fridges across Europe</a></h2><div class="meta"><span class="score">⭐ 718</span><span class="comments">💬 840</span><span class="by">👤 Zeekaas</span></div><div class="summary"><p>Hackers reportedly triggered automatic defrost cycles in supermarket refrigerators across Europe, disrupting temperature control in stores. The incident highlights vulnerabilities in connected retail equipment and may have affected product freshness and store operations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50055304" target="_blank">HN Discussion (840)</a></div><div class="source">🔗 <a href="https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident" target="_blank">https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyber...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://prophitt.me/writing/a-modern-web-app-in-c" target="_blank">A Modern Web App in C</a></h2><div class="meta"><span class="score">⭐ 580</span><span class="comments">💬 244</span><span class="by">👤 prophittcorey</span></div><div class="summary"><p>The author describes building a modern commercial web product in C using a simple CGI architecture on OpenBSD, httpd, and SQLite. The app supports accounts, search, payments, and emails without JavaScript or frameworks, serving all assets from a single statically linked binary. The approach offers minimal dependencies, easy deployment, and a clear separation between the web server and application logic.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50058528" target="_blank">HN Discussion (244)</a></div><div class="source">🔗 <a href="https://prophitt.me/writing/a-modern-web-app-in-c" target="_blank">https://prophitt.me/writing/a-modern-web-app-in-c</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev" target="_blank">Document Review with Unsiloed and TypeSafe Jev</a></h2><div class="meta"><span class="score">⭐ 13</span><span class="comments">💬 2</span><span class="by">👤 ritzaco</span></div><div class="summary"><p>The article explains how combining Unsiloed’s document extraction with TypeSafe’s Jev can catch errors that OCR alone misses. Unsiloed extracts structured fields with confidence scores and page citations, while Jev evaluates those fields against focused questions and returns typed answers such as probabilities or choices. The results can be routed to identify which extracted values need human review.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50068443" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev" target="_blank">https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.bloomberg.com/news/features/2026-10-13/cftc-staff-told-to-retract-analysis-of-suspicious-oil-trades-on-iran" target="_blank">CFTC Staff Were Told to Retract Analysis of Suspicious Oil Trades</a></h2><div class="meta"><span class="score">⭐ 28</span><span class="comments">💬 4</span><span class="by">👤 helsinkiandrew</span></div><div class="summary"><p>CFTC staff were instructed to retract an analysis of suspicious oil trades, potentially connected to Iran. The report highlights concerns about internal pressure and how the agency handled its review of questionable trading activity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50069329" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.bloomberg.com/news/features/2026-10-13/cftc-staff-told-to-retract-analysis-of-suspicious-oil-trades-on-iran" target="_blank">https://www.bloomberg.com/news/features/2026-10-13/cftc-staff-told-to-retract...</a></div></div></div>
+
+        <footer>
+            <p>2026-10-13</p>
+        </footer>
+    </div>
+</body>
+</html>

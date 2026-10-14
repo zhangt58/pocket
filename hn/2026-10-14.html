@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-14</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://typeof.net/Iosevka/" target="_blank">Iosevka is an open-source, sans-serif and slab-serif, monospace font</a></h2><div class="meta"><span class="score">⭐ 141</span><span class="comments">💬 47</span><span class="by">👤 otobrglez</span></div><div class="summary"><p>Iosevka is an open-source monospace typeface family designed for coding, terminal use, and technical documents, offering sans-serif and slab-serif styles in multiple weights, slopes, and widths. Its default monospace glyphs are half an em wide, allowing more columns on screen, while optional extended widths and quasi-proportional variants provide additional flexibility.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50084240" target="_blank">HN Discussion (47)</a></div><div class="source">🔗 <a href="https://typeof.net/Iosevka/" target="_blank">https://typeof.net/Iosevka/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.aviaduct.com/?l=og+en&u=https%3A%2F%2Fwww.aftonbladet.se%2Fnojesbladet%2Fa%2F31oE8A%2Fthe-challenge-sverige-raderad-av-ai-bara-veckor-innan-premiaren" target="_blank">Agent erased full season of "The Challenge Swe": "Hundreds of days of work gone"</a></h2><div class="meta"><span class="score">⭐ 22</span><span class="comments">💬 12</span><span class="by">👤 lensecat</span></div><div class="summary"><p>An agent reportedly erased an entire season of The Challenge Swe, destroying hundreds of days of production work. The loss highlights the vulnerability of digital media files and the potential disruption to the show's schedule and release.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50085259" target="_blank">HN Discussion (12)</a></div><div class="source">🔗 <a href="https://www.aviaduct.com/?l=og+en&u=https%3A%2F%2Fwww.aftonbladet.se%2Fnojesbladet%2Fa%2F31oE8A%2Fthe-challenge-sverige-raderad-av-ai-bara-veckor-innan-premiaren" target="_blank">https://www.aviaduct.com/?l=og+en&u=https%3A%2F%2Fwww.aftonbladet.se%2Fnojesb...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://deepmind.google/models/gemini/" target="_blank">Gemini 4 Argon</a></h2><div class="meta"><span class="score">⭐ 1330</span><span class="comments">💬 923</span><span class="by">👤 737max</span></div><div class="summary"><p>Gemini 4 Argon is presented as an advanced AI model that helps researchers, engineers, and security teams tackle complex scientific, software, and cybersecurity challenges. It is shown accelerating work such as refactoring Chrome's legacy code, speeding up quantum chemistry and open-source model inference, and improving vulnerability remediation and autonomous robotics simulations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50073879" target="_blank">HN Discussion (923)</a></div><div class="source">🔗 <a href="https://deepmind.google/models/gemini/" target="_blank">https://deepmind.google/models/gemini/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://book.humanexperiences.io/" target="_blank">Show HN: Building an LLM from Scratch in TypeScript</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 0</span><span class="by">👤 baraa_</span></div><div class="summary"><p>This article introduces a from-scratch guide for building large language models using Node.js and TypeScript. It explains core components such as tokenizers, attention, transformer blocks, and training loops, with runnable code for each chapter. The project also points to open-source repositories and upcoming interactive WebGPU demos.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50085332" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://book.humanexperiences.io/" target="_blank">https://book.humanexperiences.io/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://daily.tinyprojects.dev/221" target="_blank">I let an AI run my startup for a week</a></h2><div class="meta"><span class="score">⭐ 28</span><span class="comments">💬 11</span><span class="by">👤 tinyprojects</span></div><div class="summary"><p>A solo developer experimented with letting a team of AI agents manage parts of his startup for a week, assigning bots to handle support, coding, security, and marketing. He found the agents useful because they could collaborate on small tasks, allow work from a phone, and take on experiments he normally lacked time for. The experience made him believe a one-person startup could compete with larger companies by using AI to reduce overhead and automate routine work.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50085296" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://daily.tinyprojects.dev/221" target="_blank">https://daily.tinyprojects.dev/221</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://blog.lorenzano.eu/pulsar-at-esug-2026/" target="_blank">Pulsar at ESUG 2026 (new Smalltalk IDE)</a></h2><div class="meta"><span class="score">⭐ 4</span><span class="comments">💬 0</span><span class="by">👤 mpweiher</span></div><div class="summary"><p>Pulsar is a new coding-first IDE for Pharo that emphasizes helping programmers understand, navigate, and modify systems while staying close to the code. The article presents the project’s direction, arguing that generative tools make these capabilities more important rather than less. Pulsar is still a work in progress but is already usable and open to feedback.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50085306" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://blog.lorenzano.eu/pulsar-at-esug-2026/" target="_blank">https://blog.lorenzano.eu/pulsar-at-esug-2026/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.quera.com/blog-posts/holding-the-light-teaching-an-ai-to-lock-and-tune-our-quantum-computers-lasers" target="_blank">AI Laser Locking for Quantum Computers: How QuEra Automates It</a></h2><div class="meta"><span class="score">⭐ 5</span><span class="comments">💬 0</span><span class="by">👤 EvgeniyZh</span></div><div class="summary"><p>QuEra has developed an AI-driven system that automatically restores and tunes the precise laser locks required for its quantum computers, eliminating the need for experts to manually fix disruptions. The AI agent controls the hardware within safety limits, bringing lasers back on target in seconds and improving the scalability and reliability of future quantum processors.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50085302" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.quera.com/blog-posts/holding-the-light-teaching-an-ai-to-lock-and-tune-our-quantum-computers-lasers" target="_blank">https://www.quera.com/blog-posts/holding-the-light-teaching-an-ai-to-lock-and...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://ciechanow.ski/sound/" target="_blank">Sound – Bartosz Ciechanowski (2022)</a></h2><div class="meta"><span class="score">⭐ 135</span><span class="comments">💬 19</span><span class="by">👤 dverlaeckt80</span></div><div class="summary"><p>The article explains sound as a physical phenomenon that travels through a medium such as air. It describes how air molecules move, collide, and exert pressure, and how these interactions create and carry sound waves to our ears.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50045147" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://ciechanow.ski/sound/" target="_blank">https://ciechanow.ski/sound/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/" target="_blank">Ledger confirms spy chip implant behind wallet crypto thefts</a></h2><div class="meta"><span class="score">⭐ 719</span><span class="comments">💬 452</span><span class="by">👤 thm</span></div><div class="summary"><p>Ledger has confirmed that a spy chip implant was responsible for cryptocurrency thefts involving its hardware wallets. The disclosure points to a physical tampering attack aimed at compromising secure crypto storage.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50054092" target="_blank">HN Discussion (452)</a></div><div class="source">🔗 <a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/" target="_blank">https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-walle...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://smallcultfollowing.com/babysteps/blog/2026/10/14/agentic-dev-and-rust/" target="_blank">What agents mean for Rust (and vice versa)</a></h2><div class="meta"><span class="score">⭐ 17</span><span class="comments">💬 14</span><span class="by">👤 mfrw</span></div><div class="summary"><p>The article examines how LLM-based coding agents are changing software development and what that means for programming language design. It argues that human expertise and language design remain important, while noting that Rust is well suited to agentic workflows because of its strong tooling, safety, and ecosystem. The author also suggests areas where Rust could be improved to better support agent-driven development.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50084416" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://smallcultfollowing.com/babysteps/blog/2026/10/14/agentic-dev-and-rust/" target="_blank">https://smallcultfollowing.com/babysteps/blog/2026/10/14/agentic-dev-and-rust/</a></div></div></div>
+
+        <footer>
+            <p>2026-10-14</p>
+        </footer>
+    </div>
+</body>
+</html>

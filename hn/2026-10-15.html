@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-15</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/" target="_blank">Things to know when you get cancer</a></h2><div class="meta"><span class="score">⭐ 1420</span><span class="comments">💬 351</span><span class="by">👤 jjmaxwell4</span></div><div class="summary"><p>Following a mouth cancer diagnosis, the author shares practical lessons for navigating treatment, emphasizing persistent scheduling, pushing for timely genetic testing, and using standard-of-care guidelines to understand options. They recommend seeking a second opinion, speaking with patients who have had similar surgeries, and keeping organized AI-assisted notes of appointments. The article also advises considering a major cancer center for faster, more coordinated care.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50093568" target="_blank">HN Discussion (351)</a></div><div class="source">🔗 <a href="https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/" target="_blank">https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://blog.dfb.sh/blog/eap770-root-for-two-zeros/" target="_blank">Wanted to download an ISO, ended up writing a kernel exploit</a></h2><div class="meta"><span class="score">⭐ 116</span><span class="comments">💬 59</span><span class="by">👤 0xdeafbeef</span></div><div class="summary"><p>A TP-Link EAP770 v1 access point repeatedly corrupted large Wi-Fi downloads, and the vendor had ended firmware support for the device. After tracing the issue to a firmware bug, the author wrote a kernel exploit to gain root access and write two required sysfs values, fixing the problem.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50070625" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://blog.dfb.sh/blog/eap770-root-for-two-zeros/" target="_blank">https://blog.dfb.sh/blog/eap770-root-for-two-zeros/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://anoma.ly/notes/opencode-2-0/" target="_blank">OpenCode 2.0</a></h2><div class="meta"><span class="score">⭐ 636</span><span class="comments">💬 254</span><span class="by">👤 gmays</span></div><div class="summary"><p>OpenCode 2.0 is a major update that makes its client/server architecture run automatically as a local background service, unifying the TUI, web, desktop, and programmatic clients. It introduces a rebuilt API and new client package, plus Code Mode, which lets agents call MCP and OpenAPI tools through simple JavaScript scripts. The release also adds background subagents and asynchronous shell commands so long-running work does not block the main agent.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50094994" target="_blank">HN Discussion (254)</a></div><div class="source">🔗 <a href="https://anoma.ly/notes/opencode-2-0/" target="_blank">https://anoma.ly/notes/opencode-2-0/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://tinylittleoffice.com/" target="_blank">Tiny Little Office</a></h2><div class="meta"><span class="score">⭐ 465</span><span class="comments">💬 78</span><span class="by">👤 donohoe</span></div><div class="summary"><p>Tiny Little Office is a collection of lightweight productivity tools for creating and organizing work. It includes templates and apps for writing, outlining, presentations, spreadsheets, calculations, drawing, diagrams, animation, calendars, and trip planning.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50096142" target="_blank">HN Discussion (78)</a></div><div class="source">🔗 <a href="https://tinylittleoffice.com/" target="_blank">https://tinylittleoffice.com/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://indigene.app/" target="_blank">Show HN: Indigene – Native plants for where you stand</a></h2><div class="meta"><span class="score">⭐ 34</span><span class="comments">💬 5</span><span class="by">👤 olivierlacan</span></div><div class="summary"><p>Indigene is a privacy-focused tool that recommends native plants suited to your location, helping support local ecosystems without requiring an account or tracking. It highlights how native plants provide essential food for local caterpillars, which in turn sustain songbirds and other wildlife. The app works offline and can be used without sharing location data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50064470" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://indigene.app/" target="_blank">https://indigene.app/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://mapwriting.substack.com/p/dentists" target="_blank">Do dentists know what they're doing?</a></h2><div class="meta"><span class="score">⭐ 730</span><span class="comments">💬 528</span><span class="by">👤 doitLP</span></div><div class="summary"><p>A first-person account questions whether dentists truly know what they are doing after the narrator undergoes a series of dubious dental procedures. A dentist’s tooth reshaping worsens jaw pain, and a later splint is prescribed for suspected nighttime grinding. The story leaves the narrator skeptical of dental expertise and the reliability of professional diagnoses.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50050553" target="_blank">HN Discussion (528)</a></div><div class="source">🔗 <a href="https://mapwriting.substack.com/p/dentists" target="_blank">https://mapwriting.substack.com/p/dentists</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" target="_blank">LFM2.5-24B-A2B: Built for fast on-device agents</a></h2><div class="meta"><span class="score">⭐ 220</span><span class="comments">💬 51</span><span class="by">👤 gmays</span></div><div class="summary"><p>LFM2.5-24B-A2B is a 24-billion-parameter reasoning model with only 2 billion active parameters, designed for fast, private on-device agents. It extends the LFM2.5 family with a larger context window, expanded vocabulary, and agentic post-training, and it performs competitively with larger models on tool-use and agentic benchmarks. The model is released as open weights for local deployment and fine-tuning.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50097369" target="_blank">HN Discussion (51)</a></div><div class="source">🔗 <a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" target="_blank">https://www.liquid.ai/blog/lfm2-5-24b-a2b</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.newyorker.com/magazine/2026/10/19/the-first-social-network" target="_blank">The First Social Network: In rural Argentina residents send messages w AM radio</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 10</span><span class="by">👤 bookofjoe</span></div><div class="summary"><p>In rural Argentina, isolated residents use AM radio programs to exchange short personal messages with family and neighbors, functioning as a primitive social network. These broadcasts read aloud handwritten notes, phone calls, or texts sent to local stations, allowing people without internet or reliable phone service to share updates, lost items, and simple well-wishes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50079701" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://www.newyorker.com/magazine/2026/10/19/the-first-social-network" target="_blank">https://www.newyorker.com/magazine/2026/10/19/the-first-social-network</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://catchabird.com" target="_blank">Catch a Bird – I made it for my own sanity</a></h2><div class="meta"><span class="score">⭐ 198</span><span class="comments">💬 53</span><span class="by">👤 eduardsik</span></div><div class="summary"><p>Catch a Bird is an anonymous online experiment inspired by the Hungarian saying that a very happy person could catch birds. Visitors post short sentences about what made them happy, which appear as birds on a shared tree that others can catch, feed to keep them longer, and eventually let go. The site is free and public, with no sign-up, and each person can keep a personal bird book of sentences that touched them.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50053384" target="_blank">HN Discussion (53)</a></div><div class="source">🔗 <a href="https://catchabird.com" target="_blank">https://catchabird.com</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years" target="_blank">Americans' social activity has steeply declined in the past 30 years</a></h2><div class="meta"><span class="score">⭐ 417</span><span class="comments">💬 388</span><span class="by">👤 hubraumhugo</span></div><div class="summary"><p>A new survey of U.S. adults finds that participation in many traditional social activities has fallen sharply over recent decades, with double-digit declines in hosting guests, attending club meetings, going to worship services, picnics, card games, and volunteering. In contrast, some activities have grown, especially internet use, home video gaming, exercise classes, and attending concerts. The findings add to evidence that Americans are becoming less socially connected in everyday life.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50089921" target="_blank">HN Discussion (388)</a></div><div class="source">🔗 <a href="https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years" target="_blank">https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-...</a></div></div></div>
+
+        <footer>
+            <p>2026-10-15</p>
+        </footer>
+    </div>
+</body>
+</html>

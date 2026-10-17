@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-17</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017" target="_blank">DeepSeek: DeepSeek v4.1 Flash 1017</a></h2><div class="meta"><span class="score">⭐ 165</span><span class="comments">💬 35</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>DeepSeek V4.1 Flash is a sparse mixture-of-experts model built on DeepSeek's Causal Encoder-Decoder architecture, using a 552B-parameter backbone while activating 8B parameters for input and 16B for output to reduce per-token compute. It has native image understanding, supports long-context and agentic workloads, and uses compressed KV caching to lower memory use. DeepSeek positions it as the cost-efficient tier of the V4.1 family, claiming better performance, speed, and task completion than V4 Pro.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50129121" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017" target="_blank">https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.paperinstruments.com/ultramarine" target="_blank">Ultramarine 1 Flash</a></h2><div class="meta"><span class="score">⭐ 256</span><span class="comments">💬 78</span><span class="by">👤 i_rush_carriers</span></div><div class="summary"><p>Ultramarine 1 Flash is an open model designed for professional knowledge work in finance, law, consulting, and operations, aiming to deliver high-quality results with fewer output tokens than its base model. It is presented as a client-ready system that produces clean documents, spreadsheets, and presentations while following professional standards for accuracy and presentation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50106747" target="_blank">HN Discussion (78)</a></div><div class="source">🔗 <a href="https://www.paperinstruments.com/ultramarine" target="_blank">https://www.paperinstruments.com/ultramarine</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.tesla.com/roadster" target="_blank">Tesla Roadster</a></h2><div class="meta"><span class="score">⭐ 1450</span><span class="comments">💬 2546</span><span class="by">👤 shekhar101</span></div><div class="summary"><p>The provided content is an access error page rather than an article. It indicates that the requested Tesla Roadster page could not be loaded. No substantive information about the vehicle is available.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50112657" target="_blank">HN Discussion (2546)</a></div><div class="source">🔗 <a href="https://www.tesla.com/roadster" target="_blank">https://www.tesla.com/roadster</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://llmspeed.dev/" target="_blank">Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware</a></h2><div class="meta"><span class="score">⭐ 89</span><span class="comments">💬 38</span><span class="by">👤 albinstman</span></div><div class="summary"><p>Llmspeed lets users estimate the real-world speed of running a local large language model by selecting hardware, model, and quantization. It compares options across GPUs, Macs, CPUs, and cloud accelerators, using community benchmarks and derived projections to show tokens per second and time to first token. The open source tool helps people decide which setup will feel fast enough before purchasing hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50127979" target="_blank">HN Discussion (38)</a></div><div class="source">🔗 <a href="https://llmspeed.dev/" target="_blank">https://llmspeed.dev/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">DeepSeek-v4.1-Flash-1017</a></h2><div class="meta"><span class="score">⭐ 180</span><span class="comments">💬 77</span><span class="by">👤 theykk</span></div><div class="summary"><p>DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash that improves performance on reasoning, coding, agentic, and visual benchmarks while reducing task execution time and output length. The release includes a Python reference implementation for prompt encoding and a maintained Rust and Python toolkit for converting API requests into DeepSeek prompts and parsing responses. It also provides instructions for local inference and recommended sampling parameters.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50129045" target="_blank">HN Discussion (77)</a></div><div class="source">🔗 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.lf-lang.org/" target="_blank">Intuitive concurrent programming in any language</a></h2><div class="meta"><span class="score">⭐ 53</span><span class="comments">💬 11</span><span class="by">👤 mpweiher</span></div><div class="summary"><p>Lingua Franca is a coordination language for building predictable, concurrent, time-sensitive, and distributed systems using a reactor-oriented model. It provides deterministic concurrency, built-in timing semantics, and simplified distribution while eliminating manual thread management and race conditions. Developers can write reactor logic in familiar languages such as C, C++, Python, TypeScript, and Rust.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50103255" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://www.lf-lang.org/" target="_blank">https://www.lf-lang.org/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50089577" target="_blank">Tell HN: Remember to migrate away from .name domain</a></h2><div class="meta"><span class="score">⭐ 51</span><span class="comments">💬 25</span><span class="by">👤 nikanj</span></div><div class="summary"><p>This Hacker News post likely warns users that the .name top-level domain is being phased out or requires migration, urging people to move their personal domains to another TLD. It probably advises checking .name registrations and transferring them before service changes or expiration could interrupt email and online identity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50089577" target="_blank">HN Discussion (25)</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/cobanov/PS5LM" target="_blank">Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console</a></h2><div class="meta"><span class="score">⭐ 295</span><span class="comments">💬 74</span><span class="by">👤 Anon84</span></div><div class="summary"><p>PS5LM runs the Llama.cpp inference engine natively on a jailbroken PS5, using the Vulkan backend on the console's RDNA 2 GPU with 11.4 GB of shared memory for the model and context. It acts as a private model server for your local network, exposing OpenAI and Anthropic-compatible APIs plus a chat page that streams to the TV. It auto-picks the longest context and best cache that fit available memory, downloads models from Hugging Face, and supports vision-capable GGUF models and Ollaya-style decision models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50122431" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://github.com/cobanov/PS5LM" target="_blank">https://github.com/cobanov/PS5LM</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://alexwang.ai/posts/associative-memory/" target="_blank">You could have invented transformers from memory</a></h2><div class="meta"><span class="score">⭐ 315</span><span class="comments">💬 73</span><span class="by">👤 speckx</span></div><div class="summary"><p>The article explains how transformer components can be understood as memory systems that store and retrieve information. It compares linear layers, MLPs, and self-attention by how much stored information interferes with recall, showing that self-attention greatly increases capacity and retrieval quality.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50122878" target="_blank">HN Discussion (73)</a></div><div class="source">🔗 <a href="https://alexwang.ai/posts/associative-memory/" target="_blank">https://alexwang.ai/posts/associative-memory/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.anthropic.com/research/ecdsa-curve-origins" target="_blank">Claude reveals ECDSA curve origins</a></h2><div class="meta"><span class="score">⭐ 884</span><span class="comments">💬 328</span><span class="by">👤 ahlCVA</span></div><div class="summary"><p>Claude, an Anthropic research model, solved a long-standing mystery about the origins of the NIST ECDSA elliptic curve seeds. It found that the seeds were not generated by hashing a phrase, but by sampling bytes from the C library's lrand48 random-number generator initialized with a Unix timestamp. The explanation settles years of speculation and increases confidence that the curves were not intentionally weakened.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50122800" target="_blank">HN Discussion (328)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/research/ecdsa-curve-origins" target="_blank">https://www.anthropic.com/research/ecdsa-curve-origins</a></div></div></div>
+
+        <footer>
+            <p>2026-10-17</p>
+        </footer>
+    </div>
+</body>
+</html>

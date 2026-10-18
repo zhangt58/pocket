@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-18</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://api-docs.deepseek.com/guides/search/" target="_blank">DeepSeek search and fetch – $0.75 per 1000 successful requests</a></h2><div class="meta"><span class="score">⭐ 218</span><span class="comments">💬 102</span><span class="by">👤 fagnerbrack</span></div><div class="summary"><p>DeepSeek offers Search and Fetch APIs that let agents and RAG applications access live web content. The Search API returns structured results for a query using DeepSeek's in-house search engine, while the Fetch API retrieves a single web page and returns its content as Markdown. Both are raw JSON APIs authenticated with a DeepSeek API key.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50138531" target="_blank">HN Discussion (102)</a></div><div class="source">🔗 <a href="https://api-docs.deepseek.com/guides/search/" target="_blank">https://api-docs.deepseek.com/guides/search/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://sphinx-six-theta.vercel.app/" target="_blank">Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping</a></h2><div class="meta"><span class="score">⭐ 141</span><span class="comments">💬 43</span><span class="by">👤 critiquebrowser</span></div><div class="summary"><p>Sphinx is a Git hook for agent-assisted development that pauses a push and quizzes the developer on what the AI-generated code does, especially in failure scenarios. It generates questions from the diff, works with common coding agents or OpenAI-compatible endpoints, and allows the push to continue once the developer demonstrates understanding. A skip mode is available for urgent pushes, with skips logged.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50137950" target="_blank">HN Discussion (43)</a></div><div class="source">🔗 <a href="https://sphinx-six-theta.vercel.app/" target="_blank">https://sphinx-six-theta.vercel.app/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything" target="_blank">How the Elizabeth Holmes documentary “You Can See Everything” is deceiving</a></h2><div class="meta"><span class="score">⭐ 154</span><span class="comments">💬 169</span><span class="by">👤 MaysonL</span></div><div class="summary"><p>The article argues that the Elizabeth Holmes documentary You Can See Everything deceives its audience by manipulating how viewers perceive her story, rather than simply presenting a tale of deception. It contends that the film reveals how much public opinion is shaped by repeated media portrayals and simplified narratives, especially around Holmes’s conviction for misleading investors rather than defrauding patients.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50137620" target="_blank">HN Discussion (169)</a></div><div class="source">🔗 <a href="https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything" target="_blank">https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-eve...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://t3.at/blog/2026-10-17-parser-combinators/" target="_blank">Parser Combinators</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 8</span><span class="by">👤 schindlabua</span></div><div class="summary"><p>The article introduces parser combinators as a way to build parsers by composing small, reusable parsing functions. It presents this approach as a clearer and more flexible alternative to regular expressions for recognizing structured text.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50139067" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://t3.at/blog/2026-10-17-parser-combinators/" target="_blank">https://t3.at/blog/2026-10-17-parser-combinators/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.nature.com/articles/d41586-026-03266-x" target="_blank">Bleached corals thrive within days when touching healthy neighbour</a></h2><div class="meta"><span class="score">⭐ 468</span><span class="comments">💬 100</span><span class="by">👤 alkyon</span></div><div class="summary"><p>Bleached corals can begin to recover within days when they are in direct contact with healthy neighboring corals. The finding suggests that physical connection between colonies may help transfer nutrients or other beneficial factors that support coral recovery after bleaching.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50126253" target="_blank">HN Discussion (100)</a></div><div class="source">🔗 <a href="https://www.nature.com/articles/d41586-026-03266-x" target="_blank">https://www.nature.com/articles/d41586-026-03266-x</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://teal-language.org/" target="_blank">Teal – A statically-typed dialect of Lua</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 9</span><span class="by">👤 Lyngbakr</span></div><div class="summary"><p>Teal is a statically typed dialect of Lua that adds type annotations such as arrays, maps, records, interfaces, union types, and generics. It compiles .tl source files into standard Lua, aiming to provide TypeScript-like safety while preserving Lua's minimalism and embeddability. The project includes a compiler, build tool, editor integrations, and documentation for developing larger Teal projects.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50124730" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://teal-language.org/" target="_blank">https://teal-language.org/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/" target="_blank">Lean now ships with verified kernels</a></h2><div class="meta"><span class="score">⭐ 144</span><span class="comments">💬 48</span><span class="by">👤 matt_d</span></div><div class="summary"><p>Lean now includes a lake check command that rechecks Lean developments using external proof-checking kernels, including the official kernel and several independent implementations. Among them is con-leche, a Lean-written kernel with a formal consistency proof, and con-ron, a Rust version verified to refine con-leche's checking algorithm. Together these tools let users detect kernel soundness bugs by cross-checking proofs with multiple verified or independent kernels.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50114758" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/" target="_blank">https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-ker...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://alinush.github.io//tee" target="_blank">It's time to talk about TEEs</a></h2><div class="meta"><span class="score">⭐ 3</span><span class="comments">💬 0</span><span class="by">👤 joshcsimmons</span></div><div class="summary"><p>The article surveys attacks on trusted execution environments, including memory-safety bugs in enclave code, remote attestation forgery, and physical or microarchitectural vulnerabilities that can undermine Intel SGX, AMD SEV, and related platforms. It argues that TEE security claims are hard to verify and that side channels, complex CPU designs, and platform-level flaws make deployment risky. The author urges developers to reconsider whether to use TEE-based applications and, if they do, to adopt stricter verification and threat-model controls.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50139658" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://alinush.github.io//tee" target="_blank">https://alinush.github.io//tee</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">DeepSeek-v4.1-Flash-1017</a></h2><div class="meta"><span class="score">⭐ 868</span><span class="comments">💬 659</span><span class="by">👤 theykk</span></div><div class="summary"><p>A minor update to DeepSeek-V4.1-Flash improves performance on reasoning, coding, agentic, and visual benchmarks while reducing task execution time and output length. The release also includes prompt encoding resources and local inference instructions, with recommended sampling parameters.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50129045" target="_blank">HN Discussion (659)</a></div><div class="source">🔗 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/" target="_blank">Dam removals are bringing fish back across the northeastern United States</a></h2><div class="meta"><span class="score">⭐ 282</span><span class="comments">💬 66</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>The post likely discusses how removing dams in the northeastern United States has reopened river passages, enabling migratory fish such as salmon and shad to return to upstream habitats. It may highlight ecological recovery, improved waterways, and the broader impact of dam removals on native fish populations.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50126312" target="_blank">HN Discussion (66)</a></div><div class="source">🔗 <a href="https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/" target="_blank">https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-...</a></div></div></div>
+
+        <footer>
+            <p>2026-10-18</p>
+        </footer>
+    </div>
+</body>
+</html>

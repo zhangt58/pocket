@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-19</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://lwn.net/Articles/1101143/" target="_blank">Linux 7.3 Released</a></h2><div class="meta"><span class="score">⭐ 236</span><span class="comments">💬 107</span><span class="by">👤 cjd8</span></div><div class="summary"><p>Linux kernel 7.3 has been released, marking a record-setting update with 18,765 non-merge commits from 3,021 developers, including 807 first-time contributors. The release adds major features such as binfmt_misc extensions, group-scheduling improvements, the failfs filesystem, fchroot, BPF per-CPU data, and completed sched_ext support. It also includes ntfs3 alternative data-stream support, SMB server enhancements, and virtual machine working-set tracking.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50149392" target="_blank">HN Discussion (107)</a></div><div class="source">🔗 <a href="https://lwn.net/Articles/1101143/" target="_blank">https://lwn.net/Articles/1101143/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2610.18861" target="_blank">Hybrid Reasoning Agents: LLM agents that think in latent space, act through text</a></h2><div class="meta"><span class="score">⭐ 407</span><span class="comments">💬 199</span><span class="by">👤 allinonai</span></div><div class="summary"><p>Hybrid Reasoning Agents combine latent-space thinking with text-based action, allowing LLM agents to reason internally while still using tools and communicating through language. The system uses a lightweight HybridLink and continuous working memory to switch between modes, plus post-training methods that teach when to think latently and when to act in text. Across benchmarks, it improves performance over text and latent agent baselines while reducing tokens, speeding inference, and lowering cost.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50145337" target="_blank">HN Discussion (199)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2610.18861" target="_blank">https://arxiv.org/abs/2610.18861</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.construction-physics.com/p/how-to-train-your-robot" target="_blank">How to Train Your Robot</a></h2><div class="meta"><span class="score">⭐ 46</span><span class="comments">💬 15</span><span class="by">👤 crescit_eundo</span></div><div class="summary"><p>Recent AI progress has been driven by scaling models, datasets, and compute, with language models benefiting from vast existing text corpora. Robotics faces a harder data problem because there is no comparable public stock of high-quality robot action data, so finding or generating enough examples is central to training effective robot-control models. The core challenge is obtaining large amounts of correct behavior data to train and evaluate models through repeated comparison and adjustment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50104874" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://www.construction-physics.com/p/how-to-train-your-robot" target="_blank">https://www.construction-physics.com/p/how-to-train-your-robot</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://colo.to/cyberspace.html" target="_blank">William Gibson and the trademarking of cyberspace</a></h2><div class="meta"><span class="score">⭐ 192</span><span class="comments">💬 74</span><span class="by">👤 Eric_Gullichsen</span></div><div class="summary"><p>The post likely examines how William Gibson's coined term cyberspace has been targeted for trademark registration, raising questions about intellectual property and the ownership of a foundational digital concept.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50146625" target="_blank">HN Discussion (74)</a></div><div class="source">🔗 <a href="https://colo.to/cyberspace.html" target="_blank">https://colo.to/cyberspace.html</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://phys.org/news/2026-10-rabbits-medieval-royal-luxury-england.html" target="_blank">Rabbits were a medieval royal luxury in England until the Black Death</a></h2><div class="meta"><span class="score">⭐ 91</span><span class="comments">💬 84</span><span class="by">👤 samizdis</span></div><div class="summary"><p>Rabbits were prized as a high-status food in medieval England, especially among the royal court. The article examines how their consumption reflected wealth and privilege before the Black Death disrupted medieval society and food practices.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50131315" target="_blank">HN Discussion (84)</a></div><div class="source">🔗 <a href="https://phys.org/news/2026-10-rabbits-medieval-royal-luxury-england.html" target="_blank">https://phys.org/news/2026-10-rabbits-medieval-royal-luxury-england.html</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.youtube.com/watch?v=LKrwhjOI8Nc" target="_blank">There's never been a better time to go into math (by: 3blue1brown) [video]</a></h2><div class="meta"><span class="score">⭐ 387</span><span class="comments">💬 471</span><span class="by">👤 mdp2021</span></div><div class="summary"><p>A video arguing that modern computing, AI, and digital tools make mathematics more accessible and valuable than ever, encouraging viewers to study or pursue the field.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50136150" target="_blank">HN Discussion (471)</a></div><div class="source">🔗 <a href="https://www.youtube.com/watch?v=LKrwhjOI8Nc" target="_blank">https://www.youtube.com/watch?v=LKrwhjOI8Nc</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/" target="_blank">If you don't run your own LLM proxy, how do you know whats going on?</a></h2><div class="meta"><span class="score">⭐ 180</span><span class="comments">💬 127</span><span class="by">👤 amrrs</span></div><div class="summary"><p>The article argues that relying on a third-party LLM frontend or provider dashboard hides important operational details, so developers and teams should run their own LLM proxy. A self-hosted proxy gives a single controlled endpoint, detailed logs, virtual API keys, multi-provider and multi-model routing, and faster switching without reconfiguring everything. This lets engineers inspect token usage, cache misses, and request paths to make better decisions about AI infrastructure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50145507" target="_blank">HN Discussion (127)</a></div><div class="source">🔗 <a href="https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/" target="_blank">https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-eve...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://crystl.dev/guides/tmux-for-ai-agents/" target="_blank">Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling</a></h2><div class="meta"><span class="score">⭐ 39</span><span class="comments">💬 21</span><span class="by">👤 ankitg12</span></div><div class="summary"><p>Tmux pairs well with AI coding agents because it keeps long-running terminal sessions alive, organizes multiple agents in named sessions, and allows scripts to send input or capture output. Claude Code now includes a built-in --worktree --tmux option for creating isolated single-agent sessions, but it does not cover multi-agent layouts, remote orchestration, or interactive monitoring. For those needs, developers must build custom tmux workflows, while also recognizing the practical limits of tmux as an agent-control layer.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50148855" target="_blank">HN Discussion (21)</a></div><div class="source">🔗 <a href="https://crystl.dev/guides/tmux-for-ai-agents/" target="_blank">https://crystl.dev/guides/tmux-for-ai-agents/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://karrisaarinen.com/posts/someone-behind-the-software/" target="_blank">Someone behind the software</a></h2><div class="meta"><span class="score">⭐ 456</span><span class="comments">💬 167</span><span class="by">👤 tosh</span></div><div class="summary"><p>Good software carries the perspective, experience, and values of its makers, not just the output of a standardized process. The author argues that treating product development as a factory, especially with autonomous agents, can create additive, incoherent products that lack a unifying point of view. Instead, making software should preserve the creator’s judgment and care so the product feels shaped by someone rather than assembled by many.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50142573" target="_blank">HN Discussion (167)</a></div><div class="source">🔗 <a href="https://karrisaarinen.com/posts/someone-behind-the-software/" target="_blank">https://karrisaarinen.com/posts/someone-behind-the-software/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.maddox.pro/?p=448" target="_blank">Laptop Based on 6502 CPU</a></h2><div class="meta"><span class="score">⭐ 139</span><span class="comments">💬 61</span><span class="by">👤 nanochess</span></div><div class="summary"><p>A maker has completed the LT6502b, a compact laptop built around a 6502 CPU, featuring a translucent orange case, a 10.1-inch 1024x600 IPS display, a 10 MHz processor, an on-board SID emulator, and Wi-Fi. The design is thinner than the original and aims for a sleeker form factor, though it lacks an expansion slot and the author notes several areas for improvement, including stronger mounting, better Wi-Fi, audio, battery, and USB power support.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50111537" target="_blank">HN Discussion (61)</a></div><div class="source">🔗 <a href="https://www.maddox.pro/?p=448" target="_blank">https://www.maddox.pro/?p=448</a></div></div></div>
+
+        <footer>
+            <p>2026-10-19</p>
+        </footer>
+    </div>
+</body>
+</html>

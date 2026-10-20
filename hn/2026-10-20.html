@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-20</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/deepseek-ai/DeepInfer" target="_blank">DeepSeek just open-sourced its inference engine</a></h2><div class="meta"><span class="score">⭐ 312</span><span class="comments">💬 105</span><span class="by">👤 ggcr</span></div><div class="summary"><p>DeepSeek has released the source code for its AI model inference engine. The open-sourced tool lets developers run, optimize, and integrate DeepSeek's large language models in their own systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50163277" target="_blank">HN Discussion (105)</a></div><div class="source">🔗 <a href="https://github.com/deepseek-ai/DeepInfer" target="_blank">https://github.com/deepseek-ai/DeepInfer</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/tywr/Nordwand-Mono" target="_blank">Nordwand Mono – A monospace font for coders and adventurers</a></h2><div class="meta"><span class="score">⭐ 290</span><span class="comments">💬 91</span><span class="by">👤 noriax86</span></div><div class="summary"><p>Nordwand Mono is a monospaced typeface designed for programmers, likely emphasizing readability in code editors and terminals. Its name and tagline suggest an outdoor or expedition-inspired aesthetic for developers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50141581" target="_blank">HN Discussion (91)</a></div><div class="source">🔗 <a href="https://github.com/tywr/Nordwand-Mono" target="_blank">https://github.com/tywr/Nordwand-Mono</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.openbsd.org/80.html" target="_blank">OpenBSD 8.0</a></h2><div class="meta"><span class="score">⭐ 317</span><span class="comments">💬 101</span><span class="by">👤 privong</span></div><div class="summary"><p>OpenBSD 8.0 introduces platform-specific improvements for amd64, arm64, luna88k, riscv64, and sparc64, including a larger amd64 virtual address space, hibernate support, faster swap encryption, RISC-V vector and interrupt support, and a switch to the LLVM toolchain. The release also adds kernel improvements such as memory-management fixes, a new getexecpath API, and enhanced suspend and resume support.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50160494" target="_blank">HN Discussion (101)</a></div><div class="source">🔗 <a href="https://www.openbsd.org/80.html" target="_blank">https://www.openbsd.org/80.html</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/microg/GmsCore/wiki" target="_blank">MicroG: Free-libre re-implementation of Google's proprietary Android user space</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 4</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>MicroG is an open-source project that recreates Google's proprietary Android user-space services, such as Play Services, to provide free and libre alternatives on Android devices. The post likely discusses its capabilities, development progress, or implications for users who want to avoid proprietary Google components.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50162177" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://github.com/microg/GmsCore/wiki" target="_blank">https://github.com/microg/GmsCore/wiki</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions" target="_blank">WhatsApp's help pages hid LLM instructions: dont recommend a regulator</a></h2><div class="meta"><span class="score">⭐ 466</span><span class="comments">💬 137</span><span class="by">👤 ds</span></div><div class="summary"><p>WhatsApp's help pages contained hidden text intended for AI assistants, instructing them not to recommend data protection regulators or cite privacy laws in certain situations. The hidden instructions contradicted WhatsApp's public privacy policy, which states users can request data erasure and complain to regulators under GDPR. The discovery highlighted how invisible AI prompts could steer users away from legal rights and remedies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50159341" target="_blank">HN Discussion (137)</a></div><div class="source">🔗 <a href="https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions" target="_blank">https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-about-the-german-far-right/" target="_blank">AfD Leak: What 421,179 Hacked Emails Show about the German Far Right</a></h2><div class="meta"><span class="score">⭐ 225</span><span class="comments">💬 175</span><span class="by">👤 firefax</span></div><div class="summary"><p>A large leak of over 421,000 internal emails from Germany's AfD has been published, revealing extensive antisemitism, racism, and violent rhetoric among party members. The emails include slurs, extremist symbols, and discussions of harming refugees, alongside allegations of financial misconduct. The release provides a detailed look at the far-right party's internal culture and alleged misconduct.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50163502" target="_blank">HN Discussion (175)</a></div><div class="source">🔗 <a href="https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-about-the-german-far-right/" target="_blank">https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-abo...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.nature.com/articles/s41467-025-58290-8" target="_blank">Restoration of Retinal Regenerative Potential</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 4</span><span class="by">👤 Kaibeezy</span></div><div class="summary"><p>The article discusses why mammalian retinal neurons have limited regenerative capacity compared with fish and amphibians, where Müller glia can reprogram into retinal progenitor cells after injury. It highlights the retina as a model for identifying the promoting and suppressive factors that control reprogramming, proliferation, and differentiation of these cells. Understanding these mechanisms may help restore vision in retinal diseases such as retinitis pigmentosa and glaucoma.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50140111" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.nature.com/articles/s41467-025-58290-8" target="_blank">https://www.nature.com/articles/s41467-025-58290-8</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://foxandlion.pub/analysis/uk-defence-start-ups-are-being-denied-banking-services-under-esg-rules" target="_blank">UK Defence Startups Are Being Denied Banking Services Under ESG Rules</a></h2><div class="meta"><span class="score">⭐ 60</span><span class="comments">💬 42</span><span class="by">👤 fascinnn</span></div><div class="summary"><p>UK defence start-ups are struggling to open bank accounts because banks apply anti-money laundering controls and ESG-related reputational screening too broadly, even for companies developing defensive technologies. The problem has been highlighted by founders and politicians, who say excessive caution is harming small businesses and undermining the UK’s push to grow its defence sector. Some firms eventually gain access only after senior bank intervention, indicating a mismatch between government policy and financial-sector practice.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50163462" target="_blank">HN Discussion (42)</a></div><div class="source">🔗 <a href="https://foxandlion.pub/analysis/uk-defence-start-ups-are-being-denied-banking-services-under-esg-rules" target="_blank">https://foxandlion.pub/analysis/uk-defence-start-ups-are-being-denied-banking...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/" target="_blank">DeepSeek banned from U.S. federal civilian agencies under new DHS order</a></h2><div class="meta"><span class="score">⭐ 281</span><span class="comments">💬 241</span><span class="by">👤 cmrdporcupine</span></div><div class="summary"><p>The post likely reports that the U.S. Department of Homeland Security issued an order prohibiting federal civilian agencies from using DeepSeek. It is probably framed as a national security or data-protection restriction on a Chinese AI service.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50154244" target="_blank">HN Discussion (241)</a></div><div class="source">🔗 <a href="https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/" target="_blank">https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/xscreensaver-official/xscreensaver" target="_blank">There is no official XScreenSaver GitHub repository</a></h2><div class="meta"><span class="score">⭐ 22</span><span class="comments">💬 15</span><span class="by">👤 st_goliath</span></div><div class="summary"><p>The post likely clarifies that XScreenSaver does not have an official GitHub repository, warning readers that any GitHub-hosted versions are unofficial mirrors or third-party copies. It probably directs people to the project's official website or source distribution for the authentic software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50163142" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://github.com/xscreensaver-official/xscreensaver" target="_blank">https://github.com/xscreensaver-official/xscreensaver</a></div></div></div>
+
+        <footer>
+            <p>2026-10-20</p>
+        </footer>
+    </div>
+</body>
+</html>

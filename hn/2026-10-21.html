@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-21</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/" target="_blank">Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds</a></h2><div class="meta"><span class="score">⭐ 138</span><span class="comments">💬 54</span><span class="by">👤 hkc</span></div><div class="summary"><p>A security researcher found that eight eMudhra certificate authority private keys were extremely weak single-byte values, allowing anyone to recover them from public certificates in milliseconds. The flaw affected six TLS issuing CAs and two code-signing CAs, prompting browsers to block the affected intermediates and remove or plan to remove the eMudhra root. Because the keys were inherently weak rather than stolen, the compromise could not be contained by revoking certificates alone.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50177916" target="_blank">HN Discussion (54)</a></div><div class="source">🔗 <a href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/" target="_blank">https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-mill...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/" target="_blank">The 1.5°C goal of the Paris Agreement is no longer viable</a></h2><div class="meta"><span class="score">⭐ 239</span><span class="comments">💬 244</span><span class="by">👤 velo_aprx</span></div><div class="summary"><p>The 1.5°C Paris Agreement target is now considered unachievable, making the priority to keep warming below 2°C and later bring temperatures back down to 1.5°C. Current government climate plans are far too weak, requiring much faster emissions cuts, renewable expansion, fossil fuel phase-out, methane reductions, deforestation halt, and large-scale carbon removal. Despite the setback, accelerated action remains possible because renewable energy has grown faster than expected.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50177911" target="_blank">HN Discussion (244)</a></div><div class="source">🔗 <a href="https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/" target="_blank">https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.joshwcomeau.com/css/interop-2027/" target="_blank">The Future of CSS</a></h2><div class="meta"><span class="score">⭐ 396</span><span class="comments">💬 163</span><span class="by">👤 soheilpro</span></div><div class="summary"><p>The article previews upcoming CSS features expected to gain broad browser support through the Interop initiative, highlighting proposals such as CSS functions and corner-shape for bevels and squircles. It explains how cross-browser collaboration has accelerated adoption of features like subgrid and outlines practical capabilities developers may soon use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50175070" target="_blank">HN Discussion (163)</a></div><div class="source">🔗 <a href="https://www.joshwcomeau.com/css/interop-2027/" target="_blank">https://www.joshwcomeau.com/css/interop-2027/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://news-web.php.net/php.announce/509" target="_blank">Upcoming critical PHP security release (CVE-2026-109618 / -109619)</a></h2><div class="meta"><span class="score">⭐ 961</span><span class="comments">💬 389</span><span class="by">👤 xd</span></div><div class="summary"><p>The page about an upcoming critical PHP security release could not be loaded because the origin server was unavailable. It advises visitors to try again later and site administrators to check the server status.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50172041" target="_blank">HN Discussion (389)</a></div><div class="source">🔗 <a href="https://news-web.php.net/php.announce/509" target="_blank">https://news-web.php.net/php.announce/509</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes" target="_blank">Whatever Happened to Fire Escapes</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 1</span><span class="by">👤 sohkamyung</span></div><div class="summary"><p>Fire escapes emerged in 19th-century American cities as a response to deadly fires in tall tenements and factories, offering an external evacuation route when interior stairwells were blocked. Their adoption and later decline reflect how building codes balance safety, cost, and practicality, since owners rarely install safety features voluntarily and codes set minimum standards. Although still visible on older buildings, fire escapes have gradually disappeared as modern codes and safety systems evolved.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50178455" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes" target="_blank">https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://permit.petercai.com/" target="_blank">Show HN: SimCity, but with Permits</a></h2><div class="meta"><span class="score">⭐ 812</span><span class="comments">💬 381</span><span class="by">👤 pcai</span></div><div class="summary"><p>Permit Pending is a free city-building simulation in which the player serves as an elected mayor rather than an all-powerful god. Every proposed apartment, factory, or transit project must survive public hearings, neighbor objections, lawsuits, and appeals, while a detailed economy and voter politics shape outcomes. The game emphasizes political compromise, opposition management, and reelection in a sandbox city that continues until voters remove the mayor.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50170593" target="_blank">HN Discussion (381)</a></div><div class="source">🔗 <a href="https://permit.petercai.com/" target="_blank">https://permit.petercai.com/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/" target="_blank">Muse exposes users' personal and business secrets when they share conversations</a></h2><div class="meta"><span class="score">⭐ 195</span><span class="comments">💬 90</span><span class="by">👤 gumby</span></div><div class="summary"><p>Muse can reveal users' personal and business secrets when they share conversations, creating a significant privacy risk. The article highlights how conversation-sharing features may expose sensitive information to unintended parties.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50174687" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/" target="_blank">https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://maevyn.codes/decoherence" target="_blank">The Decoherence Trap</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 14</span><span class="by">👤 cassianoleal</span></div><div class="summary"><p>The article defines decoherence as the buildup of many locally useful but mutually incompatible or redundant models, making change expensive because systems must constantly translate among them and avoid side effects. It argues that AI is accelerating this problem, which may prevent a sudden intelligence explosion but instead risks a gradual collapse as systems become too fragmented to maintain or upgrade.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50149861" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://maevyn.codes/decoherence" target="_blank">https://maevyn.codes/decoherence</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://emudhra.we-have-a-problem.com/" target="_blank">eMudhra intermediate CA compromise</a></h2><div class="meta"><span class="score">⭐ 988</span><span class="comments">💬 414</span><span class="by">👤 galadran</span></div><div class="summary"><p>The private keys for eight eMudhra intermediate CA certificates have been compromised, allowing an attacker to potentially impersonate any website or service. The affected certificates chain to roots trusted by major browser and operating-system trust stores. Mozilla, Microsoft, Apple, and Chrome have blocked the certificates, and eMudhra has revoked them, though some clients may still need updates to stop trusting them.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50166579" target="_blank">HN Discussion (414)</a></div><div class="source">🔗 <a href="https://emudhra.we-have-a-problem.com/" target="_blank">https://emudhra.we-have-a-problem.com/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.pagetable.com/303" target="_blank">Way to Play Super Mario 64: On Apple Vision Pro</a></h2><div class="meta"><span class="score">⭐ 16</span><span class="comments">💬 3</span><span class="by">👤 frizlab</span></div><div class="summary"><p>A fan-made Apple Vision Pro project turns Super Mario 64 into a table-top diorama, letting players walk around each level and view it from any angle while using a game controller. The port runs on decompiled game code and high-resolution textures and models, turning the classic game into a physical, explorable scene. It also highlights a broader tension, as Nintendo has previously opposed similar PC ports while other companies have embraced rebuilt classic games.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50150214" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://www.pagetable.com/303" target="_blank">https://www.pagetable.com/303</a></div></div></div>
+
+        <footer>
+            <p>2026-10-21</p>
+        </footer>
+    </div>
+</body>
+</html>

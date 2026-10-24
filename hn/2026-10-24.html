@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-24</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.southampton.ac.uk/~doug/quantum_physics/index.html" target="_blank">I Don't Understand Quantum Physics</a></h2><div class="meta"><span class="score">⭐ 64</span><span class="comments">💬 27</span><span class="by">👤 rramadass</span></div><div class="summary"><p>The article provides an introductory explanation of quantum physics, tracing its development from classical physics through landmark experiments and core concepts such as wave-particle duality, uncertainty, wavefunctions, and superposition. It also examines quantum tunneling, measurement, interpretations, famous thought experiments, and the question of whether quantum theory is complete.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50219666" target="_blank">HN Discussion (27)</a></div><div class="source">🔗 <a href="https://www.southampton.ac.uk/~doug/quantum_physics/index.html" target="_blank">https://www.southampton.ac.uk/~doug/quantum_physics/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/obsproject/obs-studio/releases/tag/33.0.0" target="_blank">OBS Studio 33</a></h2><div class="meta"><span class="score">⭐ 170</span><span class="comments">💬 52</span><span class="by">👤 pentagrama</span></div><div class="summary"><p>OBS Studio 33 ships a major overhaul: a large update to the CEF browser engine (127 to 150) powering browser sources, a complete redesign of plugin loading with first-party plugins moved into a new core folder, NVENC encoding enabled on Arm64, and improved source snapping plus spinbox behavior.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50218430" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://github.com/obsproject/obs-studio/releases/tag/33.0.0" target="_blank">https://github.com/obsproject/obs-studio/releases/tag/33.0.0</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">Kimi K3.1 Pro and K3.1 Pro Highspeed</a></h2><div class="meta"><span class="score">⭐ 926</span><span class="comments">💬 548</span><span class="by">👤 Jowsey</span></div><div class="summary"><p>Kimi K3.1 Pro is a new open-weight 3T-class model with a 1-million-token context window, offering major gains in coding, 3D creation, financial research, and agentic tasks. It is backed by large-scale reinforcement learning and performs competitively with top proprietary models on coding and knowledge benchmarks. A Highspeed variant provides 2-3 times faster responses for more interactive use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50212065" target="_blank">HN Discussion (548)</a></div><div class="source">🔗 <a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">https://www.kimi.ai/blog/kimi-k3-1-pro</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://blog.calif.io/p/iphone" target="_blank">Today, we hacked what we'd set out to hack: the iPhone</a></h2><div class="meta"><span class="score">⭐ 900</span><span class="comments">💬 588</span><span class="by">👤 pavel_lishin</span></div><div class="summary"><p>The article announces that the authors have successfully hacked an iPhone, presenting demos of the exploit at a security conference. The demonstrations include a one-click Signal attack and vulnerabilities affecting iMessage, with full details promised for later release.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50211474" target="_blank">HN Discussion (588)</a></div><div class="source">🔗 <a href="https://blog.calif.io/p/iphone" target="_blank">https://blog.calif.io/p/iphone</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/" target="_blank">Physicists trap a single antimatter particle for a month</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 23</span><span class="by">👤 mooreds</span></div><div class="summary"><p>Physicists have trapped a single positron, an antimatter particle, for a month using electromagnetic fields in an ultracold vacuum, allowing direct study of its quantum states. The team plans to measure the positron’s magnetic moment with extreme precision to test whether it exactly mirrors the electron’s, as predicted by the Standard Model. Any difference could help explain why the universe contains matter rather than antimatter.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50186450" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/" target="_blank">https://www.scientificamerican.com/article/physicists-trap-a-single-antimatte...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://philipotoole.com/twelve-years-of-distributed-sqlite/" target="_blank">Twelve years of distributed SQLite</a></h2><div class="meta"><span class="score">⭐ 216</span><span class="comments">💬 32</span><span class="by">👤 otoolep</span></div><div class="summary"><p>The article traces the development of distributed SQLite systems, beginning with rqlite's early use of Raft consensus to replicate SQLite writes across a cluster. It explains how the idea expanded into a broader category with projects like dqlite and Litestream, each taking different approaches to embedding or serving replicated SQLite.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50217500" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://philipotoole.com/twelve-years-of-distributed-sqlite/" target="_blank">https://philipotoole.com/twelve-years-of-distributed-sqlite/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://rtfeldman.com/fp-vs-c" target="_blank">How close can pure functional programming get to C?</a></h2><div class="meta"><span class="score">⭐ 132</span><span class="comments">💬 19</span><span class="by">👤 stmonty</span></div><div class="summary"><p>Pure functional programming can approach C-level performance in compression workloads, as a Lean 4 DEFLATE library outperformed a widely used Rust implementation but still trailed a highly optimized C library. A Roc-based DEFLATE package, after extensive optimization, ran only a few percent slower than the C library on non-streaming benchmarks. The results suggest functional languages can get close to C performance, though hand-tuned C with architecture-specific optimizations remains ahead.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50218195" target="_blank">HN Discussion (19)</a></div><div class="source">🔗 <a href="https://rtfeldman.com/fp-vs-c" target="_blank">https://rtfeldman.com/fp-vs-c</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://grapheneos.social/@GrapheneOS/117492375462459244" target="_blank">Around a dozen banking apps began specifically permitting GrapheneOS</a></h2><div class="meta"><span class="score">⭐ 125</span><span class="comments">💬 20</span><span class="by">👤 privacyishuman</span></div><div class="summary"><p>GrapheneOS, the security-focused custom Android OS, has long blocked banking apps because its strict security model trips their device-attestation checks. Around a dozen banks have now begun explicitly allowing GrapheneOS, a notable shift; HN commenters note banking support was one of their main reasons to avoid the OS.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50217495" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://grapheneos.social/@GrapheneOS/117492375462459244" target="_blank">https://grapheneos.social/@GrapheneOS/117492375462459244</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://music.apple.com/this-url-doesnt-exist" target="_blank">Apple Music 404 Not Found</a></h2><div class="meta"><span class="score">⭐ 779</span><span class="comments">💬 237</span><span class="by">👤 frizlab</span></div><div class="summary"><p>Apple Music's 404 page is styled as a classic iPod Classic interface with a click wheel. HN users dug into it, finding a hidden brick-breaker game (hold the center button on Settings > About) and the playlist data behind the page, and enjoyed the rare whimsical touch from Apple.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50207910" target="_blank">HN Discussion (237)</a></div><div class="source">🔗 <a href="https://music.apple.com/this-url-doesnt-exist" target="_blank">https://music.apple.com/this-url-doesnt-exist</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/" target="_blank">How to run a city builder on 16 MHz</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 6</span><span class="by">👤 rex64</span></div><div class="summary"><p>The article explains how the original SimCity could run a full city simulation on a 16 MHz 386SX by spreading its workload across frames. Its open-source code shows that the main Simulate function cycles through a 16-step counter, updating only selected systems such as traffic, fire, power, and crime each frame. This frame-slicing approach greatly reduced CPU load while keeping gameplay responsive enough for a city builder.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50194536" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/" target="_blank">https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/</a></div></div></div>
+
+        <footer>
+            <p>2026-10-24</p>
+        </footer>
+    </div>
+</body>
+</html>

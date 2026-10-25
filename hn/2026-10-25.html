@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-25</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order" target="_blank">Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism</a></h2><div class="meta"><span class="score">⭐ 170</span><span class="comments">💬 109</span><span class="by">👤 vrganj</span></div><div class="summary"><p>Brazilian advocacy groups have submitted new evidence to the Superior Electoral Court alleging that Meta’s Instagram and WhatsApp tools continue to favor Flávio Bolsonaro’s campaign over President Lula da Silva’s, despite a court order requiring equal treatment. The groups say searches, GIF results, hashtag suggestions, and Meta AI answers disproportionately highlight Bolsonaro while associating Lula with negative or derogatory content. They are asking the court to force Meta to correct the alleged imbalance, explain its ranking and AI systems, and enforce the existing daily fine.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50229587" target="_blank">HN Discussion (109)</a></div><div class="source">🔗 <a href="https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order" target="_blank">https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://danluu.com/ambitious/" target="_blank">We should be more ambitious with the software we build</a></h2><div class="meta"><span class="score">⭐ 451</span><span class="comments">💬 397</span><span class="by">👤 ltratt</span></div><div class="summary"><p>The article argues that advances in tooling and AI make it possible to build much more ambitious software than before, using pgrust as an example of a large Postgres rewrite that has uncovered real database bugs and promising performance improvements. It acknowledges widespread skepticism toward low-quality AI-generated projects, but contends that serious testing and benchmarking can make such ambitious efforts valuable even if the main project does not succeed.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50225695" target="_blank">HN Discussion (397)</a></div><div class="source">🔗 <a href="https://danluu.com/ambitious/" target="_blank">https://danluu.com/ambitious/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank">Cerebras Deploys Trillion-Parameter AI Models</a></h2><div class="meta"><span class="score">⭐ 185</span><span class="comments">💬 62</span><span class="by">👤 gmays</span></div><div class="summary"><p>Cerebras explains how to run trillion-parameter frontier models on its WSE-3T wafer-scale chips by partitioning model layers across multiple wafers. Using the 3-trillion-parameter Kimi K3 model as an example, it shows that 4-bit quantized layers fit on 44 GB wafers, with dense and linear-attention layers mapped differently to accommodate KV caches. The resulting 59-wafer pipeline passes only activations between chips over RDMA, enabling multi-trillion parameter inference at 1000 to over 2000 tokens per second.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50227356" target="_blank">HN Discussion (62)</a></div><div class="source">🔗 <a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank">https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ" target="_blank">France asked ISPs to prepare temporary DNS blocks for major social platforms</a></h2><div class="meta"><span class="score">⭐ 41</span><span class="comments">💬 28</span><span class="by">👤 noplay</span></div><div class="summary"><p>French Prime Minister Sébastien Lecornu reportedly asked major internet providers to prepare temporary DNS blocks for TikTok, Instagram, Snapchat, and X ahead of a planned demonstration. The operators voiced doubts about the measure, which the article describes as a rights-restricting step previously used in New Caledonia and later rejected by the country's highest administrative court.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50229861" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ" target="_blank">https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premie...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://kottke.org/26/10/how-japanese-dried-bonito-is-made" target="_blank">How Japanese Dried Bonito Is Made</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 18</span><span class="by">👤 bookofjoe</span></div><div class="summary"><p>A workshop in Nishi-Izu, Japan preserves a traditional hand-fired smoke-drying method for making katsuobushi, Japanese dried bonito. Fresh bonito is filleted, boiled, repeatedly smoked over a wood fire, repaired with bonito paste, fermented with koji, and sun-dried for months until it becomes as hard as wood and rich in umami.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50193936" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://kottke.org/26/10/how-japanese-dried-bonito-is-made" target="_blank">https://kottke.org/26/10/how-japanese-dried-bonito-is-made</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://aardappel.github.io/goose/" target="_blank">The Goose Programming Language</a></h2><div class="meta"><span class="score">⭐ 423</span><span class="comments">💬 258</span><span class="by">👤 bobbydigitales</span></div><div class="summary"><p>Goose is a memory-safe systems programming language that avoids heap allocation, garbage collection, and lifetime annotations by keeping dynamic values on compiler-managed data stacks. It claims performance and memory advantages over C++ and Rust, with features such as inline nested data, position-independent relative references, in-place construction, and isolated threads. The language aims to provide safe, high-performance systems code with familiar C and Rust syntax and no unsafe or manual memory management.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50224100" target="_blank">HN Discussion (258)</a></div><div class="source">🔗 <a href="https://aardappel.github.io/goose/" target="_blank">https://aardappel.github.io/goose/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch" target="_blank">Rewriting a Commercial Engine in Jai</a></h2><div class="meta"><span class="score">⭐ 27</span><span class="comments">💬 15</span><span class="by">👤 frading</span></div><div class="summary"><p>A developer is rewriting their commercial procedural-geometry engine, Polygonjs, from JavaScript and TypeScript to the new language Jai. The move is driven by JavaScript's opaque memory management, unpredictable garbage collection, and difficulties deploying to native platforms. The goal is tighter control over memory and performance for browser and native applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50194645" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch" target="_blank">https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://bmjopen.bmj.com/content/16/10/e111050" target="_blank">Cannabis legalisation and cardiovascular hospitalisations in the USA</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 6</span><span class="by">👤 gumby</span></div><div class="summary"><p>A nationwide US analysis examined whether legal recreational cannabis sales were associated with cardiovascular hospitalisations. It found that each year of legalisation was linked to higher rates of hospitalisation for atrial fibrillation or flutter, heart failure, and myocardial infarction, while no significant increases were seen for ischaemic stroke, venous thromboembolism, or ventricular tachycardia. The authors conclude that cannabis legalisation may lead to meaningful increases in cardiovascular healthcare use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50202964" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://bmjopen.bmj.com/content/16/10/e111050" target="_blank">https://bmjopen.bmj.com/content/16/10/e111050</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.speedcrunch.org/" target="_blank">SpeedCrunch 1.1</a></h2><div class="meta"><span class="score">⭐ 155</span><span class="comments">💬 28</span><span class="by">👤 LordNibbler</span></div><div class="summary"><p>SpeedCrunch 1.1 is a free, open-source high-precision scientific calculator designed for STEM professionals, students, and teachers on Windows, macOS, and Linux. It supports up to 50 digits of precision, complex numbers, over 140 functions, extensive units and constants, user-defined variables, functions, and units, plus vector and matrix calculations. The interface offers customizable keypads, multiple active sessions, history rewriting, and broad language and color scheme support.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50224210" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://www.speedcrunch.org/" target="_blank">https://www.speedcrunch.org/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://ratfactor.com/cards/pl-small" target="_blank">Small Programs and Languages</a></h2><div class="meta"><span class="score">⭐ 120</span><span class="comments">💬 14</span><span class="by">👤 andsoitis</span></div><div class="summary"><p>The article explores why very small programs and languages are appealing, arguing that compact code feels approachable and invites readers to understand how it works. It highlights examples such as tiny Forth implementations, a 25-line DOM diffing library, a one-page array language interpreter, and a minimal operating system image. The overall point is that brevity can make even dense or unusual code feel less intimidating and more interesting to study.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50225674" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://ratfactor.com/cards/pl-small" target="_blank">https://ratfactor.com/cards/pl-small</a></div></div></div>
+
+        <footer>
+            <p>2026-10-25</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-26</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://blocks.manifold3d.ch/" target="_blank">Switzerland. Block by block. At 1:1 scale</a></h2><div class="meta"><span class="score">⭐ 140</span><span class="comments">💬 53</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>A Minecraft project recreates Switzerland at a true 1:1 scale, with each block representing one metre and terrain, glaciers, lakes, forests, and dams built from swisstopo open geodata. The Matterhorn and other landmarks are modeled to match real-world height and steepness. A free Jungfrau-Aletsch UNESCO area is available to test the setup, while the full country is offered as an early-access package.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50240922" target="_blank">HN Discussion (53)</a></div><div class="source">🔗 <a href="https://blocks.manifold3d.ch/" target="_blank">https://blocks.manifold3d.ch/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://titleart.dvy.io/" target="_blank">Show HN: TitleArt – Make text like it's 1997</a></h2><div class="meta"><span class="score">⭐ 255</span><span class="comments">💬 39</span><span class="by">👤 davidbarker</span></div><div class="summary"><p>TitleArt is a web-based text design tool that recreates late-1990s typography styles. It lets users edit text, fonts, colors, shadows, 3-D effects, motion, layers, and clip art, then export the result as PNG, SVG, GIF, or video.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50238708" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://titleart.dvy.io/" target="_blank">https://titleart.dvy.io/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://github.com/KrushnaVardhanReddy/PaperPilot" target="_blank">PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP</a></h2><div class="meta"><span class="score">⭐ 151</span><span class="comments">💬 44</span><span class="by">👤 vardhan1237</span></div><div class="summary"><p>PaperPilot is a PDF and document toolkit written in pure Rust that runs entirely locally — your files never leave your machine. A single engine powers an MCP server (letting Claude Desktop, Cursor, or any MCP client merge, split, OCR, and compress PDFs), a CLI, a browser-based WASM version, a Tauri desktop app, and a local REST API. Current features cover merging, splitting, rotating, compressing, pure-Rust OCR via PaddleOCR, watermarking, and PII scanning, with no Chromium or C++ runtime required.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50238739" target="_blank">HN Discussion (44)</a></div><div class="source">🔗 <a href="https://github.com/KrushnaVardhanReddy/PaperPilot" target="_blank">https://github.com/KrushnaVardhanReddy/PaperPilot</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry" target="_blank">Behind the scenes at the NeXT Computer office</a></h2><div class="meta"><span class="score">⭐ 131</span><span class="comments">💬 64</span><span class="by">👤 Austin_Conlon</span></div><div class="summary"><p>The article offers a behind-the-scenes look at the NeXT Computer office, showing the company's workspace and internal environment. It provides visual insight into the operations and culture of NeXT Computer, Inc.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50238763" target="_blank">HN Discussion (64)</a></div><div class="source">🔗 <a href="https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry" target="_blank">https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sor...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline" target="_blank">Birdwatching rewires the brain and slows cognitive decline</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 23</span><span class="by">👤 cisc</span></div><div class="summary"><p>Birdwatching is increasingly used as a therapeutic activity for older adults and people with dementia, helping them feel more engaged, connected, and emotionally positive. New research suggests that regular birdwatching can reshape brain structure and activity in areas involved in attention and visual recognition, similar to learning a sport or musical instrument. These changes may help keep the brain more organized and slow age-related cognitive decline.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50215997" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline" target="_blank">https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-an...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://imaginationlibrary.com/" target="_blank">Dolly Parton's Imagination Library</a></h2><div class="meta"><span class="score">⭐ 558</span><span class="comments">💬 95</span><span class="by">👤 jumploops</span></div><div class="summary"><p>Dolly Parton's Imagination Library is a book-giving program that sends free books to young children in several countries. The website provides information for parents, availability checks, donation options, and resources about the program and its partners.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50234474" target="_blank">HN Discussion (95)</a></div><div class="source">🔗 <a href="https://imaginationlibrary.com/" target="_blank">https://imaginationlibrary.com/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://brashandplucky.com/2026/10/15/growing-trees.html" target="_blank">Growing Trees</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 9</span><span class="by">👤 ibobev</span></div><div class="summary"><p>The article describes a procedural simulation for generating realistic tree shapes by modeling seasonal growth. Buds compete for light, with a growth resource allocated through the branching structure so well-lit buds produce new shoots while shaded branches are pruned. The method uses a voxel shadow grid or space colonization to estimate light and growth potential, producing emergent crown shapes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50209278" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://brashandplucky.com/2026/10/15/growing-trees.html" target="_blank">https://brashandplucky.com/2026/10/15/growing-trees.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/notaroomba/keybytes" target="_blank">Show HN: A Truly Modular Keyboard</a></h2><div class="meta"><span class="score">⭐ 173</span><span class="comments">💬 57</span><span class="by">👤 NotARoomba</span></div><div class="summary"><p>Keybytes is an open-source modular keyboard where every key is its own 1u PCB with a CH32V003 RISC-V microcontroller, connected via pogo pins on all four sides so keys can be freely rearranged into any layout. A stacked STM32WB55 main board provides Bluetooth, USB-C, 2MB QSPI flash for key firmware, battery charging, and an RGB status LED. The case holds modules together with magnets, and the full design is shared in KiCad and Onshape.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50228115" target="_blank">HN Discussion (57)</a></div><div class="source">🔗 <a href="https://github.com/notaroomba/keybytes" target="_blank">https://github.com/notaroomba/keybytes</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://charliegerard.dev/blog/overgrown-extension/" target="_blank">Overgrown, when plants invade your abandoned tabs</a></h2><div class="meta"><span class="score">⭐ 291</span><span class="comments">💬 100</span><span class="by">👤 speckx</span></div><div class="summary"><p>Overgrown is a Chrome extension that turns neglected browser tabs into overgrown digital jungles, with plants spreading from the edges as tabs sit unread. Once a tab is sufficiently covered, its content becomes inaccessible until the user drags a mouse to slash away the vines, using selectable tools like a machete, chainsaw, or flamethrower. The project is a playful creative experiment rather than a productivity tool, adding a fun obstacle to revisiting old tabs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50197108" target="_blank">HN Discussion (100)</a></div><div class="source">🔗 <a href="https://charliegerard.dev/blog/overgrown-extension/" target="_blank">https://charliegerard.dev/blog/overgrown-extension/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.a16z.news/p/superhuman-hardware-design-is-the" target="_blank">Superhuman Hardware Design Is the Easy Part</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 8</span><span class="by">👤 gmays</span></div><div class="summary"><p>Frontier AI models are rapidly approaching superhuman ability to generate engineering-grade hardware designs, including CAD, PCBs, and part sourcing. The core difficulty is the lossy interface between digital designs and physical reality, which complicates manufacturing, measurement, and iteration. As a result, even models that can one-shot electromechanical designs will still need extensive work to produce reliable physical hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50210181" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://www.a16z.news/p/superhuman-hardware-design-is-the" target="_blank">https://www.a16z.news/p/superhuman-hardware-design-is-the</a></div></div></div>
+
+        <footer>
+            <p>2026-10-26</p>
+        </footer>
+    </div>
+</body>
+</html>

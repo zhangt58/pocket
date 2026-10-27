@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-27</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/" target="_blank">Roblox downloaded 145GB models from us (including adult content) without asking</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 7</span><span class="by">👤 choult</span></div><div class="summary"><p>A crawler claiming to belong to Roblox downloaded 145 GB of 3D models from Open3DLab, SFMLab, and SmutBase without permission, including adult content and non-commercially licensed work. The site said the crawler ignored robots.txt, terms of service, and creator licenses, likely for AI training, and blocked it after contacting Roblox. Roblox did not respond to requests for comment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50256985" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/" target="_blank">https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank">Three new discoveries in mathematics, computer science, and physics</a></h2><div class="meta"><span class="score">⭐ 942</span><span class="comments">💬 468</span><span class="by">👤 jonluca</span></div><div class="summary"><p>The article announces three new discoveries in mathematics, computer science, and physics and describes an experimental release process in which external expert groups help interpret and contextualize the results. It outlines principles of transparency, no academic credit, recognition, and independence, while noting different release strategies for each field. The math result concerns the local smoothing conjecture, the computer science result is made publicly available, and the physics result is being developed by collaborators before release.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50251344" target="_blank">HN Discussion (468)</a></div><div class="source">🔗 <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank">https://openai.com/index/building-scientific-understanding-with-academic-comm...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://j11g.com/the-mythical-man-month-in-the-age-of-ai" target="_blank">The Mythical Man-Month in the Age of AI</a></h2><div class="meta"><span class="score">⭐ 171</span><span class="comments">💬 122</span><span class="by">👤 ilreb</span></div><div class="summary"><p>The article examines whether Brooks’s Law still applies when AI agents replace human developers. It argues that while agents can remove some coordination overhead, sequential work and the need for clear requirements, review, and orchestration remain. As a result, adding agents to a poorly specified project may simply produce incorrect results more quickly.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50255298" target="_blank">HN Discussion (122)</a></div><div class="source">🔗 <a href="https://j11g.com/the-mythical-man-month-in-the-age-of-ai" target="_blank">https://j11g.com/the-mythical-man-month-in-the-age-of-ai</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf" target="_blank">The Exponential Time Hypothesis Is False [pdf]</a></h2><div class="meta"><span class="score">⭐ 645</span><span class="comments">💬 236</span><span class="by">👤 vok</span></div><div class="summary"><p>A paper claiming to disprove the Exponential Time Hypothesis, the conjecture that NP-complete problems such as SAT require exponential time in the worst case. It likely presents an algorithm or argument showing that at least one such problem can be solved in subexponential time.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50251661" target="_blank">HN Discussion (236)</a></div><div class="source">🔗 <a href="https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf" target="_blank">https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypot...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://lists.debian.org/debian-devel/2026/10/msg00263.html" target="_blank">I will no longer upload to NEW</a></h2><div class="meta"><span class="score">⭐ 58</span><span class="comments">💬 10</span><span class="by">👤 edward</span></div><div class="summary"><p>Debian developer Johannes Schauer Marin Rodrigues announces he will stop uploading packages to NEW, after the DFSG team began routing all uploads through an undisclosed LLM-based review. He argues reading machine-generated reviews wastes developer time, that unannounced LLM processing of all uploads contradicts the group's responsible-use decisions, and that such a large-scale automated action required prior discussion and consensus under the group's generative-AI resolution.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50256738" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://lists.debian.org/debian-devel/2026/10/msg00263.html" target="_blank">https://lists.debian.org/debian-devel/2026/10/msg00263.html</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://benwinding.github.io/encarta_95_web/#/article/Art" target="_blank">Show HN: Encarta 95 Web</a></h2><div class="meta"><span class="score">⭐ 48</span><span class="comments">💬 20</span><span class="by">👤 gitgud</span></div><div class="summary"><p>Encarta 95 Web is a browser-based version of Microsoft's classic Encarta 95 encyclopedia. The project makes the old reference material accessible online, with its source code available on GitHub. The shared build is compact, transferring about 10.2 MB.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50218975" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://benwinding.github.io/encarta_95_web/#/article/Art" target="_blank">https://benwinding.github.io/encarta_95_web/#/article/Art</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.sciencealert.com/researchers-identify-new-circadian-subtype-of-depression-affecting-1-in-4-patients" target="_blank">New 'Circadian' Subtype of Depression Affecting 1 in 4 Patients</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 32</span><span class="by">👤 gmays</span></div><div class="summary"><p>Researchers identified a circadian subtype of depression in about one quarter of patients, characterized by persistent jet-lag-like symptoms such as delayed sleep, social jet lag, evening chronotype, and morning fatigue. The study suggests depression is not a single disorder and that recognizing this subtype could help match patients to more effective treatments. It also found the subtype often began earlier and involved more severe features, including weight gain and higher risk of mania, psychosis, or suicidality.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50196212" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://www.sciencealert.com/researchers-identify-new-circadian-subtype-of-depression-affecting-1-in-4-patients" target="_blank">https://www.sciencealert.com/researchers-identify-new-circadian-subtype-of-de...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" target="_blank">Sebastian Raschka's from-scratch video course on building reasoning models</a></h2><div class="meta"><span class="score">⭐ 719</span><span class="comments">💬 99</span><span class="by">👤 sgiannopoulos</span></div><div class="summary"><p>A new video course provides an 11-hour, from-scratch walkthrough for building reasoning models in PyTorch, covering inference scaling, reinforcement learning, and distillation. It starts from a pretrained LLM and shows how to evaluate and improve it, serving as a practical sequel to earlier LLM coding material while remaining accessible without prior coursework. The course also clarifies how reasoning models function as the core engine inside AI agent frameworks that add context management and tool use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50245138" target="_blank">HN Discussion (99)</a></div><div class="source">🔗 <a href="https://magazine.sebastianraschka.com/p/building-reasoning-models" target="_blank">https://magazine.sebastianraschka.com/p/building-reasoning-models</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/" target="_blank">Oldest GUI application that still runs on Windows 11</a></h2><div class="meta"><span class="score">⭐ 442</span><span class="comments">💬 259</span><span class="by">👤 enlyth</span></div><div class="summary"><p>The article explores the oldest graphical Windows application that can still run on Windows 11 without modification. It identifies a 1993 FreeCell executable and an even older 1992 CDPlayer program that works with a small CD-ROM emulation helper. With third-party emulation, a 1985 Reversi game from Windows 1.01 can also be run.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50248055" target="_blank">HN Discussion (259)</a></div><div class="source">🔗 <a href="https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/" target="_blank">https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html" target="_blank">Writing about pratt parsing so I remember it</a></h2><div class="meta"><span class="score">⭐ 39</span><span class="comments">💬 2</span><span class="by">👤 dverlaeckt80</span></div><div class="summary"><p>The author documents their exploration of Pratt parsing while building a C expression parser, noting that it is less commonly taught than recursive descent or LR parsing. They compare it to the simpler shunting yard algorithm and explain how understanding operator binding power and recursion helped them grasp Pratt’s approach. The post aims to preserve their insights and share them with others.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50255177" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html" target="_blank">https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html</a></div></div></div>
+
+        <footer>
+            <p>2026-10-27</p>
+        </footer>
+    </div>
+</body>
+</html>

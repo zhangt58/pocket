@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-28</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://dreamagainusa.org/" target="_blank">Wealth Inequality in America drawn to scale</a></h2><div class="meta"><span class="score">⭐ 82</span><span class="comments">💬 37</span><span class="by">👤 haraball</span></div><div class="summary"><p>The article visualizes U.S. household wealth by percentile, showing that the median household holds about $211,000 while the 99th percentile holds over $15 million and the average top-1% household holds about $40 million. It emphasizes how extreme the top of the distribution is, with the average top-0.1% household holding nearly $184 million and the top-0.01% household holding about $971 million. Along the way, it highlights how low wages, inflation, and benefit eligibility cliffs can trap lower-income households.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50270764" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://dreamagainusa.org/" target="_blank">https://dreamagainusa.org/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://vertex.degree/" target="_blank">Start Doing Graph Theory</a></h2><div class="meta"><span class="score">⭐ 91</span><span class="comments">💬 6</span><span class="by">👤 ibobev</span></div><div class="summary"><p>Start Doing Graph Theory is an introductory textbook that teaches how to apply graph theory to puzzles, theorem proving, and related problems. It is freely available under a Creative Commons license for online reading or PDF download.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50208960" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://vertex.degree/" target="_blank">https://vertex.degree/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://lexifina.com/blog/git-for-the-us-code" target="_blank">Git for the US Code</a></h2><div class="meta"><span class="score">⭐ 283</span><span class="comments">💬 139</span><span class="by">👤 alansaber</span></div><div class="summary"><p>The article proposes treating the United States Code like a version-controlled codebase, where every statutory provision can be traced to the public law that created or changed it, the date the change took effect, and any retroactive scope. It argues this is especially important because current legal research increasingly relies on language models that can misapply superseded or temporally invalid rules. The author suggests that a checkable, machine-readable history of statutory changes would make legal interpretation more reliable and could be verified by reconstructing code versions from enacted laws.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50268380" target="_blank">HN Discussion (139)</a></div><div class="source">🔗 <a href="https://lexifina.com/blog/git-for-the-us-code" target="_blank">https://lexifina.com/blog/git-for-the-us-code</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank">Genie 4</a></h2><div class="meta"><span class="score">⭐ 913</span><span class="comments">💬 527</span><span class="by">👤 acossta</span></div><div class="summary"><p>Genie 4 is a next-generation AI system from DeepMind for generating and exploring interactive worlds. It enables the creation of dynamic, explorable environments that can be used for research, simulation, and creative applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50261319" target="_blank">HN Discussion (527)</a></div><div class="source">🔗 <a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank">https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://ghostty.org/docs/install/release-notes/1-4-0" target="_blank">Ghostty 1.4</a></h2><div class="meta"><span class="score">⭐ 1056</span><span class="comments">💬 338</span><span class="by">👤 deaux</span></div><div class="summary"><p>Ghostty 1.4 is a major terminal release focused on performance and memory improvements, a complete Kitty graphics implementation with animation and relative placements, and better SSH integration. It also fixes numerous security issues involving paste protection, malicious terminal output, shell integration, and unsafe macOS link handling.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50261998" target="_blank">HN Discussion (338)</a></div><div class="source">🔗 <a href="https://ghostty.org/docs/install/release-notes/1-4-0" target="_blank">https://ghostty.org/docs/install/release-notes/1-4-0</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/" target="_blank">Ink droplets in motion snag top prize in Nikon Small World contest</a></h2><div class="meta"><span class="score">⭐ 248</span><span class="comments">💬 43</span><span class="by">👤 _Microft</span></div><div class="summary"><p>A German experimental photographer won the Nikon Small World photomicrography contest with a microscopic image of an inkjet printer depositing ink onto paper. His entry, which captured the rapid motion of ink droplets, stood out among nearly 2,000 submissions from around the world. The work reflects his self-taught approach to macro photography and his interest in revealing the hidden mechanics of everyday objects.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50234796" target="_blank">HN Discussion (43)</a></div><div class="source">🔗 <a href="https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/" target="_blank">https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.brangus.io/survival-llm" target="_blank">Survival LLM: AI assistant and emergency library that runs on your own computer</a></h2><div class="meta"><span class="score">⭐ 365</span><span class="comments">💬 143</span><span class="by">👤 Luc</span></div><div class="summary"><p>Survival LLM is an open-source AI assistant and emergency reference library that runs entirely on a user's computer, so it can answer questions about first aid, food safety, water purification, and repairs without internet access. It draws on sources such as medical references, FEMA and CDC guidance, survival manuals, repair guides, and Wikipedia, and it cites the specific passages used for each answer. The app selects an AI model based on available memory, with larger models providing more accurate responses.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50264853" target="_blank">HN Discussion (143)</a></div><div class="source">🔗 <a href="https://www.brangus.io/survival-llm" target="_blank">https://www.brangus.io/survival-llm</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html" target="_blank">MacOS Extensions Pack for the Apple Network Server v1.0</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 0</span><span class="by">👤 classichasclass</span></div><div class="summary"><p>The article presents a software pack that helps Mac OS run on Apple's Network Server by fixing or working around limitations in the preproduction Mac OS ROM. It adds support for onboard video and MACE Ethernet, resolves restart issues, and preserves the machine's ability to boot AIX, making the Power Macintosh-based server more usable.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50227400" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html" target="_blank">https://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://tailscale.com/ssh-investigation-update" target="_blank">Tailscale SSH: Investigation and remediation update</a></h2><div class="meta"><span class="score">⭐ 293</span><span class="comments">💬 154</span><span class="by">👤 figmert</span></div><div class="summary"><p>Tailscale is investigating security vulnerabilities in Tailscale SSH that could allow an authorized user to perform actions beyond their configured permissions, including potential privilege escalation. The company is preparing a patched client release and recommends users review SSH access policies, disable SSH forwarding if unnecessary, and tighten access to sensitive systems until the update is available. It does not currently recommend disabling Tailscale SSH entirely and will publish further details once fixes are complete.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50264857" target="_blank">HN Discussion (154)</a></div><div class="source">🔗 <a href="https://tailscale.com/ssh-investigation-update" target="_blank">https://tailscale.com/ssh-investigation-update</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.anthropic.com/research/early-progress-drug-development" target="_blank">Early progress on accelerating drug development with Claude</a></h2><div class="meta"><span class="score">⭐ 236</span><span class="comments">💬 227</span><span class="by">👤 dataking</span></div><div class="summary"><p>Anthropic’s life sciences team is using Claude to help accelerate drug development by partnering with multiple biotech and pharma organizations and starting its own discovery programs. The work spans target identification, molecule design, optimization, regulatory drafting, and trial planning, aiming to address bottlenecks across the entire pipeline. These collaborations are intended to improve Claude’s capabilities, provide case studies for the life sciences community, and potentially lead to new medicines for diseases such as food allergies, rare childhood disorders, and cancer.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50265609" target="_blank">HN Discussion (227)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/research/early-progress-drug-development" target="_blank">https://www.anthropic.com/research/early-progress-drug-development</a></div></div></div>
+
+        <footer>
+            <p>2026-10-28</p>
+        </footer>
+    </div>
+</body>
+</html>

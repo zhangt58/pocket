@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-30</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8" target="_blank">Binance-hacker-1029 – $5.6B stolen from Binance</a></h2><div class="meta"><span class="score">⭐ 1411</span><span class="comments">💬 909</span><span class="by">👤 Tiberium</span></div><div class="summary"><p>The provided content is only a website security verification page and does not contain article details. The title suggests a report about a hacker identified as Binance-hacker-1029 allegedly stealing $5.6 billion from Binance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50296470" target="_blank">HN Discussion (909)</a></div><div class="source">🔗 <a href="https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8" target="_blank">https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank">We're releasing the weights of Mistral Large 4</a></h2><div class="meta"><span class="score">⭐ 1510</span><span class="comments">💬 399</span><span class="by">👤 kuberwastaken</span></div><div class="summary"><p>Mistral is releasing the weights of Mistral Large 4, a one-trillion-parameter multimodal model designed for advanced coding, defensive cybersecurity, and efficient reasoning. The model leads open-weight benchmarks in coding and security while offering multiple reasoning modes that let developers balance performance against inference cost. Trained on European infrastructure, it supports sovereign AI by enabling organizations to self-host, customize, and control their own AI systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50289418" target="_blank">HN Discussion (399)</a></div><div class="source">🔗 <a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank">https://mistral.ai/news/mistral-large-4-oss/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/" target="_blank">How Do You Take a Picture of a Black Hole?</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 5</span><span class="by">👤 dverlaeckt80</span></div><div class="summary"><p>Black holes are difficult to photograph because their gravity prevents light from escaping, but a global network of radio telescopes called the Event Horizon Telescope can combine observations to form an image of a black hole’s shadow. This effort produced the first images of the supermassive black hole in galaxy M87 and the black hole at the center of the Milky Way, providing new tests of theoretical predictions. The work also suggests that future observations may eventually make it possible to create movies of black holes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50301717" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/" target="_blank">https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-2026...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times" target="_blank">Gilgamesh by Simon Armitage review – an ancient epic is brilliantly translated</a></h2><div class="meta"><span class="score">⭐ 45</span><span class="comments">💬 15</span><span class="by">👤 benbreen</span></div><div class="summary"><p>Simon Armitage’s translation of the ancient Mesopotamian epic Gilgamesh brings the story of the tyrannical king and his companion Enkidu into sharp modern focus, linking its themes of power, ecology, desire, and the search for immortality to contemporary issues such as resource wars. The review praises Armitage for making the fragmented, centuries-old poem feel vivid and relevant, while noting that his tendency to smooth over missing passages may disappoint readers who value the text’s broken, archaeological character.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50263127" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times" target="_blank">https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-rev...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://cuis.st/" target="_blank">Cuis: The Modern Smalltalk-80</a></h2><div class="meta"><span class="score">⭐ 127</span><span class="comments">💬 16</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>Cuis is a free, portable Smalltalk-80 environment designed to be simple, powerful, fast, and efficient. It has an active community that shares updates, releases, and meeting discussions about its development and related tools.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50255343" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://cuis.st/" target="_blank">https://cuis.st/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.youtube.com/watch?v=kL9BTbIGxLg" target="_blank">I'm so bad at billiards that I ended up in the hyperbolic plane [video]</a></h2><div class="meta"><span class="score">⭐ 145</span><span class="comments">💬 18</span><span class="by">👤 surprisetalk</span></div><div class="summary"><p>A video that uses a badly played billiards shot as a playful entry point into hyperbolic geometry, showing how the ball's path leads into a non-Euclidean plane. It likely combines animation or visualization with math to explain hyperbolic space.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50273104" target="_blank">HN Discussion (18)</a></div><div class="source">🔗 <a href="https://www.youtube.com/watch?v=kL9BTbIGxLg" target="_blank">https://www.youtube.com/watch?v=kL9BTbIGxLg</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/herdrdev/herdr-app" target="_blank">Herdr has released native app</a></h2><div class="meta"><span class="score">⭐ 223</span><span class="comments">💬 144</span><span class="by">👤 cherioo</span></div><div class="summary"><p>Herdr is a desktop app for terminals and coding agents: it keeps work organized in spaces, shows which agents need your attention, and lets terminals keep running after the window is closed. It ships for Linux (x86-64 and ARM64), macOS (Apple Silicon, Intel from source), and Windows 10+, with one-line shell/PowerShell installers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50298436" target="_blank">HN Discussion (144)</a></div><div class="source">🔗 <a href="https://github.com/herdrdev/herdr-app" target="_blank">https://github.com/herdrdev/herdr-app</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/da-luce/astroterm" target="_blank">Astroterm: A Planetarium for Your Terminal</a></h2><div class="meta"><span class="score">⭐ 147</span><span class="comments">💬 12</span><span class="by">👤 nvmdbljstm</span></div><div class="summary"><p>Astroterm is a terminal-based star map written in C that renders real-time positions of stars, planets, and constellations as ASCII in your terminal. It’s configurable by date, time, and location to explore past, present, or future night skies, with precise moon phases, detailed constellation figures, and lightweight, performance-optimized rendering.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50270651" target="_blank">HN Discussion (12)</a></div><div class="source">🔗 <a href="https://github.com/da-luce/astroterm" target="_blank">https://github.com/da-luce/astroterm</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://labs.ycombinator.com/projects/games/index.html" target="_blank">We ran AI agent swarms in Minecraft and Mindustry</a></h2><div class="meta"><span class="score">⭐ 300</span><span class="comments">💬 109</span><span class="by">👤 sandslash</span></div><div class="summary"><p>Researchers ran swarms of AI agents in Minecraft and Mindustry to study how multi-agent systems coordinate, develop roles, and exhibit emergent behavior. In a Minecraft experiment, 50 agents were given the goal of building a thriving civilization and quickly formed a hierarchy, shared plans, rationing systems, and a pseudo-government. The work highlights both the potential and risks of large-scale agent coordination for AI alignment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50296486" target="_blank">HN Discussion (109)</a></div><div class="source">🔗 <a href="https://labs.ycombinator.com/projects/games/index.html" target="_blank">https://labs.ycombinator.com/projects/games/index.html</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers" target="_blank">Artificial Analysis v5 and the benchmarker's dilemma</a></h2><div class="meta"><span class="score">⭐ 23</span><span class="comments">💬 9</span><span class="by">👤 6thbit</span></div><div class="summary"><p>The article discusses the difficulty of creating meaningful AI benchmarks as models advance rapidly, using Artificial Analysis’s Intelligence Index v5 as a case study. It explains how v5 weights knowledge work, coding, science, and general abilities to produce a single score, while acknowledging that any aggregation method involves trade-offs and may not fully capture jagged real-world capabilities. The piece argues that independent evaluation carries outsized influence over a trillion-dollar AI market, making benchmark design both essential and inherently imperfect.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50273340" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers" target="_blank">https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers</a></div></div></div>
+
+        <footer>
+            <p>2026-10-30</p>
+        </footer>
+    </div>
+</body>
+</html>

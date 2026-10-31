@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-10-31</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament" target="_blank">Serbia just elected the world's brainiest parliament</a></h2><div class="meta"><span class="score">⭐ 84</span><span class="comments">💬 41</span><span class="by">👤 input_sh</span></div><div class="summary"><p>This post likely discusses Serbia's recent parliamentary election, in which a notably high share of newly elected lawmakers hold advanced academic degrees. It may compare the result to other countries and explore what it says about the country's political class.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50314654" target="_blank">HN Discussion (41)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament" target="_blank">https://www.science.org/content/article/serbia-just-elected-world-s-brainiest...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://xoranth.net/gcc-switch/" target="_blank">Switch Lowering in GCC</a></h2><div class="meta"><span class="score">⭐ 67</span><span class="comments">💬 6</span><span class="by">👤 signa11</span></div><div class="summary"><p>This article examines how GCC lowers switch statements into efficient machine code, showing when it uses jump tables, comparison trees, or bitset-based approaches. It demonstrates that GCC can detect constant offsets and chooses jump tables for dense cases but falls back to decision trees when case values are too sparse, with the tradeoff depending on the number of table entries per case.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50314085" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://xoranth.net/gcc-switch/" target="_blank">https://xoranth.net/gcc-switch/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html" target="_blank">Digital Minimalism</a></h2><div class="meta"><span class="score">⭐ 62</span><span class="comments">💬 35</span><span class="by">👤 wilbertliu</span></div><div class="summary"><p>The article argues that modern life requires digital minimalism, meaning using technology intentionally rather than being passively pulled into default platforms. The author describes moving away from X's native interface and using Firefly, a multi-client for X, Bluesky, Farcaster, and Lens, to reduce algorithmic manipulation and support decentralized social media. This shift made the author feel better and more in control of their digital attention.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50313661" target="_blank">HN Discussion (35)</a></div><div class="source">🔗 <a href="https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html" target="_blank">https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://zebra.rodeo/en/blog/marelleo/" target="_blank">Show HN: Marelleo, an open-source story box I built for my kids using ESP32</a></h2><div class="meta"><span class="score">⭐ 68</span><span class="comments">💬 25</span><span class="by">👤 foOg</span></div><div class="summary"><p>Marelleo is an open-source, DIY story box built for children using an ESP32 microcontroller and an RFID or NFC reader. It plays a chosen audio story when a tag or figurine is placed on it, offering a screen-free, subscription-free alternative to commercial kids' audio players. The project was created as a personal electronics learning exercise and a way to give kids simple, self-controlled storytelling.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50260753" target="_blank">HN Discussion (25)</a></div><div class="source">🔗 <a href="https://zebra.rodeo/en/blog/marelleo/" target="_blank">https://zebra.rodeo/en/blog/marelleo/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/" target="_blank">My favourite PowerMac is a Nintendo Wii</a></h2><div class="meta"><span class="score">⭐ 311</span><span class="comments">💬 90</span><span class="by">👤 DHowett</span></div><div class="summary"><p>The article describes a project that ports classic Mac OS to Nintendo PowerPC hardware, including the Wii, by adapting OpenBIOS and low-level drivers. It explains the technical work needed to get the system booting and reaching a desktop, while emphasizing that the development was done manually as a personal learning effort.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50307190" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/" target="_blank">https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/chris124567/cfsolve" target="_blank">Cloudflare Turnstile solver library (no headless browser required)</a></h2><div class="meta"><span class="score">⭐ 220</span><span class="comments">💬 64</span><span class="by">👤 costco</span></div><div class="summary"><p>The post likely introduces a library for programmatically solving Cloudflare Turnstile challenges without using a headless browser. It is probably aimed at developers who want to automate access to Turnstile-protected sites while avoiding the overhead and fragility of browser automation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50277379" target="_blank">HN Discussion (64)</a></div><div class="source">🔗 <a href="https://github.com/chris124567/cfsolve" target="_blank">https://github.com/chris124567/cfsolve</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/" target="_blank">The $6.3B Binance hack was pulled off in just 20 minutes</a></h2><div class="meta"><span class="score">⭐ 461</span><span class="comments">💬 316</span><span class="by">👤 domhudson</span></div><div class="summary"><p>Hackers stole about $6.3 billion from Binance in roughly 20 minutes, in what appears to be the largest cryptocurrency heist ever. Binance suspended deposits and withdrawals and says it has frozen about half the stolen funds, while crypto tracing firms believe North Korean hackers, possibly the group TraderTraitor, were responsible. The attack drained internet-connected hot wallets across multiple blockchains after a period of testing and preparation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50303172" target="_blank">HN Discussion (316)</a></div><div class="source">🔗 <a href="https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/" target="_blank">https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://status.northflank.com" target="_blank">Northflank Breached</a></h2><div class="meta"><span class="score">⭐ 442</span><span class="comments">💬 316</span><span class="by">👤 js4ever</span></div><div class="summary"><p>Northflank experienced a security incident in which attackers accessed user-supplied secrets, including AI API keys, and caused a major outage across several platform services. The company advised customers to assume all environment variables were compromised, rotate credentials, disable public access to add-ons, and review provider usage logs. Audit logs have been enabled for all customers, including free users.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50305025" target="_blank">HN Discussion (316)</a></div><div class="source">🔗 <a href="https://status.northflank.com" target="_blank">https://status.northflank.com</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50312756" target="_blank">Tell HN: Scribd Breached</a></h2><div class="meta"><span class="score">⭐ 225</span><span class="comments">💬 92</span><span class="by">👤 x______________</span></div><div class="summary"><p>The post likely reports that Scribd, a digital document and e-book sharing platform, has experienced a data breach. It probably details exposed user account information, credentials, or documents and may include advice for affected users.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50312756" target="_blank">HN Discussion (92)</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://thedataexchange.media/leo-de-moura-lean-aws/" target="_blank">AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 5</span><span class="by">👤 datascientist</span></div><div class="summary"><p>The article explores how AI is making formal verification more practical by helping write, check, and scale machine-checked proofs in systems like Lean. It argues that software engineering may shift from trusting code to trusting specifications and verified properties, especially as AI-generated code and autonomous agents become common. The discussion also covers implications for mathematics, security, and the future of a fully verified software stack.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50290652" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://thedataexchange.media/leo-de-moura-lean-aws/" target="_blank">https://thedataexchange.media/leo-de-moura-lean-aws/</a></div></div></div>
+
+        <footer>
+            <p>2026-10-31</p>
+        </footer>
+    </div>
+</body>
+</html>

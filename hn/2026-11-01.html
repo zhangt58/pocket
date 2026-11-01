@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-01</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/" target="_blank">Norway makes shithouses great again</a></h2><div class="meta"><span class="score">⭐ 141</span><span class="comments">💬 52</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>Norway’s scenic routes feature unusually impressive public restrooms that are designed as architectural and scenic attractions in their own right. The article highlights several rest stops across Fjord Norway and Northern Norway where the facilities offer views, modern design, and amenities that make them worth visiting even without a practical need. This positions Norway as a destination where even basic travel infrastructure is elevated to a memorable experience.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50324388" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/" target="_blank">https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-r...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank">HackerTube: YouTube built from videos recommended by HN</a></h2><div class="meta"><span class="score">⭐ 1450</span><span class="comments">💬 392</span><span class="by">👤 karpathy</span></div><div class="summary"><p>HackerTube is a YouTube-style site built from videos that Hacker News users have recommended in comments. It filters thousands of HN comments to collect a curated set of videos and presents them with a cleaner interface, custom recommendations, and data export. The project was created quickly with an AI coding assistant to provide a less algorithmically noisy alternative to mainstream YouTube.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50319510" target="_blank">HN Discussion (392)</a></div><div class="source">🔗 <a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank">https://karpathy.bearblog.dev/hacker-tube/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.economist.com/asia/2026/10/29/a-tiny-pacific-country-rolls-out-universal-basic-income" target="_blank">A tiny Pacific country rolls out universal basic income</a></h2><div class="meta"><span class="score">⭐ 35</span><span class="comments">💬 7</span><span class="by">👤 motionlessveloc</span></div><div class="summary"><p>A tiny Pacific country is implementing universal basic income, providing unconditional cash payments to its residents. The move makes the nation a small-scale test case for broader income support policies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50324118" target="_blank">HN Discussion (7)</a></div><div class="source">🔗 <a href="https://www.economist.com/asia/2026/10/29/a-tiny-pacific-country-rolls-out-universal-basic-income" target="_blank">https://www.economist.com/asia/2026/10/29/a-tiny-pacific-country-rolls-out-un...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/" target="_blank">An Italian farmer found some unknown seeds in his attic and planted them</a></h2><div class="meta"><span class="score">⭐ 494</span><span class="comments">💬 153</span><span class="by">👤 ecares</span></div><div class="summary"><p>Italian farmer Claudio Grossi discovered unidentified seeds in his attic and planted them, producing an unusually tall wheat with seven ears and multicolored kernels. The crop’s distinctive appearance led him to link it to a biblical description, suggesting it may be an ancient grain. Grossi now sees the wheat as a potential solution to modern agricultural problems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50320963" target="_blank">HN Discussion (153)</a></div><div class="source">🔗 <a href="https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/" target="_blank">https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-se...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/" target="_blank">The AI cost of JavaScript frameworks</a></h2><div class="meta"><span class="score">⭐ 109</span><span class="comments">💬 57</span><span class="by">👤 luu</span></div><div class="summary"><p>The article argues that JavaScript framework choices are often driven by unsubstantiated hype rather than evidence, a problem that persists as AI agents increasingly generate code. To test this, the author benchmarked several frameworks by having agents build a simple Pokémon app and evaluated the results on development time, token usage, code size, and Lighthouse performance and accessibility scores.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50323088" target="_blank">HN Discussion (57)</a></div><div class="source">🔗 <a href="https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/" target="_blank">https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/" target="_blank">Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing</a></h2><div class="meta"><span class="score">⭐ 152</span><span class="comments">💬 61</span><span class="by">👤 doodlesdev</span></div><div class="summary"><p>A Brazilian labor court sanctioned two lawyers for embedding a hidden prompt-injection command in a court filing intended to manipulate an AI review system. The concealed text instructed the AI to give a superficial response and avoid challenging the documents, and the court fined the firms for undermining judicial integrity. The ruling highlights that legal filings must be honest not only to human readers but also to automated systems used in court proceedings.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50322173" target="_blank">HN Discussion (61)</a></div><div class="source">🔗 <a href="https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/" target="_blank">https://jetstream.security/insights/brazilian-court-sanctions-prompt-injectio...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/" target="_blank">Running a bootstrapped SaaS for 20 years with my brother</a></h2><div class="meta"><span class="score">⭐ 115</span><span class="comments">💬 29</span><span class="by">👤 whyleyc</span></div><div class="summary"><p>Two brothers built Zamzar, a file conversion service, into a widely used platform supporting thousands of file types and serving hundreds of millions of users. The company remains a small, independent, bootstrapped UK business, focusing on its users and unusual conversion requests rather than venture capital or tech trends.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50303984" target="_blank">HN Discussion (29)</a></div><div class="source">🔗 <a href="https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/" target="_blank">https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf" target="_blank">TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8</a></h2><div class="meta"><span class="score">⭐ 540</span><span class="comments">💬 249</span><span class="by">👤 oger</span></div><div class="summary"><p>CVE-2026-98432 is a critical use-after-free vulnerability in the Linux kernel's IPv4 TCP handshake that can be triggered remotely without authentication. It can lead to kernel memory corruption, information disclosure, or remote code execution, and a proof-of-concept root exploit exists for servers using multipath TCP listeners. Fixed stable kernel releases are available, but some major distributions remain affected.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50319143" target="_blank">HN Discussion (249)</a></div><div class="source">🔗 <a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf" target="_blank">https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank">Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard</a></h2><div class="meta"><span class="score">⭐ 267</span><span class="comments">💬 123</span><span class="by">👤 guregodevo</span></div><div class="summary"><p>Memdoor is a lightweight coding/automation agent (single Go binary, BYOK) that can run a workflow where five Qwen3.8-27B agents — a planner, two ideators, a solver, a manager and a repair worker — collaborate through files on disk, with a script (not a model) deciding success. On the first ten LiveCodeBench Hard problems over five passes, this team-solve workflow averaged 9.8/10, beating Fable 5's 8.0 in single calls, with all 50 runs published.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50320995" target="_blank">HN Discussion (123)</a></div><div class="source">🔗 <a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank">https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://xn--69f31l4t57c0mag4b613h.xn--7uh4898msjaso/🆆🆃🅵/" target="_blank">Domain hacks with unusual Unicode characters (2018)</a></h2><div class="meta"><span class="score">⭐ 8</span><span class="comments">💬 2</span><span class="by">👤 n_plus_1_acc</span></div><div class="summary"><p>The post likely explores creative domain names that use unusual Unicode characters to spell words or brand names, showing how internationalized domain names can create visual puns or deceptive lookalikes. It may include examples of such domains and the technical or security implications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50324371" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://xn--69f31l4t57c0mag4b613h.xn--7uh4898msjaso/🆆🆃🅵/" target="_blank">https://xn--69f31l4t57c0mag4b613h.xn--7uh4898msjaso/🆆🆃🅵/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-01</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-02</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://hackerbooks.org" target="_blank">Show HN: HackerBooks – HackerTube, but for books mentioned on HN</a></h2><div class="meta"><span class="score">⭐ 1471</span><span class="comments">💬 246</span><span class="by">👤 roansh</span></div><div class="summary"><p>HackerBooks is a website that collects books mentioned on Hacker News and presents them as a daily reshuffled list of well-loved titles. It lets users rank books by score and shows how many times each has been recommended or mentioned.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50326821" target="_blank">HN Discussion (246)</a></div><div class="source">🔗 <a href="https://hackerbooks.org" target="_blank">https://hackerbooks.org</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html" target="_blank">Postgres 19 is late because so many more bugs are being found now</a></h2><div class="meta"><span class="score">⭐ 540</span><span class="comments">💬 331</span><span class="by">👤 soheilpro</span></div><div class="summary"><p>PostgreSQL 19 is expected to ship later than usual because several major features were reverted late in the beta cycle. The delay stems from a surge in bug reports, many discovered with the help of LLMs, which has increased the workload for fixing and reviewing code across current and older releases. The project’s focus on quality is causing the postponement, though the long-term impact of uncovering decades of latent bugs remains uncertain.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50312408" target="_blank">HN Discussion (331)</a></div><div class="source">🔗 <a href="https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html" target="_blank">https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://wikihack.netlify.app" target="_blank">Show HN: Wikihack – HackerTube, but for Wikipedia articles mentioned on HN</a></h2><div class="meta"><span class="score">⭐ 239</span><span class="comments">💬 72</span><span class="by">👤 aizk</span></div><div class="summary"><p>Wikihack is a Hacker News-inspired site that collects Wikipedia articles referenced in Hacker News discussions and displays their summaries alongside discussion activity. The sample entries cover topics such as bipolar disorder, the Data Encryption Standard, Scotland's Silicon Glen, Experts Exchange, and head-related transfer functions. It aims to make frequently mentioned Wikipedia subjects easier to discover and contextualize.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50333339" target="_blank">HN Discussion (72)</a></div><div class="source">🔗 <a href="https://wikihack.netlify.app" target="_blank">https://wikihack.netlify.app</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank">HackerTube: YouTube built from videos recommended by HN</a></h2><div class="meta"><span class="score">⭐ 2628</span><span class="comments">💬 577</span><span class="by">👤 karpathy</span></div><div class="summary"><p>HackerTube is a YouTube-style site that curates videos based on recommendations found in Hacker News comments. It filters a large dataset of comments to identify video links, then presents them in a clean interface with custom recommendations, keyboard shortcuts, and no user accounts. The project demonstrates how AI coding tools can rapidly build a personalized alternative to mainstream video recommendation algorithms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50319510" target="_blank">HN Discussion (577)</a></div><div class="source">🔗 <a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank">https://karpathy.bearblog.dev/hacker-tube/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://syscall.sh/" target="_blank">Show HN: I've updated my Linux System Call website and API</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 14</span><span class="by">👤 guitmz</span></div><div class="summary"><p>The article announces an updated website and API that collects Linux system call tables for 27 architectures, including syscall numbers, arguments, registers, and history from Linux 3.3 through 7.3. Each architecture's data is available as a plain JSON file, and the site also documents the calling conventions used to pass arguments and return values. It serves as a centralized reference for developers working with Linux system calls across different CPU architectures.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50334704" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://syscall.sh/" target="_blank">https://syscall.sh/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/" target="_blank">F/OSS Comics #13: BSD Unix, Part 3 – The Beginning of BSD Unix</a></h2><div class="meta"><span class="score">⭐ 145</span><span class="comments">💬 15</span><span class="by">👤 joonehur</span></div><div class="summary"><p>After the first Berkeley Software Distribution, improvements and new tools such as vi and the C shell were packaged into 2BSD and distributed on tape. The arrival of a VAX at Berkeley highlighted the need for virtual memory, especially for symbolic computation work, and helped shape BSD Unix’s development. Meanwhile, ARPANET and DARPA interest in portable Unix made Berkeley’s distributions influential across research institutions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50332163" target="_blank">HN Discussion (15)</a></div><div class="source">🔗 <a href="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/" target="_blank">https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginnin...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span" target="_blank">Bones may release proteins that slow aging and extend life span</a></h2><div class="meta"><span class="score">⭐ 132</span><span class="comments">💬 30</span><span class="by">👤 EA-3167</span></div><div class="summary"><p>The article suggests that bones can secrete proteins that influence aging processes. These proteins may help slow age-related decline and potentially extend lifespan.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50331957" target="_blank">HN Discussion (30)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span" target="_blank">https://www.science.org/content/article/bones-may-release-proteins-slow-aging...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50328896" target="_blank">Ask HN: Which TV do you recommend for privacy?</a></h2><div class="meta"><span class="score">⭐ 444</span><span class="comments">💬 575</span><span class="by">👤 LecroJS</span></div><div class="summary"><p>This Hacker News post asks for TV recommendations that prioritize user privacy, likely focusing on models with minimal data collection, limited smart features, or local-only operation. It is probably a discussion about which brands or settings reduce tracking, cloud dependencies, and smart TV surveillance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50328896" target="_blank">HN Discussion (575)</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved" target="_blank">Mystery of 60-Second Fluctuations in Power Grids Solved</a></h2><div class="meta"><span class="score">⭐ 152</span><span class="comments">💬 68</span><span class="by">👤 _Microft</span></div><div class="summary"><p>Researchers have solved the mystery behind recurring 60-second fluctuations in power grids. The finding clarifies a previously unexplained pattern in grid behavior and may help improve the stability and reliability of electrical networks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50315217" target="_blank">HN Discussion (68)</a></div><div class="source">🔗 <a href="https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved" target="_blank">https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-se...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://news.ycombinator.com/" target="_blank">Show HN: HackerHack – HackerBooks but for Posts Posted on HN</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 8</span><span class="by">👤 mw888</span></div><div class="summary"><p>HackerHack recreates the Hacker News homepage as a browsable feed of posts posted on HN itself, a companion to sister aggregators like HackerTube (videos) and HackerBooks (books). The author notes no AI was used to build it, and commenters praise the faithful, "no AI slop" user experience.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50333877" target="_blank">HN Discussion (8)</a></div></div></div>
+
+        <footer>
+            <p>2026-11-02</p>
+        </footer>
+    </div>
+</body>
+</html>

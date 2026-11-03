@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-03</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank">Astra can read and write weights to improve Qwen</a></h2><div class="meta"><span class="score">⭐ 2749</span><span class="comments">💬 834</span><span class="by">👤 dbreunig</span></div><div class="summary"><p>The article describes a technique called Weight-Space Programming, in which large language models directly inspect and modify neural network weights without gradient-based training. It reports that an LLM can infer a network's intended task from raw weights, generate small game-playing networks, and improve a Qwen model's math performance by making tiny weight edits. These edits reportedly boost math benchmark scores substantially and also improve instruction-following.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50341174" target="_blank">HN Discussion (834)</a></div><div class="source">🔗 <a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank">https://rikiyat.github.io/blog/weight-space-programming/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/NVIDIA/auto-ontology" target="_blank">Nvidia – open-source auto-ontology</a></h2><div class="meta"><span class="score">⭐ 104</span><span class="comments">💬 32</span><span class="by">👤 campervans</span></div><div class="summary"><p>NVIDIA Auto Ontology is an open-source library that builds a semantic context layer for AI agents from enterprise metadata. It generates and reconciles ontologies across systems, grounds metrics and entities with trusted business meaning, validates generated queries against certified definitions, and exposes the context to any agent harness via MCP, CLI, and API. It is Apache-2.0 licensed, uses NVIDIA NIM models for inference, and currently does not accept external contributions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50348962" target="_blank">HN Discussion (32)</a></div><div class="source">🔗 <a href="https://github.com/NVIDIA/auto-ontology" target="_blank">https://github.com/NVIDIA/auto-ontology</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://toit.io/blog/toit-v2-0-0/" target="_blank">Toit v2.0.0</a></h2><div class="meta"><span class="score">⭐ 117</span><span class="comments">💬 37</span><span class="by">👤 floitsch</span></div><div class="summary"><p>Toit v2.0.0 is the first major release of the open-source Toit language after years of alpha development, following the shutdown of its original company and continued community maintenance. The release finalizes a major breaking change that lets peripheral APIs accept pin numbers directly and adds broad hardware support, a unified command, a rewritten package manager, mixins, firmware envelopes, and compiler and runtime improvements. Future releases will continue adding features such as a formatter, compiler resolution improvements, and support for more architectures.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50321605" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://toit.io/blog/toit-v2-0-0/" target="_blank">https://toit.io/blog/toit-v2-0-0/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank">DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs</a></h2><div class="meta"><span class="score">⭐ 253</span><span class="comments">💬 52</span><span class="by">👤 bpierre</span></div><div class="summary"><p>DiscImageStudio is a tool for creating optical disc images with visible artwork burned directly onto the data layer of CDs, DVDs, and Blu-ray discs. It likely lets users add custom graphics or labels to physical media during the disc burning process.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50346849" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio" target="_blank">https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://katamari.vaguespac.es/" target="_blank">Katamari Damacy but it's The Met collection</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 5</span><span class="by">👤 thebigship</span></div><div class="summary"><p>Katamari Met is an interactive web project that lets players roll up real objects from the Metropolitan Museum of Art's Open Access collection at their actual sizes. Starting with small items like coins and thimbles, the experience builds toward larger pieces such as the Temple of Dendur.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50332342" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://katamari.vaguespac.es/" target="_blank">https://katamari.vaguespac.es/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.ycombinator.com/companies/sava-trust-company/jobs" target="_blank">Sava Trust (YC F25) Is Hiring a Founding Engineer in NYC</a></h2><div class="meta"><span class="score">⭐ 1</span><span class="comments">💬 0</span><span class="by">👤 nimz</span></div><div class="summary"><p>Sava Trust is a Y Combinator-backed startup seeking a founding engineer in New York City to help build a modern trust company. The company is creating a full-stack, chartered trust entity that manages family wealth and trust assets while executing the wishes of families.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50350924" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.ycombinator.com/companies/sava-trust-company/jobs" target="_blank">https://www.ycombinator.com/companies/sava-trust-company/jobs</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://hackertimes.ca/" target="_blank">Show HN: Hacker Times, a New York Times-inspired version of Hacker News</a></h2><div class="meta"><span class="score">⭐ 312</span><span class="comments">💬 97</span><span class="by">👤 polpenn</span></div><div class="summary"><p>Hacker Times is a New York Times-inspired presentation of Hacker News that turns community links into a curated, newspaper-style front page. It highlights technology topics such as AI-assisted software development, neural-network editing, privacy-conscious hardware, web archiving, and open-source projects.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50346981" target="_blank">HN Discussion (97)</a></div><div class="source">🔗 <a href="https://hackertimes.ca/" target="_blank">https://hackertimes.ca/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://erici.eu" target="_blank">European RISC-V Industrial Computing Initiative</a></h2><div class="meta"><span class="score">⭐ 136</span><span class="comments">💬 72</span><span class="by">👤 ymz5</span></div><div class="summary"><p>The European RISC-V Industrial Computing Initiative is developing an open, non-commercial reference stack for industrial computers based on RVA23 RISC-V hardware. It defines and validates the interfaces between firmware, boot software, a partitioning hypervisor, real-time control, and Linux, so that compatible systems can run isolated workloads on a single SoC. ERICI aims to close the gap between available RISC-V silicon and the reliability, field connectivity, and long-term independence needed for industrial use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50334523" target="_blank">HN Discussion (72)</a></div><div class="source">🔗 <a href="https://erici.eu" target="_blank">https://erici.eu</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50340088" target="_blank">Show HN: Subvocal – Talk to your computer without making noise</a></h2><div class="meta"><span class="score">⭐ 722</span><span class="comments">💬 345</span><span class="by">👤 aarushyadav</span></div><div class="summary"><p>Subvocal is a Show HN project — a pair of smart glasses that lets users issue voice commands without audible sound by capturing subvocal speech. The discussion highlights excitement about hands-free and accessibility use cases, along with questions about where the signal processing happens (on-glasses vs. app), privacy concerns, and whether the tech could work with existing prescription frames.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50340088" target="_blank">HN Discussion (345)</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://vathography.com/" target="_blank">Vathographs: Photographic depth maps as creative expression</a></h2><div class="meta"><span class="score">⭐ 28</span><span class="comments">💬 6</span><span class="by">👤 hankbond</span></div><div class="summary"><p>Vathography is a creative practice that transforms ordinary photographs into depth-based artworks by using AI to infer the relative distance of every point in a scene. Instead of relying on light and color, it treats volume as the primary element, allowing artists to remap focus and emphasize different distances through tone and contrast. This turns a normally hidden technical depth map into a new way of seeing and composing photographic subjects.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50331800" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://vathography.com/" target="_blank">https://vathography.com/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-03</p>
+        </footer>
+    </div>
+</body>
+</html>

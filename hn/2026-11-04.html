@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-04</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop" target="_blank">Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux</a></h2><div class="meta"><span class="score">⭐ 139</span><span class="comments">💬 68</span><span class="by">👤 novaRom</span></div><div class="summary"><p>Nvidia RTX Spark laptops can run Linux with GPU acceleration, but a Windows-only encrypted power-management component limits the GPU to about 780 MHz when plugged in, cutting AI inference speed to roughly 35 percent of Windows performance. The slowdown stems from firmware that Linux cannot read, leaving WSL as the practical workaround until Nvidia ports the power-management logic to its Linux driver.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50362905" target="_blank">HN Discussion (68)</a></div><div class="source">🔗 <a href="https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop" target="_blank">https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://sw.kovidgoyal.net/kitty/changelog/#" target="_blank">Kitty 0.50</a></h2><div class="meta"><span class="score">⭐ 180</span><span class="comments">💬 98</span><span class="by">👤 porridgeraisin</span></div><div class="summary"><p>Kitty 0.50 introduces major usability and customization features for the GPU-based terminal, including docked windows, session restoration after logout, and tab management options that make tabs behave like named workspaces. The release also improves Wayland support with native-looking GNOME decorations and touchscreen gestures, while expanding custom shaders and adding indexed-color image formats that adapt to terminal color schemes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50362980" target="_blank">HN Discussion (98)</a></div><div class="source">🔗 <a href="https://sw.kovidgoyal.net/kitty/changelog/#" target="_blank">https://sw.kovidgoyal.net/kitty/changelog/#</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://blog.cosmos-institute.org/p/verification-is-not-knowledge" target="_blank">Verification Is Not Knowledge: Science needs more than answers</a></h2><div class="meta"><span class="score">⭐ 66</span><span class="comments">💬 34</span><span class="by">👤 ersinesen</span></div><div class="summary"><p>The article argues that in science, verifiable answers are not the same as knowledge, especially as AI systems can produce correct-looking results without human comprehension. It contends that understanding matters because it supports accountability, integration into existing knowledge, and the ability to diagnose failures when verification alone is insufficient.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50363019" target="_blank">HN Discussion (34)</a></div><div class="source">🔗 <a href="https://blog.cosmos-institute.org/p/verification-is-not-knowledge" target="_blank">https://blog.cosmos-institute.org/p/verification-is-not-knowledge</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.githubstatus.com/incidents/smtdswd1h2w4" target="_blank">Incident with Pull Requests, Git Operations and Issues</a></h2><div class="meta"><span class="score">⭐ 94</span><span class="comments">💬 49</span><span class="by">👤 kevcampb</span></div><div class="summary"><p>GitHub reported an incident causing degradation in API requests, Git operations, issues, and pull requests. The service issue has been mitigated, and GitHub is monitoring the platform to ensure stability.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50363378" target="_blank">HN Discussion (49)</a></div><div class="source">🔗 <a href="https://www.githubstatus.com/incidents/smtdswd1h2w4" target="_blank">https://www.githubstatus.com/incidents/smtdswd1h2w4</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://mrdoob.github.io/codevember-2026/01/" target="_blank">Jelly Sheet</a></h2><div class="meta"><span class="score">⭐ 284</span><span class="comments">💬 73</span><span class="by">👤 memalign</span></div><div class="summary"><p>Jelly Sheet is an interactive cloth simulation that lets users drag a flexible, jelly-like sheet. It features a folding interaction and can be paused with the spacebar.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50361268" target="_blank">HN Discussion (73)</a></div><div class="source">🔗 <a href="https://mrdoob.github.io/codevember-2026/01/" target="_blank">https://mrdoob.github.io/codevember-2026/01/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50363461" target="_blank">Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)</a></h2><div class="meta"><span class="score">⭐ 70</span><span class="comments">💬 26</span><span class="by">👤 jameslk</span></div><div class="summary"><p>The post reports that Google’s Gemini appears to use users’ chat history for model training, including paid subscribers on personal accounts. It likely highlights privacy concerns about whether Gemini conversations are treated as training data despite subscription status.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50363461" target="_blank">HN Discussion (26)</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://blog.nns.ee/2026/11/02/renault-hack/" target="_blank">Jailbreaking my car's navigation system just so I can change the time</a></h2><div class="meta"><span class="score">⭐ 854</span><span class="comments">💬 325</span><span class="by">👤 xx_ns</span></div><div class="summary"><p>The author discovered that their Renault Latitude's head unit hides the time-setting menu behind a navigation SD card, making it impossible to adjust the clock without one. After reverse engineering the TomTom-based firmware, they found that the settings menu definition is loaded from the card and protected by DRM, requiring a valid card or a hack to access basic time controls.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50339288" target="_blank">HN Discussion (325)</a></div><div class="source">🔗 <a href="https://blog.nns.ee/2026/11/02/renault-hack/" target="_blank">https://blog.nns.ee/2026/11/02/renault-hack/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://neufangled.com/" target="_blank">Stringman, an $800 open-source room scale gripper robot</a></h2><div class="meta"><span class="score">⭐ 632</span><span class="comments">💬 208</span><span class="by">👤 nharada</span></div><div class="summary"><p>Stringman is an open-source, cable-driven robot that uses four ceiling-mounted motors to move a gripper throughout a room, reaching areas inaccessible to wheeled or legged robots. It can carry about 1.9 kg on average and is designed for local, air-gapped control, with published CAD, PCB, and software files. The system is intended as a courier for home labs, allowing other robots and workstations to share parts and objects across the room.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50354358" target="_blank">HN Discussion (208)</a></div><div class="source">🔗 <a href="https://neufangled.com/" target="_blank">https://neufangled.com/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai" target="_blank">Geoffrey Hinton: it might turn out we were better off without AI</a></h2><div class="meta"><span class="score">⭐ 57</span><span class="comments">💬 27</span><span class="by">👤 alkyon</span></div><div class="summary"><p>AI pioneer Geoffrey Hinton has suggested that humanity may ultimately be better off without artificial intelligence. His comments underscore deepening unease among leading experts about the risks and long-term consequences of AI development.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50363554" target="_blank">HN Discussion (27)</a></div><div class="source">🔗 <a href="https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai" target="_blank">https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://napcakes.nekoweb.org/posts/malloc/" target="_blank">The lost malloc()</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 20</span><span class="by">👤 matt_d</span></div><div class="summary"><p>This article explores early Unix memory management by examining the original V4 source code, highlighting how a simple linear allocator in the C compiler used sbrk to grow the heap and avoided NULL checks. It also describes the original malloc and mfree functions, which took a map argument to track allocations in core or swap, making them historical precursors to modern malloc.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50362466" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://napcakes.nekoweb.org/posts/malloc/" target="_blank">https://napcakes.nekoweb.org/posts/malloc/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-04</p>
+        </footer>
+    </div>
+</body>
+</html>

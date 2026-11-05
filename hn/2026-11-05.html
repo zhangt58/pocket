@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-05</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://ernie.baidu.com/release/ernie-5-5-flash-base/" target="_blank">Baidu released ERNIE 5.5 Flash Base</a></h2><div class="meta"><span class="score">⭐ 57</span><span class="comments">💬 33</span><span class="by">👤 pretext</span></div><div class="summary"><p>Baidu has released ERNIE 5.5 Flash Base, an open sparse Mixture-of-Experts language model with 280B total parameters and 14B active per token. It was pretrained on 33.5T tokens with a 128K context and supports up to 1M tokens for fine-tuning and inference. The release provides an efficient base checkpoint for domain adaptation, instruction tuning, and agent-oriented research.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50377078" target="_blank">HN Discussion (33)</a></div><div class="source">🔗 <a href="https://ernie.baidu.com/release/ernie-5-5-flash-base/" target="_blank">https://ernie.baidu.com/release/ernie-5-5-flash-base/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://layer3intel.com/blog/residential-proxies-white-house-network" target="_blank">Residential proxies detected on White House network</a></h2><div class="meta"><span class="score">⭐ 1106</span><span class="comments">💬 360</span><span class="by">👤 Rasbora</span></div><div class="summary"><p>The title indicates that residential proxies were detected on the White House network. This suggests a security concern, since residential proxies can obscure the origin of network traffic and may be used for unauthorized access or data movement.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50371246" target="_blank">HN Discussion (360)</a></div><div class="source">🔗 <a href="https://layer3intel.com/blog/residential-proxies-white-house-network" target="_blank">https://layer3intel.com/blog/residential-proxies-white-house-network</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://markblah.github.io/lemmings/" target="_blank">Lemmings CSS Animation</a></h2><div class="meta"><span class="score">⭐ 224</span><span class="comments">💬 48</span><span class="by">👤 MarkBlah</span></div><div class="summary"><p>This post likely showcases a CSS-only animation recreating the classic Lemmings game, using styled elements to mimic the characters' walking, jumping, or falling behavior. It may include code or a demo demonstrating how the animation is built with CSS keyframes and transforms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50375354" target="_blank">HN Discussion (48)</a></div><div class="source">🔗 <a href="https://markblah.github.io/lemmings/" target="_blank">https://markblah.github.io/lemmings/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/" target="_blank">Awesome repositories are no longer awesome</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 10</span><span class="by">👤 erikgahner</span></div><div class="summary"><p>GitHub “awesome” repositories, once valuable curated lists of resources, are becoming less useful as many grow outdated and are flooded with low-quality AI-generated submissions. The author argues that AI tools can now better help people find relevant material, while these lists may remain more useful for AI agents than for humans. Overall, awesome repositories are not entirely bad, but their general value has declined.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50377821" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/" target="_blank">https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-aw...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" target="_blank">A thousand fewer paths to root</a></h2><div class="meta"><span class="score">⭐ 377</span><span class="comments">💬 273</span><span class="by">👤 dangelosaurus</span></div><div class="summary"><p>OpenAI’s Cyber team built an AI-driven pipeline to systematically find and validate Linux kernel vulnerabilities. It identified thousands of candidate flaws, dynamically reproduced 1,724 vulnerabilities, and generated 948 local privilege escalation exploits, then produced candidate patches for maintainers. The work shows that AI can scale vulnerability discovery, while human review remains essential for prioritization and reporting.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50372929" target="_blank">HN Discussion (273)</a></div><div class="source">🔗 <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" target="_blank">https://openai.com/index/a-thousand-fewer-paths-to-root/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://openai.com/index/introducing-images-2-6/" target="_blank">Images 2.6</a></h2><div class="meta"><span class="score">⭐ 322</span><span class="comments">💬 192</span><span class="by">👤 davidbarker</span></div><div class="summary"><p>Images 2.6 is a new image-generation feature available in ChatGPT, Codex, and the API that creates visuals 50% faster and supports animated GIFs. It offers Flare and Sunburst models for quick, polished, or highly detailed images, with improved consistency for characters, products, and brand elements. The update helps marketers, creators, and developers turn ideas into professional visuals and motion graphics more efficiently.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50372945" target="_blank">HN Discussion (192)</a></div><div class="source">🔗 <a href="https://openai.com/index/introducing-images-2-6/" target="_blank">https://openai.com/index/introducing-images-2-6/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://stepshots.com/css-feature-clips" target="_blank">Replacing homepage demo media with looping HTML and CSS</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 8</span><span class="by">👤 hauju</span></div><div class="summary"><p>The article presents a free method for replacing homepage demo videos or GIFs with lightweight, looping product demos built entirely in HTML and CSS. It provides a prompt for coding agents that generates a 10-second, JavaScript-free mock UI clip using real product labels, theme tokens, accessible markup, and reduced-motion support. The technique is framework-agnostic and includes testing steps to verify layout, timing, and accessibility.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50364284" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://stepshots.com/css-feature-clips" target="_blank">https://stepshots.com/css-feature-clips</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://ziglang.org/devlog/2026/#2026-10-24" target="_blank">Partial Operator Precedence</a></h2><div class="meta"><span class="score">⭐ 60</span><span class="comments">💬 31</span><span class="by">👤 tosh</span></div><div class="summary"><p>Zig has implemented partial operator precedence, requiring parentheses when combinations of operators have ambiguous evaluation order. Common expressions such as arithmetic and comparison chains can remain parenthesis-free, reducing the number of precedence rules programmers must memorize. Existing code can be updated manually or with zig fmt --upgrade, and the compiler will flag any remaining ambiguous cases.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50340195" target="_blank">HN Discussion (31)</a></div><div class="source">🔗 <a href="https://ziglang.org/devlog/2026/#2026-10-24" target="_blank">https://ziglang.org/devlog/2026/#2026-10-24</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank">Kimi K3.1 Pro model weights are out</a></h2><div class="meta"><span class="score">⭐ 551</span><span class="comments">💬 155</span><span class="by">👤 abrarthought</span></div><div class="summary"><p>Moonshot AI has released the open-weight Kimi K3.1 Pro, a natively multimodal agentic model built on a 2.8-trillion-parameter mixture-of-experts architecture with 104 billion active parameters and a one-million-token context window. It is designed for long-context reasoning and shows strong performance in coding, 3D creation, financial research, factual accuracy, and other agentic tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50366999" target="_blank">HN Discussion (155)</a></div><div class="source">🔗 <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro" target="_blank">https://huggingface.co/moonshotai/Kimi-K3.1-Pro</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.ricursive.com/ripple" target="_blank">Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding</a></h2><div class="meta"><span class="score">⭐ 305</span><span class="comments">💬 109</span><span class="by">👤 Philpax</span></div><div class="summary"><p>Ripple-65B Preview is an open-weight language model from Ricursive Intelligence that achieves U.S. open-weight state-of-the-art performance on agentic coding, scoring 80.52 on TerminalBench 2.1. It was pretrained on 12 trillion tokens with up to 1 million context length and trained for about $32 million, using efficient synthetic data, reinforcement learning, and a co-designed architecture for fast, low-cost deployment.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50369925" target="_blank">HN Discussion (109)</a></div><div class="source">🔗 <a href="https://www.ricursive.com/ripple" target="_blank">https://www.ricursive.com/ripple</a></div></div></div>
+
+        <footer>
+            <p>2026-11-05</p>
+        </footer>
+    </div>
+</body>
+</html>

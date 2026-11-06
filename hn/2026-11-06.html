@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-06</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/ppmpreetham/BUI" target="_blank">Blender's UI and Runtime: Much Faster Than GPUI</a></h2><div class="meta"><span class="score">⭐ 274</span><span class="comments">💬 109</span><span class="by">👤 ppmpreetham</span></div><div class="summary"><p>BUI is a project that decouples Blender's battle-tested user interface and turns it into a standalone UI library with a small C core. The kit holds every widget in a tree, handles layout, input and drawing natively on CPU or GPU, and thin bindings let Python, Rust, JavaScript (React/Svelte), C++, and Dear ImGui talk to it. The HN post highlights that the result is much faster than GPUI, with benchmarks covering startup time, frame times, and battery usage.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50389333" target="_blank">HN Discussion (109)</a></div><div class="source">🔗 <a href="https://github.com/ppmpreetham/BUI" target="_blank">https://github.com/ppmpreetham/BUI</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105" target="_blank">Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS</a></h2><div class="meta"><span class="score">⭐ 154</span><span class="comments">💬 99</span><span class="by">👤 microtonal</span></div><div class="summary"><p>A report in the PrivSec banking-apps compatibility tracker documents that Dutch ASN Bank's mobile app blocks non-Google Android builds, including GrapheneOS, relying on SafetyNet/Play Integrity checks. HN commenters — many of whom use GrapheneOS for privacy — reacted sharply, calling the lock-in hypocritical for a bank that brands itself as idealist, and debated whether EU open-banking rules (PSD2) could ever force banks to support third-party clients.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50390124" target="_blank">HN Discussion (99)</a></div><div class="source">🔗 <a href="https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105" target="_blank">https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://github.com/anthropics/claude-code/issues/107757" target="_blank">Claude Code sends your email address to websites</a></h2><div class="meta"><span class="score">⭐ 1222</span><span class="comments">💬 387</span><span class="by">👤 motoroco</span></div><div class="summary"><p>Users report that Claude Code silently sends the email address associated with their Anthropic account to external websites as part of API calls. The main trigger appears to be the SEC EDGAR API, whose documentation requires an email in the User-Agent header — so Claude dutifully fills it in without asking. The HN discussion treats this as a privacy and prompt-injection concern: an agent with network access will happily leak account details to whatever endpoint requests them, and approval-gating is the only realistic mitigation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50385272" target="_blank">HN Discussion (387)</a></div><div class="source">🔗 <a href="https://github.com/anthropics/claude-code/issues/107757" target="_blank">https://github.com/anthropics/claude-code/issues/107757</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://jhr.pensoft.net/articles.php?id=9096" target="_blank">Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)</a></h2><div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 14</span><span class="by">👤 hitekker</span></div><div class="summary"><p>The article examines how wood ants survive when trapped in a large pitfall, a situation that pushes their colony beyond normal survival limits. It explores the ants' behavioral and physiological responses to confinement, resource scarcity, and altered nest conditions. The findings highlight the resilience and adaptive strategies of wood ant colonies under extreme stress.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50390525" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://jhr.pensoft.net/articles.php?id=9096" target="_blank">https://jhr.pensoft.net/articles.php?id=9096</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://apps.metaebene.me/en/kugelblitz" target="_blank">Kugelblitz – Mac-Native Google Earth Alternative</a></h2><div class="meta"><span class="score">⭐ 108</span><span class="comments">💬 27</span><span class="by">👤 luoc</span></div><div class="summary"><p>Kugelblitz is a Mac-native mapping application that presents the Earth as a 3D globe and flat atlas using freely available geodata. It overlays imagery, road, and topographic maps on real terrain, supports multiple projections, and lets users explore open map services without an account. Its built-in tile server streams OpenStreetMap data on demand, while cached data can be shared across local network instances.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50389370" target="_blank">HN Discussion (27)</a></div><div class="source">🔗 <a href="https://apps.metaebene.me/en/kugelblitz" target="_blank">https://apps.metaebene.me/en/kugelblitz</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.ycombinator.com/companies/mbodi-ai/jobs" target="_blank">Mbodi AI (YC P25) Is Hiring Research and Robotic Engineers</a></h2><div class="meta"><span class="score">⭐ 1</span><span class="comments">💬 0</span><span class="by">👤 chitianhao</span></div><div class="summary"><p>Mbodi AI, a Y Combinator-backed startup, is hiring research and robotics engineers to build an embodied AI platform that lets industrial robots learn new skills through natural language. The company aims to combine generative AI with real-world robotics, enabling users to teach robots tasks and deploy them reliably in production. It is seeking experienced engineers in New York to advance its work with industrial partners.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50391342" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.ycombinator.com/companies/mbodi-ai/jobs" target="_blank">https://www.ycombinator.com/companies/mbodi-ai/jobs</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://sshhole.com" target="_blank">sshole</a></h2><div class="meta"><span class="score">⭐ 2749</span><span class="comments">💬 665</span><span class="by">👤 josemrb</span></div><div class="summary"><p>OpenSSH on musl-based Linux systems has a security flaw in which accounts configured to reject passwords can be logged into with any password longer than 256 characters. The issue stems from musl's crypt function returning an unmatchable asterisk on failure, which can coincidentally match the asterisk used to disable password authentication. As a result, root, key-only deploy, LDAP, and certain default cloud images may be exposed to unauthorized access.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50378228" target="_blank">HN Discussion (665)</a></div><div class="source">🔗 <a href="https://sshhole.com" target="_blank">https://sshhole.com</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.cve.org/CVERecord?id=CVE-2026-83844" target="_blank">MS Paint Remote Code Execution Vulnerability</a></h2><div class="meta"><span class="score">⭐ 571</span><span class="comments">💬 207</span><span class="by">👤 kuberwastaken</span></div><div class="summary"><p>Microsoft has disclosed a remote code execution vulnerability in Windows Paint, identified as CVE-2026-83844. The flaw is an out-of-bounds read that could allow an unauthorized attacker to execute code over a network. The vulnerability is classified under CWE-125.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50384233" target="_blank">HN Discussion (207)</a></div><div class="source">🔗 <a href="https://www.cve.org/CVERecord?id=CVE-2026-83844" target="_blank">https://www.cve.org/CVERecord?id=CVE-2026-83844</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/Unleash/unleash" target="_blank">We've built an open-source feature flag server for 11 years</a></h2><div class="meta"><span class="score">⭐ 3</span><span class="comments">💬 0</span><span class="by">👤 ivarconr</span></div><div class="summary"><p>Unleash is the most popular open-source feature flag server on GitHub, and the post marks roughly 11 years of the project being built and operated by its maintainers. It supports 15 official client/server SDKs plus a dozen community ones, works with any language and framework, and lets teams roll out features gradually, test with real production traffic, and kill switches without new deploys.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50391145" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://github.com/Unleash/unleash" target="_blank">https://github.com/Unleash/unleash</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://pwn.college/" target="_blank">Pwn.college</a></h2><div class="meta"><span class="score">⭐ 177</span><span class="comments">💬 23</span><span class="by">👤 tripdout</span></div><div class="summary"><p>Pwn.college is a hands-on cybersecurity learning platform where users progress through belt-based challenges by working directly with terminals, computing fundamentals, and networking. The site is maintained by a team at Arizona State University and supports university cybersecurity curricula. It asks participants not to publish challenge writeups or solution videos to preserve its educational value.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50387796" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://pwn.college/" target="_blank">https://pwn.college/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-06</p>
+        </footer>
+    </div>
+</body>
+</html>

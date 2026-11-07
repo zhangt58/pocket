@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-07</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph" target="_blank">Every Mac comes with an (undocumented) family member classifier</a></h2><div class="meta"><span class="score">⭐ 119</span><span class="comments">💬 40</span><span class="by">👤 infwhispers</span></div><div class="summary"><p>Modern Macs include undocumented background daemons that build a personal knowledge graph by analyzing local data such as contacts, calendars, photos, messages, mail, location, and screen time. The graph stores relationships between people, places, apps, and events, including inferred family ties, in a local database that can be queried by on-device AI features. Researchers have examined the system, released a tool for inspecting it, and warned that a compromised knowledge base could create serious privacy and safety risks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50403097" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph" target="_blank">https://8rank.ai/game/apple-intelligence-personal-knowledge-graph</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://mitchellh.com/writing/libghostty-1-0" target="_blank">Libghostty 1.0</a></h2><div class="meta"><span class="score">⭐ 708</span><span class="comments">💬 116</span><span class="by">👤 mfiguiere</span></div><div class="summary"><p>libghostty-vt 1.0 is a stable, portable C library for terminal emulation extracted from Ghostty, with a fixed C ABI and semantic versioning. It is now used in production by many tools and products, including JetBrains IDEs, Neovim, KDE experiments, and various developer utilities. The release marks its maturity as a broadly adopted terminal emulation foundation beyond the Ghostty application.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50399933" target="_blank">HN Discussion (116)</a></div><div class="source">🔗 <a href="https://mitchellh.com/writing/libghostty-1-0" target="_blank">https://mitchellh.com/writing/libghostty-1-0</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://uploadyourram.org" target="_blank">Upload Your RAM</a></h2><div class="meta"><span class="score">⭐ 86</span><span class="comments">💬 53</span><span class="by">👤 susanthenerd</span></div><div class="summary"><p>The article satirizes the idea that unused computer RAM is a moral burden by proposing a fictional “RAM upload” service. It suggests people could transfer idle RAM from their devices to a better cause, relieving guilt over hardware they already bought.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50403214" target="_blank">HN Discussion (53)</a></div><div class="source">🔗 <a href="https://uploadyourram.org" target="_blank">https://uploadyourram.org</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://nfsu2.xyz/" target="_blank">Need for Speed Underground 2 online in the browser</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 8</span><span class="by">👤 fluxusars</span></div><div class="summary"><p>A fan-made project brings Need for Speed Underground 2 to web browsers by recompiling the original PC game for Chrome and Firefox. It supports widescreen play at up to 120 fps, free roam, online races with friends, and multiple control options including controllers, wheels, and touch.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50403052" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://nfsu2.xyz/" target="_blank">https://nfsu2.xyz/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://hightouch.com/blog/llm-judges-identity-resolution" target="_blank">A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</a></h2><div class="meta"><span class="score">⭐ 501</span><span class="comments">💬 118</span><span class="by">👤 theanomaly</span></div><div class="summary"><p>The article evaluates LLMs and decision models for grading identity resolution results, finding that a hybrid of Jev and Opus reaches frontier-level accuracy at more than four times lower cost. Although Luna initially outperforms Jev, Jev’s better-calibrated confidence makes it more effective in the hybrid setup, while frontier models remain more accurate than decision models alone. Decision models are much cheaper and faster but still lag Opus by about six percentage points on harder benchmarks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50397429" target="_blank">HN Discussion (118)</a></div><div class="source">🔗 <a href="https://hightouch.com/blog/llm-judges-identity-resolution" target="_blank">https://hightouch.com/blog/llm-judges-identity-resolution</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817" target="_blank">Tesla to wind down Cybertruck production</a></h2><div class="meta"><span class="score">⭐ 1034</span><span class="comments">💬 1884</span><span class="by">👤 PLenz</span></div><div class="summary"><p>Tesla will wind down Cybertruck production at its Texas plant to prioritize output of its Cybercab robotaxi model. The angular pickup has sold poorly and was limited to few markets because of its design and safety regulations. The move reflects Tesla's broader shift toward autonomous vehicles and AI-driven robotics.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50391456" target="_blank">HN Discussion (1884)</a></div><div class="source">🔗 <a href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817" target="_blank">https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.ampup.ai/companybrain" target="_blank">Enterprise Brain – Memory that learns from work</a></h2><div class="meta"><span class="score">⭐ 13</span><span class="comments">💬 0</span><span class="by">👤 irodov_rg</span></div><div class="summary"><p>Enterprise Brain is an enterprise memory system that gives AI agents shared, versioned context built from existing company catalogs and learned from task outcomes. It connects what agents knew and did to results, turning graded experience into reusable guidance while preserving permissions and audit trails. The article reports improved performance across incident diagnosis, CRM, code review, and other benchmarks compared with baseline approaches.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50357767" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.ampup.ai/companybrain" target="_blank">https://www.ampup.ai/companybrain</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://acid.vegas/blog/the-port-that-does-not-exist/" target="_blank">Port 0: The Port That Does Not Exist</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 4</span><span class="by">👤 NewCzech</span></div><div class="summary"><p>Port 0 is technically reserved and normally used by operating systems as a request for an ephemeral port, but network packets can still carry it as a destination. Because most tools and scanners ignore it, the article describes a full IPv4 scan that found hidden services, including an IRC network, listening on port 0. The findings show that this overlooked port can be used to conceal network activity.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50403063" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://acid.vegas/blog/the-port-that-does-not-exist/" target="_blank">https://acid.vegas/blog/the-port-that-does-not-exist/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank">The Components of Agent Memory</a></h2><div class="meta"><span class="score">⭐ 60</span><span class="comments">💬 31</span><span class="by">👤 geoffbp</span></div><div class="summary"><p>The article explains how AI agents can build memory by combining immediate logs with offline consolidation, similar to how human brains replay experiences during sleep. It introduces memory notes and salience tagging as ways for Claude to store useful facts, and describes dreaming as a process that reorganizes past interactions into more reliable long-term knowledge. The key idea is that agent memory works best when it predicts what future tasks will need and integrates that knowledge across sessions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50402212" target="_blank">HN Discussion (31)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank">https://www.anthropic.com/research/components-of-agent-memory</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals" target="_blank">A barbarian tribe's mythic origin story is true, ancient DNA reveals</a></h2><div class="meta"><span class="score">⭐ 121</span><span class="comments">💬 86</span><span class="by">👤 benbreen</span></div><div class="summary"><p>The post likely discusses new ancient DNA research showing that a legendary founding myth of a historical “barbarian” tribe has a factual basis. It probably explains how genetic evidence links the group’s origins to a specific ancestral population or migration described in its origin story.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50401740" target="_blank">HN Discussion (86)</a></div><div class="source">🔗 <a href="https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals" target="_blank">https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story...</a></div></div></div>
+
+        <footer>
+            <p>2026-11-07</p>
+        </footer>
+    </div>
+</body>
+</html>

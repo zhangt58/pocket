@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-08</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://krthr.co/person-of-interest/" target="_blank">Person of Interest</a></h2><div class="meta"><span class="score">⭐ 36</span><span class="comments">💬 16</span><span class="by">👤 krthr</span></div><div class="summary"><p>The author revisits the TV series Person of Interest and finds its themes of surveillance and artificial intelligence more relevant than when it first aired. The show sparks nostalgia for early internet culture and tech communities, while also highlighting how close its fictional Machine now seems to real-world technology.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50412318" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://krthr.co/person-of-interest/" target="_blank">https://krthr.co/person-of-interest/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://aworkinglibrary.com/writing/petered" target="_blank">Petered (what happens after the Peter Principle)</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 10</span><span class="by">👤 adrianhoward</span></div><div class="summary"><p>The article argues that the Peter Principle is not a stable endpoint: people promoted beyond their competence face career pressure that can drive them to perform risky or unethical tasks, sabotage others, or create vacancies to preserve their positions. This dynamic turns such leaders into real imposters who rely on obscurity and busyness to mask their inability to fulfill their roles. It also suggests that imposter syndrome can shift blame onto individuals while obscuring the actual imposters and systemic structures that create them.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50412152" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://aworkinglibrary.com/writing/petered" target="_blank">https://aworkinglibrary.com/writing/petered</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://caleb.software/posts/claude-to-pi.html" target="_blank">Goodbye Claude, Hello Pi</a></h2><div class="meta"><span class="score">⭐ 366</span><span class="comments">💬 225</span><span class="by">👤 karagenit</span></div><div class="summary"><p>A longtime Claude Code user explains why they are moving their main coding setup to Pi after accumulating frustrations with the tool. Key complaints include late support for AGENTS.md, limitations when connecting multiple sessions to VS Code, problems in the official GUI extension, and frequent unstable changes driven by new enterprise-oriented features. The post frames the switch as a preference for a more stable, less feature-bloated development harness.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50410107" target="_blank">HN Discussion (225)</a></div><div class="source">🔗 <a href="https://caleb.software/posts/claude-to-pi.html" target="_blank">https://caleb.software/posts/claude-to-pi.html</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://linebender.org/blog/jit-bitmap-text/" target="_blank">JIT bitmap text rendering for microcontrollers</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 0</span><span class="by">👤 dmit</span></div><div class="summary"><p>The article describes a high-performance bitmap text rendering technique for microcontrollers such as the RP2350, using just-in-time generated code to draw strings directly while racing the video beam. It avoids large framebuffers and fixed character cells, enabling proportional spacing and kerning with low latency. The approach is implemented in a custom assembly-oriented language and integrated into a display-list renderer.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50412072" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://linebender.org/blog/jit-bitmap-text/" target="_blank">https://linebender.org/blog/jit-bitmap-text/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://clj.rs/" target="_blank">Clj.rs – a Clojure dialect implemented in Rust</a></h2><div class="meta"><span class="score">⭐ 75</span><span class="comments">💬 11</span><span class="by">👤 simonpure</span></div><div class="summary"><p>Clj.rs is an experimental Clojure dialect built for the Rust ecosystem, offering a Lisp runtime with persistent data structures, macros, and native Rust interop. It can run compiled or interpreted and is intended as a foundation for agentic coding tools. The project is in an early alpha stage and may have rough edges.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50366902" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://clj.rs/" target="_blank">https://clj.rs/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://blog.bosscher.ch/posts/openstick/" target="_blank">What I run on my $10 USD OpenStick homelab</a></h2><div class="meta"><span class="score">⭐ 617</span><span class="comments">💬 114</span><span class="by">👤 LaurensBER</span></div><div class="summary"><p>The author uses a small LTE-enabled Linux device as a silent, low-power home server running Debian, systemd, and Podman. It hosts lightweight self-hosted services such as CastSponsorSkip to skip YouTube ads on Chromecast devices, AdGuard Home for network-wide DNS ad and tracker blocking, and Zeroclaw, an AI agent platform with multiple chat integrations. The setup shows how a compact gadget can provide useful homelab functionality with minimal resource use.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50406670" target="_blank">HN Discussion (114)</a></div><div class="source">🔗 <a href="https://blog.bosscher.ch/posts/openstick/" target="_blank">https://blog.bosscher.ch/posts/openstick/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.lorekit.io/blog/open-agent-memory-format" target="_blank">Agent memory needs its OpenTelemetry moment</a></h2><div class="meta"><span class="score">⭐ 62</span><span class="comments">💬 60</span><span class="by">👤 mthines</span></div><div class="summary"><p>Agent memory is fragmented across incompatible formats such as repository instruction files, agent-managed memory files, and MCP-based memory servers, so lessons learned by one tool cannot be used by another. The article argues the field needs a shared standard, similar to OpenTelemetry, covering a common data model, semantic conventions, protocol, and reference implementations. With formats still young and neutral standards bodies emerging, now is the time for the community to agree on an open agent memory format.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50411467" target="_blank">HN Discussion (60)</a></div><div class="source">🔗 <a href="https://www.lorekit.io/blog/open-agent-memory-format" target="_blank">https://www.lorekit.io/blog/open-agent-memory-format</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank">Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files</a></h2><div class="meta"><span class="score">⭐ 434</span><span class="comments">💬 292</span><span class="by">👤 shmulc</span></div><div class="summary"><p>Researchers found that Claude Code's "don't ask again" permission feature can store full shell commands, including passwords, API keys, and connection strings, in local settings files that developers sometimes commit to public GitHub repositories. The study identified 1,122 public copies of Claude Code settings files containing real secrets, with thousands of exposed credentials across nearly 2,000 repositories and 63 organizations. The issue arises because the saved permission rule includes the secret-bearing command, and the file is not reliably protected from being committed, so affected teams should search their repos and rotate any exposed credentials.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50407882" target="_blank">HN Discussion (292)</a></div><div class="source">🔗 <a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://readonlymemo.com/legend-of-xanadu-pc-engine-fan-translation-interview-making-of/" target="_blank">Finding Xanadu: Inside a JRPG classic translation 15 years in the making</a></h2><div class="meta"><span class="score">⭐ 29</span><span class="comments">💬 0</span><span class="by">👤 speckx</span></div><div class="summary"><p>The article explores the lengthy fan effort to translate the classic JRPG The Legend of Xanadu and its sequel into English. It follows the project's early excitement, technical obstacles, and collaborative persistence as the translation finally reaches release. The piece highlights how dedicated volunteers carried the work forward over many years.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50378974" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://readonlymemo.com/legend-of-xanadu-pc-engine-fan-translation-interview-making-of/" target="_blank">https://readonlymemo.com/legend-of-xanadu-pc-engine-fan-translation-interview...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.itsnicethat.com/news/typeland-shakespeares-globe-amifer-folio-graphic-design-090323" target="_blank">New typeface using intricate designs from Shakespeare's First Folio (2023)</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 9</span><span class="by">👤 bryanrasmussen</span></div><div class="summary"><p>A new typeface draws on the intricate decorative designs found in Shakespeare's First Folio. It adapts the historical ornamentation into modern letterforms, creating a distinctive font inspired by the classic publication.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50371360" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://www.itsnicethat.com/news/typeland-shakespeares-globe-amifer-folio-graphic-design-090323" target="_blank">https://www.itsnicethat.com/news/typeland-shakespeares-globe-amifer-folio-gra...</a></div></div></div>
+
+        <footer>
+            <p>2026-11-08</p>
+        </footer>
+    </div>
+</body>
+</html>

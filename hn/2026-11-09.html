@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-09</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/" target="_blank">Fun things to do with your VM/370 CE machine – Fun with big computers</a></h2><div class="meta"><span class="score">⭐ 36</span><span class="comments">💬 2</span><span class="by">👤 rbanffy</span></div><div class="summary"><p>This article explains how to run and explore a VM/370 Community Edition mainframe, an open-source enhanced version of IBM’s VM/370 operating system. It covers the easiest setup using Docker or Podman, alternative ways to access a mainframe, and how to connect with a 3270 terminal emulator to log in and begin using the system.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50423569" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/" target="_blank">https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://arxiv.org/abs/2610.14162" target="_blank">Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation</a></h2><div class="meta"><span class="score">⭐ 109</span><span class="comments">💬 13</span><span class="by">👤 theanonymousone</span></div><div class="summary"><p>This post likely discusses a text-generation approach that predicts higher-level concepts instead of individual tokens, allowing a model to draft content in parallel and then refine it into fluent text. It suggests a faster alternative to standard autoregressive generation by using a coarse-to-fine modeling process.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50422168" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://arxiv.org/abs/2610.14162" target="_blank">https://arxiv.org/abs/2610.14162</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://ketchup3d.github.io/app/" target="_blank">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a></h2><div class="meta"><span class="score">⭐ 543</span><span class="comments">💬 161</span><span class="by">👤 dcoulmbe</span></div><div class="summary"><p>KetchUp, also called BenchUp, is a free open-source 3D modeling tool built in Rust for planning woodworking and furniture projects. It runs in a desktop browser using WebGPU or WebGL2 and can also be used as a native app on Windows, macOS, and Linux. Users can sketch shapes, add exact dimensions, organize components, save local projects, import SketchUp files, and export OBJ geometry.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50418176" target="_blank">HN Discussion (161)</a></div><div class="source">🔗 <a href="https://ketchup3d.github.io/app/" target="_blank">https://ketchup3d.github.io/app/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/" target="_blank">Unlocking any car from X brand in most of the world</a></h2><div class="meta"><span class="score">⭐ 413</span><span class="comments">💬 184</span><span class="by">👤 infosecau</span></div><div class="summary"><p>Researchers examined a major automaker's connected car platform and found an exposed administrative tool accessible on the public internet. Its JavaScript bundle contained hardcoded API keys that allowed access to internal APIs with little or no authentication. These flaws could let an attacker look up customer accounts and potentially unlock vehicles using only a license plate or VIN.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50419215" target="_blank">HN Discussion (184)</a></div><div class="source">🔗 <a href="https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/" target="_blank">https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://datahyena.com/research/a-chipmaker-was-in-one-of-every-eleven-100m-rounds/" target="_blank">Nvidia was in 1 in 11 startup rounds over $100M last year</a></h2><div class="meta"><span class="score">⭐ 16</span><span class="comments">💬 8</span><span class="by">👤 ghostfoxgod</span></div><div class="summary"><p>Nvidia and its venture arm NVentures participated in 79 of the year's 903 startup rounds of $100 million or more, making the chipmaker part of roughly one in eleven large raises. Nvidia alone appeared in 65 rounds, more than any other corporate investor and behind only Sequoia and Andreessen Horowitz among all investors. The data also shows corporate investors were present in 38% of these large rounds, with Nvidia far ahead of Salesforce and GV.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50392256" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://datahyena.com/research/a-chipmaker-was-in-one-of-every-eleven-100m-rounds/" target="_blank">https://datahyena.com/research/a-chipmaker-was-in-one-of-every-eleven-100m-ro...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists" target="_blank">I'm not convinced the AI bubble exists</a></h2><div class="meta"><span class="score">⭐ 344</span><span class="comments">💬 573</span><span class="by">👤 matteoraso</span></div><div class="summary"><p>The author argues that the widely assumed AI bubble is not inevitable, because much of the industry's massive spending is one-time infrastructure investment rather than ongoing operating cost. Once data centers are built, AI services can be highly profitable, and the resulting debt may be manageable over time, making a collapse less certain than popular narratives suggest.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50418975" target="_blank">HN Discussion (573)</a></div><div class="source">🔗 <a href="https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists" target="_blank">https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-no...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://declarative-dragging.github.io/" target="_blank">Declarative Dragging</a></h2><div class="meta"><span class="score">⭐ 586</span><span class="comments">💬 76</span><span class="by">👤 smusamashah</span></div><div class="summary"><p>Declarative dragging is a model-driven approach to building drag-and-drop interfaces where developers specify the future states an element can reach, rather than manually coding geometry, feedback, and animation. The Dragology library implements this idea for web-based SVG interfaces, using speculative rendering to create smooth, composable interactions with less low-level work.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50368481" target="_blank">HN Discussion (76)</a></div><div class="source">🔗 <a href="https://declarative-dragging.github.io/" target="_blank">https://declarative-dragging.github.io/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://psalm.dev/articles/psalm-7" target="_blank">Psalm 7 release: PHP security&static analysis software</a></h2><div class="meta"><span class="score">⭐ 39</span><span class="comments">💬 20</span><span class="by">👤 danogentili</span></div><div class="summary"><p>Psalm 7 is a major release of the PHP static analysis and security tool, making security taint analysis enabled by default and up to ten times faster through combined type checking, security analysis, and dead code detection. It adds deeper taint tracking for NoSQL, LLM prompt, and URL injection, a new purity model, graph-based dead code detection, template defaults, and support for PHP 8.5 and 8.6. The release also includes built-in framework plugins and daily updates to deliver features and fixes more quickly.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50406107" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://psalm.dev/articles/psalm-7" target="_blank">https://psalm.dev/articles/psalm-7</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://chimera-vocal-synth.vercel.app/" target="_blank">Chimera Vocal Synth</a></h2><div class="meta"><span class="score">⭐ 244</span><span class="comments">💬 36</span><span class="by">👤 nmstoker</span></div><div class="summary"><p>Chimera is a vocal synthesizer that generates sounds by simulating airflow through a virtual throat, mouth, and nose. Users can shape the voice by moving the tongue, lips, or jaw, or by playing keys, with controls for pitch, breath, vocal fold tension, and vibrato. The project also visualizes the vocal tract, resonances, and vowel formants.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50418182" target="_blank">HN Discussion (36)</a></div><div class="source">🔗 <a href="https://chimera-vocal-synth.vercel.app/" target="_blank">https://chimera-vocal-synth.vercel.app/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://mailroute.net/blog/outlook-rejecting-email-without-dmarc" target="_blank">Outlook.com is rejecting email from domains without DMARC</a></h2><div class="meta"><span class="score">⭐ 426</span><span class="comments">💬 302</span><span class="by">👤 xmddmx</span></div><div class="summary"><p>Microsoft's Outlook.com, Hotmail, Live, and MSN mail services have begun rejecting some messages from domains that lack a DMARC record, even for low-volume senders. The issue can cause intermittent bounces without clear notice, making it easy to miss. Adding a single DMARC DNS TXT record, starting with v=DMARC1; p=none, can resolve the problem if SPF or DKIM is aligned with the From address.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50416158" target="_blank">HN Discussion (302)</a></div><div class="source">🔗 <a href="https://mailroute.net/blog/outlook-rejecting-email-without-dmarc" target="_blank">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</a></div></div></div>
+
+        <footer>
+            <p>2026-11-09</p>
+        </footer>
+    </div>
+</body>
+</html>

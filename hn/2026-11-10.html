@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-10</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/" target="_blank">Amazon saves millions by replacing Sonnet 4.6 with Strands Decider</a></h2><div class="meta"><span class="score">⭐ 368</span><span class="comments">💬 126</span><span class="by">👤 aloukissas</span></div><div class="summary"><p>Amazon is reported to have saved millions by replacing Sonnet 4.6 with Strands Decider. The change points to a shift toward a more cost-efficient decision-making component in its agent systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50436640" target="_blank">HN Discussion (126)</a></div><div class="source">🔗 <a href="https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/" target="_blank">https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-st...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://connect.queenslibrary.org/" target="_blank">Queens Public library under ransomware attack e-borrowing suspended</a></h2><div class="meta"><span class="score">⭐ 56</span><span class="comments">💬 37</span><span class="by">👤 rustyhancock</span></div><div class="summary"><p>Queens Public Library is experiencing a significant network outage caused by a ransomware attack, disrupting its website, mobile app, digital media services, and many public computers. All locations remain open for borrowing and returning materials, but renewals and e-borrowing are unavailable while systems are restored.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50437790" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://connect.queenslibrary.org/" target="_blank">https://connect.queenslibrary.org/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank">Claude Fable 5.2 and Mythos 5.2</a></h2><div class="meta"><span class="score">⭐ 659</span><span class="comments">💬 840</span><span class="by">👤 lairv</span></div><div class="summary"><p>Claude Fable 5.2 and Mythos 5.2 are upgraded versions of the same underlying model, designed for demanding technical work with stronger coding, reasoning, and vision capabilities. They are intended for ambitious, open-ended tasks, with Fable broadly available and Mythos accessible through verification programs for beneficial cybersecurity and biomedical applications. The models also include enhanced safety and alignment testing, including protections against misuse and distillation attacks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50429068" target="_blank">HN Discussion (840)</a></div><div class="source">🔗 <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank">https://www.anthropic.com/claude-fable-and-mythos-5-2</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://postalpro.usps.com/zcb" target="_blank">USPS now offers official ZIP Code boundary polygons</a></h2><div class="meta"><span class="score">⭐ 636</span><span class="comments">💬 320</span><span class="by">👤 munro</span></div><div class="summary"><p>The USPS is making official ZIP Code boundary polygon data available. This provides precise geographic outlines of ZIP Codes for mapping, analysis, and location-based applications.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50431058" target="_blank">HN Discussion (320)</a></div><div class="source">🔗 <a href="https://postalpro.usps.com/zcb" target="_blank">https://postalpro.usps.com/zcb</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/fossil-co2-emissions-decrease-in-2026/" target="_blank">Fossil CO2 emissions decrease by 0.4% in 2026</a></h2><div class="meta"><span class="score">⭐ 26</span><span class="comments">💬 14</span><span class="by">👤 giuliomagnifico</span></div><div class="summary"><p>Global fossil fuel CO2 emissions are projected to fall by 0.4% in 2026, driven by rapid growth in solar and wind power and a short-term oil decline linked to the Iran conflict. However, total CO2 emissions including land-use change are expected to rise to 43.3 billion tonnes, and clean-energy expansion is still not fast enough to ensure a lasting decline. The remaining carbon budget for limiting warming to 1.5°C is now about 150 billion tonnes, equivalent to less than four years of emissions at current rates.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50437752" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/fossil-co2-emissions-decrease-in-2026/" target="_blank">https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/fossil-c...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://maurycyz.com/projects/fading/" target="_blank">Your TV can see through walls</a></h2><div class="meta"><span class="score">⭐ 148</span><span class="comments">💬 51</span><span class="by">👤 Curiositry</span></div><div class="summary"><p>A simple radio receiver can detect movement behind walls by observing how a person's body reflects and interferes with a wideband TV signal. When the reflected signal cancels the direct signal at certain frequencies, the resulting fading pattern changes as the person moves, allowing the receiver to infer motion and even estimate walking speed. The same principle can be applied to other wideband signals such as WiFi or LTE.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50436410" target="_blank">HN Discussion (51)</a></div><div class="source">🔗 <a href="https://maurycyz.com/projects/fading/" target="_blank">https://maurycyz.com/projects/fading/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor" target="_blank">Fireworks AI security breach impacts Notion and their customers</a></h2><div class="meta"><span class="score">⭐ 67</span><span class="comments">💬 20</span><span class="by">👤 werrett</span></div><div class="summary"><p>A security breach at Fireworks AI, a third-party AI infrastructure vendor used by Notion, may have exposed unattributable Notion AI chat transcripts from fewer than one percent of workspaces. The exposed data did not include tool call results or information identifying users, workspaces, or companies, and no other workspace data was affected. Notion disabled the affected Insights feature, stopped using Fireworks for open-weight models, and is providing affected workspace owners access to review the impacted data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50437106" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor" target="_blank">https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/" target="_blank">AI usage generates a fragile codebase</a></h2><div class="meta"><span class="score">⭐ 65</span><span class="comments">💬 49</span><span class="by">👤 plun9</span></div><div class="summary"><p>The article argues that heavy reliance on AI coding tools can produce fragile, poorly maintained codebases. It identifies problems such as shallow tests, unnecessary complexity, reduced human understanding, and review pressure that allow technical debt to accumulate in large-scale software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50438318" target="_blank">HN Discussion (49)</a></div><div class="source">🔗 <a href="https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/" target="_blank">https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank">Locating the source of a mysterious beep</a></h2><div class="meta"><span class="score">⭐ 217</span><span class="comments">💬 100</span><span class="by">👤 bigwheels</span></div><div class="summary"><p>A developer created Beep Locator, a software system that turns several phones, tablets, and laptops into microphones to triangulate the source of an intermittent beep in a cluttered room. After calibrating device positions and confirming the beep’s frequency, the system narrowed the sound to within about 40 centimeters. The source turned out to be an old carbon monoxide detector that needed new batteries.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50434310" target="_blank">HN Discussion (100)</a></div><div class="source">🔗 <a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank">https://simonwillison.net/2026/Nov/9/mysterious-beeps/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.youtube.com/watch?v=PHOcTXYaMfg" target="_blank">Billion Watts in the Speaker [video]</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 10</span><span class="by">👤 Element_</span></div><div class="summary"><p>The post likely shares a video of a speaker or audio system being driven with an absurdly high power level, possibly as a demonstration of loudness or speaker limits. It probably shows the resulting sound, distortion, or physical effects from the extreme input.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50408336" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://www.youtube.com/watch?v=PHOcTXYaMfg" target="_blank">https://www.youtube.com/watch?v=PHOcTXYaMfg</a></div></div></div>
+
+        <footer>
+            <p>2026-11-10</p>
+        </footer>
+    </div>
+</body>
+</html>

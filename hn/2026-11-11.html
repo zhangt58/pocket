@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-11</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://bytecode.news/posts/2026/10/the-zig-project-is-going-nowhere" target="_blank">The Zig project is going nowhere</a></h2><div class="meta"><span class="score">⭐ 30</span><span class="comments">💬 22</span><span class="by">👤 luxgile</span></div><div class="summary"><p>The article argues that although Zig has strong technical design and talented contributors, its management decisions are making it an increasingly poor choice for users. It criticizes the project for persistent breaking changes, restrictive contribution policies, and a move away from GitHub, suggesting maintainers prioritize their own development philosophy over practical stability.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50452074" target="_blank">HN Discussion (22)</a></div><div class="source">🔗 <a href="https://bytecode.news/posts/2026/10/the-zig-project-is-going-nowhere" target="_blank">https://bytecode.news/posts/2026/10/the-zig-project-is-going-nowhere</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://gatezh.com/posts/macos-secure-enclave-ssh-keys/" target="_blank">Protecting SSH Keys with macOS Secure Enclave</a></h2><div class="meta"><span class="score">⭐ 230</span><span class="comments">💬 85</span><span class="by">👤 js2</span></div><div class="summary"><p>The article explains how to protect SSH private keys using the macOS Secure Enclave so they cannot be copied from disk or extracted even if the system is compromised. It compares alternatives such as YubiKey, password managers, and third-party apps, then walks through creating a non-exportable, Touch ID-protected key with the sc_auth command. Although the author finds the native setup cumbersome, it provides a working hardware-backed solution for SSH authentication.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50449748" target="_blank">HN Discussion (85)</a></div><div class="source">🔗 <a href="https://gatezh.com/posts/macos-secure-enclave-ssh-keys/" target="_blank">https://gatezh.com/posts/macos-secure-enclave-ssh-keys/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.bbc.co.uk/news/articles/cqkgjv4pj023o" target="_blank">Plane lifted into back garden as bunker takes shape</a></h2><div class="meta"><span class="score">⭐ 41</span><span class="comments">💬 28</span><span class="by">👤 edward</span></div><div class="summary"><p>A man in Derbyshire used a crane to lower the fuselage of a retired Boeing 737 into a large hole in his back garden. He is converting the aircraft section into an underground man cave that will connect to an existing room beneath his property. Volunteers helped with the project, which he documented online.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50424188" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://www.bbc.co.uk/news/articles/cqkgjv4pj023o" target="_blank">https://www.bbc.co.uk/news/articles/cqkgjv4pj023o</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://docodethatmatters.com/home-automation-overnight-success/" target="_blank">Smart home devices should work without the internet</a></h2><div class="meta"><span class="score">⭐ 1008</span><span class="comments">💬 360</span><span class="by">👤 skittleson</span></div><div class="summary"><p>The article argues that essential smart-home functions should operate locally without relying on vendor cloud services, using local hardware and protocols like MQTT and Node-RED. It presents practical rules for building a resilient home automation system, including keeping manual controls, centralizing configuration, requiring cloud devices to expose useful APIs, and making automations easy to change. The author shares examples from talks, such as a Tasmota sprinkler controller and garage door setup, to show how a home can keep working even when the internet is down.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50441707" target="_blank">HN Discussion (360)</a></div><div class="source">🔗 <a href="https://docodethatmatters.com/home-automation-overnight-success/" target="_blank">https://docodethatmatters.com/home-automation-overnight-success/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://neil.fraser.name/news/2026/11/10/" target="_blank">.name Grandfathered</a></h2><div class="meta"><span class="score">⭐ 867</span><span class="comments">💬 189</span><span class="by">👤 p4bl0</span></div><div class="summary"><p>Verisign has withdrawn its plan to terminate 22,000 .name domain names and associated email redirects after a prolonged dispute. New third-level .name registrations will be closed, but all existing domains and email redirects will continue indefinitely. The outcome was achieved through a coordinated effort involving domain owners, legal counsel, and supporters.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50442736" target="_blank">HN Discussion (189)</a></div><div class="source">🔗 <a href="https://neil.fraser.name/news/2026/11/10/" target="_blank">https://neil.fraser.name/news/2026/11/10/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50452404" target="_blank">Tinfoil (YC P25) is hiring an applied AI security engineer in San Francisco</a></h2><div class="meta"><span class="score">⭐ 1</span><span class="comments">💬 0</span><span class="by">👤 FrasiertheLion</span></div><div class="summary"><p>The post is a job announcement from Tinfoil, a Y Combinator startup, for an applied AI security engineer based in San Francisco. The role likely focuses on identifying and mitigating security risks in AI systems and models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50452404" target="_blank">HN Discussion (0)</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/" target="_blank">Scion is back and is going to sell a kei truck in America</a></h2><div class="meta"><span class="score">⭐ 490</span><span class="comments">💬 317</span><span class="by">👤 NaOH</span></div><div class="summary"><p>Toyota is reviving the Scion brand as a curiosity-focused subbrand and launching the KEI-01, an ultra-compact kei truck for the U.S. market. The vehicle is a rebadged low-speed utility truck with a 600-pound payload, four-wheel drive, and a top speed under 25 mph, making it suited for fleet, agricultural, and urban work rather than daily driving. It will initially be offered through a limited pilot program focused on fleet customers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50445401" target="_blank">HN Discussion (317)</a></div><div class="source">🔗 <a href="https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/" target="_blank">https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-ke...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://github.com/gmkurtzer/ginux" target="_blank">Greg Kurtzer's Ginux is now a userspace kernel</a></h2><div class="meta"><span class="score">⭐ 83</span><span class="comments">💬 40</span><span class="by">👤 d3Xt3r</span></div><div class="summary"><p>After finishing an experiment as a standalone Rust kernel that booted via UEFI and ran a Rocky Linux userspace, Ginux pivoted to a configurable userspace kernel that runs as an ordinary Linux process. It provides isolated Linux compatibility instances under an explicit, versioned contract, deciding per syscall whether to emulate, mediate, or deny it — deliberately breaking the full Linux ABI guarantee in a controlled, testable way rather than competing with Linux itself.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50450007" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://github.com/gmkurtzer/ginux" target="_blank">https://github.com/gmkurtzer/ginux</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html" target="_blank">A great old-timey game-programming hack (2013)</a></h2><div class="meta"><span class="score">⭐ 189</span><span class="comments">💬 40</span><span class="by">👤 palsecam</span></div><div class="summary"><p>The article recounts a 1980s game-programming story in which a side-scroller on a slow 8-bit PC ran too slowly despite highly optimized code. It explains the era’s graphics limitations, where programmers manually copied tile data byte by byte into a screen buffer using 6809 assembly tricks. The piece sets up a clever, unconventional optimization used to make the game playable.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50448921" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html" target="_blank">https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-ha...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/" target="_blank">Apple has new Mac app coming to make running local AI models easy</a></h2><div class="meta"><span class="score">⭐ 296</span><span class="comments">💬 268</span><span class="by">👤 linolevan</span></div><div class="summary"><p>Apple is reportedly developing a Mac app called Harbor that turns Macs into private AI inference servers for running local open-weight models. It aims to simplify setup and model management while allowing multiple Macs to connect over Thunderbolt 5 and pool memory for larger models or higher concurrency. The app is currently in private preview under Apple's Claris brand.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50446520" target="_blank">HN Discussion (268)</a></div><div class="source">🔗 <a href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/" target="_blank">https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-l...</a></div></div></div>
+
+        <footer>
+            <p>2026-11-11</p>
+        </footer>
+    </div>
+</body>
+</html>

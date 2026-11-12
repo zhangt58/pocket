@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-12</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://pron.github.io/posts/correctness-and-complexity" target="_blank">Why Writing Correct Software Is Hard</a></h2><div class="meta"><span class="score">⭐ 43</span><span class="comments">💬 6</span><span class="by">👤 AriFordsham</span></div><div class="summary"><p>The article argues that producing fully correct software is intrinsically difficult because programs and complete formal understanding are fundamentally at odds. It draws on computability and complexity theory, including Gödel’s incompleteness results, to show that no purely mathematical or tool-based approach can eliminate the essential cost of correctness. While verification tools can help, they cannot avoid the inherent limits of computation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50465352" target="_blank">HN Discussion (6)</a></div><div class="source">🔗 <a href="https://pron.github.io/posts/correctness-and-complexity" target="_blank">https://pron.github.io/posts/correctness-and-complexity</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md" target="_blank">Jane Street: Socratic Tutor</a></h2><div class="meta"><span class="score">⭐ 304</span><span class="comments">💬 73</span><span class="by">👤 tosh</span></div><div class="summary"><p>A skill spec from Jane Street's agent_skills repo defining structured Socratic tutoring: the agent first runs a short diagnostic to place the learner, then breaks the topic into 4-10 subskills tracked on a 0-5 skill map, teaches by asking one question at a time instead of lecturing, and uses spaced review with a final assessment. Triggered by explicit requests like "teach me" or "drill me", it is deliberately not used for one-off questions.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50438261" target="_blank">HN Discussion (73)</a></div><div class="source">🔗 <a href="https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md" target="_blank">https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://codeberg.org/wvhulle/bootvine" target="_blank">A live tree of systemd jobs on the boot console</a></h2><div class="meta"><span class="score">⭐ 129</span><span class="comments">💬 47</span><span class="by">👤 orhunp_</span></div><div class="summary"><p>The article describes a boot console tool that visualizes systemd startup jobs as a live tree, making the stages and dependencies of the boot process easier to follow. It is primarily written in Rust and includes features such as showing failed units with recent journal lines and displaying the boot tree on a dedicated virtual terminal.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50425017" target="_blank">HN Discussion (47)</a></div><div class="source">🔗 <a href="https://codeberg.org/wvhulle/bootvine" target="_blank">https://codeberg.org/wvhulle/bootvine</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028" target="_blank">Tim Peters has died</a></h2><div class="meta"><span class="score">⭐ 1256</span><span class="comments">💬 139</span><span class="by">👤 ayhanfuat</span></div><div class="summary"><p>Tim Peters, a legendary Python contributor, has died. He was a key early designer and gatekeeper who helped shape Python's clarity, readability, and culture, and authored the Zen of Python. His humor, humility, and technical precision left a lasting influence on the language and its community.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50450488" target="_blank">HN Discussion (139)</a></div><div class="source">🔗 <a href="https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028" target="_blank">https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.mcmillen.dev/sigbovik/" target="_blank">93% of paint splatters are valid Perl programs (2019)</a></h2><div class="meta"><span class="score">⭐ 461</span><span class="comments">💬 58</span><span class="by">👤 zenincognito</span></div><div class="summary"><p>The article describes a humorous research paper that investigates whether random paint splatters can be interpreted as valid Perl programs. Using OCR, it finds that 93% of the splatters parse as valid Perl, while the remaining ones are analyzed as counterexamples. The work also presents a gallery of the resulting paint-splatter programs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50459745" target="_blank">HN Discussion (58)</a></div><div class="source">🔗 <a href="https://www.mcmillen.dev/sigbovik/" target="_blank">https://www.mcmillen.dev/sigbovik/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability" target="_blank">Critical RCE Vulnerability in Apache HTTP Server</a></h2><div class="meta"><span class="score">⭐ 241</span><span class="comments">💬 115</span><span class="by">👤 soheilpro</span></div><div class="summary"><p>A critical remote code execution vulnerability, CVE-2026-119618, affects Apache HTTP Server deployments using HTTP/2 due to a race condition in the mod_http2 assign_headers function. An unauthenticated attacker could exploit the flaw to corrupt heap memory and execute arbitrary code, with Wiz reporting that 64% of cloud environments have vulnerable resources and 51% are publicly exposed. Organizations should urgently update to patched versions, such as Apache 2.4.71 or later, and reduce unnecessary exposure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50462177" target="_blank">HN Discussion (115)</a></div><div class="source">🔗 <a href="https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability" target="_blank">https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/aws/aws-emulator" target="_blank">AWS emulator</a></h2><div class="meta"><span class="score">⭐ 875</span><span class="comments">💬 239</span><span class="by">👤 super_linear</span></div><div class="summary"><p>AWS's own local emulator of the AWS APIs: a CLI program (or an in-process Rust dev-dependency) that serves emulated AWS endpoints so you can test software on your machine or in CI without an AWS account. You point the CLI or SDK at it via environment variables, and each release publishes per-service fidelity scores showing how closely the emulation matches real AWS behavior.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50456631" target="_blank">HN Discussion (239)</a></div><div class="source">🔗 <a href="https://github.com/aws/aws-emulator" target="_blank">https://github.com/aws/aws-emulator</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://ipo.anthropic.com/us/" target="_blank">Anthropic IPO</a></h2><div class="meta"><span class="score">⭐ 7</span><span class="comments">💬 0</span><span class="by">👤 josephljohnston</span></div><div class="summary"><p>Anthropic is pursuing an IPO as a public benefit corporation focused on developing safe AI, citing rapid revenue growth, a large enterprise customer base, and strong adoption across legal, pharmaceutical, e-commerce, and software sectors. The company reports $17 billion in revenue and more than 12x year-over-year growth, while also noting a net loss driven largely by a non-cash valuation charge.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50465829" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://ipo.anthropic.com/us/" target="_blank">https://ipo.anthropic.com/us/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/" target="_blank">A false smoke alarm almost drowned Jane Street's only NYC datacenter</a></h2><div class="meta"><span class="score">⭐ 507</span><span class="comments">💬 243</span><span class="by">👤 mbac32768</span></div><div class="summary"><p>A false smoke alarm triggered by construction dust nearly caused a catastrophic flood in Jane Street's only New York City datacenter. The company's systems team raced to disconnect power and prevent the building's sprinklers from activating, saving the facility that housed critical trading infrastructure. The incident highlighted the risks of keeping a large datacenter inside an ordinary office building.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50455394" target="_blank">HN Discussion (243)</a></div><div class="source">🔗 <a href="https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/" target="_blank">https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datace...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blog.nozomi.space/posts/sw2_dock/" target="_blank">Making a €40 USB-C hub work as a Nintendo Switch 2 dock</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 2</span><span class="by">👤 mkopec</span></div><div class="summary"><p>A generic USB-C hub can be modified to function as a Nintendo Switch 2 dock by reverse-engineering the console's proprietary USB Power Delivery handshake. The author used a USB-PD sniffer to capture the official dock's vendor-defined messages, then patched the hub's PD controller firmware to emulate the required Nintendo and DisplayPort mode negotiations. This allows the hub to provide both power and video output without using Nintendo's official dock.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50431971" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://blog.nozomi.space/posts/sw2_dock/" target="_blank">https://blog.nozomi.space/posts/sw2_dock/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-12</p>
+        </footer>
+    </div>
+</body>
+</html>

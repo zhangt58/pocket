@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-13</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://status.claude.com/incidents/nn11wk485zfn" target="_blank">Elevated errors on claude.ai, Claude Code, and platform.claude.com</a></h2><div class="meta"><span class="score">⭐ 233</span><span class="comments">💬 169</span><span class="by">👤 __vivek</span></div><div class="summary"><p>Claude services experienced elevated errors affecting authentication and access to Claude.ai, Claude Code, Claude Console, and Claude Cowork. A fix was deployed, and the team is monitoring for recovery.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50481187" target="_blank">HN Discussion (169)</a></div><div class="source">🔗 <a href="https://status.claude.com/incidents/nn11wk485zfn" target="_blank">https://status.claude.com/incidents/nn11wk485zfn</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f" target="_blank">Jensen Huang resigns</a></h2><div class="meta"><span class="score">⭐ 3640</span><span class="comments">💬 3190</span><span class="by">👤 lldb</span></div><div class="summary"><p>Jensen Huang has resigned as CEO of NVIDIA, with reports citing personal misconduct allegations and questions about the company's handling of US export restrictions on advanced chips to China. Commenters debate whether perception, national-security concerns, or timing drove the departure. The move is seen as significant for NVIDIA and the broader AI industry reliant on its GPUs.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50467087" target="_blank">HN Discussion (3190)</a></div><div class="source">🔗 <a href="https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f" target="_blank">https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a60...</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://ice-wm.org/" target="_blank">IceWM</a></h2><div class="meta"><span class="score">⭐ 214</span><span class="comments">💬 105</span><span class="by">👤 inatreecrown2</span></div><div class="summary"><p>IceWM is a lightweight, highly configurable window manager for the X Window System, designed for speed and simplicity. It provides a taskbar, multiple workspaces, keyboard and mouse controls, theming, and support for multi-monitor setups. It is available on many Linux distributions and BSD systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50478515" target="_blank">HN Discussion (105)</a></div><div class="source">🔗 <a href="https://ice-wm.org/" target="_blank">https://ice-wm.org/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/" target="_blank">Rust 1.100</a></h2><div class="meta"><span class="score">⭐ 721</span><span class="comments">💬 264</span><span class="by">👤 mbStavola</span></div><div class="summary"><p>Rust 1.100.0 is a new stable release that stabilizes the never type, allowing diverging computations to be named as ! and coerced to any type. It also introduces new APIs such as Allocator and DropGuard, along with Cargo improvements including unused dependency reporting, reduced cache collisions, and a minimum publish age feature. The release includes additional stabilized standard library APIs and some edition-related changes to never type fallback.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50472038" target="_blank">HN Discussion (264)</a></div><div class="source">🔗 <a href="https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/" target="_blank">https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://brave.com/blog/search-api-agentic-payments/" target="_blank">Brave Search API now accepts agentic payments via the x402 protocol</a></h2><div class="meta"><span class="score">⭐ 130</span><span class="comments">💬 78</span><span class="by">👤 sjdh76</span></div><div class="summary"><p>Brave Search API now supports agentic payments through the x402 protocol, allowing automated agents to pay for API access. This update is intended to simplify machine-to-machine transactions and support AI-driven workflows that need search data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50477649" target="_blank">HN Discussion (78)</a></div><div class="source">🔗 <a href="https://brave.com/blog/search-api-agentic-payments/" target="_blank">https://brave.com/blog/search-api-agentic-payments/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/" target="_blank">Europe's electric car sales jump 49% as global EV sales grow</a></h2><div class="meta"><span class="score">⭐ 25</span><span class="comments">💬 8</span><span class="by">👤 cisc</span></div><div class="summary"><p>Global electric vehicle sales rose 8% in October to 2.09 million, with Europe leading growth as battery electric vehicle sales jumped 49% and overall EV sales increased 36% year over year. North America posted its first annual increase of 2026, but the rebound is limited because it compares against a weak month following the expiration of the US federal EV tax credit. China saw year-over-year sales decline, though EVs reached a new record share of its shrinking new-car market.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50482045" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-ev-sales-grow/" target="_blank">https://electrek.co/2026/11/11/europes-electric-car-sales-jump-49-as-global-e...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://github.com/simpsoka/zigzag" target="_blank">Show HN: My $300 embroidery machine needed a subscription, so I built my own app</a></h2><div class="meta"><span class="score">⭐ 559</span><span class="comments">💬 192</span><span class="by">👤 simpsoka</span></div><div class="summary"><p>ZigZag is a Rust-based visual embroidery editor created to avoid a machine subscription. It converts SVG artwork into stitch designs, supports AI agents via MCP, and exports to common embroidery formats or sends designs directly to a Brother Skitch over Bluetooth. The project includes a cross-platform editor and command-line tool for creating, editing, and digitizing embroidery files.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50470488" target="_blank">HN Discussion (192)</a></div><div class="source">🔗 <a href="https://github.com/simpsoka/zigzag" target="_blank">https://github.com/simpsoka/zigzag</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://status.claude.com/history" target="_blank">Claude Is Down</a></h2><div class="meta"><span class="score">⭐ 117</span><span class="comments">💬 90</span><span class="by">👤 cornfieldlabs</span></div><div class="summary"><p>Claude is currently experiencing a service outage. The status page tracks the incident and provides updates on its resolution.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50481220" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://status.claude.com/history" target="_blank">https://status.claude.com/history</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/" target="_blank">Gemini 4 Hydrogen and Orchestrator</a></h2><div class="meta"><span class="score">⭐ 428</span><span class="comments">💬 125</span><span class="by">👤 jonbaer</span></div><div class="summary"><p>Google is introducing Gemini 4 Hydrogen and a new Orchestrator option in Google Antigravity. Orchestrator dynamically switches between Hydrogen and the stronger Gemini 4 Carbon during a task, aiming to combine frontier-level planning with faster execution and lower quota use. Hydrogen also works as a standalone model for everyday coding and agentic workflows, with adjustable reasoning depth.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50472260" target="_blank">HN Discussion (125)</a></div><div class="source">🔗 <a href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/" target="_blank">https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/" target="_blank">Dwarf planet candidate appears which takes roughly 280 years to orbit our sun</a></h2><div class="meta"><span class="score">⭐ 327</span><span class="comments">💬 135</span><span class="by">👤 cybermango</span></div><div class="summary"><p>Astronomers have identified a new dwarf planet candidate, 2026 ED138, that orbits the Sun about 46 times farther than Earth and takes roughly 280 years to complete one orbit. The object was found while analyzing data from the Vera C. Rubin Observatory and confirmed using historical images, including plates from 1937. Its final classification depends on determining whether it is large enough to meet the criteria for a dwarf planet.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50472490" target="_blank">HN Discussion (135)</a></div><div class="source">🔗 <a href="https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/" target="_blank">https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-obje...</a></div></div></div>
+
+        <footer>
+            <p>2026-11-13</p>
+        </footer>
+    </div>
+</body>
+</html>

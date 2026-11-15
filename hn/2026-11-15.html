@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-15</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.spacex.com/launches/starship-flight-15" target="_blank">SpaceX catches the Starship to end Flight 15</a></h2><div class="meta"><span class="score">⭐ 1292</span><span class="comments">💬 871</span><span class="by">👤 ls612</span></div><div class="summary"><p>SpaceX successfully caught the Starship booster with its launch tower arms, marking a major milestone for its reusable rocket program. The post likely discusses how ending Flight 15 with a catch demonstrates progress toward making Starship fully reusable.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50500963" target="_blank">HN Discussion (871)</a></div><div class="source">🔗 <a href="https://www.spacex.com/launches/starship-flight-15" target="_blank">https://www.spacex.com/launches/starship-flight-15</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://space.stackexchange.com/questions/37775" target="_blank">Why did some Apollo missions carry a grenade launcher?</a></h2><div class="meta"><span class="score">⭐ 63</span><span class="comments">💬 24</span><span class="by">👤 Skyfall106</span></div><div class="summary"><p>The grenades and launcher were part of an active seismic imaging experiment, not a security measure. By deploying a seismometer and detonating surface charges of known size, the astronauts could study how shockwaves propagated through the lunar subsurface, which let them infer the depth and structure of the Moon's internal layers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50505271" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://space.stackexchange.com/questions/37775" target="_blank">https://space.stackexchange.com/questions/37775</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.crissyfield.de/research/lovable-en/" target="_blank">Lovable apps expose passport details and more than 200K private messages</a></h2><div class="meta"><span class="score">⭐ 851</span><span class="comments">💬 324</span><span class="by">👤 armcat</span></div><div class="summary"><p>A security review of Lovable, an AI web-app builder, found that many projects left sensitive data exposed without requiring login. Researchers identified Supabase-backed applications that returned personal information, including email addresses, passport details, and over 200,000 private messages, through basic requests. The findings highlight security risks when non-technical users build apps that handle confidential data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50499017" target="_blank">HN Discussion (324)</a></div><div class="source">🔗 <a href="https://www.crissyfield.de/research/lovable-en/" target="_blank">https://www.crissyfield.de/research/lovable-en/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal" target="_blank">Court denies motion to dismiss DRAM price fixing case</a></h2><div class="meta"><span class="score">⭐ 215</span><span class="comments">💬 75</span><span class="by">👤 ybathaee</span></div><div class="summary"><p>A federal judge denied Samsung, SK Hynix, and Micron’s motion to dismiss a proposed class action alleging they conspired to restrict conventional DRAM supply and shift capacity to high-bandwidth memory. The court found the complaint plausibly alleged a Sherman Act violation, distinguishing it from an earlier dismissed DRAM case and relying on factors such as long-term HBM commitments, refusal of conventional DRAM contracts, production decisions, and the companies’ prior cartel history. The case will proceed to the answer stage.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50502988" target="_blank">HN Discussion (75)</a></div><div class="source">🔗 <a href="https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal" target="_blank">https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspir...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://tsoracle.rs/" target="_blank">Strictly monotonic timestamps and gapless sequences in Rust</a></h2><div class="meta"><span class="score">⭐ 13</span><span class="comments">💬 1</span><span class="by">👤 znano</span></div><div class="summary"><p>tsoracle is a Rust tool for generating strictly monotonic timestamps and gapless integer sequences in distributed systems. It provides a crash-safe, consensus-backed service that can run standalone or be embedded, issuing ordered or contiguous IDs for databases, audit logs, and surrogate keys.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50481056" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://tsoracle.rs/" target="_blank">https://tsoracle.rs/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.bbc.co.uk/news/articles/c6jdmdzv25r9o" target="_blank">Handwritten 200-year-old dismissal notice found on roof tile</a></h2><div class="meta"><span class="score">⭐ 28</span><span class="comments">💬 16</span><span class="by">👤 nephihaha</span></div><div class="summary"><p>A salvage yard in Staffordshire found a roof tile with a handwritten dismissal notice, apparently written into soft clay before the tile was fired. The message names John Lewis and Thomas Austin and may connect to a brick and tile maker from the period, though the link is unconfirmed. The rare artifact is being preserved and may be displayed in the company's reception area.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50474529" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://www.bbc.co.uk/news/articles/c6jdmdzv25r9o" target="_blank">https://www.bbc.co.uk/news/articles/c6jdmdzv25r9o</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://netbsd.org/~nia/disk-encrypt/" target="_blank">Disk encryption on NetBSD – achieving secrecy</a></h2><div class="meta"><span class="score">⭐ 48</span><span class="comments">💬 5</span><span class="by">👤 jaypatelani</span></div><div class="summary"><p>The article examines how to use disk encryption on NetBSD to protect data from stolen or lost devices, focusing on which files are sensitive and which must remain accessible for booting. It notes that full disk encryption is complicated because the system needs unencrypted software to start and prompt for keys, so practical approaches balance encrypting user and configuration directories against preserving rescue and system functionality.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50504277" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://netbsd.org/~nia/disk-encrypt/" target="_blank">https://netbsd.org/~nia/disk-encrypt/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://retrocomputing.stackexchange.com/questions/17957" target="_blank">How did Woz write the Apple 1 BASIC before building the computer?</a></h2><div class="meta"><span class="score">⭐ 233</span><span class="comments">💬 114</span><span class="by">👤 Skyfall106</span></div><div class="summary"><p>The question digs into how Steve Wozniak got the Apple 1's BASIC interpreter working before the computer it would run on was fully built. The discussion covers the development sequence and methods he used to write the software alongside the early hardware design, rather than after it.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50501594" target="_blank">HN Discussion (114)</a></div><div class="source">🔗 <a href="https://retrocomputing.stackexchange.com/questions/17957" target="_blank">https://retrocomputing.stackexchange.com/questions/17957</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/" target="_blank">My favourite modern NES games</a></h2><div class="meta"><span class="score">⭐ 107</span><span class="comments">💬 11</span><span class="by">👤 jordigh</span></div><div class="summary"><p>The article celebrates the ongoing modern NES renaissance, in which decades of technical knowledge have led to a large number of new third-party games. It presents 25 favorite modern NES titles in alphabetical order, spanning action, adventure, puzzle, and indie experiments. Most are available digitally or as physical cartridges for original hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50503465" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/" target="_blank">https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://rorz.io/writing/semicircle-packing" target="_blank">Semicircle Packing</a></h2><div class="meta"><span class="score">⭐ 37</span><span class="comments">💬 4</span><span class="by">👤 sarreph</span></div><div class="summary"><p>The article reflects on the author's entry into the GPU World short story competition and the unusual attention its sponsors, Paradigm and Guardian Angel Intelligence, have drawn. It examines how venture capital and AI-focused organizations are increasingly investing in creative contests and puzzles, suggesting a growing value placed on human originality. The author also explores Paradigm's online challenges, which range from technical AI tasks to persuasive prompts.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50484234" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://rorz.io/writing/semicircle-packing" target="_blank">https://rorz.io/writing/semicircle-packing</a></div></div></div>
+
+        <footer>
+            <p>2026-11-15</p>
+        </footer>
+    </div>
+</body>
+</html>

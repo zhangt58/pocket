@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-16</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://www.monirbounadi.com/Bounadi_JMP.pdf" target="_blank">Coffeehouses and the Rise of Science [pdf]</a></h2><div class="meta"><span class="score">⭐ 33</span><span class="comments">💬 12</span><span class="by">👤 Michelangelo11</span></div><div class="summary"><p>A study of London and European cities finds that the opening of the first coffeehouse in a locality was followed by lasting increases in applied scientists and scientific instrument shops. The effects were strongest among scientists with weak ties to Oxford and Cambridge, suggesting coffeehouses helped connect practical craft knowledge with theoretical science. A quantitative model estimates that coffeehouses accounted for about 31 percent of London's applied scientists in the following half century, indicating that such social institutions expanded access to intellectual exchange beyond formal academic networks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50516245" target="_blank">HN Discussion (12)</a></div><div class="source">🔗 <a href="https://www.monirbounadi.com/Bounadi_JMP.pdf" target="_blank">https://www.monirbounadi.com/Bounadi_JMP.pdf</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://petervandijck.com/post/pbrgs-ev0bc" target="_blank">Doing Show HN generates a ton of automated email pitches</a></h2><div class="meta"><span class="score">⭐ 21</span><span class="comments">💬 13</span><span class="by">👤 petervandijck</span></div><div class="summary"><p>After launching Airdash on Show HN, the author received a flood of automated sales pitches from directories, security scanners, newsletters, and other services. Most emails were generated from the post title alone, offering backlinks, scans, sponsorships, or testing with little personalization. Despite promises of one-time contact, some senders repeated the same pitch.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50516232" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://petervandijck.com/post/pbrgs-ev0bc" target="_blank">https://petervandijck.com/post/pbrgs-ev0bc</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://pub.cba.mit.edu/863.26/site/" target="_blank">How to make almost anything</a></h2><div class="meta"><span class="score">⭐ 381</span><span class="comments">💬 71</span><span class="by">👤 o4c</span></div><div class="summary"><p>How to make almost anything is a course that guides students through digital fabrication and engineering skills, including computer-aided design, electronics, embedded programming, 3D printing, machining, and machine design. It also covers networking, system integration, and project development, culminating in a final project presentation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50514470" target="_blank">HN Discussion (71)</a></div><div class="source">🔗 <a href="https://pub.cba.mit.edu/863.26/site/" target="_blank">https://pub.cba.mit.edu/863.26/site/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://iter.ca/post/ubo-uxss/" target="_blank">Universal XSS in uBlock Origin from website-driven element picker</a></h2><div class="meta"><span class="score">⭐ 413</span><span class="comments">💬 119</span><span class="by">👤 zaik</span></div><div class="summary"><p>A malicious website could exploit uBlock Origin's element picker by discovering the extension's internal UUID, embedding an invisible iframe, and sending crafted messages to create trusted filters. Those filters could inject JavaScript into other sites, allowing arbitrary code execution in their context. The vulnerability has been fixed.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50513160" target="_blank">HN Discussion (119)</a></div><div class="source">🔗 <a href="https://iter.ca/post/ubo-uxss/" target="_blank">https://iter.ca/post/ubo-uxss/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch" target="_blank">Researchers track whole body movement with just a smartwatch</a></h2><div class="meta"><span class="score">⭐ 74</span><span class="comments">💬 14</span><span class="by">👤 PaulHoule</span></div><div class="summary"><p>Researchers have developed EchoMotion, a system that tracks a person's full-body movement using only the speaker and microphone in an off-the-shelf smartwatch. It emits ultrasonic sound waves and uses a lightweight AI model to interpret echoes from the wearer's body, offering a private, low-power alternative to cameras and complex sensor setups. The technology could support fitness tracking, daily activity monitoring, virtual reality, and physical rehabilitation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50486745" target="_blank">HN Discussion (14)</a></div><div class="source">🔗 <a href="https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch" target="_blank">https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movemen...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://qwen.ai/blog?id=qwen4-max" target="_blank">Qwen4-Max</a></h2><div class="meta"><span class="score">⭐ 595</span><span class="comments">💬 250</span><span class="by">👤 ilreb</span></div><div class="summary"><p>Qwen4-Max is a new large AI model built on the Qwen4 architecture, featuring a 2.4-trillion-parameter backbone, native vision, and a one-million-token context window. It is designed to improve real-world productivity by handling complex professional and creative tasks, including coding, 3D modeling, game development, finance, law, healthcare, and scientific discovery. The model also introduces architectural upgrades such as sparse attention, gated residual connections, and N-gram embeddings to support more efficient long-context processing and stronger task execution.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50513215" target="_blank">HN Discussion (250)</a></div><div class="source">🔗 <a href="https://qwen.ai/blog?id=qwen4-max" target="_blank">https://qwen.ai/blog?id=qwen4-max</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/" target="_blank">Old Bitly links are being hijacked</a></h2><div class="meta"><span class="score">⭐ 308</span><span class="comments">💬 158</span><span class="by">👤 hspeiser</span></div><div class="summary"><p>Old, inactive Bitly short links are being repurposed by bad actors to redirect readers from old social media posts to unrelated websites. The issue affected links in old tweets from major brands and public figures, though the original accounts were not hacked. Bitly confirmed the problem, suspended the accounts involved, and is disabling affected links while working on protections.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50511395" target="_blank">HN Discussion (158)</a></div><div class="source">🔗 <a href="https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/" target="_blank">https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://muni.works/research/vcad" target="_blank">Exact Gradients Through a BRep Kernel</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 1</span><span class="by">👤 ecto</span></div><div class="summary"><p>This article describes a method for computing exact parameter derivatives in a boundary-representation CAD kernel by freezing the tessellation topology and differentiating node positions using dual numbers and implicit differentiation. It extends the approach to analytic fillet sensitivities, directional second derivatives, and a reverse-mode pass, enabling gradient-based optimization of mass properties and rigid-body contact. The method is validated against finite differences, with noted limitations including polygonization error and failures when topology changes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50487628" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://muni.works/research/vcad" target="_blank">https://muni.works/research/vcad</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://steveblank.com/2026/11/15/whats-next-for-nvidia/" target="_blank">What's Next for Nvidia?</a></h2><div class="meta"><span class="score">⭐ 291</span><span class="comments">💬 371</span><span class="by">👤 zdw</span></div><div class="summary"><p>The article examines the leadership challenge facing Nvidia after founder and CEO Jensen Huang stepped down, arguing that his visionary ability to repeatedly reinvent the company may be hard to replace. It contrasts Huang’s strategic pivots in graphics, software, and AI infrastructure with the risks seen at Microsoft and Apple when execution-focused leaders took over. The piece suggests Nvidia’s board must ensure the company can continue innovating and shaping new markets rather than relying on past momentum.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50512235" target="_blank">HN Discussion (371)</a></div><div class="source">🔗 <a href="https://steveblank.com/2026/11/15/whats-next-for-nvidia/" target="_blank">https://steveblank.com/2026/11/15/whats-next-for-nvidia/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://forum.torproject.org/t/security-release-0-4-9-17/22454" target="_blank">Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack</a></h2><div class="meta"><span class="score">⭐ 169</span><span class="comments">💬 49</span><span class="by">👤 aillia</span></div><div class="summary"><p>The Tor Project released version 0.4.9.17 as a rapid-response security update to strengthen relay defenses against a sustained DDoS attack. The update addresses IPv6-related DoS vulnerabilities and is intended to help relay operators cope with a flood of client circuits. Operators are urged to upgrade promptly while additional defenses are being evaluated.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50512441" target="_blank">HN Discussion (49)</a></div><div class="source">🔗 <a href="https://forum.torproject.org/t/security-release-0-4-9-17/22454" target="_blank">https://forum.torproject.org/t/security-release-0-4-9-17/22454</a></div></div></div>
+
+        <footer>
+            <p>2026-11-16</p>
+        </footer>
+    </div>
+</body>
+</html>

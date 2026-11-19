@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-19</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank">Gemini 4 Neon</a></h2><div class="meta"><span class="score">⭐ 428</span><span class="comments">💬 404</span><span class="by">👤 yigitdemirag</span></div><div class="summary"><p>Gemini 4 Neon is a new AI model designed for fast, frontier-level task completion across complex software engineering, knowledge work, and scientific workflows. It emphasizes production-ready code generation, enterprise document analysis, cyber defense, and dependable execution while maintaining low fabrication and strong steerability. The model is available through Google's Gemini API, AI Studio, business tools, and consumer apps.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50552424" target="_blank">HN Discussion (404)</a></div><div class="source">🔗 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank">https://blog.google/innovation-and-ai/models-and-research/gemini-models/intro...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities" target="_blank">Unauthenticated remote code execution in Nginx</a></h2><div class="meta"><span class="score">⭐ 1133</span><span class="comments">💬 507</span><span class="by">👤 speedping</span></div><div class="summary"><p>Two critical unauthenticated remote code execution vulnerabilities in NGINX itself can allow attackers to take control of affected servers, steal data, tamper with websites, or disrupt services, even when application code is secure. Both flaws require HTTP/2 to be enabled and affect widely used deployments that route traffic to applications and APIs. Organizations should identify exposed servers and apply the released security updates.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50547374" target="_blank">HN Discussion (507)</a></div><div class="source">🔗 <a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities" target="_blank">https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/" target="_blank">Multiple vulnerabilities in Regexp and String case conversion</a></h2><div class="meta"><span class="score">⭐ 57</span><span class="comments">💬 9</span><span class="by">👤 runesoerensen</span></div><div class="summary"><p>Seven security vulnerabilities were found in Ruby’s regular expression engine and string case conversion, including heap buffer overflows, double frees, integer overflows, and out-of-bounds reads. Some flaws can be exploited for remote code execution or information disclosure when processing crafted strings or regular expressions. The issues are fixed in Ruby 4.0.10, 3.4.13, and 3.3.14, and upgrading is strongly recommended.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50554038" target="_blank">HN Discussion (9)</a></div><div class="source">🔗 <a href="https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/" target="_blank">https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-rege...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/" target="_blank">Gemini 4 Neon looks like an Opus 5.5 competitor</a></h2><div class="meta"><span class="score">⭐ 42</span><span class="comments">💬 12</span><span class="by">👤 seizethecheese</span></div><div class="summary"><p>Gemini 4 Neon is a faster version of Gemini 4 Carbon that appears to match or slightly improve its performance while running much more quickly. By modeling leaderboard win rates, the author projects Neon’s Elo score to be very close to Opus 5.5, making it a strong competitor. The analysis also suggests that response speed is nearly as important as model identity in determining user preference.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50554374" target="_blank">HN Discussion (12)</a></div><div class="source">🔗 <a href="https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/" target="_blank">https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://microsoft.ai/news/microsoft-ignite-2026/" target="_blank">Seven new models at scalable price-performance</a></h2><div class="meta"><span class="score">⭐ 447</span><span class="comments">💬 311</span><span class="by">👤 gmays</span></div><div class="summary"><p>Microsoft is releasing a family of seven new AI models designed to deliver near-frontier performance for coding, cybersecurity, image editing, realtime audio, transcription, and decision-making tasks. The models are positioned as a more cost-effective option for developers and enterprises that need to run agents continuously. The announcement also notes that Microsoft's Maia 200 AI accelerator is now in production to support its largest models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50548021" target="_blank">HN Discussion (311)</a></div><div class="source">🔗 <a href="https://microsoft.ai/news/microsoft-ignite-2026/" target="_blank">https://microsoft.ai/news/microsoft-ignite-2026/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering" target="_blank">LLM assisted reverse engineering</a></h2><div class="meta"><span class="score">⭐ 55</span><span class="comments">💬 11</span><span class="by">👤 ioma8</span></div><div class="summary"><p>The article describes a workflow for using LLM agents to speed up reverse engineering of hardware and software. It outlines tools such as DeepSeek, Ghidra, radare2, and kuna, along with agent skills that guide disassembly, documentation, debugging, and targeted analysis. The author emphasizes keeping structured notes and steering the agent when it follows unproductive paths.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50553225" target="_blank">HN Discussion (11)</a></div><div class="source">🔗 <a href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering" target="_blank">https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.inside-db.com/" target="_blank">Inside Deutsche Bank</a></h2><div class="meta"><span class="score">⭐ 561</span><span class="comments">💬 190</span><span class="by">👤 gyre007</span></div><div class="summary"><p>A major investigation based on more than 15 million leaked files reveals that Deutsche Bank prioritized profit over compliance, exposing systemic blind spots in its risk, sanctions, and anti-financial crime controls. The documents show the bank facilitated sensitive dealings involving Qatari royalty, fugitive financier Jho Low, weapons suppliers, Russian oligarch-linked money flows, and corruption-linked clients. Together, the findings portray a global bank whose internal culture and oversight failed to prevent serious legal and reputational risks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50547620" target="_blank">HN Discussion (190)</a></div><div class="source">🔗 <a href="https://www.inside-db.com/" target="_blank">https://www.inside-db.com/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/" target="_blank">AI agents ask better questions than KPMG accountants in audit trial</a></h2><div class="meta"><span class="score">⭐ 352</span><span class="comments">💬 160</span><span class="by">👤 Betelbuddy</span></div><div class="summary"><p>KPMG’s Project Exponential used more than 100 AI agents to examine the accounts of a UK-listed company, finding that the agents sometimes investigated financial issues more deeply and asked better questions than the human audit team. Although the experiment was not a formal statutory audit and required human oversight, it suggests AI could reshape auditing by automating data collection, analysis and documentation while senior professionals focus on complex judgements.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50547777" target="_blank">HN Discussion (160)</a></div><div class="source">🔗 <a href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/" target="_blank">https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://techstackups.com/articles/quad9-leaves-france-dns-blocking/" target="_blank">DNS resolvers are the wrong place to fight piracy</a></h2><div class="meta"><span class="score">⭐ 598</span><span class="comments">💬 223</span><span class="by">👤 ritzaco</span></div><div class="summary"><p>Quad9, a Swiss non-profit public DNS resolver that blocks malware and phishing domains, will stop serving France after a Paris court fined it for refusing to block pirate sports-streaming sites on behalf of beIN Sports. With numerous similar cases pending, the organization says withdrawing is the only financially viable option. The article argues that forcing DNS resolvers to block piracy targets is an inappropriate and harmful way to address copyright infringement.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50545958" target="_blank">HN Discussion (223)</a></div><div class="source">🔗 <a href="https://techstackups.com/articles/quad9-leaves-france-dns-blocking/" target="_blank">https://techstackups.com/articles/quad9-leaves-france-dns-blocking/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://www.radixark.com/blog/daisyrose-27b" target="_blank">DaisyRose-27B</a></h2><div class="meta"><span class="score">⭐ 136</span><span class="comments">💬 39</span><span class="by">👤 de_sty</span></div><div class="summary"><p>RadixArk released DaisyRose-27B, its first model built on Qwen3.8-27B and trained with reinforcement learning on long-horizon agent tasks using 1,200 curated tasks. The model improves performance on Terminal-Bench 4.1 and other reasoning, instruction-following, and coding benchmarks, with checkpoints available in BF16, FP8, and NVFP4 formats.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50551046" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://www.radixark.com/blog/daisyrose-27b" target="_blank">https://www.radixark.com/blog/daisyrose-27b</a></div></div></div>
+
+        <footer>
+            <p>2026-11-19</p>
+        </footer>
+    </div>
+</body>
+</html>

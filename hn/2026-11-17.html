@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-17</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in" target="_blank">ID.me terms required for IRS sign-in</a></h2><div class="meta"><span class="score">⭐ 492</span><span class="comments">💬 259</span><span class="by">👤 DeepLogin</span></div><div class="summary"><p>Taxpayers who use ID.me to sign in to IRS online services do so under ID.me's private terms, which include an arbitration clause and privacy provisions allowing marketing and data transfers, with limited exceptions for government identity-verification data. The IRS also accepts the government-run Login.gov for sign-in, and its Direct Pay service allows bank-account tax payments without requiring an account. Senators have questioned why the Treasury and IRS continue using ID.me instead of Login.gov.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50540437" target="_blank">HN Discussion (259)</a></div><div class="source">🔗 <a href="https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in" target="_blank">https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/" target="_blank">Claude was trained on protein sequences at scale</a></h2><div class="meta"><span class="score">⭐ 165</span><span class="comments">💬 71</span><span class="by">👤 gmays</span></div><div class="summary"><p>Recent Claude models show strong ability to predict the next amino acid in little-studied bacterial and archaeal proteins, suggesting they were trained on large-scale protein sequence data. In tests on 668 poorly characterized proteins, only the latest Claude models reliably predicted real sequences while failing on shuffled versions, whereas GPT, Gemini, and open models performed near chance. The newest Claude model also outperformed several open protein language models and matched or exceeded major specialized models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50541619" target="_blank">HN Discussion (71)</a></div><div class="source">🔗 <a href="https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/" target="_blank">https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference" target="_blank">Cerebras Disaggregated Inference</a></h2><div class="meta"><span class="score">⭐ 105</span><span class="comments">💬 26</span><span class="by">👤 emschwartz</span></div><div class="summary"><p>Cerebras has deployed a disaggregated inference architecture that pairs GPUs for prompt processing with its Wafer Scale Engines for token generation, achieving five times more tokens per megawatt while maintaining ultrafast speeds. The production solution is available through Cerebras Inference Cloud and can be adopted by infrastructure partners to increase fast inference capacity in their own data centers. This approach is intended to meet growing demand from interactive AI applications and support larger deployments alongside Cerebras' expanded manufacturing and data center plans.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50540472" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference" target="_blank">https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages" target="_blank">Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages</a></h2><div class="meta"><span class="score">⭐ 95</span><span class="comments">💬 57</span><span class="by">👤 ryeights</span></div><div class="summary"><p>Bank executives and the NSA told Congress that AI-driven software patches may be behind recent outages. They highlighted the need for greater oversight of automated updates in critical financial systems.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50540836" target="_blank">HN Discussion (57)</a></div><div class="source">🔗 <a href="https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages" target="_blank">https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-drive...</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.everycrsreport.com/files/2026-10-14_IN12747_fcb1389788aa7b9102b795882af042e85d20532c.pdf" target="_blank">H-1B Executive Actions in 2026 [pdf]</a></h2><div class="meta"><span class="score">⭐ 41</span><span class="comments">💬 64</span><span class="by">👤 rawgabbit</span></div><div class="summary"><p>Recent executive actions targeting the H-1B visa program aim to reduce perceived abuses by favoring higher-skilled and higher-paid foreign workers and increasing employer costs. The changes include a weighted lottery selection process, proposed higher prevailing wage requirements, additional petition fees, and expanded application of existing biometric fees. The administration has also intensified scrutiny of employers through fraud investigations and enforcement efforts focused on wage kickbacks and trafficking.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50541550" target="_blank">HN Discussion (64)</a></div><div class="source">🔗 <a href="https://www.everycrsreport.com/files/2026-10-14_IN12747_fcb1389788aa7b9102b795882af042e85d20532c.pdf" target="_blank">https://www.everycrsreport.com/files/2026-10-14_IN12747_fcb1389788aa7b9102b79...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.economist.com/middle-east-and-africa/2026/11/17/climate-change-is-making-some-african-deserts-greener" target="_blank">Climate change is making some African deserts greener</a></h2><div class="meta"><span class="score">⭐ 20</span><span class="comments">💬 10</span><span class="by">👤 andsoitis</span></div><div class="summary"><p>Some African deserts are experiencing increased plant growth due to climate change, likely driven by changes in rainfall, temperature, or atmospheric carbon dioxide. The trend suggests that warming can produce complex ecological effects, with certain arid areas becoming more vegetated rather than uniformly drier.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50541613" target="_blank">HN Discussion (10)</a></div><div class="source">🔗 <a href="https://www.economist.com/middle-east-and-africa/2026/11/17/climate-change-is-making-some-african-deserts-greener" target="_blank">https://www.economist.com/middle-east-and-africa/2026/11/17/climate-change-is...</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html" target="_blank">Waymo Pulls Its Cars from All U.S. Freeways Temporarily</a></h2><div class="meta"><span class="score">⭐ 18</span><span class="comments">💬 2</span><span class="by">👤 mikeocool</span></div><div class="summary"><p>Waymo is temporarily removing its robotaxis from U.S. freeways, likely to address safety, regulatory, or operational concerns. The move suggests a pause in its highway-driving operations while the company reassesses how its autonomous vehicles handle freeway traffic.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50540577" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html" target="_blank">https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://davidngo1562.substack.com/p/pioneering-antimicrobial-subscriptions" target="_blank">Congress can but refuses to fix the antibiotic market</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 5</span><span class="by">👤 illidan1000</span></div><div class="summary"><p>The article explains how bacteria develop resistance to antibiotics, using beta-lactams and aminoglycosides as examples. It describes how enzymes such as beta-lactamase and aminoglycoside-modifying enzymes deactivate drugs, and how inhibitors or modified antibiotics can restore effectiveness. Despite these scientific strategies, the title suggests Congress has not addressed market failures that limit new antibiotic development.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50541110" target="_blank">HN Discussion (5)</a></div><div class="source">🔗 <a href="https://davidngo1562.substack.com/p/pioneering-antimicrobial-subscriptions" target="_blank">https://davidngo1562.substack.com/p/pioneering-antimicrobial-subscriptions</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.cbc.ca/news/canada/calgary/st-francis-high-school-calgary-food-delivery-app-9.7425320" target="_blank">Calgary high school says too many students are getting food delivered</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 4</span><span class="by">👤 canucker2016</span></div><div class="summary"><p>A Calgary high school asked parents to discourage their children from using food delivery apps during school hours, saying the deliveries disrupt classes and create safety concerns when students interact with unfamiliar drivers on campus. Educators and school boards described the practice as increasingly common, with some schools managing food drop-offs while others leave guidelines to individual principals. Students said meeting delivery drivers on school property has become routine.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50540770" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://www.cbc.ca/news/canada/calgary/st-francis-high-school-calgary-food-delivery-app-9.7425320" target="_blank">https://www.cbc.ca/news/canada/calgary/st-francis-high-school-calgary-food-de...</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://github.com/russell-dot-js/mullet" target="_blank">Mullet: The Skill for Job Security</a></h2><div class="meta"><span class="score">⭐ 14</span><span class="comments">💬 4</span><span class="by">👤 russell-dot-js</span></div><div class="summary"><p>The post likely argues that a hybrid “mullet” skill—combining business-facing judgment with technical execution—makes an engineer more valuable and harder to replace. It probably frames job security as coming from owning outcomes across domains rather than specializing narrowly.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50541328" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://github.com/russell-dot-js/mullet" target="_blank">https://github.com/russell-dot-js/mullet</a></div></div></div>
+
+        <footer>
+            <p>2026-11-17</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-20</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://architectlabs.com/blog/frostbite" target="_blank">Frostbite: A new CPU architecture discovered, designed and verified by AI</a></h2><div class="meta"><span class="score">⭐ 143</span><span class="comments">💬 93</span><span class="by">👤 shioyama</span></div><div class="summary"><p>Frostbite is a general-purpose CPU architecture created with AI assistance, using a new instruction set based on interaction nets to make program dependencies explicit and local. The AI system iterated across compiler, ISA, architecture, and hardware verification, producing a design that achieved about 4.6 times the performance per watt of a modern superscalar core on a set of workloads. The result suggests AI can help discover novel chip designs that may overcome long-standing CPU performance stagnation.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50572503" target="_blank">HN Discussion (93)</a></div><div class="source">🔗 <a href="https://architectlabs.com/blog/frostbite" target="_blank">https://architectlabs.com/blog/frostbite</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://ecohustler.com/article/one-corporation-to-pollute-them-all/" target="_blank">Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars</a></h2><div class="meta"><span class="score">⭐ 115</span><span class="comments">💬 59</span><span class="by">👤 sammatilda</span></div><div class="summary"><p>A new analysis finds that Carnival Corporation, the world's largest cruise operator, emitted nearly ten times more sulphur oxide around European coasts than all 260 million European cars combined, with Royal Caribbean also far exceeding the car fleet. The report highlights heavy pollution in tourist-heavy countries such as Spain, Italy, Greece, France and Norway, and says cruise ships' nitrogen oxide emissions also significantly affect port cities. It urges Europe to adopt zero-emission port standards, expand emission control areas, and regulate nitrogen oxide emissions from existing ships.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50572116" target="_blank">HN Discussion (59)</a></div><div class="source">🔗 <a href="https://ecohustler.com/article/one-corporation-to-pollute-them-all/" target="_blank">https://ecohustler.com/article/one-corporation-to-pollute-them-all/</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it" target="_blank">If you can't explain something in simple terms, you don't understand it (2017)</a></h2><div class="meta"><span class="score">⭐ 47</span><span class="comments">💬 28</span><span class="by">👤 sammatilda</span></div><div class="summary"><p>The article highlights physicist Richard Feynman’s view that the ability to explain complex ideas in simple terms is a test of true understanding. It cites his admission that he could not reduce spin-one-half statistics to a freshman level, as well as his famous insistence that what he cannot create, he does not understand. The piece also notes that Apple expects engineers to explain technology simply not for executives, but as evidence of complete mastery.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50572355" target="_blank">HN Discussion (28)</a></div><div class="source">🔗 <a href="https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it" target="_blank">https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-do...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/openssl/openssl/pull/33652" target="_blank">OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)</a></h2><div class="meta"><span class="score">⭐ 280</span><span class="comments">💬 220</span><span class="by">👤 JacobHenner</span></div><div class="summary"><p>This Hacker News post likely discusses CVE-2026-121481, a critical buffer overflow in OpenSSL's EVP_EncodeBlock function that could enable memory corruption and remote code execution. The 9.8 CVSS score indicates a severe vulnerability requiring urgent patching.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50569226" target="_blank">HN Discussion (220)</a></div><div class="source">🔗 <a href="https://github.com/openssl/openssl/pull/33652" target="_blank">https://github.com/openssl/openssl/pull/33652</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://jeanmicheljarre.com/aaa/the-making-of-oxygene" target="_blank">The Making of Oxygene</a></h2><div class="meta"><span class="score">⭐ 15</span><span class="comments">💬 3</span><span class="by">👤 hggh</span></div><div class="summary"><p>Jean-Michel Jarre’s album Oxygène became a landmark in electronic music by presenting six entirely instrumental synthesizer tracks that reached a global audience. The record was made in a modest home studio with analog equipment and reflected Jarre’s aim to blend experimental sound design with accessible pop melody.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50572822" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://jeanmicheljarre.com/aaa/the-making-of-oxygene" target="_blank">https://jeanmicheljarre.com/aaa/the-making-of-oxygene</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver" target="_blank">The Strongest Sokoban Solver</a></h2><div class="meta"><span class="score">⭐ 77</span><span class="comments">💬 16</span><span class="by">👤 ibobev</span></div><div class="summary"><p>Soksolv is a Sokoban puzzle solver that outperforms existing published solvers by solving more levels on standard benchmark suites, including 24 previously unsolved levels, and is about 3.2 times faster on levels other solvers can solve. The article describes how the solver was developed through an AI-agent-driven hill-climbing process, using automated experiments, frozen verification, and large benchmark suites to improve performance.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50523241" target="_blank">HN Discussion (16)</a></div><div class="source">🔗 <a href="https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver" target="_blank">https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.theatlantic.com/technology/2026/11/silicon-valley-model-collapse/689505/" target="_blank">Why do tech leaders sound so illogical and off-putting?</a></h2><div class="meta"><span class="score">⭐ 32</span><span class="comments">💬 26</span><span class="by">👤 pseudolus</span></div><div class="summary"><p>Tech leaders often seem illogical because they justify controversial behavior with sweeping narratives about AI’s importance to the economy, national security, and humanity’s future. The article suggests this may stem from financial incentives, groupthink, a quasi-religious belief in superintelligence, or a cult of the founder that grants Silicon Valley figures a messianic sense of purpose.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50573087" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://www.theatlantic.com/technology/2026/11/silicon-valley-model-collapse/689505/" target="_blank">https://www.theatlantic.com/technology/2026/11/silicon-valley-model-collapse/...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://trynotched.com/find" target="_blank">Show HN: Tinnitus frequency finder and audio notch tool</a></h2><div class="meta"><span class="score">⭐ 18</span><span class="comments">💬 13</span><span class="by">👤 brianrhea</span></div><div class="summary"><p>A free browser-based tool guides users through a four-minute pitch-matching process to estimate the frequency of their tinnitus. It adjusts sound levels for individual hearing, checks for octave errors, and reports a frequency range from repeated matches, while noting that it is not a medical diagnosis and recommending a doctor for concerning symptoms.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50541568" target="_blank">HN Discussion (13)</a></div><div class="source">🔗 <a href="https://trynotched.com/find" target="_blank">https://trynotched.com/find</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://ffmpeg.org/download.html#release_9.1" target="_blank">FFmpeg 9.1 'Gauss'</a></h2><div class="meta"><span class="score">⭐ 166</span><span class="comments">💬 26</span><span class="by">👤 gyan</span></div><div class="summary"><p>FFmpeg 9.1 "Gauss" is a release of the open-source multimedia framework, with the page focused on obtaining and verifying the software. It explains how to download source code from Git repositories or mirrors, obtain compiled packages, and authenticate releases using PGP signatures and optional post-quantum signatures.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50569998" target="_blank">HN Discussion (26)</a></div><div class="source">🔗 <a href="https://ffmpeg.org/download.html#release_9.1" target="_blank">https://ffmpeg.org/download.html#release_9.1</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://cpldcpu.com/2014/03/19/%c2%b5-wire-usb-on-an-attiny-10/" target="_blank">µ-Wire – USB on an ATtiny 10</a></h2><div class="meta"><span class="score">⭐ 50</span><span class="comments">💬 1</span><span class="by">👤 mofosyne</span></div><div class="summary"><p>The article describes a project that turns the tiny ATtiny10 microcontroller into a USB device for controlling a WS2812 RGB LED. It implements a simplified little-wire protocol while remaining compatible with existing host programs, despite the chip’s limited 1 KB flash and 32 bytes of SRAM. The key challenge was reducing the V-USB stack to its bare essentials and using interrupt-free, timing-based processing to fit within the device’s constraints.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50545818" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://cpldcpu.com/2014/03/19/%c2%b5-wire-usb-on-an-attiny-10/" target="_blank">https://cpldcpu.com/2014/03/19/%c2%b5-wire-usb-on-an-attiny-10/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-20</p>
+        </footer>
+    </div>
+</body>
+</html>

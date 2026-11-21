@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-21</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/" target="_blank">Hurried Announcement: Alessandro Masullo GRH</a></h2><div class="meta"><span class="score">⭐ 2166</span><span class="comments">💬 1006</span><span class="by">👤 jasondavies</span></div><div class="summary"><p>A mathematician urgently announced a proposed proof of the Riemann Hypothesis by Alessandro Masullo, saying it had been reviewed for months by Brian Conrad and initially appeared promising. The draft was released ahead of a longer polishing process so the community could check it. Hours later, the author noted that several people had identified problems in the proof, which must be resolved before it could be accepted.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50579568" target="_blank">HN Discussion (1006)</a></div><div class="source">🔗 <a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/" target="_blank">https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masu...</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://alpo.ge/remark.pdf" target="_blank">Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]</a></h2><div class="meta"><span class="score">⭐ 2687</span><span class="comments">💬 1876</span><span class="by">👤 iamronaldo</span></div><div class="summary"><p>A claimed proof of the Riemann Hypothesis and the Generalized Riemann Hypothesis is announced, with the argument developed using Claude and formalized in Lean. The method extends beyond classical function-field techniques by combining Fourier-analytic ideas with automorphic structures, including chained theta lifts, to address prime-counting bounds. The proof is described as long but complete in formalized form, with plans to simplify and explain it.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50574968" target="_blank">HN Discussion (1876)</a></div><div class="source">🔗 <a href="https://alpo.ge/remark.pdf" target="_blank">https://alpo.ge/remark.pdf</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank">Inkling 2 Mini</a></h2><div class="meta"><span class="score">⭐ 1064</span><span class="comments">💬 200</span><span class="by">👤 jasondavies</span></div><div class="summary"><p>Inkling 2 Mini is a small, open-weights AI model designed to run locally on laptops, using a looped transformer architecture to improve reasoning and coding performance while keeping its memory footprint around 20GB. It outperforms comparable open models under 100B parameters on agentic coding benchmarks and is available for inference and customization. A variable-loop research variant is also released to study how repeated reasoning passes affect performance and monitorability.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50581260" target="_blank">HN Discussion (200)</a></div><div class="source">🔗 <a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank">https://thinkingmachines.ai/news/inkling-2-mini/</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" target="_blank">RCE in Gnupg</a></h2><div class="meta"><span class="score">⭐ 47</span><span class="comments">💬 3</span><span class="by">👤 gdgghhhhh</span></div><div class="summary"><p>GnuPG has released GPGME 2.3.1 to fix a critical double-free vulnerability in all earlier versions. The flaw can be triggered by an OpenPGP key with a crafted long user ID and may allow data exfiltration or, in some cases, remote code execution. Users should update GPGME and dependent applications such as Gpg4win, GnuPG Desktop, mail clients, and Samba.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50587208" target="_blank">HN Discussion (3)</a></div><div class="source">🔗 <a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html" target="_blank">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" target="_blank">Brazil's tax authority open-sources its tax calculator on GitHub under MIT</a></h2><div class="meta"><span class="score">⭐ 10</span><span class="comments">💬 1</span><span class="by">👤 dvaplima</span></div><div class="summary"><p>Brazil's federal tax authority has released its tax calculator as open-source code on GitHub under the MIT license. This is the agency's first open-source release and is intended to increase transparency around the country's tax reform by allowing public inspection and use of the calculation tool.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50532613" target="_blank">HN Discussion (1)</a></div><div class="source">🔗 <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria" target="_blank">https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/recei...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://ricapar.net/ClawDOS/" target="_blank">ClawDOS – An AI coding agent for DOS</a></h2><div class="meta"><span class="score">⭐ 85</span><span class="comments">💬 23</span><span class="by">👤 Ricapar</span></div><div class="summary"><p>ClawDOS is an AI coding agent that runs on original IBM PC XT hardware under DOS, allowing users to converse with Claude to read and edit files, write Turbo C programs, compile them, and run them. A native DOS harness handles the API and tools while a modern bridge PC manages TLS, showing how current AI can operate within the severe constraints of 1980s computing.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50586292" target="_blank">HN Discussion (23)</a></div><div class="source">🔗 <a href="https://ricapar.net/ClawDOS/" target="_blank">https://ricapar.net/ClawDOS/</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://manidoraisamy.com/developer-to-architect.html" target="_blank">We promoted developers into architects without informing them</a></h2><div class="meta"><span class="score">⭐ 463</span><span class="comments">💬 252</span><span class="by">👤 QueensGambit</span></div><div class="summary"><p>The article argues that many developers are being pushed into architect roles without preparation, especially when using AI coding tools. AI tends to implement stated requirements literally, prioritizing security and compatibility over performance, which can create slow or redundant systems. To avoid this, teams need to explicitly define architecture, data models, and constraints before asking AI to generate code.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50579331" target="_blank">HN Discussion (252)</a></div><div class="source">🔗 <a href="https://manidoraisamy.com/developer-to-architect.html" target="_blank">https://manidoraisamy.com/developer-to-architect.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/" target="_blank">Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis</a></h2><div class="meta"><span class="score">⭐ 467</span><span class="comments">💬 191</span><span class="by">👤 archon1410</span></div><div class="summary"><p>New results report finite-time blowup for the unforced three-dimensional incompressible Euler equations and for the unforced three-dimensional Navier-Stokes equations, with proofs supported by AI and formalized in Lean. A separate Lean-only proof of the Generalized Riemann Hypothesis has also been generated, relying on modern Langlands and arithmetic geometry ideas. The Navier-Stokes and Riemann Hypothesis proofs still require further verification and human-readable exposition.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50578358" target="_blank">HN Discussion (191)</a></div><div class="source">🔗 <a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/" target="_blank">https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://ninlive.com/" target="_blank">NINLIVE: The Nine Inch Nails live archive</a></h2><div class="meta"><span class="score">⭐ 276</span><span class="comments">💬 73</span><span class="by">👤 CharlesW</span></div><div class="summary"><p>NINLIVE is a fan-run archive dedicated to Nine Inch Nails live performances, offering access to concerts, tours, recordings, photos, and tracked songs across the band's career. It allows users to explore shows by era and stream live audio from the archive.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50583274" target="_blank">HN Discussion (73)</a></div><div class="source">🔗 <a href="https://ninlive.com/" target="_blank">https://ninlive.com/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/" target="_blank">Clojure will affect the way you think about programming (2017)</a></h2><div class="meta"><span class="score">⭐ 115</span><span class="comments">💬 34</span><span class="by">👤 sammatilda</span></div><div class="summary"><p>The article argues that Clojure is an excellent language for broadening a programmer's perspective because it combines Lisp's dynamic typing, data-oriented design, higher-order functions, and powerful macros with modern, pragmatic features. Its uniform syntax and macro system encourage treating code as data, while REPL-driven development and persistent data structures support practical, interactive problem solving. Overall, Clojure is presented as a modern Lisp that can reshape how programmers approach abstraction and software design.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50585376" target="_blank">HN Discussion (34)</a></div><div class="source">🔗 <a href="https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/" target="_blank">https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-you...</a></div></div></div>
+
+        <footer>
+            <p>2026-11-21</p>
+        </footer>
+    </div>
+</body>
+</html>

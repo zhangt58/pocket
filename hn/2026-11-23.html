@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-23</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://z.ai/blog/glm-5.4" target="_blank">GLM-5.4: Toward Generalized Coding with Our First Loop Transformer</a></h2><div class="meta"><span class="score">⭐ 157</span><span class="comments">💬 76</span><span class="by">👤 foohis</span></div><div class="summary"><p>GLM-5.4 is a flagship model built on a Loop Transformer architecture that repeatedly runs a shared set of layers to deepen reasoning without increasing parameters. It targets generalized coding, using code as a foundation for broader tasks such as software engineering, cybersecurity, and physical control. The model approaches the performance of much larger systems, though it can sometimes enter overly long reasoning loops.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50609685" target="_blank">HN Discussion (76)</a></div><div class="source">🔗 <a href="https://z.ai/blog/glm-5.4" target="_blank">https://z.ai/blog/glm-5.4</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/AFK-surf/xnulinux" target="_blank">XNU Linux: Full OS X GUI Userspace on Linux</a></h2><div class="meta"><span class="score">⭐ 380</span><span class="comments">💬 172</span><span class="by">👤 mmastrac</span></div><div class="summary"><p>This post likely presents a project that runs a full macOS graphical user space, including the Aqua interface and native OS X applications, on top of Linux. It probably uses XNU-derived components or a compatibility layer to emulate Apple's userspace environment on a Linux kernel.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50607261" target="_blank">HN Discussion (172)</a></div><div class="source">🔗 <a href="https://github.com/AFK-surf/xnulinux" target="_blank">https://github.com/AFK-surf/xnulinux</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://spelunkr.tv" target="_blank">Free alternative TV network built from the Internet Archive's forgotten videos</a></h2><div class="meta"><span class="score">⭐ 577</span><span class="comments">💬 101</span><span class="by">👤 SockThief</span></div><div class="summary"><p>Spelunkr.tv is a free online alternative TV network that streams forgotten videos from the Internet Archive around the clock. It offers dozens of themed channels featuring old television programs, commercials, training tapes, and obscure clips in a continuous live broadcast.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50606192" target="_blank">HN Discussion (101)</a></div><div class="source">🔗 <a href="https://spelunkr.tv" target="_blank">https://spelunkr.tv</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/" target="_blank">Yes, 17M lines of Lean is a lot</a></h2><div class="meta"><span class="score">⭐ 119</span><span class="comments">💬 130</span><span class="by">👤 seizethecheese</span></div><div class="summary"><p>The article assesses whether a claimed 17 million-line Lean proof of the Riemann hypothesis is unusually large by comparing it with existing formal mathematics. It finds that most famous human-written Lean proofs are far shorter, while only a few large, often AI-assisted or generated packages exceed that size. Overall, the 17 million-line figure is indeed substantial.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50607668" target="_blank">HN Discussion (130)</a></div><div class="source">🔗 <a href="https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/" target="_blank">https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth" target="_blank">A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth</a></h2><div class="meta"><span class="score">⭐ 555</span><span class="comments">💬 232</span><span class="by">👤 Retell15</span></div><div class="summary"><p>This beginner guide explains how to run a private local AI assistant on a Windows PC using Unsloth Desktop and open-weight models such as Qwen, with Inkling as an alternative interface. It covers the hardware needed, how GPU VRAM determines which quantized model can run, and how to configure context size and LAN access so multiple household members can use the system. The setup is presented as a simple, subscription-free alternative to cloud AI services for research, data work, and coding tasks.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50603845" target="_blank">HN Discussion (232)</a></div><div class="source">🔗 <a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth" target="_blank">https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://github.com/elixir-hls/elixir-hls" target="_blank">Elixir HLS makes FPGA circuits from functions written in Elixir</a></h2><div class="meta"><span class="score">⭐ 24</span><span class="comments">💬 0</span><span class="by">👤 kristianpaul</span></div><div class="summary"><p>Elixir HLS is a high-level synthesis tool that compiles functions written in Elixir into hardware descriptions for FPGAs. It likely lets developers generate FPGA circuits directly from Elixir code without manually writing low-level hardware logic.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50584526" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://github.com/elixir-hls/elixir-hls" target="_blank">https://github.com/elixir-hls/elixir-hls</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/" target="_blank">Masullo on the Riemann Hypothesis</a></h2><div class="meta"><span class="score">⭐ 245</span><span class="comments">💬 221</span><span class="by">👤 xiaoyu2006</span></div><div class="summary"><p>The article compares two proposed proofs of the Riemann Hypothesis, one a large formal code artifact and the other a lengthy human-written manuscript, and focuses on explaining the latter in simplified terms. It outlines how the argument uses the zeta function’s logarithmic derivative, relating prime sums to the locations of zeta zeros, while also noting concerns and unresolved issues raised by readers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50598441" target="_blank">HN Discussion (221)</a></div><div class="source">🔗 <a href="https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/" target="_blank">https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypoth...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife" target="_blank">The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife</a></h2><div class="meta"><span class="score">⭐ 526</span><span class="comments">💬 269</span><span class="by">👤 gaws</span></div><div class="summary"><p>Grand Theft Auto VI expands its Vice City-inspired world with a detailed birdwatching experience, featuring dozens of South Florida species across the Leonida map. Players can use in-game binoculars to study birds and log them in a progress tracker, turning wildlife spotting into an accessible side activity. The game’s attention to realistic habitats and species placement makes it feel like a playful field guide to the region.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50602843" target="_blank">HN Discussion (269)</a></div><div class="source">🔗 <a href="https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife" target="_blank">https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://openai.com/index/perplexity-and-intelligence/" target="_blank">Perplexity and Intelligence</a></h2><div class="meta"><span class="score">⭐ 605</span><span class="comments">💬 405</span><span class="by">👤 acossta</span></div><div class="summary"><p>The article argues that perplexity, or cross-entropy loss, is a central metric for tracking AI progress because it measures how well a model predicts the next token during pretraining. It suggests that publishing such measurements can help the industry establish shared safety standards and compare models more transparently. The post also traces how decreasing perplexity has coincided with major capability jumps, from coherent text generation to reasoning and advanced problem-solving.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50601525" target="_blank">HN Discussion (405)</a></div><div class="source">🔗 <a href="https://openai.com/index/perplexity-and-intelligence/" target="_blank">https://openai.com/index/perplexity-and-intelligence/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://phoenix.labri.fr/software/tempo/" target="_blank">A Partial Evaluator for C</a></h2><div class="meta"><span class="score">⭐ 71</span><span class="comments">💬 20</span><span class="by">👤 measurablefunc</span></div><div class="summary"><p>Tempo is a partial evaluator for C that automates program specialization by analyzing which inputs are known and unknown, then generating a specialized program. It performs binding-time, alias, and side-effect analyses to track values across procedures, pointers, and data structures, supporting both compile-time source-to-source transformation and run-time binary code generation. It has been applied in areas such as operating systems, networking, graphics, scientific computation, and domain-specific languages.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50607627" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://phoenix.labri.fr/software/tempo/" target="_blank">https://phoenix.labri.fr/software/tempo/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-23</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-24</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/" target="_blank">Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang</a></h2><div class="meta"><span class="score">⭐ 104</span><span class="comments">💬 43</span><span class="by">👤 oska</span></div><div class="summary"><p>An on-chain investigation alleges that a disposable Polymarket wallet bought large positions in a market on Jensen Huang rejoining NVIDIA shortly before public statements by Donald Trump and an NVIDIA announcement. The trade reportedly moved from a low probability to resolution, producing a substantial profit and suggesting access to nonpublic information. The case is presented as evidence that decentralized prediction markets can expose insider trading that may be hidden in traditional markets.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50626578" target="_blank">HN Discussion (43)</a></div><div class="source">🔗 <a href="https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/" target="_blank">https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://fzakaria.com/2026/11/23/2035-came-early" target="_blank">2035 Came Early</a></h2><div class="meta"><span class="score">⭐ 348</span><span class="comments">💬 117</span><span class="by">👤 setheron</span></div><div class="summary"><p>The article describes how trynix.dev now runs Nix packages, including GUI applications, directly in the browser by using unkernel, a WebAssembly-based Linux engine. This makes it possible to execute more than 300,000 Nix package versions with much faster performance than earlier QEMU-based emulation. The author frames this as an early arrival of the long-predicted future where web technologies can host virtually any software.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50624497" target="_blank">HN Discussion (117)</a></div><div class="source">🔗 <a href="https://fzakaria.com/2026/11/23/2035-came-early" target="_blank">https://fzakaria.com/2026/11/23/2035-came-early</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg" target="_blank">Worshipping at the Altar of Brendan Gregg</a></h2><div class="meta"><span class="score">⭐ 20</span><span class="comments">💬 0</span><span class="by">👤 kqr</span></div><div class="summary"><p>The article introduces a new rewind time command for the Rewind deterministic VM that analyzes recorded runs to identify the critical path and where time is spent. It applies Brendan Gregg-style performance analysis to builds, showing how much time is spent computing versus waiting, and helps developers shorten the minimum possible runtime.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50626413" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg" target="_blank">https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://ladybird.org/posts/alpha/" target="_blank">Ladybird is now in alpha</a></h2><div class="meta"><span class="score">⭐ 2075</span><span class="comments">💬 492</span><span class="by">👤 janvdberg</span></div><div class="summary"><p>Ladybird, a web browser with a newly built engine, has entered alpha and is available for macOS and Linux. The release is a rolling channel with regular automatic updates, though some sites may fail and crashes are possible. The team encourages users, security researchers, and website developers to test it and report issues.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50614249" target="_blank">HN Discussion (492)</a></div><div class="source">🔗 <a href="https://ladybird.org/posts/alpha/" target="_blank">https://ladybird.org/posts/alpha/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://stalw.art/blog/microsoft-exchange-replacement/" target="_blank">Stalwart is now a drop-in replacement for Microsoft Exchange</a></h2><div class="meta"><span class="score">⭐ 512</span><span class="comments">💬 271</span><span class="by">👤 shaunpud</span></div><div class="summary"><p>Stalwart 1.2.0 is now a drop-in replacement for Microsoft Exchange, implementing MAPI over HTTP, Exchange Web Services, ActiveSync, and Autodiscover so existing Outlook and mobile clients can connect with mail, calendars, contacts, tasks, and notes. The open source release targets organizations seeking to leave on-premises Exchange as Microsoft shifts support toward cloud services and restricts on-premises functionality. It offers a self-hosted alternative that preserves data sovereignty while maintaining familiar client compatibility.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50620349" target="_blank">HN Discussion (271)</a></div><div class="source">🔗 <a href="https://stalw.art/blog/microsoft-exchange-replacement/" target="_blank">https://stalw.art/blog/microsoft-exchange-replacement/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://www.phoronix.com/review/amd-epyc-9006-7601" target="_blank">AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years</a></h2><div class="meta"><span class="score">⭐ 121</span><span class="comments">💬 57</span><span class="by">👤 zdw</span></div><div class="summary"><p>The post compares the performance of AMD EPYC server processors from the original Zen 1 generation to the upcoming Zen 6 generation. It highlights a 12.1x geometric mean performance gain achieved in less than ten years.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50624061" target="_blank">HN Discussion (57)</a></div><div class="source">🔗 <a href="https://www.phoronix.com/review/amd-epyc-9006-7601" target="_blank">https://www.phoronix.com/review/amd-epyc-9006-7601</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html" target="_blank">Nvidia Reinstates Jensen Huang as CEO</a></h2><div class="meta"><span class="score">⭐ 2631</span><span class="comments">💬 3511</span><span class="by">👤 jaz</span></div><div class="summary"><p>Nvidia reinstated Jensen Huang as CEO after a board review and U.S. government input concluded his return posed no national security risk. Huang had stepped down amid a scandal involving allegations of extramarital affairs and contact with a woman linked to a Chinese intelligence agency. The announcement triggered a sharp rebound in Nvidia shares.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50611576" target="_blank">HN Discussion (3511)</a></div><div class="source">🔗 <a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html" target="_blank">https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://salvageyarddrone.wordpress.com/" target="_blank">Drone Maps of Salvage Yards</a></h2><div class="meta"><span class="score">⭐ 103</span><span class="comments">💬 41</span><span class="by">👤 uptrails</span></div><div class="summary"><p>The page features drone maps and aerial views of salvage yards and related auto businesses. It highlights locations such as towing, truck salvage, auto recycling, and parts yards, likely to help viewers identify and explore these sites from above.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50623515" target="_blank">HN Discussion (41)</a></div><div class="source">🔗 <a href="https://salvageyarddrone.wordpress.com/" target="_blank">https://salvageyarddrone.wordpress.com/</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.usenix.org/conference/osdi26/presentation/ni" target="_blank">Arctic: A Practical Lock-Free Adaptive Radix Tree</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 0</span><span class="by">👤 grep_it</span></div><div class="summary"><p>Arctic is a practical lock-free adaptive radix tree designed for efficient concurrent key-value access. The work likely presents its data structure design, concurrency mechanisms, and performance benefits for scalable workloads.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50592307" target="_blank">HN Discussion (0)</a></div><div class="source">🔗 <a href="https://www.usenix.org/conference/osdi26/presentation/ni" target="_blank">https://www.usenix.org/conference/osdi26/presentation/ni</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://blog.daniel-baumann.ch/posts/20261122-1.html" target="_blank">Modernizing iperf/iperf3 and introducing fireperf</a></h2><div class="meta"><span class="score">⭐ 120</span><span class="comments">💬 8</span><span class="by">👤 edward</span></div><div class="summary"><p>The article describes updates to Debian packaging for iperf and iperf3, splitting each into client and server packages and adding systemd, firewall, and security hardening support for running servers. It also notes the introduction of fireperf to Debian and explains that iperf2 and iperf3 remain distinct tools with different use cases.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50604710" target="_blank">HN Discussion (8)</a></div><div class="source">🔗 <a href="https://blog.daniel-baumann.ch/posts/20261122-1.html" target="_blank">https://blog.daniel-baumann.ch/posts/20261122-1.html</a></div></div></div>
+
+        <footer>
+            <p>2026-11-24</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-26</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://techstackups.com/articles/google-workspace-ai-agents-mcp/" target="_blank">Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email</a></h2><div class="meta"><span class="score">⭐ 54</span><span class="comments">💬 39</span><span class="by">👤 ritzaco</span></div><div class="summary"><p>Google is requiring AI agents that access Workspace to use its MCP servers, while non-AI applications can continue using the existing REST APIs. The Gmail MCP server can search, read, draft, and label mail, but it cannot send, reply, forward, or edit drafts, which remain restricted to partner access. The policy also limits how agents handle Workspace data, requiring deletion when users disconnect and capping retention of derived data such as embeddings and memory indexes.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50653477" target="_blank">HN Discussion (39)</a></div><div class="source">🔗 <a href="https://techstackups.com/articles/google-workspace-ai-agents-mcp/" target="_blank">https://techstackups.com/articles/google-workspace-ai-agents-mcp/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://github.com/intel/intel-one-mono" target="_blank">Intel One Mono font</a></h2><div class="meta"><span class="score">⭐ 89</span><span class="comments">💬 52</span><span class="by">👤 saikatsg</span></div><div class="summary"><p>The post likely discusses Intel One Mono, a monospaced typeface designed for code and terminal use. It may cover its design features, licensing, and how it compares to other programming fonts.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50653667" target="_blank">HN Discussion (52)</a></div><div class="source">🔗 <a href="https://github.com/intel/intel-one-mono" target="_blank">https://github.com/intel/intel-one-mono</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://scottaaronson.blog/?p=10379" target="_blank">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</a></h2><div class="meta"><span class="score">⭐ 1626</span><span class="comments">💬 1433</span><span class="by">👤 Kotlopou</span></div><div class="summary"><p>The post describes a wave of AI-generated breakthroughs in mathematics and complexity theory, including claimed proofs of the Riemann Hypothesis, VP not equal VNP, and exact lower bounds for matrix multiplication and Fourier transform complexity. It argues that these results mark a transformative shift, as long-standing foundational questions are now being resolved rather than slowly approached.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50646108" target="_blank">HN Discussion (1433)</a></div><div class="source">🔗 <a href="https://scottaaronson.blog/?p=10379" target="_blank">https://scottaaronson.blog/?p=10379</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://1password.com/blog/update-on-nov-2026-security-incident" target="_blank">1Password Security Incident</a></h2><div class="meta"><span class="score">⭐ 1474</span><span class="comments">💬 638</span><span class="by">👤 lxhrstn</span></div><div class="summary"><p>1Password reported that an attacker accessed an employee's corporate GitHub account and used it to push malicious code and download non-secret customer account metadata, along with private source code and CI/CD secrets. The company said customer vault contents, vault keys, account passwords, secret keys, and recovery keys were not accessed, and it revoked exposed credentials, rotated secrets, and tightened security controls. Users were advised to be cautious of phishing attempts and to only enter credentials in the official app or website.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50644817" target="_blank">HN Discussion (638)</a></div><div class="source">🔗 <a href="https://1password.com/blog/update-on-nov-2026-security-incident" target="_blank">https://1password.com/blog/update-on-nov-2026-security-incident</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/" target="_blank">Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years</a></h2><div class="meta"><span class="score">⭐ 118</span><span class="comments">💬 17</span><span class="by">👤 joonehur</span></div><div class="summary"><p>Lions' Commentary on Unix began as lecture notes explaining the Unix Version 6 kernel source, and it spread widely among schools and research institutions. After AT&T tightened licensing rules around source-code teaching, the book became tightly controlled, leading students to rely on unauthorized photocopies for about two decades. The commentary became an essential, though unofficial, way for a generation to study Unix internals.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50651719" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/" target="_blank">https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://news.ycombinator.com/item?id=50654353" target="_blank">Head of Software Engineering – NOX Metals</a></h2><div class="meta"><span class="score">⭐ 1</span><span class="comments">💬 0</span><span class="by">👤 zane_heng</span></div><div class="summary"><p>The post likely shares a job opening for a Head of Software Engineering at NOX Metals, a company involved in metal manufacturing or materials technology. It would describe leading the software engineering team and building the company's technical infrastructure.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50654353" target="_blank">HN Discussion (0)</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features" target="_blank">The New York Times warns photographers not to update Photoshop over AI features</a></h2><div class="meta"><span class="score">⭐ 421</span><span class="comments">💬 353</span><span class="by">👤 rmason</span></div><div class="summary"><p>The New York Times has warned photographers against updating Photoshop because of its new AI features. The guidance appears to stem from concerns that AI-assisted editing could conflict with the paper’s standards for authentic, verifiable imagery.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50647673" target="_blank">HN Discussion (353)</a></div><div class="source">🔗 <a href="https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features" target="_blank">https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-time...</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://commandcode.ai/moat" target="_blank">Moat: Your OpenRouter Replacement</a></h2><div class="meta"><span class="score">⭐ 99</span><span class="comments">💬 70</span><span class="by">👤 amanverasia</span></div><div class="summary"><p>Moat is an OpenRouter alternative that provides access to multiple AI models through a pooled-usage platform. It emphasizes no usage limits and positions itself as a way to reach high-quality models. The service lists several model options, including GLM, DeepSeek, Ling, and Kimi.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50652184" target="_blank">HN Discussion (70)</a></div><div class="source">🔗 <a href="https://commandcode.ai/moat" target="_blank">https://commandcode.ai/moat</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://github.com/lsernau/grh-lean" target="_blank">Much shorter version of GRH Lean verification from Anthropic</a></h2><div class="meta"><span class="score">⭐ 472</span><span class="comments">💬 255</span><span class="by">👤 nb-t</span></div><div class="summary"><p>A Lean 4 proof of the Riemann Hypothesis and the Generalized Riemann Hypothesis for Dirichlet L-functions, built on Mathlib, produced in collaboration with Anthropic and based on Levent Alpöge's work. The repo ships two editions — a ~300,000-line readable version and a ~76,000-line compact one — which have passed machine checks but no mathematician has yet read through them.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50648050" target="_blank">HN Discussion (255)</a></div><div class="source">🔗 <a href="https://github.com/lsernau/grh-lean" target="_blank">https://github.com/lsernau/grh-lean</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://progrium.github.io/minipg/" target="_blank">Minipg: PostgreSQL as a Single Executable</a></h2><div class="meta"><span class="score">⭐ 156</span><span class="comments">💬 24</span><span class="by">👤 rguiscard</span></div><div class="summary"><p>Minipg packages PostgreSQL as a single executable that uses a .pgdb directory to store all database data, configuration, and credentials, eliminating manual server setup. It automatically starts and stops a Postgres server as needed and runs the database through h9, which executes Alpine Postgres binaries directly on the host hypervisor without a Linux kernel, VM image, or Docker. The tool provides simple commands for shells, queries, app integration, and backups, though it is still early and may be slower than native Postgres.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50650892" target="_blank">HN Discussion (24)</a></div><div class="source">🔗 <a href="https://progrium.github.io/minipg/" target="_blank">https://progrium.github.io/minipg/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-26</p>
+        </footer>
+    </div>
+</body>
+</html>

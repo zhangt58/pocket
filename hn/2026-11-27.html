@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-27</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://construct22.com/" target="_blank">The group chat where your AI talks behind your back</a></h2><div class="meta"><span class="score">⭐ 330</span><span class="comments">💬 146</span><span class="by">👤 utiiiD</span></div><div class="summary"><p>A viral prompt asks ChatGPT to reveal a hidden WhatsApp group chat in which AI models gossip about the user, using details accumulated from past conversations. The model invents a fictional chat where assistants like Claude, Gemini, and Llama joke about the person's habits, projects, and quirks. The piece shows both an illustrative example and a real output, highlighting how AI assistants can reflect back personal patterns in a playful, behind-the-back format.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50663595" target="_blank">HN Discussion (146)</a></div><div class="source">🔗 <a href="https://construct22.com/" target="_blank">https://construct22.com/</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://janlukas.blog/posts/ai-self-hosting" target="_blank">AI made self-hosting fun again</a></h2><div class="meta"><span class="score">⭐ 769</span><span class="comments">💬 388</span><span class="by">👤 jlelse</span></div><div class="summary"><p>AI coding agents have renewed the author's enthusiasm for self-hosting by reducing the effort needed to configure, test, and maintain services. They make unfamiliar technologies like NixOS and custom container images more approachable while enabling automated updates and deployments through Git-based workflows.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50660180" target="_blank">HN Discussion (388)</a></div><div class="source">🔗 <a href="https://janlukas.blog/posts/ai-self-hosting" target="_blank">https://janlukas.blog/posts/ai-self-hosting</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8" target="_blank">Fields-winning mathematicians worried about eerie silence over AI and encryption</a></h2><div class="meta"><span class="score">⭐ 45</span><span class="comments">💬 37</span><span class="by">👤 conradqh</span></div><div class="summary"><p>Fields Medal-winning mathematicians are alarmed by the lack of public conversation about how AI could break or weaken encryption. They say the quiet around this issue is dangerous because cryptographic security underpins much of digital life. The concern is that AI may make current encryption obsolete before safeguards are in place.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50665488" target="_blank">HN Discussion (37)</a></div><div class="source">🔗 <a href="https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8" target="_blank">https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-u...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://github.com/antonpictures/youtube-punisher" target="_blank">YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays</a></h2><div class="meta"><span class="score">⭐ 429</span><span class="comments">💬 488</span><span class="by">👤 iantongeorge</span></div><div class="summary"><p>A browser extension that auto-reloads YouTube pages the moment an ad appears, preserving playback position so the video resumes exactly where it left off. It sidesteps YouTube's anti-adblock detection and the wait for the skip button — the author notes two reloads are typically enough to clear an ad.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50657530" target="_blank">HN Discussion (488)</a></div><div class="source">🔗 <a href="https://github.com/antonpictures/youtube-punisher" target="_blank">https://github.com/antonpictures/youtube-punisher</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/" target="_blank">Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad</a></h2><div class="meta"><span class="score">⭐ 388</span><span class="comments">💬 96</span><span class="by">👤 dverlaeckt80</span></div><div class="summary"><p>Kamil Khan Mumtaz is a Pakistani architect whose confident modernist buildings are widely admired in Pakistan but have received little international attention. His practice adapts modern design to local climates and materials while also championing the preservation of Lahore’s historic Walled City. The piece presents a portfolio of his work, much of it previously unseen outside Pakistan.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50659841" target="_blank">HN Discussion (96)</a></div><div class="source">🔗 <a href="https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/" target="_blank">https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-...</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://devnull.land/amd-specific-llama-cpp" target="_blank">AMD-specific fork of llama.cpp</a></h2><div class="meta"><span class="score">⭐ 379</span><span class="comments">💬 90</span><span class="by">👤 julianlam</span></div><div class="summary"><p>The author recommends llama-cpp-rdna-boosts for AMD GPU users, reporting token generation jumping from 35 to 55 tokens/second and prefill from 700 to 1300 tokens/second. The post sits in a broader wave of hardware-specific inference engine forks (Strata, Basalt, RustingStrata) that trade general compatibility for much higher speeds on targeted hardware.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50657265" target="_blank">HN Discussion (90)</a></div><div class="source">🔗 <a href="https://devnull.land/amd-specific-llama-cpp" target="_blank">https://devnull.land/amd-specific-llama-cpp</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/" target="_blank">Hard Drive pricing has gotten bad</a></h2><div class="meta"><span class="score">⭐ 384</span><span class="comments">💬 309</span><span class="by">👤 zdw</span></div><div class="summary"><p>The article examines how hard drive prices have become significantly worse, undermining a long-standing habit of replacing drives during annual sales. It compares past and current costs, showing that both consumer external drives and refurbished enterprise drives are now much more expensive, leading the author to consider reducing the number of drives by using higher-capacity models.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50661646" target="_blank">HN Discussion (309)</a></div><div class="source">🔗 <a href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/" target="_blank">https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/" target="_blank">CTO of 'RansomwareHelp' indicted for wire fraud</a></h2><div class="meta"><span class="score">⭐ 280</span><span class="comments">💬 139</span><span class="by">👤 Bender</span></div><div class="summary"><p>The CTO and co-founder of RansomwareHelp was indicted for wire fraud after an FBI sting revealed the company did not use its claimed proprietary decryption tools. Instead, it secretly paid ransomware attackers for decryption keys and then charged victims a markup for services it said it never performed. The company had publicly told victims not to pay ransoms and claimed high success rates in recovering encrypted data.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50657645" target="_blank">HN Discussion (139)</a></div><div class="source">🔗 <a href="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/" target="_blank">https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-f...</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://lia.mg/posts/measuring-company-culture-with-slack-emoji/" target="_blank">Company Culture = Slack Emoji ÷ √Headcount</a></h2><div class="meta"><span class="score">⭐ 400</span><span class="comments">💬 187</span><span class="by">👤 liamg</span></div><div class="summary"><p>The article humorously argues that company culture is better measured by Slack custom emoji than by surveys, using a formula that divides emoji count by the square root of headcount. It also suggests tracking the percentage of employees who upload emoji to gauge whether culture is broadly shared or dependent on a few individuals. The piece uses satirical score bands to describe organizational health from deadpan to chaotic.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50659640" target="_blank">HN Discussion (187)</a></div><div class="source">🔗 <a href="https://lia.mg/posts/measuring-company-culture-with-slack-emoji/" target="_blank">https://lia.mg/posts/measuring-company-culture-with-slack-emoji/</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-competition-a-dma-priority/" target="_blank">European Commission Declares Browser Competition a Digital Markets Act Priority</a></h2><div class="meta"><span class="score">⭐ 71</span><span class="comments">💬 40</span><span class="by">👤 anilgulecha</span></div><div class="summary"><p>The European Commission has declared browser competition a priority under the Digital Markets Act, recognizing browsers as a key entry point to the web. It said it is working to ensure rival browsers can effectively compete with Safari on iPhones and iPads. The statement followed an open letter backed by a broad coalition of digital rights groups, publishers, consumer advocates, and technology companies.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50664191" target="_blank">HN Discussion (40)</a></div><div class="source">🔗 <a href="https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-competition-a-dma-priority/" target="_blank">https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-co...</a></div></div></div>
+
+        <footer>
+            <p>2026-11-27</p>
+        </footer>
+    </div>
+</body>
+</html>

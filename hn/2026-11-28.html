@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Hacker News Posts</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 {
+    font-size: 2.5rem; font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+header p { color: #888; font-size: 1rem; }
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent), transparent);
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.card-header { display: flex; align-items: flex-start; gap: 15px; }
+.rank {
+    font-size: 1.8rem; font-weight: 900;
+    color: var(--accent);
+    min-width: 40px;
+}
+.title-section { flex: 1; }
+.title-section h2 {
+    font-size: 1.2rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.title-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.title-section a:hover { color: var(--accent); }
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.meta span { display: flex; align-items: center; gap: 5px; }
+.meta .score { color: #f7c948; font-weight: 600; }
+.meta .comments { color: #5dade2; font-weight: 600; }
+.meta .by { color: #82e0aa; }
+.summary {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-size: 0.85rem; }
+.hn-link a,
+.source a {
+    color: #5dade2;
+    text-decoration: none;
+    word-break: break-all;
+}
+.hn-link a:hover,
+.source a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #555;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .card { padding: 18px; }
+    .card-header { flex-direction: column; gap: 8px; }
+    .rank { font-size: 1.5rem; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Top 10 Hacker News Posts</h1>
+            <p>2026-11-28</p>
+        </header>
+
+<div class="card" style="--accent: #ff6b35;"><div class="card-header"><div class="rank">#1</div><div class="title-section"><h2><a href="https://github.com/p-e-w/heretic/issues/601" target="_blank">Farewell</a></h2><div class="meta"><span class="score">⭐ 18</span><span class="comments">💬 4</span><span class="by">👤 nolist_policy</span></div><div class="summary"><p>The post is likely a personal announcement from someone leaving a company, project, or role, perhaps to retire, change careers, or step away from public life. It may reflect on their time there and offer a final message to colleagues or readers.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50676672" target="_blank">HN Discussion (4)</a></div><div class="source">🔗 <a href="https://github.com/p-e-w/heretic/issues/601" target="_blank">https://github.com/p-e-w/heretic/issues/601</a></div></div></div>
+
+<div class="card" style="--accent: #4ecdc4;"><div class="card-header"><div class="rank">#2</div><div class="title-section"><h2><a href="https://unkernel.dev" target="_blank">Unkernel: Real Linux kernel, compiled to WebAssembly</a></h2><div class="meta"><span class="score">⭐ 380</span><span class="comments">💬 99</span><span class="by">👤 nreece</span></div><div class="summary"><p>Unkernel is a web project that compiles a real Linux kernel to WebAssembly and boots a full Linux distribution inside a browser. It provides a configurable virtual machine with options for multiple CPUs, memory, persistent storage, networking, graphics, sound, and session suspension.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50674218" target="_blank">HN Discussion (99)</a></div><div class="source">🔗 <a href="https://unkernel.dev" target="_blank">https://unkernel.dev</a></div></div></div>
+
+<div class="card" style="--accent: #45b7d1;"><div class="card-header"><div class="rank">#3</div><div class="title-section"><h2><a href="https://news.cornell.edu/stories/2026/11/loom-seamlessly-combines-weaving-knitting-and-braiding" target="_blank">Loom seamlessly combines weaving, knitting and braiding</a></h2><div class="meta"><span class="score">⭐ 152</span><span class="comments">💬 17</span><span class="by">👤 PaulHoule</span></div><div class="summary"><p>Cornell researchers have created Kneadix, a prototype loom that blends weaving, braiding, and knitting-like processes into a single machine. By using rotating horn gears, a retractable comb, and adjustable tensioners, it can switch between textile techniques and produce fabrics with varied stability, stretch, and shape. The team hopes the technology will support advanced garments, smart clothing, and eventually affordable maker kits.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50632052" target="_blank">HN Discussion (17)</a></div><div class="source">🔗 <a href="https://news.cornell.edu/stories/2026/11/loom-seamlessly-combines-weaving-knitting-and-braiding" target="_blank">https://news.cornell.edu/stories/2026/11/loom-seamlessly-combines-weaving-kni...</a></div></div></div>
+
+<div class="card" style="--accent: #96ceb4;"><div class="card-header"><div class="rank">#4</div><div class="title-section"><h2><a href="https://research.google/blog/supercharging-transformer-residual-connections/" target="_blank">Google's DeepCrossAttention achieves comparable model quality up to 3x faster</a></h2><div class="meta"><span class="score">⭐ 447</span><span class="comments">💬 161</span><span class="by">👤 ComputedCamp995</span></div><div class="summary"><p>Google researchers introduce DeepCrossAttention, a method that replaces standard transformer residual connections with dynamic routing across previous layers. By letting each token selectively retrieve features from earlier layers, DCA reduces information loss, can use fewer parameters, and achieves comparable or better model quality up to three times faster.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50672565" target="_blank">HN Discussion (161)</a></div><div class="source">🔗 <a href="https://research.google/blog/supercharging-transformer-residual-connections/" target="_blank">https://research.google/blog/supercharging-transformer-residual-connections/</a></div></div></div>
+
+<div class="card" style="--accent: #ffeaa7;"><div class="card-header"><div class="rank">#5</div><div class="title-section"><h2><a href="https://www-cs-faculty.stanford.edu/~knuth/moratorium.html" target="_blank">Knuth: Moratorium on Error Reports</a></h2><div class="meta"><span class="score">⭐ 157</span><span class="comments">💬 73</span><span class="by">👤 ultraficial</span></div><div class="summary"><p>A computer scientist has temporarily paused acceptance of new error reports for his books because the volume of submissions, amplified by large language models, has become too large to verify personally. He will resume accepting reports only after posting an updated list of known errors for the relevant book. Readers are asked to check that list before submitting new corrections.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50674452" target="_blank">HN Discussion (73)</a></div><div class="source">🔗 <a href="https://www-cs-faculty.stanford.edu/~knuth/moratorium.html" target="_blank">https://www-cs-faculty.stanford.edu/~knuth/moratorium.html</a></div></div></div>
+
+<div class="card" style="--accent: #dda15e;"><div class="card-header"><div class="rank">#6</div><div class="title-section"><h2><a href="https://localthunk.com/blog/balatro-timeline-3aarh" target="_blank">The Balatro Timeline</a></h2><div class="meta"><span class="score">⭐ 410</span><span class="comments">💬 107</span><span class="by">👤 sheepscreek</span></div><div class="summary"><p>The article is a personal chronological account of the development of Balatro, from an early card-game prototype to its launch. It explains how the project evolved from an abandoned multiplayer idea into a roguelike deckbuilder, highlighting the creator’s focus on experimentation, scoring mechanics, and the joy of making games as a hobby.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50657346" target="_blank">HN Discussion (107)</a></div><div class="source">🔗 <a href="https://localthunk.com/blog/balatro-timeline-3aarh" target="_blank">https://localthunk.com/blog/balatro-timeline-3aarh</a></div></div></div>
+
+<div class="card" style="--accent: #98d8c8;"><div class="card-header"><div class="rank">#7</div><div class="title-section"><h2><a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical" target="_blank">GPT 6.2 Astra Solves a Historical Mystery</a></h2><div class="meta"><span class="score">⭐ 460</span><span class="comments">💬 289</span><span class="by">👤 dr_red_dog</span></div><div class="summary"><p>The article argues that AI systems are beginning to perform genuine historical research, not just mathematics. OpenAI's GPT-6.2 Astra autonomously identified the creator of an anonymous 1808 sketchbook at Yale's Beinecke Library in about 22 minutes by reading primary and secondary sources and uncovering a little-known archival document. The discovery is presented as evidence that AI may soon replicate complex, open-ended research processes in non-deterministic fields like history.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50643158" target="_blank">HN Discussion (289)</a></div><div class="source">🔗 <a href="https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical" target="_blank">https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</a></div></div></div>
+
+<div class="card" style="--accent: #f7dc6f;"><div class="card-header"><div class="rank">#8</div><div class="title-section"><h2><a href="https://www.worldofinteriors.com/story/paolo-soleri-arconsati-arizona" target="_blank">Paolo Soleri built a utopian eco-city in the Arizona desert</a></h2><div class="meta"><span class="score">⭐ 84</span><span class="comments">💬 20</span><span class="by">👤 robtherobber</span></div><div class="summary"><p>Arcosanti is Paolo Soleri’s unfinished 860-acre prototype city in the Arizona desert, conceived as a compact, three-dimensional alternative to suburban sprawl. Based on his idea of arcology, the Brutalist concrete community was planned for thousands but has remained a small experimental collective where residents share simple, communal living. Its focus on density, sustainability, and shared space makes it feel increasingly relevant amid modern housing and urban challenges.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50666724" target="_blank">HN Discussion (20)</a></div><div class="source">🔗 <a href="https://www.worldofinteriors.com/story/paolo-soleri-arconsati-arizona" target="_blank">https://www.worldofinteriors.com/story/paolo-soleri-arconsati-arizona</a></div></div></div>
+
+<div class="card" style="--accent: #bb8fce;"><div class="card-header"><div class="rank">#9</div><div class="title-section"><h2><a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer" target="_blank">Credit card skimming scripts using WebRTC found on popular shopping sites</a></h2><div class="meta"><span class="score">⭐ 542</span><span class="comments">💬 281</span><span class="by">👤 scanr</span></div><div class="summary"><p>Card-skimming scripts were discovered on the online stores of Lascana, Samsonite, American Tourister, Revolve, and FWRD, where they used WebRTC to steal payment and personal details before a store could validate a purchase. The code was hidden through altered marketing pixels, cookie-banner settings, or CDN files, making it harder to detect. All affected sites removed the script after researchers reported it.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50668145" target="_blank">HN Discussion (281)</a></div><div class="source">🔗 <a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer" target="_blank">https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer</a></div></div></div>
+
+<div class="card" style="--accent: #85c1e9;"><div class="card-header"><div class="rank">#10</div><div class="title-section"><h2><a href="https://starfire.tech/shock/" target="_blank">Coherent Energy Transformations: What elements can you make?</a></h2><div class="meta"><span class="score">⭐ 12</span><span class="comments">💬 2</span><span class="by">👤 jerlendds</span></div><div class="summary"><p>The article introduces a supervised school-lab kit for repeating a single-pulse underwater electrical discharge experiment that has been linked to controversial claims of creating new elements, especially carbon, from metal wires. It details the kit's cell and pulse unit, notes that it is an untested design package rather than a finished product, and stresses that independent replication with controls is needed because mainstream physics does not accept the transmutation claims.</p></div></div></div><div class="source-links"><div class="hn-link">💬 <a href="https://news.ycombinator.com/item?id=50648760" target="_blank">HN Discussion (2)</a></div><div class="source">🔗 <a href="https://starfire.tech/shock/" target="_blank">https://starfire.tech/shock/</a></div></div></div>
+
+        <footer>
+            <p>2026-11-28</p>
+        </footer>
+    </div>
+</body>
+</html>
